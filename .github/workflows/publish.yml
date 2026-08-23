@@ -40,23 +40,27 @@ jobs:
       - run: npm ci
 
       # ── 인증 방식 결정 ────────────────────────────────────────────────
-      # CLAUDE_CODE_OAUTH_TOKEN 이 있으면 Claude 구독으로 돌린다(추가 과금 없음).
-      # 없으면 ANTHROPIC_API_KEY 로 API 를 쓴다. 둘 다 없으면 여기서 멈춘다 —
-      # 뒤에서 실패하면 원인을 찾기 어렵다.
+      # NVIDIA 를 1순위로 본다. 호출 왕복이 수 초라 Claude CLI(분 단위)보다
+      # 한 실행에서 처리하는 기사 수가 크게 차이 난다.
+      # 셋 다 없으면 여기서 멈춘다 — 뒤에서 실패하면 원인을 찾기 어렵다.
       - name: 인증 방식 결정
         id: auth
         env:
+          NVKEY: ${{ secrets.NVIDIA_API_KEY }}
           OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          if [ -n "$OAUTH" ]; then
+          if [ -n "$NVKEY" ]; then
+            echo "backend=nvidia" >> "$GITHUB_OUTPUT"
+            echo "NVIDIA NIM 사용"
+          elif [ -n "$OAUTH" ]; then
             echo "backend=cli" >> "$GITHUB_OUTPUT"
             echo "구독 인증(CLAUDE_CODE_OAUTH_TOKEN) 사용"
           elif [ -n "$APIKEY" ]; then
             echo "backend=api" >> "$GITHUB_OUTPUT"
             echo "API 키(ANTHROPIC_API_KEY) 사용"
           else
-            echo "::error::CLAUDE_CODE_OAUTH_TOKEN 또는 ANTHROPIC_API_KEY 중 하나를 저장소 Secret 에 등록하세요."
+            echo "::error::NVIDIA_API_KEY, CLAUDE_CODE_OAUTH_TOKEN, ANTHROPIC_API_KEY 중 하나를 저장소 Secret 에 등록하세요."
             exit 1
           fi
 
@@ -67,9 +71,13 @@ jobs:
 
       - name: 수집 → 집필 → 발행
         env:
-          # 구독 방식
+          # NVIDIA NIM (기본)
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          # Claude 구독 방식
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # API 방식
+          # Anthropic API 방식
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
           LLM_BACKEND: ${{ steps.auth.outputs.backend }}
@@ -106,6 +114,9 @@ jobs:
       - name: 기사 품질 평가
         continue-on-error: true
         env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LLM_BACKEND: ${{ steps.auth.outputs.backend }}

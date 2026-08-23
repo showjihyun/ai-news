@@ -43,9 +43,28 @@ npm run dev               # http://localhost:3000 에서 사이트 확인
 
 ## 2. 환경 변수
 
-### LLM (필수 — 둘 중 하나)
+### LLM (필수 — 셋 중 하나)
 
-**A) Claude 구독으로 실행 — API 키 불필요, 추가 과금 없음** (권장)
+**A) NVIDIA NIM (Nemotron) — 기본값** (권장)
+
+```env
+LLM_BACKEND=nvidia
+NVIDIA_API_KEY=nvapi-...
+NVIDIA_MODEL=nvidia/nemotron-3-ultra-550b-a55b
+```
+
+[build.nvidia.com](https://build.nvidia.com) 에서 키를 발급합니다(무료 크레딧 제공).
+
+**이걸 기본으로 둔 이유는 속도입니다.** Claude CLI 백엔드는 호출마다 프로세스를
+새로 띄워 왕복이 2분 안팎이었습니다. 같은 크기의 요청이 여기서는 수 초에 끝납니다.
+기사 한 건을 내는 데 분류·집필·평가·개정으로 5회 이상 부르는 구조라,
+이 차이가 그대로 하루에 낼 수 있는 기사 수가 됩니다.
+
+구현상 주의한 점 두 가지는 `pipeline/nvidia.ts` 에 적어 두었습니다.
+이 모델은 사고 과정을 `reasoning_content` 로 따로 흘려보내므로 본문에 섞이지 않게
+분리해야 하고, 구조화 출력(JSON 스키마 강제)을 신뢰할 수 없어 구분자 블록 형식을 씁니다.
+
+**B) Claude 구독으로 실행 — API 키 불필요, 추가 과금 없음**
 
 ```env
 LLM_BACKEND=cli
@@ -72,7 +91,7 @@ claude setup-token     # 브라우저 승인 → 토큰이 터미널에 출력�
 - 구독 요금제에는 사용량 한도가 있습니다. 30분마다 3건씩 쓰면 하루 144건이라
   한도에 닿을 수 있습니다. 처음에는 주기를 2~4시간으로 늘려 잡고 늘리는 편을 권합니다.
 
-**B) Anthropic API — 사용량이 많거나 팀으로 운영할 때**
+**C) Anthropic API — 팀으로 운영하거나 Claude 품질이 꼭 필요할 때**
 
 ```env
 LLM_BACKEND=api
@@ -207,7 +226,8 @@ Pages 를 쓰려면 GitHub Pro 가 필요합니다. Vercel·Cloudflare 는 비�
 
 **저장소 Settings 에 등록할 것**
 
-- Secrets: `CLAUDE_CODE_OAUTH_TOKEN` **또는** `ANTHROPIC_API_KEY` (둘 중 하나 필수),
+- Secrets: `NVIDIA_API_KEY` **또는** `CLAUDE_CODE_OAUTH_TOKEN` **또는** `ANTHROPIC_API_KEY`
+  (셋 중 하나 필수. 워크플로가 NVIDIA → Claude 구독 → Anthropic API 순으로 고릅니다),
   `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET`,
   `X_BEARER_TOKEN`
 - Variables: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_SITE_NAME`, `NEXT_PUBLIC_ADSENSE_CLIENT`,

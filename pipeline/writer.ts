@@ -8,6 +8,7 @@ import type { Cluster, DraftPost } from './types.js';
 import type { Evidence } from './extract.js';
 import { personaFor } from './personas.js';
 import { buildFocusNote } from './reviews.js';
+import { runNvidia, NVIDIA_MODEL } from './nvidia.js';
 import {
   CATEGORIES,
   CLASSIFY_SYSTEM,
@@ -30,7 +31,9 @@ const MODEL = () => process.env.LLM_MODEL || 'claude-opus-5';
  * 측정: 기사 1건 평가에 모델 처리만 2~3분이 걸려서, 기동 옵션 최적화(6.9→4.8초)보다
  * 여기를 바꾸는 편이 체감 차이가 훨씬 크다.
  */
-export const EVAL_MODEL = () => process.env.LLM_EVAL_MODEL || MODEL();
+export const EVAL_MODEL = () =>
+  process.env.LLM_EVAL_MODEL ||
+  ((process.env.LLM_BACKEND || 'nvidia').toLowerCase() === 'nvidia' ? NVIDIA_MODEL() : MODEL());
 
 /**
  * 분류 결과 스키마.
@@ -212,8 +215,20 @@ function writeTempPrompt(system: string): string {
   return file;
 }
 
-/** 평가 모듈에서도 같은 CLI 경로를 쓴다. 백엔드가 두 벌로 갈리면 관리가 안 된다. */
-export function runLlmBlocks(prompt: string, system: string, model?: string): Promise<string> {
+/**
+ * 구분자 블록 형식을 쓰는 백엔드들의 공통 진입점.
+ *
+ * NVIDIA 와 Claude CLI 는 둘 다 구조화 출력을 서버가 강제해 주지 않는다. 그래서 같은
+ * 블록 프롬프트를 쓰고, 여기서 어느 쪽으로 보낼지만 고른다. 평가·개정 모듈도 이 함수를
+ * 부르므로 백엔드를 늘려도 호출부는 손대지 않아도 된다.
+ */
+export function runLlmBlocks(
+  prompt: string,
+  system: string,
+  model?: string,
+  maxTokens?: number,
+): Promise<string> {
+  if (backend() === 'nvidia') return runNvidia(prompt, system, { model, maxTokens });
   return runClaudeCli(prompt, system, model);
 }
 
@@ -310,7 +325,8 @@ async function classifyViaCli(cluster: Cluster, evidence: Evidence): Promise<Cla
     '","readerValue":<0에서 10 사이 정수 — 일반인 독자에게 얼마나 가치 있는 뉴스인지>,' +
     '"adRisk":"<none 또는 low 또는 high 중 정확히 하나>","adRiskReason":"근거 또는 없음",' +
     '"reason":"한 문장"}\n```';
-  const raw = await runClaudeCli(prompt, CLASSIFY_SYSTEM);
+  // 분류는 짧은 JSON 하나면 된다. 상한을 낮춰 대기 시간을 아낀다.
+  const raw = await runLlmBlocks(prompt, CLASSIFY_SYSTEM, undefined, 4000);
   return normalizeClassification(ClassifySchema.parse(extractJson(raw)));
 }
 
@@ -368,7 +384,7 @@ async function writeViaCli(
 
   const prompt = `${buildWritePrompt(cluster, evidence)}${extra}\n\n${template}\n`;
 
-  const raw = await runClaudeCli(prompt, buildWriteSystem(category) + focusNote);
+  const raw = await runLlmBlocks(prompt, buildWriteSystem(category) + focusNote);
   const blocks = parseBlocks(raw);
 
   const missing = BLOCK_FIELDS.filter((f) => !blocks[f]);
@@ -393,10 +409,23 @@ async function writeViaCli(
 
 // ── 공개 API ──────────────────────────────────────────────────────────
 
-const isCli = () => (process.env.LLM_BACKEND || 'api').toLowerCase() === 'cli';
+/**
+ * 기본 백엔드는 nvidia 다.
+ *
+ * Claude CLI 는 호출마다 프로세스를 새로 띄워 왕복이 2분 안팎이었다. 기사 한 건에
+ * 분류·집필·평가·개정으로 5회 이상 부르므로 그 차이가 그대로 운영 속도가 된다.
+ * api(Anthropic) 와 cli 는 그대로 남겨 두어 언제든 되돌릴 수 있다.
+ */
+function backend(): 'nvidia' | 'api' | 'cli' {
+  const b = (process.env.LLM_BACKEND || 'nvidia').toLowerCase();
+  return b === 'api' || b === 'cli' ? b : 'nvidia';
+}
+
+/** 구분자 블록 형식을 쓰는 백엔드인지 (= Anthropic 구조화 출력을 못 쓰는 쪽) */
+const usesBlocks = () => backend() !== 'api';
 
 export function classify(cluster: Cluster, evidence: Evidence): Promise<Classification> {
-  return isCli() ? classifyViaCli(cluster, evidence) : classifyViaApi(cluster, evidence);
+  return usesBlocks() ? classifyViaCli(cluster, evidence) : classifyViaApi(cluster, evidence);
 }
 
 export async function writePost(
@@ -409,7 +438,7 @@ export async function writePost(
   if (focusNote) console.log('  · 편집 개선 지시 반영됨');
 
   const write = (extra: string) =>
-    isCli()
+    usesBlocks()
       ? writeViaCli(cluster, evidence, category, extra, focusNote)
       : writeViaApi(cluster, evidence, category, extra, focusNote);
 

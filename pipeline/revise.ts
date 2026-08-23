@@ -260,7 +260,7 @@ export async function improveToTarget(
   maxAttempts: number,
 ): Promise<ImproveResult> {
   const slug = file.replace(/\.md$/, '');
-  const isCli = (process.env.LLM_BACKEND || 'api').toLowerCase() === 'cli';
+  const isCli = (process.env.LLM_BACKEND || 'nvidia').toLowerCase() !== 'api';
 
   const evidence: StoredEvidence = loadEvidence(slug) ?? {
     articleText: '',

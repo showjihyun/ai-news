@@ -256,7 +256,8 @@ export async function evaluatePost(file: string): Promise<Review> {
     items: post.sources.map((s) => ({ ...s, score: -1, commentCount: -1 })),
   };
 
-  const isCli = (process.env.LLM_BACKEND || 'api').toLowerCase() === 'cli';
+  // Anthropic API 만 구조화 출력을 서버가 강제한다. 나머지는 블록 형식을 쓴다.
+  const isCli = (process.env.LLM_BACKEND || 'nvidia').toLowerCase() !== 'api';
   const prompt = buildJudgePrompt(post, evidence, exact);
   const result = isCli
     ? await judgeViaCli(JUDGE_SYSTEM, prompt)

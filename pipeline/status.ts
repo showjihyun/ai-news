@@ -81,12 +81,19 @@ export function printStatus() {
   console.log(`\n${line}\n발행 준비 상태\n${line}`);
 
   // ── 1. LLM 인증 ──────────────────────────────────────────────
-  const backend = (process.env.LLM_BACKEND || 'api').toLowerCase();
+  const backend = (process.env.LLM_BACKEND || 'nvidia').toLowerCase();
   const model = process.env.LLM_MODEL || 'claude-opus-5';
   console.log('\n[1] 글쓰기 엔진');
 
   let llmReady = false;
-  if (backend === 'cli') {
+  if (backend === 'nvidia') {
+    llmReady = Boolean(process.env.NVIDIA_API_KEY);
+    const nvModel = process.env.NVIDIA_MODEL || 'nvidia/nemotron-3-ultra-550b-a55b';
+    console.log(`  ${llmReady ? OK : NO} 백엔드 nvidia (NVIDIA NIM) · 모델 ${nvModel}`);
+    if (!llmReady) {
+      console.log('      → NVIDIA_API_KEY 가 없습니다. https://build.nvidia.com 에서 발급하세요.');
+    }
+  } else if (backend === 'cli') {
     const auth = claudeAuthState();
     llmReady = auth !== 'no-cli' && auth !== 'no-credentials';
     const mark = auth === 'ok' ? OK : auth === 'unknown' ? WARN : NO;
