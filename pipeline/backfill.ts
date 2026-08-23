@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { extractArticle } from './extract.js';
 import { fetchHnTopComments } from './sources/hackernews.js';
 import { fetchRedditTopComments } from './sources/reddit.js';
-import { domainOf, mapLimit, isDiscussionUrl } from './util.js';
+import { domainOf, mapLimit, isNonOriginalUrl } from './util.js';
 import { saveEvidenceRaw, type StoredEvidence } from './publish.js';
 
 const POSTS_DIR = path.join(process.cwd(), 'content', 'posts');
@@ -39,7 +39,7 @@ export async function backfillEvidence(file: string): Promise<StoredEvidence | n
   const seen = new Set<string>();
   const targets: { url: string; origin: string }[] = [];
   for (const { url, origin } of [{ url: originUrl, origin: '원문' }, ...sources]) {
-    if (!url || isDiscussionUrl(url)) continue;
+    if (!url || isNonOriginalUrl(url)) continue;
     const host = domainOf(url);
     if (!host || seen.has(host)) continue;
     seen.add(host);

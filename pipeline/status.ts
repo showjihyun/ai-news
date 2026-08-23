@@ -22,21 +22,34 @@ const WARN = '·';
 /** 애드센스 심사에서 '콘텐츠 부족'으로 반려되지 않으려면 대략 이 정도는 필요하다. */
 const ADSENSE_TARGET_POSTS = 25;
 
-function claudeLoggedIn(): boolean {
-  // `claude` 가 설치돼 있고 토큰이든 로그인이든 자격증명이 잡히는지만 본다.
-  // 실제 모델 호출은 하지 않는다 — 점검 한 번에 요금을 쓰면 안 된다.
-  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) return true;
+type LlmAuth = 'ok' | 'no-cli' | 'no-credentials' | 'unknown';
+
+/**
+ * CLI 백엔드 인증 상태.
+ *
+ * 세 가지를 구분해서 돌려준다. 예전에는 boolean 하나였고 맥에서는 항상 true 였는데,
+ * 그러면 한 번도 로그인하지 않은 사용자에게 '✓ 준비됨' 이라고 알려 준 뒤
+ * "이제 npm run run 을 돌리세요" 라고 안내하게 된다. 그 실행은 수집을 다 마치고
+ * 기사마다 전부 실패한다 — 이 점검이 막으려던 바로 그 상황이다.
+ *
+ * 맥은 자격증명을 파일이 아니라 키체인에 두므로 '없다'고 단정할 수 없다.
+ * 그건 'unknown' 으로 정직하게 말한다.
+ */
+function claudeAuthState(): LlmAuth {
+  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) return 'ok';
   try {
     execFileSync('claude', ['--version'], {
       stdio: 'ignore',
       shell: process.platform === 'win32',
     });
   } catch {
-    return false;
+    return 'no-cli';
   }
   const home = process.env.USERPROFILE || process.env.HOME || '';
   const configDir = process.env.CLAUDE_CONFIG_DIR || path.join(home, '.claude');
-  return fs.existsSync(path.join(configDir, '.credentials.json')) || process.platform === 'darwin';
+  if (fs.existsSync(path.join(configDir, '.credentials.json'))) return 'ok';
+  // 맥은 키체인에 저장한다. 파일이 없다고 로그인 안 한 것은 아니다.
+  return process.platform === 'darwin' ? 'unknown' : 'no-credentials';
 }
 
 interface PostStat {
@@ -74,12 +87,18 @@ export function printStatus() {
 
   let llmReady = false;
   if (backend === 'cli') {
-    llmReady = claudeLoggedIn();
-    console.log(
-      `  ${llmReady ? OK : NO} 백엔드 cli (Claude 구독, 추가 과금 없음) · 모델 ${model}`,
-    );
-    if (!llmReady) {
-      console.log('      → `claude` 가 없거나 로그인되어 있지 않습니다. `claude` 실행 후 로그인하세요.');
+    const auth = claudeAuthState();
+    llmReady = auth !== 'no-cli' && auth !== 'no-credentials';
+    const mark = auth === 'ok' ? OK : auth === 'unknown' ? WARN : NO;
+    console.log(`  ${mark} 백엔드 cli (Claude 구독, 추가 과금 없음) · 모델 ${model}`);
+
+    if (auth === 'no-cli') {
+      console.log('      → `claude` 를 찾지 못했습니다. `npm i -g @anthropic-ai/claude-code` 로 설치하세요.');
+    } else if (auth === 'no-credentials') {
+      console.log('      → 로그인되어 있지 않습니다. `claude` 를 한 번 실행해 로그인하세요.');
+    } else if (auth === 'unknown') {
+      console.log('      로그인 여부는 확인하지 못했습니다(맥은 자격증명을 키체인에 둡니다).');
+      console.log('      → 처음이라면 `claude` 를 한 번 실행해 로그인되어 있는지 확인하세요.');
     } else if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
       console.log('      CLAUDE_CODE_OAUTH_TOKEN 사용 중 (CI 겸용)');
     }

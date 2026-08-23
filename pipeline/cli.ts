@@ -60,12 +60,34 @@ function numFlag(name: string, fallback: number): number {
   return n;
 }
 
-async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Promise<boolean> {
+/**
+ * 한 클러스터를 기사로 만든다.
+ * @returns 발행한 파일명(`slug.md`). 건너뛰었거나 dry-run 이면 null.
+ *          검수 대상을 '이번에 낸 것'으로 한정하는 데 쓴다.
+ */
+async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Promise<string | null> {
   console.log(`\n▶ ${cluster.title.slice(0, 70)}`);
   console.log(`  화제성 ${cluster.heat.toFixed(0)} · 소스 ${cluster.origins.join(', ')}`);
 
   const evidence = await gatherEvidence(cluster);
   console.log(`  · 원문 ${evidence.articleText.length}자, 커뮤니티 반응 ${evidence.reactions.length}건`);
+
+  /**
+   * 근거가 없으면 쓰지 않는다.
+   *
+   * 원문 추출이 실패하고 커뮤니티 반응도 없으면 LLM 에게 남는 재료는 제목뿐이다.
+   * 그렇게 나간 기사는 제목이 스스로 실토한다 — "네 매체 제목엔 금액도 날짜도 없다",
+   * "확인된 건 제목뿐". 독자에게 값어치가 없고 애드센스 심사에도 불리하다.
+   * (구글뉴스 RSS 처럼 링크가 리다이렉트 껍데기인 소스에서 특히 자주 생긴다.)
+   *
+   * --force 로는 넘길 수 있게 둔다. 판단은 사람이 한다.
+   */
+  if (evidence.articleText.length < TUNING.minArticleTextChars && evidence.reactions.length === 0 && !force) {
+    console.log(
+      `  – 건너뜀: 쓸 근거가 없음 (원문 ${evidence.articleText.length}자 < 기준 ${TUNING.minArticleTextChars}, 반응 0건)`,
+    );
+    return null;
+  }
 
   // 1단계: 카테고리 판정. 어떤 데스크의 목소리로 쓸지가 여기서 정해진다.
   const verdict = await classify(cluster, evidence);
@@ -73,7 +95,7 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
 
   if (verdict.adRisk === 'high' && TUNING.skipAdRiskHigh && !force) {
     console.log(`  – 건너뜀: 애드센스 정책 위험 — ${verdict.adRiskReason}`);
-    return false;
+    return null;
   }
   if (verdict.adRisk === 'low') {
     console.log(`  ! 광고 정책 주의: ${verdict.adRiskReason}`);
@@ -81,7 +103,7 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
 
   if (verdict.readerValue < TUNING.minReaderValue && !force) {
     console.log(`  – 건너뜀: 일반 독자에게 가치가 낮음 (기준 ${TUNING.minReaderValue})`);
-    return false;
+    return null;
   }
 
   // 2단계: 해당 데스크 페르소나를 입혀 집필.
@@ -94,12 +116,12 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
     console.log(`  [차별점] ${draft.angle}`);
     console.log(`  [본문] ${draft.body.length}자 · 태그: ${draft.tags.join(', ')}`);
     console.log('  (--dry-run 이므로 저장하지 않음)');
-    return true;
+    return null;
   }
 
   const slug = publishPost(cluster, draft, evidence);
   console.log(`  ✓ 발행: content/posts/${slug}.md`);
-  return true;
+  return `${slug}.md`;
 }
 
 async function main() {
@@ -317,12 +339,28 @@ async function main() {
 
   let ok = 0;
   let reviewed = 0;
+  let stoppedByRateLimit = false;
+  const publishedThisRun: string[] = [];
   for (const cluster of candidates) {
     if (ok >= limit || reviewed >= reviewBudget) break;
     reviewed++;
     try {
-      if (await writeOne(cluster, dryRun, force)) ok++;
+      const published = await writeOne(cluster, dryRun, force);
+      if (published) {
+        publishedThisRun.push(published);
+        ok++;
+      }
     } catch (err) {
+      // 사용량 한도면 남은 후보도 전부 같은 이유로 실패한다.
+      // 계속 돌면 후보마다 claude 프로세스를 띄웠다 죽이며 25분 워크플로 시간을
+      // 통째로 태우고, 정작 발행한 기사를 커밋할 시간이 남지 않는다.
+      if (isRateLimit(err)) {
+        console.error(`
+  ! ${(err as Error).message}`);
+        console.error('  · 남은 후보는 건너뜁니다. 한도 회복 후 다시 실행하세요.');
+        stoppedByRateLimit = true;
+        break;
+      }
       console.error(`  ✗ 실패: ${(err as Error).message}`);
     }
   }
@@ -336,8 +374,18 @@ async function main() {
 
   // 발행한 기사를 바로 평가하고, 기준 미달이면 그 자리에서 고쳐 쓴다.
   // "쌓기만 하고 나중에 손보자"는 실제로는 영원히 안 하게 된다.
-  if (ok > 0 && !dryRun && !has('no-improve')) {
-    const toReview = pendingPosts();
+  if (ok > 0 && !dryRun && !has('no-improve') && !stoppedByRateLimit) {
+    /**
+     * 방금 낸 기사만 검수한다.
+     *
+     * 예전에는 pendingPosts()(=평가 이력이 없는 모든 기사)를 넘겼다. 평가 단계가 한 번이라도
+     * 실패하면(워크플로에서 continue-on-error 다) 백로그가 30분마다 쌓이고, 어느 순간
+     * 한 번 실행에서 12건을 평가하고 각각 최대 3회 개정하게 된다. 기사 1건 평가에만
+     * 2~3분이 걸리므로 25분 타임아웃을 넘겨 잡이 죽고, 그러면 '변경 사항 커밋' 단계까지
+     * 못 가서 방금 쓴 기사가 통째로 사라진다.
+     */
+    const justPublished = new Set(publishedThisRun);
+    const toReview = pendingPosts().filter((f) => justPublished.has(f));
     console.log(
       `
 [검수] ${toReview.length}건 평가 후 ${TUNING.minQuality.toFixed(1)}점 미만은 개정합니다. (동시 ${CONCURRENCY}건)`,

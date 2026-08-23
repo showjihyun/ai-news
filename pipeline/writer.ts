@@ -32,45 +32,63 @@ const MODEL = () => process.env.LLM_MODEL || 'claude-opus-5';
  */
 export const EVAL_MODEL = () => process.env.LLM_EVAL_MODEL || MODEL();
 
+/**
+ * 분류 결과 스키마.
+ *
+ * ⚠ 여기에 `.transform()` 을 쓰면 안 된다.
+ * API 백엔드는 이 스키마를 zodOutputFormat 으로 JSON Schema 에 변환해 서버에 보내는데,
+ * transform 이 하나라도 있으면 `Transforms cannot be represented in JSON Schema` 로 던진다.
+ * classify 는 writeOne 의 첫 LLM 호출이라, 이게 터지면 모든 후보가 catch 로 떨어져
+ * 30분마다 조용히 한 건도 발행하지 못한다(LLM_BACKEND 기본값이 api 다).
+ *
+ * 값 보정은 파싱한 뒤 normalizeClassification 에서 한다.
+ */
 const ClassifySchema = z.object({
   category: z.enum(CATEGORIES as [string, ...string[]]),
-  /**
-   * 일반 독자 기준 뉴스 가치 0~10. 낮으면 아예 안 쓰는 편이 낫다.
-   *
-   * clamp 를 거는 이유: CLI 백엔드는 구조화 출력을 서버가 강제해 주지 않아서
-   * 모델이 0~100 척도로 답하는 일이 실제로 있었다. 범위를 벗어났다고 파이프라인을
-   * 통째로 실패시키는 것보다 잘라서 쓰는 편이 낫다.
-   */
-  readerValue: z.coerce.number().transform((n) => Math.max(0, Math.min(10, n))),
+  /** 일반 독자 기준 뉴스 가치 0~10. 낮으면 아예 안 쓰는 편이 낫다. */
+  readerValue: z.coerce.number().describe('0에서 10 사이. 일반 독자에게 얼마나 가치 있는 뉴스인지'),
   /**
    * 구글 애드센스 정책 위험도.
    *
    * 이 사이트의 수입원이 애드센스인데 파이프라인에 정책 인식이 없었다.
    * AI 뉴스에는 NSFW 모델, 딥페이크 피해, 탈옥, 무기 활용 같은 주제가 정기적으로 나오고,
    * 그런 기사가 섞이면 페이지 단위 광고 중단이나 사이트 심사 반려로 이어질 수 있다.
-   * 분류는 어차피 기사를 읽으므로 필드 하나 늘리는 비용은 사실상 0이다.
    */
-  adRisk: z
-    .string()
-    .transform((v) => {
-      // CLI 백엔드는 구조화 출력을 서버가 강제하지 않아서 자리표시자를 그대로
-      // 뱉는 일이 있다(실제로 "none|low|high" 가 그대로 왔다).
-      //
-      // 모르는 값은 high 로 본다. low 로 떨어뜨리면 skipAdRiskHigh 게이트를 그냥 통과해
-      // "판정에 실패했으니 일단 발행" 이 되는데, 애드센스가 수입원인 사이트에서
-      // 안전한 쪽은 발행이 아니라 건너뛰기다. 잘못 걸러진 기사는 --force 로 낼 수 있지만,
-      // 잘못 나간 기사는 되돌릴 수 없다.
-      const t = v.trim().toLowerCase();
-      if (t === 'none' || t === 'low' || t === 'high') return t;
-      // 왜 발행이 멈췄는지 로그만 보고 알 수 있어야 한다. 값이 안 읽힌 것과
-      // 진짜로 위험한 기사인 것은 결과가 같아도 대응이 다르다.
-      console.warn(`  ! adRisk 값을 읽지 못했습니다(받은 값: ${JSON.stringify(v)}). 안전하게 high 로 처리합니다.`);
-      return 'high';
-    })
-    .pipe(z.enum(['none', 'low', 'high'])),
+  adRisk: z.string().describe('none, low, high 중 하나'),
   adRiskReason: z.string().describe('위험도 판단 근거. none 이면 "없음"'),
   reason: z.string().describe('그 카테고리와 점수를 준 이유. 한 문장'),
 });
+
+export type AdRisk = 'none' | 'low' | 'high';
+
+/**
+ * 파싱 결과를 실제로 쓸 수 있는 값으로 다듬는다. 두 백엔드가 모두 이걸 거친다.
+ *
+ * CLI 백엔드는 구조화 출력을 서버가 강제하지 않아서, 0~100 척도로 답하거나
+ * 자리표시자("none|low|high")를 그대로 뱉는 일이 실제로 있었다.
+ */
+function normalizeClassification(raw: z.infer<typeof ClassifySchema>) {
+  const t = String(raw.adRisk).trim().toLowerCase();
+  let adRisk: AdRisk;
+  if (t === 'none' || t === 'low' || t === 'high') {
+    adRisk = t;
+  } else {
+    // 모르는 값은 high 로 본다. low 로 떨어뜨리면 skipAdRiskHigh 게이트를 그냥 통과해
+    // "판정에 실패했으니 일단 발행" 이 되는데, 애드센스가 수입원인 사이트에서
+    // 안전한 쪽은 발행이 아니라 건너뛰기다. 잘못 걸러진 기사는 --force 로 낼 수 있지만,
+    // 잘못 나간 기사는 되돌릴 수 없다.
+    // 왜 발행이 멈췄는지 로그만 보고 알 수 있어야 하므로 값도 함께 남긴다.
+    console.warn(`  ! adRisk 값을 읽지 못했습니다(받은 값: ${JSON.stringify(raw.adRisk)}). 안전하게 high 로 처리합니다.`);
+    adRisk = 'high';
+  }
+
+  // 범위를 벗어났다고 파이프라인을 통째로 실패시키는 것보다 잘라서 쓰는 편이 낫다.
+  const readerValue = Number.isFinite(raw.readerValue)
+    ? Math.max(0, Math.min(10, raw.readerValue))
+    : 0;
+
+  return { ...raw, readerValue, adRisk };
+}
 
 const PostSchema = z.object({
   title: z.string().describe('한국어 SEO 제목. 45자 이내. 낚시성 금지, 구체적인 사실을 담을 것'),
@@ -84,7 +102,7 @@ const PostSchema = z.object({
     .describe('마크다운 본문. 섹션 제목은 직접 짓되 "## 쉽게 풀어보면"과 "## 나에게 미치는 영향"은 반드시 포함'),
 });
 
-export type Classification = z.infer<typeof ClassifySchema>;
+export type Classification = ReturnType<typeof normalizeClassification>;
 
 /** LLM 이 직접 만들어 내는 부분. category/desk 는 파이프라인이 붙인다. */
 type DraftBody = z.infer<typeof PostSchema>;
@@ -122,7 +140,7 @@ async function parseWithFallback<T>(request: any): Promise<T> {
 }
 
 async function classifyViaApi(cluster: Cluster, evidence: Evidence): Promise<Classification> {
-  return parseWithFallback<Classification>({
+  const raw = await parseWithFallback<z.infer<typeof ClassifySchema>>({
     model: MODEL(),
     max_tokens: 2000,
     system: [
@@ -131,6 +149,7 @@ async function classifyViaApi(cluster: Cluster, evidence: Evidence): Promise<Cla
     output_config: { format: zodOutputFormat(ClassifySchema), effort: 'low' },
     messages: [{ role: 'user', content: buildClassifyPrompt(cluster, evidence) }],
   });
+  return normalizeClassification(raw);
 }
 
 async function writeViaApi(
@@ -231,14 +250,25 @@ function runClaudeCli(prompt: string, system: string, model = MODEL()): Promise<
         // 사용량 한도는 일반 오류와 다르게 다뤄야 한다. 남은 기사를 계속 시도해 봐야
         // 전부 같은 이유로 실패하고, 실제로 개정 10건이 그렇게 통째로 날아갔다.
         // (한도 소진 시 stderr 가 비어 있거나 한도 문구만 오는 경우가 있어 둘 다 본다.)
+        /**
+         * 한도 판정은 문구로만 한다.
+         *
+         * 예전에는 `code === 1 && stderr 가 비어 있음` 도 한도로 쳤다. 그런데 이 CLI 는
+         * --output-format json 으로 돌아서 진단 메시지를 stdout 에 쓴다. 모델 이름 오타,
+         * 시스템 프롬프트 파일 문제, JSON 파싱 실패 같은 평범한 실패가 전부
+         * "종료 코드 1 + 빈 stderr" 로 오는데, 그걸 한도로 오판하면
+         *   · 사용자에게는 "한도가 회복된 뒤 다시 실행하세요" 라는 엉뚱한 안내가 나가고
+         *   · improve 에서는 RateLimitStop 으로 번역되어 남은 개정 전체가 중단된다.
+         * 그래서 stdout 도 함께 보되, 판단 근거는 실제 문구로 한정한다.
+         */
         const text = `${err} ${out}`;
-        const rateLimited =
-          /usage limit|rate limit|too many requests|quota|한도|사용량/i.test(text) ||
-          (code === 1 && err.trim() === '');
+        const rateLimited = /usage limit|rate limit|too many requests|quota|한도|사용량/i.test(text);
+        // 원인을 못 찾겠으면 최소한 무엇을 받았는지는 남긴다. stderr 가 비면 stdout 을 보여 준다.
+        const detail = (err.trim() || out.trim() || '(출력 없음)').slice(0, 400);
         const e = new Error(
           rateLimited
             ? `Claude 사용량 한도로 보입니다 (종료 코드 ${code}). 한도가 회복된 뒤 다시 실행하세요.`
-            : `claude CLI 종료 코드 ${code}: ${err.slice(0, 400)}`,
+            : `claude CLI 종료 코드 ${code}: ${detail}`,
         );
         (e as Error & { rateLimited?: boolean }).rateLimited = rateLimited;
         return reject(e);
@@ -281,7 +311,7 @@ async function classifyViaCli(cluster: Cluster, evidence: Evidence): Promise<Cla
     '"adRisk":"<none 또는 low 또는 high 중 정확히 하나>","adRiskReason":"근거 또는 없음",' +
     '"reason":"한 문장"}\n```';
   const raw = await runClaudeCli(prompt, CLASSIFY_SYSTEM);
-  return ClassifySchema.parse(extractJson(raw));
+  return normalizeClassification(ClassifySchema.parse(extractJson(raw)));
 }
 
 /**
@@ -393,9 +423,23 @@ export async function writePost(
     console.warn(`  ! 필수 섹션 누락(${missing.join(', ')}) → 재작성 요청`);
     const retried = await write(retryNote(missing));
     const stillMissing = missingSections(retried.body);
-    if (stillMissing.length < missing.length) draft = retried;
-    if (stillMissing.length > 0) {
-      console.warn(`  ! 재작성 후에도 누락: ${stillMissing.join(', ')} (그대로 발행)`);
+
+    /**
+     * 같은 개수여도 재시도본을 쓴다.
+     *
+     * 재시도본은 "이 섹션이 빠졌다"는 지시(retryNote)를 받고 다시 쓴 글이라,
+     * 하나를 채우고 다른 하나를 놓쳐 개수가 같아지는 경우가 있다. `<` 로만 비교하면
+     * 그런 결과를 통째로 버리고 아무 지시 없이 쓴 원본을 발행하게 된다.
+     */
+    const useRetry = stillMissing.length <= missing.length;
+    if (useRetry) draft = retried;
+
+    // 실제로 발행하는 쪽의 누락을 알린다.
+    // 예전에는 재시도본을 버렸을 때도 재시도본의 누락 목록을 찍어서,
+    // CI 로그만 보면 엉뚱한 원고 상태를 붙잡고 프롬프트를 고치게 됐다.
+    const publishedMissing = useRetry ? stillMissing : missing;
+    if (publishedMissing.length > 0) {
+      console.warn(`  ! 재작성 후에도 누락: ${publishedMissing.join(', ')} (그대로 발행)`);
     }
   }
 

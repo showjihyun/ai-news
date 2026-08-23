@@ -1,6 +1,6 @@
 import type { Cluster, RawItem } from './types.js';
 import { SOURCE_WEIGHT, HOT_KEYWORDS, PENALTY_KEYWORDS, TUNING } from './config.js';
-import { canonicalUrl, domainOf, titleTokens, isSameStory, hoursAgo, keywordMatcher, isDiscussionUrl } from './util.js';
+import { canonicalUrl, domainOf, titleTokens, isSameStory, hoursAgo, keywordMatcher, isNonOriginalUrl } from './util.js';
 
 // 매처는 정규식 컴파일이 들어가므로 모듈 로드 시 한 번만 만든다.
 const HOT_MATCHERS = Object.keys(HOT_KEYWORDS).map(
@@ -85,15 +85,35 @@ function finalize(cluster: Cluster): Cluster {
     items.reduce((a, b) => (b.score > a.score ? b : a));
 
   // 외부 기사 링크를 우선한다. 토론 링크(레딧/HN/X/긱뉴스)는 원문이 아니라서 후순위.
-  // 판정은 util.isDiscussionUrl 하나로 통일한다 — 여기 목록이 extract 보다 좁으면
+  // 판정은 util.isNonOriginalUrl 하나로 통일한다 — 여기 목록이 extract 보다 좁으면
   // extract 가 본문 추출을 거부하는 URL 이 대표 링크로 뽑혀 본문 없는 기사가 나간다.
-  const article = items.find((i) => !isDiscussionUrl(i.url)) ?? best;
+  const article = items.find((i) => !isNonOriginalUrl(i.url)) ?? best;
 
   cluster.title = best.title;
   cluster.primaryUrl = article.url;
-  const times = items.map((i) => new Date(i.createdAt).getTime());
-  cluster.firstSeenAt = new Date(Math.min(...times)).toISOString();
-  cluster.lastActivityAt = new Date(Math.max(...times)).toISOString();
+  /**
+   * 읽을 수 없는 시각은 걸러 낸다.
+   *
+   * `new Date(NaN).toISOString()` 은 RangeError 를 던진다. finalize 는 모든 try/catch
+   * 바깥에서 도는지라(collect 의 allSettled 는 수집기만 감싼다), 소스 하나가 이상한
+   * 타임스탬프를 주면 그 한 건 때문에 수집 전체가 죽고 기사가 0건이 된다.
+   * rss/naver 는 자체적으로 걸러 내지만 hackernews·x·facebook 은 제공자 문자열을 그대로 넘긴다.
+   */
+  const times = items
+    .map((i) => new Date(i.createdAt).getTime())
+    .filter((t) => Number.isFinite(t));
+
+  if (times.length) {
+    cluster.firstSeenAt = new Date(Math.min(...times)).toISOString();
+    cluster.lastActivityAt = new Date(Math.max(...times)).toISOString();
+  } else {
+    // 하나도 못 읽었으면 '아주 오래된 것'으로 둔다. 지금 시각으로 채우면
+    // 정체 불명의 항목이 신선도 만점을 받아 진짜 속보를 밀어낸다.
+    const epoch = new Date(0).toISOString();
+    cluster.firstSeenAt = epoch;
+    cluster.lastActivityAt = epoch;
+    console.warn(`  ! 시각을 읽을 수 없는 클러스터: ${cluster.title.slice(0, 50)}`);
+  }
   cluster.origins = [...new Set(items.map((i) => i.origin))];
 
   // ── 화제성 점수 ────────────────────────────────────────────────

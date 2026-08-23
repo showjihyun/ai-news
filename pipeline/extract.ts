@@ -1,4 +1,4 @@
-import { fetchText, stripHtml, domainOf, mapLimit, isDiscussionUrl } from './util.js';
+import { fetchText, stripHtml, domainOf, mapLimit, isNonOriginalUrl } from './util.js';
 import type { Cluster } from './types.js';
 import { fetchHnTopComments } from './sources/hackernews.js';
 import { fetchRedditTopComments } from './sources/reddit.js';
@@ -58,7 +58,7 @@ export async function gatherEvidence(cluster: Cluster): Promise<Evidence> {
   const articleUrls: { url: string; origin: string }[] = [];
 
   for (const url of [cluster.primaryUrl, ...cluster.items.map((i) => i.url)]) {
-    if (isDiscussionUrl(url)) continue; // 토론 페이지는 원문이 아니다
+    if (isNonOriginalUrl(url)) continue; // 토론 페이지는 원문이 아니다
     const host = domainOf(url);
     if (!host || seenHosts.has(host)) continue;
     seenHosts.add(host);

@@ -1,5 +1,5 @@
 import type { RawItem } from '../types.js';
-import { fetchJson, isAiRelated, detectLang, canonicalUrl } from '../util.js';
+import { fetchJson, isAiRelated, detectLang, canonicalUrl, hoursAgo } from '../util.js';
 
 interface AlgoliaHit {
   objectID: string;
@@ -42,6 +42,21 @@ export async function fetchHackerNews(sinceHours: number): Promise<RawItem[]> {
       if (!title || seen.has(hit.objectID)) continue;
       if (!isAiRelated(title)) continue;
 
+      /**
+       * 시간 창을 여기서도 확인한다.
+       *
+       * 두 번째 엔드포인트(search_by_date)는 numericFilters 로 걸러 주지만,
+       * 첫 번째 front_page 검색에는 시간 조건이 없다. 며칠째 프런트페이지에 남아 있는
+       * 글이 그대로 들어오는데, rankClusters 는 lastActivityAt(최댓값)만 보므로
+       * 오래된 항목이 신선한 클러스터에 붙으면 걸러지지 않는다. 그러면 이미 식은 토론의
+       * 점수·댓글 수가 engagement 에 더해지고 소스 다양성까지 올려 화제성을 부풀린다.
+       *
+       * 읽을 수 없는 시각도 여기서 버린다 — 그대로 두면 finalize 에서 RangeError 가 난다.
+       */
+      const created = new Date(hit.created_at);
+      if (Number.isNaN(created.getTime())) continue;
+      if (hoursAgo(created.toISOString()) > sinceHours) continue;
+
       const permalink = `https://news.ycombinator.com/item?id=${hit.objectID}`;
       const url = hit.url || hit.story_url || permalink;
       seen.add(hit.objectID);
@@ -52,7 +67,7 @@ export async function fetchHackerNews(sinceHours: number): Promise<RawItem[]> {
         title: title.trim(),
         url: canonicalUrl(url),
         permalink,
-        createdAt: hit.created_at,
+        createdAt: created.toISOString(),
         score: hit.points ?? 0,
         commentCount: hit.num_comments ?? 0,
         lang: detectLang(title),

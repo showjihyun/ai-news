@@ -21,10 +21,17 @@ import { measureHuman, humanSummary, humanIssues } from './humanize.js';
 
 const POSTS_DIR = path.join(process.cwd(), 'content', 'posts');
 
+/**
+ * 평가 결과 스키마.
+ *
+ * ⚠ writer.ts 의 ClassifySchema 와 같은 이유로 `.transform()` 을 쓰면 안 된다.
+ * zodOutputFormat 이 JSON Schema 로 못 바꿔 던지고, API 백엔드 평가가 통째로 실패한다.
+ * 1~5 범위 보정은 파싱한 뒤 clampScores 에서 한다.
+ */
 const ScoreSchema = z.object({
   scores: z.object(
     Object.fromEntries(
-      RUBRIC_KEYS.map((k) => [k, z.coerce.number().transform((n) => Math.max(1, Math.min(5, n)))]),
+      RUBRIC_KEYS.map((k) => [k, z.coerce.number()]),
     ) as Record<string, z.ZodType<number>>,
   ),
   notes: z.object(
@@ -180,7 +187,21 @@ async function judgeViaApi(system: string, prompt: string) {
     messages: [{ role: 'user', content: prompt }],
   });
   if (!response.parsed_output) throw new Error('평가 파싱 실패');
-  return response.parsed_output as z.infer<typeof ScoreSchema>;
+  const parsed = response.parsed_output as z.infer<typeof ScoreSchema>;
+  return { ...parsed, scores: clampScores(parsed.scores) };
+}
+
+/**
+ * 1~5 밖의 점수를 잘라 낸다. 스키마에서 못 하는 이유는 ScoreSchema 주석 참고.
+ * 숫자가 아니면 기본값 3 — 모델이 항목을 빠뜨렸다고 최하점을 주면 개정 루프가 헛돈다.
+ */
+function clampScores(scores: Record<string, number>): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const k of RUBRIC_KEYS) {
+    const n = scores[k];
+    out[k] = Number.isFinite(n) ? Math.max(1, Math.min(5, n)) : 3;
+  }
+  return out;
 }
 
 async function judgeViaCli(system: string, prompt: string) {

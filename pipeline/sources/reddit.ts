@@ -85,7 +85,12 @@ async function fetchSubViaRss(sub: string, sinceHours: number): Promise<RawItem[
     const id = entry.match(/<id>([\s\S]*?)<\/id>/)?.[1] ?? '';
     if (!title || !permalink || !published) continue;
 
-    const createdAt = new Date(published).toISOString();
+    // 읽을 수 없는 시각이면 이 항목만 건너뛴다.
+    // 그냥 toISOString() 을 부르면 RangeError 가 나고, 이 함수 전체가 죽어
+    // 그 실행의 레딧 소스가 통째로 사라진다.
+    const publishedAt = new Date(published);
+    if (Number.isNaN(publishedAt.getTime())) continue;
+    const createdAt = publishedAt.toISOString();
     if (hoursAgo(createdAt) > sinceHours) continue;
 
     // 본문 HTML 안의 [link] 앵커가 외부 원문 주소다.

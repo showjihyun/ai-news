@@ -26,6 +26,57 @@ export interface ArchiveEntry {
  * 게다가 이건 글이 쌓일수록 강해진다. 25건일 때보다 200건일 때 훨씬 잘 걸린다.
  * 내부 링크가 늘어 체류 시간과 SEO 에도 같이 도움이 된다.
  */
+interface CorpusPost {
+  file: string;
+  title: string;
+  oneLiner: string;
+  category: string;
+  tags: string[];
+  iso: string;
+  postTokens: Set<string>;
+}
+
+/**
+ * 발행된 글 목록을 한 번만 읽어 둔다.
+ *
+ * relatedArchive 는 기사를 쓸 때마다(=한 실행에 여러 번) 불린다. 매번 content/posts 를
+ * 통째로 읽고 YAML 을 파싱하고 제목을 다시 토큰화하면, 4건을 쓰는 실행에서 같은 일을
+ * 네 번 한다. 이 모듈의 장점이 "글이 쌓일수록 강해진다"는 것인데 바로 그때 비용이 커진다.
+ * 파일은 이 프로세스 안에서 publishPost 가 추가하므로, 새 글이 생기면 캐시를 비운다.
+ */
+let corpus: CorpusPost[] | null = null;
+
+export function invalidateArchiveCache() {
+  corpus = null;
+}
+
+function loadCorpus(): CorpusPost[] {
+  if (corpus) return corpus;
+
+  corpus = fs
+    .readdirSync(POSTS_DIR)
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      const { data } = matter(fs.readFileSync(path.join(POSTS_DIR, file), 'utf8'));
+      const title = String(data.title ?? '');
+      const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+      const rawDate = data.date;
+      return {
+        file,
+        title,
+        oneLiner: String(data.oneLiner ?? data.description ?? ''),
+        category: String(data.category ?? ''),
+        tags,
+        iso: rawDate instanceof Date ? rawDate.toISOString() : String(rawDate ?? ''),
+        // 제목 토큰 유사도 + 태그 일치. 태그는 LLM 이 주제로 고른 것이라 신호가 정확하다.
+        postTokens: titleTokens(`${title} ${tags.join(' ')}`),
+      };
+    })
+    .filter((p) => p.category !== '데일리'); // 브리핑은 참조 대상이 아니다
+
+  return corpus;
+}
+
 export function relatedArchive(cluster: Cluster, limit = 3): ArchiveEntry[] {
   if (!fs.existsSync(POSTS_DIR)) return [];
 
@@ -37,28 +88,19 @@ export function relatedArchive(cluster: Cluster, limit = 3): ArchiveEntry[] {
     ...cluster.items.slice(0, 5).map((i) => titleTokens(i.title)),
   ];
   const allTokens = new Set(candidateTokenSets.flatMap((s) => [...s]));
+  // 이 값은 cluster 에만 의존한다. 루프 안에서 만들면 글 개수만큼 문자열을 다시 잇는다.
+  const lowerTitles = [cluster.title, ...cluster.items.map((i) => i.title)]
+    .join(' ')
+    .toLowerCase();
   const now = Date.now();
 
   const scored: { entry: ArchiveEntry; score: number }[] = [];
 
-  for (const file of fs.readdirSync(POSTS_DIR)) {
-    if (!file.endsWith('.md')) continue;
-    const { data } = matter(fs.readFileSync(path.join(POSTS_DIR, file), 'utf8'));
-    if (String(data.category ?? '') === '데일리') continue; // 브리핑은 참조 대상이 아니다
-
-    const title = String(data.title ?? '');
-    const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    const rawDate = data.date;
-    const iso = rawDate instanceof Date ? rawDate.toISOString() : String(rawDate ?? '');
+  for (const post of loadCorpus()) {
+    const { file, title, tags, iso, postTokens } = post;
     const daysAgo = iso ? (now - new Date(iso).getTime()) / 86_400_000 : 999;
-
-    // 제목 토큰 유사도 + 태그 일치. 태그는 LLM 이 주제로 고른 것이라 신호가 정확하다.
-    const postTokens = titleTokens(`${title} ${tags.join(' ')}`);
     const titleSim = Math.max(...candidateTokenSets.map((set) => jaccard(set, postTokens)));
 
-    const lowerTitles = [cluster.title, ...cluster.items.map((i) => i.title)]
-      .join(' ')
-      .toLowerCase();
     const tagHits = tags.filter(
       (t) => allTokens.has(t.toLowerCase()) || lowerTitles.includes(t.toLowerCase()),
     ).length;
@@ -70,9 +112,9 @@ export function relatedArchive(cluster: Cluster, limit = 3): ArchiveEntry[] {
       entry: {
         slug: file.replace(/\.md$/, ''),
         title,
-        oneLiner: String(data.oneLiner ?? data.description ?? ''),
+        oneLiner: post.oneLiner,
         date: iso,
-        category: String(data.category ?? ''),
+        category: post.category,
         tags,
         daysAgo: Math.round(daysAgo),
       },

@@ -3,6 +3,7 @@ import path from 'node:path';
 import type { Cluster, DraftPost } from './types.js';
 import { slugify, canonicalUrl, seoulDateStamp, yamlEscape } from './util.js';
 import { markPublished } from './state.js';
+import { invalidateArchiveCache } from './archive.js';
 
 const POSTS_DIR = path.join(process.cwd(), 'content', 'posts');
 const EVIDENCE_DIR = path.join(process.cwd(), 'data', 'evidence');
@@ -114,6 +115,9 @@ export function publishPost(
   fs.writeFileSync(path.join(POSTS_DIR, `${slug}.md`), frontmatter + draft.body.trim() + '\n', 'utf8');
 
   if (evidence) saveEvidence(slug, cluster, evidence);
+
+  // 방금 글이 하나 늘었다. 관련 아카이브 캐시를 비워 다음 기사에서 이 글도 후보가 되게 한다.
+  invalidateArchiveCache();
 
   markPublished({
     slug,

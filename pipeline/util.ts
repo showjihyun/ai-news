@@ -81,7 +81,20 @@ export function fetchText(url: string, init: RequestInit = {}, timeoutMs = 15000
   return fetchWithBody(url, init, timeoutMs, (res) => res.text());
 }
 
-const TRACKING_PARAMS = /^(utm_|fbclid|gclid|ref|ref_src|ref_url|igshid|mc_cid|mc_eid|s|t)$/i;
+/**
+ * 없애도 되는 추적용 쿼리 파라미터.
+ *
+ * `utm_` 는 접두사로 봐야 한다. `^(utm_|...)$` 로 두면 정확히 "utm_" 이라는 이름만
+ * 걸리고 정작 utm_source/utm_medium/utm_campaign 은 그대로 남는다. 그러면 같은 기사가
+ * 한 피드에서는 UTM 을 달고, 다른 피드에서는 깨끗하게 들어와 서로 다른 URL 로 취급되어
+ * 중복 발행 방어선(cluster 의 sameUrl, state 의 urlSet)이 그대로 뚫린다.
+ *
+ * 반대로 `s` 와 `t` 는 빼야 한다. 너무 흔한 이름이라 유튜브 `?t=1200`(재생 위치)이나
+ * 워드프레스 `?s=`(검색어) 처럼 의미 있는 값까지 지워 버린다. 그 망가진 URL 이
+ * 기사 하단 출처 링크와 JSON-LD citation 에 그대로 실려 독자가 클릭하게 된다.
+ */
+const TRACKING_PARAMS =
+  /^(utm_[a-z_]*|fbclid|gclid|igshid|mc_cid|mc_eid|msclkid|yclid|ref|ref_src|ref_url)$/i;
 
 /** 같은 기사를 가리키는 URL 을 한 형태로 모은다. 중복 발행 방지의 1차 방어선. */
 export function canonicalUrl(raw: string): string {
@@ -103,18 +116,23 @@ export function canonicalUrl(raw: string): string {
 }
 
 /**
- * 토론 페이지 호스트. 이 URL 들은 "원문"이 아니라 반응이 모이는 곳이라,
- * 대표 링크로 골라서도 안 되고 본문 추출 대상이어서도 안 된다.
+ * "원문이 아닌" 링크들. 대표 링크로 골라서도 안 되고 본문 추출 대상이어서도 안 된다.
+ *
+ * 두 종류가 있다.
+ *   · 토론 페이지 — 레딧·HN·X·긱뉴스. 원문이 아니라 반응이 모이는 곳이다.
+ *   · 뉴스 수집기 — news.google.com/rss/articles/... 는 실제 기사가 아니라
+ *     자바스크립트 중간 페이지다. 받아 봐야 헤드라인 목록만 나온다(실측 161~281자).
+ *     그 상태로 기사를 쓰면 제목만 보고 쓴 글이 된다.
  *
  * 한 곳에서만 정의한다. 예전에 cluster.ts 가 이보다 좁은 목록을 따로 갖고 있어서
- * twitter.com 글이 primaryUrl 로 뽑혔고, extract 는 그 URL 을 토론 페이지로 보고
- * 건너뛰어 본문이 빈 채로 기사가 발행된 적이 있다.
+ * twitter.com 글이 primaryUrl 로 뽑혔고, extract 는 그 URL 을 건너뛰어
+ * 본문이 빈 채로 기사가 발행된 적이 있다.
  */
-export const DISCUSSION_HOSTS =
-  /reddit\.com|news\.ycombinator\.com|x\.com|twitter\.com|news\.hada\.io/;
+export const NON_ORIGINAL_HOSTS =
+  /reddit\.com|news\.ycombinator\.com|x\.com|twitter\.com|news\.hada\.io|news\.google\.com/;
 
-export function isDiscussionUrl(url: string): boolean {
-  return DISCUSSION_HOSTS.test(url || '');
+export function isNonOriginalUrl(url: string): boolean {
+  return NON_ORIGINAL_HOSTS.test(url || '');
 }
 
 export function domainOf(raw: string): string {
@@ -350,12 +368,31 @@ export async function mapLimit<T, R>(
 ): Promise<R[]> {
   const results: R[] = new Array(items.length);
   let cursor = 0;
+  // 객체에 담는다. 지역 변수로 두면 TypeScript 가 클로저 안의 대입을 못 보고
+  // 아래에서 타입을 never 로 좁혀 버린다.
+  const state: { failed: boolean; err: unknown } = { failed: false, err: null };
+
   const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
     while (cursor < items.length) {
+      // 누가 이미 실패했으면 새 작업을 집지 않는다.
+      // 사용량 한도로 멈추는 경우, 남은 항목을 계속 처리해 봐야 전부 같은 이유로 실패한다.
+      if (state.failed) return;
       const i = cursor++;
-      results[i] = await fn(items[i], i);
+      try {
+        results[i] = await fn(items[i], i);
+      } catch (err) {
+        if (!state.failed) { state.failed = true; state.err = err; }
+        return;
+      }
     }
   });
+
+  // 반드시 전원이 끝난 뒤에 던진다.
+  // 예전에는 Promise.all 이 첫 실패로 곧장 reject 했는데, 그때 다른 워커들은 아직
+  // 돌고 있었다. 호출부는 "여기까지 저장합니다" 하며 결과를 저장했지만 뒤늦게 끝난
+  // 워커의 결과는 이미 지나간 저장 루프를 타지 못했다 — 파일은 고쳐졌는데
+  // 기록은 옛 값 그대로라, 다음 실행이 같은 기사를 또 손봤다.
   await Promise.all(workers);
+  if (state.failed) throw state.err;
   return results;
 }

@@ -127,7 +127,16 @@ export function buildDigest(snapshot: TrendSnapshot, when = new Date()): string 
     `title: ${yamlEscape(title)}`,
     `description: ${yamlEscape(`${dateLabel} AI 뉴스 총정리. 오늘 해외 커뮤니티에서 가장 화제가 된 AI 소식 ${todays.length}건을 한국어로 정리했습니다.`)}`,
     `oneLiner: ${yamlEscape(`오늘 AI 업계에서 벌어진 일 ${todays.length}가지, 5분이면 따라잡습니다`)}`,
-    `date: ${yamlEscape(new Date().toISOString())}`,   // 따옴표 필수 — publish.ts 주석 참고
+    /**
+     * 그날의 시각을 쓴다. new Date() 를 쓰면 안 된다.
+     *
+     * 이 파일은 30분마다 덮어써진다. 매번 지금 시각을 찍으면 브리핑이 언제나
+     * '가장 최근 글'이 되어 홈 첫 카드를 차지하고, 사이트맵의 lastmod 와 RSS pubDate 도
+     * 매번 갱신된다. 방금 낸 진짜 기사는 아래로 밀리고, 구독자는 같은 브리핑을
+     * 하루에 최대 48번 새 글로 받는다. 또 --when 으로 과거 날짜를 만들면
+     * 슬러그의 날짜와 frontmatter 날짜가 어긋난다.
+     */
+    `date: ${yamlEscape(when.toISOString())}`,   // 따옴표 필수 — publish.ts 주석 참고
     'category: "데일리"',
     'desk: "편집국"',
     `tags: ["AI 뉴스", "일간브리핑", "AI 총정리"]`,
