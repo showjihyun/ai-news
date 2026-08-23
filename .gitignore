@@ -1,0 +1,27 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+data/cache/
+.playwright-mcp/
+data/.tmp/
+*.log
+
+# data/evidence/ 는 일부러 커밋한다.
+#
+# 근거(원문 본문·반응)는 평가와 개정의 유일한 정확한 기반이다. 이걸 무시하면
+# CI 가 새로 체크아웃할 때마다 근거가 사라지고, evaluate/improve 가 "자료 없음"
+# 재수집 경로(evidenceExact: false)로 떨어진다 — 허위 인용 판정이 나던 그 모드다.
+# 기사당 6KB 남짓이라 저장소가 커지는 부담보다 정확도가 훨씬 중요하다.
+
+# data/trending.json 은 커밋하지 않는다.
+#
+# 수집할 때마다 통째로 갈아엎히는 임시 스냅샷(약 500KB)이고, collect 를 다시 돌리면
+# 언제든 재생성된다. CI 가 30분마다 도는데 이걸 추적하면 하루 48번 500KB 씩 쌓여
+# 저장소만 부풀고 diff 도 읽을 수 없게 된다. reviews/published/evidence 와 달리
+# 이건 되살릴 수 없는 상태가 아니다.
+data/trending.json

@@ -1,0 +1,17 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] &gt; I don&#x27;t even try to steer it away from that with harness, because it doesn&#x27;t work and just ends up agonizing over whether it should write some comment. Three paragraphs waffling on that on verbose output If I give it the specific instruction to &quot;elide all revisions, corrections, and past mistakes&quot; it usually works. You can also have Sonnet do a cleanup writing&#x2F;style p",
+    "[Hacker News] We are in new territory and not everyone gets it. I am not a developer although I have written production code but that&#x27;s not what I am talking about. I know for a fact that I can do a task in a week. It may take 12 or 40 hours but it&#x27;ll be done in a week. Now with AI? I can get that task done in a day. Anywhere from 3-12 hours.",
+    "[Hacker News] God I&#x27;m not an ai booster by any means but I&#x27;m so sick of this argument. If the maths proofs that have been put out recently are just &#x27;just combining things that have existed&#x27; then that goes for everything and the term is meaningless. If LLMs are stochastic parrots then so are we."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+      "url": "https://news.ycombinator.com/item?id=49401549",
+      "score": 163,
+      "commentCount": 153
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "articleText": "/debuzz 는 Claude의 장황하고 극적인 답변을 Antigravity CLI 로 다시 작성해 평범한 영어로 바꾸는 Claude Code 스킬임 Claude가 변환 결과를 다시 다듬으면 기존 말투가 되살아날 수 있어, Antigravity의 출력을 후처리 없이 그대로 표시 함",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "GeekNews",
+      "title": "Claudette - Claude의 BuzzFeed식 말투를 평범한 영어로 바꾸는 도구",
+      "url": "https://news.hada.io/topic?id=32767",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

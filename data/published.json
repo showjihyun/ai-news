@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "slug": "2026-08-23-m2-울트라에-올라간-딥시크-v4-플래시-검증은-아직",
+      "title": "DeepSeek V4 Flash on an M2 Ultra: repacked to 141 GiB losslessly, smaller than the Q4 GGUF, at 25.8 t/s (42 t/s peak)",
+      "urls": [
+        "https://reddit.com/r/LocalLLaMA/comments/1vw4qzf/deepseek_v4_flash_on_an_m2_ultra_repacked_to_141"
+      ],
+      "publishedAt": "2026-08-23T11:53:04.584Z"
+    },
+    {
+      "slug": "2026-08-23-앤스로픽-구글-칩-인재-영입-칩-사는-쪽에서-벗어나나",
+      "title": "Anthropic Taps Google Chip Veteran as Part of Push Into Hardware - Bloomberg.com",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTEtlVWN3QmU2bFF2QzRyZDBJTUliblExZnM3d1JqcjBLN1V3TDI3MXFnaFdfV1Z5Yl9xRDJ4SkViQVhabEpVQVB4a2tuQ2xDV1doS0ZwWDBBVTJpcXJoS1c2Sk1WQ3p2aDNKYklaYjJpbTZPSENmSzBTQTVodndSWDBWUkJPWml6djBXNWJIazI5dkUtNENLQXZmM0puMzlidExXZnp4aG43WXcwZGZIc3NOR1A0Zw?oc=5",
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVlNpZG16STVIU0d0RkFPNVlxTFFicEs0eDgwcHNaUlE2dTNmcUtkcENFdW1OMF9lZ1hFU2UtOWVWR3JfblRyNVFYZXdNajBUVk5XQjVaaWEwR2FDYWF2eHczUUJjOFJNZ2xPam1PUFNZaWF3dHFtTV8wOUY4cVJaVWRIYTJfbE9BVXI5cW4wd20yU1dGTElDLW5JNnZXV0VTWjFjeTJPUG5Kb05YclBhNGZjM3NiUdIBuwFBVV95cUxQUHhNZl9qMXRXZ3BJRDV0aUdiQlRNQUJSb0dyNi0yaUhXb0ZkZHpoTWlIVl90YlpJajVnQnctQ3ZGNkt5N0NYOVVBY3V2RjN4UWJLUnhuUV9JSWtwNTdHSVliOG9uZEZPalB6OGptX0JIWjBXT1M1OHl4REpYNWRUSHNkQURHTmZtOGtlcVJxMXF5M1RZY3Z3dUtUVWVqbUVtN2hHRFV1UnBybVp4U3hkTVNJSV9Bd3BqekNV?oc=5"
+      ],
+      "publishedAt": "2026-08-23T11:50:27.319Z"
+    },
+    {
+      "slug": "2026-08-23-ai-거부할-권리는-없다는-통보에-사표-낸-직원",
+      "title": "'AI refuser' quit her dream job, and hopes others follow",
+      "urls": [
+        "https://smh.com.au/technology/this-ai-refuser-quit-her-dream-job-and-hopes-others-follow-20260818-p60pdu.html"
+      ],
+      "publishedAt": "2026-08-23T11:47:30.433Z"
+    },
+    {
+      "slug": "2026-08-23-로컬-ai가-멍청해-보이는-진짜-이유-설정부터-확인하세요",
+      "title": "Why your local LLM feels dumber than it is",
+      "urls": [
+        "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917"
+      ],
+      "publishedAt": "2026-08-23T01:43:25.885Z"
+    },
+    {
+      "slug": "2026-08-23-클로드-코드-성능-몰래-낮췄나-논쟁-확인된-것과-아닌-것",
+      "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+      "urls": [
+        "https://twitter.com/argofowl/status/2091150597374537729"
+      ],
+      "publishedAt": "2026-08-23T01:40:14.418Z"
+    },
+    {
+      "slug": "2026-08-23-클로드-코드-일부-이용자만-덜-따져보게-바뀐-정황",
+      "title": "Anthropic, Claude Code의 추론 노력 수준 축소를 A/B 테스트하는 것으로 보임",
+      "urls": [
+        "https://news.hada.io/topic?id=32778"
+      ],
+      "publishedAt": "2026-08-23T01:37:51.746Z"
+    },
+    {
+      "slug": "2026-08-23-앤스로픽-상장-서류에-ai-반감이-위험-요인으로-오른다",
+      "title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
+      "urls": [
+        "https://cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeXdwbzNJcERVMTFvY2JtSkNBMUVaWGpSNlRqYXM1MndRT0lFOWw0NFpURjU4aVFZeTZvdjNRRWs0VWNaWXhzTXQ1QlJ4eUEwR2FXdl9Ca2xIQzVwQmgteVVLRkZneTlHMUt1dXJWNGk3UWladzNVQWZRc3ZpRFlQR2xTbGZLdGlRZzF2RWRvTk5CcVJQM19ZZlA1U2tCN1lkRkHSAacBQVVfeXFMTXQtbkxtMGJVQ0lSUjgwcG1EUFZkb1pWRjY4czE4M3NlQ1RsVWtWOVBESjM2SllMby1jN2haVy1wMWYxR2FnSFpwOUhKT180bVpRTzlETERmYjVQdE1SYjBiYXc0VzRRQnVSUC10Z2lpc0FqZlJibF8waTdOSndRa091YXZwUkRSWnlxbEI3NTYyeW55a1NkZ2NGVTc4YUM3UHZtQ056aGM?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUW1ocHBhc2pweFQwVGJXTzdYUm1tcnNINUFRUkc1Y3AwWFRHeWZla1Ntd0FyZ0kyQUEzTC1WWUhWRmtLaG9nQXlzSFVjOF9CVlFuLTh5X1lIS1VFZFRyN3dxb0RzWnZNUjRkVVlXeEpOODhCY3JOWTdLNWh5aUVuWTJvaTF6WUo4Y1lhZ2Fn?oc=5"
+      ],
+      "publishedAt": "2026-08-23T01:35:48.844Z"
+    },
+    {
+      "slug": "2026-08-23-앤스로픽-상장설-네-매체-제목엔-금액도-날짜도-없다",
+      "title": "Anthropic IPO could break SpaceX record - Bangkok Post",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRTJDQmpBUEpxakwzOVpNb1AzVWswdl9kbEJwVGNib3VNWk9kbkVPWnltYl9nWUlHRm1wQWdISEljOGJscjN4RHIxYmRaUXJxM0pVMWRvbW1McXFuWXVueHFNYmJNSjF0cUtCMmZ4aWh5V0VHYW5Qa1NLUmo2RzN6dFB1TjVoODdVdkRHR00tOUdhZ19nNHc?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVUJQVnJyZ0RHb2J2b0dWRTV0VEF6VEhCb2xrdlpwX0FsRG5tVGcxV1MtNkE2YVJONmMybm1DYnJWSFdycWI5NHJBVkVTOTY0eDdmSlpUclFiLTE4RVpuWE5oaDQ4RW02QUdZVUJFcFFIVnpNb2luSjBaVnZJNmd3T1VhY3NuTlhsT0RHNkVuemFtTTQ1UmZTbU0tQkdFQnNpSVlSa095WlpZaGpL0gG_AUFVX3lxTE1neXZlZzJkS2diN25XeVdzRkd3SU4zZDRqcGhxLWZwc0hud19ZR2txVUFxZFdmTlF3V19haHFfV2FleVlpNzRRX2NPWmhZWTh4dFMtOVFoNGw0TmVwR1pmUnR2UDFOZUpPME1XZnZHNFJ0LVRNelFFdDZMYlpIbGRVOVh0anlkSDJpYzZDUkROTElDblgzUk9XTzFKOVJwVnVJSEdObkRyUmxLdHVaREVncmpJLXN5SjdRTkZqUGJF?oc=5",
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSjU3QUxSbUtsTFJGRFU2QUxWVTcxSGF0RW5fRzd3NWRESDltZWhKd0E1WDJqNmN0ZG45a0FfTnh1WUxFbUtPWlR4UmNLcVppTmljSS1ZZF9NdmlJY3lFWHJUbm5JbGNfTjlPQXdYbUo2RFNlRmlrVHNSY3J4d3VqTW9KUThZMEZBRUtYeDIzQnNUTWpQemJLblVaeFFDRWUwTTJnbmkxU0NGNVc2RldRZzJEU2ZXd1VldG5UY3RKYlV6VXdNb1E?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcnZnU3VpZ0tlOWV0NVVqZ3E2cVVrT3hKeThQV05lZVE1U3JtWUMzTGtfcXliM0ZYQVBVd3UydnFrRVd1aEtUMXd2Nko3dWxzcC1rZGpyV3FDZWluN0dZVEZhZUwyUWswQ3BEc3NZTVBwZV9aeU9zcjlFbFZfR0JEcmhQTTF4anlSd3FyMDM0dGhVMUl5cVl6S2FsVDZwWEFhel9qLV9yOVZrNVFidnUzWjhR0gG3AUFVX3lxTE5iLUJodnRuVmd0ZC1nYjVpRF9nTG5XT0hNZWs1Qk5QVHRsWXkwXzJzNXlBT2lvVi1tZzhmQVpFR0ROTWRuSHNzcDZSbTROQWF4blFtYThXMU1WbzJWWlZlazRYS0NfbGI5NzgxTXpHbU83UzFmSU1nNVJIMGhmMF9HMl9pd2lmQ2E3NHVRb0xfa001NnIwNlR5M3dqLVVGTFZaLXNTMEdCWkM3cVZDR0VGajNXYXc1Zw?oc=5"
+      ],
+      "publishedAt": "2026-08-22T15:34:32.002Z"
+    },
+    {
+      "slug": "2026-08-23-시급-12200달러-ai에-자기-일-가르치는-할리우드-창작자들",
+      "title": "Digging the grave of my skills: Hollywood creatives training AI to do their jobs",
+      "urls": [
+        "https://theguardian.com/technology/2026/aug/22/the-hollywood-creatives-training-ai-to-do-their-jobs"
+      ],
+      "publishedAt": "2026-08-22T15:32:26.652Z"
+    },
+    {
+      "slug": "2026-08-22-클로드-오퍼스-46-성적-요청-10건-전부-수용-보도-확인된-건-제목뿐",
+      "title": "Claude Opus 4.6 Accepts 10 out of 10 Sexual Content Requests in Testing - VOI.ID",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9NVnZnRGJDLUNKSzktcWc0VzF0QW5kZVVlT2F2b3V6aDJRMlhTeWhjanh1LVROZW9RdmE4czNqZVVUdkNzZE03NVZNWdIBQkFVX3lxTE5lQ1BaVU43TDBzbmRGTkpzdG52UElmWmh1bTZYU3BrZm5mcFhycWZsZGNqOXh1MTJqWnhKZE5NbDV6UQ?oc=5"
+      ],
+      "publishedAt": "2026-08-22T14:00:16.555Z"
+    },
+    {
+      "slug": "2026-08-22-claude-특유의-장황한-말투-걷어내는-도구-클로데트-등장",
+      "title": "Claudette - Claude의 BuzzFeed식 말투를 평범한 영어로 바꾸는 도구",
+      "urls": [
+        "https://news.hada.io/topic?id=32767"
+      ],
+      "publishedAt": "2026-08-22T13:57:14.383Z"
+    },
+    {
+      "slug": "2026-08-22-코덱스가-클로드-코드를-따라잡았다-확인된-건-제목뿐",
+      "title": "Has Codex Started to Strike Back Against Claude Code? Key AI Code Assistant Showdown - 36 Kr",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94d3d0S0RPMkstQzNXYlpoUHRFeTRvcTJoMVpJWTdncWdkbGtRakdWaDEzMXhDZmhIU2Z1a1BiQ0llRFZJWGdMM2VHZmI2bWpHR2ww?oc=5"
+      ],
+      "publishedAt": "2026-08-22T09:33:41.072Z"
+    },
+    {
+      "slug": "2026-08-22-ai가-쓴-글은-그냥-넘깁니다-한-개발자-글이-부른-논쟁",
+      "title": "나는 AI가 쓴 글을 자동으로 무시하기 시작했다",
+      "urls": [
+        "https://news.hada.io/topic?id=32760"
+      ],
+      "publishedAt": "2026-08-22T09:28:34.684Z"
+    },
+    {
+      "slug": "2026-08-22-딥시크가-눈을-달았다-다만-800800짜리-눈",
+      "title": "DeepSeek-v4-flash-vision-exp 비전 API",
+      "urls": [
+        "https://news.hada.io/topic?id=32741",
+        "https://twitter.com/deepseek_ai/status/2090730032574631962",
+        "https://i.redd.it/6cz55ojs4pkh1.jpeg"
+      ],
+      "publishedAt": "2026-08-22T08:51:11.449Z"
+    },
+    {
+      "slug": "2026-08-22-gpt-56-sol-값-20-인하-대신-조건이-붙었다",
+      "title": "GPT 5.6 Sol 20% price reduction",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+        "https://reuters.com/technology/openai-cuts-developer-pricing-frontier-gpt-56-sol-model-by-more-than-20-2026-08-21",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tMnFvZ3lkZl9GUWZFNkRtNkRoR1Zrdkh6ZGs0UWFlTFV1TUpJWFFtRkNySS1vU3EzOUpNWEhYWlR5Q2ptRTJvODhIQTg3OXRZR0tsUmhsUE1BNnFteHFPVlRxZ2ozdjJrcUE1dHBoeXJObmxkSnc?oc=5"
+      ],
+      "publishedAt": "2026-08-22T08:49:01.362Z"
+    },
+    {
+      "slug": "2026-08-21-ai가-책을-해체한다-안나스-아카이브의-희귀본-스캔-호소",
+      "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+      "urls": [
+        "https://annas-archive.pk/blog/physical-destruction.html",
+        "https://annas-archive.gl/blog/physical-destruction.html"
+      ],
+      "publishedAt": "2026-08-21T16:20:03.288Z"
+    },
+    {
+      "slug": "2026-08-21-엔비디아-avo-arc-agi-3서-100-단서는-공개셋",
+      "title": "Nvidia AVO scores 100% on the ARC-AGI-3 interactive reasoning benchmark",
+      "urls": [
+        "https://twitter.com/NVIDIAAI/status/2090786258981466231"
+      ],
+      "publishedAt": "2026-08-21T16:16:42.787Z"
+    }
+  ]
+}

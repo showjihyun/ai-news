@@ -1,0 +1,34 @@
+{
+  "articleText": "[원문 — developers.openai.com]\nModels GPT-5.6 Sol Default Frontier model for complex professional work Frontier model for complex professional work Compare Try in Playground Reasoning Highest Speed Fast Price $4 • $20 Input • Output Input Text, image Output Text GPT-5.6 Sol is the frontier model in the GPT-5.6 family. It roughly corresponds to the unsuffixed model tier used in earlier GPT-5 families. The gpt-5.6 alias routes requests to GPT-5.6 Sol. Reasoning.effort supports: none, low, medium (default), high, xhigh, and max.\n\n1,050,000 context window 128,000 max output tokens Feb 16, 2026 knowledge cutoff Reasoning token support Pricing Pricing is based on the number of tokens used, or other metrics based on the model type. For tool-specific models, like search and computer use, there’s a fee per tool call. See details in the pricing page . Text tokens Per 1M tokens Input $4.00 Cached input $0.40 Output $20.00 Quick comparison Input Cached input Output GPT-5.5 $ 5.00 GPT-5.6 Sol $ 4.00 GPT-5.4 $ 2.50 GPT-5.6 Sol costs $4 per million input tokens and $20 per million output tokens, a 20% reduction in input pricing and a 33% reduction in output pricing. GPT-5.6 Sol’s promotional pricing is available at least through November 21, 2026.\n\nPrompts with >272K input tokens are priced at 2x input and 1.5x output for the full request.\n\nCache writes are billed at 1.25x the uncached input token rate.",
+  "reactions": [
+    "[Hacker News] They really need to start marketing a new series of models specifically for coding. Even if it&#x27;s the same model underneath, just call it something else and make it sound like some turbo coder that can run circles around claude and make it 50% cheaper for businesses. I don&#x27;t have any love for openai but I don&#x27;t want anthropic running away with it either, and it&#x27;s clear heavy AI ",
+    "[Hacker News] You are wrong and the margins are pretty great on API. Do you want to have a bet when they go public?",
+    "[Hacker News] My point is that it requires a lot of willful blindness to ignore how unprofitable they are, to believe that they are in any way in the position of sustainably lowering prices.",
+    "[Hacker News] This announcement wasn’t for subscriptions though so what’s your point?",
+    "[Hacker News] OpenAI bleeds money. They need to keep raising money like crazy because of that. Their margins are obviously not high, particularly on subscriptions",
+    "[Hacker News] The price war is on, as expected. This is the true China ev moment for llm wars"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT 5.6 Sol 20% price reduction",
+      "url": "https://news.ycombinator.com/item?id=49396590",
+      "score": -1,
+      "commentCount": -1
+    },
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI cuts developer pricing for frontier GPT-5.6 Sol model by more than 20%",
+      "url": "https://news.ycombinator.com/item?id=49395638",
+      "score": -1,
+      "commentCount": -1
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI Slashes GPT-5.6 Sol Developer Pricing by Over 20% to Counter Competition - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tMnFvZ3lkZl9GUWZFNkRtNkRoR1Zrdkh6ZGs0UWFlTFV1TUpJWFFtRkNySS1vU3EzOUpNWEhYWlR5Q2ptRTJvODhIQTg3OXRZR0tsUmhsUE1BNnFteHFPVlRxZ2ozdjJrcUE1dHBoeXJObmxkSnc?oc=5",
+      "score": -1,
+      "commentCount": -1
+    }
+  ]
+}

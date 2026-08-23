@@ -1,0 +1,13 @@
+{
+  "articleText": "서버 측 실험으로 Claude Code 2.1.236 이상 의 일부 Fable 5 세션에서 추론 노력 척도가 낮아져 사용자마다 경험이 달라질 수 있음 이전 Claude Code 버전과 Opus 5 는 대상에서 제외되며, 클라이언트 버전이 실험 등록 조건으로 쓰이는 것으로 파악됨 일부...",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "GeekNews",
+      "title": "Anthropic, Claude Code의 추론 노력 수준 축소를 A/B 테스트하는 것으로 보임",
+      "url": "https://news.hada.io/topic?id=32778",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

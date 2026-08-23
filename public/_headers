@@ -1,0 +1,14 @@
+# Cloudflare Pages 용 헤더 설정 (Vercel 은 vercel.json 을 씁니다).
+# 파일 해시가 붙는 정적 자산만 영구 캐시하고, 기사 HTML 은 짧게 잡습니다 —
+# 30분마다 새 글이 올라오는 사이트라 HTML 을 오래 캐시하면 속보가 늦게 보입니다.
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=600
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

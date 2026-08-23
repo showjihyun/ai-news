@@ -1,0 +1,12 @@
+# 줄바꿈을 저장소 안에서 LF 로 통일한다.
+#
+# 개발은 Windows(CRLF), CI 는 Linux(LF) 에서 돌기 때문에 이 파일이 없으면
+# 같은 내용인데도 전 파일이 수정된 것처럼 보이는 커밋이 생긴다.
+# 30분마다 자동 커밋하는 저장소에서 이건 치명적이다 — 기사 diff 가 묻힌다.
+* text=auto eol=lf
+
+# 아래는 바이너리로 취급해 변환하지 않는다.
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary
