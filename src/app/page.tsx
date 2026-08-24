@@ -4,11 +4,17 @@ import { PostCard } from '@/components/PostCard';
 import { AdSlot } from '@/components/AdSlot';
 import { site } from '@/lib/site';
 import { LiveTime } from '@/components/LiveTime';
+import { SourceSection } from '@/components/SourceSection';
+import { groupPosts, SOURCE_GROUPS } from '@/lib/sources';
 
 export default function HomePage() {
   const posts = getAllPosts();
   const categories = getCategories();
   const latest = posts[0];
+
+  // 소스별 묶음은 일간 브리핑을 뺀다. 브리핑은 그날 발행분을 재조합한 것이라
+  // 출처가 없고, 섞이면 "어디서 온 이야기인가"라는 축 자체가 흐려진다.
+  const grouped = groupPosts(posts.filter((p) => p.category !== '데일리'));
 
   return (
     <>
@@ -35,16 +41,26 @@ export default function HomePage() {
       ) : (
         <>
           <ul className="post-list">
-            {posts.slice(0, 12).map((post, i) => (
+            {posts.slice(0, 6).map((post, i) => (
               <PostCard key={post.slug} post={post} lead={i === 0} />
             ))}
           </ul>
 
-          {posts.length > 12 && (
+          {/* 어디서 온 이야기인지로 한 번 더 묶어 준다.
+              공식·매체 → Reddit → GeekNews 순. 앞의 두 개는 속보가 먼저 뜨는 곳이고
+              GeekNews 는 국내 독자에게 바로 닿는 곳이라 마지막에 둔다. */}
+          {SOURCE_GROUPS.map((g) => (
+            <SourceSection key={g.key} group={g.key} posts={grouped[g.key]} />
+          ))}
+
+          {posts.length > 6 && (
             <>
               <AdSlot slot="bottom" />
+              <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
+                전체 기사
+              </h2>
               <ul className="post-list">
-                {posts.slice(12, 40).map((post) => (
+                {posts.slice(6, 40).map((post) => (
                   <PostCard key={post.slug} post={post} />
                 ))}
               </ul>

@@ -10,6 +10,9 @@ export interface PostSource {
   origin: string;
   title: string;
   url: string;
+  /** 발행 시점의 커뮤니티 반응. 예전 기사에는 없을 수 있어 옵셔널. */
+  score?: number;
+  comments?: number;
 }
 
 export interface Post {
@@ -80,6 +83,8 @@ function parse(fileName: string): Post {
           origin: String(s.origin ?? ''),
           title: String(s.title ?? ''),
           url: String(s.url ?? ''),
+          score: typeof s.score === 'number' ? s.score : undefined,
+          comments: typeof s.comments === 'number' ? s.comments : undefined,
         }))
       : [],
     body: content,

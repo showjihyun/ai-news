@@ -85,7 +85,16 @@ export function publishPost(
   // '가치 없는 콘텐츠'로 분류될 수 있고, 독자 신뢰에도 직결된다.
   const sources = cluster.items
     .slice(0, 8)
-    .map((i) => ({ origin: i.origin, title: i.title, url: i.permalink }));
+    // score·comments 도 함께 남긴다. 사이트에서 "커뮤니티에서 얼마나 뜨거웠나"를
+    // 근거로 보여 주는데(예: r/LocalLLaMA 320점·댓글 87), 이 값이 없으면
+    // 그 숫자를 다시 구할 방법이 없다 — 발행 시점의 반응이라 나중에 긁으면 달라진다.
+    .map((i) => ({
+      origin: i.origin,
+      title: i.title,
+      url: i.permalink,
+      score: i.score,
+      comments: i.commentCount,
+    }));
 
   const frontmatter = [
     '---',
@@ -107,6 +116,8 @@ export function publishPost(
       `  - origin: ${yamlEscape(s.origin)}`,
       `    title: ${yamlEscape(s.title)}`,
       `    url: ${yamlEscape(s.url)}`,
+      `    score: ${s.score}`,
+      `    comments: ${s.comments}`,
     ]),
     '---',
     '',
