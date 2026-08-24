@@ -1,5 +1,5 @@
 import type { RawItem } from '../types.js';
-import { REDDIT_SUBS } from '../config.js';
+import { REDDIT_SUBS, REDDIT_LISTINGS } from '../config.js';
 import {
   fetchJson, fetchText, isAiRelated, isHelpRequest, detectLang, canonicalUrl, hoursAgo, sleep, UA,
 } from '../util.js';
@@ -24,6 +24,7 @@ interface RedditChild {
     url_overridden_by_dest?: string;
     url: string;
     permalink: string;
+    subreddit: string;
     created_utc: number;
     score: number;
     num_comments: number;
@@ -36,8 +37,15 @@ interface RedditChild {
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
 /**
- * 앱 자격증명이 있으면 OAuth 로 붙는다. 공개 .json 엔드포인트는 클라우드 IP에서
- * 429/403 을 자주 뱉기 때문에, GitHub Actions 에서 돌릴 거면 키를 넣는 편이 안정적이다.
+ * 앱 자격증명이 있으면 OAuth 로 붙는다.
+ *
+ * ⚠ 다만 이 사이트에는 기본적으로 쓸 수 없다. Reddit 은 "광고로 수익을 내는 서비스"와
+ * "수익화된 웹사이트에 Reddit 콘텐츠를 게시하는 서비스"를 상업적 이용으로 규정하고,
+ * 무료 티어(100 QPM)는 비상업 용도로만 허용한다. 애드센스로 운영하는 이 사이트는
+ * 상업적 이용에 해당하므로 Reddit 승인과 유료 계약이 필요하다.
+ * (2025년 말부터 자체 등록도 닫혀 수동 승인 대기다.)
+ *
+ * 그래서 기본 경로는 공개 RSS 다. 코드는 남겨 두되, 승인을 받은 경우에만 키를 넣는다.
  */
 async function getToken(): Promise<string | null> {
   const id = process.env.REDDIT_CLIENT_ID;
@@ -71,14 +79,23 @@ async function getToken(): Promise<string | null> {
  * 이 시스템에서 레딧의 가장 큰 가치는 "이 뉴스가 레딧에도 떴다"는 교차 출처 신호이고
  * 그건 RSS 로도 온전히 살릴 수 있다. 점수는 보수적인 기저값으로 채운다.
  */
-async function fetchSubViaRss(sub: string, sinceHours: number): Promise<RawItem[]> {
-  const xml = await fetchText(`https://www.reddit.com/r/${sub}/hot/.rss?limit=40`, {
+async function fetchSubViaRss(
+  sub: string,
+  sinceHours: number,
+  sort = 'top',
+  query = 't=day&limit=25',
+): Promise<RawItem[]> {
+  const xml = await fetchText(`https://www.reddit.com/r/${sub}/${sort}/.rss?${query}`, {
     headers: { 'User-Agent': BROWSER_UA },
   });
   if (!xml) return [];
 
+  const entries = xml.split('<entry>').slice(1);
+
   const items: RawItem[] = [];
-  for (const entry of xml.split('<entry>').slice(1)) {
+  let rank = 0;
+  for (const entry of entries) {
+    rank++;
     const title = decodeEntities(entry.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '').trim();
     const permalink = entry.match(/<link href="([^"]+)"/)?.[1] ?? '';
     const published = entry.match(/<published>([\s\S]*?)<\/published>/)?.[1] ?? '';
@@ -117,7 +134,18 @@ async function fetchSubViaRss(sub: string, sinceHours: number): Promise<RawItem[
       url: canonicalUrl(outbound && !outbound.includes('/comments/') ? outbound : permalink),
       permalink,
       createdAt,
-      score: 15, // 실제 업보트를 알 수 없으므로 낮게 잡는다 — 과대평가보다 낫다.
+      /*
+        RSS 는 업보트·댓글 수를 주지 않는다. 대신 **순서**를 준다 —
+        /top 은 그날 표를 많이 받은 순으로 내려오므로 순위 자체가 점수의 대리 지표다.
+        예전에는 전부 15점 고정이라 레딧 글끼리 우열을 못 가렸고, 그 결과
+        화제성 순위에서 레딧발 기사가 뭉텅이로 같은 자리에 몰렸다.
+
+        1위 40점에서 시작해 순위마다 완만히 깎는다. 절대값은 실제 업보트와 무관하지만
+        (그건 알 수 없다) 같은 목록 안의 상대 순서는 정확히 보존된다.
+        상한을 40 으로 낮게 잡은 이유: 실제 점수를 아는 HN·GeekNews 항목을
+        추측값이 밀어내면 안 되기 때문이다.
+      */
+      score: Math.max(8, Math.round(40 / (1 + rank * 0.12))),
       commentCount: 0,
       lang: detectLang(title),
     });
@@ -125,58 +153,105 @@ async function fetchSubViaRss(sub: string, sinceHours: number): Promise<RawItem[
   return items;
 }
 
+/** 게시물 하나를 RawItem 으로. subreddit 은 응답 안에 들어 있다. */
+function toItem(p: RedditChild['data'], weight: number): RawItem | null {
+  if (p.stickied || p.over_18) return null;
+
+  const sub = p.subreddit || '';
+  // r/MachineLearning 은 AI 전용이 아니라 통계·수학 글도 올라온다. 거기만 키워드 필터.
+  if (sub === 'MachineLearning' && !isAiRelated(p.title)) return null;
+  if (isHelpRequest(p.title)) return null;
+
+  const permalink = `https://www.reddit.com${p.permalink}`;
+  const outbound = p.url_overridden_by_dest || p.url || permalink;
+
+  return {
+    source: 'reddit',
+    origin: `r/${sub}`,
+    id: `rd-${p.id}`,
+    title: p.title.trim(),
+    url: canonicalUrl(outbound.startsWith('/r/') ? permalink : outbound),
+    permalink,
+    createdAt: new Date(p.created_utc * 1000).toISOString(),
+    // 정렬별 가중을 점수에 반영한다. rising 은 아직 표가 적지만 먼저 잡는 값어치가 있다.
+    score: Math.round((p.score ?? 0) * weight),
+    commentCount: p.num_comments ?? 0,
+    excerpt: p.selftext ? p.selftext.slice(0, 600) : undefined,
+    lang: detectLang(p.title),
+  };
+}
+
+/**
+ * 레딧에서 AI 관련 베스트 글을 모은다.
+ *
+ * 서브레딧을 하나씩 도는 대신 멀티레딧(r/a+b+c)으로 한 번에 받는다.
+ * 예전에는 8개 서브를 개별 요청해서 실행마다 8회를 썼고, 그게 레이트리밋(429)의
+ * 주된 원인이었다. 멀티레딧이면 정렬 하나당 1회로 끝난다 — 8회 → 1회.
+ *
+ * 정렬은 세 가지를 함께 본다(top·hot·rising). 이유는 config.ts 의 REDDIT_LISTINGS 주석 참고.
+ * 같은 글이 여러 정렬에 걸리면 클러스터링에서 합쳐지고, 그만큼 확실한 신호로 취급된다.
+ */
 export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   const token = await getToken();
   const base = token ? 'https://oauth.reddit.com' : 'https://www.reddit.com';
   const headers: Record<string, string> = token ? { Authorization: `Bearer ${token}` } : {};
 
-  const items: RawItem[] = [];
-  let rssFallbacks = 0;
+  const multi = REDDIT_SUBS.join('+');
+  const byId = new Map<string, RawItem>();
+  let jsonOk = 0;
 
-  for (const sub of REDDIT_SUBS) {
+  for (const listing of REDDIT_LISTINGS) {
     const data = await fetchJson<{ data: { children: RedditChild[] } }>(
-      `${base}/r/${sub}/hot.json?limit=40&raw_json=1`,
+      `${base}/r/${multi}/${listing.sort}.json?${listing.query}&raw_json=1`,
       { headers },
     );
     if (!data?.data?.children) {
-      const viaRss = await fetchSubViaRss(sub, sinceHours);
-      if (viaRss.length) rssFallbacks++;
-      items.push(...viaRss);
-      await sleep(400);
+      await sleep(1000);
       continue;
     }
+    jsonOk++;
 
     for (const { data: p } of data.data.children) {
-      if (p.stickied || p.over_18) continue;
-      const createdAt = new Date(p.created_utc * 1000).toISOString();
-      if (hoursAgo(createdAt) > sinceHours) continue;
-      // AI 전용 서브레딧이면 키워드 필터를 건너뛴다 (제목에 'AI'가 없어도 AI 뉴스라서).
-      const dedicated = sub !== 'MachineLearning';
-      if (!dedicated && !isAiRelated(p.title)) continue;
-      // 개인 질문·도움 요청은 뉴스가 아니다. 분류 호출까지 가기 전에 끊는다.
-      if (isHelpRequest(p.title)) continue;
+      const item = toItem(p, listing.weight);
+      if (!item) continue;
+      if (hoursAgo(item.createdAt) > sinceHours) continue;
 
-      const permalink = `https://www.reddit.com${p.permalink}`;
-      const outbound = p.url_overridden_by_dest || p.url || permalink;
-      items.push({
-        source: 'reddit',
-        origin: `r/${sub}`,
-        id: `rd-${p.id}`,
-        title: p.title.trim(),
-        url: canonicalUrl(outbound.startsWith('/r/') ? permalink : outbound),
-        permalink,
-        createdAt,
-        score: p.score ?? 0,
-        commentCount: p.num_comments ?? 0,
-        excerpt: p.selftext ? p.selftext.slice(0, 600) : undefined,
-        lang: detectLang(p.title),
-      });
+      // 같은 글이 여러 정렬에 나오면 가장 높은 점수를 남긴다.
+      const prev = byId.get(item.id);
+      if (!prev || item.score > prev.score) byId.set(item.id, item);
     }
-    await sleep(400); // 레딧 rate limit 배려
+    await sleep(1000); // 레이트리밋 배려. 요청이 3회뿐이라 부담이 없다.
   }
 
-  const mode = token ? 'OAuth' : rssFallbacks ? `공개 API 차단 → RSS 폴백 ${rssFallbacks}개 서브` : '공개 API';
+  const items = [...byId.values()];
+
+  // JSON 이 전부 막혔을 때만 RSS 로 내려간다. 점수를 못 얻으므로 최후 수단이다.
+  let rssFallbacks = 0;
+  if (jsonOk === 0) {
+    // RSS 도 정렬을 고를 수 있다. /top?t=day 가 곧 "그날의 베스트"라서 이게 1순위다.
+    // 서브당 한 번만 받는다 — 정렬을 여러 개 돌리면 요청이 배로 늘어 429 에 걸린다.
+    const seen = new Set(items.map((i) => i.id));
+    for (const sub of REDDIT_SUBS) {
+      const viaRss = await fetchSubViaRss(sub, sinceHours, 'top', 't=day&limit=25');
+      const fresh = viaRss.filter((i) => !seen.has(i.id));
+      for (const i of fresh) seen.add(i.id);
+      if (fresh.length) rssFallbacks++;
+      items.push(...fresh);
+      await sleep(1500);
+    }
+  }
+
+  const mode = token
+    ? `OAuth · 정렬 ${jsonOk}/${REDDIT_LISTINGS.length}`
+    : jsonOk
+      ? `공개 API · 정렬 ${jsonOk}/${REDDIT_LISTINGS.length}`
+      : rssFallbacks
+        ? `JSON 차단 → RSS 폴백 ${rssFallbacks}개 서브 (점수 없음)`
+        : 'JSON·RSS 모두 실패';
   console.log(`  · Reddit: ${items.length}건 (${mode})`);
+  if (!token && jsonOk === 0) {
+    console.log('    → 순위 기반 추정 점수입니다(RSS 는 업보트를 주지 않음). 상대 순서는 정확합니다.');
+  }
   return items;
 }
 

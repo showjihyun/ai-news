@@ -31,6 +31,24 @@ export const REDDIT_SUBS = [
   'ChatGPT',
 ];
 
+/**
+ * 레딧에서 무엇을 "베스트"로 볼 것인가.
+ *
+ * 한 가지 정렬만 보면 놓치는 게 생긴다.
+ *   top  — 그날 실제로 표를 많이 받은 글. 검증된 화제지만 이미 몇 시간 지난 뒤다.
+ *   hot  — 지금 올라오는 중인 글. 속보에 유리하지만 반짝하고 사라지는 것도 섞인다.
+ *   rising — 막 오르기 시작한 글. 남들보다 먼저 쓰려는 이 사이트에 가장 값어치가 크다.
+ *
+ * 셋을 함께 받아 클러스터링 단계에서 합친다. 같은 글이 여러 정렬에 걸리면
+ * 그만큼 확실한 신호라 화제성 점수도 자연히 올라간다.
+ */
+export const REDDIT_LISTINGS: { sort: string; query: string; weight: number }[] = [
+  { sort: 'top', query: 't=day&limit=25', weight: 1.0 },
+  { sort: 'hot', query: 'limit=25', weight: 0.9 },
+  // rising 은 표본이 적어 점수가 낮게 잡히므로, 발굴 가치를 인정해 가중을 조금 준다.
+  { sort: 'rising', query: 'limit=15', weight: 1.1 },
+];
+
 
 /** 이 단어가 없으면 AI 뉴스가 아니라고 본다. */
 export const AI_KEYWORDS = [
