@@ -33,7 +33,10 @@ function getClient(): OpenAI {
       // 긴 기사를 뽑을 때 기본 타임아웃(10분)으로는 모자랄 일이 없지만,
       // 네트워크가 멈춘 채 매달리는 것을 막으려 명시한다.
       timeout: 300_000,
-      maxRetries: 2,
+      // SDK 자체 재시도는 끈다. 아래에서 직접 더 길게 기다리며 재시도한다.
+      // 공용 추론 서비스라 혼잡 시 503 이 몇십 초씩 이어지는데, SDK 의 짧은 백오프로는
+      // 그 구간을 넘기지 못하고 파이프라인이 통째로 죽는다(실제로 겪었다).
+      maxRetries: 0,
     });
   }
   return client;
@@ -55,11 +58,46 @@ export interface NvidiaOptions {
  * 때까지 연결이 조용히 열려 있어 프록시나 게이트웨이에서 끊기는 일이 생긴다.
  * 어차피 전부 모아서 쓰므로 결과는 같다.
  */
+/** 다시 걸어 볼 만한 실패인지. 혼잡·속도제한·일시 장애만 재시도한다. */
+function isTransient(err: unknown): boolean {
+  const status = (err as { status?: number; code?: number })?.status ?? (err as { code?: number })?.code;
+  if (status === 429 || status === 408 || (typeof status === 'number' && status >= 500)) return true;
+  const msg = String((err as Error)?.message ?? '');
+  return /overload|timeout|ECONNRESET|ETIMEDOUT|socket hang up|fetch failed/i.test(msg);
+}
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
 export async function runNvidia(
   prompt: string,
   system: string,
   opts: NvidiaOptions = {},
 ): Promise<string> {
+  const maxAttempts = Number(process.env.NVIDIA_MAX_ATTEMPTS) || 5;
+  let lastErr: unknown;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await once(prompt, system, opts);
+    } catch (err) {
+      lastErr = err;
+      if (!isTransient(err) || attempt === maxAttempts) break;
+
+      // 지수 백오프 + 지터. 여러 기사를 동시에 처리하므로 지터가 없으면
+      // 재시도가 한꺼번에 몰려 같은 혼잡을 다시 만든다.
+      const wait = Math.min(2000 * 2 ** (attempt - 1), 30_000) + Math.random() * 1000;
+      const status = (err as { status?: number })?.status ?? '';
+      console.warn(
+        `  ! NVIDIA 일시 오류(${status || (err as Error).message?.slice(0, 40)}) — ` +
+          `${(wait / 1000).toFixed(1)}초 후 재시도 (${attempt}/${maxAttempts - 1})`,
+      );
+      await sleep(wait);
+    }
+  }
+  throw lastErr;
+}
+
+async function once(prompt: string, system: string, opts: NvidiaOptions): Promise<string> {
   const stream = await getClient().chat.completions.create({
     model: opts.model || NVIDIA_MODEL(),
     messages: [
