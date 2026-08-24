@@ -1,5 +1,7 @@
 import type { RawItem } from '../types.js';
-import { REDDIT_SUBS, REDDIT_LISTINGS } from '../config.js';
+import {
+  REDDIT_SUBS, REDDIT_MULTI, REDDIT_LISTINGS, needsAiFilter, subNewsiness,
+} from '../config.js';
 import {
   fetchJson, fetchText, isAiRelated, isHelpRequest, detectLang, canonicalUrl, hoursAgo, sleep, UA,
 } from '../util.js';
@@ -122,13 +124,22 @@ async function fetchSubViaRss(
     // 성인물이 애드센스 사이트에 실릴 수 있다 — 정책 위반이자 계정 정지 사유다.
     if (/nsfw\.png|\bnsfw\b/i.test(decoded) || /\[nsfw\]/i.test(title)) continue;
 
-    // 키워드 필터도 JSON 경로와 동일하게 적용한다(r/MachineLearning 은 AI 전용이 아니다).
-    if (sub === 'MachineLearning' && !isAiRelated(title)) continue;
+    /*
+      실제 서브레딧은 항목 안의 category term 에서 뽑는다.
+      멀티레딧으로 받으면 요청 경로가 'LocalLLaMA+aiagents+...' 라서 그걸 출처로 쓰면
+      모든 글의 origin 이 그 긴 문자열이 된다. 출처 표기가 망가지는 건 물론이고
+      needsAiFilter 도 엉뚱한 이름으로 물어보게 되어 필터가 통째로 무력해진다.
+    */
+    const entrySub = entry.match(/<category term="([^"]+)"/)?.[1] || sub;
+
+    // 키워드 필터도 JSON 경로와 똑같이 적용한다. 폴백이 본 경로보다 느슨하면
+    // 평소엔 걸러지던 글이 차단된 날에만 들어오는, 재현하기 어려운 문제가 된다.
+    if (needsAiFilter(entrySub) && !isAiRelated(title)) continue;
     if (isHelpRequest(title)) continue;
 
     items.push({
       source: 'reddit',
-      origin: `r/${sub}`,
+      origin: `r/${entrySub}`,
       id: `rd-${id.replace('t3_', '') || permalink}`,
       title,
       url: canonicalUrl(outbound && !outbound.includes('/comments/') ? outbound : permalink),
@@ -145,7 +156,7 @@ async function fetchSubViaRss(
         상한을 40 으로 낮게 잡은 이유: 실제 점수를 아는 HN·GeekNews 항목을
         추측값이 밀어내면 안 되기 때문이다.
       */
-      score: Math.max(8, Math.round(40 / (1 + rank * 0.12))),
+      score: Math.max(4, Math.round((40 / (1 + rank * 0.12)) * subNewsiness(entrySub))),
       commentCount: 0,
       lang: detectLang(title),
     });
@@ -158,8 +169,10 @@ function toItem(p: RedditChild['data'], weight: number): RawItem | null {
   if (p.stickied || p.over_18) return null;
 
   const sub = p.subreddit || '';
-  // r/MachineLearning 은 AI 전용이 아니라 통계·수학 글도 올라온다. 거기만 키워드 필터.
-  if (sub === 'MachineLearning' && !isAiRelated(p.title)) return null;
+  // AI 전용이 아닌 서브(r/MachineLearning, r/FigmaDesign 등)는 키워드 필터를 거친다.
+  // 어느 서브가 그런지는 config 가 갖고 있다 — 코드에 서브 이름을 박아 두면
+  // 목록에 하나 더 추가하는 순간 그 조건이 거짓말이 된다.
+  if (needsAiFilter(sub) && !isAiRelated(`${p.title} ${p.selftext ?? ''}`.slice(0, 300))) return null;
   if (isHelpRequest(p.title)) return null;
 
   const permalink = `https://www.reddit.com${p.permalink}`;
@@ -173,8 +186,9 @@ function toItem(p: RedditChild['data'], weight: number): RawItem | null {
     url: canonicalUrl(outbound.startsWith('/r/') ? permalink : outbound),
     permalink,
     createdAt: new Date(p.created_utc * 1000).toISOString(),
-    // 정렬별 가중을 점수에 반영한다. rising 은 아직 표가 적지만 먼저 잡는 값어치가 있다.
-    score: Math.round((p.score ?? 0) * weight),
+    // 정렬 가중(rising 은 표가 적지만 먼저 잡는 값어치가 있다)과
+    // 서브별 뉴스 밀도 가중을 함께 곱한다.
+    score: Math.round((p.score ?? 0) * weight * subNewsiness(sub)),
     commentCount: p.num_comments ?? 0,
     excerpt: p.selftext ? p.selftext.slice(0, 600) : undefined,
     lang: detectLang(p.title),
@@ -196,7 +210,7 @@ export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   const base = token ? 'https://oauth.reddit.com' : 'https://www.reddit.com';
   const headers: Record<string, string> = token ? { Authorization: `Bearer ${token}` } : {};
 
-  const multi = REDDIT_SUBS.join('+');
+  const multi = REDDIT_MULTI;
   const byId = new Map<string, RawItem>();
   let jsonOk = 0;
 
@@ -228,16 +242,30 @@ export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   // JSON 이 전부 막혔을 때만 RSS 로 내려간다. 점수를 못 얻으므로 최후 수단이다.
   let rssFallbacks = 0;
   if (jsonOk === 0) {
-    // RSS 도 정렬을 고를 수 있다. /top?t=day 가 곧 "그날의 베스트"라서 이게 1순위다.
-    // 서브당 한 번만 받는다 — 정렬을 여러 개 돌리면 요청이 배로 늘어 429 에 걸린다.
+    /*
+      RSS 도 멀티레딧을 지원한다. 서브를 하나씩 도는 대신 한 번에 받는다.
+
+      서브 11개를 개별 요청하면 실행마다 11회인데, 레딧은 비인증 트래픽에
+      공격적인 레이트리밋을 걸어서 앞의 두세 개만 받고 나머지는 429 로 죽는다.
+      실제로 그 상태였다 — 11개를 넣어 뒀는데 r/LocalLLaMA 하나만 들어왔다.
+      멀티레딧이면 1회로 끝나고, 응답에 subreddit 이 들어 있어 출처도 정확히 남는다.
+
+      다만 멀티레딧은 서브별 상위가 아니라 '합친 목록의 상위'라서, 글이 많은
+      서브가 목록을 독식할 수 있다. 그래서 limit 을 넉넉히 잡아 뒤쪽 서브도 걸리게 한다.
+    */
     const seen = new Set(items.map((i) => i.id));
-    for (const sub of REDDIT_SUBS) {
-      const viaRss = await fetchSubViaRss(sub, sinceHours, 'top', 't=day&limit=25');
+    for (const listing of REDDIT_LISTINGS) {
+      const viaRss = await fetchSubViaRss(
+        REDDIT_MULTI,
+        sinceHours,
+        listing.sort,
+        listing.sort === 'top' ? 't=day&limit=100' : 'limit=50',
+      );
       const fresh = viaRss.filter((i) => !seen.has(i.id));
       for (const i of fresh) seen.add(i.id);
       if (fresh.length) rssFallbacks++;
       items.push(...fresh);
-      await sleep(1500);
+      await sleep(2000);
     }
   }
 

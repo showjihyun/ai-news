@@ -20,16 +20,68 @@ export const SOURCE_WEIGHT: Record<SourceId, number> = {
   facebook: 0.6,
 };
 
-export const REDDIT_SUBS = [
-  'LocalLLaMA',
-  'singularity',
-  'OpenAI',
-  'artificial',
-  'ClaudeAI',
-  'MachineLearning',
-  'StableDiffusion',
-  'ChatGPT',
+/**
+ * 수집 대상 서브레딧.
+ *
+ * aiOnly 를 서브마다 명시한다. 예전에는 코드에 `sub === 'MachineLearning'` 이라고
+ * 박아 두었는데, AI 전용이 아닌 서브를 하나 더 넣는 순간 그 조건이 거짓말이 된다.
+ *
+ * aiOnly: false 인 곳은 AI 키워드 필터를 반드시 거친다. 예를 들어 r/FigmaDesign 은
+ * 살아 있는 커뮤니티지만 올라오는 글 대부분이 "손그림 2,000개 무료 배포" 같은
+ * 디자인 도구 이야기다. 필터 없이 넣으면 AI 뉴스 사이트에 디자인 잡담이 쏟아진다.
+ */
+export interface RedditSub {
+  name: string;
+  /** true = 이 서브의 글은 제목에 'AI' 가 없어도 AI 이야기로 본다 */
+  aiOnly: boolean;
+  /**
+   * 뉴스 밀도. 점수에 곱해 순위를 조정한다.
+   *
+   * AI 전용이라고 다 뉴스인 건 아니다. r/ChatGPT·r/StableDiffusion 은 밈과
+   * 자기 작업물 자랑이 상위를 채운다 — 실측에서 93건 중 49건이 이 둘이었고
+   * 1위가 "Thanks for the help mom 🖥️😭" 였다. 커뮤니티 자체는 값어치가 있어서
+   * 빼기는 아깝고, 그대로 두면 진짜 뉴스를 밀어낸다. 그래서 가중으로 눌러 둔다.
+   */
+  newsiness: number;
+}
+
+export const REDDIT_SUBS: RedditSub[] = [
+  // 뉴스·발표가 주로 도는 곳
+  { name: 'LocalLLaMA', aiOnly: true, newsiness: 1.0 },
+  { name: 'singularity', aiOnly: true, newsiness: 1.0 },
+  { name: 'OpenAI', aiOnly: true, newsiness: 1.0 },
+  { name: 'artificial', aiOnly: true, newsiness: 1.0 },
+  { name: 'ClaudeAI', aiOnly: true, newsiness: 0.9 },
+  { name: 'aiagents', aiOnly: true, newsiness: 0.9 },
+  { name: 'Agentic_Marketing', aiOnly: true, newsiness: 0.85 },
+
+  // AI 전용이지만 밈·자기 작업물 자랑이 상위를 채우는 곳.
+  // 키워드 필터를 걸어 "Thanks for the help mom 🖥️😭" 같은 글부터 걸러내고,
+  // 그러고도 남는 자랑글이 뉴스를 밀어내지 않도록 가중을 크게 낮춘다.
+  { name: 'ChatGPT', aiOnly: false, newsiness: 0.45 },
+  { name: 'StableDiffusion', aiOnly: false, newsiness: 0.45 },
+
+  // 종합 커뮤니티 — AI 키워드가 있는 글만 가져온다
+  { name: 'MachineLearning', aiOnly: false, newsiness: 0.9 }, // 통계·수학 글도 섞인다
+  { name: 'FigmaDesign', aiOnly: false, newsiness: 0.7 },     // 대부분 디자인 도구 이야기다
 ];
+
+const NEWSINESS = new Map(REDDIT_SUBS.map((s) => [s.name, s.newsiness]));
+
+/** 그 서브의 뉴스 밀도 가중. 모르는 서브는 1.0 으로 둔다. */
+export function subNewsiness(sub: string): number {
+  return NEWSINESS.get(sub) ?? 1.0;
+}
+
+/** 멀티레딧 경로용. r/a+b+c 형태로 한 번에 받는다. */
+export const REDDIT_MULTI = REDDIT_SUBS.map((s) => s.name).join('+');
+
+const AI_ONLY_SUBS = new Set(REDDIT_SUBS.filter((s) => s.aiOnly).map((s) => s.name));
+
+/** 이 서브의 글에 AI 키워드 필터를 걸어야 하는가. */
+export function needsAiFilter(sub: string): boolean {
+  return !AI_ONLY_SUBS.has(sub);
+}
 
 /**
  * 레딧에서 무엇을 "베스트"로 볼 것인가.
