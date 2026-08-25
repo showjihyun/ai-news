@@ -1,0 +1,33 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Only VRAM? Unlikely unless you can also load the whole model into regular RAM. The previous 3.5 release was 250gb at BF16, so FP8 would likely be around 125gb. Your best best is FP4&#x2F;Q4.",
+    "[Hacker News] Thanks. My current stack ranking of anthropic models is: 4.6 ~= 4.8 4.7 much worse. Fable and newer consistently tells me to pound sand, so I’m not sure what I’m paying $200&#x2F;month for. 4.8 sometimes does too, but it’s at least usable most of the time. So, I’d expect this to mostly replace Claude for my workflows. The main tradeoff for me should mostly be token throughput vs. no longer really ",
+    "[Hacker News] Finally, a reason to own a 128GB Strix Halo or GB10 device. Or a reason to consider the new Mac Studio. I have a Strix Halo and dual 32GB GPUs in my desktop, and the latter is pretty much always better for running local models because it&#x27;s quite a bit faster due to higher memory bandwidth. There simply haven&#x27;t been any models that are better than Qwen 27B or Gemma 31B, which run comforta",
+    "[Hacker News] The 27B one is great on a 5090. This one is basically aimed at macs, Strix halo and DGX Spark.",
+    "[Hacker News] I don&#x27;t know what black magic you&#x27;re up to but I see more like 30-35t&#x2F;s on a 16&quot; M5 Max using 3.8:27b Q4, regardless of whether it&#x27;s mlx or gguf. qwen3.5:122b-a10b is significantly faster at around 60-65."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
+      "url": "https://news.ycombinator.com/item?id=49432317",
+      "score": 92,
+      "commentCount": 31
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Qwen3.8-Flash-Next tomorrow",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxwtyd/qwen38flashnext_tomorrow/",
+      "score": 19,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Qwen3.8 flash next",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxwu4g/qwen38_flash_next/",
+      "score": 9,
+      "commentCount": 0
+    }
+  ]
+}

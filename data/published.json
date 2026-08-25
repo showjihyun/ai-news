@@ -1,6 +1,104 @@
 {
   "records": [
     {
+      "slug": "2026-08-26-앤스로픽-잠재-매출-30조-달러ai-버블인가-새-시장인가",
+      "title": "Anthropic said to predict over $30T in potential revenue - Breakingthenews.net",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQWlRWkpsNTJFQS04UFBxckU0UjlQLVVHU2Q2SDNlVHY2QXdwczBHVU5tczJOUmtrUENLT0lhQ2FNLTZseWUzN29sbGdlcFR6MTlfTlhuemtVZ2x2MjN1ai1tendocGRySklTcFdDcGt0bVoxY3U4WTU4Y2NhUWtjQUkyU25ya09JcWN5amh1dWVGS1BSQ2NSWTRwR2wyV2RCc3FN?oc=5",
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONkVVanFZT3c1U0JkNWhxUnlIRDkydUFUX3JIaExTcjJ2dFo4anQ3MkVLMTNDLTRUdjNUdDBpRElxVU5ZcEowbXFPZGxRM1hiX0NrQjhHN2ZvdUp3czNDWHgwVW9Va1lyX1FONnMyNnROSC1CRUJrdUlfMFk1ZzZLcU1HWW5hazhDc1NIWldTcmFyYkpsZDNNSDkyYms4YUhFWDdkRjRXSGJ5dw?oc=5",
+        "https://wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea"
+      ],
+      "publishedAt": "2026-08-25T16:45:31.879Z"
+    },
+    {
+      "slug": "2026-08-26-애플-m5-울트라-맥-스튜디오-512gb-메모리로-거대-모델-로컬-실행",
+      "title": "M5 Max·M5 Ultra를 탑재한 새로운 Mac Studio",
+      "urls": [
+        "https://news.hada.io/topic?id=32880",
+        "https://apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra"
+      ],
+      "publishedAt": "2026-08-25T16:44:01.252Z"
+    },
+    {
+      "slug": "2026-08-26-앤스로픽-보안팀-파업-예고에-샌프란시스코-직원-전원-재택근무-전환",
+      "title": "Anthropic tells staff to work from home due to possible security team strike",
+      "urls": [
+        "https://businessinsider.com/anthropic-san-francisco-staff-work-remote-office-security-strike-2026-8"
+      ],
+      "publishedAt": "2026-08-25T15:58:49.970Z"
+    },
+    {
+      "slug": "2026-08-26-해커뉴스-절반이-ai-글개발자-커뮤니티-잠식-실태",
+      "title": "How much of HN is AI?",
+      "urls": [
+        "https://blog.coredump.cx/p/how-much-of-hn-is-ai"
+      ],
+      "publishedAt": "2026-08-25T15:37:24.688Z"
+    },
+    {
+      "slug": "2026-08-26-스탠퍼드-ai가-신입-일자리-19-줄였다-20대-초반-직격탄",
+      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+      "urls": [
+        "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds",
+        "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds"
+      ],
+      "publishedAt": "2026-08-25T15:35:49.744Z"
+    },
+    {
+      "slug": "2026-08-26-맥킨지-2026년-ai-현황-보고서-roi-강조하지만-현장은-회의적",
+      "title": "The state of AI in 2026: On the road to ROI",
+      "urls": [
+        "https://mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+      ],
+      "publishedAt": "2026-08-25T15:14:12.853Z"
+    },
+    {
+      "slug": "2026-08-26-오픈ai-챗gpt-플러스-코덱스워크-5시간-제한-복원",
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "urls": [
+        "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users"
+      ],
+      "publishedAt": "2026-08-25T15:11:07.011Z"
+    },
+    {
+      "slug": "2026-08-25-오픈ai-러-가짜-씽크탱크-ibi-활용-여론조작-계정-차단",
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "urls": [
+        "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+        "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia"
+      ],
+      "publishedAt": "2026-08-25T14:50:22.015Z"
+    },
+    {
+      "slug": "2026-08-25-퀸-38-플래시-넥스트-공개-임박-125b-moe가-노리는-것",
+      "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
+      "urls": [
+        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next"
+      ],
+      "publishedAt": "2026-08-25T14:48:37.578Z"
+    },
+    {
+      "slug": "2026-08-25-애플-m6m5-울트라-공개-2나노-첫-양산12tbs-메모리로-로컬-ai-판-바꾼다",
+      "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
+      "urls": [
+        "https://apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+        "https://apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute"
+      ],
+      "publishedAt": "2026-08-25T14:44:22.955Z"
+    },
+    {
+      "slug": "2026-08-25-앤스로픽-최상위-모델-파블-비싼-값에-기업-외면ramp-데이터가-보여준-현실",
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "urls": [
+        "https://ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+        "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
+        "https://ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
+      ],
+      "publishedAt": "2026-08-25T14:39:41.488Z"
+    },
+    {
       "slug": "2026-08-25-ai-코딩-도구가-전문성-붕괴-부른다-신입-개발자-딜레마",
       "title": "Coding expertise is going to collapse from AI reliance",
       "urls": [

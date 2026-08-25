@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — ft.com]\nThen ₩79999 per month. Complete digital access to quality FT journalism on any device. Cancel anytime during your trial.\n\nEssential digital access to quality FT journalism on any device. Pay a year upfront and save 20%.\n\nComplete digital access to quality FT journalism with expert analysis from industry leaders. Pay a year upfront and save 20%.\n\nOur digitised version of the FT newspaper, for easy reading on any device.\n\nCheck whether you already have access via your university or organisation.\n\nDigital access for organisations. Includes exclusive features and content.\n\n---\n\n[Simon Willison — simonwillison.net]\nAnthropic’s best AI model struggles to attract users as cheaper tools thrive ( via ) A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\":\n\nThis article also introduced me to the Ramp AI index , which uses billing data from 70,000 Ramp credit card using companies to estimate model adoption.\n\nHere's Ramp's breakdown of Anthropic model spend for July 2026, which looks reasonable given that Opus 5 was only released on July 24th, and supports the idea that Fable's cost has made it a less popular model:\n\nThis is a link post by Simon Willison, posted on 23rd August 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] All of it is greed. 100%. If you could be profitable with 50 customers providing excellent support, you can be MORE profitable spreading that excellent support across a larger customer base. Just because none of the big corpos choose to do this does not mean it isn&#x27;t possible. It&#x27;s JUST greed.",
+    "[Hacker News] context: working in tech consulting with non-tech industry partners. outside of coding scenarios, anthropic is just not quite the best choice for regular folks. depending on the cloud&#x2F;office stack used by the company, the userbase is better poised to use the native ai offering than moving to anthropic and connecting everything with them. same goes for third party guys trying to tie it all tog",
+    "[Hacker News] Ive gave it a lot of thought, and what&#x27;s happening is like what&#x27;s happening with 4K streaming. It&#x27;s not really 4K but no one cares. People don&#x27;t have trained eyes and exaggerate their technical literacy. I also think that anti-intellectualism nullifies the benefits of the most intelligent AI models America has. No one knows the difference and they don&#x27;t care.",
+    "[Hacker News] Piling on to the other responses, I don&#x27;t really want to see anything at all from you. What I want to see to believe that any meaningful number of people out there are generating 10x the value they used to is a visibly more valuable world. My skepticism is we&#x27;re not getting that because the world mostly doesn&#x27;t need more software and it doesn&#x27;t need all software to be ultra-per",
+    "[Hacker News] Yeah i just don&#x27;t have the hardware to run them at a reasonable rate and am not ready to invest that much at today&#x27;s prices. My tinkering with DeepSeek last year was promising but the minutes-per-response made it unusable.",
+    "[Hacker News] &gt; eg. processors are needed for everything on the planet. No Intel isn&#x27;t going to generate annual revenue in the trillions because of that. No, but Intel processors are going to generate revenue in the trillions for the economy, which was the original question as far as I understood it."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://news.ycombinator.com/item?id=49411102",
+      "score": 793,
+      "commentCount": 694
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://www.reddit.com/r/singularity/comments/1vxzsxc/anthropics_best_ai_model_struggles_to_attract/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
