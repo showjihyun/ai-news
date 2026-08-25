@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — tomtunguz.com]\nIn short : Prioritize routing over model choice. Most AI work runs on cheap local models.\n\nMost teams building agents pick the model first & the architecture second. That is backwards. The model choice is the last decision, not the first.\n\nWhat matters is the router, a small piece of code that decides which tier of model handles each request. Get the router right & 70-80% of traffic runs on local models that cost nothing per call, or on async models 1 that reduce AI spend by 90%+.\n\nBrian Armstrong made the same point last week about how Coinbase cut AI spend in half while token usage grew 2 , paraphrasing :\n\nHow to keep AI spend flat while token usage grows exponentially : not with friction & spend alerts. With better defaults, routing, & caching. Engineers can choose any model they want, but defaults matter.\n\nThe routing problem has three layers, and each does a distinct job :\n\nClassifier & router are not the same. The classifier is a language problem ; the router is a scheduling problem. Conflating them buries the model choice inside the prompt & kills the ability to A/B different models against the same operation.\n\nLocal compute is close to free. Async batch reasoning runs two orders of magnitude cheaper than real-time inference 1 . So the real question is narrower : what fraction of work needs real-time answers?\n\nQueueing is why this works. A draft reply, a repo summary, a diligence memo, a nightly evaluator run : none of these need to return in a second.\n\nWe built the first version of this into our agent runtime. The router already scored tasks on complexity, context size, & local memory retrieval. Two feedback mechanisms now sit on top of the router, & they operate on different time scales :\n\nThe synchronous predictor catches known-hard tasks before they fail. The nightly loop discovers new failure modes the predictor missed.\n\nOnce skill distillation flattens the operation set, 70-80% of agent traffic can run on local models 3 for most non-coding work.\n\nThe implication : design your system around routing, not around models. Pick your models last.\n\nFull Sail on Asynchronous Inference — the cost delta between real-time & async batch inference.&#160; &#x21a9;&#xfe0e; &#160; &#x21a9;&#xfe0e;\n\nBrian Armstrong on X — Coinbase cut AI spend nearly in half while token usage grew, via better defaults, routing, & caching.&#160; &#x21a9;&#xfe0e;\n\nSkill Distillation , Teaching Local Models to Call Tools Like Claude , & The Minimill of AI .&#160; &#x21a9;&#xfe0e;",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Most AI Work Can Wait",
+      "url": "https://news.ycombinator.com/item?id=49416553",
+      "score": 33,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Figure.AI just dropped Index, the biggest and most diverse robot dataset ever with 16 million videos; From now on, everyone can record their daily tasks and get paid for it",
+      "url": "https://www.reddit.com/r/singularity/comments/1vy9lfj/figureai_just_dropped_index_the_biggest_and_most/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
