@@ -24,6 +24,13 @@ export interface RawItem {
   commentCount: number;
   excerpt?: string;
   lang: 'ko' | 'en' | 'other';
+  /**
+   * 제목이 원본에서 잘려 왔다는 표시.
+   *
+   * 레딧 트렌드 집계본은 긴 제목을 50자쯤에서 자른다. 그런 제목으로 단독 기사를 쓰면
+   * 사실이 어긋나므로, 다른 출처와 묶여 제목을 보강받은 경우에만 기사로 나가게 한다.
+   */
+  titleTruncated?: boolean;
 }
 
 /** 여러 소스에서 같은 사건을 다룬 아이템들을 하나로 묶은 것. */

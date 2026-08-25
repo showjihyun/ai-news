@@ -5,6 +5,7 @@ import {
 import {
   fetchJson, fetchText, isAiRelated, isHelpRequest, detectLang, canonicalUrl, hoursAgo, sleep, UA,
 } from '../util.js';
+import { fetchRedditTrends } from './reddit-trends.js';
 
 const BROWSER_UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
@@ -207,80 +208,95 @@ function toItem(p: RedditChild['data'], weight: number): RawItem | null {
  */
 export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   const token = await getToken();
-  const base = token ? 'https://oauth.reddit.com' : 'https://www.reddit.com';
-  const headers: Record<string, string> = token ? { Authorization: `Bearer ${token}` } : {};
-
-  const multi = REDDIT_MULTI;
   const byId = new Map<string, RawItem>();
-  let jsonOk = 0;
+  let mode: string;
 
-  for (const listing of REDDIT_LISTINGS) {
-    const data = await fetchJson<{ data: { children: RedditChild[] } }>(
-      `${base}/r/${multi}/${listing.sort}.json?${listing.query}&raw_json=1`,
-      { headers },
-    );
-    if (!data?.data?.children) {
+  if (token) {
+    // 승인받은 앱 자격증명이 있을 때만 JSON 을 쓴다. 점수·댓글 수·본문이 다 들어온다.
+    let ok = 0;
+    for (const listing of REDDIT_LISTINGS) {
+      const data = await fetchJson<{ data: { children: RedditChild[] } }>(
+        `https://oauth.reddit.com/r/${REDDIT_MULTI}/${listing.sort}.json?${listing.query}&raw_json=1`,
+        { headers: { Authorization: `Bearer ${token}` } },
+      );
+      if (!data?.data?.children) {
+        await sleep(1000);
+        continue;
+      }
+      ok++;
+      for (const { data: p } of data.data.children) {
+        const item = toItem(p, listing.weight);
+        if (!item || hoursAgo(item.createdAt) > sinceHours) continue;
+        const prev = byId.get(item.id);
+        if (!prev || item.score > prev.score) byId.set(item.id, item);
+      }
       await sleep(1000);
-      continue;
     }
-    jsonOk++;
+    mode = `OAuth · 정렬 ${ok}/${REDDIT_LISTINGS.length}`;
+  } else {
+    /*
+      토큰이 없으면 JSON 은 아예 시도하지 않는다.
 
-    for (const { data: p } of data.data.children) {
-      const item = toItem(p, listing.weight);
-      if (!item) continue;
-      if (hoursAgo(item.createdAt) > sinceHours) continue;
+      예전에는 매번 JSON 세 번을 먼저 던지고 전부 403 을 받은 뒤에 RSS 로 내려갔다.
+      그런데 레딧의 비인증 예산은 실행당 요청 한두 개 수준이라, 그 403 세 번이
+      예산을 먼저 태워 버렸다. 정작 필요한 RSS 는 429 를 맞고, 결과적으로
+      "레딧이 막혀서 안 된다"로 보였다. 실제로 막힌 건 우리가 스스로 만든 것이었다.
 
-      // 같은 글이 여러 정렬에 나오면 가장 높은 점수를 남긴다.
+      요청을 하나로 줄이니 멀티레딧 RSS 한 방에 100건, 서브 11개가 전부 들어온다.
+      정렬을 top 하나만 쓰는 것도 같은 이유다 — hot·rising 을 더 부르면 그만큼
+      다음 실행의 몫을 당겨쓰는 셈이고, 30분마다 도는 작업에서는 이득이 없다.
+    */
+    const viaRss = await fetchRssWithRetry(sinceHours);
+    for (const item of viaRss) {
       const prev = byId.get(item.id);
       if (!prev || item.score > prev.score) byId.set(item.id, item);
     }
-    await sleep(1000); // 레이트리밋 배려. 요청이 3회뿐이라 부담이 없다.
+    mode = viaRss.length ? 'RSS 1회 (순위 기반 추정 점수)' : 'RSS 실패';
   }
 
-  const items = [...byId.values()];
+  /*
+    집계본으로 점수를 채운다.
 
-  // JSON 이 전부 막혔을 때만 RSS 로 내려간다. 점수를 못 얻으므로 최후 수단이다.
-  let rssFallbacks = 0;
-  if (jsonOk === 0) {
-    /*
-      RSS 도 멀티레딧을 지원한다. 서브를 하나씩 도는 대신 한 번에 받는다.
-
-      서브 11개를 개별 요청하면 실행마다 11회인데, 레딧은 비인증 트래픽에
-      공격적인 레이트리밋을 걸어서 앞의 두세 개만 받고 나머지는 429 로 죽는다.
-      실제로 그 상태였다 — 11개를 넣어 뒀는데 r/LocalLLaMA 하나만 들어왔다.
-      멀티레딧이면 1회로 끝나고, 응답에 subreddit 이 들어 있어 출처도 정확히 남는다.
-
-      다만 멀티레딧은 서브별 상위가 아니라 '합친 목록의 상위'라서, 글이 많은
-      서브가 목록을 독식할 수 있다. 그래서 limit 을 넉넉히 잡아 뒤쪽 서브도 걸리게 한다.
-    */
-    const seen = new Set(items.map((i) => i.id));
-    for (const listing of REDDIT_LISTINGS) {
-      const viaRss = await fetchSubViaRss(
-        REDDIT_MULTI,
-        sinceHours,
-        listing.sort,
-        listing.sort === 'top' ? 't=day&limit=100' : 'limit=50',
-      );
-      const fresh = viaRss.filter((i) => !seen.has(i.id));
-      for (const i of fresh) seen.add(i.id);
-      if (fresh.length) rssFallbacks++;
-      items.push(...fresh);
-      await sleep(2000);
+    RSS 는 업보트를 주지 않아서 순위에서 역산한 추정값을 쓴다. 집계본에는 실제
+    점수와 댓글 수가 있고, 글 ID 가 양쪽 다 같아서 정확히 맞출 수 있다.
+    겹치면 실제값으로 덮고, 집계본에만 있는 글은 새로 넣는다.
+  */
+  const trends = await fetchRedditTrends(sinceHours);
+  let enriched = 0;
+  let added = 0;
+  for (const t of trends) {
+    const prev = byId.get(t.id);
+    if (prev) {
+      // 제목은 우리 쪽이 온전하다(집계본은 잘라서 싣는다). 수치만 가져온다.
+      prev.score = t.score;
+      prev.commentCount = t.commentCount;
+      enriched++;
+    } else {
+      byId.set(t.id, t);
+      added++;
     }
   }
 
-  const mode = token
-    ? `OAuth · 정렬 ${jsonOk}/${REDDIT_LISTINGS.length}`
-    : jsonOk
-      ? `공개 API · 정렬 ${jsonOk}/${REDDIT_LISTINGS.length}`
-      : rssFallbacks
-        ? `JSON 차단 → RSS 폴백 ${rssFallbacks}개 서브 (점수 없음)`
-        : 'JSON·RSS 모두 실패';
-  console.log(`  · Reddit: ${items.length}건 (${mode})`);
-  if (!token && jsonOk === 0) {
-    console.log('    → 순위 기반 추정 점수입니다(RSS 는 업보트를 주지 않음). 상대 순서는 정확합니다.');
-  }
+  const items = [...byId.values()];
+  const detail = trends.length ? `, 집계본 점수 보정 ${enriched}건·추가 ${added}건` : '';
+  console.log(`  · Reddit: ${items.length}건 (${mode}${detail})`);
   return items;
+}
+
+/**
+ * 멀티레딧 RSS 한 번. 429 면 한 번만 더 시도한다.
+ *
+ * 레이트리밋은 몇 분 단위로 풀리는데 30분 주기 작업에서 몇 분을 기다릴 수는 없다.
+ * 그래서 짧게 한 번만 물러섰다가 재시도하고, 그래도 막히면 이번 실행은 포기한다.
+ * 어차피 집계본이 점수를 들고 있어서 레딧이 통째로 비지는 않는다.
+ */
+async function fetchRssWithRetry(sinceHours: number): Promise<RawItem[]> {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    if (attempt > 0) await sleep(5000);
+    const items = await fetchSubViaRss(REDDIT_MULTI, sinceHours, 'top', 't=day&limit=100');
+    if (items.length) return items;
+  }
+  return [];
 }
 
 /**

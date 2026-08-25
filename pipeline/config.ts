@@ -48,7 +48,16 @@ export interface RedditSub {
 export const REDDIT_SUBS: RedditSub[] = [
   // 뉴스·발표가 주로 도는 곳
   { name: 'LocalLLaMA', aiOnly: true, newsiness: 1.0 },
-  { name: 'singularity', aiOnly: true, newsiness: 1.0 },
+  /*
+    r/singularity 는 AI 전용 서브지만 키워드 필터를 건다.
+
+    이 서브의 상위권은 절반이 로봇 경기 영상과 밈이다. 실제로 어제 1위가 3048점짜리
+    육상 경기 영상이었고, AI 전용으로 두면 그게 그대로 우리 화제성 1위가 된다.
+    설명할 거리가 없는 구경거리는 "AI 뉴스를 풀어 준다"는 이 사이트가 팔 물건이 아니다.
+    이 서브의 진짜 뉴스는 거의 항상 모델명이나 회사명을 제목에 달고 있어서
+    키워드 필터로 걸러도 놓치는 게 적다.
+  */
+  { name: 'singularity', aiOnly: false, newsiness: 0.9 },
   { name: 'OpenAI', aiOnly: true, newsiness: 1.0 },
   { name: 'artificial', aiOnly: true, newsiness: 1.0 },
   { name: 'ClaudeAI', aiOnly: true, newsiness: 0.9 },
