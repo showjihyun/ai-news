@@ -44,6 +44,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* 에이전트에게 정리된 텍스트 색인의 위치를 알려 준다 */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* 숫자와 소스 이름에만 쓴다. 본문 한글은 Pretendard 그대로 — 자세한 이유는 globals.css */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"

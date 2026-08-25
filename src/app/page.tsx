@@ -4,7 +4,7 @@ import { PostCard } from '@/components/PostCard';
 import { AdSlot } from '@/components/AdSlot';
 import { site } from '@/lib/site';
 import { LiveTime } from '@/components/LiveTime';
-import { SourceSection } from '@/components/SourceSection';
+import { OfficialStrip, SourceColumn } from '@/components/SourceBoard';
 import { groupPosts, SOURCE_GROUPS } from '@/lib/sources';
 
 export default function HomePage() {
@@ -18,17 +18,20 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="hero">
-        <h1>{site.tagline}</h1>
-        <p>{site.description}</p>
+      {/* 히어로를 두 줄로 줄였다. 첫 화면의 목적은 사이트 소개가 아니라
+          "지금 뭐가 뜨는지"를 바로 보여 주는 것이라, 설명이 판을 밀어내면 안 된다. */}
+      <section className="hero hero-tight">
+        <h1>지금 AI 판에서 가장 뜨거운 것</h1>
+        <p>
+          Hacker News·Reddit·GeekNews 를 동시에 지켜보다가, 여러 곳에서 함께 화제가 된 것만
+          골라 전문용어 없이 풀어 드립니다.
+        </p>
         {latest && (
-          <p className="meta" style={{ marginTop: '0.75rem' }}>
-            마지막 업데이트 <LiveTime iso={latest.date} /> · 총 {posts.length}건
+          <p className="meta hero-stamp">
+            마지막 수집 <LiveTime iso={latest.date} /> · 기사 {posts.length}건
           </p>
         )}
       </section>
-
-      <AdSlot slot="top" />
 
       {posts.length === 0 ? (
         <div className="empty" style={{ marginTop: '2rem' }}>
@@ -40,32 +43,31 @@ export default function HomePage() {
         </div>
       ) : (
         <>
+          {/* 세 판을 한 화면에 나란히. 이게 첫 화면의 본체다.
+              Hacker News → Reddit → GeekNews 순 — 속보가 가장 먼저 뜨는 곳부터,
+              국내 독자에게 바로 닿는 곳이 마지막이다. */}
+          <div className="board">
+            {SOURCE_GROUPS.map((g) => (
+              <SourceColumn key={g.key} group={g.key} posts={grouped[g.key]} />
+            ))}
+          </div>
+
+          <OfficialStrip posts={grouped.official} />
+
+          {/* 광고를 판 아래로 내렸다. 상단에 두면 세 판이 접힘선 밑으로 밀려
+              "한 화면에 다 보인다"는 이 페이지의 유일한 강점이 사라진다. */}
+          <AdSlot slot="top" />
+
+          <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
+            최신순 전체
+          </h2>
           <ul className="post-list">
-            {posts.slice(0, 6).map((post, i) => (
-              <PostCard key={post.slug} post={post} lead={i === 0} />
+            {posts.slice(0, 40).map((post) => (
+              <PostCard key={post.slug} post={post} />
             ))}
           </ul>
 
-          {/* 어디서 온 이야기인지로 한 번 더 묶어 준다.
-              공식·매체 → Reddit → GeekNews 순. 앞의 두 개는 속보가 먼저 뜨는 곳이고
-              GeekNews 는 국내 독자에게 바로 닿는 곳이라 마지막에 둔다. */}
-          {SOURCE_GROUPS.map((g) => (
-            <SourceSection key={g.key} group={g.key} posts={grouped[g.key]} />
-          ))}
-
-          {posts.length > 6 && (
-            <>
-              <AdSlot slot="bottom" />
-              <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
-                전체 기사
-              </h2>
-              <ul className="post-list">
-                {posts.slice(6, 40).map((post) => (
-                  <PostCard key={post.slug} post={post} />
-                ))}
-              </ul>
-            </>
-          )}
+          <AdSlot slot="bottom" />
         </>
       )}
 

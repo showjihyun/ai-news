@@ -20,6 +20,9 @@
   --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
     'Malgun Gothic', 'Segoe UI', Roboto, sans-serif;
   --font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Menlo, Consolas, monospace;
+  /* 숫자와 소스 이름(라틴)에만 쓴다. 이 사이트의 시각적 중심이 숫자라서,
+     한글 본문 서체와 역할을 나눠 숫자에 성격을 준다. */
+  --font-num: 'Space Grotesk', 'Pretendard', system-ui, sans-serif;
 
   --width: 44rem;
   --width-wide: 68rem;
@@ -80,13 +83,25 @@ a { color: inherit; text-decoration: none; }
   height: 60px;
 }
 
-.brand { display: flex; align-items: baseline; gap: 0.5rem; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+.brand { display: flex; align-items: baseline; gap: 0.5rem; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; white-space: nowrap; flex-shrink: 0; }
 .brand-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--breaking); display: inline-block; animation: pulse 2.4s ease-in-out infinite; }
 
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @media (prefers-reduced-motion: reduce) { .brand-dot { animation: none; } }
 
-.nav { display: flex; gap: 1rem; margin-left: auto; font-size: 0.9rem; color: var(--fg-muted); overflow-x: auto; }
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  overflow-x: auto;
+  /* 좁은 화면에서 메뉴가 가로로 밀릴 때 스크롤바가 로고를 밀어내지 않게 */
+  min-width: 0;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+.nav::-webkit-scrollbar { display: none; }
 .nav a:hover { color: var(--fg); }
 
 /* ── 카테고리 칩 ─────────────────────────────────────── */
@@ -130,6 +145,11 @@ a { color: inherit; text-decoration: none; }
 
 /* ── 히어로 ─────────────────────────────────────────── */
 .hero { padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--line); }
+/* 첫 화면의 목적은 소개가 아니라 "지금 뭐가 뜨는지"다. 설명이 판을 밀어내면 안 된다. */
+.hero-tight { padding: 1.9rem 0 1.1rem; }
+.hero-tight h1 { font-size: clamp(1.5rem, 3.4vw, 1.95rem); margin-bottom: 0.4rem; }
+.hero-tight p { font-size: 0.93rem; max-width: 46rem; }
+.hero-stamp { margin-top: 0.6rem; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.3; letter-spacing: -0.03em; margin: 0 0 0.5rem; }
 .hero p { color: var(--fg-muted); margin: 0; font-size: 0.98rem; }
 
@@ -298,101 +318,192 @@ a { color: inherit; text-decoration: none; }
   .prose { font-size: 1.02rem; }
 }
 
-/* ── 소스별 카드 섹션 ─────────────────────────────────
-   기본 목록이 시간순 한 줄 세우기라면, 이쪽은 "어디서 온 이야기인가"로 묶는다.
-   섹션마다 고유색을 주되(--src-color) 카드 안의 카테고리 색과 충돌하지 않도록
-   섹션색은 제목·구분선에만 쓰고 카드 레일은 카테고리 색을 유지한다. */
+/* ── 소스 상황판 ────────────────────────────────────────
+   이 사이트가 파는 것은 "어디서 지금 뭐가 뜨는가"다. 그래서 홈은 잡지 그리드가 아니라
+   전광판에 가깝다. 세 판을 한 화면에 나란히 놓고 각 판의 순위를 보여 준다.
 
-.src-section { margin: 2.75rem 0; }
+   이미지가 없는 대신 **숫자가 시각의 중심**이다 — 순위, 점수, 댓글 수.
+   그래서 숫자와 소스 이름(라틴 문자)에만 Space Grotesk 를 쓴다.
+   한글 본문은 Pretendard 그대로다. 한 서체로 다 하면 숫자에 성격이 안 생기고,
+   한글까지 다른 서체로 바꾸면 자간·높이가 어긋난다. 언어가 섞인 콘텐츠라
+   역할별로 나누는 편이 맞다. */
 
-.src-head {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  padding-bottom: 0.6rem;
-  margin-bottom: 1.1rem;
-  border-bottom: 2px solid var(--src-color, var(--fg));
-  flex-wrap: wrap;
-}
-.src-head h2 {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 1.12rem;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-.src-head p { margin: 0; font-size: 0.85rem; color: var(--fg-muted); }
-
-.src-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 2px;
-  background: var(--src-color, var(--accent));
-  display: inline-block;
-}
-
-/* 3열 → 좁아지면 자동으로 줄어든다. 카드 최소 폭을 잡아 두면
-   태블릿에서 2열, 휴대폰에서 1열로 자연스럽게 접힌다. */
-.src-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 1.6rem;
+  margin: 1.5rem 0 1.75rem;
 }
 
-.src-card {
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--chip-color, var(--accent));
-  border-radius: var(--radius);
-  padding: 0.95rem 1.05rem 0.85rem;
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-.src-card:hover { border-color: var(--line-strong); transform: translateY(-1px); }
-@media (prefers-reduced-motion: reduce) { .src-card:hover { transform: none; } }
+/* 바깥 상자와 세로 구분선은 뺐다. 칸마다 기사 수가 달라서, 상자가 있으면
+   짧은 칸의 여백이 여백이 아니라 '구멍'으로 읽힌다. 색 있는 윗선이면 충분히 나뉜다. */
+.board-col { align-self: start; }
 
-.src-card h3 {
-  font-size: 1rem;
-  line-height: 1.45;
-  letter-spacing: -0.02em;
+.board-head {
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 2px solid var(--src, var(--accent));
+}
+.board-head h2 {
   margin: 0;
+  font-family: var(--font-num);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--src, var(--fg));
 }
-.src-card h3 a:hover { color: var(--accent); }
+.board-head p { margin: 0.15rem 0 0; font-size: 0.74rem; color: var(--fg-faint); }
 
-.src-card-summary {
+.board-list { list-style: none; margin: 0; padding: 0; }
+
+/* 대표 기사. 큰 순위 숫자가 이미지의 시각적 무게를 대신한다 —
+   숫자를 제목·요약 왼쪽에 두 줄 높이로 세워, 이미지 자리에 숫자를 앉힌 꼴이다. */
+.board-lead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.55rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.15rem;
+  border-bottom: 1px dashed var(--line);
+}
+
+.board-rank {
+  grid-row: 1 / 3;
+  font-family: var(--font-num);
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 0.82;
+  font-variant-numeric: tabular-nums;
+  color: var(--src, var(--accent));
+  align-self: start;
+  /* 숫자 윗선을 제목 첫 줄 윗선에 맞춘다 */
+  margin-top: -0.05em;
+}
+
+.board-lead h3 {
+  grid-column: 2;
+  margin: 0 0 0.28rem;
+  font-size: 1.12rem;
+  line-height: 1.38;
+  letter-spacing: -0.028em;
+  font-weight: 700;
+}
+.board-lead h3 a:hover { color: var(--src, var(--accent)); }
+.board-lead p {
+  grid-column: 2;
   margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.6;
+  font-size: 0.82rem;
+  line-height: 1.55;
   color: var(--fg-muted);
-  /* 카드 높이를 맞춰야 격자가 흐트러지지 않는다 */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.board-lead .board-foot { grid-column: 1 / -1; margin-top: 0.6rem; }
 
-.src-card-foot { margin-top: auto; padding-top: 0.35rem; justify-content: space-between; }
+/* 2위 아래. 여기 제목도 충분히 커야 한다 — 1위만 크면 나머지는 목차처럼 읽히고
+   클릭이 1위로만 몰린다. */
+.board-rest {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.4rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--line);
+}
+.board-rest:first-of-type { border-top: none; }
+.board-rest .board-rank {
+  grid-row: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.55;
+  margin-top: 0;
+}
+.board-rest a {
+  display: -webkit-box;
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.022em;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.board-rest a:hover { color: var(--src, var(--accent)); }
 
-/* 반응 수치 — "이게 왜 여기 있는지"의 근거라 눈에 띄어야 하지만
-   제목을 이기면 안 된다. 작게, 그러나 섹션색으로. */
-.buzz { display: inline-flex; gap: 0.4rem; }
-.buzz-n {
+/* 반응 수치. 예전엔 로그 척도 막대를 그렸는데 5점과 500점이 비슷한 길이로 눌려
+   정보가 되지 못하고 구분선처럼 보였다. 숫자를 그대로 쓰는 편이 정확하고 강하다. */
+.board-foot {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+  font-family: var(--font-num);
   font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
-  color: var(--src-color, var(--fg-muted));
-  background: color-mix(in srgb, var(--src-color, var(--accent)) 10%, transparent);
-  border-radius: 3px;
-  padding: 0.05rem 0.35rem;
 }
+.buzz { color: var(--src, var(--fg-muted)); }
+.buzz b { font-weight: 700; }
+.board-when { color: var(--fg-faint); margin-left: auto; }
 
-@media (max-width: 640px) {
-  .src-grid { grid-template-columns: 1fr; gap: 0.75rem; }
-  .src-head { gap: 0.35rem; }
+.board-empty { font-size: 0.85rem; color: var(--fg-faint); margin: 0.5rem 0 0; }
+
+/* 태블릿에서 2열, 휴대폰에서 1열. 3열을 억지로 유지하면 제목이 두 글자씩 끊긴다. */
+/* 공식 발표 — 한 줄로 눕힌다. 세로를 거의 안 먹으면서 제목은 그대로 나온다. */
+.strip {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  background: var(--bg-inset);
+}
+.strip h2 {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: var(--font-num);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--src, var(--accent));
+}
+.strip ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.strip li { display: flex; align-items: baseline; gap: 0.45rem; }
+.strip .board-when {
+  margin-left: 0;
+  font-family: var(--font-num);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+.strip a {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.strip a:hover { color: var(--src, var(--accent)); }
+
+/* 태블릿에서 2열, 휴대폰에서 1열. 3열을 억지로 유지하면 제목이 두 글자씩 끊긴다. */
+@media (max-width: 900px) {
+  .board { grid-template-columns: repeat(2, 1fr); row-gap: 1.6rem; }
+  .board-col:nth-child(3) { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .board { grid-template-columns: 1fr; row-gap: 1.5rem; }
+  .board-col:nth-child(3) { grid-column: auto; }
+  .board-rank { font-size: 2.2rem; }
+  /* 세 칸이 세로로 쌓이면 첫 화면이 다시 스크롤 지옥이 된다.
+     칸마다 3건까지만 남긴다 — 나머지는 바로 아래 '최신순 전체'에 그대로 있다. */
+  .board-rest:nth-of-type(n + 4) { display: none; }
 }
