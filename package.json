@@ -16,7 +16,8 @@
     "evaluate": "tsx pipeline/cli.ts evaluate",
     "report": "tsx pipeline/cli.ts report",
     "improve": "tsx pipeline/cli.ts improve",
-    "backfill": "tsx pipeline/cli.ts backfill"
+    "backfill": "tsx pipeline/cli.ts backfill",
+    "test": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",

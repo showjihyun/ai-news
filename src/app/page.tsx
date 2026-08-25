@@ -18,19 +18,21 @@ export default function HomePage() {
 
   return (
     <>
-      {/* 히어로를 두 줄로 줄였다. 첫 화면의 목적은 사이트 소개가 아니라
-          "지금 뭐가 뜨는지"를 바로 보여 주는 것이라, 설명이 판을 밀어내면 안 된다. */}
+      {/* 한 줄로 줄였다. 설명 문단이 55px 을 먹고 그만큼 판을 접힘선 밖으로 밀어냈다.
+          사이트가 뭘 하는 곳인지는 판 자체가 보여 준다 — 세 커뮤니티 이름이 그대로 떠 있으니.
+          긴 소개는 메타 설명과 /소개 가 맡는다. */}
       <section className="hero hero-tight">
         <h1>지금 AI 판에서 가장 뜨거운 것</h1>
-        <p>
-          Hacker News·Reddit·GeekNews 를 동시에 지켜보다가, 여러 곳에서 함께 화제가 된 것만
-          골라 전문용어 없이 풀어 드립니다.
+        <p className="meta hero-stamp">
+          세 커뮤니티를 동시에 지켜봅니다
+          {latest && (
+            <>
+              {' · 마지막 수집 '}
+              <LiveTime iso={latest.date} />
+            </>
+          )}
+          {` · 기사 ${posts.length}건`}
         </p>
-        {latest && (
-          <p className="meta hero-stamp">
-            마지막 수집 <LiveTime iso={latest.date} /> · 기사 {posts.length}건
-          </p>
-        )}
       </section>
 
       {posts.length === 0 ? (

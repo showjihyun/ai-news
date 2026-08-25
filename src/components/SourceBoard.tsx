@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { PostMeta } from '@/lib/posts';
 import { groupMeta, OFFICIAL_GROUP, topBuzz, type SourceGroup } from '@/lib/sources';
+import { BOARD_LIMIT, boardRanking } from '@/lib/board';
 import { LiveTime } from './LiveTime';
 
 /**
@@ -60,17 +61,22 @@ function LeadItem({ post }: { post: PostMeta }) {
   );
 }
 
+/*
+  2위 아래 항목.
+
+  수치를 제목 아래 별도 줄로 두었더니 한 건이 88px 이었다. 그 줄 하나 때문에
+  칸마다 두 건씩 접힘선 밖으로 밀려났다. 제목 끝에 붙이니 58px 이 된다 —
+  같은 화면에 제목이 두 개 더 들어온다. 시각을 뺀 것도 같은 이유다.
+  여기서 알고 싶은 건 "얼마나 시끄러운가"이지 "언제 올라왔나"가 아니다.
+*/
 function RestItem({ post, rank }: { post: PostMeta; rank: number }) {
   return (
     <li className="board-rest">
       <span className="board-rank board-rank-sm">{rank}</span>
-      <div>
+      <p>
         <Link href={`/posts/${post.slug}/`}>{post.title}</Link>
-        <div className="board-foot">
-          <Buzz post={post} />
-          <LiveTime iso={post.date} className="board-when" />
-        </div>
-      </div>
+        <Buzz post={post} />
+      </p>
     </li>
   );
 }
@@ -78,20 +84,14 @@ function RestItem({ post, rank }: { post: PostMeta; rank: number }) {
 export function SourceColumn({
   group,
   posts,
-  limit = 5,
+  limit = BOARD_LIMIT,
 }: {
   group: SourceGroup;
   posts: PostMeta[];
   limit?: number;
 }) {
   const meta = groupMeta(group);
-
-  // 판 안에서는 최신순이 아니라 화제순이다. 이 칸의 1번은 "가장 최근에 쓴 글"이 아니라
-  // "지금 저기서 가장 시끄러운 것"이어야 칸 제목과 말이 맞는다.
-  const ranked = [...posts].sort(
-    (a, b) => b.heat - a.heat || new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
-  const [lead, ...rest] = ranked.slice(0, limit);
+  const [lead, ...rest] = boardRanking(posts, limit);
 
   return (
     <section className="board-col" style={{ ['--src' as string]: meta.color }}>
@@ -124,18 +124,13 @@ export function SourceColumn({
 export function OfficialStrip({ posts, limit = 3 }: { posts: PostMeta[]; limit?: number }) {
   if (posts.length === 0) return null;
 
-  const ranked = [...posts].sort(
-    (a, b) => b.heat - a.heat || new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
-
   return (
     <section className="strip" style={{ ['--src' as string]: OFFICIAL_GROUP.color }}>
       <h2>{OFFICIAL_GROUP.name}</h2>
       <ul>
-        {ranked.slice(0, limit).map((p) => (
+        {boardRanking(posts, limit).map((p) => (
           <li key={p.slug}>
             <Link href={`/posts/${p.slug}/`}>{p.title}</Link>
-            <LiveTime iso={p.date} className="board-when" />
           </li>
         ))}
       </ul>

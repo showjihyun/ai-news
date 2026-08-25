@@ -1,0 +1,128 @@
+import type { PostMeta } from './posts';
+
+/**
+ * 첫 화면 상황판의 규칙.
+ *
+ * 이 사이트의 첫 화면이 하는 일은 하나다 — 스크롤 없이 "지금 뭐가 뜨는지" 보여 주기.
+ * 그래서 한 칸에 몇 건을 넣느냐는 취향이 아니라 계산이다. 아래 상수는 1366×768
+ * (노트북에서 가장 흔한 해상도) 브라우저에서 실제로 잰 값이고, foldBudget() 이
+ * 그 값으로 판 아래끝을 계산한다. 테스트가 이 계산을 지킨다.
+ */
+
+/**
+ * 브라우저에서 실측한 높이(px). 1366×768 크롬 기준이다.
+ *
+ * 다시 재는 법: 개발 서버를 띄우고 콘솔에서
+ *   getBoundingClientRect().height 를 .site-header / .hero / .board-lead / .board-rest 에 대해 찍는다.
+ * 레이아웃을 건드렸으면 반드시 다시 재고 여기를 고친다. 안 그러면 아래 테스트가
+ * 지키는 게 실제 화면이 아니라 옛날 숫자가 된다.
+ *
+ * 합계는 실측 판 아래끝과 3px 안쪽에서 맞는다(줄 높이 반올림 때문).
+ */
+const H = {
+  header: 61,
+  /** 제목 한 줄 + 한 줄짜리 부제 */
+  hero: 109,
+  boardMarginTop: 16,
+  /** 소스 이름 + 설명 + 밑줄 + 목록까지의 여백 */
+  boardHead: 68,
+  /** 1위 항목: 순위 숫자 + 제목 2줄 + 요약 2줄 + 수치 */
+  lead: 139,
+  /** 2위 아래 한 건: 제목 2줄에 수치를 이어 붙인 것 */
+  rest: 60,
+  /** 반올림 오차를 흡수할 여유 */
+  slack: 5,
+} as const;
+
+/**
+ * 한 칸에 보여 줄 최대 건수.
+ *
+ * 6 인 이유는 아래 foldBudget 계산 때문이다. 7 로 올리면 1280×720 에서 마지막 줄이
+ * 접힘선을 넘는다. 데이터가 아니라 화면이 정한 숫자이고, 테스트가 그걸 지킨다.
+ */
+export const BOARD_LIMIT = 6;
+
+/**
+ * 가장 긴 칸이 어디서 끝나는지.
+ *
+ * 판 높이는 가장 긴 칸이 정한다(그리드라서). 그래서 최악의 경우 —
+ * 한 칸이 BOARD_LIMIT 만큼 꽉 찬 경우 — 를 기준으로 잰다.
+ */
+export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) {
+  const boardTop = H.header + H.hero + H.boardMarginTop;
+  const tallestColumn = H.boardHead + H.lead + Math.max(0, limit - 1) * H.rest;
+  const boardBottom = boardTop + tallestColumn + H.slack;
+
+  return {
+    boardTop,
+    boardBottom,
+    fits: boardBottom <= viewportHeight,
+    /** 접힘선 위에 들어오는 제목 수(칸이 셋 다 꽉 찼을 때) */
+    headlines: limit * 3,
+  };
+}
+
+/**
+ * 휴대폰에서 한 칸에 남기는 건수.
+ *
+ * CSS 의 `.board-rest:nth-of-type(n + 4)` 규칙과 짝이다 — 1위 + 2건 = 3건.
+ * 한쪽만 고치면 아래 계산이 조용히 거짓말을 하게 되므로 같이 고쳐야 한다.
+ */
+export const MOBILE_ITEMS = 3;
+
+/** 휴대폰(390px 폭) 실측 높이(px). 데스크톱과 값이 달라 따로 잰다. */
+const M = {
+  header: 61,
+  hero: 114,
+  boardMarginTop: 16,
+  /** 소스 이름 + 밑줄 + 목록까지의 여백 (설명 줄은 휴대폰에서 감춘다) */
+  boardHead: 41,
+  /** 소스 이름 자체의 높이 — "이 소스가 보이나"를 판정하는 기준 */
+  headText: 33,
+  /** 요약을 한 줄로 줄인 1위 항목 */
+  lead: 119,
+  rest: 60,
+  rowGap: 18,
+  slack: 2,
+} as const;
+
+/**
+ * 휴대폰에서 몇 번째 소스까지 보이는가.
+ *
+ * 세 칸이 세로로 쌓이므로 데스크톱처럼 다 담을 수는 없다. 대신 지켜야 할 최소선이
+ * 있다 — 세 소스 이름이 다 보여야 한다. 하나라도 접힘선 밑에 있으면 독자는 이 사이트가
+ * 한 군데만 본다고 오해한다. 세 곳을 동시에 본다는 게 이 사이트가 파는 값이다.
+ *
+ * 칸마다 글 수가 다르지만 계산은 최악의 경우(모든 칸이 꽉 찬 경우)로 한다.
+ * 데이터가 늘면 칸이 길어지고, 그때 깨지면 늦다.
+ */
+export function stackedFoldBudget(
+  viewportHeight: number,
+  columns = 3,
+  itemsPerColumn: number = MOBILE_ITEMS,
+) {
+  const boardTop = M.header + M.hero + M.boardMarginTop;
+  const columnHeight =
+    M.boardHead + M.lead + Math.max(0, itemsPerColumn - 1) * M.rest + M.slack;
+
+  let sourcesVisible = 0;
+  for (let i = 0; i < columns; i++) {
+    const headBottom = boardTop + i * (columnHeight + M.rowGap) + M.headText;
+    if (headBottom <= viewportHeight) sourcesVisible++;
+  }
+
+  return { boardTop, columnHeight, sourcesVisible };
+}
+
+/**
+ * 칸 안의 순서.
+ *
+ * 최신순이 아니라 화제순이다. 칸 제목이 "개발자들이 가장 먼저 물어뜯는 곳"인데
+ * 1번이 그냥 최근에 쓴 글이면 제목이 거짓말이 된다.
+ * 같은 화제도면 최신 글을 앞에 둔다.
+ */
+export function boardRanking(posts: PostMeta[], limit: number = BOARD_LIMIT): PostMeta[] {
+  return [...posts]
+    .sort((a, b) => b.heat - a.heat || new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
+}
