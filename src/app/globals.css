@@ -519,12 +519,20 @@ a { color: inherit; text-decoration: none; }
 }
 .strip a:hover { color: var(--src, var(--accent)); }
 
-/* 태블릿에서 2열, 휴대폰에서 1열. 3열을 억지로 유지하면 제목이 두 글자씩 끊긴다. */
-@media (max-width: 900px) {
+/*
+  칸 수 경계.
+
+  경계값의 원본은 src/lib/board.ts 의 BOARD_BREAKPOINTS 다. 여기 숫자를 고치면
+  거기도 같이 고쳐야 하고, tests/responsive.test.ts 가 두 곳이 같은지 확인한다.
+
+  3칸에는 1001px 이 필요하다. 예전 경계는 900px 이었는데 901px 에서 한 칸이 260px 로
+  눌려 한국어 제목이 두 글자씩 끊겼다. 한 칸에 300px 은 줘야 읽힌다.
+*/
+@media (max-width: 1000px) {
   .board { grid-template-columns: repeat(2, 1fr); row-gap: 1.6rem; }
   .board-col:nth-child(3) { grid-column: 1 / -1; }
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .board { grid-template-columns: 1fr; row-gap: 1.15rem; }
   .board-col:nth-child(3) { grid-column: auto; }
   .board-rank { font-size: 2.2rem; }
@@ -544,5 +552,26 @@ a { color: inherit; text-decoration: none; }
   .hero-stamp { font-size: 0.78rem; }
   .board-head p { display: none; }
   .board-head { padding-bottom: 0.35rem; margin-bottom: 0.5rem; }
+  .board-lead p { -webkit-line-clamp: 1; line-clamp: 1; }
+}
+
+/*
+  휴대폰을 가로로 눕힌 경우.
+
+  아이폰 프로맥스를 눕히면 932px 이라 폭만 보면 노트북과 구분이 안 되고, 실제로
+  그 화면에서 3칸이 떠서 제목이 두 글자씩 끊겼다. "손가락으로 만지는데 화면이
+  납작하다" = 손에 든 전화기다. 태블릿은 눕혀도 높이가 800px 대라 걸리지 않고,
+  터치 노트북도 마찬가지다.
+
+  1칸이 아니라 2칸인 이유: 이 화면은 폭이 남고 높이가 모자란다. 1칸으로 만들면
+  한 줄이 50자를 넘어 읽기 나쁘고 세로로만 길어진다.
+*/
+@media (pointer: coarse) and (max-height: 600px) {
+  .board { grid-template-columns: repeat(2, 1fr); row-gap: 1.4rem; }
+  .board-col:nth-child(3) { grid-column: 1 / -1; }
+  /* 높이가 모자라니 세로로 먹는 것부터 줄인다 */
+  .hero-tight { padding: 0.7rem 0 0.55rem; }
+  .hero-tight h1 { font-size: 1.4rem; }
+  .board-head p { display: none; }
   .board-lead p { -webkit-line-clamp: 1; line-clamp: 1; }
 }

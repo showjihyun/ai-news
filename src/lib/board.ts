@@ -63,6 +63,55 @@ export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) 
 }
 
 /**
+ * 판이 몇 칸으로 갈라지는 경계.
+ *
+ * 여기가 이 값들의 원본이고, CSS 미디어쿼리는 이 숫자를 그대로 쓴다.
+ * 둘이 어긋나면 테스트는 초록인데 화면은 틀린 상태가 되므로,
+ * responsive.test.ts 가 CSS 를 직접 읽어 같은 숫자인지 확인한다.
+ */
+export const BOARD_BREAKPOINTS = {
+  /*
+    3칸에 필요한 최소 폭.
+
+    한국어 제목이 읽히려면 한 칸이 300px 은 돼야 한다. 3×300 에 칸 사이 여백과
+    본문 좌우 여백을 더하면 1000px 을 넘는다. 예전 경계는 900px 이었는데,
+    901px 에서 한 칸이 260px 로 눌려 제목이 두 글자씩 끊겼다.
+  */
+  threeColumnMin: 1001,
+  /*
+    2칸에 필요한 최소 폭.
+
+    폴더블을 펼친 세로(673~717px)까지 한 칸으로 내린다. 그 폭에서 2칸이면
+    한 칸이 300px 아래로 떨어져 3칸일 때와 같은 문제가 생긴다.
+  */
+  twoColumnMin: 761,
+  /*
+    "손가락으로 만지는데 납작하게 누웠다" = 휴대폰 가로.
+
+    폭만으로는 판단할 수 없다. 아이폰 프로맥스를 눕히면 932px 이라 노트북과
+    구분이 안 된다. 반면 태블릿은 가로로 눕혀도 높이가 800px 대라 걸리지 않고,
+    터치 노트북도 높이가 충분해 걸리지 않는다.
+  */
+  phoneLandscapeMaxHeight: 600,
+} as const;
+
+export interface Viewport {
+  width: number;
+  height: number;
+  /** 손가락·펜처럼 정밀하지 않은 포인터. CSS 의 `pointer: coarse` 와 같다. */
+  coarse: boolean;
+}
+
+/** 주어진 화면에서 판이 몇 칸인가. CSS 미디어쿼리와 같은 판정을 TypeScript 로 쓴 것. */
+export function boardColumns({ width, height, coarse }: Viewport): 1 | 2 | 3 {
+  if (width < BOARD_BREAKPOINTS.twoColumnMin) return 1;
+  // 휴대폰이 누운 경우. 폭이 아무리 넓어도 3칸은 주지 않는다.
+  if (coarse && height <= BOARD_BREAKPOINTS.phoneLandscapeMaxHeight) return 2;
+  if (width < BOARD_BREAKPOINTS.threeColumnMin) return 2;
+  return 3;
+}
+
+/**
  * 휴대폰에서 한 칸에 남기는 건수.
  *
  * CSS 의 `.board-rest:nth-of-type(n + 4)` 규칙과 짝이다 — 1위 + 2건 = 3건.
