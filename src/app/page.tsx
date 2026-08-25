@@ -60,14 +60,17 @@ export default function HomePage() {
               "한 화면에 다 보인다"는 이 페이지의 유일한 강점이 사라진다. */}
           <AdSlot slot="top" />
 
-          <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
-            최신순 전체
-          </h2>
-          <ul className="post-list">
-            {posts.slice(0, 40).map((post) => (
-              <PostCard key={post.slug} post={post} />
-            ))}
-          </ul>
+          {/* 판과 달리 여기는 세로로 읽는 곳이라 폭을 따로 좁힌다 — globals.css 의 --width-feed */}
+          <section className="feed">
+            <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
+              최신순 전체
+            </h2>
+            <ul className="post-list">
+              {posts.slice(0, 40).map((post) => (
+                <PostCard key={post.slug} post={post} />
+              ))}
+            </ul>
+          </section>
 
           <AdSlot slot="bottom" />
         </>
