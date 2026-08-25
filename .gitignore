@@ -26,3 +26,6 @@ data/.tmp/
 # 이건 되살릴 수 없는 상태가 아니다.
 data/trending.json
 .next-dev/
+
+.vercel
+.env*
