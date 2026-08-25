@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-08-26-엔터-공룡-4곳이-스태빌리티에-760억-베팅한-이유",
+      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+      "urls": [
+        "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding"
+      ],
+      "publishedAt": "2026-08-25T19:10:17.904Z"
+    },
+    {
+      "slug": "2026-08-26-오픈ai-할라페뇨-칩-엔비디아-블랙웰-넘었다-단서가-있다",
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "urls": [
+        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+      ],
+      "publishedAt": "2026-08-25T19:07:53.448Z"
+    },
+    {
       "slug": "2026-08-26-앤스로픽-클로드-채팅과-카우워크-기억-기능-통합",
       "title": "Anthropic Unifies Memory Across Claude and Cowork - CNET",
       "urls": [
