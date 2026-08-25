@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-08-25-ai-코딩-도구가-전문성-붕괴-부른다-신입-개발자-딜레마",
+      "title": "Coding expertise is going to collapse from AI reliance",
+      "urls": [
+        "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+        "https://reddit.com/r/artificial/comments/1vxdtcz/coding_expertise_is_going_to_collapse_from_ai"
+      ],
+      "publishedAt": "2026-08-25T12:10:46.864Z"
+    },
+    {
       "slug": "2026-08-23-m2-울트라에-올라간-딥시크-v4-플래시-검증은-아직",
       "title": "DeepSeek V4 Flash on an M2 Ultra: repacked to 141 GiB losslessly, smaller than the Q4 GGUF, at 25.8 t/s (42 t/s peak)",
       "urls": [
