@@ -81,10 +81,47 @@ test('휴대폰 가로 규칙이 폭 규칙보다 뒤에 온다 — 특정도가
   const oneCol = css.indexOf(`@media (max-width: ${BOARD_BREAKPOINTS.twoColumnMin - 1}px) {`);
   const coarse = css.indexOf('@media (pointer: coarse) and (max-height:');
   assert.ok(oneCol > 0, '1칸 규칙을 찾지 못했다');
-  assert.ok(
-    css.slice(oneCol, coarse > oneCol ? coarse : undefined).includes('grid-template-columns: 1fr'),
-    '찾은 블록에 1칸 선언이 없다 — 엉뚱한 블록을 잡았다',
-  );
   assert.ok(coarse > 0, '휴대폰 가로 규칙을 찾지 못했다');
+  /*
+    그 블록 **안에** 1칸 선언이 있는지 본다.
+
+    앞서는 블록 끝이 아니라 다음 블록 시작까지 잘라서 봤는데, 그러면 사이에 낀
+    엉뚱한 규칙이 조건을 채워 줘도 통과한다. 여는 중괄호부터 짝이 맞는 닫는
+    중괄호까지만 잘라야 한다.
+  */
+  const open = css.indexOf('{', oneCol);
+  let depth = 0;
+  let close = open;
+  for (; close < css.length; close++) {
+    if (css[close] === '{') depth++;
+    else if (css[close] === '}' && --depth === 0) break;
+  }
+  assert.ok(
+    css.slice(open, close).includes('grid-template-columns: 1fr'),
+    '찾은 블록 안에 1칸 선언이 없다 — 엉뚱한 블록을 잡았다',
+  );
   assert.ok(coarse > oneCol, '휴대폰 가로 규칙이 폭 규칙보다 앞에 있어 무시된다');
+});
+
+/*
+  수치 없는 '—' 는 어느 화면에서도 커지면 안 된다.
+
+  이건 실제로 한 번 깨졌다. `.heat-none b` 에서 !important 를 떼자, 미디어쿼리 안의
+  `.heat-lead b`(같은 특정도, 더 뒤)가 이겨서 휴대폰에서 '—' 가 1.5rem 으로 커졌다.
+  화면에서 가장 큰 자리가 "아무 수치도 없음"을 외치는 상태다.
+
+  지금은 `.heat.heat-none b`(0,2,1)로 이기고 있는데, 좁은 화면 블록의
+  `.heat-long.heat-lead b` 도 (0,2,1)이라 더 뒤에 있으면 다시 뒤집힌다.
+  (오늘은 '—' 가 한 글자라 heat-long 이 안 붙어 안 만나지만, 그건 우연이다.)
+*/
+test("수치 없음 규칙이 좁은 화면 크기 규칙보다 뒤에 온다", () => {
+  const css = fs.readFileSync(path.join(process.cwd(), 'src/app/globals.css'), 'utf8');
+  const none = css.indexOf('.heat.heat-none b');
+  const mobileLong = css.indexOf('.heat-long.heat-lead b', css.indexOf('@media (max-width: 760px)'));
+  assert.ok(none > 0, '.heat.heat-none b 규칙을 찾지 못했다');
+  if (mobileLong < 0) return;   // 좁은 화면에 그 규칙이 없으면 겨룰 일도 없다
+  assert.ok(
+    none > mobileLong,
+    '같은 특정도(0,2,1)라 뒤에 오는 쪽이 이긴다 — 수치 없음 규칙이 앞에 있으면 눌린다',
+  );
 });

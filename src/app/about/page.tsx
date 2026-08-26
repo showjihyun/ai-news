@@ -3,8 +3,14 @@ import { site } from '@/lib/site';
 import { PERSONA_BEATS, DESK_NAMES } from '@/lib/desks';
 import { groupMeta } from '@/lib/sources';
 
-/* 감시 목록은 여기서 보여 준다. 판의 마감 줄에 넣었더니 칩 11개가 160px 이 되어
-   접힘선 예산을 넘겼다. 사이트가 무엇을 보는지는 각주가 아니라 소개에서 할 말이다. */
+/*
+  감시 목록은 여기서 보여 준다. 판의 마감 줄에 넣었더니 칩 11개가 160px 이 되어
+  접힘선 예산을 넘겼다. 사이트가 무엇을 보는지는 각주가 아니라 소개에서 할 말이다.
+
+  비었을 때를 위한 대체 문구는 두지 않는다. 목록은 모듈 상수이고 테스트가 실제
+  수집 대상과 같은지 확인하므로, 비는 경우는 groupMeta 가 엉뚱한 그룹으로
+  떨어졌을 때뿐이다 — 그때는 그럴싸한 문장으로 덮는 것보다 드러나는 편이 낫다.
+*/
 const REDDIT_WATCHING = groupMeta('reddit').watching ?? [];
 
 export const metadata: Metadata = {
@@ -41,22 +47,14 @@ export default function AboutPage() {
         <ul>
           <li>Hacker News — 개발자·창업자 커뮤니티에서 가장 먼저 도는 소식</li>
           <li>
-            {/* 목록이 비면 "아래 서브레딧을" 뒤에 아무것도 없는 문장이 남는다.
-                원래 있던 정적 문장은 스스로 내용을 갖고 있어 그런 일이 없었다. */}
-            {REDDIT_WATCHING.length > 0 ? (
-              <>
-                Reddit — 아래 서브레딧을 지켜봅니다
-                <div className="board-chips" style={{ marginTop: '0.4rem' }}>
-                  {REDDIT_WATCHING.map((name) => (
-                    <span key={name} className="board-chip about-chip">
-                      {name}
-                    </span>
-                  ))}
-                </div>
-              </>
-            ) : (
-              <>Reddit — AI 관련 서브레딧</>
-            )}
+            Reddit — 아래 서브레딧을 지켜봅니다
+            <div className="board-chips" style={{ marginTop: '0.4rem' }}>
+              {REDDIT_WATCHING.map((name) => (
+                <span key={name} className="about-chip">
+                  {name}
+                </span>
+              ))}
+            </div>
           </li>
           <li>GeekNews — 국내 기술 커뮤니티</li>
           <li>공식 발표 — OpenAI, Google DeepMind, Hugging Face 등의 1차 출처</li>

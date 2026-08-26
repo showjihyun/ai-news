@@ -40,8 +40,11 @@ const H = {
    * 한때 여기에 서브레딧 칩 11개가 들어가 160px 이었는데, 그러면
    * 마감 줄이 붙은 칸이 꽉 찬 칸을 크게 넘어 판 전체를 밀어냈다.
    * 빈 자리를 메우려고 만든 것이 더 큰 빈 자리를 만드는 셈이라 칩은 /소개 로 옮겼다.
+   *
+   * 61 은 실측이다 — 박스 48px 에 위 여백 12.8px. 여백은 getBoundingClientRect 에
+   * 안 잡히므로 따로 더해야 한다(이걸 빠뜨리면 계산이 조용히 작아진다).
    */
-  note: 60,
+  note: 61,
   /** 반올림 오차를 흡수할 여유 */
   slack: 5,
 } as const;
@@ -89,7 +92,9 @@ export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) 
   const column = (items: number) =>
     H.colPadding +
     H.boardHead +
-    H.lead +
+    // 항목이 0이면 1위도 없다. 이걸 빼먹으면 column(0) 과 column(1) 이 같아져,
+    // limit 이 1일 때 있지도 않은 1위를 포함한 높이를 최댓값으로 고른다.
+    (items >= 1 ? H.lead : 0) +
     (items >= 2 ? H.second : 0) +
     Math.max(0, items - 2) * H.rest;
 
@@ -181,8 +186,14 @@ export function boardColumns({ width, height, coarse }: Viewport): 1 | 2 | 3 {
  */
 export const MOBILE_ITEMS = 3;
 
-/** 휴대폰(390×844) 실측 높이(px). 데스크톱과 값이 달라 따로 잰다. */
-const M = {
+/**
+ * 휴대폰(390×844) 실측 높이(px). 데스크톱과 값이 달라 따로 잰다.
+ *
+ * 테스트가 "2위를 되살리면 어떻게 되나" 같은 걸 물어볼 수 있게 내보낸다.
+ * 안 내보내면 테스트가 숫자를 베껴 적게 되고, 상수가 움직일 때 코드에 없는 값을
+ * 검사하게 된다 — 실제로 두 번 그랬다.
+ */
+export const M = {
   header: 61,
   hero: 103,
   boardMarginTop: 16,
@@ -256,7 +267,7 @@ export function stackedFoldBudget(
  *
  * 실기기에서 확인할 기회가 생기면 다시 재고 여기를 고친다.
  */
-const L = {
+export const L = {
   header: 61,
   /** 가로에서는 히어로를 더 줄인다 (h1 1.2rem, 여백도 최소) */
   hero: 68,
@@ -283,14 +294,9 @@ const L = {
  * 390px 높이에서 고를 수 있는 건 "두 소스에서 네 건" 아니면 "세 소스에서 세 건"인데,
  * 세 곳을 동시에 본다는 게 이 사이트가 파는 것이라 후자를 택했다.
  */
-export function landscapeFoldBudget(
-  viewportHeight: number,
-  columns = 3,
-  /** 1위 아래를 되살렸을 때를 재 보는 용도. 테스트가 숫자를 베껴 적지 않게 한다. */
-  extraPerRow = 0,
-) {
+export function landscapeFoldBudget(viewportHeight: number, columns = 3) {
   const boardTop = L.header + L.hero + L.boardMarginTop;
-  const rowHeight = L.boardHead + L.lead + extraPerRow + L.colPadBottom + L.slack;
+  const rowHeight = L.boardHead + L.lead + L.colPadBottom + L.slack;
   // 2칸 그리드: 0·1번은 1행, 2번은 2행.
   const rowOf = (i: number) => Math.floor(i / 2);
 

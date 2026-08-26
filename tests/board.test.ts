@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { boardRanking, BOARD_LIMIT, foldBudget, stackedFoldBudget, landscapeFoldBudget } from '../src/lib/board.js';
+import {
+  boardRanking, BOARD_LIMIT, foldBudget, stackedFoldBudget, landscapeFoldBudget,
+  hasEmptySlots, L, M,
+} from '../src/lib/board.js';
 import type { PostMeta } from '../src/lib/posts.js';
 
 function post(over: Partial<PostMeta> & { slug: string }): PostMeta {
@@ -113,9 +116,43 @@ test('가로에서 1위 아래를 되살리면 세 번째 소스가 밀려난다
     같은 커밋에서 rest 가 60 → 56 으로 바뀌고 85px 짜리 2위가 새로 생기면서
     코드 어디에도 없는 값을 검사하게 됐다. 계산을 board.ts 에서 가져다 쓴다.
   */
-  // 2위 한 건(67px, M.second)을 되살렸을 때를 모델에 물어본다.
-  // 숫자를 여기 베껴 적으면 상수가 움직일 때 코드에 없는 값을 검사하게 된다 —
-  // 실제로 한 번 그랬다(옛 rest 60px 를 그대로 적어 두고 있었다).
-  const withSecond = landscapeFoldBudget(390, 3, 67);
-  assert.ok(withSecond.sourcesVisible < 3, '2위까지 넣어도 세 소스가 보인다면 감출 이유가 없다');
+  /*
+    2위를 되살렸을 때 세 번째 소스가 어디에 오는지 상수로 계산한다.
+
+    숫자를 여기 베껴 적으면 안 된다. 두 번이나 그랬다 — 처음엔 옛 rest 60px 를,
+    다음엔 데스크톱 값 85 와 이미 바뀐 rowGap 16 을 적어 두고 코드 어디에도 없는
+    값을 검사했다. 이제 board.ts 가 내보내는 표에서 가져온다.
+  */
+  const b = landscapeFoldBudget(390);
+  const rowWithSecond = b.rowHeight + M.second;
+  const thirdHead = b.boardTop + rowWithSecond + L.rowGap + L.colPadTop + L.headText;
+  assert.ok(thirdHead > 390, '2위까지 넣어도 들어간다면 감출 이유가 없다');
+});
+
+/*
+  마감 줄 판정.
+
+  이 술어는 두 번 조용히 틀린 채로 배포됐다 — 처음엔 누적 기사 수로 판정해서
+  며칠 만에 모든 칸이 기준을 넘었고, 다음엔 min(기사 수, limit) 과 상수를 비교해서
+  앞의 식과 수학적으로 동일한 코드를 "고쳤다"고 커밋했다. 둘 다 테스트가 없었다.
+*/
+test('슬롯이 남으면 마감 줄을 붙인다', () => {
+  assert.equal(hasEmptySlots(3, 6), true);
+  assert.equal(hasEmptySlots(5, 6), true, '한 칸만 비어도 구멍은 구멍이다');
+});
+
+test('슬롯이 꽉 차면 붙이지 않는다 — 설명할 구멍이 없다', () => {
+  assert.equal(hasEmptySlots(6, 6), false);
+});
+
+test('기사가 아무리 쌓여도 그려진 줄 수로 판정한다', () => {
+  // boardRanking 이 limit 으로 잘라 주므로 shown 은 limit 을 넘지 않는다.
+  const many = Array.from({ length: 40 }, (_, i) => i);
+  const shown = Math.min(many.length, BOARD_LIMIT);
+  assert.equal(hasEmptySlots(shown, BOARD_LIMIT), false);
+});
+
+test('limit 은 인자로 받는다 — 모듈 상수에 묶으면 prop 을 준 호출과 어긋난다', () => {
+  assert.equal(hasEmptySlots(3, 3), false, 'limit 3 에 3건이면 꽉 찬 것이다');
+  assert.equal(hasEmptySlots(3, 6), true);
 });
