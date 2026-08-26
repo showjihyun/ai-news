@@ -56,12 +56,12 @@ export default function HomePage() {
 
           <OfficialStrip posts={grouped.official} />
 
-          {/* 광고를 판 아래로 내렸다. 상단에 두면 세 판이 접힘선 밑으로 밀려
-              "한 화면에 다 보인다"는 이 페이지의 유일한 강점이 사라진다. */}
-          <AdSlot slot="top" />
-
-          {/* 판과 달리 여기는 세로로 읽는 곳이라 폭을 따로 좁힌다 — globals.css 의 --width-feed */}
+          {/* 판과 달리 여기는 세로로 읽는 곳이라 폭을 따로 좁힌다 — globals.css 의 --width-feed.
+              광고도 이 안에 둔다. 밖에 두면 광고만 80rem 으로 튀어나와 폭이 어긋나 보인다.
+              (판 위가 아니라 아래인 이유: 위에 두면 세 칸이 접힘선 밑으로 밀린다) */}
           <section className="feed">
+            <AdSlot slot="top" />
+
             <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
               최신순 전체
             </h2>
@@ -70,9 +70,9 @@ export default function HomePage() {
                 <PostCard key={post.slug} post={post} />
               ))}
             </ul>
-          </section>
 
-          <AdSlot slot="bottom" />
+            <AdSlot slot="bottom" />
+          </section>
         </>
       )}
 

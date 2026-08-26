@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { boardRanking, BOARD_LIMIT, foldBudget, stackedFoldBudget } from '../src/lib/board.js';
+import { boardRanking, BOARD_LIMIT, foldBudget, stackedFoldBudget, landscapeFoldBudget } from '../src/lib/board.js';
 import type { PostMeta } from '../src/lib/posts.js';
 
 function post(over: Partial<PostMeta> & { slug: string }): PostMeta {
@@ -88,4 +88,25 @@ test('휴대폰 390×844 에서 세 소스가 모두 접힘선 위에 있다', (
 
 test('작은 휴대폰 375×667 에서도 최소 두 소스는 보인다', () => {
   assert.ok(stackedFoldBudget(667).sourcesVisible >= 2);
+});
+
+/*
+  휴대폰을 눕혔을 때.
+
+  세로와 배치가 달라 계산도 따로 있다 — 2칸이라 1·2번 소스가 같은 줄에 서고
+  3번이 다음 줄로 간다. 지켜야 할 선은 세로와 같다: 세 소스 이름이 다 보일 것.
+*/
+test('아이폰 가로 844×390 에서 세 소스가 모두 접힘선 위에 있다', () => {
+  const b = landscapeFoldBudget(390);
+  assert.equal(b.sourcesVisible, 3, `소스 ${b.sourcesVisible}개만 보인다`);
+});
+
+test('아이폰 SE 가로 667×375 에서도 세 소스가 보인다', () => {
+  assert.equal(landscapeFoldBudget(375).sourcesVisible, 3);
+});
+
+test('가로에서 1위 아래를 되살리면 세 번째 소스가 밀려난다 — 그래서 감춘 것이다', () => {
+  // 1위만일 때의 행 높이에 2위 한 건(60px)을 더하면 3번 소스가 접힘선을 넘는다.
+  const withRest = landscapeFoldBudget(390).boardTop + (39 + 119 + 60 + 3 + 16) + 32;
+  assert.ok(withRest > 390, '2건을 넣어도 들어간다면 감출 이유가 없다');
 });

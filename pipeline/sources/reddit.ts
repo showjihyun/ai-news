@@ -87,11 +87,13 @@ async function fetchSubViaRss(
   sinceHours: number,
   sort = 'top',
   query = 't=day&limit=25',
-): Promise<RawItem[]> {
+): Promise<RawItem[] | null> {
   const xml = await fetchText(`https://www.reddit.com/r/${sub}/${sort}/.rss?${query}`, {
     headers: { 'User-Agent': BROWSER_UA },
   });
-  if (!xml) return [];
+  // null 은 "못 받았다"(429·타임아웃), 빈 배열은 "받았는데 걸러서 남은 게 없다".
+  // 둘을 같은 값으로 뭉뚱그리면 재시도가 조용한 날에도 요청을 한 번 더 태운다.
+  if (!xml) return null;
 
   const entries = xml.split('<entry>').slice(1);
 
@@ -210,6 +212,16 @@ export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   const token = await getToken();
   const byId = new Map<string, RawItem>();
   let mode: string;
+  /*
+    지금 들고 있는 점수가 실제값인가 추정값인가.
+
+    RSS 는 업보트를 안 줘서 순위에서 역산한 추정값을 쓴다. 그때는 집계본의 실제
+    점수로 덮는 게 이득이다. 반면 OAuth 로 받은 값은 이미 실제 점수이고
+    정렬 가중(rising 1.1 — 먼저 잡은 글에 주는 가산점)까지 곱해져 있다.
+    거기에 하루 한 번 갱신되는 집계본 값을 덮으면 최대 24시간 묵은 숫자로
+    되돌리는 셈이라, OAuth 가 존재하는 이유인 신선도를 스스로 깎는다.
+  */
+  let liveScores = false;
 
   if (token) {
     // 승인받은 앱 자격증명이 있을 때만 JSON 을 쓴다. 점수·댓글 수·본문이 다 들어온다.
@@ -233,6 +245,23 @@ export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
       await sleep(1000);
     }
     mode = `OAuth · 정렬 ${ok}/${REDDIT_LISTINGS.length}`;
+    liveScores = ok > 0;
+
+    /*
+      토큰이 있어도 전부 실패하면 RSS 로 내려간다.
+
+      예전 코드에는 `if (jsonOk === 0)` 가 있었는데 이 분기를 다시 쓰면서 빠뜨렸다.
+      키가 폐기되거나 상업적 이용으로 차단당하면 토큰은 발급되는데 요청은 다 막히고,
+      그러면 레딧이 통째로 조용히 비었다 — 로그에는 'OAuth · 정렬 0/3' 만 남는다.
+    */
+    if (ok === 0) {
+      console.log('  ! OAuth 요청이 모두 실패했습니다 — RSS 로 내려갑니다');
+      for (const item of await fetchRssWithRetry(sinceHours)) {
+        const prev = byId.get(item.id);
+        if (!prev || item.score > prev.score) byId.set(item.id, item);
+      }
+      mode = 'OAuth 실패 → RSS 폴백 (순위 기반 추정 점수)';
+    }
   } else {
     /*
       토큰이 없으면 JSON 은 아예 시도하지 않는다.
@@ -267,10 +296,17 @@ export async function fetchReddit(sinceHours: number): Promise<RawItem[]> {
   for (const t of trends) {
     const prev = byId.get(t.id);
     if (prev) {
-      // 제목은 우리 쪽이 온전하다(집계본은 잘라서 싣는다). 수치만 가져온다.
-      prev.score = t.score;
-      prev.commentCount = t.commentCount;
-      enriched++;
+      // 제목은 우리 쪽이 온전하다(집계본은 잘라서 싣는다). 수치만 본다.
+      // 이미 실제 점수를 들고 있으면 건드리지 않는다 — 위 liveScores 주석 참고.
+      if (!liveScores) {
+        prev.score = t.score;
+        prev.commentCount = t.commentCount;
+        enriched++;
+      } else if (prev.commentCount === 0 && t.commentCount > 0) {
+        // 댓글 수만 비어 있으면 그것만 채운다. 순위를 뒤집지 않는다.
+        prev.commentCount = t.commentCount;
+        enriched++;
+      }
     } else {
       byId.set(t.id, t);
       added++;
@@ -294,7 +330,9 @@ async function fetchRssWithRetry(sinceHours: number): Promise<RawItem[]> {
   for (let attempt = 0; attempt < 2; attempt++) {
     if (attempt > 0) await sleep(5000);
     const items = await fetchSubViaRss(REDDIT_MULTI, sinceHours, 'top', 't=day&limit=100');
-    if (items.length) return items;
+    // 받아 왔으면 0건이라도 그게 답이다. 조용한 시간대에는 필터를 통과하는 글이
+    // 정말로 없을 수 있고, 그때 다시 부르면 같은 응답을 받으려고 남은 예산을 태운다.
+    if (items !== null) return items;
   }
   return [];
 }

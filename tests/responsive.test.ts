@@ -16,6 +16,9 @@ const DEVICES = [
   { name: '갤럭시 세로',        width: 360,  height: 800,  coarse: true,  cols: 1 },
   { name: '폴더블 펼친 세로',   width: 673,  height: 841,  coarse: true,  cols: 1 },
   { name: '아이폰 가로',        width: 844,  height: 390,  coarse: true,  cols: 2 },
+  // 좁고 납작한 구형 휴대폰. 폭만 보면 1칸 구간인데, CSS 에서는 휴대폰 가로 규칙이
+  // 뒤에 와서 2칸이 이긴다. 모델이 1칸이라고 하면 화면과 어긋난다.
+  { name: '아이폰 SE 가로',     width: 667,  height: 375,  coarse: true,  cols: 2 },
   { name: '아이폰 프로맥스 가로', width: 932, height: 430,  coarse: true,  cols: 2 },
   { name: '아이패드 세로',      width: 820,  height: 1180, coarse: true,  cols: 2 },
   { name: '아이패드 가로',      width: 1180, height: 820,  coarse: true,  cols: 3 },

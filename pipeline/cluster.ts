@@ -78,11 +78,23 @@ export function clusterItems(items: RawItem[]): Cluster[] {
 function finalize(cluster: Cluster): Cluster {
   const items = cluster.items;
 
-  // 대표 제목/링크: 한국어 제목이 있으면 우선(독자가 바로 읽을 수 있어서),
-  // 없으면 화제성이 가장 높은 아이템의 제목을 쓴다.
+  /*
+    대표 제목/링크: 한국어 제목이 있으면 우선(독자가 바로 읽을 수 있어서),
+    없으면 화제성이 가장 높은 아이템의 제목을 쓴다.
+
+    다만 잘려 온 제목은 후보에서 뺀다. 레딧 트렌드 집계본은 긴 제목을 50자쯤에서
+    자르는데(오늘 자 보고서 기준 29건), 그쪽 점수는 실제 업보트라 1000~3800 이고
+    HN 은 100~800 이다. 그냥 점수로 고르면 잘린 제목이 거의 항상 이겨서
+    "Qwen 3.8 27B in 9th position on code arena. Gemma 4" 같은 문장 토막이
+    기사 제목과 프롬프트에 그대로 들어간다.
+
+    온전한 제목이 하나도 없을 때만 잘린 걸 쓴다 — 그때는 그게 우리가 아는 전부다.
+  */
+  const whole = items.filter((i) => !i.titleTruncated);
+  const pool = whole.length ? whole : items;
   const best =
-    items.find((i) => i.lang === 'ko' && i.score > 0) ??
-    items.reduce((a, b) => (b.score > a.score ? b : a));
+    pool.find((i) => i.lang === 'ko' && i.score > 0) ??
+    pool.reduce((a, b) => (b.score > a.score ? b : a));
 
   // 외부 기사 링크를 우선한다. 토론 링크(레딧/HN/X/긱뉴스)는 원문이 아니라서 후순위.
   // 판정은 util.isNonOriginalUrl 하나로 통일한다 — 여기 목록이 extract 보다 좁으면

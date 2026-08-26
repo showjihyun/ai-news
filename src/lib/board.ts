@@ -22,7 +22,7 @@ import type { PostMeta } from './posts';
 const H = {
   header: 61,
   /** 제목 한 줄 + 한 줄짜리 부제 */
-  hero: 109,
+  hero: 104,
   boardMarginTop: 16,
   /** 소스 이름 + 설명 + 밑줄 + 목록까지의 여백 */
   boardHead: 68,
@@ -104,9 +104,19 @@ export interface Viewport {
 
 /** 주어진 화면에서 판이 몇 칸인가. CSS 미디어쿼리와 같은 판정을 TypeScript 로 쓴 것. */
 export function boardColumns({ width, height, coarse }: Viewport): 1 | 2 | 3 {
-  if (width < BOARD_BREAKPOINTS.twoColumnMin) return 1;
-  // 휴대폰이 누운 경우. 폭이 아무리 넓어도 3칸은 주지 않는다.
+  /*
+    휴대폰 가로를 폭보다 먼저 본다.
+
+    CSS 에서 이 규칙이 폭 규칙들보다 뒤에 오고 특정도가 같아서, 겹치면 이쪽이 이긴다.
+    여기서 폭을 먼저 보면 아이폰 SE 가로(667×375)에서 모델은 1칸이라고 하는데
+    화면은 2칸이 된다 — 테스트는 초록인데 화면은 다른, 가장 나쁜 어긋남이다.
+    순서를 CSS 와 맞춘다.
+
+    2칸인 이유는 이 화면이 폭은 남고 높이가 모자라서다. 1칸이면 한 줄이 너무 길고
+    세로로만 늘어난다.
+  */
   if (coarse && height <= BOARD_BREAKPOINTS.phoneLandscapeMaxHeight) return 2;
+  if (width < BOARD_BREAKPOINTS.twoColumnMin) return 1;
   if (width < BOARD_BREAKPOINTS.threeColumnMin) return 2;
   return 3;
 }
@@ -161,6 +171,46 @@ export function stackedFoldBudget(
   }
 
   return { boardTop, columnHeight, sourcesVisible };
+}
+
+/** 휴대폰 가로(844×390 폭 기준) 실측 높이(px). 세로와 값이 달라 따로 잰다. */
+const L = {
+  header: 61,
+  hero: 75,
+  boardMarginTop: 16,
+  /** 소스 이름 + 밑줄 + 목록까지의 여백 */
+  boardHead: 39,
+  /** 소스 이름 자체 */
+  headText: 32,
+  /** 요약을 한 줄로 줄인 1위 항목 (가로에서는 2위 아래를 감춘다) */
+  lead: 119,
+  rowGap: 16,
+  slack: 3,
+} as const;
+
+/**
+ * 휴대폰을 눕혔을 때 몇 번째 소스까지 보이는가.
+ *
+ * 세로와 배치가 다르다. 가로는 2칸이라 1·2번 소스가 같은 줄에 서고 3번이 다음 줄로 간다.
+ * 그래서 세로용 계산(stackedFoldBudget)을 그대로 쓰면 틀린다 — 칸이 셋이니 3단이라고
+ * 계산해 버린다.
+ *
+ * 여기서는 1위만 남긴다. 2건까지 두면 3번 소스 머리가 388px 에 걸려 390px 화면을 넘었다.
+ * 390px 높이에서 고를 수 있는 건 "두 소스에서 네 건" 아니면 "세 소스에서 세 건"인데,
+ * 세 곳을 동시에 본다는 게 이 사이트가 파는 것이라 후자를 택했다.
+ */
+export function landscapeFoldBudget(viewportHeight: number, columns = 3) {
+  const boardTop = L.header + L.hero + L.boardMarginTop;
+  const rowHeight = L.boardHead + L.lead + L.slack;
+  // 2칸 그리드: 0·1번은 1행, 2번은 2행.
+  const rowOf = (i: number) => Math.floor(i / 2);
+
+  let sourcesVisible = 0;
+  for (let i = 0; i < columns; i++) {
+    const headBottom = boardTop + rowOf(i) * (rowHeight + L.rowGap) + L.headText;
+    if (headBottom <= viewportHeight) sourcesVisible++;
+  }
+  return { boardTop, rowHeight, sourcesVisible };
 }
 
 /**

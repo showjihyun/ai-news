@@ -1,5 +1,5 @@
 import type { RawItem } from '../types.js';
-import { needsAiFilter, subNewsiness } from '../config.js';
+import { REDDIT_SUBS, needsAiFilter, subNewsiness } from '../config.js';
 import { fetchText, isAiRelated, isHelpRequest, detectLang, hoursAgo } from '../util.js';
 
 /**
@@ -19,6 +19,15 @@ import { fetchText, isAiRelated, isHelpRequest, detectLang, hoursAgo } from '../
  * 어떤 글이 몇 점을 받았나. 본문은 우리 파이프라인이 원문에서 직접 만든다.
  */
 
+/** 우리가 고른 서브인지. 집계본은 우리 목록 밖의 서브도 담는다. */
+const KNOWN_SUBS = new Set(REDDIT_SUBS.map((s) => s.name.toLowerCase()));
+function isKnownSub(sub: string): boolean {
+  return KNOWN_SUBS.has(sub.toLowerCase());
+}
+
+/** 검증하지 않은 서브의 뉴스 밀도. 목록에 있는 서브의 하한(0.45)보다 낮게 잡는다. */
+const UNVETTED_NEWSINESS = 0.4;
+
 const REPORT_URL =
   'https://raw.githubusercontent.com/liyedanpdx/reddit-ai-trends/main/reports/latest_report_en.md';
 
@@ -32,20 +41,36 @@ const REPORT_URL =
 const NON_NEWS = new Set([
   'Meme', 'Funny', 'Shitposting', 'Video', 'Image', 'Humor',
   'Help Wanted', 'Question', 'Support',
+  // 구경거리 모음. 로봇 경기 영상·과장 예언이 대부분이라 풀어 줄 내용이 없다.
+  'The Singularity is Near',
 ]);
+/*
+  'Robotics' 는 일부러 넣지 않는다.
+
+  이 분류에 육상 경기 영상 같은 구경거리가 섞이는 건 맞지만, 휴머노이드 회사의
+  투자·출시처럼 진짜 뉴스도 같은 분류로 온다. 통째로 막으면 그쪽까지 날아간다.
+  구경거리는 아래 AI 키워드 필터가 잡는다 — 제목에 모델명도 회사명도 없기 때문이다.
+*/
 
 /** 마크다운 이스케이프와 HTML 엔티티를 되돌린다. 표 안에 \' 와 &nbsp; 가 섞여 있다. */
 function clean(s: string): string {
-  return s
-    .replace(/\\([\\`*_{}[\]()#+\-.!'"])/g, '$1')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&quot;/g, '"')
-    .replace(/&#0?39;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return (
+    s
+      .replace(/\\([\\`*_{}[\]()#+\-.!'"])/g, '$1')
+      /*
+        세미콜론을 선택으로 둔다. 집계본이 긴 제목을 자를 때 엔티티 한가운데를 자르는
+        일이 있어서 `250$.&nbsp` 처럼 세미콜론 없이 끝난다. `&nbsp;` 만 처리하면
+        그 토막이 제목에 그대로 남는다(오늘 자 보고서에서 7건 확인).
+      */
+      .replace(/&nbsp;?/g, ' ')
+      .replace(/&quot;?/g, '"')
+      .replace(/&#0?39;?/g, "'")
+      .replace(/&lt;?/g, '<')
+      .replace(/&gt;?/g, '>')
+      .replace(/&amp;?/g, '&')
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
 }
 
 /** '2026-08-24 16:21 UTC' → ISO. 형식이 어긋나면 null 을 돌려 그 행만 버린다. */
@@ -86,9 +111,16 @@ function parseRows(md: string): Row[] {
   let headingSub = '';
 
   for (const line of md.split('\n')) {
-    const h3 = line.match(/^###\s+r\/(\w+)/i);
-    if (h3) {
-      headingSub = h3[1];
+    /*
+      제목 줄을 만나면 상속을 끊는다.
+
+      예전에는 `### r/xxx` 만 보고 headingSub 를 세팅하고 비우지는 않았다.
+      그러면 서브레딧별 섹션이 끝난 뒤에 나오는 표(예: ## Trend Analysis)의 행이
+      마지막 서브에 그대로 붙는다 — 그 서브의 뉴스 밀도와 필터 규칙까지 딸려 간다.
+      지금은 그 표에 글 링크가 없어 안 걸리지만, 저쪽이 링크를 하나 넣는 순간 터진다.
+    */
+    if (/^#{1,6}\s/.test(line)) {
+      headingSub = line.match(/^###\s+r\/(\w+)/i)?.[1] ?? '';
       continue;
     }
     if (!line.trim().startsWith('|')) continue;
@@ -148,7 +180,13 @@ export async function fetchRedditTrends(sinceHours: number): Promise<RawItem[]> 
   let dropped = 0;
   for (const r of parseRows(md)) {
     if (NON_NEWS.has(r.category)) { dropped++; continue; }
-    if (needsAiFilter(r.sub) && !isAiRelated(r.title)) { dropped++; continue; }
+    /*
+      집계본은 우리가 고르지 않은 서브도 담는다(r/LocalLLM, r/AI_Agents, r/LLMDevs,
+      r/datascience 등). 그런 서브는 검증한 적이 없으므로 AI 키워드 필터를 무조건 걸고,
+      뉴스 밀도도 낮춰 잡는다. 안 그러면 우리가 일부러 0.45 로 눌러 둔 r/ChatGPT 보다
+      검증 안 된 서브가 더 높은 가중치(기본 1.0)를 받는다.
+    */
+    if ((needsAiFilter(r.sub) || !isKnownSub(r.sub)) && !isAiRelated(r.title)) { dropped++; continue; }
     if (isHelpRequest(r.title)) { dropped++; continue; }
     if (hoursAgo(r.createdAt) > sinceHours) continue;
 
@@ -164,7 +202,7 @@ export async function fetchRedditTrends(sinceHours: number): Promise<RawItem[]> 
     url: `https://www.reddit.com/comments/${r.id}`,
     permalink: `https://www.reddit.com/comments/${r.id}`,
     createdAt: r.createdAt,
-    score: Math.round(r.score * subNewsiness(r.sub)),
+    score: Math.round(r.score * (isKnownSub(r.sub) ? subNewsiness(r.sub) : UNVETTED_NEWSINESS)),
     commentCount: r.comments,
     lang: detectLang(r.title),
     titleTruncated: r.truncated || undefined,
