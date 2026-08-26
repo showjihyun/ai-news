@@ -133,6 +133,28 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL || 'claude-opus-5' }}
         run: npx tsx pipeline/cli.ts evaluate
 
+      # 평가만 하고 끝내면 기준 미달 기사가 그대로 남는다.
+      #
+      # 실제로 그렇게 됐다. 발행 시 개정 루프가 3회 안에 못 살린 기사는 낮은 점수와
+      # 근거 없는 주장을 단 채 사이트에 남았고, 자동 발행이 며칠 돌자 평균이
+      # 4.61 → 4.48 로 내려가고 없는 수치를 지어낸 기사가 3건 쌓였다
+      # ("삼성 300조·SK 100조 투자", "AI 인재 몸값 수억 원대" — 둘 다 자료에 없다).
+      # 광고를 붙일 사이트에서 이건 신뢰 문제라 수를 채우는 것보다 우선한다.
+      #
+      # improve 는 4.5 미만이거나 근거 없는 주장이 있는 기사만 골라 다시 쓴다.
+      # 이전 점수보다 나빠지면 되돌리므로 여러 번 돌아도 나빠지지 않는다.
+      - name: 기준 미달 기사 개정
+        continue-on-error: true
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_BACKEND: ${{ steps.auth.outputs.backend }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'claude-opus-5' }}
+        run: npx tsx pipeline/cli.ts improve
+
       - name: 변경 사항 커밋
         run: |
           git config user.name  "ai-news-bot"

@@ -59,6 +59,21 @@ export function saveReview(review: Review) {
   fs.writeFileSync(REVIEWS_PATH, JSON.stringify(store, null, 2) + '\n', 'utf8');
 }
 
+/**
+ * 평가 기록을 지운다. 기사를 격리할 때 쓴다.
+ *
+ * 기록을 남겨 두면 다음 improve 가 사이트에 없는 파일을 고치려다 실패한다.
+ * 되돌릴 때는 evaluate 가 다시 만들어 준다.
+ */
+export function removeReview(slug: string) {
+  const store = loadStore();
+  const before = store.reviews.length;
+  store.reviews = store.reviews.filter((r) => r.slug !== slug);
+  if (store.reviews.length === before) return;
+  fs.mkdirSync(path.dirname(REVIEWS_PATH), { recursive: true });
+  fs.writeFileSync(REVIEWS_PATH, JSON.stringify(store, null, 2) + '\n', 'utf8');
+}
+
 export function reviewedSlugs(): Set<string> {
   return new Set(loadStore().reviews.map((r) => r.slug));
 }

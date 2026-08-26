@@ -16,6 +16,7 @@ import { dimensionName } from './rubric.js';
 import { improveToTarget } from './revise.js';
 import type { Review } from './reviews.js';
 import { backfillEvidence, articlesMissingEvidence } from './backfill.js';
+import { quarantineFabrications } from './quarantine.js';
 import { mapLimit } from './util.js';
 import type { Cluster } from './types.js';
 
@@ -268,7 +269,13 @@ async function main() {
 
     for (const rev of improved) saveReview(rev);
 
+    quarantineFabrications();
     printReport(loadReviews());
+    return;
+  }
+
+  if (command === 'quarantine') {
+    quarantineFabrications();
     return;
   }
 
@@ -415,6 +422,17 @@ async function main() {
     });
 
     for (const rev of checked) if (rev) saveReview(rev);
+
+    /*
+      개정으로도 못 살린 날조는 여기서 내린다.
+
+      이 순서가 중요하다. 격리를 브리핑보다 **먼저** 돌려야 내려간 기사가
+      브리핑에 링크로 남지 않고, 커밋보다 먼저라 사이트에 아예 도달하지 않는다.
+      점수가 낮은 건 남겨 두지만 없는 숫자를 지어낸 건 한 건도 내보내지 않는다 —
+      낮은 점수는 읽다 말면 그만이고, 날조는 한 건만 발각돼도 사이트 전체를
+      의심하게 만든다.
+    */
+    quarantineFabrications();
   }
 
   // 기사를 새로 냈으면 일간 브리핑도 갱신한다. 발행분을 재조합하는 것이라 LLM 을 다시 부르지 않는다.
