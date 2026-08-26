@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-08-26-rag-벡터-db-없이-bm25로-시작하는-법",
+      "title": "RAG Is Simpler Than You Think",
+      "urls": [
+        "https://lighthousenewsletter.com/p/rag-is-simpler-than-you-think"
+      ],
+      "publishedAt": "2026-08-26T10:07:21.586Z"
+    },
+    {
       "slug": "2026-08-26-클로드-코드-예전이-나았다-개발자들-불만-터졌다",
       "title": "I miss the old Claude Code",
       "urls": [
