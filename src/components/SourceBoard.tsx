@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import type { PostMeta } from '@/lib/posts';
-import { groupMeta, OFFICIAL_GROUP, topBuzz, type SourceGroup } from '@/lib/sources';
-import { BOARD_LIMIT, boardRanking } from '@/lib/board';
+import {
+  groupMeta, heatValue, OFFICIAL_GROUP, type SourceGroup, type SourceGroupMeta,
+} from '@/lib/sources';
+import { BOARD_LIMIT, SPARSE_AT, boardRanking } from '@/lib/board';
 import { LiveTime } from './LiveTime';
 
 /**
@@ -33,12 +35,16 @@ import { LiveTime } from './LiveTime';
  * "아무 수치도 없음"을 외치게 되어, 이 배치를 만든 이유가 무너진다.
  */
 function Heat({ post, size = 'lead' }: { post: PostMeta; size?: 'lead' | 'second' }) {
-  const buzz = topBuzz(post);
-  const value = !buzz ? '—' : (buzz.comments > 0 ? buzz.comments : buzz.score).toLocaleString();
-  const label = !buzz ? '집계 전' : buzz.comments > 0 ? '댓글' : '점수';
+  const { value, label, missing } = heatValue(post);
+  // 네 자리가 넘으면 고정 폭을 넘쳐 제목을 침범한다. 실제로 해커뉴스 상위 글과
+  // r/LocalLLaMA 최상위는 네 자리가 흔하다. 폭을 늘리는 대신 글자를 줄인다 —
+  // 폭이 흔들리면 아래 항목들의 제목 시작점이 어긋나 목록이 들쭉날쭉해진다.
+  const long = value.length >= 4;
 
   return (
-    <span className={`heat heat-${size}${buzz ? '' : ' heat-none'}`}>
+    <span
+      className={`heat heat-${size}${missing ? ' heat-none' : ''}${long ? ' heat-long' : ''}`}
+    >
       <b>{value}</b>
       <i>{label}</i>
     </span>
@@ -82,12 +88,9 @@ function SecondItem({ post }: { post: PostMeta }) {
 
 /** 3위 아래. 수치를 왼쪽 열에 세워 제목과 자리를 다투지 않게 한다. */
 function RestItem({ post }: { post: PostMeta }) {
-  const buzz = topBuzz(post);
   return (
     <li className="board-rest">
-      <span className="board-count">
-        {buzz ? (buzz.comments > 0 ? buzz.comments : buzz.score).toLocaleString() : '—'}
-      </span>
+      <span className="board-count">{heatValue(post).value}</span>
       <p>
         <Link href={`/posts/${post.slug}/`}>{post.title}</Link>
       </p>
@@ -102,28 +105,27 @@ function RestItem({ post }: { post: PostMeta }) {
  * 데이터가 적은 게 원인이지만, 아무 말 없이 비워 두면 그게 그냥 구멍으로 읽힌다.
  * "여기까지가 오늘 전부"라고 말해 주면 같은 여백이 정보가 된다.
  *
- * 글이 넉넉한 칸에는 붙이지 않는다 — 할 말이 없는데 자리를 채우는 꼴이 된다.
+ * 판정 기준은 **이 칸에 그려지는 줄 수**다. 처음에는 그 칸의 누적 기사 수로
+ * 판정했는데, 그건 시간이 갈수록 늘기만 해서 며칠 만에 모든 칸이 기준을 넘었다.
+ * 그러면 이 기능도, 여기 붙은 레딧 칩 목록도 영영 화면에 안 뜬다 —
+ * 실제로 그 상태로 배포됐다(해커뉴스 17건·레딧 11건).
  */
-const SPARSE_AT = 4;
+function ColumnNote({ meta, shown }: { meta: SourceGroupMeta; shown: number }) {
+  if (shown >= SPARSE_AT || !meta.note) return null;
 
-function ColumnNote({ group, count }: { group: SourceGroup; count: number }) {
-  const meta = groupMeta(group);
-  if (count >= SPARSE_AT || !meta.note) return null;
+  /*
+    글자 한 줄만 쓴다.
 
+    처음에는 여기에 감시 중인 서브레딧 칩을 같이 그렸다. 그런데 서브가 11개라
+    칩 목록만 160px 이 되고, 그러면 마감 줄이 붙은 칸이 꽉 찬 칸보다 길어져
+    판 전체를 밀어낸다 — 빈 자리를 메우려고 만든 것이 더 큰 빈 자리를 만드는 꼴이다.
+    (접힘선 계산이 이걸 잡아냈다.)
+
+    목록은 /소개 로 옮겼다. 사이트가 무엇을 보는지는 각주가 아니라 소개에서
+    할 말이고, 거기는 세로 여유가 있다.
+  */
   return (
     <div className="board-note">
-      {meta.watching && meta.watching.length > 0 && (
-        <>
-          <p className="board-note-label">지금 지켜보는 곳</p>
-          <div className="board-chips">
-            {meta.watching.map((name) => (
-              <span key={name} className="board-chip">
-                {name}
-              </span>
-            ))}
-          </div>
-        </>
-      )}
       <p className="board-note-text">{meta.note}</p>
     </div>
   );
@@ -139,13 +141,16 @@ export function SourceColumn({
   limit?: number;
 }) {
   const meta = groupMeta(group);
-  const [lead, second, ...rest] = boardRanking(posts, limit);
+  const ranked = boardRanking(posts, limit);
+  const [lead, second, ...rest] = ranked;
 
   return (
     <section className="board-col" style={{ ['--src' as string]: meta.color }}>
       <header className="board-head">
         <h2>{meta.name}</h2>
-        <span className="board-tally">{posts.length}건</span>
+        {/* '총' 을 붙인다. 히어로에 "마지막 수집 N시간 전" 이 있어서, 맨숫자만 두면
+            오늘 건진 수로 읽힌다. 실제로는 이 판에서 지금까지 쓴 전체 기사 수다. */}
+        <span className="board-tally">총 {posts.length}건</span>
       </header>
 
       {lead ? (
@@ -157,7 +162,7 @@ export function SourceColumn({
               <RestItem key={p.slug} post={p} />
             ))}
           </ol>
-          <ColumnNote group={group} count={posts.length} />
+          <ColumnNote meta={meta} shown={ranked.length} />
         </>
       ) : (
         <p className="board-empty">아직 이 판에서 건진 소식이 없습니다.</p>

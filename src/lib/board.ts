@@ -34,6 +34,14 @@ const H = {
   second: 85,
   /** 3위 아래 한 건: 제목 2줄 */
   rest: 56,
+  /**
+   * 짧은 칸 마감 줄. 글자 두 줄짜리다.
+   *
+   * 한때 여기에 서브레딧 칩 11개가 들어가 160px 이었는데, 그러면
+   * `column(SPARSE_AT) + note` 가 꽉 찬 칸을 넘어 판 전체를 밀어냈다.
+   * 빈 자리를 메우려고 만든 것이 더 큰 빈 자리를 만드는 셈이라 칩은 /소개 로 옮겼다.
+   */
+  note: 60,
   /** 반올림 오차를 흡수할 여유 */
   slack: 5,
 } as const;
@@ -45,6 +53,18 @@ const H = {
  * 접힘선을 넘는다. 데이터가 아니라 화면이 정한 숫자이고, 테스트가 그걸 지킨다.
  */
 export const BOARD_LIMIT = 6;
+
+/**
+ * 마감 줄을 붙일 기준. 이보다 적으면 붙는다.
+ *
+ * BOARD_LIMIT 에서 빼서 정한다. 마감 줄의 존재 이유가 "빈 슬롯이 남아 구멍으로
+ * 보이는 것"이라 기준이 슬롯 수와 무관하면 엉뚱한 곳에서 뜬다. 실제로 처음에는
+ * 4 라는 상수를 그냥 박아 뒀는데, limit 을 바꾸면 조용히 어긋나는 값이었다.
+ *
+ * 2 를 빼는 건 높이 때문이다 — 마감 줄이 60px 이라 빈 슬롯 2칸(112px)이면
+ * 그 칸이 꽉 찬 칸보다 길어지지 않는다. foldBudget 이 그 둘을 비교해 지킨다.
+ */
+export const SPARSE_AT = BOARD_LIMIT - 2;
 
 /**
  * 가장 긴 칸이 어디서 끝나는지.
@@ -60,12 +80,23 @@ export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) 
     1위와 2위가 따로 있는 이유는 세 단계 위계 때문이다 — 예전에는 1위 하나만
     크고 나머지가 전부 같아서, 목록이 각주처럼 읽히고 클릭이 1위로만 몰렸다.
   */
-  const tallestColumn =
+  const column = (items: number) =>
     H.colPadding +
     H.boardHead +
     H.lead +
-    (limit >= 2 ? H.second : 0) +
-    Math.max(0, limit - 2) * H.rest;
+    (items >= 2 ? H.second : 0) +
+    Math.max(0, items - 2) * H.rest;
+
+  /*
+    가장 긴 칸은 두 가지 중 하나다.
+
+    (a) 슬롯을 꽉 채운 칸 — 마감 줄은 안 붙는다.
+    (b) 글이 적어 마감 줄이 붙은 칸 — 항목은 적지만 마감 줄이 길다.
+
+    (b) 를 빼먹으면 안 된다. 마감 줄이 최대 160px 이라, 항목 수가 적어도
+    꽉 찬 칸보다 길어질 수 있다.
+  */
+  const tallestColumn = Math.max(column(limit), column(SPARSE_AT) + H.note);
   const boardBottom = boardTop + tallestColumn + H.slack;
 
   return {
@@ -208,18 +239,30 @@ export function stackedFoldBudget(
   return { boardTop, columnHeight, sourcesVisible };
 }
 
-/** 휴대폰 가로(844×390 폭 기준) 실측 높이(px). 세로와 값이 달라 따로 잰다. */
+/**
+ * 휴대폰 가로 높이(px).
+ *
+ * ⚠ 이 값들만 실측이 아니다. CDP 의 pointer 미디어 에뮬레이션이 이 크롬 빌드에서
+ * 동작하지 않아 휴대폰 가로를 브라우저로 재현하지 못했다. 그래서 세로에서 실측한
+ * 값(M)을 가져다 쓴다 — 가로도 세로와 같은 압축 규칙을 적용하도록 CSS 를
+ * 하나로 묶었기 때문에 부품 높이가 같다. 다른 것은 히어로(더 작게)와
+ * 2위 아래를 통째로 감춘다는 점뿐이다.
+ *
+ * 실기기에서 확인할 기회가 생기면 다시 재고 여기를 고친다.
+ */
 const L = {
   header: 61,
-  hero: 75,
+  /** 가로에서는 히어로를 더 줄인다 (h1 1.2rem, 여백도 최소) */
+  hero: 68,
   boardMarginTop: 16,
-  /** 소스 이름 + 밑줄 + 목록까지의 여백 */
-  boardHead: 39,
-  /** 소스 이름 자체 */
-  headText: 32,
-  /** 요약을 한 줄로 줄인 1위 항목 (가로에서는 2위 아래를 감춘다) */
-  lead: 119,
-  rowGap: 16,
+  colPadTop: 12,
+  colPadBottom: 12,
+  /** 세로와 같은 머리 압축을 쓴다 */
+  boardHead: 50,
+  headText: 31,
+  /** 요약 한 줄짜리 1위. 가로에서는 2위 아래를 전부 감춘다. */
+  lead: 107,
+  rowGap: 12,
   slack: 3,
 } as const;
 
@@ -236,13 +279,14 @@ const L = {
  */
 export function landscapeFoldBudget(viewportHeight: number, columns = 3) {
   const boardTop = L.header + L.hero + L.boardMarginTop;
-  const rowHeight = L.boardHead + L.lead + L.slack;
+  const rowHeight = L.boardHead + L.lead + L.colPadBottom + L.slack;
   // 2칸 그리드: 0·1번은 1행, 2번은 2행.
   const rowOf = (i: number) => Math.floor(i / 2);
 
   let sourcesVisible = 0;
   for (let i = 0; i < columns; i++) {
-    const headBottom = boardTop + rowOf(i) * (rowHeight + L.rowGap) + L.headText;
+    const headBottom =
+      boardTop + rowOf(i) * (rowHeight + L.rowGap) + L.colPadTop + L.headText;
     if (headBottom <= viewportHeight) sourcesVisible++;
   }
   return { boardTop, rowHeight, sourcesVisible };

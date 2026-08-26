@@ -12,7 +12,6 @@ export type SourceGroup = 'hackernews' | 'reddit' | 'geeknews' | 'official';
 export interface SourceGroupMeta {
   key: SourceGroup;
   name: string;
-  tagline: string;
   /** 카드 왼쪽 레일과 칩 색 */
   color: string;
   /**
@@ -38,35 +37,36 @@ export const SOURCE_GROUPS: SourceGroupMeta[] = [
   {
     key: 'hackernews',
     name: 'Hacker News',
-    tagline: '개발자들이 가장 먼저 물어뜯는 곳',
     color: '#ff6600',
     note: '해커뉴스 상위 글 중 AI 관련만 골라 봅니다.',
   },
   {
     key: 'reddit',
     name: 'Reddit',
-    tagline: '실제로 써 본 사람들의 반응',
     // 진짜 Reddit 색(#ff4500)은 바로 옆 Hacker News 주황(#ff6600)과 구분이 안 된다.
     // 명도를 내려 붙여 놨을 때도 두 칸이 다른 곳으로 읽히게 했다.
     color: '#b02a12',
     note: '오늘 이 중에서 기준을 넘은 글만 올라왔습니다.',
     /*
-      실제 수집 대상(pipeline/config.ts 의 REDDIT_SUBS 중 AI 전용)과 같아야 한다.
+      실제 수집하는 서브 **전부**여야 한다.
 
-      거기서 직접 가져오고 싶었지만 파이프라인은 `./feeds.js` 처럼 확장자를 붙여
-      import 하고(Node ESM 방식) Next 의 webpack 은 그걸 못 푼다. 그래서 여기 적되,
-      어긋나면 tests/sources.test.ts 가 잡는다 — 서브를 하나 추가하고 이 줄을
-      안 고치면 화면이 "지켜보는 곳"이라고 거짓말을 하기 시작한다.
+      처음에는 aiOnly 인 것만 적었는데, 그러면 라벨이 거짓말을 한다 — r/singularity 는
+      키워드 필터를 걸었을 뿐 여전히 수집 대상이고 이미 기사 3건을 냈다. 독자가
+      r/singularity 발 기사 바로 위에서 "지켜보는 곳"에 그게 없는 걸 보게 된다.
+
+      파이프라인에서 직접 가져오고 싶었지만 거기는 `./feeds.js` 처럼 확장자를 붙여
+      import 하고(Node ESM 방식) Next 의 webpack 이 그걸 못 푼다. 그래서 여기 적되,
+      어긋나면 tests/sources.test.ts 가 잡는다.
     */
     watching: [
-      'r/LocalLLaMA', 'r/OpenAI', 'r/ClaudeAI', 'r/artificial',
-      'r/aiagents', 'r/Agentic_Marketing',
+      'r/LocalLLaMA', 'r/singularity', 'r/OpenAI', 'r/artificial',
+      'r/ClaudeAI', 'r/aiagents', 'r/Agentic_Marketing', 'r/ChatGPT',
+      'r/StableDiffusion', 'r/MachineLearning', 'r/FigmaDesign',
     ],
   },
   {
     key: 'geeknews',
     name: 'GeekNews',
-    tagline: '국내에서 회자되는 소식',
     color: '#10b981',
     note: '국내 커뮤니티는 하루 서너 건이 정상입니다. 칸을 억지로 채우지 않습니다.',
   },
@@ -76,7 +76,6 @@ export const SOURCE_GROUPS: SourceGroupMeta[] = [
 export const OFFICIAL_GROUP: SourceGroupMeta = {
   key: 'official',
   name: '공식 발표',
-  tagline: '기업이 직접 낸 소식',
   color: '#1a44ff',
 };
 
@@ -121,6 +120,33 @@ export function topBuzz(post: PostMeta): Buzz | null {
   const best = ranked[0];
   if (!best || (best.score <= 0 && best.comments <= 0)) return null;
   return best;
+}
+
+/**
+ * 화면에 쓸 반응 수치 한 벌.
+ *
+ * 예전에는 이 규칙(댓글 우선, 없으면 점수, 둘 다 없으면 '—')이 컴포넌트 두 곳에
+ * 복사돼 있었다. 한쪽만 고치면 같은 판 안에서 1위와 3위가 서로 다른 기준으로
+ * 수치를 보여 주게 되는데, 컴파일러는 아무 말도 해 주지 않는다.
+ */
+export interface HeatValue {
+  /** 화면에 그대로 찍을 문자열 */
+  value: string;
+  /** 아래 붙는 라벨 */
+  label: string;
+  /** 수치가 아예 없는 경우 — 크게 외치면 안 된다 */
+  missing: boolean;
+}
+
+export function heatValue(post: PostMeta): HeatValue {
+  const buzz = topBuzz(post);
+  if (!buzz) return { value: '—', label: '집계 전', missing: true };
+  const useComments = buzz.comments > 0;
+  return {
+    value: (useComments ? buzz.comments : buzz.score).toLocaleString(),
+    label: useComments ? '댓글' : '점수',
+    missing: false,
+  };
 }
 
 export function groupPosts(posts: PostMeta[]): Record<SourceGroup, PostMeta[]> {

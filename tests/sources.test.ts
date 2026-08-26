@@ -57,7 +57,10 @@ test('수치가 하나도 없으면 null — 없는 걸 "새 소식" 같은 걸�
 */
 test('레딧 칸이 말하는 감시 목록이 실제 수집 대상과 같다', async () => {
   const { REDDIT_SUBS } = await import('../pipeline/config.js');
-  const actual = REDDIT_SUBS.filter((s) => s.aiOnly).map((s) => `r/${s.name}`).sort();
+  // aiOnly 로 거르면 안 된다. 그건 키워드 필터를 걸지 말지일 뿐, 수집 대상은
+  // 목록 전체다. 실제로 r/singularity 는 aiOnly 가 아닌데도 기사 3건을 냈다 —
+  // 처음에는 aiOnly 만 비교해서, 이 테스트가 어긋남을 잡는 대신 굳혀 놓고 있었다.
+  const actual = REDDIT_SUBS.map((s) => `r/${s.name}`).sort();
   const shown = [...(SOURCE_GROUPS.find((g) => g.key === 'reddit')?.watching ?? [])].sort();
   assert.deepEqual(shown, actual,
     'pipeline/config.ts 의 AI 전용 서브 목록과 src/lib/sources.ts 의 watching 이 다르다');

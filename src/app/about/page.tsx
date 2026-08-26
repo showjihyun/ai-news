@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import { site } from '@/lib/site';
 import { PERSONA_BEATS, DESK_NAMES } from '@/lib/desks';
+import { groupMeta } from '@/lib/sources';
+
+/* 감시 목록은 여기서 보여 준다. 판의 마감 줄에 넣었더니 칩 11개가 160px 이 되어
+   접힘선 예산을 넘겼다. 사이트가 무엇을 보는지는 각주가 아니라 소개에서 할 말이다. */
+const REDDIT_WATCHING = groupMeta('reddit').watching ?? [];
 
 export const metadata: Metadata = {
   title: '소개',
@@ -35,7 +40,16 @@ export default function AboutPage() {
         </p>
         <ul>
           <li>Hacker News — 개발자·창업자 커뮤니티에서 가장 먼저 도는 소식</li>
-          <li>Reddit — r/LocalLLaMA, r/OpenAI, r/singularity 등 AI 커뮤니티</li>
+          <li>
+            Reddit — 아래 서브레딧을 지켜봅니다
+            <div className="board-chips" style={{ marginTop: '0.4rem' }}>
+              {REDDIT_WATCHING.map((name) => (
+                <span key={name} className="board-chip about-chip">
+                  {name}
+                </span>
+              ))}
+            </div>
+          </li>
           <li>GeekNews — 국내 기술 커뮤니티</li>
           <li>공식 발표 — OpenAI, Google DeepMind, Hugging Face 등의 1차 출처</li>
           <li>주요 기술 매체 — TechCrunch, The Verge, MIT Technology Review 등</li>
