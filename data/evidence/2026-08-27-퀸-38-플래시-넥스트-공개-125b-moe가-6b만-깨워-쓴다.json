@@ -1,0 +1,41 @@
+{
+  "articleText": "[MarkTechPost — marktechpost.com]\nAlibaba&#8217;s Qwen team has released Qwen3.8-Flash-Next , an open-weight multimodal Mixture-of-Experts model built for cost per token. The checkpoint pairs a 125B backbone with a 51B N-gram embedding table and a 4B multi-token prediction module. Only 6B parameters activate per token. The team positions it as an early preview of the architecture that will underpin Qwen4 , the same role Qwen3-Next played for Qwen3.5. Four changes carry the release: a Gated DeltaNet and Qwen Sparse Attention hybrid, Gated Residual, N-gram Embedding, and the Muon optimizer. Qwen team reports training cost at roughly one-ninth that of Qwen3.7-Plus.\n\nYes but not on a workstation. The FP8 checkpoint is 172.78 GiB and the BF16 checkpoint is 335.28 GiB. Per vLLM recipes , TP2 is the minimum validated FP8 configuration on GB300 and TP4 is recommended. On an 8×H200 node, use TEP8; plain TP8 is incompatible with the checkpoint&#8217;s 128-wide quantization blocks. Sparse activation cuts compute, not storage.\n\nQwen3.8-Flash-Next pairs a 125B main model with 51B N-gram embedding parameters and a 4B multi-token prediction module, totaling 180B on disk. Only 6B parameters activate per token. Four changes drive this:\n\nThe MoE layer carries 512 experts, activating 10 routed plus 1 shared, at expert intermediate dimension 640.\n\nQwen reports 58.7 on DeepSWE 1.1, 62.5 on SWE-bench Pro, 81.0 on SWE-bench Multilingual, and 91.9 on LiveCodeBench v6. On agentic tasks it posts 73.9 on CoWorkBench, 55.7 on JobBench, and 73.5 on Toolathlon Verified. Multimodal results include 84.5 on AndroidWorld, 76.6 on LVBench, 88.5 on RealWorldQA, and 95.7 on MathVision with code interpreter.\n\nThe model does not lead everywhere. Claude Opus 4.6 (Max) takes HLE at 40.0 against Qwen&#8217;s 35.9 , and DeepSeek-V4-Flash-0731 leads NL2Repo-Bench at 54.2 versus 48.1 . Frontier reasoning remains the gap.\n\nQwen states training cost roughly 1/9 that of Qwen3.7-Plus. On serving, the announcement cites QSA kernel speedups of up to 7.6× prefill and 4.9× decode at 1M tokens, while the SGLang cookbook and vLLM recipes cite 10.2× and 6.6× . Treat the range as vendor-reported until independently measured. Qwen also reports 8.6× the prefill throughput of Qwen3.7-Plus at a 90% prefix-cache hit rate.\n\nContext is 262,144 tokens natively, extensible to 1,000,000 with YaRN.\n\nThe model serves through vLLM , SGLang , TokenSpeed, transformers serve , and llama.cpp for GGUF quants. Fine-tuning is supported via Unsloth , Swift , and LLaMA-Factory . It already powers the &#8220;Standard&#8221; mode on QwenWork and works with Qwen Code .\n\nThinking mode is on by default, with reasoning_effort at xhigh, medium, or low. Qwen recommends temperature 1.0 and top_p 0.95 for thinking mode, and temperature 0.7 with top_p 0.80 for instruct mode.\n\nCheck out the GitHub Page , HF Model Card and Technical Details . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\n\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Qwen3.8-Flash-Next tomorrow",
+      "url": "https://www.reddit.com/comments/1vxwtyd",
+      "score": 1081,
+      "commentCount": 452
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Qwen3.8-Flash-Next. This architecture could be surprisingly local-friendly once the weights drop. 👀",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vy6smx/qwen38flashnext_this_architecture_could_be/",
+      "score": 819,
+      "commentCount": 261
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Alibaba&#8217;s Qwen Team Releases Qwen3.8-Flash-Next: A 125B Multimodal MoE With 6B Active Parameters Previewing the Qwen4 Architecture",
+      "url": "https://marktechpost.com/2026/08/26/alibabas-qwen-team-releases-qwen3-8-flash-next-a-125b-multimodal-moe-with-6b-active-parameters-previewing-the-qwen4-architecture",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "[Megathread] Qwen3.8-Flash-Next - Release Day",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyq2v4/megathread_qwen38flashnext_release_day/",
+      "score": 14,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "M5 Ultra 96GB vs M5 Max 128GB — is 2x bandwidth worth losing 32GB of RAM, with Qwen3.8-Flash-Next dropping tomorrow?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyfved/m5_ultra_96gb_vs_m5_max_128gb_is_2x_bandwidth/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}

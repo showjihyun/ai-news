@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I&#x27;m risking having less &quot;humanity&#x2F;empathy&quot; than ChatGPT 4o now but that&#x27;s a socializing problem of the people feeling that way. Models are calculators, not therapists&#x2F;friends.",
+    "[Hacker News] From their blog post, it&#x27;s 320B total parameters and 18B active parameters, so a similar size, but slightly bigger. Regular pricing is $0.15 input, $0.50 output... but currently 50% off, making it $0.075 input and $0.25 output. That beats most of the V4 Flash providers, but not all, and obviously tokens per task may not be equivalent. I&#x27;ve also just noticed the blog post reveals the Arti",
+    "[Hacker News] Look, it&#x27;s kind of like that 1982 HydraTech 16ft bass boat with a pearl glitter paint job thats on Craigslist. When the wife asks, you low balled it and they accepted - an offer too good to refuse.",
+    "[Hacker News] I feel it is the only model which has some humanity&#x2F;empathy in many situation compared to latest &quot;intelligent&quot; model.",
+    "[Hacker News] glm models always had this doom loop issue. you can find reports of it on every version.",
+    "[Hacker News] &gt; Mimo 2.5, which is quite dated at this point I know that AI is moving fast, but Mimo 2.5 literally came out four months ago. I literally had to double-check after I read this because it felt like just yesterday. Also, I&#x27;m not sure what the industry standard is right now, but my (self-built) harness automatically exits with an error code whenever it detects similar tool calls being sent o"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
+      "url": "https://news.ycombinator.com/item?id=49446422",
+      "score": 357,
+      "commentCount": 129
+    }
+  ]
+}
