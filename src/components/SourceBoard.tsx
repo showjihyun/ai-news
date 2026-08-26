@@ -3,7 +3,7 @@ import type { PostMeta } from '@/lib/posts';
 import {
   groupMeta, heatValue, OFFICIAL_GROUP, type SourceGroup, type SourceGroupMeta,
 } from '@/lib/sources';
-import { BOARD_LIMIT, SPARSE_AT, boardRanking } from '@/lib/board';
+import { BOARD_LIMIT, boardRanking, hasEmptySlots } from '@/lib/board';
 import { LiveTime } from './LiveTime';
 
 /**
@@ -88,9 +88,13 @@ function SecondItem({ post }: { post: PostMeta }) {
 
 /** 3위 아래. 수치를 왼쪽 열에 세워 제목과 자리를 다투지 않게 한다. */
 function RestItem({ post }: { post: PostMeta }) {
+  const { value, missing } = heatValue(post);
   return (
     <li className="board-rest">
-      <span className="board-count">{heatValue(post).value}</span>
+      {/* 수치가 없으면 여기서도 조용히. 1위와 같은 규칙인데 예전에는 opacity 로
+          뭉뚱그려 놓아서, 대비를 고치려고 opacity 를 걷자 '—' 가 실제 수치와
+          같은 세기로 나오게 됐다. */}
+      <span className={`board-count${missing ? ' board-count-none' : ''}`}>{value}</span>
       <p>
         <Link href={`/posts/${post.slug}/`}>{post.title}</Link>
       </p>
@@ -105,13 +109,19 @@ function RestItem({ post }: { post: PostMeta }) {
  * 데이터가 적은 게 원인이지만, 아무 말 없이 비워 두면 그게 그냥 구멍으로 읽힌다.
  * "여기까지가 오늘 전부"라고 말해 주면 같은 여백이 정보가 된다.
  *
- * 판정 기준은 **이 칸에 그려지는 줄 수**다. 처음에는 그 칸의 누적 기사 수로
- * 판정했는데, 그건 시간이 갈수록 늘기만 해서 며칠 만에 모든 칸이 기준을 넘었다.
- * 그러면 이 기능도, 여기 붙은 레딧 칩 목록도 영영 화면에 안 뜬다 —
- * 실제로 그 상태로 배포됐다(해커뉴스 17건·레딧 11건).
+ * 판정은 board.ts 의 hasEmptySlots 에 맡긴다 — 빈 슬롯이 있을 때만 붙는다.
+ * 여기서 직접 숫자를 비교하다가 두 번 틀렸다(자세한 내력은 그쪽 주석에).
  */
-function ColumnNote({ meta, shown }: { meta: SourceGroupMeta; shown: number }) {
-  if (shown >= SPARSE_AT || !meta.note) return null;
+function ColumnNote({
+  meta,
+  shown,
+  limit,
+}: {
+  meta: SourceGroupMeta;
+  shown: number;
+  limit: number;
+}) {
+  if (!hasEmptySlots(shown, limit) || !meta.note) return null;
 
   /*
     글자 한 줄만 쓴다.
@@ -162,7 +172,7 @@ export function SourceColumn({
               <RestItem key={p.slug} post={p} />
             ))}
           </ol>
-          <ColumnNote meta={meta} shown={ranked.length} />
+          <ColumnNote meta={meta} shown={ranked.length} limit={limit} />
         </>
       ) : (
         <p className="board-empty">아직 이 판에서 건진 소식이 없습니다.</p>

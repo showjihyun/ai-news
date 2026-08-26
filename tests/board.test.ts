@@ -113,7 +113,9 @@ test('가로에서 1위 아래를 되살리면 세 번째 소스가 밀려난다
     같은 커밋에서 rest 가 60 → 56 으로 바뀌고 85px 짜리 2위가 새로 생기면서
     코드 어디에도 없는 값을 검사하게 됐다. 계산을 board.ts 에서 가져다 쓴다.
   */
-  const b = landscapeFoldBudget(390);
-  const secondRow = b.boardTop + (b.rowHeight + 85) + 16 + 12 + 31;
-  assert.ok(secondRow > 390, '2위까지 넣어도 들어간다면 감출 이유가 없다');
+  // 2위 한 건(67px, M.second)을 되살렸을 때를 모델에 물어본다.
+  // 숫자를 여기 베껴 적으면 상수가 움직일 때 코드에 없는 값을 검사하게 된다 —
+  // 실제로 한 번 그랬다(옛 rest 60px 를 그대로 적어 두고 있었다).
+  const withSecond = landscapeFoldBudget(390, 3, 67);
+  assert.ok(withSecond.sourcesVisible < 3, '2위까지 넣어도 세 소스가 보인다면 감출 이유가 없다');
 });

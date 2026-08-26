@@ -70,9 +70,21 @@ test('CSS 미디어쿼리가 같은 경계값을 쓴다', () => {
 */
 test('휴대폰 가로 규칙이 폭 규칙보다 뒤에 온다 — 특정도가 같아 순서로 이긴다', () => {
   const css = fs.readFileSync(path.join(process.cwd(), 'src/app/globals.css'), 'utf8');
-  const oneCol = css.indexOf(`@media (max-width: ${BOARD_BREAKPOINTS.twoColumnMin - 1}px)`);
+  /*
+    여는 중괄호까지 포함해 찾는다.
+
+    압축 규칙을 두 경우가 공유하도록 `@media (max-width: 760px), (pointer: coarse) ...`
+    블록을 만들었더니, 접두사가 같아서 indexOf 가 그쪽을 먼저 잡았다. 그 블록에는
+    칸 수 선언이 없어서, 진짜 1칸 블록이 뒤로 밀려도 이 검사가 통과해 버린다 —
+    잡으라고 만든 회귀를 그대로 놓친다.
+  */
+  const oneCol = css.indexOf(`@media (max-width: ${BOARD_BREAKPOINTS.twoColumnMin - 1}px) {`);
   const coarse = css.indexOf('@media (pointer: coarse) and (max-height:');
   assert.ok(oneCol > 0, '1칸 규칙을 찾지 못했다');
+  assert.ok(
+    css.slice(oneCol, coarse > oneCol ? coarse : undefined).includes('grid-template-columns: 1fr'),
+    '찾은 블록에 1칸 선언이 없다 — 엉뚱한 블록을 잡았다',
+  );
   assert.ok(coarse > 0, '휴대폰 가로 규칙을 찾지 못했다');
   assert.ok(coarse > oneCol, '휴대폰 가로 규칙이 폭 규칙보다 앞에 있어 무시된다');
 });

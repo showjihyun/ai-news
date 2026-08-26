@@ -41,14 +41,22 @@ export default function AboutPage() {
         <ul>
           <li>Hacker News — 개발자·창업자 커뮤니티에서 가장 먼저 도는 소식</li>
           <li>
-            Reddit — 아래 서브레딧을 지켜봅니다
-            <div className="board-chips" style={{ marginTop: '0.4rem' }}>
-              {REDDIT_WATCHING.map((name) => (
-                <span key={name} className="board-chip about-chip">
-                  {name}
-                </span>
-              ))}
-            </div>
+            {/* 목록이 비면 "아래 서브레딧을" 뒤에 아무것도 없는 문장이 남는다.
+                원래 있던 정적 문장은 스스로 내용을 갖고 있어 그런 일이 없었다. */}
+            {REDDIT_WATCHING.length > 0 ? (
+              <>
+                Reddit — 아래 서브레딧을 지켜봅니다
+                <div className="board-chips" style={{ marginTop: '0.4rem' }}>
+                  {REDDIT_WATCHING.map((name) => (
+                    <span key={name} className="board-chip about-chip">
+                      {name}
+                    </span>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>Reddit — AI 관련 서브레딧</>
+            )}
           </li>
           <li>GeekNews — 국내 기술 커뮤니티</li>
           <li>공식 발표 — OpenAI, Google DeepMind, Hugging Face 등의 1차 출처</li>

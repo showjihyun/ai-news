@@ -38,7 +38,7 @@ const H = {
    * 짧은 칸 마감 줄. 글자 두 줄짜리다.
    *
    * 한때 여기에 서브레딧 칩 11개가 들어가 160px 이었는데, 그러면
-   * `column(SPARSE_AT) + note` 가 꽉 찬 칸을 넘어 판 전체를 밀어냈다.
+   * 마감 줄이 붙은 칸이 꽉 찬 칸을 크게 넘어 판 전체를 밀어냈다.
    * 빈 자리를 메우려고 만든 것이 더 큰 빈 자리를 만드는 셈이라 칩은 /소개 로 옮겼다.
    */
   note: 60,
@@ -55,16 +55,22 @@ const H = {
 export const BOARD_LIMIT = 6;
 
 /**
- * 마감 줄을 붙일 기준. 이보다 적으면 붙는다.
+ * 마감 줄을 붙일까.
  *
- * BOARD_LIMIT 에서 빼서 정한다. 마감 줄의 존재 이유가 "빈 슬롯이 남아 구멍으로
- * 보이는 것"이라 기준이 슬롯 수와 무관하면 엉뚱한 곳에서 뜬다. 실제로 처음에는
- * 4 라는 상수를 그냥 박아 뒀는데, limit 을 바꾸면 조용히 어긋나는 값이었다.
+ * 마감 줄의 존재 이유는 하나다 — 슬롯이 남아 칸 아래가 비면 그게 구멍으로 읽힌다.
+ * 그러니 기준도 하나여야 한다: **빈 슬롯이 있는가**. 채워졌으면 설명할 구멍이 없다.
  *
- * 2 를 빼는 건 높이 때문이다 — 마감 줄이 60px 이라 빈 슬롯 2칸(112px)이면
- * 그 칸이 꽉 찬 칸보다 길어지지 않는다. foldBudget 이 그 둘을 비교해 지킨다.
+ * 앞서 두 번 틀렸다. 처음에는 그 칸의 누적 기사 수로 판정했는데 누적은 늘기만 해서
+ * 며칠 만에 모든 칸이 기준을 넘었다. 그다음엔 "그려진 줄 수 >= 4" 로 바꿨는데,
+ * 그려진 줄 수는 min(기사 수, limit) 이라 limit 이 4 이상이면 앞의 것과 완전히 같은
+ * 식이었다 — 고쳤다고 커밋해 놓고 실제로는 한 글자도 바뀌지 않았다.
+ *
+ * limit 을 인자로 받는다. SourceColumn 이 limit 을 prop 으로 받으므로,
+ * 모듈 상수 BOARD_LIMIT 에 묶어 두면 호출 쪽이 다른 값을 줄 때 어긋난다.
  */
-export const SPARSE_AT = BOARD_LIMIT - 2;
+export function hasEmptySlots(shown: number, limit: number = BOARD_LIMIT): boolean {
+  return shown < limit;
+}
 
 /**
  * 가장 긴 칸이 어디서 끝나는지.
@@ -90,13 +96,13 @@ export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) 
   /*
     가장 긴 칸은 두 가지 중 하나다.
 
-    (a) 슬롯을 꽉 채운 칸 — 마감 줄은 안 붙는다.
-    (b) 글이 적어 마감 줄이 붙은 칸 — 항목은 적지만 마감 줄이 길다.
+    (a) 슬롯을 꽉 채운 칸 — 빈 자리가 없으니 마감 줄은 안 붙는다.
+    (b) 한 칸이 비어 마감 줄이 붙은 칸 — 항목은 하나 적지만 마감 줄이 그보다 길다.
 
-    (b) 를 빼먹으면 안 된다. 마감 줄이 최대 160px 이라, 항목 수가 적어도
-    꽉 찬 칸보다 길어질 수 있다.
+    (b) 가 실제로 더 길다. 항목 하나가 56px 인데 마감 줄은 60px 이라,
+    슬롯 하나 비고 마감 줄이 붙은 칸이 꽉 찬 칸보다 4px 높다.
   */
-  const tallestColumn = Math.max(column(limit), column(SPARSE_AT) + H.note);
+  const tallestColumn = Math.max(column(limit), column(limit - 1) + H.note);
   const boardBottom = boardTop + tallestColumn + H.slack;
 
   return {
@@ -277,9 +283,14 @@ const L = {
  * 390px 높이에서 고를 수 있는 건 "두 소스에서 네 건" 아니면 "세 소스에서 세 건"인데,
  * 세 곳을 동시에 본다는 게 이 사이트가 파는 것이라 후자를 택했다.
  */
-export function landscapeFoldBudget(viewportHeight: number, columns = 3) {
+export function landscapeFoldBudget(
+  viewportHeight: number,
+  columns = 3,
+  /** 1위 아래를 되살렸을 때를 재 보는 용도. 테스트가 숫자를 베껴 적지 않게 한다. */
+  extraPerRow = 0,
+) {
   const boardTop = L.header + L.hero + L.boardMarginTop;
-  const rowHeight = L.boardHead + L.lead + L.colPadBottom + L.slack;
+  const rowHeight = L.boardHead + L.lead + extraPerRow + L.colPadBottom + L.slack;
   // 2칸 그리드: 0·1번은 1행, 2번은 2행.
   const rowOf = (i: number) => Math.floor(i / 2);
 
@@ -295,8 +306,8 @@ export function landscapeFoldBudget(viewportHeight: number, columns = 3) {
 /**
  * 칸 안의 순서.
  *
- * 최신순이 아니라 화제순이다. 칸 제목이 "개발자들이 가장 먼저 물어뜯는 곳"인데
- * 1번이 그냥 최근에 쓴 글이면 제목이 거짓말이 된다.
+ * 최신순이 아니라 화제순이다. 이 판이 파는 것은 "지금 저기서 가장 시끄러운 것"인데
+ * 1번이 그냥 최근에 쓴 글이면 판 자체가 거짓말이 된다.
  * 같은 화제도면 최신 글을 앞에 둔다.
  */
 export function boardRanking(posts: PostMeta[], limit: number = BOARD_LIMIT): PostMeta[] {

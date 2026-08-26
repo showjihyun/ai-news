@@ -63,5 +63,5 @@ test('레딧 칸이 말하는 감시 목록이 실제 수집 대상과 같다', 
   const actual = REDDIT_SUBS.map((s) => `r/${s.name}`).sort();
   const shown = [...(SOURCE_GROUPS.find((g) => g.key === 'reddit')?.watching ?? [])].sort();
   assert.deepEqual(shown, actual,
-    'pipeline/config.ts 의 AI 전용 서브 목록과 src/lib/sources.ts 의 watching 이 다르다');
+    'pipeline/config.ts 의 REDDIT_SUBS 전체와 src/lib/sources.ts 의 watching 이 다르다');
 });
