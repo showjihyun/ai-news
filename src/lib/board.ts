@@ -24,12 +24,16 @@ const H = {
   /** 제목 한 줄 + 한 줄짜리 부제 */
   hero: 104,
   boardMarginTop: 16,
-  /** 소스 이름 + 설명 + 밑줄 + 목록까지의 여백 */
-  boardHead: 68,
-  /** 1위 항목: 순위 숫자 + 제목 2줄 + 요약 2줄 + 수치 */
-  lead: 139,
-  /** 2위 아래 한 건: 제목 2줄에 수치를 이어 붙인 것 */
-  rest: 60,
+  /** 칸 자체의 위아래 안쪽 여백 (칸에 배경 틴트가 생기면서 붙었다) */
+  colPadding: 30,
+  /** 소스 이름 + 밑줄 + 목록까지의 여백 */
+  boardHead: 58,
+  /** 1위: 수치 셀 + 제목 2줄 + 요약 2줄 + 시각 */
+  lead: 126,
+  /** 2위: 수치 셀 + 제목 2줄 + 요약 1줄 */
+  second: 85,
+  /** 3위 아래 한 건: 제목 2줄 */
+  rest: 56,
   /** 반올림 오차를 흡수할 여유 */
   slack: 5,
 } as const;
@@ -50,7 +54,18 @@ export const BOARD_LIMIT = 6;
  */
 export function foldBudget(viewportHeight: number, limit: number = BOARD_LIMIT) {
   const boardTop = H.header + H.hero + H.boardMarginTop;
-  const tallestColumn = H.boardHead + H.lead + Math.max(0, limit - 1) * H.rest;
+  /*
+    가장 긴 칸 = 안쪽 여백 + 머리 + 1위 + 2위 + 나머지.
+
+    1위와 2위가 따로 있는 이유는 세 단계 위계 때문이다 — 예전에는 1위 하나만
+    크고 나머지가 전부 같아서, 목록이 각주처럼 읽히고 클릭이 1위로만 몰렸다.
+  */
+  const tallestColumn =
+    H.colPadding +
+    H.boardHead +
+    H.lead +
+    (limit >= 2 ? H.second : 0) +
+    Math.max(0, limit - 2) * H.rest;
   const boardBottom = boardTop + tallestColumn + H.slack;
 
   return {
@@ -129,20 +144,29 @@ export function boardColumns({ width, height, coarse }: Viewport): 1 | 2 | 3 {
  */
 export const MOBILE_ITEMS = 3;
 
-/** 휴대폰(390px 폭) 실측 높이(px). 데스크톱과 값이 달라 따로 잰다. */
+/** 휴대폰(390×844) 실측 높이(px). 데스크톱과 값이 달라 따로 잰다. */
 const M = {
   header: 61,
-  hero: 114,
+  hero: 103,
   boardMarginTop: 16,
-  /** 소스 이름 + 밑줄 + 목록까지의 여백 (설명 줄은 휴대폰에서 감춘다) */
-  boardHead: 41,
+  /**
+   * 칸 위쪽 안쪽 여백. 아래 boardHead 는 칸 맨 위부터 목록 시작까지라
+   * 이미 이 값을 품고 있다 — 칸 높이를 더할 때 또 더하면 이중 계산이다.
+   */
+  colPadTop: 12,
+  /** 칸 아래쪽 안쪽 여백 */
+  colPadBottom: 12,
+  /** 칸 맨 위부터 목록 시작까지 (위 여백 + 소스 이름 + 밑줄 + 아래 여백) */
+  boardHead: 50,
   /** 소스 이름 자체의 높이 — "이 소스가 보이나"를 판정하는 기준 */
-  headText: 33,
-  /** 요약을 한 줄로 줄인 1위 항목 */
-  lead: 119,
-  rest: 60,
-  rowGap: 18,
-  slack: 2,
+  headText: 31,
+  /** 요약을 한 줄로 줄인 1위 */
+  lead: 107,
+  /** 요약을 접은 2위 */
+  second: 67,
+  rest: 56,
+  rowGap: 14,
+  slack: 3,
 } as const;
 
 /**
@@ -151,6 +175,10 @@ const M = {
  * 세 칸이 세로로 쌓이므로 데스크톱처럼 다 담을 수는 없다. 대신 지켜야 할 최소선이
  * 있다 — 세 소스 이름이 다 보여야 한다. 하나라도 접힘선 밑에 있으면 독자는 이 사이트가
  * 한 군데만 본다고 오해한다. 세 곳을 동시에 본다는 게 이 사이트가 파는 값이다.
+ *
+ * 이 선은 실제로 한 번 깨졌다. 칸에 배경 틴트와 안쪽 여백이 붙고 2위에 요약이
+ * 생기면서 칸이 282 → 318px 이 됐고, 세 번째 소스 이름이 847px 에 걸려
+ * 844px 화면을 3px 넘었다. 휴대폰에서 2위 요약을 접고 행 간격을 줄여 되돌렸다.
  *
  * 칸마다 글 수가 다르지만 계산은 최악의 경우(모든 칸이 꽉 찬 경우)로 한다.
  * 데이터가 늘면 칸이 길어지고, 그때 깨지면 늦다.
@@ -162,11 +190,18 @@ export function stackedFoldBudget(
 ) {
   const boardTop = M.header + M.hero + M.boardMarginTop;
   const columnHeight =
-    M.boardHead + M.lead + Math.max(0, itemsPerColumn - 1) * M.rest + M.slack;
+    M.boardHead +
+    M.lead +
+    (itemsPerColumn >= 2 ? M.second : 0) +
+    Math.max(0, itemsPerColumn - 2) * M.rest +
+    M.colPadBottom +
+    M.slack;
 
   let sourcesVisible = 0;
   for (let i = 0; i < columns; i++) {
-    const headBottom = boardTop + i * (columnHeight + M.rowGap) + M.headText;
+    // 소스 이름은 칸 맨 위 여백 다음에 온다.
+    const headBottom =
+      boardTop + i * (columnHeight + M.rowGap) + M.colPadTop + M.headText;
     if (headBottom <= viewportHeight) sourcesVisible++;
   }
 

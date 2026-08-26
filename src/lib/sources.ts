@@ -15,6 +15,16 @@ export interface SourceGroupMeta {
   tagline: string;
   /** 카드 왼쪽 레일과 칩 색 */
   color: string;
+  /**
+   * 글이 적은 날 칸을 마감하는 한 줄.
+   *
+   * 칸마다 글 수가 달라서 짧은 칸 아래 큰 공백이 남는다(실측 241px). 그냥 비워 두면
+   * 구멍으로 읽히지만, "여기까지가 오늘 전부"라고 말해 주면 같은 여백이 정보가 된다.
+   * 글이 넉넉한 날에는 붙지 않는다.
+   */
+  note?: string;
+  /** 마감 줄에 함께 보여 줄 감시 대상. 지금은 레딧만 쓴다. */
+  watching?: string[];
 }
 
 /**
@@ -30,6 +40,7 @@ export const SOURCE_GROUPS: SourceGroupMeta[] = [
     name: 'Hacker News',
     tagline: '개발자들이 가장 먼저 물어뜯는 곳',
     color: '#ff6600',
+    note: '해커뉴스 상위 글 중 AI 관련만 골라 봅니다.',
   },
   {
     key: 'reddit',
@@ -38,12 +49,26 @@ export const SOURCE_GROUPS: SourceGroupMeta[] = [
     // 진짜 Reddit 색(#ff4500)은 바로 옆 Hacker News 주황(#ff6600)과 구분이 안 된다.
     // 명도를 내려 붙여 놨을 때도 두 칸이 다른 곳으로 읽히게 했다.
     color: '#b02a12',
+    note: '오늘 이 중에서 기준을 넘은 글만 올라왔습니다.',
+    /*
+      실제 수집 대상(pipeline/config.ts 의 REDDIT_SUBS 중 AI 전용)과 같아야 한다.
+
+      거기서 직접 가져오고 싶었지만 파이프라인은 `./feeds.js` 처럼 확장자를 붙여
+      import 하고(Node ESM 방식) Next 의 webpack 은 그걸 못 푼다. 그래서 여기 적되,
+      어긋나면 tests/sources.test.ts 가 잡는다 — 서브를 하나 추가하고 이 줄을
+      안 고치면 화면이 "지켜보는 곳"이라고 거짓말을 하기 시작한다.
+    */
+    watching: [
+      'r/LocalLLaMA', 'r/OpenAI', 'r/ClaudeAI', 'r/artificial',
+      'r/aiagents', 'r/Agentic_Marketing',
+    ],
   },
   {
     key: 'geeknews',
     name: 'GeekNews',
     tagline: '국내에서 회자되는 소식',
     color: '#10b981',
+    note: '국내 커뮤니티는 하루 서너 건이 정상입니다. 칸을 억지로 채우지 않습니다.',
   },
 ];
 

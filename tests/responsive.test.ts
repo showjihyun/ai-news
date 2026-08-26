@@ -57,3 +57,22 @@ test('CSS 미디어쿼리가 같은 경계값을 쓴다', () => {
   has(`@media (max-width: ${b.twoColumnMin - 1}px)`);
   has(`@media (pointer: coarse) and (max-height: ${b.phoneLandscapeMaxHeight}px)`);
 });
+
+/*
+  휴대폰 가로 규칙이 폭 규칙을 이기려면 소스에서 뒤에 와야 한다.
+
+  둘 다 `.board` 를 겨냥해 특정도가 같으므로(0,1,0), 겹칠 때는 나중에 선언된 쪽이
+  이긴다. 아이폰 SE 가로(667×375)가 정확히 겹치는 경우다 — 폭 규칙은 1칸,
+  휴대폰 가로 규칙은 2칸이라 순서가 뒤집히면 화면이 boardColumns() 와 어긋난다.
+
+  이 순서는 브라우저로 확인하지 못했다. CDP 의 pointer 미디어 에뮬레이션이 이 크롬
+  빌드에서 동작하지 않아 실기기에서만 발동한다. 그래서 소스 순서로 지킨다.
+*/
+test('휴대폰 가로 규칙이 폭 규칙보다 뒤에 온다 — 특정도가 같아 순서로 이긴다', () => {
+  const css = fs.readFileSync(path.join(process.cwd(), 'src/app/globals.css'), 'utf8');
+  const oneCol = css.indexOf(`@media (max-width: ${BOARD_BREAKPOINTS.twoColumnMin - 1}px)`);
+  const coarse = css.indexOf('@media (pointer: coarse) and (max-height:');
+  assert.ok(oneCol > 0, '1칸 규칙을 찾지 못했다');
+  assert.ok(coarse > 0, '휴대폰 가로 규칙을 찾지 못했다');
+  assert.ok(coarse > oneCol, '휴대폰 가로 규칙이 폭 규칙보다 앞에 있어 무시된다');
+});

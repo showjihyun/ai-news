@@ -47,3 +47,18 @@ test('수치가 하나도 없으면 null — 없는 걸 "새 소식" 같은 걸�
   assert.equal(topBuzz(post('y', [src('Hacker News')])), null);
   assert.equal(topBuzz(post('z', [])), null);
 });
+
+/*
+  화면이 "지켜보는 곳"이라고 말하는 목록은 실제 수집 대상과 같아야 한다.
+
+  파이프라인에서 직접 가져오지 못하는 사정이 있어(webpack 이 `./feeds.js` 를 못 푼다)
+  프론트에 다시 적어 두었다. 그러면 서브를 하나 추가하고 화면 쪽을 안 고치는 순간
+  사이트가 독자에게 거짓말을 한다. 그 어긋남을 여기서 잡는다.
+*/
+test('레딧 칸이 말하는 감시 목록이 실제 수집 대상과 같다', async () => {
+  const { REDDIT_SUBS } = await import('../pipeline/config.js');
+  const actual = REDDIT_SUBS.filter((s) => s.aiOnly).map((s) => `r/${s.name}`).sort();
+  const shown = [...(SOURCE_GROUPS.find((g) => g.key === 'reddit')?.watching ?? [])].sort();
+  assert.deepEqual(shown, actual,
+    'pipeline/config.ts 의 AI 전용 서브 목록과 src/lib/sources.ts 의 watching 이 다르다');
+});

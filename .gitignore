@@ -29,3 +29,6 @@ data/trending.json
 
 .vercel
 .env*
+
+# 디자인 캔버스 작업 파일 (Claude Design 으로 발행한 리뷰의 원본)
+.design/
