@@ -1,0 +1,17 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] it won me over at 4.6 and lost at 4.7 and the image &#x27;How multiagent turf war runs ended&#x27; [0] might explain the shift in the behaviour [0] https:&#x2F;&#x2F;www.anthropic.com&#x2F;research&#x2F;multiagent-systems",
+    "[Hacker News] &gt; I have tried to do the same recently with the newer models and we&#x27;re still not writing code by the time the older models had finished their work Claude used to run at ~150tps in January. Now it runs at 50tps if you&#x27;re lucky. That explains most of the speed issues without even getting into technical details about the new models.",
+    "[Hacker News] My first deep dive with Claude Code was in Jan of this year. I was working on rebuilding an old city builder game from the the 00s and was trying to parse the original images from the game files. There was plenty if info on the structure online so I said I&#x27;d let Claude give it a go. I was running one of the sonnets I think. After about 5 prompts I had a web interface that I could drag the fil"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "I miss the old Claude Code",
+      "url": "https://news.ycombinator.com/item?id=49444863",
+      "score": 23,
+      "commentCount": 4
+    }
+  ]
+}
