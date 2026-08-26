@@ -78,6 +78,28 @@ export function markPublished(rec: PublishedRecord) {
   cachedTokens = null;   // 목록이 바뀌었으니 토큰도 다시 만든다
 }
 
+/**
+ * 발행 기록에서 뺀다. 기사를 격리할 때 쓴다.
+ *
+ * 안 빼면 중복 방지가 그 주제를 90일간 막는다. 방금 내린 기사의 주제를
+ * 제대로 다시 쓸 기회 자체가 사라지고, digest 의 '짧게 훑기'에서도 빠져
+ * 그 사건이 사이트에서 통째로 증발한다. publishedCount() 도 사이트에 없는
+ * 기사를 계속 세어, 애드센스 기준(25건) 진척을 부풀린다.
+ */
+export function unpublish(slug: string) {
+  const state = load();
+  const before = state.records.length;
+  state.records = state.records.filter((r) => r.slug !== slug);
+  if (state.records.length === before) return;
+  save(state);
+  cachedTokens = null;
+}
+
+/** 발행 기록에 있는 슬러그 전부. 사이트 파일과 대조해 고아 기록을 찾는 데 쓴다. */
+export function publishedSlugs(): string[] {
+  return load().records.map((r) => r.slug);
+}
+
 export function publishedCount(): number {
   return load().records.length;
 }

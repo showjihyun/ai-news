@@ -162,7 +162,13 @@ jobs:
           # 개별 경로를 나열하면 아직 생성되지 않은 파일 하나 때문에 git add 가 exit 128 로
           # 죽고, 방금 LLM 을 돌려 만든 기사가 커밋되지 않은 채 워크플로가 실패한다.
           # (data/geeknews-links.json 은 GeekNews 요청이 전부 차단되면 생성되지 않는다.)
-          git add content/posts data || true
+          # content/quarantine 을 반드시 포함한다.
+          #
+          # 빠뜨리면 격리가 CI 에서는 그냥 영구 삭제가 된다 — 파일 이동의 '삭제' 쪽만
+          # 커밋되고 옮겨 간 파일은 추적되지 않은 채 러너와 함께 사라진다.
+          # "지우지 않고 옮긴다"는 설계가 정작 실제로 도는 유일한 경로에서 거짓이 되고,
+          # 판정이 틀렸을 때 되돌릴 방법이 없어진다.
+          git add content/posts content/quarantine data || true
           if git diff --staged --quiet; then
             echo "발행할 새 글 없음 — 커밋 생략"
             exit 0

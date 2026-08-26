@@ -12,6 +12,7 @@ import { RUBRIC } from './rubric.js';
  */
 
 const REVIEWS_PATH = path.join(process.cwd(), 'data', 'reviews.json');
+const NEWLINE = '\n';
 
 export interface Review {
   slug: string;
@@ -32,6 +33,33 @@ export interface Review {
   unverifiable: string[];
   /** 집필 당시 자료로 평가했는지. false 면 재수집본이라 판정 신뢰도가 낮다. */
   evidenceExact: boolean;
+  /**
+   * 날조 때문에 사이트에서 내린 시각.
+   *
+   * 기록을 지우지 않고 표시만 하는 이유가 둘 있다.
+   * 첫째, 다음 글에 반영할 지시(fix)와 무엇을 지어냈는지(unsupported)가 여기 있다.
+   * 지워 버리면 집필기가 배워야 할 교훈에서 가장 나쁜 사례만 쏙 빠진다.
+   * 둘째, 지우면 평균 점수가 저절로 올라간다 — 낮은 점수를 없앤 것뿐인데
+   * 품질이 좋아진 것처럼 보여서, 이 기능을 만들게 한 바로 그 하락을 못 보게 된다.
+   */
+  quarantinedAt?: string;
+}
+
+/**
+ * 날조가 남아 있는가.
+ *
+ * 옛 기록에는 unsupported 가 아예 없을 수 있어서(스키마가 나중에 붙었다)
+ * 반드시 옵셔널 체이닝으로 본다. cli 쪽에서 `r.unsupported.length` 로 바로 읽다가
+ * 기록 하나 때문에 개정 명령 전체가 죽는 일이 있었고, 그 단계는 continue-on-error 라
+ * 워크플로는 아무 일 없다는 듯 커밋까지 진행했다 — 안전망이 조용히 꺼진 것이다.
+ */
+export function hasFabrication(r: Review): boolean {
+  return (r.unsupported?.length ?? 0) > 0;
+}
+
+/** 사이트에 살아 있는 기사만. 격리된 것은 뺀다. */
+export function livingReviews(): Review[] {
+  return loadReviews().filter((r) => !r.quarantinedAt);
 }
 
 interface ReviewStore {
@@ -55,23 +83,33 @@ export function saveReview(review: Review) {
   store.reviews = store.reviews.filter((r) => r.slug !== review.slug);
   store.reviews.unshift(review);
   store.reviews.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  saveStore(store);
+}
+
+function saveStore(store: ReviewStore) {
   fs.mkdirSync(path.dirname(REVIEWS_PATH), { recursive: true });
-  fs.writeFileSync(REVIEWS_PATH, JSON.stringify(store, null, 2) + '\n', 'utf8');
+  fs.writeFileSync(REVIEWS_PATH, JSON.stringify(store, null, 2) + NEWLINE, 'utf8');
 }
 
 /**
- * 평가 기록을 지운다. 기사를 격리할 때 쓴다.
+ * 격리 표시를 한 번에 찍는다.
  *
- * 기록을 남겨 두면 다음 improve 가 사이트에 없는 파일을 고치려다 실패한다.
- * 되돌릴 때는 evaluate 가 다시 만들어 준다.
+ * 슬러그마다 파일을 다시 읽고 쓰면, 중간에 죽었을 때 옮긴 파일과 기록이 어긋난다.
+ * 한 번만 쓴다.
  */
-export function removeReview(slug: string) {
+export function markQuarantined(slugs: string[], at = new Date().toISOString()) {
+  if (slugs.length === 0) return;
+  const set = new Set(slugs);
   const store = loadStore();
-  const before = store.reviews.length;
-  store.reviews = store.reviews.filter((r) => r.slug !== slug);
-  if (store.reviews.length === before) return;
-  fs.mkdirSync(path.dirname(REVIEWS_PATH), { recursive: true });
-  fs.writeFileSync(REVIEWS_PATH, JSON.stringify(store, null, 2) + '\n', 'utf8');
+  for (const r of store.reviews) if (set.has(r.slug)) r.quarantinedAt = at;
+  saveStore(store);
+}
+
+/** 격리를 되돌린다. 사람이 파일을 content/posts 로 옮겼을 때 쓴다. */
+export function unmarkQuarantined(slug: string) {
+  const store = loadStore();
+  for (const r of store.reviews) if (r.slug === slug) delete r.quarantinedAt;
+  saveStore(store);
 }
 
 export function reviewedSlugs(): Set<string> {

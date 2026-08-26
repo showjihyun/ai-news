@@ -15,8 +15,10 @@ import { evaluatePost, pendingPosts, allPosts, printReport, loadReviews, saveRev
 import { dimensionName } from './rubric.js';
 import { improveToTarget } from './revise.js';
 import type { Review } from './reviews.js';
+import { hasFabrication } from './reviews.js';
 import { backfillEvidence, articlesMissingEvidence } from './backfill.js';
 import { quarantineFabrications } from './quarantine.js';
+import { rebuildAfterTakedown, restoreQuarantined, prune } from './takedown.js';
 import { mapLimit } from './util.js';
 import type { Cluster } from './types.js';
 
@@ -180,7 +182,7 @@ async function main() {
         console.log(
           `  ${review.overall.toFixed(2)}  ${review.title.slice(0, 42).padEnd(44)}` +
             `약점: ${dimensionName(weakest[0])} ${weakest[1]}점` +
-            (review.unsupported.length ? `  ⚠ 근거없는 주장 ${review.unsupported.length}건` : ''),
+            (hasFabrication(review) ? `  ⚠ 근거없는 주장 ${review.unsupported.length}건` : ''),
         );
         return review;
       } catch (err) {
@@ -201,8 +203,23 @@ async function main() {
     // NaN 이 되고, `r.overall < NaN` 은 항상 false 라 점수 기준이 통째로 사라진다.
     const target = numFlag('target', TUNING.minQuality);
     const reviews = loadReviews();
-    // 점수 미달뿐 아니라 근거 없는 주장이 있는 기사도 개정 대상이다.
-    const below = reviews.filter((r) => r.overall < target || r.unsupported.length > 0);
+    /*
+      점수 미달뿐 아니라 근거 없는 주장이 있는 기사도 개정 대상이다.
+
+      hasFabrication 을 쓴다. 예전에는 `r.unsupported.length` 로 바로 읽었는데,
+      스키마가 나중에 붙은 필드라 옛 기록에는 없을 수 있다. 하나만 그래도
+      개정 명령 전체가 TypeError 로 죽고, 워크플로에서는 그 단계가
+      continue-on-error 라 아무 일 없다는 듯 커밋까지 진행했다 —
+      날조 안전망이 조용히 꺼진 채로.
+
+      한 번에 다루는 수는 제한한다. 기록 전체를 대상으로 두면 4.4 에서
+      더 안 오르는 기사가 영원히 목록에 남아, 30분마다 같은 기사를 다시 쓰느라
+      호출만 태우고 작업 시간 제한(25분)까지 위협한다.
+    */
+    const below = reviews
+      .filter((r) => r.overall < target || hasFabrication(r))
+      .sort((a, b) => Number(hasFabrication(b)) - Number(hasFabrication(a)) || a.overall - b.overall)
+      .slice(0, numFlag('limit', 4));
 
     if (below.length === 0) {
       console.log(
@@ -233,6 +250,16 @@ async function main() {
     // 출력해 놓고 실제로는 아무것도 저장하지 않았다. 파일은 이미 고쳐졌는데
     // reviews.json 은 옛 점수 그대로라, 다음 실행이 같은 기사를 또 개정했다.
     const improved: Review[] = [];
+    /*
+      개정을 실제로 끝까지 시도한 기사만 담는다.
+
+      격리는 이 집합만 대상으로 한다. 예전에는 기록 전체를 훑어서 내렸는데,
+      그러면 레이트리밋에 걸려 손도 못 대 본 기사까지 같이 내려갔다.
+      한도가 풀린 뒤 다시 돌려도 이미 내려간 뒤여서, 일시적인 장애가
+      영구 삭제로 굳었다. 네트워크 오류로 한 번 실패한 경우도 마찬가지다 —
+      그건 "세 번 고쳐도 안 됐다"와 전혀 다른 상태다.
+    */
+    const attempted = new Set<string>();
     try {
       await mapLimit(below, CONCURRENCY, async (r) => {
         try {
@@ -242,6 +269,7 @@ async function main() {
             target,
             numFlag('attempts', TUNING.maxReviseAttempts),
           );
+          attempted.add(r.slug);
           if (result.review) improved.push(result.review);
           console.log(
             `  ${result.before.toFixed(2)} → ${result.after.toFixed(2)}` +
@@ -269,13 +297,33 @@ async function main() {
 
     for (const rev of improved) saveReview(rev);
 
-    quarantineFabrications();
+    const { moved } = quarantineFabrications(attempted);
+    // 내린 기사를 브리핑이 링크하고 있으면 정적 사이트에서 404 가 된다.
+    if (moved.length) rebuildAfterTakedown(moved);
     printReport(loadReviews());
     return;
   }
 
   if (command === 'quarantine') {
-    quarantineFabrications();
+    /*
+      손으로 부를 때는 기록에 있는 것 전부를 시도한 것으로 본다.
+      사람이 상태를 보고 직접 내리는 명령이라, 자동 실행과 달리
+      "시도했는가"를 따질 대상이 없다.
+    */
+    const { moved } = quarantineFabrications(loadReviews().map((r) => r.slug));
+    if (moved.length) rebuildAfterTakedown(moved);
+    return;
+  }
+
+  if (command === 'prune') {
+    prune();
+    return;
+  }
+
+  if (command === 'restore') {
+    const slug = (process.argv[3] || '').replace(/\.md$/, '');
+    if (!slug) return console.error('사용법: npm run restore -- <슬러그>');
+    restoreQuarantined(slug);
     return;
   }
 
@@ -345,6 +393,8 @@ async function main() {
   );
 
   let ok = 0;
+  // 날조로 내린 기사. 마지막 '완료 N건'에서 빼야 커밋 메시지가 거짓말을 안 한다.
+  let takenDown: string[] = [];
   let reviewed = 0;
   let stoppedByRateLimit = false;
   const publishedThisRun: string[] = [];
@@ -398,15 +448,18 @@ async function main() {
 [검수] ${toReview.length}건 평가 후 ${TUNING.minQuality.toFixed(1)}점 미만은 개정합니다. (동시 ${CONCURRENCY}건)`,
     );
 
+    // 검수를 끝까지 마친 기사만 격리 대상이 된다 — quarantine.ts 주석 참고.
+    const reviewed = new Set<string>();
     const checked = await mapLimit(toReview, CONCURRENCY, async (file) => {
       try {
         const review = await evaluatePost(file);
+        reviewed.add(review.slug);
         const weakest = Object.entries(review.scores).sort((a, b) => a[1] - b[1])[0];
         console.log(
           `  ${review.overall.toFixed(2)}  ${review.title.slice(0, 40).padEnd(42)}약점: ${dimensionName(weakest[0])} ${weakest[1]}점`,
         );
 
-        if (review.overall < TUNING.minQuality || review.unsupported.length > 0) {
+        if (review.overall < TUNING.minQuality || hasFabrication(review)) {
           const result = await improveToTarget(file, review, TUNING.minQuality, TUNING.maxReviseAttempts);
           console.log(
             `    개정 ${result.before.toFixed(2)} → ${result.after.toFixed(2)}` +
@@ -432,14 +485,24 @@ async function main() {
       낮은 점수는 읽다 말면 그만이고, 날조는 한 건만 발각돼도 사이트 전체를
       의심하게 만든다.
     */
-    quarantineFabrications();
+    const result = quarantineFabrications(reviewed);
+    takenDown = result.moved;
+    if (takenDown.length) rebuildAfterTakedown(takenDown);
   }
 
   // 기사를 새로 냈으면 일간 브리핑도 갱신한다. 발행분을 재조합하는 것이라 LLM 을 다시 부르지 않는다.
   // (이게 빠져 있으면 브리핑은 손으로 `digest` 를 칠 때만 생긴다 — 자동화에서는 영원히 안 생긴다.)
+  //
+  // 격리보다 **뒤**에 와야 한다. 브리핑은 그날 발행분을 목록으로 거는데,
+  // 내려간 기사가 그 목록에 남으면 정적 사이트에서 그대로 404 가 된다.
   if (ok > 0 && !dryRun) buildDigest(snapshot);
 
-  console.log(`\n완료: ${ok}/${candidates.length}건 발행. 누적 발행 ${publishedCount()}건.`);
+  const live = ok - takenDown.length;
+  console.log(
+    `\n완료: ${live}/${candidates.length}건 발행` +
+      (takenDown.length ? ` (${takenDown.length}건은 날조로 내림)` : '') +
+      `. 누적 발행 ${publishedCount()}건.`,
+  );
 }
 
 main().catch((err) => {
