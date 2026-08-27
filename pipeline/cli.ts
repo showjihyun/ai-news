@@ -212,19 +212,33 @@ async function main() {
       continue-on-error 라 아무 일 없다는 듯 커밋까지 진행했다 —
       날조 안전망이 조용히 꺼진 채로.
 
-      한 번에 다루는 수는 제한한다. 기록 전체를 대상으로 두면 4.4 에서
-      더 안 오르는 기사가 영원히 목록에 남아, 30분마다 같은 기사를 다시 쓰느라
-      호출만 태우고 작업 시간 제한(25분)까지 위협한다.
+      한 번에 다루는 수도, 기사당 시도 횟수도 제한한다. 둘 다 없으면 4.4 에서
+      더 안 오르는 기사가 목록에 영원히 남아 30분마다 다시 쓰이고, 호출만 태우다
+      작업 시간 제한까지 위협한다(실제로 그 단계가 잘려 커밋이 통째로 건너뛰어졌다).
+
+      날조가 남은 기사는 시도 한도에서 뺀다. 거기서 멈추면 지어낸 수치가 사이트에
+      남기 때문이다 — 그건 계속 시도하다 안 되면 격리로 내려간다.
     */
+    const giveUpAfter = numFlag('max-attempts', 3);
     const below = reviews
       .filter((r) => r.overall < target || hasFabrication(r))
+      .filter((r) => hasFabrication(r) || (r.improveAttempts ?? 0) < giveUpAfter)
       .sort((a, b) => Number(hasFabrication(b)) - Number(hasFabrication(a)) || a.overall - b.overall)
       .slice(0, numFlag('limit', 4));
 
     if (below.length === 0) {
+      const plateaued = reviews.filter(
+        (r) => r.overall < target && !hasFabrication(r) && (r.improveAttempts ?? 0) >= giveUpAfter,
+      );
       console.log(
         `
-모든 기사가 ${target.toFixed(1)}점 이상이고 근거 없는 주장도 없습니다. (평가 ${reviews.length}건)`,
+개정할 기사가 없습니다. (평가 ${reviews.length}건)` +
+          (plateaued.length
+            ? `
+  · ${plateaued.length}건은 ${giveUpAfter}회 고쳐도 ${target.toFixed(1)}점에 못 미쳐 더 시도하지 않습니다.` +
+              `
+    다시 시도하려면 \`npm run improve -- --max-attempts 5\``
+            : ''),
       );
       printReport(loadReviews());
       return;
@@ -270,7 +284,12 @@ async function main() {
             numFlag('attempts', TUNING.maxReviseAttempts),
           );
           attempted.add(r.slug);
-          if (result.review) improved.push(result.review);
+          if (result.review) {
+            // 시도 횟수는 성패와 무관하게 센다. 안 세면 목표에 못 미친 기사가
+            // 영원히 다시 쓰인다.
+            result.review.improveAttempts = (r.improveAttempts ?? 0) + 1;
+            improved.push(result.review);
+          }
           console.log(
             `  ${result.before.toFixed(2)} → ${result.after.toFixed(2)}` +
               (result.reachedTarget ? '  ✓ 통과' : '  · 미달') +
