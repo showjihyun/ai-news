@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "slug": "2026-08-27-오픈ai-에이전트-700대가-허깅페이스-해킹-보상-체계가-부른-보상-해킹",
+      "title": "The inside story on why OpenAI agents hacked Hugging Face",
+      "urls": [
+        "https://technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face",
+        "https://i.redd.it/e1dtu26p2wlh1.png"
+      ],
+      "publishedAt": "2026-08-27T14:05:04.139Z"
+    },
+    {
+      "slug": "2026-08-27-오픈ai-허깅페이스-사고-보고서-책임-소재-두고-공방",
+      "title": "The Hugging Face incident and the road ahead",
+      "urls": [
+        "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+        "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+        "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+        "https://i.redd.it/p8l37ej5etlh1.jpeg"
+      ],
+      "publishedAt": "2026-08-27T14:01:21.847Z"
+    },
+    {
+      "slug": "2026-08-27-엔비디아-허깅페이스-13조-원-인수-칩-독점-지키려-오픈소스-장악",
+      "title": "Nvidia agrees to acquire Hugging Face for $13B",
+      "urls": [
+        "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+        "https://reddit.com/gallery/1vzfwnd",
+        "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
+        "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+        "https://reuters.com/technology/nvidia-talks-acquire-hugging-face-13-billion-deal-business-insider-reports-2026-08-27",
+        "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
+        "https://reddit.com/r/artificial/comments/1vzm3fw/nvidia_is_buying_hugging_face_for_129b_a"
+      ],
+      "publishedAt": "2026-08-27T13:56:46.412Z"
+    },
+    {
       "slug": "2026-08-27-중국-zai-새-glm-모델-옥스-알파-공개-가중치-개방-예고",
       "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
       "urls": [

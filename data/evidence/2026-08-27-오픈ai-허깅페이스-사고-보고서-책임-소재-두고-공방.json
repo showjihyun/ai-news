@@ -1,0 +1,39 @@
+{
+  "articleText": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
+  "reactions": [
+    "[Hacker News] This wasn&#x27;t a Hugging Face incident, it was an open AI crime and they should own it rather than attempt to whitewash it as &#x27;shit happens, whoopsie&#x27; which is a rough translation of the document linked. I wasn&#x27;t too impressed with them so far, this makes it much worse in my view. They set everything up to all but ensure this outcome.",
+    "[Hacker News] They didn’t intend to give it Internet access. Artifactory is a caching proxy which can be scoped to specific package ecosystems, not a general Internet gateway (unless configured that way).",
+    "[Hacker News] Perhaps the AI then figures out how to read&#x2F;write the PCI bus or memory controller or whatever to leak just enough RF to speak Bluetooth to the next closest device to proxy through that?",
+    "[Hacker News] Agreed. This way, they get two for the price of one: Dodging responsibility and pretending their slop generators are some kind of magical unicorn. Win-win!"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://news.ycombinator.com/item?id=49454314",
+      "score": 291,
+      "commentCount": 383
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "OpenAI Hugging Face Incident Technical Report",
+      "url": "https://www.reddit.com/r/singularity/comments/1vz7han/openai_hugging_face_incident_technical_report/",
+      "score": 9,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Excerpt from the OpenAI TIME article about the Hugging Face incident",
+      "url": "https://www.reddit.com/r/singularity/comments/1vzf5pu/excerpt_from_the_openai_time_article_about_the/",
+      "score": 7,
+      "commentCount": 0
+    }
+  ]
+}

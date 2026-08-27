@@ -1,0 +1,62 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nNvidia has agreed to buy Hugging Face for $12.9 billion, The Information reported Wednesday night, citing a source familiar with the matter. Business Insider, which first reported over the weekend that Hugging Face was fielding takeover interest, reported Wednesday night that the talks — which would value the company at more than $13 billion — had not yet produced a signed agreement and could still atomize .\n\nTechCrunch reached out earlier to both Nvidia and Hugging Face for comment, and neither has yet responded. (Nvidia&#8217;s silence is particularly noteworthy here as the company has moved quickly in the past to address reports it considers inaccurate.)\n\nMaybe it was destined from the start. Hugging Face, founded in 2016, is one of the most popular hubs where developers share and download open-source AI models. Buying it would give Nvidia a strong foothold in the world of open-source AI, right as open-source developers are doing their level best to catch up to closed AI systems from companies like Anthropic and OpenAI.\n\nWhy would Nvidia want that? Most obviously, it comes down to protecting its dominance in AI chips, which, from the outside at least, appears increasingly at risk, even with Nvidia&#8217;s aggressive chip-release schedule. Pretty much all of the biggest closed-source AI labs (OpenAI, Google, Amazon, and Anthropic) are now in the process of building their own AI chips to lessen their reliance on Nvidia. A thriving ecosystem of open-source AI models gives customers more alternatives to those closed labs, which in turn keeps more of the market dependent on Nvidia&#8217;s hardware. That&#8217;s also why Nvidia has already poured tens of billions of dollars into building its own open-source AI models.\n\nShould we be surprised that Hugging Face&#8217;s days as an independent outfit appear numbered? Not really. Hugging Face CEO Clem Delangue has spent much of this year publicly aligned with Nvidia&#8217;s open-source push, amid a debate that has been building for months, as Washington officials reportedly weighed restrictions on open-weight models. (Chinese labs like Moonshot AI had released systems — like its Kimi K3 model — that matched leading U.S. models on benchmarks while costing a lot less to run, and talk of competitive and national-security concerns grew in Washington as a result. Some critics of closed labs, like White House advisor David Sacks, suggested those fears were being fanned by the &#8220;duopoly&#8221; of Anthropic and OpenAI.)\n\nIn an appearance on CBS&#8217;s &#8220;Face the Nation&#8221; earlier this month, for example, Delangue said Hugging Face used an Nvidia-modified version of a Chinese open-source model to defend itself after a cyberattack and pointed to a recent letter — signed by Nvidia CEO Jensen Huang and 24 other companies, including Hugging Face — urging the U.S. government to support open models rather than restrict them. In a separate CNBC interview in late July, Delangue made similar points, citing that same letter while warning that China is &#8220;clearly dominating&#8221; open-source AI.\n\nThe deal would also mark something of a comeback for Nvidia in cloud computing. Nvidia reportedly scaled back its own cloud business, called DGX Cloud, about a year ago. But according to The Information, owning Hugging Face — which already helps developers run their AI models using rented computing power — could give Nvidia a way back into that market without starting from scratch.\n\nThere&#8217;s also a financial safety net at play. Nvidia has promised to help cover the cost of tens of billions of dollars in cloud computing deals for its customers. If those customers end up not using all the computing power they signed up for, Nvidia could get stuck with it. Owning Hugging Face would give Nvidia the ability to sell that unused capacity to Hugging Face&#8217;s customers.\n\nThe price marks a huge jump from Hugging Face&#8217;s last known value. The company raised $235 million in 2023 in a funding round that valued it at $4.5 billion. That round was led by Salesforce Ventures, with money also coming from Alphabet&#8217;s GV, IBM Ventures, and Nvidia itself, among others.\n\nThis wouldn&#8217;t be Hugging Face&#8217;s first brush with an Nvidia offer, either. Hugging Face turned down a $500 million investment offer from Nvidia late last year that would have valued it at $7 billion, the Financial Times previously reported. Hugging Face said at the time it didn&#8217;t want a dominant investor that could sway its decisions.\n\nAs for why it would say yes now, one could argue that a buyout is different from taking on one giant backer — a scenario that often means ceding control while being pressured to continue growing.\n\nHugging Face is also still a comparatively small business by revenue in the world of AI. The Information reported it was recently generating about $150 million a year in revenue, up from roughly $100 million just two months earlier.\n\nThat growth has enabled the compan",
+  "reactions": [
+    "[Hacker News] One would assume. Just out of curiosity, how did Hugging Face have the money to run that operation?",
+    "[Hacker News] &gt; Who knows what i sthe next big thing after AI. Maybe something that doesn&#x27;t need Linux? And Nvidia hardware was running on Linux before AI as well... &gt; And I&#x27;m not so sure that Mac is out of the equation Mac servers exist but anyone serious about running at scale isn&#x27;t using them for a number of reasons, not least of which is that Apple simply doesn&#x27;t make real servers ",
+    "[Hacker News] Volkswagen has a couple too. Like, actual laboratories with people in white clothes working in them. You don’t call Volkswagen “a lab” because of that.",
+    "[Hacker News] Can we at least let the early days of AI play out before we try to guess then next big thing? ChatGPT isn&#x27;t even half a decade old.",
+    "[Hacker News] | Nvidia agrees to acquire Hugging Face for $13B The title is not the linked article’s title. It is the title of the first article in the description. FWIW, “agrees” is a weird verb. Kinda sounds like they are doing this out of kindness and not their own interests.",
+    "[Hacker News] In that case, somebody will open a new platform to upload the quantized models and hf will lose market share"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Nvidia agrees to acquire Hugging Face for $13B",
+      "url": "https://news.ycombinator.com/item?id=49458161",
+      "score": 1462,
+      "commentCount": 654
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Nvidia has been in talks to acquire Hugging Face for more than $13 billion - Business Insider",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vzfwnd/nvidia_has_been_in_talks_to_acquire_hugging_face/",
+      "score": 1055,
+      "commentCount": 392
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Nvidia closes in on Hugging Face acquisition",
+      "url": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Nvidia has been in talks to buy Hugging Face for more than $13 billion",
+      "url": "https://www.reddit.com/r/singularity/comments/1vzgkfa/nvidia_has_been_in_talks_to_buy_hugging_face_for/",
+      "score": 13,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/StableDiffusion",
+      "title": "Nvidia agrees to buy Hugging Face for $12.9 billion",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1vzhix5/nvidia_agrees_to_buy_hugging_face_for_129_billion/",
+      "score": 8,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "NVIDIA officially purchasing HuggingFace for $12.9 billion dollars.",
+      "url": "https://www.reddit.com/r/singularity/comments/1vzncbg/nvidia_officially_purchasing_huggingface_for_129/",
+      "score": 5,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Nvidia is buying Hugging Face for $12.9B. A simulation already had HF choosing stability over “open everything.\"",
+      "url": "https://www.reddit.com/r/artificial/comments/1vzm3fw/nvidia_is_buying_hugging_face_for_129b_a/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
