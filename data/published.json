@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-08-29-퀸-38-플래시-넥스트-라마씨피유-지원으로-일반-pc에서도-실행-가능",
+      "title": "llama.cpp support for Qwen3.8-Flash-Next has been merged",
+      "urls": [
+        "https://reddit.com/comments/1w03zdo",
+        "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+        "https://reddit.com/r/LocalLLaMA/comments/1w0na2z/qwen38flashnext_udiq4_xs_on_2x_rtx_3060_7800x3d"
+      ],
+      "publishedAt": "2026-08-28T22:56:22.512Z"
+    },
+    {
+      "slug": "2026-08-29-앤스로픽-ai가-실험실-장비-직접-조작하는-모델-하드웨어-표준-공개",
+      "title": "Previewing the Model Hardware Standard - Anthropic",
+      "urls": [
+        "https://reddit.com/comments/1w04skp",
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mMzRTNjJiRFhsYnZYMlBtQlNxTWZrRE5VVzF4TnZoel9UdXJSalpXUkE4M1NXN3pNTXdIWW84U0dONmN3bUFKcGwzZGh4SEdCZTFQaEk0TDJZNjF2ZVRFTUhTYTB5MzV5dV9xX1lvWXNMejFUYUlMZGxISQ?oc=5",
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY2dOSHcyS2VTS2YxQ2ZwSTBLZ2ljelNkd2ZPeXVLc196Y0h5eG9lRDF0U1c1ZUN4VmEza29mSWdXT05QVURvNHFZMnNxWWVieHdLenAzUDdtOGlVbF9SU3ZrVjJVek5wM1Voek5mN0NmSk5jVDdNUjhhamlDYk1Ha2Y1Y3lKbGQtUm8zWW91TklhUWp4akVDNWNmdFdERkxsRGkyNTZ2YmNpLXQ1X24w?oc=5",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjA3SnJTbzR3Z0JuN1pmYmJGeTZNTUF2bXlhNTZrdF82REJwQzNVQ3lKYUdlblVHS0hUNWNOUktVamRscTF5QV9aMmMxaV84NmVLRWh1RXdqVGZZOXNJTHRZS2tURThiZjd5eG5QNF9LdVM0Wnc3bDV5cUlqOGNmSkhTMHZ3bFdKTHhWQmFsbWhJSlVobWRqVkZFRkxNTWVS?oc=5",
+        "https://news.google.com/rss/articles/CBMiywJBVV95cUxNTlNWSFhIQmlpck5MTWRUc3RCVFdUOWVtdXMxSGd1SXV1MzBIcUN3ay1ac1l5a29KWnZWV09nR3dwbk9QenFBZ25WcHVUTVozYTBIekUxRGZnSHZObGJwZnduXzB6N21HVklCMGUtWUxySDkwSGtxc0JVcTI3aXZoZUNFa0NlM181ZWsyV0lscHM1OVdWakozTmJLeHN6cV9mSEF1b1JPRG1XQ3RES0FuTnRuVFpSdUFSOUU2TkZwZTZPUW8ycGNzYVdjM2dzOGp6REo2SGp2dWxSRFRTdkwtaGlYYWxJVWltVjlRT0JBcGprWGI0cUJWQVNHdEVUVTdJelpwenZDOC05TUhGem9XQkxKdUM0bW9fZlVhUHJxV3FQckQtNjlvQ3UyRG9MempJS3hQbk8xeS1sQzA4d2VSYVNiSDdOTWVBVVln?oc=5",
+        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNHpONFI4Mk5fOGx4bERMc3d2Ymd0TDZNV01KTHZVbTNheUxZdzFlbkxPOGdhTHFFWGMyUGVjSHY4bW84R0V6ZllGMWtXWmxYSG05RnpYY0hncVVZc1MyeFVFNm1IVHgxSHNjTlVtNXc2X3laM29IMnFweHM2dUJUaXlQbHBSelExSll0YnZZUndOTHRUSTRPaXptbXMyaVNhYnBEQXdfS0Zyc1N3QU1ZRzZqYWszLVFtT1VISm9qMGhBRkRsU2FmRUNNM1otRks3dWJmSGs0bHhPRG9aV2IweWw4N0p3cjFPOFMzcFdB?oc=5"
+      ],
+      "publishedAt": "2026-08-28T22:55:36.533Z"
+    },
+    {
       "slug": "2026-08-28-구글-제미나이-오모니-11-플래시-영상-생성-제어권-개발자에게-넘겼다",
       "title": "Gemini Omni 1.1 Flash, 생성형 영상 제어와 4K 출력 강화",
       "urls": [
