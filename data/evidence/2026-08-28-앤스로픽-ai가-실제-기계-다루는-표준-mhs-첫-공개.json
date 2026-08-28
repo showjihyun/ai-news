@@ -1,0 +1,48 @@
+{
+  "articleText": "[r/singularity — anthropic.com]\nWe’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug discovery experiments to laser calibration on a quantum computer. The development of MHS began as a collaboration between Anthropic and HHMI Janelia Research Campus .\n\nIt typically takes a lab or manufacturing facility weeks, if not months, to set up and integrate their hardware. Most devices don’t communicate with each other, instead requiring specialists to build bespoke integrations. MHS reduces this integration work to hours or minutes. And by incorporating AI into these tools, MHS also helps researchers and engineers more readily orchestrate autonomous, round-the-clock experiments and workflows, with agents able to reason through each step in an experiment, update parameters in real time, and, in some cases, recover from hardware errors without intervention.\n\nWe’re sharing an early version of MHS with partners across science, robotics, electronics, and manufacturing so we can collaborate to build safety evaluations and develop best practices for AI systems operating physical equipment, ahead of making the standard open source. MHS works with any device that has a programmable interface. It is also model-agnostic, and any agent harness can access it using standard protocols, such as the Model Context Protocol . To apply for access to the research preview, head here .\n\nGetting multiple devices in a lab or on a factory floor to communicate with one another can be challenging, even setting aside the added difficulty of integrating AI into the setup. Each device tends to have its own programming interface, and so far there has been no standardized way to integrate them. And once the devices are connected, there is no common way for them to share data with an AI agent, nor to let the agent operate them safely.\n\nMHS addresses these challenges by introducing a standardized driver: software that translates between a computer’s operating system and a hardware device. The MHS driver uses a simple set of primitives—commands like “read” (for example, “get temperature”) or “write” (for example, “set temperature”)—that any hardware device can understand and act on. And it makes each device discoverable in a standard format, so that devices and agents can find each other and communicate across networks without needing a bespoke “translator” program in between.\n\nThe MHS driver also helps an AI agent understand how to use a device it has never seen before, giving it information about machine characteristics that may not be discernable from code alone (for example, the weight of a robot arm, which is important for knowing how to manipulate it safely). To date, much of this information has been stored in paper manuals, on a user’s computer, or as tacit knowledge. But the MHS driver contains tags that let the user write this information directly in natural language (users can either do this themselves, or by chatting to an agent that interviews them about their hardware setup). With the information from these tags, the MHS driver then automatically produces a reference file with information about a device’s general characteristics, such as what it can measure, what can be adjusted, and what safety limits will be enforced. This file gives the agent everything it needs to know to operate the device.\n\nAfter the devices are connected and the agent knows how to use each one, the agent needs a way to control the hardware. For MHS, there are three such mechanisms: MCP, the command line interface, and code files (APIs). These work together to enable orchestration across multiple devices via a single line of code.\n\nOnce the agent can control the devices, it’s able to receive operating data from each one and supervise and direct the work at a high level. The agent can sequence steps across instruments, monitor results, and adjust parameters as conditions change in real time. When the agent needs to execute long-running tasks or operate devices faster than its online reasoning would allow, it can chain together driver commands from one or more devices in code files. This allows the devices to carry out operations themselves, without the agent needing to reason at every step.\n\nAs we’ve tested MHS, we’ve found that Claude interacts with experiments and hardware in an exploratory manner, much as a scientist would. For example, we observed Claude make an adjustment to a laser, observe the results through a camera to assess how its adjustment moved the laser beam, and repeat the process, seeking to understand the sequence of events. Claude then packaged what it learned into code files, writing a deterministic script that let it a",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic pushes into physical world with new standard to help AI agents operate machines - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRE9pN0ZXS1ItNVdDQmJZbGtPYzdQRUJtaEF5cU8yajZGRkFzUC11WXlqSDViZS1feTJ2a05iQTNveG1UeThiNVNKUFU0d21NMkFiWTVFQjdHbDBhVzlEbEp6d2FvQVVVR3VwWnJIUGV4U0p6VlR0U0dhYWhFSm1rMUZJbzhiT0V3TVlSeGFMZVhzSlVzSXVwYkpUVlNqZjhSX3JwZ2hLRmRrZVJldm5qcFh3b3dIVWtycWJXTXRQaG1IcFFs0gHKAUFVX3lxTFA4X09HaXl2TVgxZWVFWkxZZmU0UC1RUXB1cEkwZFRPNkIweVh5b2J2aHlhRFludUpfMU9SdHpqdkItVUV4OUdnaU54UkpiWnhXVVNXUEZpNl8wNkkwdUNGalRTSzFhdnE0WjN0dmotV25QQVRwcnhZVERwMkdNUDZ0X0NGZWdIYm9oc3B4YmRXd1puNXpwY2p1MFpKRU9FbnBPNzBhODNraS1EeFRRbzZCaWZTY2R3aVcteG1LY1VXcmtJSlE4dkZOOXc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic previews MHS standard for AI agents that operate machines - SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTFRPNWxXWVQzNG5ONEJiclBGdG9LejAxT3pfejZ2Y3NfdjVJQmVEQjdEVGhHQXhsblp5RVJaR3dPOWJIQnVMZjZEcWJqZEsxUWNmRkxJaVMxcDVYSl9ld1RlRXFRUGFPdDY1em5wTURnd1UxR0JUQlI4Ul9mM19zaU5BczFUVGUyczAwSDh1S2JCWnRLbDNVeWZRbnpfb1lFY0tTYzZnUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic brings AI agents to physical machines with new hardware standard - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLVlwTXdBSVZBM2hGWjYwU0Z2UkRKVFV6cHVGRFhmUXlsRkNrdnNFcURpdWVBQ0k4cUFyT3JLVGU1ZWxrRVA1ZkhMU3BoY25fd1lKOE8ycnJxQUl5S3dmS21PVnI2TWlzS1pTZDR2Rl92N3BldzhFYlh5TzEtVUpkN0VWQW1ZSXl2VDA0elc1ZGdwRkpFR2ZrbTE4UkpEX2VnSWJkV1pNbXFaX0pCT2NlSHdsUXZKODVLVDJZ0gHAAUFVX3lxTE9EWXR0a1JvMHpSV2xfYzdxdkJJcGowQ1lfNUNpd0ZDUUp0UzB4QmRwWUR4ZG05ZFRZTV8tamtYUjZZcmNVZkl6TzlycTFaTWJ1MzZCWVpJODg0N1hCTHlqajdzc1BNbDZIT3V0dTZQR1lGdU1JV0ZoUWtsMF9MUEN2eVlzT2xoNG43VmFHeFBCTTgyVjlrNC0tQUhMbFZYT1AxVGtWYnZSRmtWemVNRkFoc1dqYkhwNnNyOXVDbExpdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Rolls Out Model Hardware Standard to Bridge AI Agents and Physical Machines - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FMHQzdk5yNkRpSm9RMGtnVG40eExPc1BORUFsbk1EdTg3aGdIdmNwSjJJR0JUZTJTQ3dpZFJCZG1hS3MyTWVYVnJlSGFHeHF2dWRHdXN4eGRELUtWdW1kTFhDVU5LZDZoZ2JISWMydHdDTDFsbFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils standard for AI agents working with physical devices - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZWtIME1nV0dPeFNQVjVzTDZnUkhNdGRrcXNHV3hzeDJoMGtoOVhaekttV1hMQndWaG9oVjRpRnRLVl80Y2dVbkQ4MHRZbXR0Y1U4blkxdmd4ZVdNU1pfMWZRMWZtUlFDX1prQlRuTWNZYUdhekkzUjBQNURWamdaX2x4YVdzZTVFSnlmRlRORGVUYkV1VTByX0drR2xRa2hxbnVCelpRY1o3UVRWeW5nVzZR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Anthropic: Previewing the Model Hardware Standard",
+      "url": "https://www.reddit.com/r/singularity/comments/1w02wpz/anthropic_previewing_the_model_hardware_standard/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
