@@ -1,6 +1,50 @@
 {
   "records": [
     {
+      "slug": "2026-08-28-구글-제미나이-오모니-11-플래시-영상-생성-제어권-개발자에게-넘겼다",
+      "title": "Gemini Omni 1.1 Flash, 생성형 영상 제어와 4K 출력 강화",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
+        "https://news.hada.io/topic?id=32964",
+        "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash?amp%3Butm_medium=social&amp%3Butm_campaign=og"
+      ],
+      "publishedAt": "2026-08-28T13:15:35.733Z"
+    },
+    {
+      "slug": "2026-08-28-미-법원-펜타곤의-앤스로픽-블랙리스트는-위헌표현자유-침해-판결",
+      "title": "Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal",
+      "urls": [
+        "https://nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+        "https://reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWjhTUHM2dVhOTEFzb1p3elhvSHhZTGFFLWhVZWhnbWVGRmdFMllwbGViYUE5RDl4WmUzbW1vXzUyZXUyVnJOWGd5ZkF2dlJqRWtYZWxtZHlCUVplZnVYemJrdUVOWHdFZWFxZnEtdktraDJUS1IxZFd3ckNPUXJxY1NwOVY4NXpGcmNhdHVPWWhVNmoxMXB2azZPZ1lwRUhF?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQTNzNk5XaHlld1A2T1NvbXM0SU5WclJhOXRPWGxRMXQyTjQzV1hhdFItZXZCYmFEWHBGWEdMU0N1bFRMVjFFMFZzOTdGWkhsd2ZvdjVuSGV6M2VFZnE5VnNWS0lhZ2ZNekZ0TWpPSUtCaHplc1ZWdFlBT08zd0I2ZElXOERnaGtLb2dldlY3NlFRVHU0OEI3LTdEWHlNekY40gGmAUFVX3lxTE5fZFRGc3ZiMmRGTlA5dHpnVmVvTm9pdU81Nk1QaEx4RUVqMnJLV1ZNeFJhcW5jcXhzTERCcFlURjBqZWdxTHRXcVhnbjdzVkN5RnNBMXg5eEE2TkFPSHhMQmhLdFlGRng4ZWVqVWhwVEg2R1FKaHhpNnpUTjh4ZFEzUHh1bl90S0Jjbm5BYnVPNHVud21yWm5KOXlOYjJvR0Q1clhTcHc?oc=5",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXV5aWNTSUpiS0NGMEJxaG8xY19PeERsT1dudENzeXN2aEgwT2JDU0ViMmVEc1YwcVdlcEwtVE1Rak53X2daTXNBOHpTTk1vaDA4WmJpWmVkdEdpdDd5SEctdDdfRWxsWHpjZkFIV1BHZWV2all6NlM2VlJSWFVydFBES1dYYW9fRHpVYTFCQXduc2RTYVVNY0c4WU9CWk41?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPakdSUWs3QWRxY0paamF6djJFWGY3Z3YxUWVtWTlTdVBvcmxmU0Z4cDNtTU9ZVFdBUHhCOW9qSEptOHBYU3YxWGNKMjJ3VS1SbEU2aEwxTy1vRkNIS3gxXzVnOC16eDdjUWdkMmxFNENxR2hjRWYzaGVjdVV0M2o4SkhxdzNyNDdVa0FNSHhxN3Bid1JISkxfel9PUndsQWRGUGE4?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxNekZ5NzlucUlaZTJjdHRhMjR3cjA0R0dNbGVFZlNEbU9Kd2MyQm9fUVY3WmdiZy1QZE5PYTlMS0h6cWRPTm1VY21FeG1oLWpSeUlRZ1VUTzVRMjg4S3FtajA1ZDZuRE9tdUxwVG03RnBSRjhvaFF5YmhfSzRObE9yZnBqVkV6cll6Y0ZmYnZDMlFOZXFWOVlUNDZPONIBoAFBVV95cUxNU0FCdjNVVE5LejN5Q0R1dERNSU8wRnFwZk9WOEhYSWNrYnZidnRzU05kSV80MGRYWUpCcDNWVUQzT0NLSUF6cGFfcXZ1dHU5WGNqdzFOdHVDVHVxenAwc1pIOUNJNURkNU5zZUtObklXZEpaQlVqOElOVS14TVI1d0NIUmZET2dUS1g3WFpHS2wxbmFyWXNleTdWTmF5bmVD?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNEZhYmx5XzBDSlRJcUViSXhYZXBKRUZOMTItbUMydUZJSThiZnBhcEVKbWdTWGwtcGRWVVNHSW4xNGI4WGR3bFhPV0E5VGc0N2c0bzUyMERacFE5S0k1Qm5yc1Y2ZFFnYUgtRUx5VFg1aWxNNk8yOWNSVkFfT3J2UzhVTmlqZHdjOUZKMDVxWFpZN3QtNVFZYzFxR28?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxOXzRibEdEdVZrN2NSeUFvSkJkMi1tQkhPMzFsZWRCMUpxcDVQeUZscTZ3dzZMUHNQMnJRUTZ3aUlubDFJQkJLUTU3N0pmeEMtZDZ6RU5xTlFoeUhsSnpZS2ZnUzFlNmxGVnJjYm9jVEJrTmpQM2tjVUNsTEVySzNDbHdUdXQ0OEZlNUsyTElCQ295V2hGbV9FMjdR?oc=5",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVW5aN29oZlZBbXVtZklMMXhrOVNPT0JIT2xsSERTc0twVkFhUjgweHRLeWl5ZnR2M0JjeDR4aGZOMjF4VDB2cGMtRnRXT0w1ZEhiUlhQQ05EZno5c3NKNlVUaTlHckpLOVpXWTdkdU1CM01XT1JXOEpZTXczU3c1MmVxbkhILV8wSXc?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxQa2FqYWRPR2pwZlktNEZsS0V1ckk4RnZzem8tUFotX29zZGlxVDkxYURuemlYbmxuY042MEFWdTZPYmtQZFlaYjVfTy1CYUhkMEVjT2NHNDJGVUczNk1HNTFWRkJjXzZFSlE3NDhPbHdLUFF5bVNFTUthdnFXX2praTZlWjBkcE5XemxpVE5mZTBxeDh2MTN0UkF3?oc=5",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeXJuVjFCWm4tbGVGcTNySmZKSVdZVk9ZTDRTNFF1Rm1nLXJBN2VSYVRnYTRNbXg0YTN4bWlieFVzbHNvT0t6WHp4YTkyYUhSMTd1T2dGeUx2WFV4VVBDQXBjMnZHZERYQ2J5ejJwZnpUSWZBUUliZXl6ZjRhS2Naeg?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS0dJdkZFRVBvS0hCaFY0Mml3MWhMLUVha3VjeFdBR2k4M2U2QjZHOF8yNS1pdmZuRG84dmp2NzY4RW9zdWVqNXZEYnpEQjBSTzZxR2xSS3RpcEJjOGhrTFJEV1pIOGhaR1EwOUt1N3ZuVE9VeEtOcU1vNl9EZGFCa05NZnBFUkdjWXl5cklUUWNBbUFWdWRfd2VmRUFsSW5rakxERGRCYlpBU3lUS3NBQVRuNi1UdWkyNThLbUtB0gG-AUFVX3lxTE5LR0l2RkVFUG9LSEJoVjQyaXcxaEwtRWFrdWN4V0FHaTgzZTZCNkc4XzI1LWl2Zm5Ebzh2anY3NjhFb3N1ZWo1dkRiekRCMFJPNnFHbFJLdGlwQmM4aGtMUkRXWkg4aFpHUTA5S3U3dm5UT1V4S05xTW82X0RkYUJrTk1mcEVSR2NZeXlySVRRY0FtQVZ1ZF93ZWZFQWxJbmtqTEREZEJiWkFTeVRLc0FBVG42LVR1aTI1OEttS0E?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZzVxbmJIVnZCUERTSUNlZnZrOUxrUG8yRk1WdGVpRllZczRoVEt5UkpTMU9yZHNDM3p6WkpvMl85RnpwRlM4VTRIYTA2ejdRaHZteWRHUTF4TGkxdTlGLWotazRxdnNpb21WMjJJa280OW1tUUVTM3l3RHBSQTItQTRpSGNQdXF2TUFfNFc5ZEFabFo1NVlSeHFCSFFBcTBsdmFBTHFwenhTV0wyRnJvaEotN3NOUDBienV0R3Y1WGg5SktPeGY2c3RMMWp1WHBvNHo5SUdWbDI5dw?oc=5",
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxObGFCNHBpci0tU09JSEpVMlhPWWM1cENKNktYY3RONFo1ZkxOekliV0UyV2JYSDFsdTV1M3lwSmVlQ2tFRmpwTlFQTGNDanAxZEZZclZ1RUNWMzVIUy0tRjJNcE9DSWxwbkFJXzZyZFdIMUozUk9iNTBxWDJkb3ctNkpIb3lLdFp2Vl9ESGFwbk80eHUw?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaE1POUFBMkd0NGE1ZDhvd1VmQlltWkt4b2s3Zk5LUHpmbkJwV3MzOVZDSm9Wb2ZXTk10MnduQVd1WEUwRy1kbmdtanZFR2lxZDBrZzJ5OEd4N3NJRXIzbG5nVDl4Ymh5NVFUci0yRVA0X0Q4aXpOYkFpRkk2NVhYcWRGeWx0Mk9LRkVSdHRsR2ctWklzWDNraHJvcw?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ja1hrbnhGSTNWXzFBcjJSMmxvM3hIX191dkhnNC03ZUo4VGJSTndBYUFFWlBaUmlPMmh3a0dZS2tpSnBPQTR6QUFhTlNMYnpJX1VsdTRKSFBVYjVnbDBIMnMycndpUGRIM01zWmlvOVZVb0hLN3c?oc=5",
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSTVqdlhNbkNnTC00dGRUSXlJa3kyXzZydVFhcWlBZ2lGaDZ4QzBRU0pnZUE5bVlmXzNmSTRaOHVKREdoQVZ0ZnBoM1BiNXptTE1sZHZOYW5QbXJ4bHZfMkl4VU01ZkdGZlF2bC1mY0VpeVVjaTZQcjZITDZWeXdOS24yVERjcG1EbUxyZjJSSktoMnBKbVVRQ29CNERyVkNTSWs1SGxQTDRyV3dSTFNMMWZBR3hxS1FuQ19Db3pTdklwRWJIb3Vz0gHMAUFVX3lxTE5Xak9uNm4tOGhlR1M4ZUlDbmh5bDk3SXZCZlZwYi1rbUNnMkJsSXJDMGNnWmJYYjhLQnBQYkd1YURMVVdibFd2TlR2LWNHQkZRbE9fOXBPZUF6MWkzd003aEJDNFQ3RXNLTkFwc3E5R2JhQWFkTk1rcm9paTR5V0dESlhHYUNBSWVNM1VIN1ZuM21ZNE16dDh3QS1vZXpvbFBGYjBnOFNTcUxTOUVfeXZLa2dicVlkY05DZ3dIRkZtSmVwUUhfNC1LT2JpVw?oc=5",
+        "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQWl5dFRqbzJRejlwMUhMdzBrN2w0UHFoNDAzUHNDaVYyN25HRXI0ZFNzWHNpajlVR0ZKVnA3UVpVNExYbm1qQWhtOW1OZXJpRXNja1B4c1IzQWRzTFRzOGE2VjRDXzZSU2JZNWplMzFRQTdfUWpFdWlGYTRvbEdfWmFjalFCMU9ES25WUkozaXVoeVZ0djE5dm1fOHFaUzg0Ym5PbHI1bGlnVWJDeENFakRFSGxDMEZzVVB2RnNWQzdod19HLXFGbnNOV3JKRXM4REJxZGJ6akRocW9XbWF3c3R3blPSAeQBQVVfeXFMUEFpeXRUam8yUXo5cDFITHcwazdsNFBxaDQwM1BzQ2lWMjduR0VyNGRTc1hzaWo5VUdGSlZwN1FaVTRMWG5takFobTltTmVyaUVzY2tQeHNSM0Fkc0xUczhhNlY0Q182UlNiWTVqZTMxUUE3X1FqRXVpRmE0b2xHX1phY2pRQjFPREtuVlJKM2l1aHlWdHYxOXZtXzhxWlM4NGJuT2xyNWxpZ1ViQ3hDRWpERUhsQzBGc1VQdkZzVkM3aHdfRy1xRm5zTldySkVzOERCcWRiempEaHFvV21hd3N0d25T?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSVJXSjhLUlB6Y21MMkZ6YnhhR2RjUFlBbjVQemlDR183Q1FOZlpVN0VZY1dQelpPY2hqcjk4SjdsbHg4dXpIU21JX0xtekxJVVF6U1g4bFZrZnJyTU5oa0k4TUlienFlV2FrVm5aXzFVc00wak1tYXV2ZTAwbmdzeDJCOVQ2dkp2T2p0NWlKX0UwUmxCb0xzREJpWkRQZ2tNejZuVjVTTFlrbmIt?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+        "https://cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html",
+        "https://nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html?smtyp=cur",
+        "https://cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html",
+        "https://apnews.com/article/anthropic-pentagon-lawsuit-supply-chain-risk-f15e3c30186385e73e72bee82d85b05c"
+      ],
+      "publishedAt": "2026-08-28T13:07:12.986Z"
+    },
+    {
       "slug": "2026-08-28-오픈ai-인도서-챗gpt-무료저가-요금제에-광고-도입ipo-앞둔-수익-다각화-본격화",
       "title": "OpenAI to start showing ads on ChatGPT&#8217;s free and Go tiers in India",
       "urls": [
