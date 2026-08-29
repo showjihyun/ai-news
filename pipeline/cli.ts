@@ -113,16 +113,6 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
   // 2단계: 해당 데스크 페르소나를 입혀 집필.
   const draft = await writePost(cluster, evidence, verdict.category);
 
-  if (dryRun) {
-    console.log(`  [초안] ${draft.title}`);
-    console.log(`  [데스크] ${draft.desk}`);
-    console.log(`  [요약] ${draft.oneLiner}`);
-    console.log(`  [차별점] ${draft.angle}`);
-    console.log(`  [본문] ${draft.body.length}자 · 태그: ${draft.tags.join(', ')}`);
-    console.log('  (--dry-run 이므로 저장하지 않음)');
-    return null;
-  }
-
   /*
     발행 **전에** 검증한다.
 
@@ -140,6 +130,22 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
     return null;
   }
   console.log(`  · ${gate.reason}`);
+
+  /*
+    --dry-run 은 게이트 **뒤**에 온다.
+
+    예전에는 집필 직후 바로 빠져나가서, 검증용으로 만든 모드가 정작 검증을 안 했다.
+    발행을 막는 코드를 안전하게 확인할 방법이 없어서, 확인하려면 진짜 기사를 하나
+    내보내야 했다. 이제 dry-run 이 심사와 개정까지 다 거치고 저장만 안 한다.
+  */
+  if (dryRun) {
+    console.log(`  [초안] ${gate.draft.title}`);
+    console.log(`  [데스크] ${gate.draft.desk}`);
+    console.log(`  [요약] ${gate.draft.oneLiner}`);
+    console.log(`  [본문] ${gate.draft.body.length}자 · 태그: ${gate.draft.tags.join(', ')}`);
+    console.log('  (--dry-run 이므로 저장하지 않음)');
+    return null;
+  }
 
   const slug = publishPost(cluster, gate.draft, evidence);
   // 방금 심사한 결과를 그대로 저장한다. 뒤에서 같은 기사를 또 평가하지 않게.
