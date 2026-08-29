@@ -1,5 +1,5 @@
 import { getAllPosts, getPost } from '@/lib/posts';
-import { site } from '@/lib/site';
+import { site, postUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -39,7 +39,7 @@ export async function GET(
     `- 담당: ${post.desk}`,
     `- 분야: ${post.category}`,
     `- 발행: ${post.date}`,
-    `- 원문 주소(웹): ${site.url}/posts/${post.slug}/`,
+    `- 원문 주소(웹): ${postUrl(post.slug)}`,
     `- 태그: ${post.tags.join(', ')}`,
     '',
     '---',
@@ -55,7 +55,7 @@ export async function GET(
     '## 집필 방식 고지',
     '',
     '이 기사는 위 원문과 커뮤니티 반응을 바탕으로 AI의 도움을 받아 작성했으며, 발행 전 사람이 확인했습니다.',
-    `인용 시 출처를 "${site.name}"으로 표기하고 ${site.url}/posts/${post.slug}/ 로 연결해 주세요.`,
+    `인용 시 출처를 "${site.name}"으로 표기하고 ${postUrl(post.slug)} 로 연결해 주세요.`,
     '',
   ].join('\n');
 

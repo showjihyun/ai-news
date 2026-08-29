@@ -1,5 +1,5 @@
 import { getAllPosts } from '@/lib/posts';
-import { site } from '@/lib/site';
+import { site, postUrl } from '@/lib/site';
 
 // 정적 내보내기(output: 'export')에서도 파일로 생성되도록 강제한다.
 export const dynamic = 'force-static';
@@ -18,7 +18,7 @@ export function GET() {
 
   const items = posts
     .map((p) => {
-      const url = `${site.url}/posts/${p.slug}/`;
+      const url = postUrl(p.slug);
       return `    <item>
       <title>${escapeXml(p.title)}</title>
       <link>${escapeXml(url)}</link>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPost, getRelated, renderMarkdown } from '@/lib/posts';
 import { AdSlot } from '@/components/AdSlot';
-import { site, categoryColor, formatDateTime } from '@/lib/site';
+import { site, categoryColor, formatDateTime, postUrl } from '@/lib/site';
 import { LiveTime } from '@/components/LiveTime';
 import { toSafeJsonLd, breadcrumbJsonLd } from '@/lib/jsonld';
 
@@ -35,7 +35,7 @@ export async function generateMetadata({
   const post = getPost(decodeSlug(slug));
   if (!post) return {};
 
-  const url = `${site.url}/posts/${post.slug}/`;
+  const url = postUrl(post.slug);
   return {
     title: post.title,
     description: post.description,
@@ -86,7 +86,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const related = getRelated(post);
   const color = categoryColor(post.category);
 
-  const pageUrl = `${site.url}/posts/${post.slug}/`;
+  const pageUrl = postUrl(post.slug);
 
   /*
     AI 엔진이 답변에 출처를 붙일 때 판단하는 것들을 전부 명시한다.

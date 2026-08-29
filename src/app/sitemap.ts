@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getAllPosts, getCategories, getTags } from '@/lib/posts';
-import { site } from '@/lib/site';
+import { site, postUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/privacy/`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${site.url}/contact/`, changeFrequency: 'yearly', priority: 0.3 },
     ...posts.map((p) => ({
-      url: `${site.url}/posts/${p.slug}/`,
+      url: postUrl(p.slug),
       lastModified: p.date,
       changeFrequency: 'weekly' as const,
       priority: 0.8,

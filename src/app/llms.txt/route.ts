@@ -1,5 +1,5 @@
 import { getAllPosts, getCategories } from '@/lib/posts';
-import { site } from '@/lib/site';
+import { site, postUrl } from '@/lib/site';
 import { PERSONA_BEATS } from '@/lib/desks';
 
 export const dynamic = 'force-static';
@@ -52,7 +52,7 @@ export function GET() {
     '',
     ...posts.slice(0, 200).map((p) => {
       const date = p.date.slice(0, 10);
-      return `- [${p.title}](${site.url}/posts/${p.slug}/): ${date} · ${p.category} · ${p.oneLiner || p.description} · 원문 마크다운: ${site.url}/posts/${p.slug}/llms.txt`;
+      return `- [${p.title}](${postUrl(p.slug)}): ${date} · ${p.category} · ${p.oneLiner || p.description} · 원문 마크다운: ${postUrl(p.slug)}llms.txt`;
     }),
     '',
   ];

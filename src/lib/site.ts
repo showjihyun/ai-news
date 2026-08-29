@@ -54,6 +54,22 @@ export const site = {
   gaId: process.env.NEXT_PUBLIC_GA_ID || '',
 };
 
+/**
+ * 기사의 절대 주소.
+ *
+ * 슬러그가 한글이라 반드시 퍼센트 인코딩해야 한다. 안 하면 sitemap 과 RSS 에
+ * 원시 UTF-8 바이트가 그대로 들어가는데, sitemap 규약은 URL 인코딩을 요구한다.
+ * 브라우저는 알아서 인코딩해 주지만 크롤러와 피드 리더는 그렇지 않을 수 있고,
+ * 그러면 기사 60개가 색인에서 통째로 빠진다.
+ *
+ * ⚠ generateStaticParams 에는 절대 쓰지 말 것. 거기는 원시 슬러그를 돌려줘야 한다.
+ * 예전에 거기서 인코딩했다가 `%EB%85%BC%EC%9F%81` 같은 이름의 디렉터리가 생겨
+ * 카테고리·태그 페이지가 전부 404 가 된 적이 있다. 인코딩은 **절대 주소를 만들 때만**.
+ */
+export function postUrl(slug: string): string {
+  return `${site.url}/posts/${encodeURIComponent(slug)}/`;
+}
+
 /** 카테고리별 색상. 목록에서 한눈에 구분되게 하고, 표지 이미지 없이도 시각적 리듬을 만든다. */
 export const CATEGORY_COLOR: Record<string, string> = {
   데일리: '#0f172a',
