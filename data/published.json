@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-08-30-워프가-클로드-위에서-스스로-고치는-에이전트를-만든-방식",
+      "title": "Warp builds self-improving agents on Claude",
+      "urls": [
+        "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude"
+      ],
+      "publishedAt": "2026-08-29T21:35:23.199Z"
+    },
+    {
+      "slug": "2026-08-30-음악-출판사들-앤스로픽-상대-소송-클로드-훈련에-저작물-무단-도용",
+      "title": "Music publishers sue Anthropic, allege \"blantant theft\" of copyrighted music - Axios",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE4yWkVsWkZ5bXMySGRnSmIwVWNQR2x6Z3B6ZzF0TVU1WGZtN1R2bVczRkFJOU5HZE93VlJFbmZGU3RVeEdPWC1IalN4bXEzbmhPb3RpTGt2TmE0U0lqcTdrR0QtT1VYY05za0hkRGVrOV9sU3hvU2JOX1JR?oc=5",
+        "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sN3ZtTzRNbHJCeGdrTldqN2xyX1U5UGYzVWJBdS1HRlA5VFJMenE1bHFUZ2dPSDlGSVRZWWU1V2RFN1ZDNkpDOXhpV3VkT3J4alFSdGNsdU12X0xhbm44ekp4UXVDRzRjbXc?oc=5",
+        "https://axios.com/2026/08/29/anthropic-sony-warner-music-copyright"
+      ],
+      "publishedAt": "2026-08-29T21:25:55.650Z"
+    },
+    {
       "slug": "2026-08-30-클로드-코드-주간-한도-17-축소-9월-14일부터-적용",
       "title": "Claude Code is going reduce limits by 25% from September 14",
       "urls": [
