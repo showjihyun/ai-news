@@ -13,7 +13,18 @@ export function AdSlot({ slot, label = '광고' }: { slot: SlotName; label?: str
   const client = site.adsense.client;
   const slotId = site.adsense.slots[slot];
 
-  if (!client || !slotId) {
+  /*
+    자리표시자는 **개발 중에만** 보여 준다.
+
+    게시자 ID 는 받았는데 광고 단위 ID 가 아직 없는 기간이 있다 — 애드센스 심사가
+    도는 동안이 그렇다. 그때 이 회색 상자를 그대로 두면 심사관에게
+    ".env 에 NEXT_PUBLIC_ADSENSE_SLOT_TOP 설정 시 노출" 같은 개발용 문구가 보인다.
+    "미완성 사이트"로 읽히기 딱 좋다.
+
+    그래서 게시자 ID 가 있으면 조용히 아무것도 그리지 않는다. 광고 단위를 만들어
+    슬롯 ID 를 넣으면 그때부터 진짜 광고가 나온다.
+  */
+  if (!client) {
     return (
       <div className="ad-slot">
         <div className="ad-placeholder">
@@ -23,6 +34,7 @@ export function AdSlot({ slot, label = '광고' }: { slot: SlotName; label?: str
       </div>
     );
   }
+  if (!slotId) return null;
 
   return (
     <div className="ad-slot">
