@@ -71,6 +71,14 @@ function asTarget(cluster: Cluster, draft: DraftPost): JudgeTarget {
 export interface GateDeps {
   judge: typeof judgeDraft;
   revise: typeof reviseDraft;
+  /**
+   * 진행 상황 출력. 테스트는 조용한 함수를 넣는다.
+   *
+   * 안 그러면 게이트가 무엇을 했는지 찍는 줄들이 테스트 출력에 섞여, CI 로그에서
+   * 진짜 발행 기록과 구분이 안 된다(실제로 워크플로 로그를 읽다가 테스트가 찍은
+   * 줄을 실제 발행으로 착각했다).
+   */
+  log?: (line: string) => void;
 }
 
 export async function verifyBeforePublish(
@@ -80,6 +88,7 @@ export async function verifyBeforePublish(
   maxAttempts = TUNING.maxReviseAttempts,
   deps: GateDeps = { judge: judgeDraft, revise: reviseDraft },
 ): Promise<GateResult> {
+  const log = deps.log ?? ((line: string) => console.log(line));
   // 저장본과 같은 함수로 조립한다. 모양이 다르면 발행 전 심사와 발행 후 재심사가
   // 서로 다른 자료를 보게 되어 같은 기사가 두 번 다르게 판정된다.
   const evidence = toStoredEvidence(cluster, raw);
@@ -89,18 +98,16 @@ export async function verifyBeforePublish(
   let review = await deps.judge(asTarget(cluster, current), evidence, true);
 
   for (let attempt = 1; hasFabrication(review) && attempt <= maxAttempts; attempt++) {
-    console.log(
-      `  · 발행 전 검증: 근거 없는 주장 ${review.unsupported.length}건 — ${attempt}차 수정`,
-    );
+    log(`  · 발행 전 검증: 근거 없는 주장 ${review.unsupported.length}건 — ${attempt}차 수정`);
     for (const claim of review.unsupported.slice(0, 2)) {
-      console.log(`      ↳ ${String(claim).slice(0, 92)}`);
+      log(`      ↳ ${String(claim).slice(0, 92)}`);
     }
 
     let revised;
     try {
       revised = await deps.revise(current, review, evidence, TUNING.minQuality);
     } catch (err) {
-      console.log(`      수정 실패: ${(err as Error).message}`);
+      log(`      수정 실패: ${(err as Error).message}`);
       break;
     }
 
@@ -125,9 +132,7 @@ export async function verifyBeforePublish(
       current = candidate;
       review = next;
     } else {
-      console.log(
-        `      되돌림: 수정본이 근거 없는 주장을 ${next.unsupported.length}건으로 늘렸다`,
-      );
+      log(`      되돌림: 수정본이 근거 없는 주장을 ${next.unsupported.length}건으로 늘렸다`);
       break;
     }
   }

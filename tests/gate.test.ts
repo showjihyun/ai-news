@@ -40,11 +40,14 @@ function review(over: Partial<Review> = {}): Review {
 }
 
 const noRevise = async () => { throw new Error('개정을 부르면 안 되는 경우다'); };
+/* 게이트의 진행 출력은 삼킨다. 안 그러면 테스트 로그에 섞여 CI 에서
+   진짜 발행 기록과 구분이 안 된다. */
+const quiet = () => {};
 
 test('날조가 없으면 통과한다', async () => {
   const res = await verifyBeforePublish(cluster, draft, evidence, 3, {
     judge: async () => review(),
-    revise: noRevise as never,
+    revise: noRevise as never, log: quiet,
   });
   assert.equal(res.ok, true);
 });
@@ -52,7 +55,7 @@ test('날조가 없으면 통과한다', async () => {
 test('점수만 낮은 건 막지 않는다 — 낮은 점수와 날조는 다르게 다룬다', async () => {
   const res = await verifyBeforePublish(cluster, draft, evidence, 3, {
     judge: async () => review({ overall: 3.2 }),
-    revise: noRevise as never,
+    revise: noRevise as never, log: quiet,
   });
   assert.equal(res.ok, true, '점수가 낮다고 발행을 막으면 기사가 거의 안 나온다');
 });
@@ -62,6 +65,7 @@ test('끝내 못 고친 날조는 발행을 막는다', async () => {
   const res = await verifyBeforePublish(cluster, draft, evidence, 3, {
     judge: async () => { calls++; return review({ unsupported: ['없는 수치'] }); },
     revise: async () => ({ title: 'T2', description: 'D', oneLiner: 'O', tags: [], body: 'B', changelog: '' }) as never,
+    log: quiet,
   });
   assert.equal(res.ok, false, '날조가 남았는데 발행을 허용했다');
   assert.ok(calls > 1, '한 번도 다시 심사하지 않았다');
@@ -72,6 +76,7 @@ test('고쳐지면 통과한다', async () => {
   const res = await verifyBeforePublish(cluster, draft, evidence, 3, {
     judge: async () => (++n === 1 ? review({ unsupported: ['없는 수치'] }) : review()),
     revise: async () => ({ title: '고친 제목', description: 'D', oneLiner: 'O', tags: [], body: '고친 본문', changelog: '' }) as never,
+    log: quiet,
   });
   assert.equal(res.ok, true);
   assert.equal(res.draft.title, '고친 제목', '고친 원고가 아니라 원본을 발행하려 한다');
@@ -90,6 +95,7 @@ test('수정본이 날조를 늘리면 되돌린다 — 여기서 지키는 건 
       return review({ overall: 4.8, unsupported: ['하나', '둘'] });   // 점수는 올랐지만 날조가 늘었다
     },
     revise: async () => ({ title: '점수만 높은 판', description: 'D', oneLiner: 'O', tags: [], body: 'B', changelog: '' }) as never,
+    log: quiet,
   });
   assert.equal(res.ok, false);
   assert.equal(res.review.unsupported.length, 1, '날조가 늘어난 판을 채택했다');
@@ -101,6 +107,7 @@ test('시도 횟수를 지킨다 — 무한히 고치려 들면 실행이 시간
   await verifyBeforePublish(cluster, draft, evidence, 2, {
     judge: async () => review({ unsupported: ['없는 수치'] }),
     revise: async () => { revises++; return { title: 'T', description: 'D', oneLiner: 'O', tags: [], body: 'B', changelog: '' } as never; },
+    log: quiet,
   });
   assert.equal(revises, 2, `${revises}회 시도했다 (한도 2)`);
 });
