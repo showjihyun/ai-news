@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-08-29-호주-ai-완전-생성곡-차트서-퇴출국내-음원-차트는",
+      "title": "Australia Bans Generative A.I. From Official Music Charts",
+      "urls": [
+        "https://nytimes.com/2026/08/25/world/australia/australia-ai-music-chart-ban.html",
+        "https://apnews.com/article/australia-ai-generated-music-charts-ban-aria-9bfb0c91166ae4405a6df1a3c4891687"
+      ],
+      "publishedAt": "2026-08-29T04:00:29.610Z"
+    },
+    {
+      "slug": "2026-08-29-무료로컬오픈소스-ai-음원-분리-도구-스템덱-등장",
+      "title": "StemDeck, a free, open-source and local AI stem separator",
+      "urls": [
+        "https://github.com/stemdeckapp/stemdeck"
+      ],
+      "publishedAt": "2026-08-29T03:58:31.453Z"
+    },
+    {
       "slug": "2026-08-29-퀸-38-플래시-넥스트-라마씨피유-지원으로-일반-pc에서도-실행-가능",
       "title": "llama.cpp support for Qwen3.8-Flash-Next has been merged",
       "urls": [
