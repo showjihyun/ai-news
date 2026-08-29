@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-08-30-데비안-생성형-ai-책임-있는-사용-허용-투표-가결",
+      "title": "Debian votes to allow \"responsible use of generative AI\"",
+      "urls": [
+        "https://lwn.net/Articles/1091231"
+      ],
+      "publishedAt": "2026-08-29T15:29:15.472Z"
+    },
+    {
       "slug": "2026-08-29-호주-ai-완전-생성곡-차트서-퇴출국내-음원-차트는",
       "title": "Australia Bans Generative A.I. From Official Music Charts",
       "urls": [
