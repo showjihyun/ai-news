@@ -36,6 +36,24 @@ export function AdSlot({ slot, label = '광고' }: { slot: SlotName; label?: str
   }
   if (!slotId) return null;
 
+  /*
+    자리마다 형식이 다르다.
+
+    넷을 전부 `format="auto"` 로 두면 사이드바에는 가로로 납작한 광고가 들어가
+    312px 기둥에서 거의 안 보이고, 본문 중간에는 기사 흐름을 끊는 상자가 박힌다.
+    애드센스가 자리별로 다른 형식을 두는 이유가 그것이다.
+
+      가로 띠(목록 위·아래)  auto + 전체폭 반응형
+      세로 기둥(사이드바)    vertical — 300×600 같은 세로형만 받는다
+      본문 중간              fluid + in-article — 문단 사이에 자연스럽게 흐르는 형식
+  */
+  const shape =
+    slot === 'sidebar'
+      ? { 'data-ad-format': 'vertical' }
+      : slot === 'inArticle'
+        ? { 'data-ad-format': 'fluid', 'data-ad-layout': 'in-article' }
+        : { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' };
+
   return (
     <div className="ad-slot">
       <div style={{ width: '100%' }}>
@@ -45,8 +63,7 @@ export function AdSlot({ slot, label = '광고' }: { slot: SlotName; label?: str
           style={{ display: 'block' }}
           data-ad-client={client}
           data-ad-slot={slotId}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
+          {...shape}
         />
         <script
           dangerouslySetInnerHTML={{
