@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-08-30-오픈소스-거장들이-ai-기여를-거절하는-진짜-이유",
+      "title": "The growing divide between AI hype and software engineering reality",
+      "urls": [
+        "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai"
+      ],
+      "publishedAt": "2026-08-29T23:33:12.272Z"
+    },
+    {
+      "slug": "2026-08-30-ai-도구보다-조직-문화가-생산성-가른다",
+      "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+      "urls": [
+        "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity"
+      ],
+      "publishedAt": "2026-08-29T23:30:40.694Z"
+    },
+    {
       "slug": "2026-08-30-워프가-클로드-위에서-스스로-고치는-에이전트를-만든-방식",
       "title": "Warp builds self-improving agents on Claude",
       "urls": [
