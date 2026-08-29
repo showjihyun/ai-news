@@ -56,23 +56,30 @@ export default function HomePage() {
 
           <OfficialStrip posts={grouped.official} />
 
-          {/* 판과 달리 여기는 세로로 읽는 곳이라 폭을 따로 좁힌다 — globals.css 의 --width-feed.
-              광고도 이 안에 둔다. 밖에 두면 광고만 80rem 으로 튀어나와 폭이 어긋나 보인다.
+          {/* 목록은 세로로 읽는 곳이라 폭을 좁히고(--width-feed), 남는 오른쪽에
+              사이드바를 세운다. 그 여백은 디자인 리뷰에서 "판과 목록의 관계가
+              끊어져 보인다"고 지적된 자리다 — 광고 지면으로는 값이 좋은 축에 든다.
               (판 위가 아니라 아래인 이유: 위에 두면 세 칸이 접힘선 밑으로 밀린다) */}
-          <section className="feed">
-            <AdSlot slot="top" />
+          <div className="feed-row">
+            <section className="feed">
+              <AdSlot slot="top" />
 
-            <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
-              최신순 전체
-            </h2>
-            <ul className="post-list">
-              {posts.slice(0, 40).map((post) => (
-                <PostCard key={post.slug} post={post} />
-              ))}
-            </ul>
+              <h2 className="page-title" style={{ fontSize: '1.1rem' }}>
+                최신순 전체
+              </h2>
+              <ul className="post-list">
+                {posts.slice(0, 40).map((post) => (
+                  <PostCard key={post.slug} post={post} />
+                ))}
+              </ul>
 
-            <AdSlot slot="bottom" />
-          </section>
+              <AdSlot slot="bottom" />
+            </section>
+
+            <aside className="feed-aside">
+              <AdSlot slot="sidebar" label="광고" />
+            </aside>
+          </div>
         </>
       )}
 

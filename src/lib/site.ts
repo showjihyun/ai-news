@@ -49,6 +49,15 @@ export const site = {
       top: process.env.NEXT_PUBLIC_ADSENSE_SLOT_TOP || '',
       inArticle: process.env.NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE || '',
       bottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM || '',
+      /*
+        목록 오른쪽 여백에 붙는 세로 광고.
+
+        본문이 80rem 인데 읽는 목록은 56rem 이라(한국어는 40자 안쪽이 편하다)
+        오른쪽에 344px 이 남는다. 디자인 리뷰에서 "빈 공간이 판과 목록의 관계를
+        끊어 보이게 한다"고 지적된 자리이고, 광고 지면으로는 가장 값이 좋은 축에 든다
+        — 스크롤을 따라 오래 보이고 본문을 가리지 않는다.
+      */
+      sidebar: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SIDEBAR || '',
     },
   },
   gaId: process.env.NEXT_PUBLIC_GA_ID || '',

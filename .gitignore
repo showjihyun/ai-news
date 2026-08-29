@@ -32,3 +32,6 @@ data/trending.json
 
 # 디자인 캔버스 작업 파일 (Claude Design 으로 발행한 리뷰의 원본)
 .design/
+
+# 게시자 ID 에 따라 빌드 때 만들어지는 파일
+public/ads.txt

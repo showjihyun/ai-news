@@ -1,0 +1,79 @@
+name: 배포
+
+# 두 가지 경우에 배포한다.
+#
+#   push          — 코드나 설정을 직접 고쳐 올렸을 때
+#   workflow_run  — 발행 워크플로가 새 기사를 커밋했을 때
+#
+# workflow_run 이 필요한 이유: 발행 워크플로는 기본 GITHUB_TOKEN 으로 푸시하는데,
+# 그 토큰으로 만든 푸시는 다른 워크플로를 깨우지 않는다(무한 루프 방지 장치다).
+# 그래서 push 트리거만 두면 자동 발행분이 영영 배포되지 않는다.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - '.github/workflows/publish.yml'
+  workflow_run:
+    workflows: ['수집 및 발행']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # 사이트 주소가 없으면 빌드가 스스로 멈춘다(src/lib/site.ts).
+      # 그게 없으면 정규 URL·사이트맵이 전부 localhost 를 가리킨 채 배포된다.
+      - name: 사이트 빌드
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_SITE_NAME: ${{ vars.NEXT_PUBLIC_SITE_NAME }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          NEXT_PUBLIC_ADSENSE_SLOT_TOP: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_TOP }}
+          NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE }}
+          NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM }}
+          NEXT_PUBLIC_ADSENSE_SLOT_SIDEBAR: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_SIDEBAR }}
+          NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+        run: npm run build
+
+      # 산출물만 올린다. Cloudflare 가 직접 빌드하는 방식이 아니라서
+      # 무료 플랜의 빌드 한도(월 500회)를 쓰지 않는다.
+      - name: Cloudflare Pages 배포
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy out --project-name=ai-news --branch=main
+
+      # 배포가 실제로 살아 있는지 본다. wrangler 가 성공을 찍어도
+      # 잘못된 주소로 구워졌으면 사이트는 망가진 것이다.
+      - name: 배포 확인
+        env:
+          SITE: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+        run: |
+          sleep 5
+          code=$(curl -sL -o /dev/null -w '%{http_code}' --max-time 30 "$SITE/")
+          echo "홈: $code"
+          [ "$code" = "200" ] || { echo "::error::홈이 $code 입니다"; exit 1; }
+
+          canonical=$(curl -sL --max-time 30 "$SITE/" | grep -o '<link rel="canonical" href="[^"]*"' | head -1)
+          echo "$canonical"
+          case "$canonical" in
+            *localhost*) echo "::error::canonical 이 localhost 입니다 — NEXT_PUBLIC_SITE_URL 을 확인하세요"; exit 1 ;;
+          esac

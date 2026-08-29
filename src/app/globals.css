@@ -80,7 +80,43 @@ a { color: inherit; text-decoration: none; }
 .container { max-width: var(--width-wide); margin: 0 auto; padding: 0 1.25rem; }
 .narrow { max-width: var(--width); margin: 0 auto; }
 /* 판은 가로로 훑고 목록은 세로로 읽는다. 읽는 것에는 좁은 폭이 맞다. */
-.feed { max-width: var(--width-feed); }
+.feed { max-width: var(--width-feed); min-width: 0; }
+
+/*
+  목록 + 오른쪽 광고 기둥.
+
+  본문 80rem 에 목록 56rem 이라 오른쪽에 344px 이 남는다. 그냥 두면 여백이
+  판과 목록의 관계를 끊어 보이게 하고(디자인 리뷰 지적), 광고로 쓰면
+  스크롤을 따라 오래 보이면서 본문을 안 가리는 좋은 지면이 된다.
+*/
+.feed-row {
+  display: grid;
+  grid-template-columns: minmax(0, var(--width-feed)) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.feed-aside {
+  position: sticky;
+  top: 76px;   /* 헤더(60px)에 숨 쉴 틈 */
+}
+
+/*
+  광고가 붙을 때만 자리를 잡는다.
+
+  자리를 항상 비워 두면 승인 전에는 빈 기둥이 보이고, 반대로 높이를 안 잡으면
+  광고가 늦게 로드될 때 아래 내용이 밀린다(CLS 로 검색 점수가 깎인다).
+  그래서 최소 높이를 미리 주되, 화면이 좁으면 기둥 자체를 없앤다.
+*/
+.feed-aside .ad-slot { margin: 0; }
+.feed-aside .ad-placeholder,
+.feed-aside .adsbygoogle { min-height: 600px; }
+
+/* 1100px 아래에서는 오른쪽에 300px 짜리 광고가 들어갈 자리가 없다.
+   억지로 두면 목록이 눌려 한 줄이 20자로 끊긴다. */
+@media (max-width: 1100px) {
+  .feed-row { grid-template-columns: 1fr; }
+  .feed-aside { display: none; }
+}
 
 /* ── 헤더 ───────────────────────────────────────────── */
 .site-header {

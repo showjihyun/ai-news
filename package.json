@@ -20,7 +20,8 @@
     "test": "tsx --test tests/*.test.ts",
     "quarantine": "tsx pipeline/cli.ts quarantine",
     "restore": "tsx pipeline/cli.ts restore",
-    "prune": "tsx pipeline/cli.ts prune"
+    "prune": "tsx pipeline/cli.ts prune",
+    "prebuild": "node scripts/ads-txt.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
