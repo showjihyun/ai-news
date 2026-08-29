@@ -24,9 +24,18 @@ export interface StoredEvidence {
   items: { origin: string; title: string; url: string; score: number; commentCount: number }[];
 }
 
-export function saveEvidence(slug: string, cluster: Cluster, evidence: { articleText: string; reactions: string[] }) {
-  fs.mkdirSync(EVIDENCE_DIR, { recursive: true });
-  const stored: StoredEvidence = {
+/**
+ * 심사원이 볼 자료 한 벌로 조립한다.
+ *
+ * 저장할 때와 발행 전 검증에서 같은 함수를 써야 한다. 모양이 조금이라도 다르면
+ * 발행 전 심사와 발행 후 재심사가 서로 다른 자료를 보게 되고, 같은 기사가
+ * 두 번 다르게 판정된다.
+ */
+export function toStoredEvidence(
+  cluster: Cluster,
+  evidence: { articleText: string; reactions: string[] },
+): StoredEvidence {
+  return {
     articleText: evidence.articleText,
     reactions: evidence.reactions,
     items: cluster.items.map((i) => ({
@@ -37,6 +46,11 @@ export function saveEvidence(slug: string, cluster: Cluster, evidence: { article
       commentCount: i.commentCount,
     })),
   };
+}
+
+export function saveEvidence(slug: string, cluster: Cluster, evidence: { articleText: string; reactions: string[] }) {
+  fs.mkdirSync(EVIDENCE_DIR, { recursive: true });
+  const stored = toStoredEvidence(cluster, evidence);
   fs.writeFileSync(
     path.join(EVIDENCE_DIR, `${slug}.json`),
     JSON.stringify(stored, null, 2) + '\n',

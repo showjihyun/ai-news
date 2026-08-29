@@ -18,6 +18,7 @@ import type { Review } from './reviews.js';
 import { hasFabrication } from './reviews.js';
 import { backfillEvidence, articlesMissingEvidence } from './backfill.js';
 import { quarantineFabrications } from './quarantine.js';
+import { verifyBeforePublish } from './gate.js';
 import { rebuildAfterTakedown, restoreQuarantined, prune } from './takedown.js';
 import { mapLimit } from './util.js';
 import type { Cluster } from './types.js';
@@ -122,7 +123,27 @@ async function writeOne(cluster: Cluster, dryRun: boolean, force: boolean): Prom
     return null;
   }
 
-  const slug = publishPost(cluster, draft, evidence);
+  /*
+    발행 **전에** 검증한다.
+
+    예전에는 여기서 바로 파일을 쓰고, 그다음 단계에서 평가하고 고쳤다. 그 순서에는
+    구조적인 구멍이 있다 — 고치는 데 실패하거나 그 단계가 시간 제한에 걸리면
+    날조가 있는 기사가 그대로 사이트에 남는다. 실제로 그렇게 4건이 라이브에 있었고,
+    CI 로그를 보면 개정 단계가 매 실행 5분 제한에 정확히 걸리고 있었다.
+
+    이제 날조가 남아 있으면 아예 발행하지 않는다. --force 로도 넘길 수 없다 —
+    다른 게이트들과 달리 이건 사람이 판단할 여지가 있는 문제가 아니다.
+  */
+  const gate = await verifyBeforePublish(cluster, draft, evidence);
+  if (!gate.ok) {
+    console.log(`  – 건너뜀: ${gate.reason}`);
+    return null;
+  }
+  console.log(`  · ${gate.reason}`);
+
+  const slug = publishPost(cluster, gate.draft, evidence);
+  // 방금 심사한 결과를 그대로 저장한다. 뒤에서 같은 기사를 또 평가하지 않게.
+  saveReview({ ...gate.review, slug });
   console.log(`  ✓ 발행: content/posts/${slug}.md`);
   return `${slug}.md`;
 }
@@ -460,50 +481,60 @@ async function main() {
      * 2~3분이 걸리므로 25분 타임아웃을 넘겨 잡이 죽고, 그러면 '변경 사항 커밋' 단계까지
      * 못 가서 방금 쓴 기사가 통째로 사라진다.
      */
-    const justPublished = new Set(publishedThisRun);
-    const toReview = pendingPosts().filter((f) => justPublished.has(f));
-    console.log(
-      `
-[검수] ${toReview.length}건 평가 후 ${TUNING.minQuality.toFixed(1)}점 미만은 개정합니다. (동시 ${CONCURRENCY}건)`,
+    /*
+      점수만 올린다. 사실 확인은 이미 끝났다.
+
+      발행 전 게이트가 기사마다 심사를 마치고 결과를 저장했으므로, 여기서 다시
+      평가할 이유가 없다(기사 한 건 평가에 2~3분이 걸린다 — 그 중복이 개정 단계를
+      매번 시간 제한으로 밀어 넣던 원인 중 하나였다).
+
+      게이트를 통과했다는 건 날조가 없다는 뜻이지 점수가 높다는 뜻은 아니다.
+      점수가 목표에 못 미치는 기사는 여기서 손본다 — 그건 급하지 않은 문제라
+      실패해도 기사를 내리지 않는다.
+    */
+    const justPublished = new Set(publishedThisRun.map((f) => f.replace(/\.md$/, '')));
+    const below = loadReviews().filter(
+      (r) => justPublished.has(r.slug) && r.overall < TUNING.minQuality,
     );
 
-    // 검수를 끝까지 마친 기사만 격리 대상이 된다 — quarantine.ts 주석 참고.
-    const reviewed = new Set<string>();
-    const checked = await mapLimit(toReview, CONCURRENCY, async (file) => {
-      try {
-        const review = await evaluatePost(file);
-        reviewed.add(review.slug);
-        const weakest = Object.entries(review.scores).sort((a, b) => a[1] - b[1])[0];
-        console.log(
-          `  ${review.overall.toFixed(2)}  ${review.title.slice(0, 40).padEnd(42)}약점: ${dimensionName(weakest[0])} ${weakest[1]}점`,
-        );
-
-        if (review.overall < TUNING.minQuality || hasFabrication(review)) {
-          const result = await improveToTarget(file, review, TUNING.minQuality, TUNING.maxReviseAttempts);
+    if (below.length) {
+      console.log(
+        `
+[개정] 방금 낸 ${below.length}건이 ${TUNING.minQuality.toFixed(1)}점 미만입니다. (동시 ${CONCURRENCY}건)`,
+      );
+      const checked = await mapLimit(below, CONCURRENCY, async (review) => {
+        try {
+          const result = await improveToTarget(
+            `${review.slug}.md`,
+            review,
+            TUNING.minQuality,
+            TUNING.maxReviseAttempts,
+          );
           console.log(
-            `    개정 ${result.before.toFixed(2)} → ${result.after.toFixed(2)}` +
-              (result.reachedTarget ? '  ✓' : '  · 목표 미달'),
+            `  ${result.before.toFixed(2)} → ${result.after.toFixed(2)}` +
+              (result.reachedTarget ? '  ✓' : '  · 목표 미달') +
+              `  ${review.title.slice(0, 38)}`,
           );
           return result.review;
+        } catch (err) {
+          console.error(`  ✗ 개정 실패 (${review.slug}): ${(err as Error).message}`);
+          return null;
         }
-        return review;
-      } catch (err) {
-        console.error(`  ✗ 검수 실패 (${file}): ${(err as Error).message}`);
-        return null;
-      }
-    });
-
-    for (const rev of checked) if (rev) saveReview(rev);
+      });
+      for (const rev of checked) if (rev) saveReview(rev);
+    } else {
+      console.log('\n[개정] 방금 낸 기사가 모두 기준 점수 이상입니다.');
+    }
 
     /*
-      개정으로도 못 살린 날조는 여기서 내린다.
+      마지막 그물.
 
-      이 순서가 중요하다. 격리를 브리핑보다 **먼저** 돌려야 내려간 기사가
-      브리핑에 링크로 남지 않고, 커밋보다 먼저라 사이트에 아예 도달하지 않는다.
-      점수가 낮은 건 남겨 두지만 없는 숫자를 지어낸 건 한 건도 내보내지 않는다 —
-      낮은 점수는 읽다 말면 그만이고, 날조는 한 건만 발각돼도 사이트 전체를
-      의심하게 만든다.
+      게이트가 막으므로 여기 걸리는 건 없어야 정상이다. 그래도 둔다 — 이전 실행에서
+      남았거나, 게이트를 거치지 않은 경로(backfill, 손으로 넣은 파일)로 들어온 기사가
+      있을 수 있다. 격리는 브리핑보다 **먼저** 돌아야 내려간 기사가 브리핑에 링크로
+      남지 않고, 커밋보다 먼저라 사이트에 도달하지 않는다.
     */
+    const reviewed = new Set(justPublished);
     const result = quarantineFabrications(reviewed);
     takenDown = result.moved;
     if (takenDown.length) rebuildAfterTakedown(takenDown);

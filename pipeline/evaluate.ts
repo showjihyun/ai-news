@@ -241,21 +241,40 @@ async function judgeViaCli(system: string, prompt: string) {
 }
 
 /** 기사 한 편을 평가한다. */
-export async function evaluatePost(file: string): Promise<Review> {
-  const post = readPost(file);
+/**
+ * 심사 대상 한 편.
+ *
+ * 디스크에 있는 기사든 아직 발행 안 한 초안이든 같은 모양이라, 심사는 파일을
+ * 몰라도 된다. 이걸 떼어낸 이유는 **발행 전에 심사하기 위해서**다 —
+ * 자세한 사정은 judgeDraft 주석에.
+ */
+export interface JudgeTarget {
+  slug: string;
+  title: string;
+  oneLiner: string;
+  category: string;
+  desk: string;
+  originUrl: string;
+  publishedAt: string;
+  sources: { origin: string; title: string; url: string }[];
+  body: string;
+}
 
-  // 집필 당시 자료가 최우선. 이게 없으면 지금 다시 긁어 대조하되, 그 사실을 평가자에게 알린다.
-  const stored = loadEvidence(post.slug);
-  const exact = stored !== null;
-  const evidence: StoredEvidence = stored ?? {
-    articleText: post.originUrl ? await extractArticle(post.originUrl, 5000) : '',
-    reactions: [],
-    // -1 은 "값이 남아 있지 않음" 센티널이다(backfill.ts 와 동일, 148행에서 i.score < 0 로 분기).
-    // 0 으로 채우면 심사원에게 "반응이 실제로 0이었다"고 알리는 셈이라,
-    // 본문의 "해커뉴스 503점" 같은 서술이 근거 없는 주장으로 판정된다.
-    items: post.sources.map((s) => ({ ...s, score: -1, commentCount: -1 })),
-  };
-
+/**
+ * 기사 한 편을 심사한다. 파일을 읽지 않는다.
+ *
+ * 예전에는 심사가 디스크에서 시작해서, 구조적으로 **발행한 뒤에만** 검증할 수 있었다.
+ * 그래서 날조가 있는 기사도 일단 사이트에 올라간 다음 고쳐졌고, 고치는 데 실패하면
+ * 그대로 남았다. 실제로 그 상태로 4건이 라이브에 있었다 — 그중 하나는 제목에
+ * "13조 원"이라고 썼는데 원문은 129억 달러(약 18조 원)였다.
+ *
+ * 이제 집필 직후 메모리에서 부를 수 있다. 그러면 날조가 사이트에 **도달하지 못한다**.
+ */
+export async function judgeDraft(
+  post: JudgeTarget,
+  evidence: StoredEvidence,
+  exact: boolean,
+): Promise<Review> {
   // Anthropic API 만 구조화 출력을 서버가 강제한다. 나머지는 블록 형식을 쓴다.
   const isCli = (process.env.LLM_BACKEND || 'nvidia').toLowerCase() !== 'api';
   const prompt = buildJudgePrompt(post, evidence, exact);
@@ -278,6 +297,25 @@ export async function evaluatePost(file: string): Promise<Review> {
     unverifiable: result.unverifiable,
     evidenceExact: exact,
   };
+}
+
+/** 이미 발행된 기사를 심사한다. 파일에서 읽어 judgeDraft 에 넘긴다. */
+export async function evaluatePost(file: string): Promise<Review> {
+  const post = readPost(file);
+
+  // 집필 당시 자료가 최우선. 이게 없으면 지금 다시 긁어 대조하되, 그 사실을 평가자에게 알린다.
+  const stored = loadEvidence(post.slug);
+  const exact = stored !== null;
+  const evidence: StoredEvidence = stored ?? {
+    articleText: post.originUrl ? await extractArticle(post.originUrl, 5000) : '',
+    reactions: [],
+    // -1 은 "값이 남아 있지 않음" 센티널이다(backfill.ts 와 동일). 0 으로 채우면
+    // 심사원에게 "반응이 실제로 0이었다"고 알리는 셈이라, 본문의 "해커뉴스 503점"
+    // 같은 서술이 근거 없는 주장으로 판정된다.
+    items: post.sources.map((s) => ({ ...s, score: -1, commentCount: -1 })),
+  };
+
+  return judgeDraft(post, evidence, exact);
 }
 
 /** 일간 브리핑은 LLM 이 쓴 글이 아니라 발행분 재조합이므로 평가 대상이 아니다. */

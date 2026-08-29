@@ -181,6 +181,26 @@ async function reviseViaCli(system: string, prompt: string): Promise<Revision> {
   });
 }
 
+/**
+ * 초안 하나를 개정한다. 파일을 건드리지 않는다.
+ *
+ * 발행 전 검증에서 쓴다 — 날조가 발견되면 사이트에 올리기 전에 여기서 고친다.
+ * 예전에는 개정이 파일을 직접 고치는 구조라 반드시 발행 뒤에야 돌 수 있었고,
+ * 그래서 고치는 데 실패한 기사가 그대로 라이브에 남았다.
+ */
+export async function reviseDraft(
+  post: { title: string; oneLiner: string; body: string },
+  review: Review,
+  evidence: StoredEvidence,
+  target: number,
+): Promise<Revision> {
+  const isCli = (process.env.LLM_BACKEND || 'nvidia').toLowerCase() !== 'api';
+  const prompt = buildRevisePrompt(post, review, evidence, target);
+  return isCli
+    ? reviseViaCli(REVISE_SYSTEM, prompt)
+    : reviseViaApi(REVISE_SYSTEM, prompt);
+}
+
 /** 프론트매터의 발행 정보는 그대로 두고 본문·제목만 교체한다. */
 function rewriteFile(file: string, revision: Revision) {
   const full = path.join(POSTS_DIR, file);
