@@ -1,9 +1,46 @@
+/**
+ * 사이트 주소.
+ *
+ * 이 값 하나가 정규 URL·사이트맵·RSS·JSON-LD·OG 태그에 전부 들어간다.
+ * 그래서 잘못되면 사이트가 통째로 엉뚱한 곳을 가리키는데, 화면은 멀쩡해 보인다.
+ *
+ * 실제로 두 번 위험했다.
+ *   · 남이 쓰는 vercel.app 주소를 넣어 색인이 통째로 남에게 갈 뻔했다.
+ *   · 배포처에 환경 변수를 안 넣으면 기본값 localhost 로 빌드가 **성공**한다.
+ *     210개 페이지 전부에 `canonical: http://localhost:3000/...` 이 박힌 채
+ *     배포되고, 구글은 그걸 색인할 수 없다.
+ *
+ * 그래서 프로덕션 빌드에서는 값이 없거나 localhost 면 빌드를 세운다.
+ * 개발 서버(NODE_ENV=development)에서는 localhost 가 정상이므로 그냥 둔다.
+ */
+function resolveSiteUrl(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  const isProdBuild = process.env.NODE_ENV === 'production';
+
+  if (isProdBuild && (!raw || /^https?:\/\/localhost/i.test(raw))) {
+    throw new Error(
+      [
+        '',
+        'NEXT_PUBLIC_SITE_URL 이 없거나 localhost 입니다.',
+        '',
+        '이대로 빌드하면 정규 URL·사이트맵·RSS·JSON-LD 가 전부 localhost 를 가리킨 채',
+        '배포됩니다. 화면은 멀쩡해 보이지만 구글은 한 페이지도 색인하지 못합니다.',
+        '',
+        '배포처(Cloudflare Pages → Settings → Environment variables)에',
+        '실제 주소를 넣고 다시 빌드하세요. 자세한 내용은 DEPLOY.md.',
+        '',
+      ].join('\n'),
+    );
+  }
+  return (raw || 'http://localhost:3000').replace(/\/$/, '');
+}
+
 export const site = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || 'AI 브리핑',
   tagline: 'AI 뉴스를, 아는 사람이 옆에서 설명해 주듯이',
   description:
     '전 세계에서 가장 빠르게 도는 AI 소식을 모아, 전문용어 없이 풀어 드립니다. Hacker News·Reddit·GeekNews 등에서 실제로 화제가 된 것만 골라 하루 여러 번 업데이트합니다.',
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, ''),
+  url: resolveSiteUrl(),
   locale: 'ko_KR',
   contactEmail: process.env.CONTACT_EMAIL || 'contact@example.com',
   adsense: {
