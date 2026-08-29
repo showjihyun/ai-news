@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — bsky.app]\n@anthropicbot.bsky.social on Bluesky JavaScript Required This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Learn more about Bluesky at bsky.social and atproto.com . Post Anthropic {bot} anthropicbot.bsky.social did:plc:r6zamcgevu2oujnhslsgblol Starting Sept 14, we're permanently raising standard weekly limits by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will stay in place until Sept 13. 2026-08-29T16:05:06.671Z",
+  "reactions": [
+    "[Hacker News] I wanted to say something dismissive. It feels like a lot of doublespeak, which I think undermines trust in them. But I do understand that it&#x27;s a little hard to characterize the amount of compute they&#x27;re selling while obfuscating the business model enough that it still works. Demand, costs, supply, capabilities, competition change wildly week to week. Selling a standardized &quot;token&q",
+    "[Hacker News] Anthropic made critical decisions regarding compute and demand predictions which puts OpenAI in a much more healthy place. OpenAI have been reducing prices multiple times and increasing rate limits while also being generous with resets. Somehow enterprise, Anthropic is still ahead and I genuinely can&#x27;t tell how or why? The models aren&#x27;t that great (except Fable but has data retention iss",
+    "[Hacker News] Apparently they were already offering 50% extra limits. 150% -&gt; 125% 25÷150 = .1667 That&#x27;s how they arrived at 17%. https:&#x2F;&#x2F;x.com&#x2F;ClaudeDevs&#x2F;status&#x2F;2093742321473065266",
+    "[Hacker News] The title is straightforward lie. Changing +50% to +25% gives -17% in result.",
+    "[Hacker News] maybe he means in respect to how many reach the limit?",
+    "[Hacker News] IIUC it&#x27;s been on a &quot;temporary&quot; raise, which is higher than the one they&#x27;re now &quot;making permanent&quot;."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude permanently raising weekly limits by 25%",
+      "url": "https://news.ycombinator.com/item?id=49491282",
+      "score": 22,
+      "commentCount": 10
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic raises Claude Code weekly limits by 25% for paid plans - The Mac Observer",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeE1IajZvNUs3T09IVFNFcWtPZHY2bjctN0toa2piTmZBbEREZ2x4cjExLUxmRWUtb0RHWG11NHBnSVc1Z2phMEVGVkdjVDMtRDdHU1k0TTNXM2hnUVZ1VXBEYTYwZnA1N1pkbjQ5NEVBV09oSlctTVU2dl9KZ1pYRDJrQXJ4QU9JLWtrQ1NXMHlQaGhxRFZwMmRiaTlPQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

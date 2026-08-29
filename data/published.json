@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-08-30-클로드-코드-주간-한도-17-축소-9월-14일부터-적용",
+      "title": "Claude Code is going reduce limits by 25% from September 14",
+      "urls": [
+        "https://twitter.com/ClaudeDevs/status/2093742321473065266"
+      ],
+      "publishedAt": "2026-08-29T18:49:04.162Z"
+    },
+    {
+      "slug": "2026-08-30-클로드-주간-사용량-25-영구-인상-실제로는-17-감소",
+      "title": "Claude permanently raising weekly limits by 25%",
+      "urls": [
+        "https://bsky.app/profile/anthropicbot.bsky.social/post/3muaaxs5nx424",
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxPeE1IajZvNUs3T09IVFNFcWtPZHY2bjctN0toa2piTmZBbEREZ2x4cjExLUxmRWUtb0RHWG11NHBnSVc1Z2phMEVGVkdjVDMtRDdHU1k0TTNXM2hnUVZ1VXBEYTYwZnA1N1pkbjQ5NEVBV09oSlctTVU2dl9KZ1pYRDJrQXJ4QU9JLWtrQ1NXMHlQaGhxRFZwMmRiaTlPQQ?oc=5"
+      ],
+      "publishedAt": "2026-08-29T18:45:54.160Z"
+    },
+    {
       "slug": "2026-08-30-데비안-생성형-ai-책임-있는-사용-허용-투표-가결",
       "title": "Debian votes to allow \"responsible use of generative AI\"",
       "urls": [

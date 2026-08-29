@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I&#x27;m pretty sure they mean going from 150% to 125%, where 1.25&#x2F;1.50 = 0.83, so they&#x27;re calling that a 17% reduction. It&#x27;s less than today, but also more than a limit they made up and then didn&#x27;t apply.",
+    "[Hacker News] You can make an account for free on X and Reddit. Every time someone posts from either platform folks complain.",
+    "[Hacker News] Kudos to Anthropic for taking steps to increase the relative value of open models.",
+    "[Hacker News] They are reducing to +25% from current +50%. So while the title is inaccurate in percentage it is factually correct that limits are going down.",
+    "[Hacker News] The 3 tweets: &gt; Starting September 14, we&#x27;re permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place. &gt; Compared to today, this works out to a 17% reduction in weekly limits on Claude Code. We’re working on exciting changes that will make it feel like you’re getting more f",
+    "[Hacker News] https:&#x2F;&#x2F;archive.today&#x2F;MOC4w"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Code is going reduce limits by 25% from September 14",
+      "url": "https://news.ycombinator.com/item?id=49491631",
+      "score": 21,
+      "commentCount": 15
+    }
+  ]
+}
