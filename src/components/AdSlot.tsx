@@ -43,16 +43,22 @@ export function AdSlot({ slot, label = '광고' }: { slot: SlotName; label?: str
     312px 기둥에서 거의 안 보이고, 본문 중간에는 기사 흐름을 끊는 상자가 박힌다.
     애드센스가 자리별로 다른 형식을 두는 이유가 그것이다.
 
-      가로 띠(목록 위·아래)  auto + 전체폭 반응형
-      세로 기둥(사이드바)    vertical — 300×600 같은 세로형만 받는다
-      본문 중간              fluid + in-article — 문단 사이에 자연스럽게 흐르는 형식
+      가로 띠(목록 위·아래·본문 중간)  auto + 전체폭 반응형
+      세로 기둥(사이드바)              vertical — 300×600 같은 세로형만 받는다
+
+    본문 중간은 원래 `fluid + in-article` 이 가장 매끄럽다. 문단 사이에 흐르듯
+    들어가서 기사 흐름을 안 끊는다. 그런데 애드센스가 그 형식을 개별 광고 단위에서
+    빼고 자동 광고 쪽으로 옮겨서(한국어 UI 의 "콘텐츠 내 자동 삽입 광고 배치하기"는
+    단위 생성이 아니라 자동 광고 설정으로 간다), 지금은 디스플레이 단위를 쓴다.
+
+    ⚠ 형식과 단위 종류가 어긋나면 광고가 안 채워진다. 디스플레이 단위에
+    `fluid` 를 물리면 요청은 나가는데 응답이 비어서, 화면상 아무 일도 안 일어난다 —
+    잘못된 걸 알아채기 가장 어려운 형태의 고장이다.
   */
   const shape =
     slot === 'sidebar'
       ? { 'data-ad-format': 'vertical' }
-      : slot === 'inArticle'
-        ? { 'data-ad-format': 'fluid', 'data-ad-layout': 'in-article' }
-        : { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' };
+      : { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' };
 
   return (
     <div className="ad-slot">
