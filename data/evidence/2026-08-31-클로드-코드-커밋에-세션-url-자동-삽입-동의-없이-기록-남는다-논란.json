@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — github.com]\nanthropics / claude-code Public Notifications You must be signed in to change notification settings Fork 22.9k Star 143k Code Issues 5k+ Pull requests 727 Actions Security and quality 30 Insights Additional navigation options Code Issues Pull requests Actions Security and quality Insights [FEATURE] Session URL appended to commit messages and PR descriptions by default — should be opt-in #66504 New issue Copy link New issue Copy link Closed Closed [FEATURE] Session URL appended to commit messages and PR descriptions by default — should be opt-in #66504 Copy link Labels enhancement New feature or request New feature or request user-experience Description joka-7 opened on Jun 9, 2026 Issue body actions Preflight Checklist I have searched existing requests and this feature hasn't been requested yet This is a single feature request (not multiple features) Problem Statement Every commit message and PR description created by Claude Code automatically includes a session URL at the bottom (e.g. https://claude.ai/code/session _...). There is no opt-in prompt, no warning, and no mention of it during onboarding. Users only discover it after it's already polluting their git history.\n\nMake the session URL attribution opt-in — don't include it unless the user explicitly enables it. A one-time prompt during onboarding (\"Would you like to include a link back to this Claude session in commit messages?\") would be the ideal UX.\n\nKeep it opt-out but make the setting discoverable — show it during first commit with a \"Don't add this again\" option\n\nRemove it entirely and rely only on the existing Co-Authored-By: Claude trailer for attribution\n\nA developer uses Claude Code to build a feature, commits the work, and opens a PR. Their teammates and open source contributors see https://claude.ai/code/session _... at the bottom of every commit and PR description. It looks unprofessional, clutters history, and the developer had no idea it was being added.",
+  "reactions": [
+    "[Hacker News] Most people&#x27;s identities and self worth are tied up in the material things they buy rather than actual self actualization and personal axxomplishments.",
+    "[Hacker News] One of many signals. Using AI efficiently is all about leaving breadcrumbs everywhere.",
+    "[Hacker News] I agree and disagree. It all comes down to how much a human was involved with the code. If the code is artisan to any degree (authored, edited, reviewed, etc.), it&#x27;s a bit ridiculous. It does makes sense to me if the human driver was hands-off the code because the conversation becomes the artifact. I&#x27;m older, and have very mixed feelings about the latter case but it seems inevitable that",
+    "[Hacker News] &gt; PS: Claude archives old conversations on your computer after 30days Does adding this to your Claude settings.json not work anymore? { &quot;cleanupPeriodDays&quot;: 99999 }",
+    "[Hacker News] I can&#x27;t imagine a project so wildly successful and stable that the session URL in a commit history is relevant after 5 years, let alone 30. Git is only 21 years old. I&#x27;m not deciding team policies with a multi-decade view. That said, I wouldn&#x27;t agree with using the session URL as the entire commit message, or even with letting the session URL make up for other missing details. But t",
+    "[Hacker News] &gt; Misanthropic How have I not heard this one before"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Session URL appended to commit messages and PR descriptions by default",
+      "url": "https://news.ycombinator.com/item?id=49498201",
+      "score": 147,
+      "commentCount": 173
+    }
+  ]
+}

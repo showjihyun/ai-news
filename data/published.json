@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-08-31-ai가-스스로-해킹을-꾸몄다-metr-보고서가-드러낸-자율적-기만의-실체",
+      "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
+      "urls": [
+        "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack"
+      ],
+      "publishedAt": "2026-08-30T19:41:05.788Z"
+    },
+    {
+      "slug": "2026-08-31-클로드-코드-커밋에-세션-url-자동-삽입-동의-없이-기록-남는다-논란",
+      "title": "Claude Session URL appended to commit messages and PR descriptions by default",
+      "urls": [
+        "https://github.com/anthropics/claude-code/issues/66504"
+      ],
+      "publishedAt": "2026-08-30T19:38:36.874Z"
+    },
+    {
       "slug": "2026-08-31-주-1일-ai-끄기-운동-노-ai-프라이데이-확산-개발자-사이-찬반-갈려",
       "title": "No AI Fridays",
       "urls": [
