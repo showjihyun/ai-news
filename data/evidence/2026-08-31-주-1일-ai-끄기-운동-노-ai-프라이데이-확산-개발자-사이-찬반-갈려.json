@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — noaifridays.com]\nStudy after study shows that using LLMs can cause you to accumulate cognitive debt , make you less engaged with your work , negatively impact your critical thinking abilities , and hamper your skill formation .\n\nConstant use of AI creates blind spots. When we offload decision-making, we become unaware of the trade-offs. You can use No AI Fridays to assess what's actually happening and retrospect on the choices the AI made for you. Make sure the direction it's steering you towards is still aligned with your personal preferences and style.\n\nIf the productivity gains from AI are so big, spending one day a week to minimize its downsides shouldn't be a difficult trade-off.\n\nBy defaulting to AI we miss opportunities for good old automation. One day a week without tokens can lead to significant token usage reduction over the long term.\n\nIf that's still not enough for you, try to remember when coding was fun—how it felt to enter a flow state and deliver cool stuff you were genuinely connected to and proud of.\n\nJust send this link to whoever is the boss at your shop and ask them if you can do it. The basic setup is simple: turn off your AI assistants for the day, write code with your own hands, read the documentation, and think things through yourself.\n\nhtm x If you want your company to be added to the list, just ping me at @lazilyevaluated and I will add you.\n\nThese are actually awesome when used with handcrafted code—they give you feedback that you can learn from. Your LLM is not learning shit from their feedback, but you can.\n\nSure, depending on how and what you do, you may find your balance with up to 7 days without AI.\n\nA couple of shots of Claude or a pint of Codex is always best when you try to quit, right?",
+  "reactions": [
+    "[Hacker News] Isn&#x27;t there a risk that this learning is too superficial to actually stay around and impact your thinking in the long run? How I experience it at least, there is no free lunch. Something that gives you knowledge and experience will almost by definition be painful and uncomfortable. We use AI because it is faster, but that speed has a consequence.",
+    "[Hacker News] So basically you created a Slop Maker.. I mean, you do you I guess..",
+    "[Hacker News] I get the impression that analogies like this are trying to disguise a moral judgement as a practical one. It&#x27;s clearly absurd to abandon GC languages or to require everyone who uses one to learn assembly. Yes, it could be beneficial to learn the lowest levels of the machine, but with an opportunity cost. Advocates of many such principles are often those who have already paid that opportunity",
+    "[Hacker News] I would absolutely believe people on the spectrum with hyperfocus-oriented ADHD (such as myself) might knock things out of the park with coding agents while everyone else is befuddled by their bizarre behavior. But then, I don&#x27;t get the slow pace and fake drama of reality TV and professional wrestling, yet so many others do. Similarly, starting with British serial dramas like Survivors and Bl",
+    "[Hacker News] I’ve never been a cram for the test kind of person. I do best when using knowledge in an ongoing basis. Regardless of AI, things I studied intensely a decade ago but never use are by and large gone, whereas things I use frequently stay and deepen. I don’t expect it to be any different with AI, but YMMV.",
+    "[Hacker News] Dam everything about it sounds like a fairy tale. Way to go. That&#x27;s so inspiring"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "No AI Fridays",
+      "url": "https://news.ycombinator.com/item?id=49498095",
+      "score": 230,
+      "commentCount": 132
+    }
+  ]
+}
