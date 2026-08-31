@@ -55,11 +55,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
-        {/* 애드센스는 클라이언트 ID 가 설정된 경우에만 로드한다. */}
+        {/*
+          애드센스 로더. 클라이언트 ID 가 설정된 경우에만 넣는다.
+
+          평범한 <script> 를 쓴다. next/script 의 afterInteractive 로 두면 HTML 에는
+          <link rel="preload"> 만 남고 실제 <script> 태그는 자바스크립트가 실행된
+          뒤에야 주입된다. 애드센스가 요구하는 건 "<head> 안의 스크립트 스니펫"이고,
+          코드 확인도 그걸 찾는다. 구글이 JS 를 실행하긴 하지만 원문 HTML 에
+          없는 상태로 두면 확인이 늦거나 실패할 수 있다.
+
+          정적 내보내기라 이 태그는 빌드 시점에 HTML 에 그대로 박힌다.
+        */}
         {site.adsense.client && (
-          <Script
+          <script
             async
-            strategy="afterInteractive"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsense.client}`}
             crossOrigin="anonymous"
           />
