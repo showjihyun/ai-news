@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-08-31-클로드-코드-주간-한도-17-축소임시-증량-끝나-9월-14일-적용",
+      "title": "Claude Code reduces it's weekly limit by 17% – compared to today",
+      "urls": [
+        "https://twitter.com/ClaudeDevs/status/2093742322525810912",
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTE91ZDZXRmMtNGlmSUdOUGpLTjFaNW5OaFVUeDVFNDJPb1p3YnlCNXQtNXNNcUVHUW02MW9HQUM0LTVVb3FkTV9MdWZueTd2bHlwZW5PbVo1MnVfeHBvclI3bGllMjF3czhITWFlQQ?oc=5"
+      ],
+      "publishedAt": "2026-08-31T14:23:40.560Z"
+    },
+    {
       "slug": "2026-08-31-ai를-공동저자로-올리지-않겠다-개발자의-선언-책임-논쟁-불붙여",
       "title": "I am no longer letting Claude Code add itself as Co-author in my commits",
       "urls": [
