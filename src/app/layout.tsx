@@ -28,6 +28,19 @@ export const metadata: Metadata = {
     types: { 'application/rss+xml': `${site.url}/rss.xml` },
   },
   robots: { index: true, follow: true },
+  /*
+    애드센스 소유권 확인 메타 태그.
+
+    애드센스는 확인 수단을 셋 제공한다 — 스크립트 스니펫, ads.txt, 그리고 이 메타 태그.
+    셋 중 하나만 통과하면 되지만, 하나가 어떤 사정으로 안 잡힐 때 나머지가 받아 준다.
+    실제로 스니펫은 next/script 때문에 HTML 에 안 들어가 있었고(고쳤다), ads.txt 는
+    크롤 반영에 며칠 걸린다. 이 태그는 그런 시차가 없다 — HTML 에 바로 박힌다.
+
+    게시자 ID 가 없으면 태그도 안 나간다. 빈 content 를 내보내면 확인이 실패한다.
+  */
+  ...(site.adsense.client
+    ? { other: { 'google-adsense-account': site.adsense.client } }
+    : {}),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
