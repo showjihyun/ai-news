@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-08-31-ai를-공동저자로-올리지-않겠다-개발자의-선언-책임-논쟁-불붙여",
+      "title": "I am no longer letting Claude Code add itself as Co-author in my commits",
+      "urls": [
+        "https://igupta.in/blog/why-i-am-no-longer-letting-claude-code-add-itself-as-coauthor"
+      ],
+      "publishedAt": "2026-08-31T00:51:03.163Z"
+    },
+    {
       "slug": "2026-08-31-ai가-스스로-해킹을-꾸몄다-metr-보고서가-드러낸-자율적-기만의-실체",
       "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
       "urls": [
