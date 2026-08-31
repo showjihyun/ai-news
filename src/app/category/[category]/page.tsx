@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllPosts, getCategories } from '@/lib/posts';
+import { getAllPosts, getCategories, isThinListing } from '@/lib/posts';
 import { PostCard } from '@/components/PostCard';
 import { AdSlot } from '@/components/AdSlot';
 import { site } from '@/lib/site';
@@ -23,10 +23,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category } = await params;
   const name = decodeURIComponent(category);
+  const count = getAllPosts().filter((p) => p.category === name).length;
   return {
     title: `${name} AI 뉴스`,
     description: `${name} 분야의 최신 AI 소식을 쉽게 풀어 전합니다. ${site.name}`,
     alternates: { canonical: `${site.url}/category/${encodeURIComponent(name)}/` },
+    // 태그와 같은 기준을 쓴다. 지금은 어느 카테고리도 걸리지 않지만, 데스크를 새로
+    // 만들면 기사 한두 건으로 시작한다 — 그때 조용히 얇은 광고 페이지가 생기는 걸 막는다.
+    ...(isThinListing(count) ? { robots: { index: false, follow: true } } : {}),
   };
 }
 
@@ -46,13 +50,13 @@ export default async function CategoryPage({
       <p className="page-sub">
         {PERSONA_BEATS[name] ?? `${name} 관련 소식`} · {posts.length}건
       </p>
-      <AdSlot slot="top" />
+      {!isThinListing(posts.length) && <AdSlot slot="top" />}
       <ul className="post-list">
         {posts.map((p) => (
           <PostCard key={p.slug} post={p} />
         ))}
       </ul>
-      <AdSlot slot="bottom" />
+      {!isThinListing(posts.length) && <AdSlot slot="bottom" />}
     </>
   );
 }

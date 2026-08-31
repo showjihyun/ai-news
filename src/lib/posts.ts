@@ -112,6 +112,27 @@ export function getPost(slug: string): Post | undefined {
   return getAllPosts().find((p) => p.slug === slug);
 }
 
+/**
+ * 목록 페이지(태그·카테고리)가 광고와 색인을 받을 자격을 갖추는 최소 기사 수.
+ *
+ * 기사 1건짜리 태그 페이지는 제목 한 줄과 링크 하나가 전부다. 거기에 광고를 위아래로
+ * 붙이면 "내용은 거의 없고 광고만 있는 화면"이 되는데, 애드센스가 정면으로 금지하는
+ * 형태이고 심사 거절 사유 1위인 '가치 없는 콘텐츠' 에 그대로 걸린다.
+ *
+ * 실제로 그랬다 — 태그 253개 중 204개가 1건짜리였고, 사이트맵 341개 중 3/4 이
+ * 그런 페이지였다. 심사관이 무작위로 한 장 열면 대부분 여기에 떨어진다.
+ *
+ * 이 수에 못 미치는 목록은 광고를 걸지 않고, 사이트맵에서 빼고, noindex 로 둔다.
+ * 페이지 자체는 지우지 않는다 — 기사에서 태그로 나가는 링크가 이미 있고, follow 는
+ * 살려 두므로 크롤러가 링크를 타고 기사로 가는 경로는 그대로다.
+ */
+export const MIN_LISTING_POSTS = 3;
+
+/** 광고와 색인을 붙이기에는 내용이 모자란 목록 페이지인가. */
+export function isThinListing(count: number): boolean {
+  return count < MIN_LISTING_POSTS;
+}
+
 export function getCategories(): { name: string; count: number }[] {
   const counts = new Map<string, number>();
   for (const p of getAllPosts()) counts.set(p.category, (counts.get(p.category) ?? 0) + 1);
