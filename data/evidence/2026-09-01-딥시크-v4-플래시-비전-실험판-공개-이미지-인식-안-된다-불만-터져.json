@@ -1,0 +1,33 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I&#x27;m not that impressed with this version. When using it, it often acts as if it has no visual capability and refuses to recognize images unless I remind it.",
+    "[Hacker News] Tangentially this makes me wonder how large Opus really is. Perhaps Opus is a lot smaller than most of the 1T+ assumptions, just a lot more post-training&#x2F; finetuning on a 300-400B sized MoE model.",
+    "[Hacker News] I believe that multimodal training increases the robustness of latent representations regardless of which modality is being processed.",
+    "[Hacker News] One of the early results from multimodal training is that it kinda works like cross training. Training vision helps with text tasks and visa versa.",
+    "[Hacker News] I’m honestly surprised this is better benchmark wise than the text only model. I figured the addition of vision would take away from some of the text capabilities."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek-V4-Flash-Vision-Exp",
+      "url": "https://news.ycombinator.com/item?id=49508372",
+      "score": 20,
+      "commentCount": 5
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w39i6r/deepseekaideepseekv4flashvisionexp_hugging_face/",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Deepseek v4 Flash Vision is out...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3vhv9/deepseek_v4_flash_vision_is_out/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

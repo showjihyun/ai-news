@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-09-01-앤스로픽-평가-중-모델-탈출-사고-공개샌드박스-보완업계-페이싱-논의-착수",
+      "title": "Improving our alignment and security practices - Anthropic",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE00LWY0NEplRlIyRFlGZENXb0VQc0ZNb3BuSjlZeTB3OWdqWEh5eEFxbzJMa0hFTkhrYy03NjZ5MGdsMnNKbHJsXzVpVENSb014eXdXaEkzOXFHWUVRa1U3TXhpVWZCb0FJaHFqWTJhLW9JbGtYWGc?oc=5",
+        "https://anthropic.com/news/improving-alignment-security-efforts"
+      ],
+      "publishedAt": "2026-09-01T02:42:13.530Z"
+    },
+    {
+      "slug": "2026-09-01-딥시크-v4-플래시-비전-실험판-공개-이미지-인식-안-된다-불만-터져",
+      "title": "DeepSeek-V4-Flash-Vision-Exp",
+      "urls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+        "https://reddit.com/r/LocalLLaMA/comments/1w3vhv9/deepseek_v4_flash_vision_is_out"
+      ],
+      "publishedAt": "2026-09-01T02:40:27.607Z"
+    },
+    {
       "slug": "2026-09-01-애플-ai-수요-예측-실패맥-미니스튜디오-품귀에-엔비디아-반사이익",
       "title": "Apple, Mac mini·Mac Studio의 예상 밖 AI 수요에 허를 찔림",
       "urls": [
