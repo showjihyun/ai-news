@@ -1,0 +1,126 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nWe’re introducing Claude Fable 5.1 and Claude Mythos 5.1. They’re the world’s most advanced models for coding and knowledge work—and their research capabilities offer an early glimpse of how AI models will contribute to scientific progress.\n\nClaude Fable 5.1 and Claude Mythos 5.1 are the same model, but with different levels of safeguards. Fable 5.1 is generally available, while Mythos 5.1 is available only through our trusted access programs; its safeguards are specifically designed to support work in cybersecurity and the life sciences.\n\nAlongside its increased capabilities, Fable 5.1 takes important steps towards addressing the feedback we’ve received from customers on price, data retention, and safeguards.\n\nPrice . Fable 5.1 will cost an estimated 25% less than Fable 5 for typical workloads, wherever usage is billed by token. This is because we’re reducing our pricing on cache reads (where the model reads inputs that have already been processed and stored). For highly agentic work, the savings will often be much larger—up to approximately 45%.\n\nData retention . Our new system of Enterprise Frontier Safeguards (EFS) gives customers complete privacy (the same as a zero data retention policy) while still being state-of-the-art at preventing adversarial use. EFS works by storing data in cloud infrastructure controlled entirely by the customer, not Anthropic. It will be made available to enterprise customers in phases, beginning later this fall. Until EFS is available, eligible customers will be able to use Fable 5.1 with zero data retention.\n\nSafeguards . We’ve improved our safeguards to reduce false positives (where the system flags benign content). In cybersecurity, our newest safeguards block 60% fewer false positives than before. In part, this is because Fable 5.1 can now be used to discover software vulnerabilities—though not to develop exploits for them. In biology, we’ve established an access program, developed in partnership with the US government, to enable access to Claude Mythos 5.1’s advanced biology capabilities. We expect to open enrollment for scientists soon.\n\nClaude Fable 5.1 sets a new standard for coding, knowledge work, and long-running problem-solving tasks. The charts below show that Fable 5.1 is capable of much higher performance than its predecessor, Fable 5. And when set to Low or Medium effort, Fable 5.1 achieves results similar to or better than Fable 5’s at a much lower cost. (Note that Fable 5.1 defaults to High effort in Claude Code, and to Medium in Claude Cowork and on Claude.ai.)\n\n0 10 20 30 40 50 60 Score (%) 10 15 20 30 40 50 Mean cost per task (USD, log scale) low med high xhigh max low med high xhigh max Terminal-Bench-Science 0.1: The standard error is ±3.5–4.5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0% and Claude Fable 5 at 21.4%; our setup reproduces them at 29.0% and 24.7%, respectively, both within noise.\n\nMythos 5.1 Fable 5.1 Mythos 5 10 20 30 40 50 60 70 0 Score (%) 5 8 10 15 20 30 Mean cost per task (USD, log scale) low med high xhigh max low med high xhigh max low med high xhigh max Terminal-Bench 4.0 scores by cost (log scale), at each effort level. Claude Fable 5.1 and Claude Mythos 5.1 are the same underlying model; the gap between them reflects the tasks on which our earlier, less precise cyber safeguards intervened. With the improvements we’re making to these safeguards today, we expect the difference between the models to be much smaller.\n\nFable 5.1 (with tools) Fable 5.1 (no tools) Fable 5 (with tools) Fable 5 (no tools) 50 55 60 65 0 Pass rate (%) 0.2 0.5 1 2 4 Mean cost per task (USD, log scale) low max low max low max low max Humanity’s Last Exam scores by cost (log scale), at each effort level. CursorBench 3.2.0 scores by cost (log scale), at each effort level.\n\n60 65 70 75 0 Score (%) 2 3 5 10 20 Cost per task (USD, log scale) low med high xhigh max low med high xhigh max CursorBench 3.2.0 by cost (log scale), at each effort level.\n\nFable 5.1 avoids shortcuts that result in poorer-quality work, and it’s smart enough to fix the root causes of software issues. For example, in testing by the investment firm Millennium, Fable 5.1 found the cause of a rare crash in its internal systems that none of its engineers (or any other model) had been able to explain after several years of trying.\n\nHere, you can see how Fable 5.1 compares across various benchmarks:\n\nOur early-access partners noticed these performance upgrades, and also picked up on more qualitative improvements in the model’s outputs. Here’s what they told us:\n\n“In internal benchmarks, Claude Fable 5.1 solves more of our coding problems than Fable 5 or Opus 5, and achieves state of the art on trading intuition. While prior models became hard to follow the longer they worked, Fable 5.1 remains readable over long, multi-step tasks.”",
+  "reactions": [
+    "[Hacker News] I wasted a lot of tokens last month asking &quot;Please explain the meaning of this sentence in plain language&quot;",
+    "[Hacker News] Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49525378 .",
+    "[Hacker News] The big issue they face right now is that vastly cheaper open models are proving capable for more and more uses at cents on the dollar. This is the right direction, but they aren&#x27;t going to get there fast enough. They will list, investors who don&#x27;t know anything about tech will buy, the world will realise that China just put out a model that is good enough at a fraction of the price, the",
+    "[Hacker News] This was the best thing for me. 98% Fable usage resetting only Thursday and just got this early. Couldn&#x27;t be happier.",
+    "[Hacker News] Yes and the last bit is always mysterious and inscrutable. I have to think way too hard to figure out what the actual problem is. I’ve noticed it does a lot of explaining the mechanics of the problem it found, but almost never explains why it’s important until I ask. And the worst part is that this little problem will keep sneaking into the context of future sessions, unless you spend the time to ",
+    "[Hacker News] The human brain is fascinating Three years ago The idea of having A robot writing production level code in 10 minutes that would have needed a team of 5 people and 2 months. Was pure Scifi Now it&#x27;s boring , not good enough Wow there should be a term of that .",
+    "[Hacker News] Is Fable 5.1 still actively downthrottling the reasoning when questions relate to frontier ML questions, like it did with 5.0?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://news.ycombinator.com/item?id=49525378",
+      "score": 515,
+      "commentCount": 463
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://news.ycombinator.com/item?id=49525496",
+      "score": 69,
+      "commentCount": 1
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Claude Fable 5.1·Claude Mythos 5.1 공개",
+      "url": "https://news.hada.io/topic?id=33129",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Fable 5.1 and Mythos 5.1 arrive with a 75% cost reduction for Fable cache reads - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaWthd1kzYVd1aVdMV05kS1JTUFFCRGdhalRUOXlyUE5nVVJPMURrSGZ1SzdBMkw2eG5CLTJQZnRPSEp5QzR3T0x1SG9TRlFGa0h3NUVDNVZ6b0U2VGJhcHJPZ2g1MnptckE5dUd1dnZ3REpyMXg3RnQ1eHJCME1JTEhiVVVteFMyTVlWaW56RDZMc2ozV3NtZzc4ODk1NW10MGM4dUNBX0VBLUhPcjR1YW1BUTBjdC1vTHB1cUpyVTFsdmpZRFlnV0RQQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Fable 5 and Claude Mythos 5 - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcGIwaG56UlVPbC1ZYTUyT0JrQ25OdDNXdGVGY0hBQ2x3RjEwcHVQVlFWX0RxUlVrYlhsU29WaTgyczNiM1V4amxwV3duaXgwVXhVM2hpUHVIdF9oSkkteUhDM0hOaF9FbVMzay1pQ1ltOGZGM2ZPM002djBTYzI4TG9WOGZHcGR3Z2gzZmFuVEd6QnBnQ3pSODdVVVlnQ2lfcmFhNXRn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude AI Gets Smarter: Anthropic Debuts Fable 5.1 and Mythos 5.1 Upgrades - androidheadlines.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZjM4SFA5T0tMZUlmZVFvdGFwc3FJYzVoYUttWWVxckw4cDBNeEFLVnlLZXR3Mnh5cHlPMWVBVk5zU3VMODI4VV9PRW0xVDJiSzR0ZEtKQ1F6MlRrNGlfOHJxUnI0QmUxUDFzc1VYX0NsdEx0SUV2ODNCZHZQYWlDblZLMksyZU4zSkE4RjdidWs?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Fable 5.1: Can It Stop AI Copycats? - BeInCrypto",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51TFZEZ0RPWDBuUWJRbVdKTTAtM1Z0c2xwU3hPNEZJaVZwNlJydEItcTdfWWFtdjhQUnJyZndiRjdFdHQ5WDJWNzZuZnU2dHl2dC1vU1UwRFpPNzdVM3V1cVQ2MlMzRXUxVWlya0szNE13dFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic bets on lower costs and stronger coding with Claude Fable 5.1 and Mythos 5.1 - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbWRGZ3NRQTlaVXU0UkZvam1GWHV5NG5YT1VKMHNkc1RvUUF2cW5pbXVDVFdDWmdpaU1VeVVHQXRlVkU3LXM3M1pndHhZMDRkYXdpTTZfSDA2bEFhSkxiTmFKc3VkdzV5QVlFZUlLTFg0dlUyOHdRUkdreU1IcXI2OFdYS1dfVzM3RFcyeTBKRTQ4aHlWZXNjODFoM3J1aHEwVHliX25QbzBVNENQalFkZ1dDMlVzZ29yM2JWcTBSTlZZYlNPdVFLVGlMYWRBeUxh0gHQAUFVX3lxTE1tZEZnc1FBOVpVdTRSRm9qbUZYdXk0blhPVUowc2RzVG9RQXZxbmltdUNUV0NaZ2lpTVV5VUdBdGVWRTctczczWmd0eFkwNGRhd2lNNl9IMDZsQWFKTGJOYUpzdWR3NXlBWUVlSUtMWDR2VTI4d1FSR2t5TUhxcjY4V1hLV19XMzdEVzJ5MEpFNDhoeVZlc2M4MWgzcnVocTBUeWJfblBvMFU0Q1BqUWRnV0MyVXNnb3IzYlZxMFJOVlliU091UUtUaUxhZEF5TGE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Fable 5.1, cuts AI costs - Breakingthenews.net",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNWVBelhGemJPT1RDQVRpbFA3MEV5ZXJLTXlJUTNMWGtKOWZvMlNRM1lfM2d2SjJwWTFSSFdoU1RmaVNHaTFtU3o1NC1NMS1ENkdocnQwOEtTXzBmUTh1OTV4X3hwRVcwSkZOWXU3WnNxODFLZjZ0S29takMxaGRiemhhRHZ5QVVFcmlpSUkzUF9mR2ZDQjhFYThn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Releases ‘Mythos-Class’ Claude 5, Triggering Tech Race Across Amazon AWS and Microsoft Foundry - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNW94ZHRlLU1EWXdCTUh4a2MzNEJvcE5vX29EMlpITTNOR2NkNGJITzktb2xEZW1WdXhNOWZOZXhNUGlOQmFERC1KbFZpckF2dVI1dm1SQlFLaU5sMEVzTnBwMVdTSTRERllmR0VxX2JTbVZqZ0JUdk15M011NmYwSWZBVjhzc1lUcUZVRHdlajdidWloTUwwajhvdjJuUzMtZUJQRHQ1M3U3NlVRVmVNbmRUb2FoVElraWVnYXFOQk1GcGFpRXFnYlctMUtOaXFpcEhZNWNhRUtsRFpE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic releases Claude Fable 5.1 and Mythos 5.1. Here is what changed - tech-ish.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ1Y5WkRlZmp3V0V5d2FoNlBYS3dMRC00cG8xay1Bck1sb3NTTk0waDNCRUJCWDhFWkMxRmVzenJfcnJNZW9pRlltNWdZeFNicExVcjhvQ3p4ZFpfeXJjaTRUVXNuaGI5S3R2SDdhMzBqeVI1SURzYmpJZndJTnhHaEhCZzBTakxCRkllRkl1ZVc3dEFweFo3MzQ5bHVJaE1NUnBBQ19BSQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1 \\ Anthropic",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w4juj2/introducing_claude_fable_51_and_claude_mythos_51/",
+      "score": 18,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w4juuz/introducing_claude_fable_51_and_claude_mythos_51/",
+      "score": 13,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.reddit.com/r/singularity/comments/1w4jumu/introducing_claude_fable_51_and_claude_mythos_51/",
+      "score": 8,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "I posted 3 days ago about a Claude UI bug that showed I was using Opus when it was draining Fable usage in the background; then I contacted Anthropic support and it got worse.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w3pfdc/i_posted_3_days_ago_about_a_claude_ui_bug_that/",
+      "score": 5,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing Claude Fable 5.1",
+      "url": "https://www.reddit.com/r/singularity/comments/1w4k931/introducing_claude_fable_51/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
