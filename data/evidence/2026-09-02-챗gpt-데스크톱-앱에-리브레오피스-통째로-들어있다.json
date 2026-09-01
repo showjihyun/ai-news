@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — simonwillison.net]\nI was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binaries for Poppler , git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010):\n\nThe ~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents folder includes skills which tell Codex how to find and use those binaries.\n\nThis is a note by Simon Willison, posted on 1st September 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] Because supporting a range of versions of many apps is significantly harder than supporting precisely one.",
+    "[Hacker News] I don&#x27;t think that&#x27;s anywhere near equivalent. That&#x27;s for reading and writing Microsoft Office docs. It has no office functionality . LibreOffice has a full API, for example to run calculations on spreadsheets [1]. The goal of bringing in dependencies is so you don&#x27;t have to duplicate the functionality, in this case, crafted over decades of effort. [1] https:&#x2F;&#x2F;wiki.do",
+    "[Hacker News] &gt; For Microsoft, this shift means products like M365 will act as the foundational layer where AI agents operate. Users will still need places to store documents, manage projects, search files, and track workflows They bet on the online office suite (M365).",
+    "[Hacker News] (I made a similar comment in a different post by Simon Willison yesterday about GPT Work) I am unsure the direction that AI assisted document creation work will go in. I am opinionated and building something in the space. In this reply I discuss my view + what I have been building. My opinion is: We now have AI, this new amazing flexible tool. We can throw it at any problem. But in terms of docume",
+    "[Hacker News] This is one that&#x27;s already true and &quot;everyone&quot; hasn&#x27;t figured it out yet. But you don&#x27;t really even need Office as a viewer, PDF is fine (for printable&#x2F;portable fixed-layout) or just HTML. &quot;Office&quot; is a product that doesn&#x27;t need to exist anymore, at least for the core apps. For day-to-day office work, you probably shouldn&#x27;t be using those legacy ap"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+      "url": "https://news.ycombinator.com/item?id=49527396",
+      "score": 167,
+      "commentCount": 86
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Codex bundles LibreOffice",
+      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

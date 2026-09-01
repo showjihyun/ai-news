@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-02-챗gpt-데스크톱-앱에-리브레오피스-통째로-들어있다",
+      "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+      "urls": [
+        "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
+        "https://simonwillison.net/2026/Sep/1/codex-libreoffice"
+      ],
+      "publishedAt": "2026-09-01T22:53:52.575Z"
+    },
+    {
+      "slug": "2026-09-02-애플-오픈ai-상대-맥북-증거-공개-전직-직원-400명-이직의-무게",
+      "title": "Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit",
+      "urls": [
+        "https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence",
+        "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai",
+        "https://theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+        "https://finance.yahoo.com/technology/ai/articles/apple-says-openai-destroying-evidence-210352338.html"
+      ],
+      "publishedAt": "2026-09-01T22:47:13.358Z"
+    },
+    {
       "slug": "2026-09-02-앤스로픽-클로드-페이블-51-출시-비용-낮추고-제한-완화",
       "title": "Anthropic Launches Claude Fable 5.1: Can It Stop AI Copycats? - tech.yahoo.com",
       "urls": [
