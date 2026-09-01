@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — macrumors.com]\nApple's unusually timed announcement of new Mac mini and Mac Studio models this week was driven by unexpectedly strong enterprise appetite for AI hardware, according to The Information .\n\nApple normally releases new Mac models in the autumn, closer to October or November, making this week's announcement unusually early, falling just before the anticipated arrival of new iPhone models. The Information says that the AI-driven boom in &zwnj;Mac Studio&zwnj; and &zwnj;Mac mini&zwnj; sales is behind the early launch.\n\nApple noticeably promoted the ability to link multiple Mac Studios together into a single, more capable system for running large frontier AI models, a feature aimed at business and developer customers rather than everyday consumers.\n\nApple highlighted the &zwnj;Mac mini&zwnj; and &zwnj;Mac Studio&zwnj;'s shift toward business buyers in June, with a \"Business at the Park\" event involving executives from major companies Ford, Disney, and Anthropic. The &zwnj;Mac mini&zwnj; was said to be the \"darling\" of the event.\n\nEven so, enterprise's rush toward powerful desktop Macs more broadly took Apple by surprise. The company reportedly did not possess an engineering team dedicated to business customers or staff focused on developer relations, and lacked an enterprise AI strategy.\n\nBusinesses that approached Apple asking to buy access to the company's Private Cloud Compute infrastructure were reportedly turned down. Apple is instead leaning on partners such as WebAI and Mount Thor, which provide AI tools and execution environments built on Apple hardware.\n\nA surge in demand for Mac hardware to run AI models has coincided with the global memory shortage, leaving many &zwnj;Mac mini&zwnj; and &zwnj;Mac Studio&zwnj; configurations out of stock for months. Some enterprise customers are reportedly turning to other hardware such as Nvidia's DGX Spark, a compact AI desktop launched late last year in a form factor similar to the &zwnj;Mac mini&zwnj;'s, as Apple's own high end configurations remain difficult to get hold of.",
+  "reactions": [
+    "[Hacker News] At least wait until someone gets one in hand and post a review, and if it does work decently well there probably is going to be a long backlog.",
+    "[Hacker News] Yeah I use it for hobby only. I would use cloud models to develop new stuff, I don&#x27;t really care if it gets lost because if I were to publish it it would be FOSS anyway. I hate entrepreneurism and monetisation so I&#x27;m happiest being a salaried employee with many hobbies :) But no way whatsoever I&#x27;m uploading my personal files, photos, emails, chats into cloud AI. No way.",
+    "[Hacker News] 100% this. No way I&#x27;m giving Google my stuff. Neither openai or xai. Anthropic maybe but not likely. Mistral is the most likely one because they&#x27;re under the EU laws but I think they focus more on commercial these days.",
+    "[Hacker News] Yeah - definitely by 2014 they were well entrenched within academia with their CUDA offerings. By that point it wasn&#x27;t &quot;luck&quot;.",
+    "[Hacker News] I&#x27;m excited to hear the ram crisis will be over. But will it?",
+    "[Hacker News] I don&#x27;t think you need the scare quotes. product lifecycles can take years and the actual neo demand was actually pretty insane. They were using it to soak up demand for binned a18 chips and it would have been irresponsible to forecast that they&#x27;d have the demand they did when there&#x27;s another perfectly reasonable universe where 8 gigs was too much of a compromise and it flopped. thi"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "url": "https://news.ycombinator.com/item?id=49508982",
+      "score": 269,
+      "commentCount": 309
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Apple, Mac mini·Mac Studio의 예상 밖 AI 수요에 허를 찔림",
+      "url": "https://news.hada.io/topic?id=33085",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}
