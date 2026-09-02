@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-02-ai-회의론자-에드-지트론의-예측-실제-수치와-맞나",
+      "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+      "urls": [
+        "https://danluu.com/zitron"
+      ],
+      "publishedAt": "2026-09-02T00:41:24.237Z"
+    },
+    {
       "slug": "2026-09-02-챗gpt-데스크톱-앱에-리브레오피스-통째로-들어있다",
       "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
       "urls": [
