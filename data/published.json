@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-생성형-ai가-인터넷을-쓰레기장으로-만들고-있다",
+      "title": "The Post-AI Internet Doesn't Look Great",
+      "urls": [
+        "https://jordangoodman.xyz/the-post-ai-internet-doesnt-look-great"
+      ],
+      "publishedAt": "2026-09-02T22:39:27.553Z"
+    },
+    {
+      "slug": "2026-09-03-뉴욕시-초중생-교실-ai-금지-한국-교육-현장엔-무슨-의미인가",
+      "title": "Mamdani Bans AI in NYC Schools",
+      "urls": [
+        "https://nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+        "https://theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
+        "https://abc7ny.com/post/new-york-city-public-schools-banning-ai-use-middle-school-year/19778716"
+      ],
+      "publishedAt": "2026-09-02T22:27:34.077Z"
+    },
+    {
       "slug": "2026-09-03-파이어폭스-ai-끄기-텔레메트리는-따로-해커뉴스-별도-설정-지적",
       "title": "Firefox's AI Switch Is Off. Telemetry Isn't",
       "urls": [
