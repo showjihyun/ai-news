@@ -1,0 +1,27 @@
+{
+  "articleText": "[MarkTechPost — marktechpost.com]\nEnterprise AI buyers have been stuck between two things they both need. Regulated teams need a zero data retention (ZDR) guarantee, so no prompt or agent transcript sits on a vendor&#8217;s servers. Security teams need misuse detection, which historically required the vendor to hold that same data long enough to correlate it.\n\nThis week, Anthropic announced Enterprise Frontier Safeguards (EFS), an architecture that tries to give both. EFS stores monitoring data in cloud infrastructure the customer controls, not Anthropic&#8217;s. Detection stays with Anthropic. Custody, keys, and human review stay with the customer.\n\nIs it deployable today? Not yet. EFS rolls out in phases with the goal of broad availability later this fall, and access is request-based . Until it ships, eligible customers can run Claude Fable 5 and Fable 5.1 under ZDR.\n\nAnthropic&#8217;s stated reason for retention is detection quality, not training data. The company introduced 30-day data retention starting with Fable 5, and says plainly that it has never trained on enterprise data without explicit permission.\n\nThe argument for holding data is narrow and worth restating. The most sophisticated misuse Anthropic has observed spreads across many tasks, sessions, and accounts, including cases involving stolen or misappropriated enterprise credentials. Running an automated classifier on each interaction and instantly discarding it cannot catch that shape of attack. Correlation needs a window. Anthropic has documented this pattern in its own espionage disruption work.\n\nRegulated customers understood the security logic and still could not adopt it. So Anthropic moved the window rather than removing it.\n\nAnthropic built EFS with more than 100 customers across financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, together with AWS, Google Cloud, and Microsoft Azure. Contributors included the Analysis and Resilience Center for Systemic Risk, whose membership includes CISOs at Goldman Sachs, Morgan Stanley, Citi, Bank of America, and Wells Fargo, plus teams at Comcast, KPMG, Mastercard, Salesforce, and Visa. Anthropic says the design conversations covered a quarter of the Fortune 100 and every US global systemically important bank.\n\nEFS is one of three enterprise concessions shipped alongside Claude Fable 5.1 and Mythos 5.1 . The other two are pricing and precision. Fable 5.1 cut cache reads by 75% to $0.25 per million tokens, which works out to roughly 25% lower cost on typical workloads and up to about 45% on highly agentic ones. Its cybersecurity safeguards now produce around 60% fewer interventions per Claude Code session than Fable 5&#8217;s, partly because Fable 5.1 is permitted to identify software vulnerabilities without developing exploits for them.\n\nCheck out Technical details here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\n\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Introduces Enterprise Frontier Safeguards (EFS): Zero-Data-Retention Privacy Plus Cross-Session Misuse Detection - MarkTechPost",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ3FqZnczc19ZZXhjaHBjSVFvd1FLWG5aRXBqaF9LTG1GX1lWMDB2VFc3V0JfVVpESGpoOG5wQk9JdWdLNnZyYWFKTVJ3LTdQZkhQR21iQXBrN1hucDNRVmNUd2IyX2R3a2R4U3QwbW9aTlY1TUZ5VWdzSEtGUDBSRktjbEdHQ0NmYkFxVkNn0gGTAUFVX3lxTE1Tb2lKUXZENmszeU9HdUxnZkFwNGlGSG92UzdwRFRQZUpuSFhzX1lHSTByTnFuYUIyUWJ1OEdXYV9YUF9NVG5SVUFrZklnTFd1Q3RRNVVweENnX0REdmtzNEhTTW9GVmFIemFZZWJsTDVEYXBRNFR0aUJ0RzVDSjVuS1YyOEVBRlB4cUlLdHFPMi1uNA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic replaces data retention policy with Enterprise Frontier Safeguards - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNHBuR0RjdnlEU2h3aHhneGFBMGJ0MUU2S0RsRHluUkVxYko2anNlTlZGZjRBcm0zY1VuZlNPOE41YXJWNVF6a2NjV1RJTjdDdXpCcUtxN3F4ZUNSMDl2Vkl1UTA0VUJEeFpMRU83bGxlc2o1VDNjZGdDMVBsdndfNDRwTm04MS16WGxBZ2MteE5wVXdYNnRGZ2pVdVBTQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Anthropic Introduces Enterprise Frontier Safeguards (EFS): Zero-Data-Retention Privacy Plus Cross-Session Misuse Detection",
+      "url": "https://marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

@@ -1,6 +1,44 @@
 {
   "reviews": [
     {
+      "slug": "2026-09-02-앤스로픽-데이터-보관-없이-오남용-잡는-efs-공개가을-정식-출시",
+      "title": "앤스로픽, 데이터 보관 없이 오남용 잡는 EFS 공개…가을 정식 출시",
+      "category": "서비스",
+      "desk": "서비스 리뷰 데스크",
+      "publishedAt": "2026-09-02T14:05:27.672Z",
+      "reviewedAt": "2026-09-02T14:11:58.193Z",
+      "scores": {
+        "clarity": 5,
+        "grounding": 5,
+        "originality": 5,
+        "usefulness": 5,
+        "readability": 4,
+        "humanness": 3,
+        "headline": 5,
+        "transparency": 4
+      },
+      "overall": 4.6,
+      "notes": {
+        "clarity": "The \"쉽게 풀어보면\" section provides a self-contained buffet analogy that explains who holds data, who monitors, and why the compromise works, without assuming prior reading; technical terms like ZDR are defined earlier and the analogy maps each actor clearly. 인용: \"뷔페 식당에 비유하면 이렇습니다. 손님(기업)이 접시(데이터)를 들고 식탁(자체 클라우드)에서 먹고, 식당 직원(앤스로픽)은 멀리서 '이상한 재료가 섞였는지'만 살핍니다. 접시는 식당 창고에 들어가지 않습니다.\" 및 \"기존에는 식당이 접시를 30일간 보관하면서 이상 징후를 분석했습니다.\"",
+        "grounding": "All numbers (Sep 2 launch, 30‑day retention, 75 % cache‑read cut to $0.25/M tokens, 25–45 % cost reduction, 60 % fewer interventions) and architectural claims (data stored in customer cloud, detection by Anthropic, custody/keys/review with customer) match the MarkTechPost source; uncertainties are explicitly labeled \"미정\" or \"공개되지 않았습니다\". 인용: \"9월 2일(현지 시각) 엔터프라이즈 프론티어 세이프가드(EFS)를 발표했다.\", \"캐시 읽기 요금 75% 인하: 100만 토큰당 0.25달러. 일반적인 워크로드에서 약 25% 비용 절감, 에이전트형 작업이 많은 경우 최대 45%까지 줄어든다고 합니다.\", \"코드 세션 개입 60% 감소: 파블 5 대비 클로드 코드 세션당 보안 개입 횟수가 줄었습니다.\"",
+        "originality": "The article adds a Korea‑specific checklist (access process, data residency, tool replacement), a \"발표문에 없는 전제와 빈틈\" section listing four missing conditions, and an actionable \"나에게 미치는 영향\" with today/quarter/watch items — going beyond translation to contrast, missing conditions, and local context. 인용: \"한국 기업이 확인해야 할 것들\" 불릿 3개, \"발표문에 없는 전제와 빈틈\" 불릿 4개, \"나에게 미치는 영향\"의 세 타임라인.",
+        "usefulness": "The \"나에게 미치는 영향\" gives concrete actions: check console for ZDR eligibility, compare cache‑read pricing, run joint security/legal/infra review before EFS launch, benchmark against Copilot/ChatGPT Enterprise — all with specific metrics (0.25$/1M tokens, 25–45 % savings). 인용: \"당장 오늘 할 수 있는 일\", \"분기 내 준비할 일\", \"지켜봐야 할 것\".",
+        "readability": "Subheadings are clear and numerous (7), but two paragraphs exceed four sentences and bold emphasis appears 27 times (e.g., \"제로 데이터 보존(ZDR)\", \"캐시 읽기 요금 75% 인하\", etc.), making the page feel over‑highlighted; auto check flags both issues. 인용: 자동 검출 \"2개 문단이 4문장을 넘습니다.\", \"굵은 강조가 27개로 과합니다.\"",
+        "humanness": "Over half the lines (52 %) are bullet points, giving a list‑like feel; sentence endings are mostly \"~입니다/~습니다\" with limited variation, and the journalist’s voice appears only in a few evaluative lines (\"자료에 한국 관련 언급은 없습니다\" 등). 인용: 자동 검출 \"본문의 52%가 불릿입니다.\", \"종결어미 7종(최다 33%)\".",
+        "headline": "The title \"앤스로픽, 데이터 보관 없이 오남용 잡는 EFS 공개…가을 정식 출시\" states the core conclusion (EFS, zero‑retention, misuse detection, fall launch) without sensationalism; the one‑line summary reinforces the same facts. 인용: 제목과 한 줄 요약.",
+        "transparency": "The article flags uncertainties (\"구체적 기준은 공개되지 않았습니다\", \"미정입니다\", \"확인되지 않았습니다\") but never explicitly cites the primary source (MarkTechPost or Anthropic announcement) in the body. 인용: \"자료에 한국 관련 언급은 없습니다.\", \"구체적 기준은 공개되지 않았습니다.\""
+      },
+      "fix": "다음 기사부터는 본문 첫 문장에 인용 출처를 명시하고, 굵은 강조는 섹션당 하나로 제한하며, 문단을 2~3문장으로 쪼개고 불릿 비중을 30% 이하로 낮춰 서술형으로 풀어쓰세요.",
+      "unsupported": [],
+      "unverifiable": [
+        "한국 기업의 EFS 자격 확인 절차와 한국어 지원 범위",
+        "EFS 유료 옵션 여부 및 기존 엔터프라이즈 계약 포함 여부",
+        "멀티 클라우드 환경에서 키 관리·로그 통합 가이드 존재 여부",
+        "한국어 콘솔·문서·지원 채널 한국어화 여부"
+      ],
+      "evidenceExact": true
+    },
+    {
       "slug": "2026-09-02-앤스로픽-클로드-페이블-51-추론-단계별로-돈시간품질이-이렇게-갈린다",
       "title": "앤스로픽 클로드 페이블 5.1, 추론 단계별로 돈·시간·품질이 이렇게 갈린다",
       "category": "신모델",
