@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — masteranza.github.io]\nVideos YouTube labels “Made with AI” — quietly pulled from your feed , search , related videos and Shorts before you scroll past them. No blocking screens, no drama. The weeds are just gone.\n\nSimulated. On a real feed a weed is gone in about half a second — cached ones never sprout at all.\n\nDetection relies on YouTube’s own “Made with AI” disclosure badge — no guessing, no heuristics, no false accusations. Unlabeled slop is out of scope (for now).\n\nQuestions, bug reports, or a weed that slipped through? Email masteranza@gmail.com — include the video link if it’s about detection.",
+  "reactions": [
+    "[Hacker News] There are tons of human-generated videos on YouTube that aren&#x27;t worth watching either, and usually can be identified by &quot;screamer&quot; thumbnails and vapid clickbaity titles. I don&#x27;t think we need to amplify another divisive topic.",
+    "[Hacker News] Shouldn&#x27;t their presumably unlimited access to Gemini models enable them to implement things like this quickly and easily?",
+    "[Hacker News] This is great and hope it&#x27;ll be compatible with more and more browsers. This should be done by youtube themselves. It&#x27;s so simple for them to label AI generated content so people can either look for it or avoid it but they won&#x27;t do it. I&#x27;m not sure how they profit from AI gen videos over regular videos... I was looking for a setting to turn off Youtube Shorts but there&#x27;s n",
+    "[Hacker News] &gt; however I don&#x27;t think that means people should want them hidden :-( Sorry but no, even if the music is great I don&#x27;t want to hear it if the cover was AI generated, at this point I&#x27;d happily accept even a crudely drawn cover because it is human :)",
+    "[Hacker News] From the pitch itself &gt; Weedout is a $1.99 Safari extension for macOS that removes videos YouTube labels “Made with AI” So no, none of that. Blows my mind if someone pays for that",
+    "[Hacker News] - stupid question: how does this sort of thing work? - like how do you actually determine if a video was AI made or not? - what is the algorithm used? what is the threshold for a video to be considered slop? - what do you do? download the videos with yt-dlp split them into frames and run each frame by what?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
+      "url": "https://news.ycombinator.com/item?id=49528895",
+      "score": 92,
+      "commentCount": 31
+    }
+  ]
+}

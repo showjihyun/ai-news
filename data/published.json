@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-02-사파리-확장-위드아웃-유튜브-ai-라벨-영상만-골라-숨긴다",
+      "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
+      "urls": [
+        "https://masteranza.github.io/weedout"
+      ],
+      "publishedAt": "2026-09-02T05:33:51.622Z"
+    },
+    {
+      "slug": "2026-09-02-앤스로픽-유료-사용자도-의심-신호-한-줄로-계정-정지",
+      "title": "Anthropic banned me for \"suspicious signals\"",
+      "urls": [
+        "https://kix.codes/anthropic-banned-me-for-suspicious-signals"
+      ],
+      "publishedAt": "2026-09-02T05:29:56.501Z"
+    },
+    {
       "slug": "2026-09-02-ai-회의론자-에드-지트론의-예측-실제-수치와-맞나",
       "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
       "urls": [
