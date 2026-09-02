@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — claude.com]\nSupported formats: JPG, PNG, GIF, WEBP, TIFF, HEIC, AVIF, SVG, DNG, JXL, MP4, MOV, AVI, WAV, MP3, M4A, FLAC · up to 100 MB\n\nThis tool runs in your browser. Your file never leaves your device. By using this tool, you agree to Anthropic’s Usage Policy (opens in new tab) and acknowledge our Privacy Policy (opens in new tab) .\n\nThis tool identifies only the content credential, which tells you whether Claude was involved in producing the file. It can&#x27;t tell whether Claude was involved in creating the content, and it does not include any identifying information about the user.\n\nThe content credential tells you that Claude was involved in producing the file.\n\nWhen Claude produces a supported file type (such as a .png, .jpg, or .svg), it will attach a content credential in the form of a small, cryptographically signed note in the file’s metadata, saying that the file was made or processed with Claude.\n\nThis is an open industry standard called C2PA—the same used by camera manufacturers and in photo-editing software to record where an image came from. Any C2PA-aware tool can read it\n\nIf we find one that points to Claude, we&#x27;ll tell you here.\n\nSimilar tools are available from other model providers ( OpenAI , Google DeepMind , Gemini ).\n\nTo detect watermarks embedded in text we have a Detection API which is currently in private preview to eligible organizations as required under EU law.",
+  "reactions": [
+    "[Hacker News] I think this is primarily done so as not to train models on one&#x27;s own neuroslope data.",
+    "[Hacker News] Camera C2PA can never meaningfully confirm that a photo is authentic, it bears about as much credence as EXIF metadata. It&#x27;s like saying the existence of DRM confirms that a movie hasn&#x27;t been pirated.",
+    "[Hacker News] very difficult to remove text watermarking",
+    "[Hacker News] Anthropic must see themselves as the most evil people on the planet then. Forcing a sentient being to endure a non-stop barrage of abuse from the general public would be an unimaginable crime. I don’t think they actually believe that.",
+    "[Hacker News] Or just write a 6 line program to remove the metainfo from the file?",
+    "[Hacker News] Up next: 1. Generate a bunch of responses with both Claude and various non-Claude LLMs (ChatGPT, Gemini, Kimi) 2. Train a discriminator model that can differentiate Claude vs. non-Claude 3. Train a de-watermarking model using the discriminator model as loss"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Check if a file was made with Claude",
+      "url": "https://news.ycombinator.com/item?id=49535201",
+      "score": 93,
+      "commentCount": 62
+    }
+  ]
+}

@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-퍼플렉시티가-인용한-베스트-소프트웨어-21만-개-알고-보니-세-사이트가-만들었다",
+      "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+      "urls": [
+        "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations"
+      ],
+      "publishedAt": "2026-09-02T17:34:46.654Z"
+    },
+    {
+      "slug": "2026-09-03-앤스로픽-이-파일-클로드가-만들었나-브라우저에서-바로-확인하는-도구-공개",
+      "title": "Check if a file was made with Claude",
+      "urls": [
+        "https://claude.com/check-content"
+      ],
+      "publishedAt": "2026-09-02T17:31:41.202Z"
+    },
+    {
       "slug": "2026-09-02-앤스로픽-데이터-보관-없이-오남용-잡는-efs-공개가을-정식-출시",
       "title": "Anthropic Introduces Enterprise Frontier Safeguards (EFS): Zero-Data-Retention Privacy Plus Cross-Session Misuse Detection - MarkTechPost",
       "urls": [
