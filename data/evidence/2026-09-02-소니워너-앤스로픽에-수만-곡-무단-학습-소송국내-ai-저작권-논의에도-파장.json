@@ -1,0 +1,41 @@
+{
+  "articleText": "[r/artificial — theguardian.com]\nMusic publishers have claimed Anthropic’s models ‘scraped’ smash hits including Mariah Carey’s All I Want For Christmas Is You. Photograph: Kevin Mazur/Getty Images for MC View image in fullscreen Music publishers have claimed Anthropic’s models ‘scraped’ smash hits including Mariah Carey’s All I Want For Christmas Is You. Photograph: Kevin Mazur/Getty Images for MC Music industry Anthropic sued over alleged theft of ‘tens of thousands’ of songs AI company faces multibillion dollar lawsuit over misuse of copyrighted songs to train Claude models\n\nPrefer the Guardian on Google All AI wants for Christmas is a vast back catalogue of songs without paying for it, according to a multibillion-dollar lawsuit against the startup behind the Claude chatbot.\n\nSony Music Publishing and Warner Chappell, music publishers who manage the copyright of songs on behalf of songwriters and composers, are seeking damages for alleged misuse of “tens of thousands” of copyrighted works by Anthropic .\n\nThe compositions include Mariah Carey’s All I Want for Christmas is You, Ain’t No Mountain High Enough, originally performed by Marvin Gaye and Tammi Terrell, and Survivor’s Eye of the Tiger.\n\nThe plaintiffs claim they are victims of “one of the largest and most blatant ongoing thefts of intellectual property in history”.\n\nThe lawsuit, filed in a California court, targets Anthropic and its chief executive, Dario Amodei, as well as co-founder Benjamin Mann. It alleges the defendants breached copyright law by “torrenting, scraping and downloading” lyrics from copyrighted works to train its family of Claude AI models – as well as reproducing those lyrics in responses to users’ prompts.\n\nIt claims that Mann and Anthropic downloaded at least 7m copies of books from pirate websites, including the lyrics and sheet music to songs such as Bon Jovi’s Livin’ on a Prayer and Leonard Cohen’s Hallelujah.\n\nThe figures are from a recent copyright case against Anthropic brought by US authors which the company settled for $1.5bn .\n\nThe lawsuit , filed on 28 August, was first reported by trade publication Music Business Worldwide. Other songs allegedly having their copyright infringed included Mark Ronson’s Uptown Funk and Katy Perry’s California Gurls.\n\nIt also claims that Anthropic acquired copies of songs in other ways including scraping lyrics from legal sites like Musixmatch and LyricFind, and datasets on archive sites such as Common Crawl. In another section of the claim, the publishers allege that Anthropic stripped identifying information from songs while processing the texts, which denied copyright owners “valuable attribution” to their work.\n\n“Defendants specifically elected to harvest unauthorized copies of Music Publishers’ works so that they would not have to pay Music Publishers a licensing fee to use their works in AI training and development,” said the plaintiffs.\n\nThe music publishers are seeking damages that could run into billions of dollars, based on a claim of up to $150,000 per infringed piece of work and $25,000 for each removal or alteration of identifying data.\n\nThe suit implies at least 20,000 works are involved in the suit, referring to the unlawful copying of “tens of thousands of Music Publishers’ copyrighted musical compositions”.\n\nGet set for the working day – we&#x27;ll point you to all the business news and analysis you need every morning\n\nEd Newton-Rex, a UK-based composer and campaigner for protecting artists’ copyright, said he was “not surprised” that rights holders were defending themselves against a company with a “history of downloading and training their AI models on huge libraries”.\n\nAlongside the authors’ lawsuit, Anthropic has also faced claims from Universal Music Group and Concord Music Group.\n\nIn a separate case this month, AI music generator Suno lost a copyright infringement case against German licensing agency GEMA, which alleged illegal use of songs including Boney M’s Daddy Cool to train its technology.\n\nA spokesperson for Anthropic, which is preparing for a stockmarket listing that could value the company at $2tn, said: “We disagree with the publishers’ claims and we intend to defend ourselves robustly in court.”",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic sued over alleged theft of ‘tens of thousands’ of songs - theguardian.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQld2RWtFcDZKTFdOekJMY2NCclRFeWJnN1I0NUVrZHBzUXY4Z2t5Z2FZdEZmTmQtTkg2REtlWVZhcVhYSTViNG4zZzlzOVlPa09vVXVkV1g4ZWNScWNwdzllVm5ndUgzQzBjcUdJdTFGWndWcUp1aFY3MTNzVWY2YVN5M1dYRFpQbG9hLWZINlo1bHVqamxLN1VYWHJPREJQMEE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Sony and Warner Music sue Anthropic over alleged theft of 'tens of thousands' of songs - Fortune",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1sV01tRm5FMHVMTGZmWEJmUnpTTVVJTFY2WFVDZVVzend5S2ppQjQ4bm9SbWNkTzd5V3c2dGZNdHo3Z2k2UzUzNnMxdUNYZXppS2dOZmdma3RCelVmTVpPdnlESVB1R0w2dEpDV2tmWWx2R09qZWpSVjMtTFFvZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Sony, Warner Music sue Anthropic over alleged copyright infringement in AI training - tribuneindia.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1BKVEQ5ZzVxekRtaUlxNHhnLWEzOFRYYnNnSFJSSkk5dUJZOXgybmhDQll6SzFrT2NxQTcxTlRseXdBNTh4b21DZkhjb0Q3dERUOFNTRVlpR3k0VW1OWXFHZWp6YnFWWGNpSURZV2Y1QmxaS0JfMzV3OXhpbjBicHlITVpOVE9SZldTN0c5dHYyc3RPUXpfRFB1aW53SUsxbzhzcGF5dVgxczFTclZNZ0JFVXpQaVZHcVQ5a1diSDJ5MVdt0gHIAUFVX3lxTE5lMzlZMWJqa1J1VUFjb0ctWFAxTnBWSG4yLVExaURKWlNhVjYtSWVFdS11SzdTU1VJX0dsWUlHdzh5ek9SbVFNWm9QaWQtazJvRGVNWG0xdFNESUhxS20wMlFZbkROdk9UTV9XSHJDSEoxWFJfbkdzeDNwUWtGVE5wcVpYckY5ZXAyM0xXOTMxSlh2QmRZOXNIQWM4TmlORDFDZmxZTGtHdFlxREk0cmczc2ZCbTlGdUtEekZldEd2TWdYTVdvblJN?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Sony Music Publishing sues Anthropic over ‘brazen’ copyright infringement - FOX40",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSEEwZ0hFRUd1TmY1QkxIYWQyT3VnbGFmWWducmU2cXY5WjJLdG5GYVF2TFQ4QnlMVFlwUS15cU1oZG5YcVRXZVNUNEd6aUhuTzg0Y1lJcl9qcUxybWpobUtRUFh2X2NsQzhGMHVoX3lBS0ZNLVItQ1pOMzdoRnV3N3hwd0Jya0VteVHSAY8BQVVfeXFMTllvNG1UTlRkZldHNFRTWGJabTNxZTQ5dVNWSlAtazFLbDZDY2dpbDh3ZmV3eWpzZ2tZYTBGaGFuNVI1bUNvTnFJVVBGbGtrVzVHMlF3bVE3ckllbERpWk9zRW1yREpRMlVHX2FKa09GNzdYVXRzcHRxdW9UWjdLVGU3NFk1R2MwdkVzTnZWTnM?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Anthropic sued over alleged theft of 'tens of thousands' of songs | AI company faces multibillion dollar lawsuit over misuse of copyrighted songs to train Claude models",
+      "url": "https://www.reddit.com/r/artificial/comments/1w4bj01/anthropic_sued_over_alleged_theft_of_tens_of/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}

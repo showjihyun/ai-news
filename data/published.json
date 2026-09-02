@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-09-02-앤스로픽-클로드-페이블-51-추론-단계별로-돈시간품질이-이렇게-갈린다",
+      "title": "Claude Fable 5.1 made me a nice animated pelican",
+      "urls": [
+        "https://simonwillison.net/2026/Sep/1/claude-fable-5-1",
+        "https://simonwillison.net/2026/Sep/1/claude-fable-5-1"
+      ],
+      "publishedAt": "2026-09-02T09:54:23.442Z"
+    },
+    {
+      "slug": "2026-09-02-소니워너-앤스로픽에-수만-곡-무단-학습-소송국내-ai-저작권-논의에도-파장",
+      "title": "Anthropic sued over alleged theft of ‘tens of thousands’ of songs - theguardian.com",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQld2RWtFcDZKTFdOekJMY2NCclRFeWJnN1I0NUVrZHBzUXY4Z2t5Z2FZdEZmTmQtTkg2REtlWVZhcVhYSTViNG4zZzlzOVlPa09vVXVkV1g4ZWNScWNwdzllVm5ndUgzQzBjcUdJdTFGWndWcUp1aFY3MTNzVWY2YVN5M1dYRFpQbG9hLWZINlo1bHVqamxLN1VYWHJPREJQMEE?oc=5",
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTE1sV01tRm5FMHVMTGZmWEJmUnpTTVVJTFY2WFVDZVVzend5S2ppQjQ4bm9SbWNkTzd5V3c2dGZNdHo3Z2k2UzUzNnMxdUNYZXppS2dOZmdma3RCelVmTVpPdnlESVB1R0w2dEpDV2tmWWx2R09qZWpSVjMtTFFvZw?oc=5",
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1BKVEQ5ZzVxekRtaUlxNHhnLWEzOFRYYnNnSFJSSkk5dUJZOXgybmhDQll6SzFrT2NxQTcxTlRseXdBNTh4b21DZkhjb0Q3dERUOFNTRVlpR3k0VW1OWXFHZWp6YnFWWGNpSURZV2Y1QmxaS0JfMzV3OXhpbjBicHlITVpOVE9SZldTN0c5dHYyc3RPUXpfRFB1aW53SUsxbzhzcGF5dVgxczFTclZNZ0JFVXpQaVZHcVQ5a1diSDJ5MVdt0gHIAUFVX3lxTE5lMzlZMWJqa1J1VUFjb0ctWFAxTnBWSG4yLVExaURKWlNhVjYtSWVFdS11SzdTU1VJX0dsWUlHdzh5ek9SbVFNWm9QaWQtazJvRGVNWG0xdFNESUhxS20wMlFZbkROdk9UTV9XSHJDSEoxWFJfbkdzeDNwUWtGVE5wcVpYckY5ZXAyM0xXOTMxSlh2QmRZOXNIQWM4TmlORDFDZmxZTGtHdFlxREk0cmczc2ZCbTlGdUtEekZldEd2TWdYTVdvblJN?oc=5",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSEEwZ0hFRUd1TmY1QkxIYWQyT3VnbGFmWWducmU2cXY5WjJLdG5GYVF2TFQ4QnlMVFlwUS15cU1oZG5YcVRXZVNUNEd6aUhuTzg0Y1lJcl9qcUxybWpobUtRUFh2X2NsQzhGMHVoX3lBS0ZNLVItQ1pOMzdoRnV3N3hwd0Jya0VteVHSAY8BQVVfeXFMTllvNG1UTlRkZldHNFRTWGJabTNxZTQ5dVNWSlAtazFLbDZDY2dpbDh3ZmV3eWpzZ2tZYTBGaGFuNVI1bUNvTnFJVVBGbGtrVzVHMlF3bVE3ckllbERpWk9zRW1yREpRMlVHX2FKa09GNzdYVXRzcHRxdW9UWjdLVGU3NFk1R2MwdkVzTnZWTnM?oc=5",
+        "https://theguardian.com/business/2026/aug/31/aanthropic-sued-alleged-theft-songs-ai-train-claude"
+      ],
+      "publishedAt": "2026-09-02T09:49:19.555Z"
+    },
+    {
       "slug": "2026-09-02-사파리-확장-위드아웃-유튜브-ai-라벨-영상만-골라-숨긴다",
       "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
       "urls": [
