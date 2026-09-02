@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-파이어폭스-ai-끄기-텔레메트리는-따로-해커뉴스-별도-설정-지적",
+      "title": "Firefox's AI Switch Is Off. Telemetry Isn't",
+      "urls": [
+        "https://marius.blog/firefox-155-ai-kill-switch-retest"
+      ],
+      "publishedAt": "2026-09-02T20:17:24.701Z"
+    },
+    {
+      "slug": "2026-09-03-구글-제미나이-38-플래시-공개-더-열심히-일하지만-토큰-2배",
+      "title": "Gemini 3.8 Flash와 보안 특화 모델 Flash Cyber 공개",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber",
+        "https://news.hada.io/topic?id=33161",
+        "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber"
+      ],
+      "publishedAt": "2026-09-02T20:02:46.055Z"
+    },
+    {
       "slug": "2026-09-03-퍼플렉시티가-인용한-베스트-소프트웨어-21만-개-알고-보니-세-사이트가-만들었다",
       "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
       "urls": [
