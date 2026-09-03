@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-미-정부-ai-학습은-공정이용-nyt-소송에-오픈ai-편들기",
+      "title": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+        "https://wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit"
+      ],
+      "publishedAt": "2026-09-03T04:51:42.686Z"
+    },
+    {
+      "slug": "2026-09-03-미-정부-ai-학습은-공정-이용-옹호-한국-저작권-논의에-불-지피나",
+      "title": "US gov sides with OpenAI on issue of training LLMs on copyrighted material",
+      "urls": [
+        "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material",
+        "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material"
+      ],
+      "publishedAt": "2026-09-03T04:49:04.456Z"
+    },
+    {
       "slug": "2026-09-03-ai가-길을-잃지-않으면-사람이-길을-잃는다",
       "title": "AI Agents and the Refactoring That Never Happens",
       "urls": [
