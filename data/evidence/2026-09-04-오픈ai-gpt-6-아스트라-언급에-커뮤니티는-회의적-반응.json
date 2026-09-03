@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Find me someone who isn&#x27;t paid by OpenAI who is saying the same",
+    "[Hacker News] Remember when the term &quot;AGI&quot; meant something? Pepperidge farm remembers",
+    "[Hacker News] I must be on the wrong X&#x2F;Twitter then.",
+    "[Hacker News] The CoT change is due to a new technique called recurrent depth, which essentially moves some reasoning to hidden states, allowing the &quot;output&quot; (or traditional CoT) to be more controlled by the model. Some are calling it &quot;neuralese&quot; as reported by The Information[0][1], but I&#x27;m not seeing any sources from OpenAI beyond this tweet[2] attempting to quell the fear-mongering. ",
+    "[Hacker News] Renown liar Altman releasing a PR statement declaring AGI is here is really not noteworthy."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT-6 Astra",
+      "url": "https://news.ycombinator.com/item?id=49554643",
+      "score": 304,
+      "commentCount": 146
+    }
+  ]
+}

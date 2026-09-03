@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-메타-뮤즈-스파크-13로-오픈ai앤스로픽-따라잡았다-그런데-기사가-오픈ai-발표였나",
+      "title": "Meta says it has caught up with Anthropic and OpenAI with Muse Spark 1.3, its most powerful AI model yet - siliconangle.com",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTC1uZkRGSkZnOE9LNkhuS2NQTG96NGtXQTE0MkthRnF6alFXQkZzanY2TUFRUF9zT2t6Z1pickpMR3p1ZnAwX0ExTGZSNHdkTGVJaHM1aVVuWEtKcVFVSFBMcTFUb2F2WkN4VGRpV1J2cUpUS1dfbzlDR3VycG5pang4bHhleTJ0eFdvbUNDY29wd3FaNUJVbWhyeUlJcm1jU0xjd2pHREJrekFHVEV0NnlQRGRUdjZkaHJva1VuZ0pETTBlUHZGSnJDemFWeVhDUnU3eHU2SklqZGdyQzM1RmhDWQ?oc=5",
+        "https://giftarticle.ft.com/giftarticle/actions/redeem/1054f4f0-cac7-479c-a4a7-f95b3906ca4b"
+      ],
+      "publishedAt": "2026-09-03T20:15:52.547Z"
+    },
+    {
+      "slug": "2026-09-04-오픈ai-gpt-6-아스트라-언급에-커뮤니티는-회의적-반응",
+      "title": "GPT-6 Astra",
+      "urls": [
+        "https://openai.com/index/gpt-6-astra"
+      ],
+      "publishedAt": "2026-09-03T20:09:00.758Z"
+    },
+    {
       "slug": "2026-09-04-ai가-땅을-읽게-하는-인프라-미레이yc-s26-출시",
       "title": "Launch HN: Mireye (YC S26) – Infrastructure for Physical World AI Agents",
       "urls": [
