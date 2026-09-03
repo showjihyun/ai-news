@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-중국-스타트업-27b-모델-16조-파라미터-딥시크와-13p-차이",
+      "title": "A dark horse enters China's AI race: StartLux",
+      "urls": [
+        "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector"
+      ],
+      "publishedAt": "2026-09-03T13:56:00.426Z"
+    },
+    {
+      "slug": "2026-09-03-앤스로픽-쇼핑판매자-ai-에이전트-청사진-공개-한국-도입은-언제",
+      "title": "Claude for Commerce Agents",
+      "urls": [
+        "https://claude.com/blog/claude-for-commerce-agents"
+      ],
+      "publishedAt": "2026-09-03T13:48:33.001Z"
+    },
+    {
       "slug": "2026-09-03-미-정부-ai-학습은-공정이용-nyt-소송에-오픈ai-편들기",
       "title": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
       "urls": [
