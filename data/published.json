@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-ai가-땅을-읽게-하는-인프라-미레이yc-s26-출시",
+      "title": "Launch HN: Mireye (YC S26) – Infrastructure for Physical World AI Agents",
+      "urls": [
+        "https://mireye.com/"
+      ],
+      "publishedAt": "2026-09-03T17:35:54.810Z"
+    },
+    {
+      "slug": "2026-09-04-챗gpt클로드그로크-동시-장애-원인은-오리무중-한-곳만-쓰면-위험하다",
+      "title": "Ask HN: Why are OpenAI, Claude, and Grok simultaneously down? Coincidence?",
+      "urls": [
+        "https://news.ycombinator.com/item?id=49551096",
+        "https://macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down",
+        "https://theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down",
+        "https://i.redd.it/hord0m6prbnh1.jpeg",
+        "https://9to5google.com/2026/09/03/chatgpt-claude-grok-outages?extended-comments=1"
+      ],
+      "publishedAt": "2026-09-03T17:29:24.245Z"
+    },
+    {
       "slug": "2026-09-03-중국-스타트업-27b-모델-16조-파라미터-딥시크와-13p-차이",
       "title": "A dark horse enters China's AI race: StartLux",
       "urls": [
