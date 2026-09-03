@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-샌더스-초지능-ai-금지법-발의한국-규제-논의에-던진-질문",
+      "title": "Sanders introduces bill to ban artificial superintelligence and pause AI",
+      "urls": [
+        "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development",
+        "https://sanders.senate.gov/wp-content/uploads/Ban-Artificial-Superintelligence-Act-Release-Summary.pdf"
+      ],
+      "publishedAt": "2026-09-03T22:25:52.731Z"
+    },
+    {
+      "slug": "2026-09-04-gpt-6-아스트라-코딩-성능-올랐지만-가격-25배-실속은-어디에",
+      "title": "GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index",
+      "urls": [
+        "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+        "https://i.redd.it/eben4dle0dnh1.jpeg"
+      ],
+      "publishedAt": "2026-09-03T22:23:24.397Z"
+    },
+    {
       "slug": "2026-09-04-메타-뮤즈-스파크-13로-오픈ai앤스로픽-따라잡았다-그런데-기사가-오픈ai-발표였나",
       "title": "Meta says it has caught up with Anthropic and OpenAI with Muse Spark 1.3, its most powerful AI model yet - siliconangle.com",
       "urls": [

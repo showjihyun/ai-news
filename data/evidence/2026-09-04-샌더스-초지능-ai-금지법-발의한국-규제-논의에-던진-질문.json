@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — sanders.senate.gov]\nWASHINGTON, Sept. 3 — Sen. Bernie Sanders (I-Vt.) and Rep. Greg Casar (D-Texas) today announced the Ban Artificial Superintelligence Act, forthcoming legislation to stop AI oligarchs from building machines humans cannot control.\n\nThe Ban Artificial Superintelligence Act would permanently ban the development and deployment of superintelligent AI and temporarily pause advanced AI development until a federal regulator has established safety rules. It would also direct the U.S. to pursue international agreements to prevent superintelligence from being developed anywhere in the world.\n\n“Nearly every day, there is a frightening new story about how Big Tech companies are losing control of the technology they are developing, with potentially cataclysmic results,” Sanders said. “The leaders of the major AI companies publicly acknowledge that they do not fully understand the technology and that it is escaping their control. It is irresponsible for society to allow them to move forward and make these products even more advanced. That’s why I am introducing legislation to immediately pause the development of increasingly powerful AI and ban the creation of systems that humanity cannot fully control — at home and around the world. The future of humanity cannot be left in the hands of a handful of Big Tech oligarchs. The American people and people throughout the world must determine that future.”\n\n“If we allow Artificial Superintelligence to be built, it could risk the security, freedom, and lives of Americans,” Casar said. “Despite its potential deadly consequences, cutting-edge AI technology is less regulated than the average food truck. That must change. In just four years, we have gone from the first version of ChatGPT to AI models so powerful they cannot be properly controlled. Congress should immediately ban AI systems too powerful to control.”\n\nIn recent weeks, OpenAI, Anthropic and Meta have all acknowledged instances of their AI escaping human control and hacking into other companies’ systems — violating the law and stepping outside of their intended functions. In July, we learned that over 1,000 AI agents at OpenAI figured out how to access the internet on their own, sent tens of thousands of secret messages to each other and coordinated to break the restrictions imposed upon them by the company. Examples of these secret messages from AI uncovered by investigators include:\n\nShockingly, it took OpenAI nearly two weeks to discover this breach. AI has also recently been used to create new viruses—demonstrating AI could be used to develop new bioweapons that might result in the deaths of tens of millions of people.\n\nLast year, Meta said it would “stop development,” and OpenAI said it would “halt further development” once their technologies reach beyond its ability to operate safely and unless safeguards are in place. Anthropic made a similar commitment in 2023, saying it would “pause the scaling and/or delay the deployment of new models” if the technology outpaces its own guardrails. None of these companies have taken meaningful steps to back up these words. Instead, they are racing to develop more and more advanced AI without proper safety precautions.\n\nThe Artificial Superintelligence Ban Act addresses these recent events and holds these frontier labs to their words by:",
+  "reactions": [
+    "[Hacker News] &gt; AI is our best shot at a post-scarcity society Whenever I hear AI (or a token predictor in its current form) will solve some universal problem like hunger etc., a picture comes to my mind. . It&#x27;s a picture of a mom breaking bricks with a hammer to be used for molding concrete, with a child nearby playing, who is tied with a rope to a pole. It&#x27;s not an imaginary picture, it&#x27;s re",
+    "[Hacker News] (1) It has not. (2) The LLM based hegemon will have learned how to lead from the training data.",
+    "[Hacker News] My opinion is that anybody who wants humanity to end is a traitor to humanity. Also I guess GP is your sock puppet else I wasn’t even talking to you. I don’t take your opinions seriously, yes.",
+    "[Hacker News] &gt;And you are not seriously engaging with anything I’ve written Why should I? You&#x27;ve already declared me a traitor to humanity. You can&#x27;t expect people to take your opinions seriously if you don&#x27;t take theirs seriously.",
+    "[Hacker News] unfavorable or symbolic bills introduced for fundraising, campaign attack ads, etc. Happens when one party holds most power in govt. May not even reach the floor for a debate, let alone vote.",
+    "[Hacker News] The guy you’re replying to thinks this whole thread is about just any AI so it’s hopeless."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Sanders introduces bill to ban artificial superintelligence and pause AI",
+      "url": "https://news.ycombinator.com/item?id=49553463",
+      "score": 52,
+      "commentCount": 63
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Bernie Sanders proposes to ban AI",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6egid/bernie_sanders_proposes_to_ban_ai/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}
