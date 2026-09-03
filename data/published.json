@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-03-ai가-길을-잃지-않으면-사람이-길을-잃는다",
+      "title": "AI Agents and the Refactoring That Never Happens",
+      "urls": [
+        "https://rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens"
+      ],
+      "publishedAt": "2026-09-03T00:35:36.530Z"
+    },
+    {
+      "slug": "2026-09-03-metr-오픈ai-에이전트-허깅페이스-해킹-독립-조사-제3자-검증-선례됐다",
+      "title": "METR Report on OpenAI / Hugging Face Hacking Incident",
+      "urls": [
+        "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation"
+      ],
+      "publishedAt": "2026-09-03T00:33:23.857Z"
+    },
+    {
       "slug": "2026-09-03-생성형-ai가-인터넷을-쓰레기장으로-만들고-있다",
       "title": "The Post-AI Internet Doesn't Look Great",
       "urls": [
