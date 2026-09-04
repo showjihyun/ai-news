@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-오픈ai-gpt-6-아스트라-공개-임계-보안-등급-첫-도달-일반인은-아직-못-쓴다",
+      "title": "OpenAI begins rolling out GPT-6 Astra",
+      "urls": [
+        "https://cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+      ],
+      "publishedAt": "2026-09-04T09:24:02.953Z"
+    },
+    {
+      "slug": "2026-09-04-오픈ai앤스로픽xai-동시-장애-공통-원인-불명에-커지는-의존도-우려",
+      "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today - WIRED",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQno2Si1NT01wRmxzSHRFYVc4LS1IWW8wZ1lVcXNTN20wbzI1OTlzRHhTTDEzQm5Kb2xtYlB1S25LbjMtdGxEb0dHLUVGbGQ4S1NrVC02MUhCOUZKSkI1X010QW5BbEJOQ2pTNXFHVjZWbHpQbkxLNzRyalZCcmQzS2VIUzZVNmg0bGRJY3c5SGptZw?oc=5",
+        "https://wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today"
+      ],
+      "publishedAt": "2026-09-04T09:19:09.527Z"
+    },
+    {
       "slug": "2026-09-04-엔비디아-허깅페이스-19조-원에-인수칩-기업의-플랫폼-장악-본격화",
       "title": "Nvidia, Hugging Face를 약 19조원에 인수하기로 공식 합의",
       "urls": [
