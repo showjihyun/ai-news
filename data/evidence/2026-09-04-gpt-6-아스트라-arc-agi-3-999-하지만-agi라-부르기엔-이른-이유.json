@@ -1,0 +1,80 @@
+{
+  "articleText": "[Hacker News — arcprize.org]\nSummary GPT-6 Astra scores 62.7% for $26K on ARC-AGI-3 Semi-Private with our Standard harness Standard harness enables a model to carry forward notes it chooses to keep with it throughout the environment. , and 99.9% for $19K with a Provider Adapter harness The Provider Adapter harness preserves opaque reasoning state between requests and uses compaction for longer conversations, allowing the model to reuse prior work. . GPT-6 Astra surpasses the human baseline in action efficiency on ARC-AGI-3. It used fewer actions than the median tested human on 96% of levels. A key behavior observed in GPT-6 Astra was its ability to turn unfamiliar environments into compact symbolic world models. It represented game mechanics as logical rules and developed its own domain-specific language shorthand to track state and plan actions. ARC-AGI-3 ARC-AGI-3 is a benchmark for studying agentic intelligence through novel, abstract, turn-based environments. Agents must explore, infer goals, and build internal models of environments to effectively plan actions without explicit instructions. You can play ARC-AGI-3 yourself .\n\nThese environments only contain core knowledge priors and are difficulty-calibrated through controlled testing with human participants. Humans can solve 100% of the environments .\n\nThe goal of the ARC-AGI series is to measure the “residual gap” between current artificial intelligence and AGI. We define AGI as a system’s ability to acquire any skill a human can, as efficiently as a human can.\n\nARC-AGI-3 is the third generation of the ARC-AGI benchmark series . It tests agentic capabilities beyond ARC-AGI-1 and ARC-AGI-2 . Each generation expands on the one before it - as frontier AI capabilities advance, our benchmarks must advance with them.\n\nAstra Results GPT-6 Astra achieves state-of-the-art scores on ARC-AGI-3 with both the Standard and Provider Adapter harnesses. Higher reasoning levels generally cost less because Astra solves games in fewer actions, reducing the total number of model calls and tokens. View the full results . With our Standard harness Standard harness enables a model to carry forward notes it chooses to keep with it throughout the environment. , OpenAI’s Astra (max) scores 62.7% on ARC-AGI-3 Semi-Private for $26K. With the Provider Adapter harness The Provider Adapter harness preserves opaque reasoning state between requests and uses compaction for longer conversations, allowing the model to reuse prior work. , Astra (high) scores 99.9% for $19K. Both are state-of-the-art scores. See the full leaderboard .\n\nAt max reasoning effort, Astra solves games more efficiently, requiring fewer actions and therefore lowering total cost relative to the other reasoning-effort levels.\n\nFor a cost comparison, during our controlled testing, human participants were paid $115 per 90-minute session, plus $5 per game completed. Participants attempted approximately nine games per session, roughly $12.78 per attempted game before bonuses.\n\nMost of this fee pays for the participant’s time and willingness to take the test, rather than the energy their brain uses (a closer proxy to compare with AI). If we look at only the brain’s energy, and price it as electricity, the estimate drops to about 0.6 cents per session, or 0.067 cents per game attempted. 1\n\nAnalysis Beyond the scores, Astra’s replays show how it turns unfamiliar game mechanics into useful working models. Three findings stood out: the compact algebraic notation it develops, its action efficiency compared with humans, and the custom tools it builds.\n\nCustom Algebraic Notation When playing ARC-AGI-3, Astra chooses which strategy notes it would like to carry forward. It tracked objects, coordinates, rules, and unfinished plans, while also using a custom domain-specific language notation it generated for the environments.\n\nWe’ve seen similar behavior in other models , but Astra’s notes stood out for their precision and information density. It distilled the scene into a compact code-like symbolic model: where objects were, how they interacted, and exactly which actions needed to happen in what order. This is an on-the-fly algebraic shorthand rather than a fully fledged programming language. For example:\n\nAction Efficiency Compared to Humans Before launching ARC-AGI-3, we tested approximately 500 members of the general public to establish a human baseline for action efficiency, or simply, how quickly did people solve each environment. Participants were not selected for puzzle-solving experience or ability. 2\n\nFor each level, we defined the “human baseline” using the median action count among players who completed it. This gives us a reference for comparing human and AI performance. An AI that needs more actions is less action-efficient, while one that needs fewer actions is more action-efficient.\n\nIn the Provider Adapter harness The Provider Adapter harness preserves opaque reasoning state between requests and uses compaction for longer conversations, allowi",
+  "reactions": [
+    "[Hacker News] Yeah, I wouldn&#x27;t purport to use this as a measure of intelligence as it applies to humans. I&#x27;d leave that to the philosophers, but my intuition is that models are still a long way off of true human-like intelligence (though benefit from certain unfair advantages). I&#x27;m most interested in these problems as a relative measure of performance for successive model generations. If the prio",
+    "[Hacker News] Most comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49554273",
+    "[Hacker News] If you&#x27;re doing a job you aren&#x27;t unemployed. Underemployment is measured separately",
+    "[Hacker News] Please don&#x27;t copy-paste comments. It makes merging threads a pain, since we have to figure out what the duplicates are and then make sure the comment in the &#x27;winning&#x27; thread gets all the replies.",
+    "[Hacker News] but i feel like its purpose is to measure superintelligence in math. So to be a good measure of it, it can&#x27;t saturate easily&#x2F;has to be somewhat mundane at even insanely good levels. (though i do expect that once ais are across all areas&#x2F;approaches superhuman at math at least 30% will be solved--then probably long-term (like after 2 years) less than 30% will remain unsolved.",
+    "[Hacker News] https:&#x2F;&#x2F;karlbode.com&#x2F;ceo-said-a-thing-journalism&#x2F;",
+    "[Hacker News] IQ tests? Very good. But most are in the dataset so it&#x27;s not very meaningful",
+    "[Hacker News] Axios already used this style long before LLMs were a thing. https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20170609214514&#x2F;https:&#x2F;&#x2F;www.axios... has two instances on the front page, more if you click on any of the articles.",
+    "[Hacker News] OK. Demonstrate it. BTW, you can easily read critiques of &quot;The mismeasure of Man&quot; if you want to.",
+    "[Hacker News] (cross posted from the other announcment thread) A big problem I have with OpenAI&#x27;s models (and of course Claude) is that they tend to write the most over-engineered pieces of code, beyond the imagination of any architecture&#x27;s astronaut. Just this week I asked 5.6-sol-ultra to update a 1000 LOC python script I had, to &quot;incorporate the key lessons learned when using it for another pr"
+  ],
+  "items": [
+    {
+      "origin": "r/singularity",
+      "title": "\"GPT-6-ASTRA\" has been staged on the OpenAI API",
+      "url": "https://www.reddit.com/comments/1w5f55h",
+      "score": 585,
+      "commentCount": 162
+    },
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI's GPT-6 Astra on ARC-AGI-3",
+      "url": "https://news.ycombinator.com/item?id=49555691",
+      "score": 184,
+      "commentCount": 118
+    },
+    {
+      "origin": "Hacker News",
+      "title": "\"Welcome to the AGI era,\" OpenAI says as GPT-6 Astra debuts",
+      "url": "https://news.ycombinator.com/item?id=49554048",
+      "score": 35,
+      "commentCount": 7
+    },
+    {
+      "origin": "GeekNews",
+      "title": "GPT-6 Astra, ARC-AGI-3에서 99.9% 기록, 행동 효율은 인간을 넘어서다",
+      "url": "https://news.hada.io/topic?id=33202",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "GeekNews",
+      "title": "OpenAI, GPT-6 Astra 공개",
+      "url": "https://news.hada.io/topic?id=33199",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "GPT-6, Also Known as \"Astra,\" Is Here to Beat Anthropic and Be \"AGI\" - trendingtopics.eu",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeHJRRkdsM1hPZGxkZU5ObjlBNHB6Ny1ubkVnVTNQbkItUy1IS3lkb3lIZUNlRlF5T0M0OVA5Mjhqck5DamJidnY0R3ZBdXJJM2FmVDVwMDFQSFIzZ1R4TGl2ZTAxMVBfa3lUUlNEeDBYVzMyNkVsSXhfVVBXWkZhR3R1WG9LMHdyTUFHWDNSTkVRal9OSm9WSQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Not only does Astra saturate ARC-AGI-3, it does so using fewer moves than the average human",
+      "url": "https://www.reddit.com/r/singularity/comments/1w6icmp/not_only_does_astra_saturate_arcagi3_it_does_so/",
+      "score": 9,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Can GPT-6 Astra Pass The Demis Hassabis Benchmark For AGI?",
+      "url": "https://www.reddit.com/r/singularity/comments/1w5zhoo/can_gpt6_astra_pass_the_demis_hassabis_benchmark/",
+      "score": 5,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Astra's official ARC-AGI 3 score: 62.7% (double that of Opus 5)",
+      "url": "https://www.reddit.com/r/singularity/comments/1w6ks2c/astras_official_arcagi_3_score_627_double_that_of/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

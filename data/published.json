@@ -1,6 +1,36 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-엔비디아-허깅페이스-19조-원에-인수칩-기업의-플랫폼-장악-본격화",
+      "title": "Nvidia, Hugging Face를 약 19조원에 인수하기로 공식 합의",
+      "urls": [
+        "https://cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
+        "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
+        "https://news.hada.io/topic?id=33207",
+        "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion",
+        "https://theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+        "https://i.redd.it/9akiu1yl3bnh1.png",
+        "https://cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html"
+      ],
+      "publishedAt": "2026-09-04T04:55:59.967Z"
+    },
+    {
+      "slug": "2026-09-04-gpt-6-아스트라-arc-agi-3-999-하지만-agi라-부르기엔-이른-이유",
+      "title": "GPT-6 Astra, ARC-AGI-3에서 99.9% 기록, 행동 효율은 인간을 넘어서다",
+      "urls": [
+        "https://reddit.com/comments/1w5f55h",
+        "https://arcprize.org/blog/astra",
+        "https://axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman",
+        "https://news.hada.io/topic?id=33202",
+        "https://news.hada.io/topic?id=33199",
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeHJRRkdsM1hPZGxkZU5ObjlBNHB6Ny1ubkVnVTNQbkItUy1IS3lkb3lIZUNlRlF5T0M0OVA5Mjhqck5DamJidnY0R3ZBdXJJM2FmVDVwMDFQSFIzZ1R4TGl2ZTAxMVBfa3lUUlNEeDBYVzMyNkVsSXhfVVBXWkZhR3R1WG9LMHdyTUFHWDNSTkVRal9OSm9WSQ?oc=5",
+        "https://arcprize.org/blog/astra",
+        "https://reddit.com/r/singularity/comments/1w5zhoo/can_gpt6_astra_pass_the_demis_hassabis_benchmark",
+        "https://i.redd.it/kmej7hd4idnh1.png"
+      ],
+      "publishedAt": "2026-09-04T04:52:10.619Z"
+    },
+    {
       "slug": "2026-09-04-샌더스-초지능-ai-금지법-발의한국-규제-논의에-던진-질문",
       "title": "Sanders introduces bill to ban artificial superintelligence and pause AI",
       "urls": [
