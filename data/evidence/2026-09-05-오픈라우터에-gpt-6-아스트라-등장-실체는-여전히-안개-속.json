@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Thinking output is already a relatively small part of the total input compared to raw code&#x2F;text files.",
+    "[Hacker News] I see this as well. Odd there is only 6 Pro.",
+    "[Hacker News] Quite hidden in the mobile app at least. I had to click thinking. The slider goes 5.6 Instant, 5.6 Medium, 5.6 High, 5.6 Extra High, and the surprise 6 Pro",
+    "[Hacker News] Shouldn&#x27;t this new reduction in thinking output make the model cheaper to operate? Could it be that the model is the same old LLM, with a bit newer architecture but still doing the same things, including huge amounts of thinking, just that its thinking is less clear to human readers?",
+    "[Hacker News] Also is rolling out to the $100&#x2F;$200 Codex subscriptions, I got access this morning. Unsurprisingly, it does indeed consume usage at ~2.5x the rate of Sol."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT-6 Astra Generally Available",
+      "url": "https://news.ycombinator.com/item?id=49569707",
+      "score": 17,
+      "commentCount": 5
+    },
+    {
+      "origin": "r/singularity",
+      "title": "GPT-6 Astra is Available on OpenRouter!",
+      "url": "https://www.reddit.com/r/singularity/comments/1w7e04f/gpt6_astra_is_available_on_openrouter/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

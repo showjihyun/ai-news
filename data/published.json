@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-05-ai가-회로-기판-설계할-수-있을까-엔지니어들이-말하는-현실",
+      "title": "Can AI design circuit boards yet?",
+      "urls": [
+        "https://eebench.org/blog/can-ai-design-circuit-boards-yet"
+      ],
+      "publishedAt": "2026-09-04T22:01:20.343Z"
+    },
+    {
+      "slug": "2026-09-05-오픈라우터에-gpt-6-아스트라-등장-실체는-여전히-안개-속",
+      "title": "GPT-6 Astra Generally Available",
+      "urls": [
+        "https://twitter.com/OpenAI/status/2095968413646737608",
+        "https://openrouter.ai/openai/gpt-6-astra"
+      ],
+      "publishedAt": "2026-09-04T21:57:49.306Z"
+    },
+    {
       "slug": "2026-09-05-미국-기업들-오픈소스-ai로-갈아타기-시작했다",
       "title": "Corporate America is getting hooked on open-source AI",
       "urls": [

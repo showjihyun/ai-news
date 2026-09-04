@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Are you saying LLMs are reproducible? I seem to get at least a slightly different answer every time I ask the same question",
+    "[Hacker News] Not exactly in the the same class as PCBs, but I&#x27;ve had a lot of success with Codex and Claude producing Fritzing diagrams. I&#x27;ve even got a skill set up with Claude so that it follows my preferences with breadboard wiring, using bezier curves to avoid wires crossing. Also, if it can&#x27;t find a component in the library, it&#x27;s quite happy drawing svgs of its own.",
+    "[Hacker News] I found LLMs circa 4 months ago to be decent at textbook-style electronics, but they choke at anything nontrivial. They approach things like someone that knows the undergrad and grad textbooks, but has absolutely zero experience. I&#x27;m guessing that this is due to a lack of RL and data.",
+    "[Hacker News] yeah noticed the same. I wonder if this will be a recurring theme for model releases: each release specializes on a set of headline benchmarks, along with regression in benchmarks that are less of a priority",
+    "[Hacker News] Interesting that on their current leaderboard ( https:&#x2F;&#x2F;eebench.org&#x2F; ), GPT-5.6 Sol scores just above GPT-5.4 but below GPT-5.5, the only benchmark that shows that 5.6 is worse than 5.5 on something? That the table contains what seems to be absolute numbers for score, cost&#x2F;task, time&#x2F;task and output tokens, makes it seem like they&#x27;ve only made one run for each task&#x"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Can AI design circuit boards yet?",
+      "url": "https://news.ycombinator.com/item?id=49569366",
+      "score": 74,
+      "commentCount": 52
+    }
+  ]
+}
