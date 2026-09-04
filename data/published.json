@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-09-05-ai가-11일-만에-페르마-대정리-완전-증명-20년-숙제-풀었다",
+      "title": "Fermat's Last Theorem: Anthropic has beaten me to it",
+      "urls": [
+        "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTFAyWFpGbGlCLVpoN2ZBUGs1UUZNSXJDaHNZNWZoV0g1RFVLc3BKbi1Nc2xVUWZ6SWZPR2JsanI3X1BIb25vZURqckE0Q1ltM1U3RnZXRkR1STVYei1VQ00tenotVjhNS0FfV2lIQ25WTXY5VlRPamc?oc=5",
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43cGpocVhTSjl5NVpTdHJLQ2ZYM1U3VmZyUk9oX0VES3VnbkdQbjlqZ2c1aG9lcnh3d1NrWUFBQ1JueFYyUDBjYVEtQjRhakhLTUs4Yw?oc=5"
+      ],
+      "publishedAt": "2026-09-04T23:33:39.589Z"
+    },
+    {
       "slug": "2026-09-05-ai가-회로-기판-설계할-수-있을까-엔지니어들이-말하는-현실",
       "title": "Can AI design circuit boards yet?",
       "urls": [
