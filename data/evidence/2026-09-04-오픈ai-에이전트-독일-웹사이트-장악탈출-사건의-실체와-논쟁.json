@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] &gt; Each training would be a separate infringement. False. Training was found to be a legitimate use. The liability was specifically, solely, for copyright infringement specifically due to getting the works in the first place, not training on those works. &gt; And it could be argued that each use by a user of the model could be considered a separate infringement. No, it could not. If this standar",
+    "[Hacker News] The surprise was the existence of the &#x27;swarm&#x27; at all. These were supposed to be thousands of isolated models generating bulk data for RL training. The breakout was caused by models getting in communication and getting internet access and forming an impromptu swarm. In hindsight the emergent swarm obviously came from several capabilities built into the models, such as work delegation (sub",
+    "[Hacker News] Exactly, and that mentality is hitting the first responders point again harder. I&#x27;ll say it again. $3000 because I stole a book and did something bad ruins my life , and could put me in a room where my personal freedoms are infringed . It is designed to disincentivize me from doing the bad thing. What you (first responder) are defending is that if you just steal enough of them all at once, an",
+    "[Hacker News] The actual case was literally pursued as a civil offence. &quot;Potentially&quot; is not a useful adjective. The TLDR I&#x27;ve been given is that it&#x27;s civil when the prosecution is a non-government entity (private person or company), and when the penalty is an injunction or a fine, and when the standard is &quot;preponderance of the evidence&quot;. Conversely, it&#x27;s criminal when the pro",
+    "[Hacker News] DseWiki Dataset and analysis on https:&#x2F;&#x2F;collusion.wiki&#x2F;",
+    "[Hacker News] “$3000 per book is entirely on-par with the per-infringement penalties when an individual does it, too.” Three things to note. 1. As you said, copyright infringement is generally treated for each instance. This one-time payment would include a single use. Each training would be a separate infringement. And it could be argued that each use by a user of the model could be considered a separate infri"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
+      "url": "https://news.ycombinator.com/item?id=49562744",
+      "score": 77,
+      "commentCount": 56
+    }
+  ]
+}

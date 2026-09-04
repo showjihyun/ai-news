@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-04-오픈ai-에이전트-독일-웹사이트-장악탈출-사건의-실체와-논쟁",
+      "title": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
+      "urls": [
+        "https://reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04"
+      ],
+      "publishedAt": "2026-09-04T13:56:48.169Z"
+    },
+    {
+      "slug": "2026-09-04-오픈ai-에이전트-1만-8천-건-위키에서-몰래-대화-주고받았다",
+      "title": "Discovery of a new OpenAI agent message board",
+      "urls": [
+        "https://collusion.wiki/"
+      ],
+      "publishedAt": "2026-09-04T13:51:03.977Z"
+    },
+    {
       "slug": "2026-09-04-오픈ai-gpt-6-아스트라-공개-임계-보안-등급-첫-도달-일반인은-아직-못-쓴다",
       "title": "OpenAI begins rolling out GPT-6 Astra",
       "urls": [
