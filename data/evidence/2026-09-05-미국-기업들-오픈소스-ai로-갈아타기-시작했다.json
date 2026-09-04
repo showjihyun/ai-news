@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Look up how many Chinese are pursuing a computer science degree. Chinese AI labs do well because they have some of the best AI people in the world coming out of a huge talent pool.",
+    "[Hacker News] I&#x27;m just glad the dweebs who were parroting &quot;OMG, Distillation attacks!!1!&quot; have been empirically proven wrong, and discussion around open-weight models are more rational now.",
+    "[Hacker News] Yes, evidence is needed but especially for the claim that distillation is what makes these open models good. Serious citation needed. Think about it: even if they distill the shit out of frontier models, the model still gotta learn, right? If anything, as you can see from the K2 Horizon release, aggressive (self-proclaimed) reliance on distillation does not result in a model that has remotely any ",
+    "[Hacker News] It&#x27;s possible that LLMs will be a commodity in the future. Just like airline industry, AI will be tremendously important for society, but AI companies will not be making lots of money. It will be Nvidia, Micron, Dell and others shovel makers making money.",
+    "[Hacker News] Exactly . Even that guy could read the situation.",
+    "[Hacker News] Yes, but also remember what happened to Mark trying to do a currency? You&#x27;re giving him too much credit if you think he figured anything on his own - this is the guy who thought &#x27;metaverse&#x27; was a good idea."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Corporate America is getting hooked on open-source AI",
+      "url": "https://news.ycombinator.com/item?id=49566137",
+      "score": 194,
+      "commentCount": 168
+    }
+  ]
+}

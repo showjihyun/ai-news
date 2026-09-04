@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-05-미국-기업들-오픈소스-ai로-갈아타기-시작했다",
+      "title": "Corporate America is getting hooked on open-source AI",
+      "urls": [
+        "https://nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html"
+      ],
+      "publishedAt": "2026-09-04T19:52:09.699Z"
+    },
+    {
+      "slug": "2026-09-05-엔비디아-허깅페이스-인수설라마씨피유-창작자-흥분되지만-검증-필요",
+      "title": "Georgi Gerganov on llama.cpp/ggml future after Nvidia acquisition of HuggingFace",
+      "urls": [
+        "https://twitter.com/ggerganov/status/2095897173376618881",
+        "https://i.redd.it/w5ae6dus5jnh1.png"
+      ],
+      "publishedAt": "2026-09-04T19:48:23.062Z"
+    },
+    {
       "slug": "2026-09-05-베트남-국가-ai-전략과-뉴욕주-학생-금지령-한국-교육-현장에-던지는-질문",
       "title": "인공지능이 교실에 들어올 때 - Vietnam.vn",
       "urls": [

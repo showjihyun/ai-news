@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Yeah, in a year or so everybody will be surprised what became of huggingface and no one could have seen this coming with all the promises made ...",
+    "[Hacker News] Here&#x27;s the content of the tweet so you don&#x27;t have to give twitter any more traffic: Hugging Face has been acquired by NVIDIA It is quite exciting to be a part of this journey! NVIDIA has been an active supporter of the llama.cpp project. For more than a year now, their engineers have actively contributed to the codebase, collaborated with the community and provisioned hardware for develo",
+    "[Hacker News] This is like if the local pool owner wanted to sell the property, and nobody in the neighborhood made a competing bid. HuggingFace isn&#x27;t a publicly-owned resource. What we should be seeing is competing businesses trying to undercut Nvidia&#x2F;HF and offer a better experience. China has alternatives to HF; it&#x27;s just that in the US, Nvidia is the only business that can get off their ass t",
+    "[Hacker News] I only need the license agreement to download and use CUDA&#x2F;CUDNN, nvidia-smi, DLSS and proprietary drivers. Nvidia&#x27;s not Apple, they don&#x27;t make you register with them for basic SDK access.",
+    "[Hacker News] &quot;On Monday 24th August at 8PM EST, we received at letter from X Corp. asking to cease and desist the service XCancel. The service XCancel is stopped until further notice. We are seeking legal advice and won&#x27;t share more details for now. Thank you for the trust you have put in these two years of XCancel.&quot;",
+    "[Hacker News] I follow llama.cpp pretty closely as I use either llama.cpp itself or projects that depend on it all the time, and one thing that I don&#x27;t think gets talked about is the sheer scale of community involvement. It seems like a logistical nightmare, but somehow thousands of different contributors are opening hundreds of PR&#x27;s every week and getting them merged in to support various hardware or"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Georgi Gerganov on llama.cpp/ggml future after Nvidia acquisition of HuggingFace",
+      "url": "https://news.ycombinator.com/item?id=49567357",
+      "score": 46,
+      "commentCount": 14
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Georgi Gerganov on the Nvidia acquisition",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w7990o/georgi_gerganov_on_the_nvidia_acquisition/",
+      "score": 8,
+      "commentCount": 0
+    }
+  ]
+}
