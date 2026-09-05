@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-05-gpt-6-아스트라-코드-리뷰에서-20-더-잡았다-하지만-가격은-25배",
+      "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
+      "urls": [
+        "https://coderabbit.ai/blog/gpt-6-astra-code-review-evaluation"
+      ],
+      "publishedAt": "2026-09-05T06:02:54.376Z"
+    },
+    {
+      "slug": "2026-09-05-스포티파이-포털-클로드-코드-토큰-90-줄였다",
+      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+      "urls": [
+        "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90"
+      ],
+      "publishedAt": "2026-09-05T05:59:50.599Z"
+    },
+    {
       "slug": "2026-09-05-ai가-11일-만에-페르마-대정리-완전-증명-20년-숙제-풀었다",
       "title": "Fermat's Last Theorem: Anthropic has beaten me to it",
       "urls": [
