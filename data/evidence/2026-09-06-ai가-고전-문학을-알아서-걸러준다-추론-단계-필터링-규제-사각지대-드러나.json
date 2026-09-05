@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Asked Claude once to help me understand&#x2F;interpret parts of the Arabian Nights and it automatically trimmed all parts of the story containing more heated content, just as if they never were there",
+    "[Hacker News] Here&#x27;s the Wikipedia link, https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;JBIG2#Character_substitution_e... JBIG2&#x27;s a high-compression ratio arithmetic coder for 1-bit black-and-white images. One of its tricks is it builds tables of glyphs, and may encode new glyphs using similar glyphs as references&#x2F;predictions. If you have a scanned image of a physical document, you will have l",
+    "[Hacker News] &gt; I don’t think I’d be able to get through a Shakespeare play without hand-holding. Wow. Kevin Kelly is obviously an intellectually capable, well-educated person. Shakespeare isn&#x27;t that hard - people have been enjoying the benefits of the Bard&#x27;s writing for over 400 years. Like those many generations of people and many contemporaries, you&#x27;ll get used to the Elizabethan verse and ",
+    "[Hacker News] The issue is relying on an LLM to perform accurate OCR and then using it to interpret art.",
+    "[Hacker News] &gt;Back in the day, your OCR would just OCR things. Now it has opinions, and you have to fight to convince it. There are plenty of OCRs that just OCR things. GLM-OCR does much better than Claude, can be running on pretty miserly hardware locally, even laptops, and of course you aren&#x27;t paying for token. This is decidedly in the &quot;using a wrench to turn a screw, and complaining that it war",
+    "[Hacker News] Then the issue is failure to filter copyrighted content for most of the book and only successfully protecting 1 poem."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Poetry book that Anthropic tried to censor",
+      "url": "https://news.ycombinator.com/item?id=49577244",
+      "score": 29,
+      "commentCount": 15
+    }
+  ]
+}

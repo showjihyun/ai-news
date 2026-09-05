@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-06-ai가-고전-문학을-알아서-걸러준다-추론-단계-필터링-규제-사각지대-드러나",
+      "title": "Poetry book that Anthropic tried to censor",
+      "urls": [
+        "https://kk.org/cooltools/the-1930-poetry-book-that-anthropic-tried-to-censor"
+      ],
+      "publishedAt": "2026-09-05T18:38:06.972Z"
+    },
+    {
       "slug": "2026-09-06-앤스로픽-클로드에-저작권-차단-프롬프트-추가소송-직후-적용",
       "title": "Claude's new system prompt doesn't want to reproduce song lyrics",
       "urls": [
