@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-06-앤스로픽-클로드에-저작권-차단-프롬프트-추가소송-직후-적용",
+      "title": "Claude's new system prompt doesn't want to reproduce song lyrics",
+      "urls": [
+        "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt"
+      ],
+      "publishedAt": "2026-09-05T16:22:38.283Z"
+    },
+    {
       "slug": "2026-09-05-ai가-사고-처리-다-맡으면-엔지니어는-시스템을-잊는다",
       "title": "AI handles incidents, engineers lose touch with their systems",
       "urls": [
