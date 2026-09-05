@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-05-ai가-사고-처리-다-맡으면-엔지니어는-시스템을-잊는다",
+      "title": "AI handles incidents, engineers lose touch with their systems",
+      "urls": [
+        "https://sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems"
+      ],
+      "publishedAt": "2026-09-05T09:42:48.622Z"
+    },
+    {
       "slug": "2026-09-05-gpt-6-아스트라-코드-리뷰에서-20-더-잡았다-하지만-가격은-25배",
       "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
       "urls": [
