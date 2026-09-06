@@ -1,0 +1,13 @@
+{
+  "articleText": "[Simon Willison — simonwillison.net]\nIntroducing GPT-6 Astra for developers ( via ) Blink and you'll miss it, but there's a familiar creature at 1m59s :\n\nAcross the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredible renderings of gardens, shipyards, animals , cityscapes, even Dyson spheres.\n\nAstra really does believe in putting a red neckerchief on a pelican riding a bicycle.\n\nThis is a link post by Simon Willison, posted on 5th September 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Simon Willison",
+      "title": "Introducing GPT-6 Astra for developers",
+      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
