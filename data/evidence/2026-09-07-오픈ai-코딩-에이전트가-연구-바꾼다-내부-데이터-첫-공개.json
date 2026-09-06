@@ -1,0 +1,26 @@
+{
+  "articleText": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+  "reactions": [
+    "[Hacker News] Indeed, many programmers might pattern match to repetitive stress injury and think of their brushes with carpal tunnel syndrome. :)",
+    "[Hacker News] Are you sure that was not iterative improvement?",
+    "[Hacker News] RSI started when humans discovered tool use. I mean one could argue that RSI always begins in any physical environment. The book &quot;What is intelligence?&quot; by Blaise Aguera is great",
+    "[Hacker News] “All models are wrong. Some are useful.” - George Box",
+    "[Hacker News] They would maybe try to deactivate that bad &quot;gene&quot; and move on, exposing future models to &quot;genetic disorders&quot;."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://news.ycombinator.com/item?id=49587217",
+      "score": 30,
+      "commentCount": 6
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
