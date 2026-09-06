@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — openai.robocurve.org]\nA follow&#8209;up to our comparison of Claude Fable 5 and Fable 5.1 . We gave OpenAI's GPT&#8209;6 Astra control of the same YAM arms under the same Inspect Robots agent policy, on the same two tasks:\n\n&ldquo;Pick up the red block from the table and place it inside the bowl.&rdquo;\n\n&ldquo;Pick up the round blue puzzle piece by the knob at its center and place it into the matching circular groove in the board.&rdquo;\n\nOn the bowl task Astra placed the block in 19 of 20 trials, against Fable 5.1's 8 of 20 and Fable 5 in 1 of 20, in 2.5 minutes per trial to Fable 5.1's 6.8, at an estimated $0.94 per run to $2.12.\n\nThe puzzle task is a different story: Astra completed the insertion 2 times in 20 against Fable 5.1's 2 in 20. It reaches the groove and stalls at the same final step Fable does, at $1.36 per run to $2.18.\n\nBlock into bowl: the best completed run of each model (highest stage, then shortest), each played in its own time at the same speed&#8209;up. Timers show real elapsed time with thinking pauses removed.\n\n$1 $2 $3 0 20 40 60 80 100 completion rate (%) Fable 5 Fable 5.1 GPT-6 Astra 2.4× higher completion rate 2.3× cheaper Block into bowl $1 $2 $3 Fable 5 Fable 5.1 GPT-6 Astra same completion rate 1.6× cheaper Puzzle piece into groove estimated cost per run (USD, list price) Large dots are condition means; faint dots are individual trials (100 if completed, 0 otherwise) at their own cost.\n\nEvery trial was scored by a human grader on the highest stage it reached, so a run that fails still records how far it got. The rubric is unchanged from the Fable report.\n\nFable 5 (n=20) Fable 5.1 (n=20) GPT-6 Astra (n=20) 2 13 3 2 6 2 2 8 19 Block into bowl 0 20 40 60 80 100 share of trials (%) Fable 5 (n=20) Fable 5.1 (n=20) GPT-6 Astra (n=20) 2 11 2 5 4 4 9 2 3 6 8 2 Puzzle piece into groove 0 no approach 1 contact 2 lifted 3 positioned 4 placed Share of trials per model reaching each stage; n per row is the number of trials in that cell.",
+  "reactions": [
+    "[Hacker News] i agree with good pr and common good. however, challenges: articulated robots are expensive (many would steal them) dust and water resistance with moving parts",
+    "[Hacker News] Are you suggesting that wealthy people litter less? Are you suggesting that wealthy people can not be vandals? Or are you suggesting that common people are littering vandals?",
+    "[Hacker News] It&#x27;s still shit but I wonder, what is really the thing anyone is trying to accomplish here? Genuinely. It&#x27;s trying to rob people of opportunity to ever migrate and or seek a better life? not just between countries which will very obviously be restricted if actual AGI is ever achieved. Why would you ever give the chance for anyone to come to your country if you do not need their skillset?",
+    "[Hacker News] Hm, true that. I’m guessing because the typical factory was already larger&#x2F;taller than human height? (Thinking of e.g. car production)",
+    "[Hacker News] This requires separating each piece of trash, which runs into the dexterity and computer vision issue again.",
+    "[Hacker News] Pretty much all existing factory automation has _not_ used humanoid robots."
+  ],
+  "items": [
+    {
+      "origin": "r/singularity",
+      "title": "Signs of AGI? GPT-6 Astra scored 95% on a robot control task vs Fable 5.1's 40%",
+      "url": "https://www.reddit.com/r/singularity/comments/1w80gif/signs_of_agi_gpt6_astra_scored_95_on_a_robot/",
+      "score": 482,
+      "commentCount": 122
+    },
+    {
+      "origin": "Hacker News",
+      "title": "GPT-6 Astra on robot arms",
+      "url": "https://news.ycombinator.com/item?id=49582582",
+      "score": 209,
+      "commentCount": 165
+    }
+  ]
+}

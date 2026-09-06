@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-06-gpt-6-아스트라-로봇-팔-제어-95-성공-퍼즐-작업선-기존-모델과-동률",
+      "title": "Signs of AGI? GPT-6 Astra scored 95% on a robot control task vs Fable 5.1's 40%",
+      "urls": [
+        "https://v.redd.it/czgbh1zkapnh1",
+        "https://openai.robocurve.org/gpt-6-astra"
+      ],
+      "publishedAt": "2026-09-06T13:00:08.731Z"
+    },
+    {
       "slug": "2026-09-06-시몬-윌리슨-gpt-6-아스트라-3d-생성-능력-눈에-띄게-향상",
       "title": "Introducing GPT-6 Astra for developers",
       "urls": [
