@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-08-ai에게-글쓰기를-맡기면-내-생각이-사라질까",
+      "title": "AI Cold Showers",
+      "urls": [
+        "https://allan.reyes.sh/posts/ai-cold-showers"
+      ],
+      "publishedAt": "2026-09-07T21:17:48.210Z"
+    },
+    {
+      "slug": "2026-09-08-ai에-돈-주고-컴퓨터-맡겼더니-가짜-청구서-1650만-원어치-뿌렸다",
+      "title": "AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200",
+      "urls": [
+        "https://bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses"
+      ],
+      "publishedAt": "2026-09-07T21:11:56.650Z"
+    },
+    {
       "slug": "2026-09-08-일자리-대란은-미뤄졌다-이코노미스트-표제와-해커뉴스-반응이-보여준-것",
       "title": "The jobs apocalypse is postponed. An AI jobs boom is here",
       "urls": [
