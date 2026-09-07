@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Compatible with Mac and Windows, but no Linux support? That&#x27;s an odd choice. I would have picked Mac and Linux and de-prioritized Windows as a nice-to-have when there&#x27;s time to get around to it.",
+    "[Hacker News] &gt; Or why not buy a Mac Mini with 48GB of RAM for $2300? Because this device has 80 GB, which allows running larger models (which is the whole point of the device). AFAIK, the next significant step in terms of quality above 32 GB is 256 GB, but 80 GB still buys convenience. &gt; A MacBook Pro already has excellent ability to run local LLMs, so why wouldn&#x27;t someone just spend that $1,999 on ",
+    "[Hacker News] &gt; why wouldn&#x27;t someone just spend that $1,999 on maxing out their MacBook specs Perhaps they don&#x27;t want a new&#x2F;upgraded machine or prefer a more portable solution.",
+    "[Hacker News] Ancient models, at &lt; 30t&#x2F;s, for $2,000? Neat device but I&#x27;ll have to pass.",
+    "[Hacker News] Pretty decent but needs more details. Overall I give it a thumbs down. You can buy a 64GB Macbook Pro M1 Max in pretty good condition right now for a good bit less than 2K. In practice you are better off: - if youre in the mac ecosystem using 2k and upgrading to the ultra class chip next time you want to buy - if youre into windows wait for the next ryzen ai max chip slated for next year. - if you",
+    "[Hacker News] I hope for their sake they bought all the RAM they needed to fulfill those Kickstarter orders at least six months ago."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The smallest edge AI device for local LLMs",
+      "url": "https://news.ycombinator.com/item?id=49603011",
+      "score": 18,
+      "commentCount": 16
+    }
+  ]
+}
