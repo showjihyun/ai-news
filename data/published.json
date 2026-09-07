@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-07-아프리카-박사가-37달러-받고-ai-훈련-거부한-이유",
+      "title": "I refused to train the AI that could replace me",
+      "urls": [
+        "https://restofworld.org/2026/ai-training-jobs-expert-replacement"
+      ],
+      "publishedAt": "2026-09-07T06:25:04.456Z"
+    },
+    {
+      "slug": "2026-09-07-엔비디아-황-ceo-agi-도래-선언업계-마케팅-용어일-뿐-냉소",
+      "title": "Nvidia's Jensen Huang says 'AGI has arrived' and congratulates OpenAI",
+      "urls": [
+        "https://businessinsider.com/nvidia-jensen-huang-agi-openai-astra-ai-2026-9",
+        "https://i.redd.it/qvctks1knznh1.png"
+      ],
+      "publishedAt": "2026-09-07T06:22:01.904Z"
+    },
+    {
       "slug": "2026-09-07-오픈ai-코딩-에이전트가-연구-바꾼다-내부-데이터-첫-공개",
       "title": "Research acceleration: The view inside OpenAI",
       "urls": [
