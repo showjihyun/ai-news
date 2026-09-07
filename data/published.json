@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-08-일자리-대란은-미뤄졌다-이코노미스트-표제와-해커뉴스-반응이-보여준-것",
+      "title": "The jobs apocalypse is postponed. An AI jobs boom is here",
+      "urls": [
+        "https://economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here"
+      ],
+      "publishedAt": "2026-09-07T18:12:39.389Z"
+    },
+    {
+      "slug": "2026-09-08-오픈ai-플러스비즈니스에-5시간-제한-제보공식-확인은-아직",
+      "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
+      "urls": [
+        "https://news.ycombinator.com/item?id=49600233"
+      ],
+      "publishedAt": "2026-09-07T18:05:05.469Z"
+    },
+    {
       "slug": "2026-09-07-아프리카-박사가-37달러-받고-ai-훈련-거부한-이유",
       "title": "I refused to train the AI that could replace me",
       "urls": [
