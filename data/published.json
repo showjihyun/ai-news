@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-09-메타-뮤즈-공개-모두를-위한-ai-비서지만-한국에선-아직-못-쓴다",
+      "title": "Muse: Meta's personal AI agent, features and capabilities",
+      "urls": [
+        "https://ai.meta.com/muse",
+        "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it",
+        "https://theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race"
+      ],
+      "publishedAt": "2026-09-08T21:44:48.584Z"
+    },
+    {
+      "slug": "2026-09-09-구글-딥마인드-90억-유전자-변이-예측-알파지놈-아틀라스-공개",
+      "title": "Google DeepMind, AlphaGenome Atlas 공개",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas",
+        "https://news.hada.io/topic?id=33371",
+        "https://marktechpost.com/2026/09/08/google-deepmind-releases-alphagenome-atlas-with-precomputed-molecular-effect-predictions-and-avi-scores-for-9-billion-human-dna-variants"
+      ],
+      "publishedAt": "2026-09-08T21:37:18.932Z"
+    },
+    {
       "slug": "2026-09-09-llm-어텐션-시각화-도구-등장-내부-작동-원리-직접-확인해-보세요",
       "title": "Show HN: LLM Attention Visualization",
       "urls": [
