@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-08-미스트랄-45조-원-유치-삼성전자가-이끈-유럽-최대-ai-투자",
+      "title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
+      "urls": [
+        "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier"
+      ],
+      "publishedAt": "2026-09-08T06:50:07.784Z"
+    },
+    {
       "slug": "2026-09-08-손바닥만-한-80gb-ai-기기-200만-원-값어치-할까",
       "title": "The smallest edge AI device for local LLMs",
       "urls": [
