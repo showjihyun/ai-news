@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — manualdousuario.net]\nLibreOffice 26.8, released on August 26 th , became the software&#8217;s most popular update . LibreOffice is a free alternative to Microsoft Office that&#8217;s been around for nearly two decades. In one week, the installer was downloaded more than 1 million times — not counting updates via Linux distribution repositories.\n\nSomeone might say the improvements to the writing system and typography are a hit among NGOs, government agencies, and offices that use LibreOffice. I&#8217;m putting my money on a “non-feature,” though: the statement that LibreOffice doesn&#8217;t come with generative AI features due to the technology&#8217;s (lack of) privacy.\n\nA day after celebrating the download record and the wide media coverage, The Document Foundation (TDF), which manages the software, spelled out its position in a post titled “Yes, no AI is now a feature” .\n\nThe article, signed by Italo Vignoli, says TDF “does not reject artificial intelligence out of hand,” but that the technology doesn&#8217;t yet meet an exhaustive list of principles to be included by default. Those principles are:\n\nFor now, TDF recommends community plugins to integrate AI into LibreOffice.\n\nTDF&#8217;s distinctive stance “has almost nothing to do with the technology,” the article continues, before taking a jab at rivals that dove headfirst into AI. For the foundation, “an AI assistant justifies a price increase and strengthens the case for keeping all documents within its own infrastructure,” referring to companies that rely on selling subscriptions.\n\nThe Document Foundation&#8217;s detailed explanation may disappoint anyone who read the announcement at the LibreOffice 26.8 launch as an anti-AI manifesto.\n\nWhatever the reasons, the LibreOffice 26.8 case answers a question I and others have had since 2023: if the whole market now offers AI baked in software of every kind, is there really no room for AI-free alternatives to stand out? Apparently, there is.",
+  "reactions": [
+    "[Hacker News] Offtopic blogging tip: Americans will read dates like &quot;8&#x2F;9&#x2F;2026&quot; as &quot;August 9, 2026.&quot; I&#x27;m pretty sure the author is using the (more sensible) convention of day&#x2F;month&#x2F;year but expressing dates as e.g. &quot;08-Sep-2026&quot; makes it clear to all readers regardless of what convention they use.",
+    "[Hacker News] I don&#x27;t see not having AI as a feature, but I&#x27;d prefer for them to take the approach of optional, easy to implement interfaces that increase the ability for the suite to be &#x27;scripted&#x27; rather than implement AI directly. My motivation is that the field of AI is moving so fast I think its a better long term plan to make your software something that can be automated with AI than to",
+    "[Hacker News] What&#x27;s the issue of getting her on Linux? I bet she wouldn&#x27;t see a difference, especially if its GUI is similar to Windows, like Linux Mint.",
+    "[Hacker News] &gt; is one that will very likely need to be walked back at some point in the future for tech products No doubt, but that future is when companies have figured out proper fit for AI in their product context and preferably with local AI models. It should not be with the current slap AI anywhere and everywhere approach that uploads and trains on all available user data, which is what everyone is opp",
+    "[Hacker News] But they support AI features, like LanguageTool. I always bought Softmaker but since they don&#x27;t offer this feature in their One-time purchase version, I have started using LibreOffice only.",
+    "[Hacker News] Yes, it needs to not be shoved everywhere and try to rewrite your workflows constantly and that would be enough"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "LibreOffice breaks download records after declaring it has no AI features",
+      "url": "https://news.ycombinator.com/item?id=49610538",
+      "score": 277,
+      "commentCount": 88
+    }
+  ]
+}
