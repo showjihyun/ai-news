@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-09-llm-어텐션-시각화-도구-등장-내부-작동-원리-직접-확인해-보세요",
+      "title": "Show HN: LLM Attention Visualization",
+      "urls": [
+        "https://ishamf.dev/p/llm-attention-visualizer"
+      ],
+      "publishedAt": "2026-09-08T18:57:56.135Z"
+    },
+    {
+      "slug": "2026-09-09-오픈ai-나비에-스토크스-증명-주장-수학계는-공개-안-해-검증-불가-반박",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "urls": [
+        "https://openai.com/index/navier-stokes-solution",
+        "https://firstpost.com/tech/has-openai-model-solved-80-year-old-navier-stokes-problem-mathematician-raises-questions-14044080.html"
+      ],
+      "publishedAt": "2026-09-08T18:54:56.384Z"
+    },
+    {
       "slug": "2026-09-09-리브레오피스-ai-없다-선언에-다운로드-100만-건-기록",
       "title": "LibreOffice breaks download records after declaring it has no AI features",
       "urls": [

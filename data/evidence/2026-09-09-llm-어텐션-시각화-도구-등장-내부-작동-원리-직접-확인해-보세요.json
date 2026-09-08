@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] This is great, I&#x27;ve read multiple books and watched videos about the attention mechanism. Now that I understand it, this is the clearest example I&#x27;ve seen on how attention works.",
+    "[Hacker News] I am curious what&#x27;s the actual formula. I mean, there so many headers and layers, it is tricky to make a choice that will resonate with our intuition . Is it some weighted average? Or maybe ablation test?",
+    "[Hacker News] neat, combining info from two phrases is hard to see without such a tool. are you worried later-layer attention gets drowned out by earlier layers just because there are more of them contributing to the sum?",
+    "[Hacker News] Same I dont get it just, could you clarify it",
+    "[Hacker News] You get what you pay for. If you want to think harder and get more, https:&#x2F;&#x2F;transformer-circuits.pub&#x2F;2025&#x2F;attention-qk&#x2F;index.htm..."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Show HN: LLM Attention Visualization",
+      "url": "https://news.ycombinator.com/item?id=49613068",
+      "score": 35,
+      "commentCount": 6
+    }
+  ]
+}
