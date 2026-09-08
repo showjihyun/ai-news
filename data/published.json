@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-09-09-오픈ai-수학-난제-풀며-비열한-경쟁-의혹학자-내-연구-훔쳐갔다",
+      "title": "OpenAI fought dirty on career-making math problem",
+      "urls": [
+        "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician",
+        "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician"
+      ],
+      "publishedAt": "2026-09-08T23:44:44.224Z"
+    },
+    {
+      "slug": "2026-09-09-챗gpt-이미지-25-공개-참조-사진-유지하며-대화로-수정-된다",
+      "title": "ChatGPT Images 2.5",
+      "urls": [
+        "https://openai.com/index/introducing-chatgpt-images-2-5",
+        "https://openai.com/index/introducing-chatgpt-images-2-5",
+        "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
+        "https://openai.com/index/introducing-chatgpt-images-2-5",
+        "https://openai.com/index/introducing-chatgpt-images-2-5"
+      ],
+      "publishedAt": "2026-09-08T23:36:31.338Z"
+    },
+    {
       "slug": "2026-09-09-메타-뮤즈-공개-모두를-위한-ai-비서지만-한국에선-아직-못-쓴다",
       "title": "Muse: Meta's personal AI agent, features and capabilities",
       "urls": [

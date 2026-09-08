@@ -1,0 +1,48 @@
+{
+  "articleText": "[Simon Willison — simonwillison.net]\nIntroducing ChatGPT Images 2.5 . OpenAI's image generation models are apparently used \"more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API\". This latest release improves their instruction-following ability across multiple turns, responds faster, and \"is better at preserving the subjects in your reference photos\".\n\nThere are two new model IDs in the API: gpt-image-2.5-sunburst and gpt-image-2.5-flare . Based on this I think Sunburst is the stronger option:\n\nChoose Sunburst for workflows where editing precision matters most, and Flare for fast, high-quality everyday image generation.\n\nI upgraded my openai_image.py CLI tool to support passing in one or more reference images, so now this works:\n\nuv run https://tools.simonwillison.net/python/openai_image.py \\ ' add a raccoon scientist studying the chart thoughtfully ' \\ -i https://static.simonwillison.net/static/2026/openai-agent-usage.webp \\ -m gpt-image-2.5-sunburst This is the original image , and here's what I got back from that prompt to \"add a raccoon scientist studying the chart thoughtfully\":\n\nThis is a link post by Simon Willison, posted on 8th September 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] Why? Because you disagree with them? Would you rather it be an echo chamber?",
+    "[Hacker News] the golf stat is actually way worse than this... because you aren&#x27;t accounting for active users. how many people actually benefit from all that water. a golf course... at BEST has two or three foursomes on each hole on average at a time. so 36-48 players concurrently. accounting for less than perfect utilization it rounds to a rough throughput of about 1000 people per day per course. winter E",
+    "[Hacker News] Golf courses are not green spaces, come on now. They are most often limited in their access and devoid of greenery native to the area or that supports pollinators. Grass does not equal green space, and certainly not the flavor of green that is present in golf courses. The alternative to a golf course is not hot concrete either, that&#x27;s a false dichotomy.",
+    "[Hacker News] Sounds like a complex question. On average you&#x27;ll visit like 1.5 sites. Those SQL queries are peanuts compared to an LLM burning through tokens. Besides, for hard questions, the LLM itself might download 30-60 websites to find the info on your behalf, e.g. checking the state of RAM prices.",
+    "[Hacker News] This is fair criticism, I was being pretty harsh.",
+    "[Hacker News] &quot;which anyone can use to do, relatively easily&quot; this is not true at all. Not anyone can use Photoshop, you need to first buy or get the software, then you need to learn how to use it, then work on the images. Whereas now you can just use Grok and immediately create pedophilia. Another deliberately deceitful and malicious comment"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "ChatGPT Images 2.5",
+      "url": "https://news.ycombinator.com/item?id=49614720",
+      "score": 262,
+      "commentCount": 342
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "IntroducingChatGPT Images 2.5",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wax7bo/introducingchatgpt_images_25/",
+      "score": 10,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "ChatGPT Images 2.5",
+      "url": "https://www.reddit.com/r/singularity/comments/1waxm7z/chatgpt_images_25/",
+      "score": 7,
+      "commentCount": 0
+    }
+  ]
+}
