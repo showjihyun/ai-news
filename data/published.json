@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-09-테런스-타오-ai가-미해결-수학-문제를-비재생-자원처럼-캐고-있다",
+      "title": "Tao: Open math problems being non-renewably mined by AI",
+      "urls": [
+        "https://mathstodon.xyz/@tao/117237320796901560"
+      ],
+      "publishedAt": "2026-09-09T02:08:59.364Z"
+    },
+    {
+      "slug": "2026-09-09-앤스로픽-연구원-사직-해커뉴스서-안전성-vs-상업화-충돌-논쟁-점화",
+      "title": "I resigned from Anthropic today",
+      "urls": [
+        "https://twitter.com/hilbertspaess/status/2097476196791709843"
+      ],
+      "publishedAt": "2026-09-09T02:00:31.504Z"
+    },
+    {
       "slug": "2026-09-09-오픈ai-수학-난제-풀며-비열한-경쟁-의혹학자-내-연구-훔쳐갔다",
       "title": "OpenAI fought dirty on career-making math problem",
       "urls": [
