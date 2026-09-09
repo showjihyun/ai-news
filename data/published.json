@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-09-ai가-할-수-있는-일을-모르는-게-진짜-병목이다",
+      "title": "AI Has a Discovery Problem",
+      "urls": [
+        "https://mhacevedo.com/posts/the-discovery-problem"
+      ],
+      "publishedAt": "2026-09-09T07:06:34.154Z"
+    },
+    {
       "slug": "2026-09-09-테런스-타오-ai가-미해결-수학-문제를-비재생-자원처럼-캐고-있다",
       "title": "Tao: Open math problems being non-renewably mined by AI",
       "urls": [
