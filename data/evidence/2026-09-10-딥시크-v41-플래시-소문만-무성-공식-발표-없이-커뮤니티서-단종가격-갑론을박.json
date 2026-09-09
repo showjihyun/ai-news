@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I used a lot V4 flash to implement plans built by other models, and it was honestly top notch. The thing was a workhorse, and I got none of the isuses you describe.",
+    "[Hacker News] &gt; I&#x27;m not sure that anyone is running production workloads against an API that bills twice as much for a chunk of the day. I&#x27;m not sure that anyone will mind running production workloads against an API that bills half as much for a chunk of the day.",
+    "[Hacker News] Friends Don&#x27;t Let Friends Use Ollama. https:&#x2F;&#x2F;sleepingrobots.com&#x2F;dreams&#x2F;stop-using-ollama&#x2F;",
+    "[Hacker News] Most people are not even referring to CUDA batching nuances. They think that sampling is an inherent part of Transformers. Even on this site, it is regurgitated with confidence.",
+    "[Hacker News] They can&#x27;t increase capacity by raising prices. Right now they calculate that they&#x27;re at an optimal revenue curve. Simply reducing demand by increasing prices doesn&#x27;t mean they get more money. The limit is in the ability to buy hardware.",
+    "[Hacker News] No you can&#x27;t. It still responds in Chinese after explicitly asking it to &quot;Always reason and respond in English.&quot;"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek launching v4.1 flash cheaper and more capable than v4 pro",
+      "url": "https://news.ycombinator.com/item?id=49624603",
+      "score": 378,
+      "commentCount": 195
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Deepseek Has Soft Retired Deepseek V4 Pro",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wbfrut/deepseek_has_soft_retired_deepseek_v4_pro/",
+      "score": 17,
+      "commentCount": 0
+    }
+  ]
+}
