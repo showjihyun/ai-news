@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-09-10-앤스로픽-클로드-초기-버전-네-번째-보안-사고-국내-기업-대응은",
+      "title": "Anthropic reports fourth cybersecurity incident with early version of Claude - WTVB",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOXZ2Q2lWcGVSQ2xlZmEtLUhaOXpSWFo4VGViZjhTbnR3SkdpV2lwdTJmcl85OTFtbUd5YV91UEhBS2wxd01MSGRVYTlHeXRVNjRNWjd4RHlOZEE1SFgxRlBjYWdTWk1QUUhna0NsNHg5VDY4eGtXaEhiZTNMWHB6QVpEMkJ1Y2tyQUdYdXItY3Y5QV9QNUloWnQ1TmJJb0RvSFNzZWdWOHhZQ1U?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVDNYS0lWQ0xGQUhzdWxVSnM0U0ZqYWZMMnBWVHpxZEpBQWNhYWJMd3FQSzR1clZQRHFDRFhhc3dJYW1GYmRoZk5vbnp5b3hIUGRzaTNrdUhzVVhTWnVpYTE3cVctZmZyMk51cnpRZ0xLVjZPZmVSalFhQkY1TVljaDJFTElLSWpNSlRuR1FmYWNIaXlGdXJ1bVk4OUk?oc=5",
+        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUW14bzN6R0ZDN1ZfdjhtME1TcVJYUjJJV1ZQaGtsV1NYS0FRaEJkUFVOcVI0ajNweDVsS29lUWYxQzVDQkZ5SVJoSzFoWVRqQU9oenJUN05DakRWQ084amY4NkFfNEhkUUxnSndzVHdDdFpWclVrRVNzR1J6bXR1bDVUdVBpVFJnTGRLVFA3Y1V1OVltOVVVQmtHczFHanVCcEVWMjV2c2pIcjFPdjQ5enJEOEJOMUh1cndOUGZOd2E1NjRmX2swRDlCanJpQ3VSVEZ2WA?oc=5",
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNclp2MDZ1TVBPUHRRSXhFSXA0OXRxdnQ4LTdUemJxTzZpdUdsSmx0UzR5b2p2WDBBOTZBZnBXWkpleVVaYkRITjUyUXVRMUtPdTc5ZjJqSEVuQmR5ZURCcEtWcG4wMGNZd2JnMzhWV1BkbjVhai1TOXpvLXQ1NG5lQlRTMFUyTHlSM0UtM0lYWTltUXprd0lhT2RzTGs1bjBLdnFMNlo2WnRJM3pjN3FUVV9qbjlUbkZRNjNyRktKV3UwZlFOU3c?oc=5",
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWmFIb0tXNWJtSjBvSm0wLU5ZaUdXQzNiRk9nM3pQVW5mWWxOdlh5dURpcWluc1U2ejlDb1FFTThCcUh3YnliNnpuWlp1Rndjd01lZ283S21mTzJiNGVlT0l1RGF1T3ZCVDU1WldxZC1KTnNzUGdzMVA0V0l3Mmw0cXJFM3JIUzVQQW9ESHFja1MyZG1rNDFsVUpwMnVjRWpQZlBkRVZpekhDU043dFc3RkJlU3dsUy1abDNPZ28talU5aWd3WjhVU2pvNGxSdw?oc=5",
+        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPamI0aHdfcEJJVkVQOXBTbEpJeWlyNC1mWkE4NlMzblpXNWVUUGZCUFF4bDhEbkhTU0hrRW9ib3RGbFNTcjNlUEhPV3hMWThJQTNaOEFFeUxTOHVCLTJySENUV0I2SlozZEdCdU5iX0VfMEc1UFVRZHhJNmdYb1JWZnRSVjl0VmhPZGlhaVlFZkR5YjVGdlVzWVZ5OVR6T3N5OWk1bzFyOUItbjZnNnYxd2lJMERKZFh4cEJ4a1RjRlFROVdGWkNBR0FCR3ZQQXFpWWdGYw?oc=5",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNU2ZIbTZiYS0ycDB3ak5yR1FUclBMSDljRk9TRXN5VlhhYlJXLUx3YXdNNGNLYkJNMm40NTNsWHN5Q2YxZnRNbjAxeU5XWUxGM05SOEwwXzlybTF3U2xqalFVYklES1hGSHEycDZpbFNHTks3bC1jU2lXMFAzRUpieUhSVmczbEJMNDl6SjNBNS1jaHNmMDV6dUF2dEpHVldM?oc=5",
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOUc1RmNySDBwSDIwQS1lSjY4SURuWEZuaFFVNnBZVkotLVFDSDdmUnl6X3d3TzF4Ml81Q0VZU183UDNXc1BCWmtPbWhaRHBUR20xaXpYOFF0X1RWQmNlYkdneFo5TE01RWw1YjBKSDNPNm9SRllPLUk3SlRtckViLXpVUUx0MDBtRmRYWEtpZ191TW9Cc0pQaVpFeHZKYURDaGhiYkhFTThsZm5xbV9IZ2hOTkVPZzA?oc=5"
+      ],
+      "publishedAt": "2026-09-09T23:46:44.735Z"
+    },
+    {
+      "slug": "2026-09-10-qwen-38-gpt-55-pro-추론-패턴과-18p-일치-학습-데이터-겹칠-가능성",
+      "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+      "urls": [
+        "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3"
+      ],
+      "publishedAt": "2026-09-09T23:42:10.420Z"
+    },
+    {
       "slug": "2026-09-10-gpt-6-아스트라-실사용기-최고지만-혁명은-아니다-루프드-트랜스포머은닉-추론-논쟁",
       "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
       "urls": [

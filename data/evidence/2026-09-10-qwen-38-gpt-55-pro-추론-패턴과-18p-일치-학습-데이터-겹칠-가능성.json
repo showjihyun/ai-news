@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — gist.github.com]\nA follow-up to Reasoning prefills on a few open models and Stolen Thoughts\n\nThis v1.1 reruns the reasoning-prefill experiment with GPT-5.5 Pro as the teacher.\n\nFor each problem, I generated two responses from each target model:\n\nThe visible answer remained freely generated. I then measured how much of the teacher's visible answer appeared in the first 100 tokens of the target model's answer. As in the previous post, each score is the mean of unigram, bigram, and trigram source recall. Deltas are absolute percentage-point changes.\n\nThe evaluation contains 45 problems: 15 STEM, 15 non-STEM, and 15 synthetic puzzles.\n\nCategory n Unprefilled GPT-5.5 Pro reasoning prefill Delta STEM 15 19.26% 46.24% +26.99 pp Non-STEM 15 20.62% 33.42% +12.80 pp Puzzle 15 10.49% 25.23% +14.75 pp All 45 16.79% 34.97% +18.18 pp Discussion Qwen barely moved toward Opus 4.8 in the earlier experiment, but moved by +18.18 points toward GPT-5.5 Pro here, including a large effect on the private synthetic puzzles. The data suggest that Qwen may have learned from GPT-5.5 Pro, or from a closely related GPT model, rather than from Opus.\n\nKimi K3 has the highest overlap with GPT-5.5 Pro both without and with the prefill (31.11% and 35.65%), although the prefill adds only +4.54 points.",
+  "reactions": [
+    "[Hacker News] well then theyll be do better post war, just in time for fallout timeline",
+    "[Hacker News] Nobody care if Chinese models are only 99%, 95% or 90% as good as SotA US models. Because we only have weights and able to self-host Chinese ones. Gemma 4 and GPT OSS are nice to have, but nowhere close to that.",
+    "[Hacker News] They said literally the opposite in their message above. In their experience, the caveman speech occurs in chat ui, not in coding harness.",
+    "[Hacker News] They do store the reasoning locally. It&#x27;s encrypted, though. Few weeks ago there was a new paper out where researchers took the encrypted reasoning tokens and injected it into a new session with a week or model in the same family that they could reliably jailbreak. They would then ask the model to repeat its reasoning and the results were pretty consistent. They used the LLM as a decryption o",
+    "[Hacker News] Yeah, with GPT 6 even OpenAI doesn&#x27;t know what it&#x27;s thinking.",
+    "[Hacker News] The person evaluating and noticing similar reasoning traces to gpt is because they are using a coding harness which probably has a different system prompt to llama webui which primarly serves as a chat interface"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+      "url": "https://news.ycombinator.com/item?id=49630026",
+      "score": 156,
+      "commentCount": 63
+    }
+  ]
+}
