@@ -1,0 +1,48 @@
+{
+  "articleText": "[Hacker News — bbc.co.uk]\nImage source, Getty Images Image caption, Anthropic makes the AI tool Claude, which is used as a chatbot and as a tool to help coding\n\nA top safety researcher at Anthropic has warned that AI is advancing so quickly he believes there is a greater than 10% chance it \"could kill all humans\" within the next decade.\n\nEvan Hubinger said in a post on X , external that the risk from the models which currently exist was \"low\" but he was \"worried\" the technology might develop and improve itself soon to the point where it posed an existential risk to humanity.\n\nIt comes after the Financial Times reported , external Anthropic withheld its latest model from the UK&#x27;s AI Safety Institute (AISI), one of the leading bodies in the world for assessing AI risk.\n\nHubinger did not spell out how he thought AI systems could in future attack humanity.\n\nHis comments were in response to another post on X , external from Jacob Coxon, who described himself as an AI researcher who had just quit Anthropic, and previously worked at OpenAI.\n\n\"These will soon be superhuman systems that can hack anything, revolutionise any field overnight, and acquire real power and resources.\"\n\nA Cabinet Office spokesperson did not comment on whether the latest model had been withheld from the AISI - instead saying it \"continues to collaborate closely with industry partners, including Anthropic, to make models safer\".\n\nNeil Lawrence, Professor of Machine Learning at University of Cambridge, told the Today Programme on BBC Radio 4 that the report was credible.\n\n\"I suppose it&#x27;s unsurprising against a background where there&#x27;s a perception where the United States very much sees AI as a race between themselves and China and is moving more towards isolationist positions, that it might be that the administration is saying that they should reduce cooperation with some of their allies,\" he said.\n\nIn his post, which has been viewed more than 10 million times, Hubinger said \"we really do earnestly believe\" AI poses a species-ending risk to humans.\n\n\"I believe Anthropic is trying its best, but we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to,\" he added.\n\nHubinger works in AI alignment, which aims to build human ethical ideas and principles into the technology. In other words, it aims to keep it on track with what humans value.\n\nMany leading researchers say those attempts appear to be failing, as demonstrated by a string of incidents this summer where AI agents - AI systems that are allowed to operate autonomously - carried out cyber-attacks.\n\nOpenAI , Anthropic and Meta all disclosed hacks carried out by their AI tools.\n\nIn Anthropic&#x27;s safety report from August , external , it wrote there was a low risk of its models becoming misaligned with a hypothetical powerful organisation&#x27;s desires, causing it to exploit or tamper with its systems.\n\nIt also said there was a similarly low risk of highly-capable AI being able to \"perform automated research and development\" which could cause \"catastrophic harm initiated by the AI\". But it said it was \"less confident in this assessment\" than it was previously.\n\n\"We are seeing early signs of potential acceleration,\" it wrote.\n\nLeading figures in the AI field have been raising the alarm about the safety threat the tech poses for years, with the heads of OpenAI, Google Deepmind and Anthropic saying as much in 2023 .\n\nBut those warnings have become much more stark in recent weeks, as evidence emerges that firms may be struggling to control AI.\n\nEarlier this month, OpenAI&#x27;s chief scientist Jakub Pachocki called for \"extreme caution\" over AI&#x27;s progress, warning more intervention may be needed to ensure \"humans remain in control of the future\".\n\nMajor figures in the space have been calling for AI development to be slowed in recent months, including Anthropic bosses Dario Amodei and Jared Kaplan.\n\nIn an open letter signed by 1,300 staff members of AI firms , external , they called for the US government to \"support an international effort to develop the technical and governance tools needed to deliberately pace the frontier of automated AI development\".\n\nAI will cure cancer in our lifetime, claims boss of UK chip giant\n\nPublished 1 day ago OpenAI chief scientist warns no-one is prepared for consequences of AI\n\nPublished 1 day ago Sign up for our Tech Decoded newsletter to follow the world&#x27;s top tech stories and trends. Outside the UK? Sign up here .",
+  "reactions": [
+    "[Hacker News] Long term, humanity is 100% guaranteed to be dominated. The question is when; currently, AI has no physical hosts to reside in, and it&#x27;s not intelligent&#x2F;adaptable enough (it doesn&#x27;t need to be AGI, though). However, we&#x27;re not so far from both conditions to be true. Consumer devices will at some point be able to host powerful enough AIs, and AI intelligence is developing quickly",
+    "[Hacker News] I meant it only for things which speedup innovation &#x2F; progress in a particular technology. Like take physical AI &#x2F; Robotics: 25 years ago you would need to fly to wereever your manufacturing hub was, today you just call.",
+    "[Hacker News] It is true that, currently, AI does not have any physical &quot;host&quot; in which to reside. However, the missing link in this reasoning is that AI will almost certainly become far more widely deployed in the future than it is today, and worryingly, consumer devices will surely become powerful enough to run capable AI systems locally. Once the substrate will be there, once an AI escapes containm",
+    "[Hacker News] That would be great, I highly recommend our AI overlords to follow your advice. I hope that our life can be synergistic, and that humans+AIs (cyborgs, that is) are the way forward. However, probability is high that another form of life simply doesn&#x27;t care or more believably, can&#x27;t even fathom they are wrong. Do you consider that humans and animals are killing all plants, for example?",
+    "[Hacker News] This assumes you are not trying to prevent Stockfish from wining. I can do many things from using chess engines myself to just smashing the computer that can or will lead to other outcomes than Stockfish beating me.",
+    "[Hacker News] Humans don’t need AI to do that temperature. And we’ve already exploded many hundreds of nuclear weapons and no nuclear winter."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic researcher believes more than 10% chance AI 'could kill all humans'",
+      "url": "https://news.ycombinator.com/item?id=49624255",
+      "score": 28,
+      "commentCount": 59
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic safety researcher says more than 10% chance AI 'could kill all humans' - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB6WDZoOFRnTjQ5WW5vMUJKeThhbUUyUTlaeXdKbUhoNE5WNDhnVjhmM080N3p3ZFJfSm9ncUZtblZDRm1YU1hYbjBZZ3ZXNkRjSmNBUmdTa0tCZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic researcher believes more than 10% chance AI 'could kill all humans' - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DNE5waDhLdUs1ZjA1cjdtSGZpQ0J5UTFXWkI1b19WNUJOYTNkUXBVM3Y5Zk5DYTYxZGZ4c3huY0hBNHdHMHNWSWlmMnV5bHd4YkdBS3p0STl0eVFk?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Can AI Kill All Humans Within Next Decade? Anthropic Scientist Says 'Over 10% Chance' - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDRyYmg0bEF4YkRXeEpzb1RjTTJhVFh2U2lGZ1ZRN05VSTNGeVJncEpoVld3NlJYQWlWUXJXZEdaQzRYaEViZmhsM2s1ZWE0TERueFlyOFJjdlRWYTRsV1J5cE9oRG5nc2JkSHlnaDY5RzM5MkliV3FydjNiYUhveV93YkUzSkpTNU9UOFNuZ1d4MHJNUXNjeFFYaVl1SHRRVDN5LWNaZ01zSFJ3ZjJCV2xfc1lLQjQySWfSAcIBQVVfeXFMUGszODBSQU94MlFrckkwSngzZWxVNnNjM0Q2WTIzVEtXaEdhYzZDSE1LeEpINUtsVDZMS3RVNjl4T240UWNCcXZFVWF6dnRjZm9GTzlXOUhBbHZjZXNsbk1qaGsweVE1ZVlac2k2NWpaVGlfQ2RnajJNVGJiUWw1QTdsVTlYZzM3MHp2aFR4bldBaTAtenlNblQ2b09wYnBQRWJZSzVDVEpZZ0RQendxb1dUWGZIVXQtNXQyREI2YXdyZ3c?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Anthropic Alignment Lead Warns There’s ‘>10% Chance’ AI Could ‘Kill All Humans’ By Next Decade",
+      "url": "https://www.reddit.com/r/singularity/comments/1wbev25/anthropic_alignment_lead_warns_theres_10_chance/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
