@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-10-수학자들-오픈ai-우리-미발표-연구-썼나데이터-출처-공방",
+      "title": "Mathematicians want proof OpenAI didn't use their work",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+        "https://theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data"
+      ],
+      "publishedAt": "2026-09-10T12:15:19.569Z"
+    },
+    {
       "slug": "2026-09-10-ai가-죽고-싶게-만들면-정렬이-해결될까-스펙-게이밍이-던진-역설",
       "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
       "urls": [
