@@ -1,6 +1,38 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-앤스로픽-활동가-겨냥-예측-감시-시스템-운용경찰-선제-신고증거-미제출-논란",
+      "title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
+      "urls": [
+        "https://prospect.org/2026/09/09/anthropic-artificial-intelligence-surveillance-system-monitor-activists",
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSzJ1bl9iZHMzZkNnQ3ZRRGZ5My1UXzd5ZkRfWEFncnBLZ3I3YnA5VUNHUzFfNnowbkVLR2hRM0NyeFc2dVdkUGl1OTBaUDhUQ1F1QTVZaTQ0SUYyd1JwVTJybDdRNndWdmFfckJKY2YzT0NZakR0T2hYN2VZWk1TQjN0UFZHSVVqQ0ZMWGJKTG5PSWplVkg4UHJpUDZUVVdnbDNBVVdQNA?oc=5",
+        "https://prospect.org/2026/09/09/anthropic-artificial-intelligence-surveillance-system-monitor-activists"
+      ],
+      "publishedAt": "2026-09-10T15:41:57.405Z"
+    },
+    {
+      "slug": "2026-09-11-deepseek-v41-flash-공개-100만-토큰-문맥에-kv-캐시-4분의-1로-줄였다",
+      "title": "DeepSeek V4.1 Flash 공개 - 이미지도 이해하는 새 아키텍처",
+      "urls": [
+        "https://reddit.com/comments/1wbmy11",
+        "https://twitter.com/deepseek_ai/status/2097930608790167907",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+        "https://reddit.com/comments/1wcany5",
+        "https://news.hada.io/topic?id=33477",
+        "https://news.hada.io/topic?id=33443",
+        "https://reddit.com/gallery/1wcbid7",
+        "https://marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+        "https://i.redd.it/va67hbc7knoh1.jpeg",
+        "https://i.redd.it/32imgdgl3noh1.jpeg",
+        "https://reddit.com/r/LocalLLaMA/comments/1wcb0o3/deepseek_v41_flash_stronger_faster_more_accessible",
+        "https://reddit.com/r/LocalLLaMA/comments/1wcd4rx/deepseek_v41_flash_is_748b_not_552b",
+        "https://reddit.com/gallery/1wcclh3",
+        "https://v.redd.it/nfi2uilpfooh1"
+      ],
+      "publishedAt": "2026-09-10T15:27:39.805Z"
+    },
+    {
       "slug": "2026-09-10-수학자들-오픈ai-우리-미발표-연구-썼나데이터-출처-공방",
       "title": "Mathematicians want proof OpenAI didn't use their work",
       "urls": [
