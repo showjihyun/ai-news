@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-코그니션-swe-2-공개-코딩-에이전트-가격-성능-새-기준-제시",
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "urls": [
+        "https://cognition.com/blog/swe-2"
+      ],
+      "publishedAt": "2026-09-10T18:55:49.630Z"
+    },
+    {
+      "slug": "2026-09-11-오픈ai-대화-학습-후-혁신-주장-논란-연구자들-반박-나서",
+      "title": "Another researcher says OpenAI trained on conversations, then claimed breakthrou",
+      "urls": [
+        "https://bsky.app/profile/did:plc:ckaz32jwl6t2cno6fmuw2nhn/post/3mv4mt4ikss2d",
+        "https://bsky.app/profile/did:plc:ckaz32jwl6t2cno6fmuw2nhn/post/3mv4mt4ikss2d"
+      ],
+      "publishedAt": "2026-09-10T18:38:25.099Z"
+    },
+    {
       "slug": "2026-09-11-앤스로픽-활동가-겨냥-예측-감시-시스템-운용경찰-선제-신고증거-미제출-논란",
       "title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
       "urls": [

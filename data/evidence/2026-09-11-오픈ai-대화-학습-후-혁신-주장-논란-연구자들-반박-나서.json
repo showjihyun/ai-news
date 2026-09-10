@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — bsky.app]\n@timkellogg.me on Bluesky JavaScript Required This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Learn more about Bluesky at bsky.social and atproto.com . Post mr. TIM timkellogg.me did:plc:ckaz32jwl6t2cno6fmuw2nhn another researcher accuses OpenAI of training on conversations and then claiming a breakthrough 2026-09-09T22:51:51.050Z",
+  "reactions": [
+    "[Hacker News] LOL Lets screenshot each others comments and comment on them.",
+    "[Hacker News] Nah the models are just that good at short scale math now. If your research program is close to it&#x27;s goal the model can get it.",
+    "[Hacker News] Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49639408 , which has the original source. I&#x27;ll try to assemble the other links there too.",
+    "[Hacker News] Skeets is what the community wants, but the company does not (for obvious reasons).",
+    "[Hacker News] Yeah but marketing companies are aggressively fingerprinting and stalking you to sell you snacks from japan, or oscilloscopes because they figured out you work in a lab, etc. Not to fuck you over by stealing your livelihood (which is what is happening to these mathematicians). It&#x27;s on a whole new scale."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Another researcher says OpenAI trained on conversations, then claimed breakthrou",
+      "url": "https://news.ycombinator.com/item?id=49643112",
+      "score": 250,
+      "commentCount": 15
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "ANOTHER researcher accuses OpenAI of training on conversations and then claiming a breakthrough",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcmgbn/another_researcher_accuses_openai_of_training_on/",
+      "score": 12,
+      "commentCount": 0
+    }
+  ]
+}
