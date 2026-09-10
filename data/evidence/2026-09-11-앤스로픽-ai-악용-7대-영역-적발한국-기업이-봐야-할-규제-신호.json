@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nSurveillance operations Read more Influence operations Read more Conventional weapons Read more Biological misuse Read more Scams and fraud Read more Illicit distillation Read more Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in March , August , and November 2025. In each case, we disrupted the activity, used what we learned to strengthen our safeguards, and shared intelligence with authorities and industry partners, where appropriate.\n\nThis report covers activity we disrupted between December 2025 and August 2026 across seven harm areas: cyber operations, influence operations, surveillance, scams and fraud, biological misuse, conventional weapons development, and distillation. Claude Haiku, Sonnet, and Opus models were used. None of the misuse cases involved the use of Claude Fable or Mythos-class models, with the exception of one illicit distillation case.\n\nThe cases we share here aren’t typical misuse, but rather examples of the most notable and novel threat activity we’ve identified to date. We’re publishing this work because we believe we have a responsibility to disclose malicious misuse of our services. As models become increasingly capable, their risks will increase, unless AI developers and society’s defenders act to make them safer.\n\nThe threat actors covered in this report include suspected state-sponsored groups, financially motivated criminals, commercial spyware vendors, state propaganda institutions, and politically motivated individuals. The cases range from a network of fake dating apps designed to defraud users to surveillance systems built to identify and monitor dissidents.\n\nSophisticated and persistent threat actors continuously test our safeguards and try to circumvent the technical measures we use to detect and prevent misuse. We’ll continue to evolve our safeguards and coordinate with our partners to improve our ability to detect, disrupt, and prevent future misuse.\n\nWe hope that the findings in this report will help other developers recognize similar patterns on their own platforms, give governments and civil society a clearer view of how emerging threats take shape, and strengthen collective defenses.",
+  "reactions": [
+    "[Hacker News] God the astroturfing from these companies is so fucking pathetic, these VC parasites really are a blight on humanity",
+    "[Hacker News] The previous discussion shows no obvious signs to me of being flagged, but perhaps it did at some earlier point. What is your evidence that they flagged it, please? (And by &quot;they&quot; do you mean Anthropic ? How would they have the ability to do that?)",
+    "[Hacker News] This is just an advertorial. &quot;Our AI is so powerful that Bad Guys could actually use it for real Bad Guy Work!&quot;",
+    "[Hacker News] My understanding of what Anthropic are saying about this is that the labs in question aren&#x27;t forwarding things to Claude to make money nor even to look better to the customers whose queries they forward to Claude but to get access to conversations between real users and Claude, which they can then use to help train their own models. (I do not guarantee that I&#x27;m understanding right, and s",
+    "[Hacker News] The future is basically something between: AGI&#x2F;ASI will kill us all and a privacy nightmare.",
+    "[Hacker News] Anthropic is profitable now &gt; https:&#x2F;&#x2F;www.forbes.com&#x2F;sites&#x2F;jonmarkman&#x2F;2026&#x2F;08&#x2F;17&#x2F;anthropic..."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Detecting and countering misuse of AI: September 2026",
+      "url": "https://news.ycombinator.com/item?id=49647300",
+      "score": 25,
+      "commentCount": 11
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Detecting and countering misuse of AI: September 2026 - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBeTNVQy1tcnZPVW9SM3drbmxGN1UxRktiY3JfLW9rMDdIMm9SOUd3b3RJNHpSRXVzS1JKckctcFUyZHpNTVE3aEtWVFhka3o3UmlLUzk1ZEs3dUhyVmRJYVctb0IyN1JuNDB6N0hZdTR2TWJTVXc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

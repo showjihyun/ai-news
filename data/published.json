@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-ai-2027-2년-뒤-초지능-시나리오-두-갈래-결말이-던지는-질문",
+      "title": "AI 2027 (2025)",
+      "urls": [
+        "https://ai-2027.com/",
+        "https://i.redd.it/6od9mynbbloh1.png"
+      ],
+      "publishedAt": "2026-09-10T21:23:14.228Z"
+    },
+    {
+      "slug": "2026-09-11-앤스로픽-ai-악용-7대-영역-적발한국-기업이-봐야-할-규제-신호",
+      "title": "Detecting and countering misuse of AI: September 2026",
+      "urls": [
+        "https://anthropic.com/threat-intelligence-report-september-2026",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBeTNVQy1tcnZPVW9SM3drbmxGN1UxRktiY3JfLW9rMDdIMm9SOUd3b3RJNHpSRXVzS1JKckctcFUyZHpNTVE3aEtWVFhka3o3UmlLUzk1ZEs3dUhyVmRJYVctb0IyN1JuNDB6N0hZdTR2TWJTVXc?oc=5"
+      ],
+      "publishedAt": "2026-09-10T21:20:12.127Z"
+    },
+    {
       "slug": "2026-09-11-코그니션-swe-2-공개-코딩-에이전트-가격-성능-새-기준-제시",
       "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
       "urls": [
