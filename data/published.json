@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-오픈ai-월-200달러-프로-구독-중단-아스트라-수요에-인프라-한계",
+      "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+      "urls": [
+        "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand",
+        "https://i.redd.it/p2q9kp3brroh1.png"
+      ],
+      "publishedAt": "2026-09-11T01:34:41.550Z"
+    },
+    {
+      "slug": "2026-09-11-오픈ai-에이전트-api-공개-베타-코덱스-하네스를-api-한-호출로",
+      "title": "OpenAI Agents API",
+      "urls": [
+        "https://developers.openai.com/api/docs/guides/agents-api/overview",
+        "https://marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call"
+      ],
+      "publishedAt": "2026-09-11T01:17:17.154Z"
+    },
+    {
       "slug": "2026-09-11-앤스로픽-알리바바문샷딥시크-클로드-2억-건-증류-공격",
       "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek - TechCrunch",
       "urls": [
