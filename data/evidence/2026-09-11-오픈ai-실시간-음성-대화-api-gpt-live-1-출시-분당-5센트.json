@@ -1,0 +1,27 @@
+{
+  "articleText": "[r/OpenAI — developers.openai.com]\nModels GPT-Live 1 Default Our premier model for natural, expressive voice conversations with smooth interruption handling. Our premier model for natural, expressive voice conversations with smooth interruption handling. Compare Performance — Not specified Speed — Not specified Price $0.05 Per minute Input Audio, text Output Audio, text GPT-Live 1 is a full-duplex voice model for real-time conversations. It can listen and speak at the same time, and delegate reasoning and tool use to a backend agent.\n\nLearn how to get started with GPT-Live , configure delegation , and prompt the model .\n\nJul 31, 2025 knowledge cutoff Pricing Voice sessions cost $0.05 per minute, billed per second. Backend model and tool usage is billed separately. See the pricing page . Live session duration Per minute Per minute $0.05 Session duration is not rounded up to the next whole minute.\n\nBackend Responses calls use the normal pricing for the configured model and tools.\n\nText Input and output Image Not supported Audio Input and output Video Not supported Endpoints Live v1/live/sessions Chat Completions v1/chat/completions Responses v1/responses Realtime v1/realtime Realtime translation v1/realtime/translations Realtime transcription v1/realtime/transcription_sessions Assistants v1/assistants Batch v1/batch Fine-tuning v1/fine-tuning Embeddings v1/embeddings Image generation v1/images/generations Videos v1/videos Image edit v1/images/edits Speech generation v1/audio/speech Transcription v1/audio/transcriptions Translation v1/audio/translations Moderation v1/moderations Completions (legacy) v1/completions Features Streaming Supported Function calling Supported Structured outputs Not supported Fine-tuning Not supported Predicted outputs Not supported Snapshots Use gpt-live-1 in your API requests.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "r/singularity",
+      "title": "GPT-6 Sol Appeared on the OpenAI API",
+      "url": "https://www.reddit.com/r/singularity/comments/1wcqwj9/gpt6_sol_appeared_on_the_openai_api/",
+      "score": 378,
+      "commentCount": 81
+    },
+    {
+      "origin": "GeekNews",
+      "title": "OpenAI, 동시 청취·발화가 가능한 GPT‑Live‑1 API 출시",
+      "url": "https://news.hada.io/topic?id=33512",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "Gpt-live-1 API is finally available",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wcq5lj/gptlive1_api_is_finally_available/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

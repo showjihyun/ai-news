@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-베테랑-개발자-ai-쓰지-않겠다-선언-해커뉴스-32점-논쟁-촉발",
+      "title": "Resist \"AI\"",
+      "urls": [
+        "https://ronjeffries.com/articles/-v026/x/t"
+      ],
+      "publishedAt": "2026-09-11T11:55:17.858Z"
+    },
+    {
+      "slug": "2026-09-11-오픈ai-실시간-음성-대화-api-gpt-live-1-출시-분당-5센트",
+      "title": "OpenAI, 동시 청취·발화가 가능한 GPT‑Live‑1 API 출시",
+      "urls": [
+        "https://i.redd.it/wnk0751wgqoh1.jpeg",
+        "https://news.hada.io/topic?id=33512",
+        "https://developers.openai.com/api/docs/models/gpt-live-1"
+      ],
+      "publishedAt": "2026-09-11T11:41:38.839Z"
+    },
+    {
       "slug": "2026-09-11-오픈ai-나비에-스토크스-증명에-린-4-공식-검증-동시-공개",
       "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
       "urls": [
