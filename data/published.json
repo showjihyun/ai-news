@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-오픈ai-최첨단-개발-늦출-수도-알트만-발언의-속내",
+      "title": "OpenAI considers slowing advanced AI development, Sam Altman tells employees",
+      "urls": [
+        "https://bloomberg.com/news/articles/2026-09-11/openai-is-open-to-slowing-cutting-edge-ai-ceo-sam-altman-tells-staff",
+        "https://reddit.com/r/singularity/comments/1wdkdl5/openai_is_considering_slowing_down_the"
+      ],
+      "publishedAt": "2026-09-11T21:32:11.775Z"
+    },
+    {
+      "slug": "2026-09-12-필즈-메달리스트-25명-ai-수학-벤치마크가-수학-망친다-공동-성명",
+      "title": "A misalignment of AI in mathematics",
+      "urls": [
+        "https://mathandai.org/",
+        "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics",
+        "https://mathandai.org/"
+      ],
+      "publishedAt": "2026-09-11T21:28:08.913Z"
+    },
+    {
       "slug": "2026-09-12-해커뉴스-사용자가-만든-ai-없는-해커뉴스-기술자들이-ai-피로감을-느낄-때",
       "title": "Show HN: Hacker News, without AI",
       "urls": [

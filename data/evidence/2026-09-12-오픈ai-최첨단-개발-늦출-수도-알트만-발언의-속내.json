@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] AI is reaching religious levels of fanaticism, which I find highly disturbing.",
+    "[Hacker News] I guess we&#x27;ll see, but odds are that reality will reel you back in.",
+    "[Hacker News] What&#x27;s your plan on when you successfully limit western AI but have no control over China and they continue to march forward?",
+    "[Hacker News] Why wouldn&#x27;t being incredibly good at handling code and reaching the goals there extrapolate to other cognitive disciplines? And it didn&#x27;t even start with code, but just from being incredibly accurate and precise at predicting the next token. From that emerged being incredibly good at handling code, and being incredibly good at finding counterexamples for major open mathematical problems",
+    "[Hacker News] Are you kidding? They&#x27;ve been asking for regulation for years! Altman testified to the Senate in 2023. HN loves calling this hype, eg. https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=36034314 . They just put this out two days ago: https:&#x2F;&#x2F;openai.com&#x2F;index&#x2F;ai-policy-window&#x2F; . If this would move the needle for you, it should have moved a long time ago."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI considers slowing advanced AI development, Sam Altman tells employees",
+      "url": "https://news.ycombinator.com/item?id=49652270",
+      "score": 50,
+      "commentCount": 90
+    },
+    {
+      "origin": "r/singularity",
+      "title": "OpenAI Is Considering Slowing Down The Development Of Cutting-edge AI, Sam Altman Is Hoping Other AI Companies Will Do The Same",
+      "url": "https://www.reddit.com/r/singularity/comments/1wdkdl5/openai_is_considering_slowing_down_the/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}
