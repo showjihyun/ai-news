@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-gpt-6가-5번-프롬프트로-사이트-만들었다-커뮤니티-검증부터",
+      "title": "GPT-6 built this earth exploration site in 5 prompts",
+      "urls": [
+        "https://earth.ethanplus.ai/"
+      ],
+      "publishedAt": "2026-09-11T23:40:37.949Z"
+    },
+    {
+      "slug": "2026-09-12-프로그래머들이-느끼는-상실감-단순-일자리-걱정이-아니다",
+      "title": "Feeling Sad about AI",
+      "urls": [
+        "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai",
+        "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai"
+      ],
+      "publishedAt": "2026-09-11T23:37:18.528Z"
+    },
+    {
       "slug": "2026-09-12-오픈ai-최첨단-개발-늦출-수도-알트만-발언의-속내",
       "title": "OpenAI considers slowing advanced AI development, Sam Altman tells employees",
       "urls": [

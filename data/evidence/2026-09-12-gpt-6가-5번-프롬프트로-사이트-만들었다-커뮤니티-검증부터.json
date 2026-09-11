@@ -1,0 +1,18 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] It matters, for now. - I prompt better when I can understand the code, when necessary - I can catch wrong assumptions it made more easily - Good code helps the AI too, AFAICT",
+    "[Hacker News] For anyone wondering, it&#x27;s 2.4K lines of code. Very small, but yes AI is very impressive.",
+    "[Hacker News] I’ve only heard the term flimflam as a name for a scam that involves tricking a cashier into giving you a bunch of money with confusing overlapping talk.",
+    "[Hacker News] Wonder if someone might use an LLM to specifically vibe code a program that takes LLM code and makes it appear like non-LLM code."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT-6 built this earth exploration site in 5 prompts",
+      "url": "https://news.ycombinator.com/item?id=49665756",
+      "score": 24,
+      "commentCount": 37
+    }
+  ]
+}
