@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-11-오픈ai-나비에-스토크스-증명에-린-4-공식-검증-동시-공개",
+      "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+      "urls": [
+        "https://johndcook.com/blog/2026/09/09/formal-method-revolution"
+      ],
+      "publishedAt": "2026-09-11T06:24:20.867Z"
+    },
+    {
+      "slug": "2026-09-11-윈도우용-제미나이-앱-배포-시작-알트스페이스로-즉시-호출",
+      "title": "The Gemini app is now available for Windows",
+      "urls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows"
+      ],
+      "publishedAt": "2026-09-11T06:15:50.454Z"
+    },
+    {
       "slug": "2026-09-11-오픈ai-월-200달러-프로-구독-중단-아스트라-수요에-인프라-한계",
       "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
       "urls": [

@@ -1,0 +1,18 @@
+{
+  "articleText": "[Hacker News — blog.google]\nThe new Gemini app for Windows lets you access AI help with a simple keyboard shortcut, directly from your desktop.\n\nYou can now download the Gemini app for Windows to get instant AI assistance directly on your desktop. Use the Alt + Space shortcut to draft documents, manage tasks, or create images without leaving your current workflow. Visit gemini.google/desktop to install the app and start using it today.\n\nYou can now download the Gemini app directly onto your Windows PC. It lets you use a quick keyboard shortcut to get help with homework or projects without leaving your current screen. You can also use it to create images, write summaries, and organize your files. It’s designed to run smoothly in the background so it won't slow down your computer.\n\nToday, we're launching the Gemini app for Windows. Designed to work seamlessly alongside your favorite tools and daily applications, the new desktop app gives you instant assistance without breaking your flow.\n\nPress Alt + Space on your PC at any time to open Gemini over your active work. Whether you need a quick fact-check on a document or a few catchy title ideas for a presentation, you can get the help you need and jump right back into your workflow.\n\nInside the new app, you can access everything you use Gemini for already. Hand off multi-step tasks to Gemini Spark 1 , your 24/7 personal AI agent, or ask Gemini to draft a project summary by pulling information directly from your Google apps like Gmail and Google Drive.\n\nBring creative concepts to life directly from your desktop. You can generate custom images with Nano Banana for a presentation, direct a high-quality video with Gemini Omni 1 , and best of all you can do it all in one convenient place.\n\nLightweight and quiet, the app runs without slowing down your PC. This is just the beginning for the Gemini app on Windows, with more native desktop capabilities rolling out over time. The app is available today globally for Windows 10 and 11. Download the app at gemini.google/desktop .\n\nSign up for our newsletters with product updates, event information, special offers, and more.\n\nYour information will be used in accordance with Google's privacy policy. You may opt out at any time.",
+  "reactions": [
+    "[Hacker News] To be honest, I have no idea what kind of user the Gemini app was built for. It&#x27;s just too frustrating to use",
+    "[Hacker News] They already have antigravity for that, I can see these two getting merged sometime in the future.",
+    "[Hacker News] And will be EoL&#x27;ed in...one, two years?",
+    "[Hacker News] Interesting. I wonder if this will evolve into something closer to Codex or Claude Code, where it can actually work across files and tasks on your computer, not just act as a desktop chatbot."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The Gemini app is now available for Windows",
+      "url": "https://news.ycombinator.com/item?id=49653699",
+      "score": 9,
+      "commentCount": 4
+    }
+  ]
+}
