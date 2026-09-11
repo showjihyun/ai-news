@@ -1,0 +1,24 @@
+{
+  "articleText": "Iran-linked operators used Anthropic's AI to build targeting files on U.S. warships qz.com",
+  "reactions": [
+    "[Hacker News] &gt; https:&#x2F;&#x2F;www.anthropic.com&#x2F;threat-intelligence-report-septemb... GTG-30005: Military reconnaissance Naval reconnaissance In another investigation, we identified and disrupted an Iran-nexus threat actor that used Claude to collect and analyze publicly accessible data to develop targeting recommendations against US naval forces in the region. The threat actor used Claude to compil",
+    "[Hacker News] Anthropic really leaning into that &quot;No Such Thing as Bad Press&quot; theory aren&#x27;t they?",
+    "[Hacker News] re-report here: https:&#x2F;&#x2F;www.stripes.com&#x2F;branches&#x2F;navy&#x2F;2026-09-11&#x2F;anthropic-a..."
+  ],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Iran-linked operators used Anthropic's AI to build targeting files on U.S. warships - qz.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pcW9yLTNzbzhuZmtvV0pUTHFFTDR0SGdjNGwtbUk2OExLZm4xMXota0dGaFRvbkdTWnRhZS1KbnI5dTBvMDg4V2xGVUM3cjhrQS03dDdOSFo0eTJsS0NxRDduVlN6dXhEaUEtZlRBTjQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic Says Iran Used Its American AI Model to Target U.S. Navy Warships",
+      "url": "https://news.ycombinator.com/item?id=49658682",
+      "score": 16,
+      "commentCount": 3
+    }
+  ]
+}

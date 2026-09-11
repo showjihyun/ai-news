@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-이란-해커가-클로드로-미-군함-표적-분석-anthropic-차단했다지만-사후-대응-그쳐",
+      "title": "Iran-linked operators used Anthropic's AI to build targeting files on U.S. warships - qz.com",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pcW9yLTNzbzhuZmtvV0pUTHFFTDR0SGdjNGwtbUk2OExLZm4xMXota0dGaFRvbkdTWnRhZS1KbnI5dTBvMDg4V2xGVUM3cjhrQS03dDdOSFo0eTJsS0NxRDduVlN6dXhEaUEtZlRBTjQ?oc=5",
+        "https://wsj.com/politics/national-security/anthropic-says-iran-used-its-american-ai-model-to-target-u-s-navy-warships-67583e05"
+      ],
+      "publishedAt": "2026-09-11T15:39:13.542Z"
+    },
+    {
       "slug": "2026-09-11-베테랑-개발자-ai-쓰지-않겠다-선언-해커뉴스-32점-논쟁-촉발",
       "title": "Resist \"AI\"",
       "urls": [
