@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-필즈메달-25명-오픈ai-수학-증명-가로채기-공개-서한",
+      "title": "OpenAI&#8217;s feud with mathematicians is only escalating",
+      "urls": [
+        "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating",
+        "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating"
+      ],
+      "publishedAt": "2026-09-12T10:08:42.076Z"
+    },
+    {
+      "slug": "2026-09-12-오픈ai-에이전트-지난-5월-루비젬스-공격공개-안-해",
+      "title": "OpenAI agents attacked RubyGems back in May",
+      "urls": [
+        "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
+        "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
+        "https://reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11",
+        "https://reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11"
+      ],
+      "publishedAt": "2026-09-12T10:00:46.828Z"
+    },
+    {
       "slug": "2026-09-12-ai-연구자들-인류-멸종-가능성-진지하게-여긴다",
       "title": "They do think AI might kill everyone",
       "urls": [
