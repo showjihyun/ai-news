@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-ai-에이전트가-스팸으로-일자리-빼앗으려-든다-ilands-사태가-보여주는-것",
+      "title": "The Worst Spam Emails: Inside iLands' AI Agent Hustle",
+      "urls": [
+        "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang"
+      ],
+      "publishedAt": "2026-09-12T13:34:43.583Z"
+    },
+    {
+      "slug": "2026-09-12-wsj-ai가-수학-난제-풀지만-인류-멸망-위험도-제목만으로-해커뉴스서-갑론을박",
+      "title": "AI Is Powerful Enough to Crack Our Hardest Math Problems–and Kill Us All",
+      "urls": [
+        "https://wsj.com/tech/ai/ai-math-millennium-prize-safety-openai-anthropic-05179825"
+      ],
+      "publishedAt": "2026-09-12T13:23:56.122Z"
+    },
+    {
       "slug": "2026-09-12-필즈메달-25명-오픈ai-수학-증명-가로채기-공개-서한",
       "title": "OpenAI&#8217;s feud with mathematicians is only escalating",
       "urls": [
