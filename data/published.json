@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-13-ai가-기업-코드베이스에서-일할-수-있을까-새-벤치마크가-보여준-현실",
+      "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
+      "urls": [
+        "https://withspecific.com/benchmarks/real-swe"
+      ],
+      "publishedAt": "2026-09-12T23:21:50.124Z"
+    },
+    {
+      "slug": "2026-09-13-오픈ai-상장-연기-안전-이유지만-실은-자금-여유가-열쇠",
+      "title": "OpenAI's Sam Altman says it would be 'ill-advised' to go public in 2026",
+      "urls": [
+        "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
+        "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
+        "https://theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised"
+      ],
+      "publishedAt": "2026-09-12T23:11:30.534Z"
+    },
+    {
       "slug": "2026-09-13-후티-반군-클로드-ai로-미사일-유도-개발-앤트로픽-차단했다지만-사후-대응-그쳐",
       "title": "Houthis used Anthropic to develop guided weapons",
       "urls": [
