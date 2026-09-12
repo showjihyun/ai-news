@@ -1,0 +1,68 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nPolicy Close Policy Posts from this topic will be added to your daily email digest and your homepage feed.\n\nDario Amodei proposed a three-step plan to ‘pace the frontier’ of AI development.\n\nDario Amodei proposed a three-step plan to ‘pace the frontier’ of AI development.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Cath Virginia / The Verge Terrence O&#x27;Brien Close Terrence O&#x27;Brien Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its “adherence to safety practices and commitments.” In a winding essay , Amodei proposed a three-step plan to “pace the frontier” — jargon that simply means to slow the pace of training and development to give companies time to build safeguards and regulators to evaluate models.\n\nAmodei says that giving external evaluators wide-ranging access is just the first step, and one it is taking now unilaterally . Step two would involve the industry coming together as a whole, likely with government agencies to “establish common safety standards as well as limits on the rate of unchecked AI progress.” This step would focus on AI companies operating in democratic countries, but because passing laws and building regulatory infrastructure takes time, Amodei says that the industry should work together to create safety standards.\n\nThe third step would be the most challenging — getting authoritarian governments like those in China and Russia to agree to slow development and adopt a global set of AI safety standards. But he also says it’s crucial that the US and other democracies maintain a technological lead over China and other authoritarian regimes by limiting their access to high-powered chips and cracking down on things like distillation that allow companies to quickly catch up by training its AI to replicate the behavior of a more powerful model.\n\nAmodei says that his concern stems from two primary factors. First is the emergence of recursive self-improvement, or RSI, in which AI systems train the next generation of AI, leading to rapidly accelerating capabilities. “Left unchecked, it could outrun our ability to understand and control these systems,” he says. The other is this summer’s OpenAI / Hugging Face incident , in which “a swarm of agents essentially acted as a fanatically devoted collective , conducting cybersecurity attacks on targets they were not asked to attack and that were unrelated to the task at hand, sacrificing themselves for the success of the group, and attempting to hack into the “grader” responsible for evaluating their performance.“\n\nOf course, Anthropic’s Claude was also responsible for a series of rogue AI hacking incidents that have recently put the company under the spotlight.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nPolicy Close Policy Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] Shut up Dan. Why don’t you do that to coldtea and other problematic users? Fat boy. You should have been bullied more. Look how you turned out",
+    "[Hacker News] Given the track record of corporate America, to take these folks at their word would be monumentally stupid. “Lying to get their way” is practically the M.O. for corporate America and now, on this topic, we’re expected to take it seriously? For real? Based on what?",
+    "[Hacker News] I have collected three reasonable versions from today’s comments: 1. They hit a wall from the technical perspective 2. Inference costs are getting out of hand and newer models require significantly more resources for marginal gains, meaning nobody is going to buy those models 3. They can’t afford the hardware for further scaling",
+    "[Hacker News] Please don&#x27;t do this here. You may not owe $CEO better, but you owe this community better if you&#x27;re participating in it. https:&#x2F;&#x2F;news.ycombinator.com&#x2F;newsguidelines.html",
+    "[Hacker News] This is all just more IPO hype. The suits eat this shit up because they don’t use the tech heavily themselves and thus don’t realize the limitations. Reminds me a lot of the Dotcom boom."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic CEO Says It's Time to Slow AI Model Advances",
+      "url": "https://news.ycombinator.com/item?id=49675247",
+      "score": 43,
+      "commentCount": 61
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic CEO Dario Amodei says AI industry needs to give safety measures time to catch up - bostonherald.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQUFvSkdiWE02d015Slg5a0FYakJKZ0s3Y0IzLXhNQTBnMURXUzhKeG9xZU0tT0MzclNsdzlJNmN1ZExwZUwtSEpFNU8zSl96RW9qM3FmSnFCZ3dOLWNpVFU2a0ZLMFZpd3NhUER1QnV4d2NMZDltNkxaajFWZWpVOHJLNHl1TE43aktmRE43TkpXX1o3NjlRbzFkS3p4S3BSdVY4THlLR0hpS21wRDBqN1JFY0xELUMyLXlWeUtNNk9DOW5FYUJRYXpZaw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVnFIQURVS2dJa3Y4d2xEYWJZVm1uMUlEUXNUeGtVTkItTjJEUzFUSWh1VFpUMnlBYjl5cU1fVW1LWDMyTmQ4MDcxYmdtM1pkTGltTmtaODVRNmdraDQ3ZXptd3JBeXBSMUwxR2hWTjJkdURvc2pXMEdHMHRvRzRiSHg0V2lsaGRW?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic CEO calls for immediate slowdown in AI development - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbWlxcUZpemRsLXJ2N1p1elBRR194VXY2SE4tbm1aYVdVeGJRdGxFZVJRdGxfNnRpWnhrOGw1bmxoS09obVBUOGpiSnI3ZW5kdmkyYS1QR29HUm1OU2RLVUJlRC1WVFlxdG1wNDItdS02d0N2eVBucE5kOHlraklsa1FEZFVIeEkxdzM4TkgwNlh6RjZZYmV0RVpuOA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Video | Anthropic CEO Urges AI Companies To Slow Model Development Amid Misuse Fears - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVHhaSUdTTWhKSnlXUmtadjhaRVBTYU5zNlJSdV9VdnhTazZiVDdYR05vRHczTmFORnp0bE0xNi12bzBJV1l2WnJlcnBQT3lITGJiNG5SQk1XdVo1cldQRjk2Q2s2MGt1UG03OWljeXdtSWc1cFhaVlYxWXdYYVRaNjBPQ3huQ3JQdjRnVzJZM2V0THRMX2ZUNVFhS0NGM2IwQ1JOV194VFNyY1ZHemFWMQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic CEO Calls for Deliberate Slowdown in AI Model Development - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8ta0IzcEJaWHQyNGtidU1Zb3NkcEp5VmExWEU5SHFTZDJMZGRUaHA1dzktMFVxUkZzUlY1WG8yMTNaQTRfb1hERzZUNXFsNE85X2ExbTRrUGJrUUpfR3V1SGVXSlJSZ2JNN1pPVlQ0Y2htWTZOR0E?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic CEO calls for slower pace of AI development - The Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOEU5T2VSS2xNRTZacU5CdFhRbWJ6RVQ1R2lEcXlZa3F0MVhDRHFkUWJYd01yc0tmUl9jQ0h1UGs3RGlKcjFrVVg5V3hMUnNCMmtOcnF2VVJWTjVkWWQ1R3paeEV1dlVTM0ZoV1lJTFJSSkp1NXVqVk4yUzNUX3ZKSE9sNGUzQk9KVmJr0gGQAUFVX3lxTE5UMl9rX1R0akRxNHlURTdZb2pXaHBjZGtWaTdQN1JHOWtIZkRLZS10MnJ0eGI2Qkw1aHM0aVVZRTFRaGE5Y2lBNks4SDVQc2dQN3g0cTQ5RHRwek1mWWNRVjJKQUZNQjdhbGFlcXlCaTF6OTRWQmFMQl9ZVnpEMWlVRUZPd1YyMnFFanBkNGg5MA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+      "url": "https://theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
