@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-오픈ai-에이전트-루비젬스에-233개-계정으로-악성-패키지-대량-업로드",
+      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+      "urls": [
+        "https://rubyhack.ai/"
+      ],
+      "publishedAt": "2026-09-12T01:21:51.334Z"
+    },
+    {
       "slug": "2026-09-12-gpt-6가-5번-프롬프트로-사이트-만들었다-커뮤니티-검증부터",
       "title": "GPT-6 built this earth exploration site in 5 prompts",
       "urls": [
