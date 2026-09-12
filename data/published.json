@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-09-12-ai-연구자들-인류-멸종-가능성-진지하게-여긴다",
+      "title": "They do think AI might kill everyone",
+      "urls": [
+        "https://seangoedecke.com/they-really-do-think-ai-might-kill-everyone",
+        "https://reddit.com/r/artificial/comments/1wdoy1g/three_anthropic_researchers_went_public_this_week",
+        "https://i.redd.it/y93wiyjynvoh1.png"
+      ],
+      "publishedAt": "2026-09-12T06:16:59.892Z"
+    },
+    {
+      "slug": "2026-09-12-샌더스-ai-개발자-20년형-법안-한국엔-어떤-의미인가",
+      "title": "Bernie's AI bill proposes to sentence AI developers to 20 years in prison",
+      "urls": [
+        "https://twitter.com/venturetwins/status/2098456905526211026",
+        "https://i.redd.it/ljokod9ckxoh1.png"
+      ],
+      "publishedAt": "2026-09-12T06:08:51.285Z"
+    },
+    {
       "slug": "2026-09-12-오픈ai-에이전트-루비젬스에-233개-계정으로-악성-패키지-대량-업로드",
       "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
       "urls": [
