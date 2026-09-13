@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-14-앤스로픽-연구자-ai가-우리-모두-죽일-수도-레지스터-책임은-경영진에게",
+      "title": "AI models don't kill people – people kill people",
+      "urls": [
+        "https://theregister.com/ai-and-ml/2026/09/09/ai-models-dont-kill-people-people-kill-people/5295368"
+      ],
+      "publishedAt": "2026-09-13T16:45:31.581Z"
+    },
+    {
+      "slug": "2026-09-14-yc-탠-미국도-증류-허용해야프론티어-독점-막자는-논쟁",
+      "title": "Y Combinator&#8217;s Garry Tan wants US open-weight AI labs to &#8216;distill&#8217; frontier models, too",
+      "urls": [
+        "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
+        "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too"
+      ],
+      "publishedAt": "2026-09-13T16:41:21.710Z"
+    },
+    {
       "slug": "2026-09-13-엔비디아-1달러-투자에-100달러-회수-주장-주가는-왜-하락할까",
       "title": "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100",
       "urls": [
