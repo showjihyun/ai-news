@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-14-자론-라니어-ai는-없다-사람만-있을-뿐-스타토크서-주장",
+      "title": "There Is No AI (It's Just People) with Jaron Lanier",
+      "urls": [
+        "https://singjupost.com/startalk-there-is-no-ai-really-its-just-people-w-jaron-lanier-transcript"
+      ],
+      "publishedAt": "2026-09-13T21:20:52.918Z"
+    },
+    {
+      "slug": "2026-09-14-ai가-스스로를-개선한다-연구자들은-아직-멀었다-말한다",
+      "title": "AI researchers debate how close we are to recursive self-improvement",
+      "urls": [
+        "https://dwarkesh.com/p/john-beren-charlie",
+        "https://technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement"
+      ],
+      "publishedAt": "2026-09-13T21:15:58.052Z"
+    },
+    {
       "slug": "2026-09-14-퍼플렉시티가-gpt-6-아스트라를-실무에-쓴-이유",
       "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
       "urls": [
