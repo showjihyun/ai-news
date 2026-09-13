@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-14-퍼플렉시티가-gpt-6-아스트라를-실무에-쓴-이유",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "urls": [
+        "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+      ],
+      "publishedAt": "2026-09-13T19:08:50.081Z"
+    },
+    {
+      "slug": "2026-09-14-데이비드-색스-오픈ai앤스로픽-프런티어-모델-속도-조절에-규제-불필요",
+      "title": "David Sacks: OpenAI and Anthropic Don't Need Regulations to Pace Frontier Models",
+      "urls": [
+        "https://twitter.com/DavidSacks/status/2098973625252708460"
+      ],
+      "publishedAt": "2026-09-13T19:01:13.361Z"
+    },
+    {
       "slug": "2026-09-14-앤스로픽-연구자-ai가-우리-모두-죽일-수도-레지스터-책임은-경영진에게",
       "title": "AI models don't kill people – people kill people",
       "urls": [
