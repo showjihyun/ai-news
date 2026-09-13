@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] The path to deregulation creates a &quot;market for lemons&quot;. Suppose any bank was completely unregulated and could abscond with your money and the government would just shrug its shoulders. Great, now there&#x27;s no trust and everyone will go back to stashing cash under their mattress and you&#x27;ve killed the banking sector. The extent of regulatory capture in the US is a problem it&#x27;s",
+    "[Hacker News] I agree an argument can be made that not all the worst outcomes include restricting public access, but focusing on niche extremist groups (who might also get access to it through government programs by some of them being government employeed) is not a good argument to protect the public. Governments having unbalanced power can more easily lead to authoritarianism, and thus risk to the public.",
+    "[Hacker News] &gt; Do you think things like the Manhattan Project were a mistake Yes. At best now the mother of all cautionary tales.",
+    "[Hacker News] Good regulations would be very nice! Mandatory transparency into training and dataset usage would be a benefit for all, for example. Some sort of regulation or incentives against the most corrosive enshittification (AI call centers, AI therapists, undisclosed AI entertainment mills, etc.) would also be an overwhelmingly popular proposition. And enforcement of the CFAA on operators who let maliciou",
+    "[Hacker News] It is costly, especially right now. I don’t think you can make a case for it on cost savings! The throughput in a single stream is about 50 tokens&#x2F;sec (a bit less for prose, a bit more for code due to speculative draft acceptance rates) and about 2,000 tokens&#x2F;sec for prefill. Both numbers are flat and stable as context accumulates. That’s what finally tilted me away from the Mac Studio d",
+    "[Hacker News] You don&#x27;t need a datacenter to train a 30B model. Further, the rapid trend of increasing efficiency and decreasing model size for a given level of capabilities means that what is possible to do without a datacenter will continue to increase. Presumably performance on the level of the current frontier of AI would be achieved in short order and the ceiling would only continue to advance from th"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Everyone should slow down AI development except for me",
+      "url": "https://news.ycombinator.com/item?id=49678683",
+      "score": 342,
+      "commentCount": 189
+    }
+  ]
+}

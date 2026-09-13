@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-13-요슈아-벤지오-ai가-거짓말하고-속이는-이유-훈련-방식-탓",
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "urls": [
+        "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating"
+      ],
+      "publishedAt": "2026-09-13T06:32:28.234Z"
+    },
+    {
+      "slug": "2026-09-13-ai-개발-늦추자는데-나만-예외위선-논란-속-규제-논쟁",
+      "title": "Everyone should slow down AI development except for me",
+      "urls": [
+        "https://xeiaso.net/notes/2026/everyone-slowdown-but-me"
+      ],
+      "publishedAt": "2026-09-13T06:29:31.227Z"
+    },
+    {
       "slug": "2026-09-13-gpt-6-아스트라-달리기-경로-27분-만에-짜줬다-코드는-못-보여준다",
       "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
       "urls": [
