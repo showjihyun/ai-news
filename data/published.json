@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-13-gpt-6-아스트라-달리기-경로-27분-만에-짜줬다-코드는-못-보여준다",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "urls": [
+        "https://simonwillison.net/2026/Sep/12/astra-running-routes"
+      ],
+      "publishedAt": "2026-09-13T01:20:20.725Z"
+    },
+    {
       "slug": "2026-09-13-ai가-기업-코드베이스에서-일할-수-있을까-새-벤치마크가-보여준-현실",
       "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
       "urls": [
