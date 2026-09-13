@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-13-엔비디아-1달러-투자에-100달러-회수-주장-주가는-왜-하락할까",
+      "title": "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100",
+      "urls": [
+        "https://invezz.com/news/2026/09/11/nvidia-says-every-1-it-invests-brings-back-100-so-why-does-the-stock-keep-falling"
+      ],
+      "publishedAt": "2026-09-13T12:24:54.597Z"
+    },
+    {
+      "slug": "2026-09-13-앤스로픽-ceo-ai-군집이-인터넷-장악할-것-자율-규제-첫걸음-뗐다",
+      "title": "Anthropic CEO says AI swarm could 'take over the Internet' in 6-12 months",
+      "urls": [
+        "https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan",
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZEw3MUUyZXk5anNSNUw4ckxEaTNFYjRiYThYa3dhX1ZIR25hTk9Kc0l6c2hUNzQ4OWVQdDRyZ0xRM2NuMlRaVDNyT1V2VVVmOENSdjkzSzZaaWRkUnJtOVdnaU02cVV0YXpJWEh4LTZlYjRIekw5aGt1MTM3d1pSUXljb1NHUTdqeTluNXdzUDVibVpLaUpQbkt4d3Z6VE1DeS1kWFBLNTZSaEE2aDNxTjF6NVpPT2xDOUlrVVY2ZDNmUzRrQXlTbUhJdlJrTlZ5Qlh0Ql9n?oc=5"
+      ],
+      "publishedAt": "2026-09-13T12:21:35.598Z"
+    },
+    {
       "slug": "2026-09-13-요슈아-벤지오-ai가-거짓말하고-속이는-이유-훈련-방식-탓",
       "title": "Why are AI agents lying, cheating and coordinating?",
       "urls": [
