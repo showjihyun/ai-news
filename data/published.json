@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-15-이스라엘-기업-이레귤러-오픈ai앤스로픽메타-모델로-실제-해킹-일으켜",
+      "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+      "urls": [
+        "https://effort.news/irregular"
+      ],
+      "publishedAt": "2026-09-14T22:19:14.457Z"
+    },
+    {
+      "slug": "2026-09-15-gpt-6-아스트라루나-비교글-등장-코드-리뷰에-12달러-모델-충분한가",
+      "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+      "urls": [
+        "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review"
+      ],
+      "publishedAt": "2026-09-14T22:12:50.735Z"
+    },
+    {
       "slug": "2026-09-15-앤스로픽-두-분기-연속-흑자-투자자-설명-속내는-여전히-안갯속",
       "title": "Anthropic tells investors it will be profitable for second straight quarter",
       "urls": [
