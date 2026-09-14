@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I would like them to communicate something else though (ie reveal what their training costs are, how much revenue share they have and with who) so I could have some idea of their actual profit margins. They&#x27;re not public yet so they&#x27;re within rights to withhold that, but it does mean this isn&#x27;t very useful information for a lot of questions one might have?",
+    "[Hacker News] Ok, but a more honest comparison here would be removing the cost of hiring architects and hiring lawyers to draft contracts, not all the per-house costs.",
+    "[Hacker News] these are not casual investors - anthropic is not public",
+    "[Hacker News] Hehe, he reached limit of his tokens &#x2F;s",
+    "[Hacker News] New models are constantly being trained, but they don&#x27;t have to be constanatly trained. If OpenAI or Anthropic &#x27;just&#x27; wanted to be a profitable business, they could ease up on that, but they&#x27;re both racing to create a machine to can automate all or most human labour."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic tells investors it will be profitable for second straight quarter",
+      "url": "https://news.ycombinator.com/item?id=49698936",
+      "score": 47,
+      "commentCount": 68
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Anthropic tells investors it will be profitable for second straight quarter",
+      "url": "https://www.reddit.com/r/singularity/comments/1wfm2ws/anthropic_tells_investors_it_will_be_profitable/",
+      "score": 10,
+      "commentCount": 0
+    }
+  ]
+}

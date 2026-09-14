@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — macrumors.com]\nCode sleuth \"pdfu\" has uncovered iOS 27 and macOS Golden Gate private frameworks that show Apple has designed its new Siri architecture to work with third-party AI models at what appears to be a surprisingly deep level.\n\nOne mechanism called Model Delegation allows Claude to appear as a Siri extension in the same way as the existing built-in ChatGPT extension. In pdfu's video, shared on X , the macOS user brings up the \"Search or Ask\" bar and chooses Claude as the AI model via an \"Ask...\" contextual menu.\n\nAfter enabling the Claude extension, the user asks Siri to \"Ask Claude\" to set a reminder in Apple's Reminders app. Claude then interprets the natural language reminder request and Siri subsequently creates the reminder. The implication is that if the request requires access to an Apple system feature, Claude hands the task back to Siri.\n\nIn another example, Claude can be seen in a Siri app conversation window receiving a request to create a CSV file – something Siri itself cannot handle – and successfully returning the result.\n\nWhat's more intriguing is the second protocol demonstrated in the video that appears to go considerably further, and could really open up the AI landscape for Apple software requests.\n\nAn inference provider in \"Model Manager Services\" apparently allows Apple's own server-side Siri model to be completely replaced by another model, such as GPT-5.6. In this scenario, ChatGPT receives Apple's Siri planner prompt and tool definitions, which enables it to request system actions, receive the resulting personal data, and formulate an answer that Siri presents using its own interface and voice.\n\nAnd here's an app extension replacing Siri AI's server model with GPT-5.6 Terra. It uses the Inference Providing protocol in Model Manager Services. GPT-5.6 receives Apple's native Siri planner prompt and tool definitions. It can make tool calls that perform system actions, and... pic.twitter.com/cz88kyq3io &mdash; pdfu (@itspdfu) September 13, 2026 In the demonstration video, the user asks the ChatGPT model (within the Siri app) to find emails about a specific topic, summarize their contents and action points, then send a message to a person in the user's contacts via the Messages app. The response is then shown as logged in OpenAI's platform web interface.\n\nThe European Union's Digital Markets Act may have helped shape Apple's approach here, as it requires Apple to give third parties effective access to iOS hardware and software features available to Apple's own services, and the European Commission has specifically said this principle extends to Siri.\n\nThe \"Ask...\" implementation is currently limited to the ChatGPT extension in the macOS 27 Golden Gate Release Candidate (which is effectively the final version of the software set to be released later today), so Claude is not yet available. Meanwhile, Apple has not yet opened up the model delegation entitlement to third parties and it isn't front-facing to users, but it at least shows how extensively Apple has engineered Siri for future model interoperability.",
+  "reactions": [
+    "[Hacker News] &gt; The DMA requires interoperability so it requires being able to swap out Siri - completely I fully agree. But Apple is not willing to do that, and I don’t blame them. I actually think they’re right on that one personally, even though it would be a conflict with the law.",
+    "[Hacker News] &gt; Apple proposed a solution to the EU after reportedly extensive talks and asked the EU if it would satisfy them. The EU said “build it then we’ll tell you”, which is crazy. This is what Apple claims and I don’t think you should believe it at face value. The EU has an entire team working on negotiating the boundaries with gatekeepers. They have a vested interested in compliance. Apple’s claims ",
+    "[Hacker News] You don&#x27;t have to do it all the time as your primary interface. My wife asks Siri questions all the time while she&#x27;s busy. &quot;Siri, what&#x27;s the time?&quot;, &quot;Siri what will the temperature be in four hours?&quot; etc. It&#x27;s not &quot;terrible&quot;, it&#x27;s pretty smart.",
+    "[Hacker News] I hate to do this, but I decided to &quot;search&quot; google for &quot;gemiri&quot; just to see, and was presented with --- AI Overview The term &quot;gemiri&quot; is relatively rare and can refer to a few entirely different things depending on the context. Tech Slang (Gemini + Siri): It is a modern, informal portmanteau used by tech enthusiasts on social platforms like X (formerly Twitter). It d",
+    "[Hacker News] It’s a very low risk and low effort plan, even if it fails it’s fine. To be contrasted with all the AI players accumulating costs and risks for the AI rollout",
+    "[Hacker News] Because Siri didn’t seem to change over time. If they worked on it over the past decade it’s not to the point where it was visible to users."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
+      "url": "https://news.ycombinator.com/item?id=49695409",
+      "score": 206,
+      "commentCount": 139
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Apple Siri의 AI를 Claude와 ChatGPT로 교체할 수 있는 코드 발견",
+      "url": "https://news.hada.io/topic?id=33695",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

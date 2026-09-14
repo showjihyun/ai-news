@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-15-앤스로픽-두-분기-연속-흑자-투자자-설명-속내는-여전히-안갯속",
+      "title": "Anthropic tells investors it will be profitable for second straight quarter",
+      "urls": [
+        "https://reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13",
+        "https://ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002"
+      ],
+      "publishedAt": "2026-09-14T18:55:36.316Z"
+    },
+    {
+      "slug": "2026-09-15-애플-시리-뇌를-챗gpt클로드로-갈아끼우는-구조-만들었다",
+      "title": "Apple Siri의 AI를 Claude와 ChatGPT로 교체할 수 있는 코드 발견",
+      "urls": [
+        "https://macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+        "https://news.hada.io/topic?id=33695"
+      ],
+      "publishedAt": "2026-09-14T18:52:29.495Z"
+    },
+    {
       "slug": "2026-09-14-트럼프-ai-늦추지-않겠다-ceo들-자제-요청-일축-한국은-어디로",
       "title": "Trump rejects call by CEOs of Anthropic, OpenAI and xAI to slow AI down: 'Whoever wins with AI wins' - Yahoo",
       "urls": [
