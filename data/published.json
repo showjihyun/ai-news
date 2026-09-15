@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-16-오픈ai-스마트폰-카메라-스타트업-글래스-3억-달러에-인수",
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300M",
+      "urls": [
+        "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says",
+        "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says"
+      ],
+      "publishedAt": "2026-09-15T19:19:37.955Z"
+    },
+    {
+      "slug": "2026-09-16-구글-생각하며-말하는-음성-ai-제미나이-38-라이브-시리즈-공개",
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
+        "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking"
+      ],
+      "publishedAt": "2026-09-15T19:16:39.567Z"
+    },
+    {
       "slug": "2026-09-16-앤스로픽-공동창업자-ai-킬-스위치-의무화-필요-한국은-논의조차-없다",
       "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
       "urls": [

@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — techcrunch.com]\nOpenAI has bought smartphone camera maker Glass Imaging in a deal worth over $300 million, according to a report from The Wall Street Journal . The company, founded in 2019 and based in Los Altos, California, had previously raised about $30 million in funding from investors.\n\nGlass Imaging was founded by Ziv Attar and Tom Bishop, a pair of former Apple engineers who previously led the team that developed Apple&#8217;s Portrait Mode. This background directly informs the work they now do at Glass Imaging, where they use AI to overcome the physical size constraints of smartphone cameras. Rather than using AI to edit a photo after it&#8217;s been taken, Glass Imaging uses neural networks to learn about individual camera systems &#8212; like the different cameras on various smartphone models &#8212; to yield better images from the moment the shutter clicks.\n\nOpenAI did not immediately respond to a request for comment. The ChatGPT maker is rumored to be working on its own hardware, like smartphones , earbuds , and AI companion devices .\n\nIn 2025, OpenAI CEO Sam Altman and famed Apple designer Jony Ive revealed that they had been working together on a device startup called io, when OpenAI bought Ive&#8217;s company for $6.5 billion.\n\nLast day to book an exhibit table is September 18. Don’t miss out on high-impact leads, investor access, and a brand spotlight in Disrupt’s Expo Hall.\n\nEvery weekday and Sunday, you can get the best of TechCrunch’s coverage.\n\nTechCrunch Mobility is your destination for transportation news and insight.\n\nStartups are the core of TechCrunch, so get our best coverage delivered weekly.\n\nProvides movers and shakers with the info they need to start their day.\n\nBy submitting your email, you agree to our Terms and Privacy Notice .",
+  "reactions": [
+    "[Hacker News] World locked rendering isn&#x27;t a requirement for smartglasses. They do have more limited visual positioning systems.",
+    "[Hacker News] &gt;but it seems they are in software solutions Surely OpenAI can replicate that with their own tools in an afternoon and a few million tokens.",
+    "[Hacker News] HUD sure, but they are dumb displays, with no useful machine perception services (ie world locked rendering.) Basically you have about 130mw power budget. You need to do position, display, sound output, transcription, etc. https:&#x2F;&#x2F;www.secretbatcave.co.uk&#x2F;software&#x2F;musing-on-openais-d... &lt;&lt; an explanation here",
+    "[Hacker News] Be careful what you wish for, I can&#x27;t imagine anything more dystopian than OpenAI owning all our devices.",
+    "[Hacker News] They are just feeling around in the dark looking for the killer app to save their business."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300M",
+      "url": "https://news.ycombinator.com/item?id=49711240",
+      "score": 116,
+      "commentCount": 90
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+      "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
