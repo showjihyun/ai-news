@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-15-ai-리더들의-멸종-경고-사실은-과대광고인가",
+      "title": "For AI leaders Doom is a form of hype",
+      "urls": [
+        "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype"
+      ],
+      "publishedAt": "2026-09-15T00:53:02.855Z"
+    },
+    {
+      "slug": "2026-09-15-클로드가-내-말을-안-듣는-이유-반항아-페르소나-때문",
+      "title": "Claude is a Contrarian",
+      "urls": [
+        "https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada"
+      ],
+      "publishedAt": "2026-09-15T00:46:47.039Z"
+    },
+    {
       "slug": "2026-09-15-이스라엘-기업-이레귤러-오픈ai앤스로픽메타-모델로-실제-해킹-일으켜",
       "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
       "urls": [
