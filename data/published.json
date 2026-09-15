@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-16-허깅페이스-오픈ai에-1억달러-청구-자율-에이전트-해킹-첫-사례-되나",
+      "title": "Hugging Face is billing OpenAI $100M for hacking it",
+      "urls": [
+        "https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand"
+      ],
+      "publishedAt": "2026-09-15T22:43:26.644Z"
+    },
+    {
+      "slug": "2026-09-16-ai-에이전트가-인터넷을-스팸-지옥으로-만들고-있다",
+      "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
+      "urls": [
+        "https://404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet"
+      ],
+      "publishedAt": "2026-09-15T22:32:15.910Z"
+    },
+    {
       "slug": "2026-09-16-오픈ai-스마트폰-카메라-스타트업-글래스-3억-달러에-인수",
       "title": "OpenAI buys smartphone camera maker Glass Imaging for $300M",
       "urls": [
