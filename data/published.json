@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-16-앤스로픽-공동창업자-ai-킬-스위치-의무화-필요-한국은-논의조차-없다",
+      "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder tells BBC",
+      "urls": [
+        "https://bbc.com/news/articles/cqgk5e2j0gg8o",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LX1VWZndOZkpCRzh4M21BdnVxb0QwNGxiX3UxamJ6TlV4ZDZRZWlhY3RmMS14WjNDazU1YWpKMFF4THhWNFF3eDBndzBqdmRBcFl3dTBiTk1GaXM?oc=5"
+      ],
+      "publishedAt": "2026-09-15T15:40:10.878Z"
+    },
+    {
       "slug": "2026-09-15-f-droid-앱-102개-중-얼마나-ai가-썼을까-한-개발자의-직접-조사",
       "title": "How much of F-Droid is LLM generated?",
       "urls": [
