@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-16-클라우드플레어-검색엔진은-두고-ai-학습만-차단하는-기능-출시",
+      "title": "Stay discoverable in search while disallowing AI training",
+      "urls": [
+        "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers"
+      ],
+      "publishedAt": "2026-09-16T05:42:58.641Z"
+    },
+    {
+      "slug": "2026-09-16-앤스로픽-소기업-기능-확대중국-공격-공개-규제-진입장벽-의혹-커진다",
+      "title": "AI Regulation as Anthropic's Business Model",
+      "urls": [
+        "https://twitter.com/kevinnbass/status/2099621874279817638",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxPalhMUks2R1R1NGRHZy1MOEQ5bk0zN21JSzlTMnlHRi1iamlfVlFKajI5Uy1qTUM2YkFPa1pJdGh2b3JEZThQTkRaSWpRclN3cGU1TmUyc05iNzBWWU9GVFE3aDdoSXZNbWhjSTNfRzV5RnNBajRYQk9renh1YmI2cTNqQlcyMXJ3VTZrcmFSdDZMeERzNUhZZE5n?oc=5",
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMVQxMmtLYVdZYS1zcHRTcGNPMVRXWlZtV0p1YzFUYlBvOFhDenpqWmJiVHNHYklKU2QyRGN2SE1DWnI4Nmc2dnVoSnVTSFY5VVN1bzdzVnZ5X3NkX1Y3di1RSGVZakNhRW1lQ0NNaE5rMnJFUW5iY3dfSTdZTWUxaGxtLTB0UlZramlLbkYySmlzeUlfVUhacE5ndHo0STVFbHY0ckdsNkl2QmsxYk82RWh2UlVieENsMDBFQWNMQUFaajdkUFRDR2xIN2kwQlJzbzJUODZ2aVhtRzkxc0ZwYU1EUQ?oc=5"
+      ],
+      "publishedAt": "2026-09-16T05:40:15.176Z"
+    },
+    {
       "slug": "2026-09-16-허깅페이스-오픈ai에-1억달러-청구-자율-에이전트-해킹-첫-사례-되나",
       "title": "Hugging Face is billing OpenAI $100M for hacking it",
       "urls": [
