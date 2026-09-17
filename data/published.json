@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-18-ai-연구자가-우리-모두-죽을-수-있다며-사직-그-뒤엔-25년-된-인터넷-종파가-있다",
+      "title": "Sex, AI, and the Apocalypse",
+      "urls": [
+        "https://iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse",
+        "https://iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse"
+      ],
+      "publishedAt": "2026-09-17T23:06:56.324Z"
+    },
+    {
+      "slug": "2026-09-18-딥시크-v41-플래시-해킹-벤치마크-만점-하지만-실전은-다를-수-있다",
+      "title": "DeepSeek v4.1 Flash Is Now Our Best Hacking Model",
+      "urls": [
+        "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
+        "https://i.redd.it/wypizqswz4qh1.gif"
+      ],
+      "publishedAt": "2026-09-17T22:58:13.528Z"
+    },
+    {
       "slug": "2026-09-18-앤스로픽-클로드-코드-프로젝트-개편-멀티-에이전트-협업-베타-출시",
       "title": "Anthropic Redesigns Claude Code Projects to Coordinate Agent Threads - Unite.AI",
       "urls": [
