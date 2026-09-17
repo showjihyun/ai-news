@@ -1,0 +1,257 @@
+{
+  "articleText": "[Hacker News — claude.com]\nYou don’t have to choose where a task goes. Claude does more of the work.\n\nCategory Product announcements Product Claude apps Claude Cowork Date September 16, 2026 Reading time 5 min Share Copy link https://claude.com/blog/cowork-is-now-claude Starting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noon, and Claude takes it from there, even after you’ve closed your laptop. It’s rolling out on Pro and Max plans over the next few weeks, with more plans to follow.\n\nWhat Claude makes doesn’t need its own place either. Claude Docs and Claude Slides are new today, and Claude Design now works inside your conversations too. Ask for a document, and you and Claude write it together. Ask for a presentation, and Claude drafts the slides. You can edit directly, present straight from Claude, or download as PowerPoint or PDF. All three are in beta on paid plans, and Enterprise admins choose when to turn them on. If you use Claude Design on its own, it keeps working as before.\n\nWe built Cowork as a separate place for bigger work, and Design for visual work. People used both, and told us the frustrating part was deciding where a task belonged. What they’d started in one also didn’t carry into the other. So we stopped making you choose. Claude can now figure out what a task needs, so what Cowork and Design can do is available from any conversation, with the context, skills, and connectors you already have.\n\nA weekly report is due at noon. Before you head out, you ask Claude what moved in the pipeline last week, then add: “Write it the way we always do, flag anything that slipped, and put the highlights in five slides for the leadership meeting.” If something’s unclear, Claude asks. You can check progress from your phone on the way to the office. By the time you’re at your desk, the report is waiting as a doc with notes from your teammate, and the slides are ready to open, adjust, and download as PowerPoint. Both came out of the same conversation, so the slides already match the report. You fix a line yourself, leave a comment for Claude on a slide, and share it. Schedule it for every Monday, and Claude starts on the report without being asked.\n\nAnything you make with Claude Design, Slides, or Docs lives at one shareable link you can open on your phone. You can select an element and move it, or tell Claude what you want changed.\n\nYou can choose how Claude checks in with you. By default, Claude asks before taking an action. If you’d rather let it keep working and check in only when something needs a closer look, you can turn that on. You keep the final say.\n\nIf you mostly use chat, you don’t have to do anything different. When you want to hand over something bigger, try the next report or deck you’d normally build yourself. If you’ve been working in Cowork, everything is where you left it: your chats, projects, artifacts, connectors, and skills. When you open the app, pick up where you left off.\n\nThis is rolling out to Pro and Max plans first, in the Claude app on web, desktop, and mobile over the coming weeks to existing and new users on these plans. There’s nothing to turn on. Team and Free plans will follow soon, and Enterprise admins will hear from us at least 30 days before anything changes for their organizations.\n\nThe full list of capabilities is in the Help Center . If you’ve been saving up a big messy project, now’s the time.\n\nExplore more product news and best practices for teams building with Claude.\n\nProduct announcements Claude Code now supports artifacts Claude Code now supports artifacts Claude Code now supports artifacts Claude Code now supports artifacts Jun 25, 2025 Turn ideas into interactive AI-powered apps Product announcements Turn ideas into interactive AI-powered apps Turn ideas into interactive AI-powered apps Turn ideas into interactive AI-powered apps Turn ideas into interactive AI-powered apps Jul 25, 2025 Build and share AI-powered apps with Claude Product announcements Build and share AI-powered apps with Claude Build and share AI-powered apps with Claude Build and share AI-powered apps with Claude Build and share AI-powered apps with Claude Jun 17, 2026 Claude Design now stays on brand for daily work Product announcements Claude Design now stays on brand for daily work Claude Design now stays on brand for daily work Claude Design now stays on brand for daily work Claude Design now stays on brand for daily work Transform how your organization operates with Claude See pricing See pricing See pricing Contact sales Contact sales Contact sales Get the developer newsletter\n\nProduct updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.\n\nSubscribe Subscribe Please provide your email address if you&#x27;d like to receive our monthly developer newsletter. You can unsubscribe at any time.\n\n---\n\n[TechCrunch AI — techcrunch.com]\nAnthropic is merging its front end for Claude chat and Cowork, making it less confusing for people to decide which tab to use for different tasks.\n\nThe unified interface lets users access chat, Cowork, and Artifacts (Claude&#8217;s interactive workspace feature) within one window. Claude Design, which was introduced in April for website and prototype design, also works anywhere within Claude.\n\nBefore this rollout, the company said customers often struggled to choose the right tab for the right task. With the new design, Claude automatically routes requests without having to switch tabs or windows. The idea is to remove confusion about which feature to pick and use just one front end to route work to different parts of the app.\n\nHopefully, OpenAI also takes a cue from this rollout and fixes ChatGPT&#8217;s interface across the platforms.\n\nAnthropic is also adding dedicated features for making presentations and documents. Users can ask the AI assistant to create, edit, and present slides, and it can also download the generated presentation as a PDF or PowerPoint.\n\nSimilarly, with the Docs feature, users can work alongside Claude to create sections, ask questions, and comment on completed parts. Users can share generated documents or slides with a link and edit them on their phone.\n\nUsers can also ask Claude to start creating a document on desktop, and they can check the progress of the task using the mobile app.\n\nThese features are rolling out to Claude&#8217;s Pro and Max plans first, on the web, desktop, and mobile over the coming weeks. The company plans to extend them to the free and team tiers later.\n\nThe update comes in the wake of an upgrade of Cowork&#8217;s memory layer , which helps Claude remember user context across chats.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nIvan Mehta Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web.\n\nYou can contact or verify outreach from Ivan by emailing im@ivanmehta.com or via encrypted message at ivan.42 on Signal.\n\nOctober 13 &#8211; 15 San Francisco Last day to book an exhibit table is September 18. Don’t miss out on high-impact leads, investor access, and a brand spotlight in Disrupt’s Expo Hall.\n\nClean tech startup Fluxnium found a way to tap 50,000 years&#8217; worth of nuclear fuel Tim De Chant\n\nJensen Huang took a call from Trump, and showed off something else, too Connie Loizos\n\nThe 9 buzziest startups from Y Combinator’s latest Demo Day, according to VCs Marina Temkin Dominic-Madori Davis\n\nTesla says it will finally unveil the second-generation Roadster on October 1 Anthony Ha\n\nRevolut confirms customer data breach through fake government requests Jagmeet Singh\n\nMatt Mullenweg tells (trolls?) Automattic staff, saying he&#8217;s back in control after CEO ouster Sarah Perez\n\nOpenAI puts Pro subscriptions on hold due to Astra demand Sarah Perez\n\n---\n\n[Simon Willison — simonwillison.net]\nClaude Cowork and chat are now one Claude ( via ) In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code:\n\nStarting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noon, and Claude takes it from there, even after you’ve closed your laptop. [...]\n\nThis is rolling out to Pro and Max plans first, in the Claude app on web, desktop, and mobile over the coming weeks to existing and new users on these plans.\n\nI guess this means Claude is becoming a general agent in its own right. Echoes of OpenAI renaming their Codex desktop app to ChatGPT a few weeks ago.\n\nOn the one hand, this saves me some work, in that I was planning to finally figure out the boundaries between Cowork and regular Claude and write a follow-up to my piece on Understanding ChatGPT Work .\n\nI have a hunch that figuring out what this actually means in terms of features and surfaces is still going to take quite a bit of work.\n\nThis is a link post by Simon Willison, posted on 16th September 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] I see Work as the mode where you can generate and edit files without manual intervention. I tell chat to recommend me some books based on some of my favourites. Chat does it. I read some of them, liked some, disliked few. I give chat that information, it recommends me based on those, now I don&#x27;t know which of the entries are relevant or not. I don&#x27;t want lock-in, so I try my best to tell",
+    "[Hacker News] Here in Bangalore, you can usually book directly from the Google Maps listing. Or sometimes click a link that will open in Swiggy&#x2F;Zomato, and you just book from there. At least in this city, reserving a table using the apps you already have on your phone is faster than using an LLM. Maybe these products are for people who know about the existence of Claude and ChatGPT but not Google Maps?",
+    "[Hacker News] Can you standardize with all of your tools on a common registry key and settings paradigm and same plugin&#x2F;skills paradigm and common method for enterprise delivery? It’s a pain in the neck getting all of this set up and deployed throughout the org.",
+    "[Hacker News] This is so true, it really struck me, thanks. For me, this is the most important post of the week. By far.",
+    "[Hacker News] Defaults matter a lot. Before you had to intentionally be lazy to put together garbage and call it a day. Now your boss is telling you to use AI to &quot;speed up.&quot; The tool you&#x27;re pointed to presents like it can make the slide for you and claims to do so. Every signal is screaming that you&#x27;re supposed to be a lazy fraud, and people will, on average, take the path of least resistanc"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Cowork and chat are now one Claude",
+      "url": "https://news.ycombinator.com/item?id=49729412",
+      "score": 225,
+      "commentCount": 222
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic merges Claude chat and Cowork in one interface - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLTEzdFVRZC1oTllOZlEzMms5b3ZHeTZHRXR4SXBlX2U2RW1Ick04YUFJeW5SdVNsTzJzeXpaRmFsX2ZRZWh5eEVocU1QVEM0UkQ5Qm5qZTNocVA1LVY0Sms1cjVDQXhaMVpydWtFV1JoRGFlZVpkTU9GbjJ0ZVV6ZUVxMng2T0ZhalVON0ZmNjI0MkNrSFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Chat and Cowork, Adds Docs and Slides Tools - Technology Org",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbEhfM0Y0YWhwOEFtZWJ1VFJLVk50UHNjUmVIelJrUHcwR25UMDA1LUdLcDYtZEJSTkVlQ0RLbVFIa2hWVWN3dWJMa1RzcFNkcE9RX05Pak5rQUFGYW9aQ0JMWXFpLWtYRzY3WVBNRW5CbEZVU3VoQm1fUUpmX0xQRDliQXJmQV9QdlpuajVB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic brings Cowork directly inside Claude’s chat interface - SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQb3cyWk9mRmRrazhWVjlnN1ZjSHAtaU8wVlRwRnppUEl3bm1icG1tN1VrNEdqWWJCeG1oc1NJc1JPandiR0JQUjlDZTNVU0E1V1g1ZnFETVdhZm95aXM3akVnMlJVM05odlAwRjBlcmFmTjNjaEZ3WEJONngzQ2dHZUtVRFBwVjJJcW83XzB4TzMwQ0xrYkx4NEYwVTUzNFNi?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic is killing off Claude Cowork and folding it into Claude chat, launching Claude Docs and Claude Slides - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbjdwbkVvWTJnWXBUUWxSSkZ2dUw0ZWlZQVNTandzNzFHdGRRVTd5aFkxTHVDb2NGNF9kbUdyM3FHOXFsSTVYTXZ2TXRfUGNZWC1UbkVkMWFDOXJicW1VNW5ERnNxdjJ2RThaRWxIQ3c2Y3N4b3VyMTZOdkY1N1VvbmpmLTdiOVZ1LVdGSTN0STRPWmNGY2xHeWlQRC1pdzF5emJydEpnWEhvV3VoSVV3VTFCaUd3ZDJhcnVNenJaZFM2RV9xT1RiMXB4WGpJZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Combines Claude Chat And Cowork In One Interface - Dataconomy",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORE5haFdpb0lVUXJZODhwVXRKR0doN2Q0MUhzRVJtWmt2U1VKSkN2N00zU0djQmhWYUVIQTRpOUo1cEJxTnRJX2VhTWRLM2xHN3R1TERrdXUteEJEQmk1cnJiSEl3ZFNSVkFzekpCSWpQeWpfblFhVEJReDZOZkxQZGpCd3VfYXhURUhUaTFnQlhJY0R0enJXbQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Simplifies Claude’s Cowork and Design Tools - CNET",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUXFQa04xTWVkMGFQWElHQ3RTWmQxZmVjN0JPZy1sczJiYmZQelgzRmZuemNhWmUzOEh6TmFWQ3lBaDVIc0ctZG13LVVQYkRlUWhtNlVlRWpVOHl0ajNMUkV5eEtTcVhhcGk5Mk1ZYXVlNjZYRnlTNEhUVHdwWFF4bVVONmZQMDVoUUw4UVQxSUFMUkhoSFQ1OWE1Q2lJeVJxNFNycjI1TENpUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic integrates Claude Chat and Cowork in major AI assistant overhaul - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM0c2NVpKYWtGeWJobmVXM0E0MWdPcnZPMXh2Qm94T3V6d1JSaWNCOXNaZHJJUEdRQWtxLUJZZzFYVXJNd21pZWFXc0NfakdpcEkwLXhkcnJIY1UwcWpwZjVtYUIzT1ZCQlNTcFNTclNXQnp3QjcwbUstMERYckRJSkZCdGhaaDRhX1BWbEd0M1hBUGxMd2E5aW1DcFJtcXZ4U2Vvc3NBN1JwWHVKQjRfLTZmNTJXQkp5QklJ0gHAAUFVX3lxTE44TGt2azJEVGpEVmlkUEx5RTR1QmFJZWVhcGZHb2E5azhFQjRRM3A3b3FZc0lKWGJ3eXNjRExEc01LZGQwSVZSVHJDdXhRUzVzVVM0Y3dLWUZKcWNzQTZlMk9QRmlzOUZMbXVwaTVfM3d4VU5oMlNWOFJiam1GS0FTQkNKQzROd1g1dUhvSzZqQzdVRFlvSEFzQTZhSTA5dXNqSnhiLWFOV1dkSzJlUlJXQlNKNGRKQ0pzSGhnblFEdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic merges Claude chat and Cowork into one - zdnet.com",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4zMDFJaDFWUXJQQmNIb1lkRnVxZ2tnMFgxTGhBb2hteG1MejVfNDdxQ1pJanBSdWNTbDRCYTFFYmdqa0gwUExZZW5wVTBQS01yNkpDNktBSl9iWF8tNHpwaEVHWjJDZThlblRRMWRJamtsV2VfMzI3Vmdn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Brings Cowork And Design Capabilities Into Claude Conversations — Pro And Max Rollout Starts First - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd1dMR2luSFB5LU00NlFTRllkMlVJN1RNYnFrMFpaVFV0ZGdlR2hQRDR6NTQxRDJSUTkwVk5ZcUtZT3pwR3ZNSm1Iamw1RklUTXNHVXZVdDZZSTJCcUF0eVl1ZjVtWnVWRHZXTkFKX0VzTGl2bzYtQ21OdmozUGgyWDYxWVJ4ZWhadlo5UTZ4NzlmU3dpU0R6d1hCLVRiNDlSeDRRdURCbjZTcVZSY2VnZU40UmZXTFdCZkQ5SmMtVFc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic merging Claude Cowork with chat - 9to5Mac",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Ka2o1QkN2d1B1dFdaV2R3aFh2b295cmQ0MHVRUEs2OXFTQTlXZzJOUjcweklhMWExSnZBbWxWWkNxTVJ5eGdrc3lKQm1qLUNmZlUwQVAwMzV1d1BiM3lnb1VteUUtLWw4MFlRSnpsZlhoWUJOcFIwRnJoazlFUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Goodbye, Claude Cowork: Anthropic Launches Docs, Slides, and Design - Basic Tutorials",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU0ZCTmVWbzMxQkFJbVNqc3c2TzhSSGRIcXB3VEY4SF9UOVBBSWUxUEJpQ2NRSVJtYTFKc2R3ZnQxaGZHREt4Sk5TVVNMeXlNMGNJU3Fkd3hyVHhqeHh4NWw1Ykd2cnFaNHk2X3BjdVZIQTk4MWwyTWtreGNrdmI1OWdjd2hBcTY3TzR2OUVzN2s4WmYxLUs3Y1FVZENBdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic merges Claude chat and Cowork features into one interface: Here’s what it means for users - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPcVVCa0lVenl2VUl0MkxNdEZ1TmY4SkJYeHVnSDhNVkFOcnZFMjlnN3hpS2FtT0dyMUE3RnVpdFQ0cnpuMXVfLXhkdXNDWDhDc2xjTVgtU19MZGVfdy1Cd09UOFV4Zkd1OXlBZXdlUUw0bXNnRGhWdnpzSkF6YUxmbkRVWTVvLUhCRzZYVzdSbGhTVC04NWV3XzdqYmdHODk4Nnp1VjFxdUJhTmdPeXBGRzZlbUhBaGFXNjRBWVBfc3ZuRDh6UjZnR1ZtUGI0LWtCZHFwaVk1anBBN01OTzl5Zl83cmY1TF8zWnRoUEtnS2hSbUJ3Y0VVd3d5OWc5YXNha3ptX1M5ZlFlZ0VG0gGSAkFVX3lxTE5DNmpWZS1JYzdraU5hcUVfNzJWV3pDb1hZQW9xdUdyZWJGblh4TDE3cldFQzBtMFVOalpaS25zVlpKZjZzVnl1S1loLTNPaWxqMnlHUkNfRkNyNHcxNko2QnpzNDFPRG4yYlc4NUJjaHZTQTZwcUhESHRlLXVkX2o1Y3IxcEhFMmhYVDZ1TzdJRlE0RndWVTNFWjVzZ1N3ZXV3MTNOX3pIQm9RdzltR3pFc2hWSFpIX3VXdHZ4X2M2LUNKdUdNRmNSb1hPUnFTeGFNY0xEbFBIcEw5SlVoYXUybWFEYW5DLU10OHRNZGxWNmtDUmxvUjlXY0VJWGVDUllfQUV5TVVfRFdxY2lmY2VjcVE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude gets a major upgrade: Anthropic brings chat, work tools and design into one place - WION",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSGdJdnkxNU1ocW1HSTVrbDR6R2dfaDZSQ3EyWk1Uei1FcFR2dHVjTDBMNlZ5b0d5UGhWOVFiOGxONEh1VkVCUmJ4RGVSam5rVkNQT3lNYjRicFhDX1QxX2ZOS00yck9qOHBNYXhFbUI1MkpJeEJvSG1NT2ZIX0xXYkJFOGV1Yzc4bF9XYzVBZDB1NXhvSlFkOXhHT0E3dVhaZ2NhdHJZT1R0Qmpwd2c0UWJvN0pXU1V6VXl3c3hmQmdZaWNYdDZCNnpsd2kxVEtS0gHWAUFVX3lxTFAtem9HTjQ2UGp1SG1aR2Njb0lUb2ZaaHkwcGlEc2FUNjh0RmJxSTBCUXExYXJmazlyaWphVWhHeXFncFA0TnpTQ0tjSWVQeExyT3NvOGhmTXptM0NKZWo1TjRGWGVDbEo1YXdQM1BuSFVEZFFvTWJxUnFqQks4d0JPRFhFZmo1Mm1ERFVnV1UtZmVRdWZ2UzA0STNiX3dHNlNYdTNIRWZ2em9YTEJIbHdFaTAzY3ZGUnpNbkhsZ1JwZlZ4M0hFcWRHdzY1M2Y1ZElleFlGSEE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Cowork And Chat Into One Claude, Launches Claude Docs And Claude Slides - Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZE9RQ2tDb0puLXN4M3pKZElBano5T0xqVzhnMzM1Yl9rbkR1XzJTWEN4TkRGUlpTbDR5NG9POFVUQmZrdW9sQlI0RG5sVVU3VzZrdFloeDlDMlg4RjUtVmdXRDlOUGo0U1RXMWFuYWRhTXNEcmt6SGkzZ0F6Q2lhSG1YVEpYRG5pRE5NNzl5N2l4bzRJMUJRNk42U2JvY0YwTlQtdUhBSXpuaUdNSERSbGFoUE3SAboBQVVfeXFMT3FYYjNKZDhWbVQzVDJQYnpDQkQwMUdZbzBBSENMZTBTd2NuWDZXNGhFb1k4NU5LblV1dkdsNG51VVpoWVRVUHhaelI5b1drNTUwYzNCWEtSY1VieWFtYW5QWDFKY2tWTVhyQWY4VVZCTkh2WWxnV0x0NXhnTVk2cDZaOXpQRUI1RGdSODdtOXpGTm5tTDhTanR5ZTBuTXk1cWJkUnZoTTBVcU96TWRHenhic1NqMTA1Q1Bn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic is merging Claude Cowork directly into Claude chat - Neowin",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSWt4TXNheW9zWDdWQnZQV205QnVieTdTSkRha1NRZlBXclZic3FnLVowbGxVcDV0bDBUVGtiN0JpRTZHdVhrNUFXNWk2bGhzZzJuanlaWkltbWlSb3I2XzlvbWZuSF90S2phQjY1czU2akpwODZpVkRMajZjZGg1UEVHYXFlb2xFU0Q3aHdLUnBRT3c?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Cowork and Chat Into One Experience, Bringing Research, Files to Every Chat - Gadgets 360",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR0NIUHRIQXFmY3JmNHVJWk9qdktiWmw2Tm03czNQSFQ3ZEt3a0lvRFNXRGtjR1l6MzB3S2RLeVhpQ2V3akNiaG5vcGxoUzIyQ2U3U2NQck9Ld2dmdlk5RHllSHJQaEtfeUpBLWZtZm82UGVCRjVoNjdYcFlZM3lQaUZmVGtSc0tlNmxtVVVBTFVhenFWa0RQNmFEUUtNLWhDT1HSAacBQVVfeXFMUDdKSm4zMGJGb1pOeWJscTZOUjdMM0Q1OUtXdVo4cVZXNDhaZWdBS3hNU0lnMXRUaEI1azJrQ0hOQldIYUNFbXV6TmZlQjVvWGMyR1hMaG0yWnlfUE5ablZzRUo2cVFTUTZzRlJGN25sUFpPbHJnZ3FLMWFDdGtKMmxXRTJTLWVNcmtFY3BMR0h2bUphZlZqdFJaUTNjWUphYkpDTHlnNmc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic merges Claude Chat, Cowork, and more into a single product - the-decoder.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSXktVVlQdVRhakNfYVpoYXUzTmRfdm1Va0puZllnUVBYclRrN1dtSmRTMUh4YjVNbGJsR252ai0tTGF5M3lrVVY1YkR2WWJYMkZ1QTdRQ08zQmJQTFRtQUVqendQVjhndG9PVVQtMHROWF9ldTM5dVU5RFBDekxvR0d3U2lKWFlmZllGVE1tRDA0b3R0dkE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Chat And Cowork, Claude Now Decides For You - yellow.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mbXZXeFJLOTAzNl96YTlTN3Jka2tXeVhSMmtvVzk2Y3dJdzVsa25SN2JveTBuUTdBd0NRVW9XLUh3RzRHcHYzWXZMUmQzaU8yS0ZrY1JKQmNXRkh5MHlsRGtZUjNFOGtnalpF?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Cowork Into Chat and Adds Docs and Slides | Ukraine news - #Mezha - Межа. Новини України.",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hbTFjWVlVZkVma0NrbU9kYnRjcHhCTHZiSGVvN3E0TTc3M0ItdVA2c1pjZTlUXzh2WXFTc2cxRGlUcTRUR0tVT0FzMFg4M3dNSzlxMG1EUFhQZWhtNHJHbUpNeFdQb1ZDRE5CTXpvek1QU2dUd1E?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Chat and Cowork Into One Interface - XenoSpectrum",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhVWRrOTB4RDl1NVdFVzBZY2dKX2FvYzBPWC1GdXJIdGZxRG9UNjRHYlltZ2daY2tiQkdyNk9VLTZXTEV2aVFPczBuSFd6VVRIZ0xSel8zakRDX0FObmVuQV9Pb1o0VmVqTnlneG10RFhlWlk?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic brings Claude AI tools into one interface - news.az",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44QVN6QjFmNzBqQkdRMVRKRG1ETkhIaFY2R1lubWF2b3ZMdFVCVzBqNE8xdTQ5QlNHZFRFNU05cmJ6aTBNMDQxbEhJWlpXU2pmeHBNOGJ6N2g1LTdXR3ZqMzBrbmttYno0eUFmMzl6WU03UmEtei1xVFlUc2k?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic to fold Claude AI features into one interface, launches document tools - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQM1ZuNlk1Tjd5a254b0V0S2pxZVhoZzIzeGxaOWhCS1dEWGlQWlliMzlUNHgtREdMZXhlVU4yUXpzX0hnd25mcHFxbE9CVWVtS0hlN0JZZnRxUHlLandueWVJUkxMcU5BYkRIMXV1M0IwN1ZiY25SOWw4VVotdG5hdGVHdmJuYjhTa2tiRTRiSVFJelpRX3hKT3pINTZWZWx2Z1hNQ3BCU2M3ZW82ZXJlbUZuSGVjc3NjUWVLdnE1djN1SVU1V2FibDA2UjBYQnNUVDJRMThZc1lkSUxpbmk3M1VjYw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic folds Claude Cowork into Claude and adds Docs and Slides - NeoTeo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa3FLdUxOcVhrdjNoWXl4MlkyMGJTZ19YTWtQVkMyeE5URjdxNThTbHN6T2hfMHpFVUk0VzRMd1NOQmFLZUxyeERacnZrRDBBTlZSWWVhM05URDlBMlRNUHE2aThUZE1ycUdTenA0elRBbUZFZXNUdG41QUhseVRkWnVfdmxMaFlKZTZWQ0xZa0VMMC0zU3k0?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Which Claude Do You Use? Cowork and Design Move Into One Simple Interface - PCMag UK",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUHhZeE10eEduaEYzVDhVS3N6SkNNUk85VUp2c09IT3NuRk1DbEZ1Wjg2NGtWeDNQZmtqb29HR09LbWFRcFl1WlR1dmtzdW5GbUhRWEtGeEZnY09qVWdCRktyZ3JVOEprRHpGbXZEM1BIZjc0SjAtNTU0eVJvVjI5VGhQb05TbmZtVXlrSmNlMlBwQ0d2WmZEX2ZjeDMzZGFjbE5CcGhn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "What's New wIth Anthropic's Claude? - benzinga.com",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTjNfUHdValFUZjhxeXVkcHI3ZTdmb2F2RXJvYUxLeVFxRHlSeXRsLWpVM19aMEVRaVBMVjViZC1JTGw1X2xpNGZiT3JkWmN0SDdHM1haRUp3T09KdF9ScHlMRFdBTGRWOFVBOFAzVXNQb0lMdTVLdHp4LXVIOXRkdjRKeDgwVV9qTmpid0E1dEJFQkUzVF9RbWwyNXM2NFRib0piaDYzTXMzRng5R2JodktMUGhtUWh3elRwc05JbnNOcnl0R1ZzZXIybXBKU29PUmhv?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Merges Claude Chat and Cowork Into One Window - SQ Magazine",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSjByQ0pObllzS01CemRIU2YwYzA5OUpsSmFQTHV2M016UEI0WG5ORllzSDdDbVMzYi1FUGNKNFNhYWE1RFJhRDkxMGJ2YUtLV3NYUHAtdHF0dTZRZC03MDJsZ3Z1aGlpcU9UX1NOOXhaNHJaRzc3RzlybXZVYUExLQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic is Profitable — If You Ignore the Cost of Building Claude - finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOalFaMlV0NDlwenB5UFduQlI0Q1FCeUNZd29SWUxMM1J6YktMcXpSTmE2WW5zVy1GYWlqT1BUdkNNeDNLZkhtWmgxS1M1WXY0SU5FV3BuZEtFNHlkSGQ0b09ESkJ3TWNubEpFTWJrdFlRZ1gzZ0ZBZnJ4RWFpaUp3WUtIdHRvTTl4UXBEakhuYTY4WUFOZDhlN3VXVVl0N2tzMFM4N0FNMmg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Docs and Slides tools in Claude - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOV25KYTRXSzJiOF9sb2M4aWU4TEZEalJpb1o1cVg1a2pEcHFVcjZvc29YY2Jza182SWxhbzB0VWo3aXdvbE9sYW1vZU1RVWhib3FUUEtTMlNRWHVodW1CSHYwNXBveDFfODFHLUNJZVo0M0tfZzd6ZW9wc2o3REJaR1ZQcGUwR21BdlNwY0tITQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Streamlines Claude Into a Single Workspace, Adds Native Document and Slides Tools - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lU3ZqVVR3dXN0OUtVMVRyNE1BcVVqMTFQYVhFS2FKeTFGa3JuRXN2TmwtMWtjYmFvbVNUbndVdHF6QzBDbHB5UGRTeEIyaTVnYkZJSkpEOWhxdlNxSnNHcjlGRFdYdkhUUHpXdTRhNGpyeVVLTkE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Novo Nordisk and Anthropic Collaborate to Advance Drug Discovery with Claude - marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQ08xblFvcDhVNnhPVFplMC02aUNzOFVmSkwzSWVGUkQtcEZkUXpyY3UwenZlalU5U3M4NWM2dmJteEhBbHlqdE94QkJRd3hxVExVRjItaW8yb1RoRy1zUnZ1T04xbmE1MktwUEtVMkptM3NOR2RvTDNSNWpiU3dEcmZpSjNjTjlXTlBJLXNMU1Q1SkhzQWJhMHNYSVV6RjcycFpDWEdieW0yUk5nWnQydnVMaVJJdC1EZGFRX1pEVFhibDh5OFBWUw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Anthropic merges Claude chat and Cowork in one interface",
+      "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Claude Cowork and chat are now one Claude",
+      "url": "https://simonwillison.net/2026/Sep/16/one-claude",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Claude Cowork and chat are merging into one Claude",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wi1wfu/claude_cowork_and_chat_are_merging_into_one_claude/",
+      "score": 9,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "New feature: Claude Slides, Design, and Docs all in chat",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wiaogy/new_feature_claude_slides_design_and_docs_all_in/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

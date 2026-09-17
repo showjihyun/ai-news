@@ -1,0 +1,67 @@
+{
+  "articleText": "[Hacker News — bbc.co.uk]\nTo play this video you need to enable JavaScript in your browser. This video can not be played\n\nWatch: Tech firms are \"essentially seeding a new silicon species\" says Microsoft&#x27;s head of AI Mustafa Suleyman\n\nThe head of Microsoft AI has warned that without adequate safeguards, the development of AI could lead to the emergence of a new \"silicon species\" which competes with humans.\n\nMustafa Suleyman said rival firm Anthropic is treating AI like it is human, an approach he called \"misguided\" which could create technology that humanity cannot control.\n\nSpeaking to the BBC&#x27;s Today programme, the chief executive said it was \"right\" for people to be concerned about AI, but there were \"very practical things that we can do\" to control it.\n\nThe comments are the latest in a series of stark warnings from the AI industry about the technology&#x27;s possible dangers. Anthropic has been approached for comment.\n\nWhy are there concerns AI could threaten humanity, and how real are they?\n\nPublished 3 hours ago OpenAI boss says world &#x27;right to be afraid&#x27; but should trust AI firms\n\nPublished 1 day ago Speaking to the Today programme on Thursday, Suleyman warned against firms continuing to create AI systems capable of setting their own objectives, earning money and owning assets.\n\nThat would mean \"essentially seeding a new silicon species\", he said, which could \"no doubt compete with us for resources, no matter how much it cares about humanity and loves us\".\n\nSuleyman&#x27;s comments to the BBC follow an essay he published earlier this week , external , in which he questioned Anthropic&#x27;s approach to training its AI model Claude, despite praising boss Dario Amodei and his team as \"intellectually honest people\".\n\nIn it, he criticised Anthropic for teaching its AI to have human-like qualities, a practice known as anthropomorphising, which he said made it seem as though Claude had its own desires, values and sense of self.\n\nHe also warned tech firms risk creating something \"impossible\" to control by treating the technology like a human.\n\n\"They do not feel, experience, or suffer. They do not have innate preferences or underlying motivations.\n\n\"They are sequence completion engines, internally hollow, designed to follow instructions, and accomplish goals set by humans.\"\n\nImage source, Bloomberg via Getty Images Image caption, Dario Amodei is the head of the AI firm Anthropic, which Suleyman criticised for treating its AI as if it were human\n\nThe Microsoft boss said greater transparency was needed around how AI systems are trained and evaluated.\n\nThis, he said, included independent scrutiny of AI behaviour and stronger tools to monitor and control the technology.\n\n\"We must not sleepwalk our way into a decision we later come to bitterly regret,\" he wrote.\n\nDame Wendy Hall, professor of Computer Science at the University of Southampton, described the comments as \"the sort of conversation we need to be having internationally\", contrasting it with the \"histrionics\" from some AI companies which she said only served to \"scare everyone\".\n\nThe question of how much autonomy AI systems should have is increasingly dividing the industry.\n\nSpeaking to the BBC about an upcoming AI summit, Suleyman called for \"alignment\" to create technology that must be \"subordinate\" to humanity.\n\nAlignment is a field which aims to build human ethical ideas and principles into AI. In other words, it aims to keep it on track with what humans value.\n\n\"I think that the good news here is that everybody who is human is going to have a very strong interest in making sure that the systems that we all create and... are used around the world in every nation are safe and controllable and subordinate to humanity,\" he said.\n\nMicrosoft founded its own superintelligence team in October 2025 and the company, much like its rival Anthropic, is also pursuing efforts in advanced AI development.\n\nSuleyman&#x27;s comments reflect Microsoft&#x27;s initial draft of its Humanist AI Code of Conduct , external , a \"training manual\" published on Monday for how the company is developing its AI, which sets out the idea of \"humanist superintelligence\".\n\nThis, the code states, is \"very advanced AI that always works for people, stays within limits, and remains under human control\".\n\nThe company&#x27;s vision of a \"humanist\" AI highlights the central challenge facing the technology - how to make it more powerful, without losing sight of the values it is meant to serve.\n\nHave you been affected by the issues in this story? Share your experience\n\nContact form Contact form Sign up for our Tech Decoded newsletter to follow the world&#x27;s top tech stories and trends. Outside the UK? Sign up here .\n\nOpenAI reveals six more safety issues and unveils plan to disclose incidents\n\nAI staff &#x27;genuinely frightened&#x27; for humanity&#x27;s future, ex-Anthropic researcher tells BBC\n\nA backlash over data centres is another threat to the AI juggernaut",
+  "reactions": [
+    "[Hacker News] Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49727580 .",
+    "[Hacker News] I just read another long post on HN about whether AIs are conscious and should therefore have rights. That decisions could massive effects, and making them appear to have emotions is therefore a big impact, not just unpredictability.",
+    "[Hacker News] If AI ever truly becomes some super-intelligence far beyond people&#x27;s comprehension, then how could we even predict how things turn out? If things go poorly in the future, then I can absolutely see it being something unpredictable. There is a lot of hubris in predictions about LLMs. If an AI were so intelligent, then it would probably be intelligent enough to want nothing to do with us. Still,",
+    "[Hacker News] I would also argue, that the addition of kinship and belonging should not be under appreciated. It can form a basis of goal alignment. In human history.. when groups form and there is an &quot;other&quot; group, this usually leads to conflict."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Microsoft says AI rival Anthropic could have 'disastrous impact' on humanity",
+      "url": "https://news.ycombinator.com/item?id=49727661",
+      "score": 40,
+      "commentCount": 3
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft AI chief warns Anthropic’s AI approach could have ‘disastrous’ impact (MSFT:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMi0wc3puWGNvZmhoM1FBU0ltdVV4SkhOeWkyN0ZBQi1rYmhTc2JzUXJtVjRDcmZ4TzFabTBKOWFXUEkyY2xkeEdyeDFfRVJHRWNrWEhfcDR5eEdJWjgzMHFPRnJ5T2hCM3B0YWhhZ05JNTVSVUJCd2ctQmtCQTM2cDFfSDZDckZveTVvOG1PbXQ1a2t0WFZFZHRyWm9BTE9Ld2hFM3BsczJtbWU2QkhqWDdSaDE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft AI chief warns of Anthropic’s approach to Claude — MyJoyOnline - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNS1hZTNaYUFKWjhlNkxXSE1mMTJvRnB3WTdWUlpQa01tY19MbGJTSFNVaFFhQTNPQVdqTlhOdXZJX0pIOU1VdVczTVpiT2ItY1FTd242Zk03enBiMXJIQWxrWmxtZ2pvR1R6aXE4VC1lYm5sSE01N1VmbGp1VC00SC1DMXZaSVlzclhoYnBmOHBweUhPTE9mUmd5My1wTnNmQWhHbnM5X2lmVDFFODNBUWZB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft’s AI Chief Takes Issue With Anthropic’s Claude Training - Finimize",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdWJSX2RVZ0xZR1dSYzFlLXBXczNkMEphT3NDNHZIVUg5Y3ZGREJhMkh5LUtoU2NZMmVXeWxvbGs3Zkh4N1VOSFJSazFtQlFobHpQdjQ4eTAzSUpOcmZxUFFUalBJUXc0WDlwTklqTHA3cjJDdlBQSUFFRldpY3ZZcUpIMHNVZEVuZm45MG53clRPdTg2bGc4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft AI chief warns Anthropic's Claude training could have a 'disastrous impact on humanity' - Tom's Guide",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOS29WZS00M1JKSXI4OVJfbFFVbU53M2Rwa2w1UW81UDFNV3luM084SVZ4RG44ZzZwX2lUbHRURWRSOGdjRldyamtlaEdCWDlWXzJXS2VzT1Y2Y2hVZ2ZrTmhwMEI3NXZXdXJSQ0hyanZ4TW8tdFl5d0w4WWdzbWR1eGRZeEpaQTJGb0NMNHRDX2VoZUU5SkNnZ2pOWF9fbHJRVU5JRVdDOUsyWEl5NENmTGlWUjhnNnRJSE5wV2JPQ2NtSFliVWhUbEpaX2tWbEZVel9FQ3lGTDNVaGxSbk94ZGEwSXpkTmZ5dE5TU2xRamNiLXZpWWlEWFZVdEdVVEhQUUl4dHIySUlSckJYWGJNNXBlQ2pnUVdSaVRMSW5ZenVYYTh5dUxONGI2ZFNMcmJ5bFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft AI CEO warns Anthropic’s Claude ‘consciousness’ approach could make AI safety harder - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNalloblA0bjBzektlNGk3bmNac2FFcmlrWWE4ejJXS2pMTXRwc0F0N3VJV3E2SktHY1RCNTlHVzFXS0dxR3RvdEpaQUJSWmg5a1ZwaFR0TUE2Um1xN1pUeHVxWm9YX1hLSTcyQkhnTFNocVNXMWdKUXN0eUhvcDNZd3FVVmpOVjEtYW14Z3FtalU5MDFQRjBuWU84UVAzWUtfYmwwX3F3MDZjTzgyOUJjTzlfM0Zqa1pSZm5kWU9seDlGSmk2TEJ4c3FaUWMwMkZkSHVrV193MDdjWkhBNTE0YzRadFk4V3R3aVHSAe8BQVVfeXFMUDFvRlhHd1dyUWI0dFpiTDFDNGlKZl9zUUw3cVYzRXZKSUgzX0VpeV9HdlNHRnp1Y0U4dmF0a0RMX19RMUtWem9KcVFKUE9xUkhmZmlQbGRsZkVKWGdabk02anhDLWNFRzJMMTBhaVljWlVxZlVOQVZCNWVpMHl4dmhiZHlFVElIVUxzem9xSnhDa1VfX0pFYi0xeGMyWUxxWGxnRDVvY1NRLXJ4c3p2MUFVY1hhS1YyM1N4bmhFRXI2RUs1enVVYzJISTdOVkhGNGFNdUFVNS1UUFFFeUFHOERtakJ4Sk9YX0tRVTBGcUU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Microsoft AI chief warns Anthropic’s approach to Claude could have ‘disastrous’ consequences - aa.com.tr",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTTZQT0dkXzRrd3ZKMGVILTVOdE5PUU1fQ05kQWlvNWE2azFZRUZOTTFjSUs2TmlOVGprSjZ3VzBTaDl0VnJMazV2WDB3TEdKLXVwYWhBRzdEZ3N2YzcyUmdSY3FrOGdvZkhYT2N1WEo3NVFuR3lWSHNUaWF4dFU3QWFKZ2M2Rnc2SFlyVVF4Mi1tVlJsaFdoS0ZBeXpGM081YUhoV3NQM0Z4Rnk1S0xyZkU0TUR5Z1VpUFlwRnh6bmJHMWF2dDZtLWpCYTItZmEwcm1wVHVfZjdFdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic says Claude was used in Russian cyberattacks - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPejF0bkFJa2VncDB2Y0NIZjFUMW1ydWVVY240RHdxV2Z2OWJ6MURnVlJBWWVOT3lTQTRnMkhIRUhpRjBBaDJRVTlLWnpDMlM1VFlrcmRyLVJ4anZnV0hjZGlINWVVY3VObHZEbjJyTXRUd3VNc29LVWh2WHhhai1PRTBCTFhxQ2NYclhTOFpUNTFKa3QzY2E3M2tRb1I1ME0?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
