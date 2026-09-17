@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-18-제미나이-9달러로-직접-만든-ai-월-구독료-아꼈다",
+      "title": "I had Gemini train its own replacement for $9",
+      "urls": [
+        "https://petervijeh.com/projects/reddit-ner"
+      ],
+      "publishedAt": "2026-09-17T17:31:47.841Z"
+    },
+    {
+      "slug": "2026-09-18-ai-멸종-논쟁-연구자-10-확률-vs-과장-맞선다",
+      "title": "How, Exactly, Could A.I. Kill Us?",
+      "urls": [
+        "https://newyorker.com/news/q-and-a/how-exactly-could-ai-kill-us",
+        "https://technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all"
+      ],
+      "publishedAt": "2026-09-17T17:26:03.399Z"
+    },
+    {
       "slug": "2026-09-17-ms-ai-수장-앤스로픽-방식-인류에-재앙-ai-인간화-두고-업계-갈라졌다",
       "title": "Microsoft says AI rival Anthropic could have 'disastrous impact' on humanity",
       "urls": [
