@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-18-앤스로픽-클로드-코드-프로젝트-개편-멀티-에이전트-협업-베타-출시",
+      "title": "Anthropic Redesigns Claude Code Projects to Coordinate Agent Threads - Unite.AI",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV0lhaWdKNC1VekFkMHFlSTdMSXJDcEJYT2g1SkFwZWdIVDZqT0c4QXdIVGNLd29wdGFKcC1HM2FZZEx6Q0N4M0JHR2xBVGxLaXRxSDhING85V00zRTRFRkZyemFRQjdlZEUzZno1ZFNQbUlmdmN6dzVwNUc3S3pOWjdaNFBNRGZXb21fczRTMmpNbDQx?oc=5",
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbTBlcjdGdFhPa3dTNzJqdHNjM0JET3MyRGlQZnM4U09SLTg1d2ZBaHM2XzJZVUJEQWtlQjROSTlLSnZ0MWdvakZrblF2MFNSOFE4QzE2ZW8wUnNMYzEwOVlyelVSV19IcTc1MmpzVGRZbDFSS1AzUHlINDlBdTVNSFk3VFJaWkRybnNCb3p3RkhUNTdUYktFcHdZV0E3dm01WHpwZ25CVGlYM0hmOUJneW9mcw?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+      ],
+      "publishedAt": "2026-09-17T20:32:27.599Z"
+    },
+    {
+      "slug": "2026-09-18-ai-대화-기록을-다른-에이전트로-옮기는-스킬싱크-클로드-코드만-지원",
+      "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
+      "urls": [
+        "https://news.ycombinator.com/item?id=49743049"
+      ],
+      "publishedAt": "2026-09-17T20:27:04.565Z"
+    },
+    {
       "slug": "2026-09-18-제미나이-9달러로-직접-만든-ai-월-구독료-아꼈다",
       "title": "I had Gemini train its own replacement for $9",
       "urls": [

@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Yea, it&#x27;s Claude Code only, but it runs some Python to turn the JSONL into markdown (importantly, with full tool inputs&#x2F;outputs) then instructs the session to load every single line of that markdown, which Claude Code will do in chunks. Certainly we&#x27;re often resuming the session directly as a handoff, and it works for that, albeit with some context overhead for the markdown reads (t",
+    "[Hacker News] Very cool! I created something similar (with the same name), but in 2 tools. One to share skills (skillsync) and another to share context (contextsync). I like to create a design with one model, sync it to another and iterate on it, then potentially go to another to apply&#x2F;implement.",
+    "[Hacker News] kudos making the core open source. if you didnt do it, i wouldve. good luck",
+    "[Hacker News] Thank you! let us know if you don’t see your harness &#x2F; feel free to raise a pr",
+    "[Hacker News] that&#x27;s good to know, will try skillsync out when I get the chance!"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
+      "url": "https://news.ycombinator.com/item?id=49743049",
+      "score": 26,
+      "commentCount": 33
+    }
+  ]
+}

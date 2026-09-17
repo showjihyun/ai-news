@@ -1,0 +1,27 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nProjects allow users to control a team of Claude Code agents that all coordinate with each other.\n\nProjects allow users to control a team of Claude Code agents that all coordinate with each other.\n\nStevie Bonifield Close Stevie Bonifield News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: The Verge Stevie Bonifield Close Stevie Bonifield Posts from this author will be added to your daily email digest and your homepage feed.\n\nThe revamped projects feature in Claude Code allows users to run multiple agents under the same roof, with a shared memory, goals, and library of files and artifacts. Similar to Grok Bot and other tools that manage groups of AI agents, each project has “threads” running different tasks in parallel, with a “coordinator” directing everything:\n\nUnder the hood, each thread is a Claude Code cloud session working on its own branch and copy of the repo. The coordinator keeps work organized, but if any threads work on the same code, the overlap is resolved as a merge conflict just like any other PR. Each thread can further split its delegated work into pieces using subagents, loops, and workflows when needed so large assignments finish faster.\n\nUsers can interact with each thread individually, or monitor and update things through the main project chat. At launch, threads run in the cloud, but Anthropic says support for local tools and code is coming “very soon.” The updated projects feature is available in beta starting today for “select Claude Pro and Max subscribers,” with access expanding to all Pro, Max, Team, and Enterprise users later, as well as Cowork and regular Claude chats.\n\nStevie Bonifield Close Stevie Bonifield News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nI wore Snap’s $2,200 smart glasses Claude comes for Gemini with its own take on Docs and Slides The Verge Daily A free daily digest of the news that matters most.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Redesigns Claude Code Projects to Coordinate Agent Threads - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV0lhaWdKNC1VekFkMHFlSTdMSXJDcEJYT2g1SkFwZWdIVDZqT0c4QXdIVGNLd29wdGFKcC1HM2FZZEx6Q0N4M0JHR2xBVGxLaXRxSDhING85V00zRTRFRkZyemFRQjdlZEUzZno1ZFNQbUlmdmN6dzVwNUc3S3pOWjdaNFBNRGZXb21fczRTMmpNbDQx?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic updates Projects in Claude Code to coordinate AI agents — The Verge - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbTBlcjdGdFhPa3dTNzJqdHNjM0JET3MyRGlQZnM4U09SLTg1d2ZBaHM2XzJZVUJEQWtlQjROSTlLSnZ0MWdvakZrblF2MFNSOFE4QzE2ZW8wUnNMYzEwOVlyelVSV19IcTc1MmpzVGRZbDFSS1AzUHlINDlBdTVNSFk3VFJaWkRybnNCb3p3RkhUNTdUYktFcHdZV0E3dm01WHpwZ25CVGlYM0hmOUJneW9mcw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
+      "url": "https://theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
