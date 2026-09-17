@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-09-17-오픈ai-모델-정렬-실패-6건-첫-공개-감시-20만-했다-자인",
+      "title": "Our framework for reporting model misalignment",
+      "urls": [
+        "https://openai.com/index/model-misalignment-reporting-framework",
+        "https://marktechpost.com/2026/09/17/openai-releases-a-model-misalignment-disclosure-framework-with-3-review-tracks-and-6-incident-reports-from-rl-training",
+        "https://openai.com/index/model-misalignment-reporting-framework"
+      ],
+      "publishedAt": "2026-09-17T08:06:01.771Z"
+    },
+    {
       "slug": "2026-09-16-클라우드플레어-검색엔진은-두고-ai-학습만-차단하는-기능-출시",
       "title": "Stay discoverable in search while disallowing AI training",
       "urls": [
