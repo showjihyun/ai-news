@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-앤스로픽-클로드가-차기-버전-개발-돕는다-단-한-문장-발표가-전부다",
+      "title": "Anthropic: AI model Claude helping build next version of it - The Hill",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHoxemhKVmppRHBIV0dMLWJMeGlDc20wWVRNNWxDYnJ0bDVQa0dMTTF0R1lqbFc1dkZ1dW1yc1FfangzZVFYNU4tSERIREhkQlU3WDBVM3Z0dnp0TVlfaWxRcnNtWnhLMVZvZmwwZkpwWm40cDdELXRKYXAtQUNRemhZZXRGVUVSQjRmSdIBkgFBVV95cUxPcF84cVk5cjh6MmVnUG1zZm1YYkFnOTJ3b3V2SDVpbmVTOHJMTDdqY3dFOUZFRjJmVW5ld1VOUFJiUldvMFZXbF9EUjVWYjdZcVF0ZTJZNHhVaWFCbnBEaEFzc0w1RU8wSXJqZlFKZTdKMHdycVN2SUdqWTJOWG9rTG9CSGtmV1BUSnc5YnV0a0lGZw?oc=5",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTGVRMWttSER2aTljc2w3RjQ4WVNSQno4Z3FmaUVGSmllOXFKRzkzUmJXT2R6MHhZSzhaTVp2RTBXSzNJNzQ3YThfNmdWNUdEN0dNUXhwRWdxa0p0V2FFaGtlRHVHLUpmdDctWDg1N2ZnM2FWeVFZXzJOS2g5T05yYnZPYmJOMzdqeDAwUlNvMFV1TDc0MDhoVjVvVXhyRmRwQUVGdg?oc=5",
+        "https://news.google.com/rss/articles/CBMijAJBVV95cUxNLXZUblJEY1lKZE9BcVduRGxGblBqQUFCUUN0cmpDb1NvTkxsOTdYUTl5aXRmeEozZ0pWZHEtWks0alk3VVEtVVpHMll3MTRxMTZ5aVFyS2dlV2lrekJuZXNCTG9jOXVmTHRZbjV4UFRDWm5ZX0JiSHpYSmFWWGRJd0czNlo2WUNGd3NqMWhEaTBkbWlraTAxSVdBYlpjWFdyTjBDQVdYMXFWSHJyOUZEYmNpR0IwWl9RSENPQm0yb2tjV1RLbXhxZnJpZXdqc3NXMVNPRlhldGhGbjQ5SjlPR0xCSER3cjRrdkNoWVVUNzQtZS01SVlYcW95ZjRfNEpzWGlPbXdSSV9XeFFR?oc=5",
+        "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNnMwQUdYSDZfUmc3cklsUlhjTXFYbFl1TmdjcHJBUVNLbUR1RTdJU0g4dVpRTnBPQnBDdW92dWpBWFRjTkYtd25EQUQ3STZHdUpYQ29BN3pfTUhIMUk5c2o0bzdWSUM0Xy1yRXh0MTlKZHRoZVVSWWFPT2tpUXVJVGFRNTZMbnJSaUR3V2g2TGdtNkdrbk84R3J1dUZqb3E4Sm1xV3BrLTdwbkZ0SmNZY3ZiNnY2bEwxTXZNdkJxQjRLc2t0U2R6YUJKSGlzTFdkSmcxRGxGT1hGRG1iV3Z4cTJ2RWJBWWxQU3JtbGpxdWg4OXdBMnlPb0tB?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdGlEUGlWSWVnSGpDdEpSY0pwZ3BfOHV4dm5ockFhMFpLcGlQeWpud0xjSGtKc0ZwbWtfSy14NW1JWlc5ZGFFaGlKbUN1REtFSzlVb3JhRDZWLW5xc0dfV0w3WkNTZGJZaGpiN0h0Sko5dXV5blRoUGNrY2ZJVC1OZjlQel91WWtnUWtURXdMaEQ2SHNDYWFhUnVOamhsOXFQLXVN0gGjAUFVX3lxTE10aURQaVZJZWdIakN0SlJjSnBncF84dXh2bmhyQWEwWktwaVB5am53TGNIa0pzRnBta19LLXg1bUlaVzlkYUVoaUptQ3VES0VLOVVvcmFENlYtbnFzR19XTDdaQ1NkYlloamI3SHRKSjl1dXluVGhQY2tjZklULU5mOVB6X3VZa2dRa1RFd0xoRDZIc0NhYWFSdU5qaGw5cVAtdU0?oc=5",
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1oOHlldW9tRWhOaWVqZW9XU3ktRklZMXF1Wk5ETGFvRVNLYVFXcmN6YXcwS1ZUb3FSM0N1eDR4aU9ZNGo2MVAtb0RvZXRlbGRwVzlQbXhreDI?oc=5",
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZlBwbU5HUHZpSDRtQ2ZxODBfRWdHQTR2UTZTOVFmQTUyb3QtSkN6c21KWEFlVC05cFVvNUZOOVMzVlRPYmRkSDVlemk4dFlmSkNSOEFFZEU4U2FqMmFBLWNNNFNHbjZHcDVxeE1EN1EwN2pwXzBScXk4RmhRUkZOcUQtZDlBZ2RyRWVadmFGREdJZm1LeVpocUt3Nkl4bzRhZjdwQU9adms1OUZlTGEtNHdKaGMzSnFRa0NOZGVDbWZlNWpXcTFj0gHHAUFVX3lxTFBmUHBtTkdQdmlING1DZnE4MF9FZ0dBNHZRNlM5UWZBNTJvdC1KQ3pzbUpYQWVULTlwVW81Rk45UzNWVE9iZGRINWV6aTh0WWZKQ1I4QUVkRThTYWoyYUEtY000U0duNkdwNXF4TUQ3UTA3anBfMFJxeThGaFFSRk5xRC1kOUFnZHJFZVp2YUZER0lmbUt5WmhxS3c2SXhvNGFmN3BBT1p2azU5RmVMYS00d0poYzNKcVFrQ05kZUNtZmU1aldxMWM?oc=5"
+      ],
+      "publishedAt": "2026-09-18T22:18:01.551Z"
+    },
+    {
+      "slug": "2026-09-19-미-군이-ai-허위-보고로-중국-함선-공격-직전까지-갔다",
+      "title": "US Military had close call after using AI for hallucinated intelligence report",
+      "urls": [
+        "https://cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship"
+      ],
+      "publishedAt": "2026-09-18T22:06:18.050Z"
+    },
+    {
       "slug": "2026-09-19-오픈ai-gpt-6-아스트라-포-로-발표-법률-특화-모델-검증은-여전히-진행-중",
       "title": "OpenAI: \"Introducing GPT-6 Astra for Law\" (new model \"gpt-6-astra-law\")",
       "urls": [
