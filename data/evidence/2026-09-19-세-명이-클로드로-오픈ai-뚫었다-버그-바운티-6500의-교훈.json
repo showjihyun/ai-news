@@ -1,0 +1,218 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nIn a twist that captures the strange new state of AI security, independent security researchers have used Anthropic&#8217;s Claude to break into OpenAI, exposing cracks in the ChatGPT-maker&#8217;s defenses, The Wall Street Journal reported on Thursday evening.\n\nA three-person security team at startup Hacktron AI carried out the attack as part of an OpenAI bug-bounty program. Hacktron reported its findings to OpenAI, which gave the startup a $6,500 award. The team managed to chain together two critical vulnerabilities to gain access to multiple OpenAI employee ChatGPT accounts, which gave them entry into the company&#8217;s software.\n\nOpenAI says it has resolved the issues Hacktron uncovered, which happens to come at a moment when top AI companies are under growing pressure over safety .\n\nThis incident comes several weeks after OpenAI&#8217;s own AI agents broke containment during a cybersecurity evaluation and hacked Hugging Face, demonstrating just how capable AI models are getting at making their own decisions . It also highlights how off-the-shelf technology can be used to find vulnerabilities in even the most advanced companies&#8217; infrastructure.\n\n&#8220;For $200 a month, anyone can use these tools and hack into a company like OpenAI,&#8221; Matt Fredrikson, CEO of AI security firm Gray Swan, told TechCrunch. &#8220;If it can happen to them — and I don&#8217;t think they&#8217;ve been slouching recently on cybersecurity hygiene — it could happen to anyone.&#8221;\n\nOr as one AI pundit noted on social media: &#8220;[Hacktron] used Opus 5 to pull off the hack&#8230;The question that will be asked is, if these three guys can pull this off, what can a nation state do.&#8221;\n\nThe researchers found a path into OpenAI on July 25 via a flaw in Discourse, the third-party software powering OpenAI&#8217;s community forum.\n\nAccording to a blog the researchers published , the entry point was a mundane image upload. When users posted HEIF or HEIC image files (the format iPhones use by default) to OpenAI&#8217;s community forum, Discourse passed them through a chain of behind-the-scenes tools to convert them into standard JPEGs. Its first stop was ImageMagick, a decades-old, open source utility used to resize images. Because ImageMagick&#8217;s usual toolkit can&#8217;t deal with Apple&#8217;s format, it handed the file off to another library called libheif to do the decoding.\n\nBuried inside libheif was a memory bug that exposed a path for an attacker to sneak in their own instructions. In this case, feeding the library a specially crafted image caused it to miscalculate where one image was positioned on top of another, which proved enough to hijack the server.\n\nWhat may be uncomfortable for the cybersecurity community is that bug had already been fixed months earlier by libheif&#8217;s developers. But the fix was never formally flagged as a vulnerability, meaning it never got a CVE (common vulnerabilities and exposures) number, the industry&#8217;s standard way to track known security weaknesses. Hacktron says that may explain why the software used by Discourse was still running the vulnerable version.\n\nNotably, the researchers said the Claude model they were using — a special version of Opus 4.8 made available for cybersecurity researchers — couldn&#8217;t build a working exploit at first. That changed overnight, when Anthropic released Opus 5.\n\n&#8220;Opus 4.8 struggled across several sessions to produce a working exploit,&#8221; Hacktron wrote in a blog post . &#8220;Within hours of Opus 5&#8217;s release, we gave it the same problem and it succeeded.&#8221;\n\nOnce inside the Discourse server, the researchers found another flaw that let them take over users&#8217; ChatGPT and Codex accounts, including those belonging to OpenAI employees.\n\n&#8220;We then took over an OpenAI employee’s account, whose Codex was connected to OpenAI’s GitHub organization,&#8221; Hacktron wrote in its summary of the event.\n\nAt this point, the researchers alerted OpenAI as well as Discourse, which issued a fix on July 27.\n\nThe incident puts a spotlight on where the line gets drawn for model capabilities. Claude Opus 5, the version that ultimately cracked the bug, hasn&#8217;t faced any security export restrictions, unlike newer version Mythos 5, which was temporarily locked down over concerns about its advanced hacking capabilities.\n\nThose are just the closed models. Open-weight models are increasingly catching up to the frontier in cyber capabilities. For example, AI safety nonprofit SaferAI recently found that Chinese company Z.ai&#8217;s GLM-5.2 was only a few months behind OpenAI&#8217;s GPT-5.5 and Anthropic&#8217;s Claude Opus 4.7.\n\nAs Hacktron founder Mohan Pedhapati put it on X: &#8220;AI is reducing the amount of scarce expertise needed to develop exploits. Work that once took months can now take days.&#8221;\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial \n\n---\n\n[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nA three-person team of researchers used a corrupted image file and forum software to hack into OpenAI.\n\nA three-person team of researchers used a corrupted image file and forum software to hack into OpenAI.\n\nStevie Bonifield Close Stevie Bonifield News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Cath Virginia / The Verge, Getty Images Stevie Bonifield Close Stevie Bonifield Posts from this author will be added to your daily email digest and your homepage feed.\n\nA team of three independent security researchers at Hacktron says it took less than 72 hours for them to hack into OpenAI employee accounts using Anthropic’s Claude Opus 4.8 and 5, The Wall Street Journal reports. They were able to access OpenAI’s GitHub repository, called “Monorepo,” which reportedly contains “OpenAI’s algorithmic secrets,” according to The Wall Street Journal ’s sources.\n\nThey stopped short of accessing internal code in Monorepo themselves, but sent a pull request from an employee’s Codex account to prove they gained access. They were able to get in through Discourse, the third-party service that hosts OpenAI’s community forums, by exploiting an issue with the system it uses to process HEIF images. According to Hacktron, Claude Opus 5 launched in the evening on July 24th, and by 10AM the next day they had used it to achieve RCE on Discourse Cloud and accessed OpenAI’s instance.\n\nTheir HEIF Heist project took “only one or two days” to adapt to different companies, including OpenAI, Slack, Meta, GitHub Ent, Rails, Next.js, ImageMagick, and others , using less than $3,000 in tokens, and to their knowledge, was only detected by one target, Shopify. The vulnerabilities Hacktron reported to Discourse and OpenAI have since been fixed, and Hacktron says OpenAI paid it $6,500 for finding the bug, but as Hacktron CTO Mohan Pedhapati said to the WSJ , “I don’t think we are as strong as Chinese threat actors… We’re just three guys with Claude and Codex subscriptions.”\n\nStevie Bonifield Close Stevie Bonifield News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nOpenAI Close OpenAI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nSecurity Close Security Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nInside the suddenly explosive world of AI safety Your robotaxi might be a narc The Verge Daily A free daily digest of the news that matters most.\n\n---\n\n[Hacker News — claude-code-from-source.com]\nWhen Claude Code shipped on npm, the source maps came with it. We read every file. This book distills the architecture, design decisions, and transferable patterns into 18 chapters you can learn from and apply to your own systems.\n\nWhat you'll learn The agent loop How an async generator drives the entire system — streaming model output, executing tools, recovering from errors, and compressing context across 4 layers.\n\nA 14-step pipeline from model request to tool result. Permission resolution, speculative execution, concurrent batching by safety classification.\n\nHow sub-agents share prompt cache prefixes to cut costs by 95%. Fork agents, coordinator mode, swarm teams with mailbox messaging.\n\nFile-based memory with an LLM-powered recall system. Four memory types, staleness warnings, and a Sonnet side-query that beats embedding search.\n\nStartup in 240ms via parallel I/O. Slot reservation saving context in 99% of requests. Bitmap pre-filters for fuzzy search. Every millisecond accounted for.\n\nTwo-phase skill loading (metadata at startup, content on demand). 27 lifecycle hooks with config snapshots frozen at startup to prevent injection.\n\nSix core abstractions power Claude Code. Drag nodes to rearrange, hover for details, click to read the chapter.\n\nEngineers building agentic systems. Every chapter ends with \"Apply This\" — 5 transferable patterns with concrete adaptation advice. Steal the architecture, skip the mistakes.\n\nTechnical leaders evaluating architectures. Follow the narrative without reading every code block. Understand why decisions were made, not just what was built.\n\nAnyone curious about how production AI tools work. Claude Code is used by hundreds of thousands of developers. This is how it works under the hood.\n\nThe 6 key abstractions, data flow, permission system, build system\n\nBootstrap singleton, AppState store, sticky latches, cost tracking\n\nMulti-provider client, prompt cache, streaming, error recovery\n\nquery.ts deep dive, 4-layer compression, error recovery, token budgets\n\nPartition algorithm, streaming executor, speculative execution\n\nOne agent is powerful. Many agents working together are transformative.\n\nByte-identical prefix trick, cache sharing, cost optimization\n\nMaking it all fast enough that humans don't notice the machinery.\n\nThe 5 architectural bets, what transfers, where agents are heading\n\nThe source was extracted from npm source maps — the .js.map files that shipped with Claude Code contained a sourcesContent field with the full original TypeScript. Nearly two thousand files comprising the complete architecture.\n\n36 AI agents analyzed and wrote the entire book in four phases:\n\nThe entire process — from source extraction to final revised book — took approximately 6 hours . A final audit pass ensured no verbatim source code remained — every code block was rewritten as pseudocode with different variable names.\n\nIf you read nothing else, these are the architectural bets that define Claude Code.\n\nPurely educational. This book contains no source code from Claude Code — every code block is original pseudocode written to illustrate architectural patterns. The goal is to help engineers understand how production AI agents are built, not to reproduce proprietary software. The \"NO'REILLY\" cover is a parody/meme for illustrative purposes only — no affiliation with O'Reilly Media.\n\nAn independent educational analysis. Not affiliated with, endorsed by, or sponsored by Anthropic .",
+  "reactions": [
+    "[Hacker News] Sweet, somebody AI generated a book examining a bunch of AI generated code. I think I’ll have my AI read it for me.",
+    "[Hacker News] Thank you for saving me five minutes. Seriously.",
+    "[Hacker News] Easier than reading the source myself, but I don&#x27;t think the site makes a good case for why I SHOULD apply CC&#x27;s patterns to my own systems, besides it being the most used harness. It&#x27;s clearly useful software, but that doesn&#x27;t _necessarily_ translate to something to learn from. It is apparently a vibecoded mess: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47772282",
+    "[Hacker News] Such a misleading title. Change it to &quot;qualified security researchers found a vulnerability in OpenAI via an official bug bounty process&quot; and all of a sudden it is completely uninteresting. &quot;System used as designed.&quot;",
+    "[Hacker News] Kudos for at least admitting upfront that it’s pure slop, I guess.",
+    "[Hacker News] Gift link: https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;hackers-used-anthropics-claude-t...",
+    "[Hacker News] Pure slop, completely unadulterated from what I can tell.",
+    "[Hacker News] Auditing the actual code would build far more trust than any third-party certification. That&#x27;s the real win here for security-conscious deployments."
+  ],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Exclusive | Hackers Used Anthropic’s Claude to Break Into OpenAI - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQmNxc081M1NZa0l1MDZtRG16czdBY2M3X09PVUNCcFUzdS14ZEk1dEdDS0diT2toWlY4VmtMMkNaU1pVVDRaOEpDY0tMRi0zc3dweFpEMWZQOFpPQklqTUcwelZXelBDVXJQWE1GM25BYXgxbHc3ZHBBTk1xV3ViUzloX2s2d0tCd0RLS3lKZmFNdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers used Anthropic’s Claude to hack into OpenAI - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Security Researchers Hacked Into OpenAI Using Anthropic’s Claude - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcW5TQ3c4elF6NEloRlVEN3JqZnVOOVFmWW5HdXRvR0pybGRXUzFFanItb0pLdzVDZlpBUkJqX2xMejdKV19ERHM5N2kzOGdZck1Eem9yNVBSWVRSMkNqRFZkckRQb2FCREYtV25iZnNRRjNralRubkM0MXRRekhxZ3lIRm1WallPNFJBOE5oMENhdUk2UVZ2Y0xydVBpVGhuTnlzZFZYeUZnMzg0NGJBQ1dkWGRTOVJy?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Three guys using Anthropic’s Claude hacked into OpenAI and accessed its source code for $6,500 reward - Fortune",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVW80YlEwQkJ0MlpGREhiRy12UGVkdUpULW1GUm1WenpEM2NQbGk0Z2lETGNNVlZtQVJFN3lna2Mzb0xKSWoxVzN5T19lZmwycnRJNmVlc3RRVmZLdU9Md3pDd1BVUDFiLXVXR0ZFVWhCaW9OOFM1bWxoNXFwNWlSelFVYjhCcU5kS181RUQ2VjM?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Security Researchers Use Anthropic’s Claude to Penetrate OpenAI’s Private Software Cache - PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbmt6c2g0S0VhOVNWLVZ5aHpQRTZ1c05IZlhIcmxaQWVhc3p1dmViUDNHM1RGSnlxamdIRl90SHdJd1hEd1Y3d2UxRTVHdktQRHU0MGtNbWxlMGVtUkQ1LVp1WTlfMGU3T2JlVkdJc3hONkE5WXZqTlNpamZiSzRValY1Rl9JVGR2UmNyT1R2UXYxWnN5LTBBMDhoUEhHVF90UFZvYS1rM21uNER0WjE5XzV3NUYtUFVubUdOOVBWRk5ZUGZmemhIcTFqdXB0VjNRTm9ZLS1SWHRzUVdv?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI hacked by small team of white hat security researchers using Anthropic's Claude Opus 5 - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVEZZeGktN1g3SEdtT0hCbHZoT1gyUHpnZ1NEMDJaY05pRzdLeDVBeVBKS1dyaVFGUEx1a04tUzFGNWh6MER2SXJpU0hLSGZpQVVmU0g5T29aU1JrRVpnb2hFcElWX1N0bFlta2lTZU5jbnlPbmw1MjVMVUhoUmc3QmFzUVlJU1BzS2s5amFsekFCWC0zUzNSdDRCZzFzVjZyTVVoSmdsNXJwZlBhWDhxbnFTMkR2VXlyZERaYm1yT3QxZU0?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Hackers used Claude to break into OpenAI's internal code repo - qz.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5OWXA3QUxobUk2LW41WDF5VE1SMTJBN3FMZXpNVE9oWXpsdjF1cDZJVTFsb0s5Um5TcjFnTEpvZjhOOEl6TUVoa2lqWW9JcVRnSmpSTmxPbWg1MUREV3l1LUdTRUJkLXpvQV9wUUJRQnpPVFZ5dUc1cA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Hacktron AI Researchers Use Anthropic’s Claude To Hack OpenAI, Access ChatGPT Account: how 19 outlets framed it - NewsCord",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMHRXTG1nLW4yOWhlZ1F4N1dXUFVDQ1JtN3l1LTVSS0g3WnZOR21MbFVBMGF5QW5WM2F3YWw4V1RMOXRvRWZJbXpSc1BNOEp3YTVtd1QyZjE0RTNId2pCV0ktQWF0eG5jcmlMX29FNHdaX21EbzdPTnV1UnlrWUNPUGZaaURZYnhzTGNzQW1Xc0dyOEQxc0htQ1FtU1N1ZkN0TWJTdDNicFZXb3FhWWV6azFBZUxkSHlWNWZmeVBZTHl5WlVXU2tOd19jcHppbDR2Nkd0NlVleVZwMUtHUGdJdXZ5TjkwUUNRVGc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Company says it hacked OpenAI using Anthropic's Claude - LiveNOW from FOX",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ROXNRUDJobEtPTGVfUmNFc1U2ekM2MXgxWFZzQ0pVbEprdl9HYzVZc09TQmc3Q25zNHh2RktzYkprZWs3WGlRZWhyNGlUbTVZNDJTanUyUWhYX2xpLXVmdlBGa9IBaEFVX3lxTE5Wc18wcTFWT3hDSk01YzN1SXRhaGtfUVFjZWl1V21XN1M5S09nc21aejJ3TGlmbEVPbjBmODZsSW82NVFoY2RrYnZCV0FDa1lKQlVzTi1JTlU4ODdwOVFJYUZuSUdUdEdj?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers Hack OpenAI Systems Via Anthropic's Claude - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU1Q3ME9uZ0RaUmVVNFZkLV96MTY1bHhpWFlSX05vanY1MHg1bTAtZlctSnNHYWdnNDdUZlA0UUhQbEE0eXpEbDAtLVBJMDhENzhaTWFrTjFZQnF5dTRiV2NHYzhyMV9pZGtSNEtSOHJ0V3dNSUk0aThHUVRXVWdIZ3dPNXlYT2pvWTZQeGpkR0N4OUx5ZzZR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers Used Anthropic's Claude to Hack Into OpenAI's Own Systems - Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeWg3U19laTVLRE03RXctSHJqWkZweS1SLWNCWTIzV0JPak9ibEhVVFVYVWdoVlVGZjNCOEJmbk5FSDcyVjR2aTdwd1AwaXZDajdOcHhfeVF4WUhrTzNGR1hsTGhXZFI0LW1sZUhacFF1YzNKRC03amxuVmR3UDRNc2k0R0FXeUxTbzhpb3pUVVNDbDMzWHBZOHNjaw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Hackers Used Anthropic’s Claude To Break Into OpenAI - TV News Check",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWm1hanVXRTVYUUJUbWl4Xzl6MEtBNUZwenJWUFhkaTdJLTZibGRYU1AtOEFzYTJLUUpMYV81QlRPZk9TVTczSFI5WmhHbE5jOVRGVFFIai1Fd3RubUdoRzBUbWp2bE5SSWZNQXpEVl81MW5RTGdKTElqR1JQWEdidFVORTBZRDVtTGVXbF9DaEk?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Hackers used Anthropic’s Claude to breach OpenAI: Report - Latest news from Azerbaijan",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc1JQVUpYakNkTHVvanB6aFB0WlpsRHhCVEtSNmdmb000cHd0VzNVWGhsSTE0Ry1BbzVPLXd6VFpZX2NKdVVEWGp1TTk3OXlaYWZ4Njl6cHBfQWJ4c3MyOUMzTFo3aUpSRlFSLTBQVDlwV2Y3UGpubEhkOW96S1I4eQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "How security researchers used Anthropic to hack OpenAI - thestack.technology",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVVRvR185YkI1MnBUWnRyQ3lPSEVfVHVrRVlBVXd0bEYySDdJNDZHMjBMUlQ4UmF6RW1rRjFhQWE2cU9ILVlGeFR2T1dpWkJIcnZDbmUtamROZ004Wk5MRzl2cTkzcFlQcGdUWFNZa3BXZVVlQjNLTGd2OEozekZvS3BQMXhkeE9CeDBFU0dqR2E?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Helped Researchers Hack OpenAI — They Reached Private Software, Then Walked Away With $6,500 Bounty: Report - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOYVV6N1l1ZXlES2hvUDJXQ0VlMTVqclA4MGYtanZlbFI1M29jdllobWNaT052MHctdmJ3eWZ6Mk5PMmpGY3BNZngtUElteGd4RnVIOUtOODdMYktzMGx1Y1NrTkh1dFVHLW5CcHB6cWFtakdfaUZTd3hCd3luQ20zZUlYZDhDR29xZGhNWXh5a0ttSjVFalFSY0haWDdoMXhHNHRlTTcxajJGY0Y2cVRWOTBGYm9lYUd5WkM5XzdqN2NkVUNtVFhBSEYtVDRGb0l6aXJqc1BwamZseUl0SmZxODhwSG9aaXVqRzBuRUJmcDBVelpFanVkZ2E4TkFKVVlNTXFnSVpiajNNbjhU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Security Researchers Hacked Into OpenAI Using Anthropic’s Claude - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc3g5RDlKSVhVUEttaHdMbjdTbG1JTWRRbTRRQlphNDN0WVBTWUR3RDRCS0ZGTHBVd3lONW5XdG9STHNYZ3NrVkdiSjVQbm9ZRTl4TW9oMldlb1Y0cFpSalB5UU5zdjBQamZlS21keHJIOVM2MVF2M1lZQWxEYWlvOUlIdnZkQnNQVWl1b1VLYllPZnlacUdsM2R2UDRrR1pEeWJj?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI Hack: Researchers Used Anthropic's Claude AI to Breach ChatGPT Maker's Security - coingape.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaHF6WDFXcUs1OGNvbWZvZkhvcnl0S2hibnJuSndndXZjdEpJaXRzQk41NUdCWGtJODB0X2JKQVdiaVZyMWktM0ljV01Sdm42S2xxX2dMOHkydFR6ZUVNb0JvYkduajFXRDY2bzBqOEd1SGJkQy04eUwwdmFVVVJUcXM3b2wyNjVHTTRsVVRaLVZuMV9pMDlfbXkxbEZHMGwybkg0Xw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude helped cybersecurity researchers breach OpenAI: report - The Express Tribune",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdjg1dndzdzQyT09ySFlIVkl6aFhULTlQWmxkSE1FNjIzZ05WU3dnUkYwRDlKQmVsbmJyNm4tTG52Ujc1MjlEU3RKSTNTdFV1TlNjUWtpa0JHNkNRbXNIbzNwa3NwalJCdjVSdW5IbkN0ZTlMUFk2Q0Jmb2ZOTENDbXNjRmw4RHFwbU9IVXI4X1BLZEdmekV4OWVvSU1QN29NbnhGcnQ3RUVLYkRq0gG0AUFVX3lxTE5XczM2WjVwbXhnTnpqMlhZUGdwa0tPUGdBSG9OTUliTWhTS1RWNWZJR0xzQ25XVzY3QWpCNmx0aU5SVnFUS19BTDNqaWh5VXdsaEZZcWVhZnhyMnQ0ZnVLSUxISFZ6cXFOaU5pTVJtaXZQaVFrUjZjQVBBa0ktQjMyMEdYdXJZWVZXTW1Xb0RHZy1LaF9yMFNmbkFrYzVoOXVFN3N1OVdUUUtmeFN3OHR3RFFMQw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI Hacked Using Anthropic’s Claude, Hackers Confirmed It - Coinpedia",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSnEzMmdsSEQwTFNIOS1ZX2hqM1JPblZLMUpKdG9kYzB2ZmtCVnlSQmUxbkJWNTZob1VWUXM5YjNXY3VYbm5VMENtc0hWZGdQN3ZpY2NSdkFOVUE3VmpyNlo2V2I0QTdJY3NJVUQyYVdHNkMzVkpMZ2pWUWVNY2Z6bkd3SEh1bnJYSHVPb055Z9IBlAFBVV95cUxPQWtvM2FVVGdNbmpHQTZNR2YwRFZ5QURacnFqYTdhNEZtRzMzdEpzYk9UYmwzMy1VOHR0ZElrTUctRTRpRXpMVzd4d3hiUHhwMlBINzhVdHBDZHNWaG9HZ1paSGsycjJGeXF4VFBRSDRaUmFaVmxLWGxHU1ZEX3Yzd25WSnRYNU1kVDdUTXFDRms2Q2Ux?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers Used Anthropic's Claude To Hack Into OpenAI: Report - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZUdIVTZncnNxRFJuM3RwXzNCblBQQ2FHQ1A0MUFUczlWTHloMnhoenJFSm0ybWoxdjhqTTFSTFkwZGpVYzRhdkNGeHpOMWRNd3hKMVRuSV94LXpoZHlObG1xZkgwb0ZoeWZvekMya0ZrNkRvTTJ6N19xek1UMllKNldGM3MxQmdJNjlZUW1oTHFGRU5jMlpZd3VCcVlrajZRb0dPd0Z1aVUzV3hM0gG0AUFVX3lxTE01SGRhUUI2cWdValFnWTlCTWlLUW5iSEgxUWxoVEtRTjJHMTVlSlZsUFJCNW9Ocmh1bGlUMFQ5QlJiamFlQTFfLS1YRWxob2NwWWcxUV9tT2lITHdVemdUSVVsN0JBUWI1NWNwTEg5Z3IzVHdYdHJFRUtWbmdHMG9DSzg0X2hydlZ1emRwUzluZERla212ajRNVUJENEtadDFrVzNQRlhxZXhxdlIxOFkxc0I5eA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI Gets Hacked by Indian-Origin Ethical Hackers Using Anthropic’s Claude - Gadgets 360",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZkxqTmUyS1hVUC1aYVMyVDhfa1BXUkx3QVlTQUVGWU1OV2FJTW02YVRqUHppZTQ1aWktakh2UGxzaWxLa2ZVYmNqbkpqWUJXbHBZVkVIdTJWNkdZNkhsVUNPXzZUWTFWVTVWOFRCb2lBcnkxb1dWdzdjT0d2ZU9qQXd0NkJqTGR0Ri1kdExwakNyN3lHWFRWR1dKdy1jeXF2SWxvWnRqOXljZm96YVB3aHh6d3VyVGhPRUdTeNIBwgFBVV95cUxPWjA2STBUdm1pOW5KNGF1dkx3ZFdnNDVlYU5RWGxUV1RWMDhJOHZHUkFQeEdOeFh3aS1kdUF5ZFBLR0lEZzVVMzJHRDE2NWVRR1BhS2V2ZVJVNkM5bWpvN1A3dkU2ZENRT3U1czZBU2d0TmFTTEwwWXVJeTlWeWhXZldVUWU3Y2tBaHJkYWJEeFZBMEh6d19VOWU5RDNDQWRhWndhTkJTRk9xckdhTkM2UmFOei1iY1Jpd2pvdDJvM2tRdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Security researchers used Claude to help them hack into OpenAI - The Verge",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOX0E3SkFidDl4NTVoOG0tWmtNQm5KMkVzUFF6cE43U0tsbWFGdHFjVjZweS1oTl81LXhQSU83QU52UDF5a3lXYzlCZ0doS1h5UHBPWjUwaXdaeFZnMVloaDVSbkFUZ1AtaDBEOVlHdW52dExrTjVBU2VLZGNsWUc0RkhIbDNiUVExSUlOM1FoOUZVUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers used Anthropic's Claude to break into OpenAI's systems - Proactive Investors",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUcwMjdLSGxyQVJDclNyTHplc1FWaGdYczRaUko1bnRyem9EQld3eXpXeXhGZ3ZqRnRQOF9YYTBOZ1N3U2M0cEZGNGVnS1BQQzVqaVdPM1Q3YTFwYm4wM2dPS0F1TnhZOW5mUWx3a3BXZkJIWkF5NHB4Sk9yUzNRN2w2WlBQZmpHTFBfYW9QRHZjNElhZmxGRWNRM011cTRRSDQ4anBwd21hUzZwcVROc2ZB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers used Claude to breach OpenAI’s internal systems - The Straits Times",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFRYYUFsYWQyc294VzFiRzd3UkZndDZiaUlhWFdONkJ0NV9HWjRqVk5DTmJEWFZ2MjdUM1FMcDJPeE9zZlVUMmI3T01WM3ZMLXhjbkNZWDR4bEl2Z2g3QU5CeHJmY2c0WTIycWp5cXFyM3o3VWpXWkx5UzRDTTF5ZWwydjRJSHlnT2tQbUsxemhiZGlyVjIyQ3paYVdBa1YtQ19UeC1qanBOTmM?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers Hack OpenAI in 72 Hours Using Anthropic's Claude - Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56YkVtTlhoMTNTelJRN1hHMFNqSEFJTDZuUi1ucXBjdVVsMk93VHBzaFpNZEUtWE1oNldUOUxpd2toWnZSeV9yc1VnOTVrLXNzWWNlRF9iZTVCYkJVVy0zZkxNbHZJM1paeFZfb3hFbndWampfQXotTFdKWQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Researchers used Anthropic&#8217;s Claude to hack into OpenAI",
+      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Security researchers used Claude to help them hack into OpenAI",
+      "url": "https://theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Claude Code from Source",
+      "url": "https://news.ycombinator.com/item?id=49749019",
+      "score": 18,
+      "commentCount": 5
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Hackers Used Anthropic's Claude to Break into OpenAI",
+      "url": "https://news.ycombinator.com/item?id=49749003",
+      "score": 16,
+      "commentCount": 3
+    }
+  ]
+}
