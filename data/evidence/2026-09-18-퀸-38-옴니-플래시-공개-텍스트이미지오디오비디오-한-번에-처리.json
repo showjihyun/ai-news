@@ -1,0 +1,26 @@
+{
+  "articleText": "Qwen3.8-Omni-Flash 는 텍스트, 이미지, 오디오, 비디오를 입력받아 콘텐츠 이해부터 작업 계획, 도구 호출, 결과물 제작까지 수행하는 네이티브 옴니모달 모델로, 100만 토큰 컨텍스트 를 지원함 Qwen 공개 평가에서 이전 Qwen3.5-Omni-Plus보다 29개 평가 ...",
+  "reactions": [
+    "[Hacker News] I use claude for work, and opencode go at home, but i do dabble with openrouter from time to time, and then i just browse the model catalog and filter&#x2F;sort by recent popularity, price, context size or whatever matters for the task. Mstly just popularity trends, hoping that there&#x27;s some wisdom in the crowd.",
+    "[Hacker News] The blog post itself is technically unimpressive, and feels like the slop future. Amongst many things - Scrolling in firefox is a nightmare (only uBlock origin) and the console is full or warnings and debug data. - Videos are all flashy but just fail to communicate anything beyond what can be said in a small paragraph (and with horrible stock music). - Figure 1, the headpiece; too small to read, c",
+    "[Hacker News] True, but it would have to be more than massive (order(s) of magnitude) to offset that gap.",
+    "[Hacker News] I use Gemini(s) because I can send pdfs as files to their API and not worry too much. I&#x27;ve started to diverge and consacrate a part of my pipeline to sending image based pdf pages to glm flash 5.3, not sure how to address &#x2F; test it properly. Long term I have fears I can&#x27;t depend of the Google&#x27;s AI api.",
+    "[Hacker News] Omni usually means multimodality (in terms of input and&#x2F;or output type, text, images, audio, etc)"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Qwen 3.8 Omni Flash",
+      "url": "https://news.ycombinator.com/item?id=49747925",
+      "score": 215,
+      "commentCount": 78
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Qwen 3.8 Omni Flash",
+      "url": "https://news.hada.io/topic?id=33884",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

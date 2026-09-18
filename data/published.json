@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-18-퀸-38-옴니-플래시-공개-텍스트이미지오디오비디오-한-번에-처리",
+      "title": "Qwen 3.8 Omni Flash",
+      "urls": [
+        "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "https://news.hada.io/topic?id=33884"
+      ],
+      "publishedAt": "2026-09-18T10:08:07.809Z"
+    },
+    {
       "slug": "2026-09-18-클로드가-열린-문-오픈ai-내부-저장소까지-닿았다",
       "title": "Hacking OpenAI",
       "urls": [
