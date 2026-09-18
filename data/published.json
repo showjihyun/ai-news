@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-오픈ai-gpt-6-아스트라-포-로-발표-법률-특화-모델-검증은-여전히-진행-중",
+      "title": "OpenAI: \"Introducing GPT-6 Astra for Law\" (new model \"gpt-6-astra-law\")",
+      "urls": [
+        "https://openai.com/index/astra-for-law",
+        "https://openai.com/index/astra-for-law"
+      ],
+      "publishedAt": "2026-09-18T20:06:18.385Z"
+    },
+    {
+      "slug": "2026-09-19-앤스로픽-클로드-코드에-agentsmd-공식-지원-추가",
+      "title": "Anthropic finally adds AGENTS.md support to Claude Code",
+      "urls": [
+        "https://twitter.com/trq212/status/2101009392611278961",
+        "https://i.redd.it/btltptkalbqh1.png"
+      ],
+      "publishedAt": "2026-09-18T19:55:56.799Z"
+    },
+    {
       "slug": "2026-09-19-세-명이-클로드로-오픈ai-뚫었다-버그-바운티-6500의-교훈",
       "title": "Exclusive | Hackers Used Anthropic’s Claude to Break Into OpenAI - WSJ",
       "urls": [

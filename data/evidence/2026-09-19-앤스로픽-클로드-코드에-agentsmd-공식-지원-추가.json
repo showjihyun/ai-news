@@ -1,0 +1,23 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Not going to use Twitter without Nitter, so I&#x27;ll just assume that&#x27;s good news. Maybe I can finally delete that useless symlink to the actual AGENTS.md.",
+    "[Hacker News] It took the Shopify CEO tweet and Astra causing a large move towards Codex for them to finally give in. It&#x27;s hard to believe it was worth it in the end. On the other hand, most people will forget about this saga in a few months, so sadly it may just have been worth it."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic finally adds AGENTS.md support to Claude Code",
+      "url": "https://news.ycombinator.com/item?id=49758250",
+      "score": 16,
+      "commentCount": 2
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Claude Code is getting native AGENTS.md support!",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wjxvwz/claude_code_is_getting_native_agentsmd_support/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}
