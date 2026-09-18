@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-18-bend-ai-코드-실수를-수학적으로-차단하는-언어-나왔다",
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "urls": [
+        "https://bend-lang.com/"
+      ],
+      "publishedAt": "2026-09-18T01:04:48.366Z"
+    },
+    {
+      "slug": "2026-09-18-앤스로픽-클로드가-차세대-모델-연구-26-주도-ai가-연구-주체로-나선-첫-정량-지표",
+      "title": "Anthropic says Claude now leads a quarter of work building its next AI models - Reuters",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOTlkTk8zR3FVNjBtYTRfeEZQWU9zWHhWUE00dUhyMDhMUHZDRF90dlhuUDhYS3QweW9ZejB1U0tNQ0dFQjIxZ1lFLXhfdEliaHN3MzJZV0JYRnJMc0pyU2k4dmdyX2tPR1VOX0RRdmVJUkZ1bWZCcVJ5czg4XzlXQmRXaXpVYzB1a0QwRGdzUkFVbGtVY3ZJVEpKSEwzUXdMT0NaV0F1cTVQOEFhSzRTR0ZURUlzM3NL?oc=5",
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNEJhRkRfM1lWc3JObDRnU1piOVBtU2Rpd1NRNmNZVDR0R0JrakhWdjlfQ3VSR1NBQ0Q3dTlRWXBIY09HeEViQTd1M0RVWDdTa0I5aWtqN05CZ2IzRmk1Rm11TjNVcUhlWGd1alR6aTNRc200ZkJCNjVnT2dYeldxWUs0ZVBEWURCZlZpbTNFMWJseUtDREYwWTFIZW04QklsQ0xJY0dQdFNjMjg?oc=5",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNRGVDeU5Qc3h0eVprLUVtSXJhbEUyWUtrRC0yNmROSWtsYmR0ckhSYXYydENLSjhBRGFPbDl0MjBOelQ5Z1MxQjZ2dEp6OFN0MVdjbDFHaUxGNzFoOEZ5MUxnclBJdjhKYkRFX2N1cGJDcXNLbFBaT3ZUaG1BamwtMThubzZjcVJZRXltZlVsbGRuT05lbjhqaW0tVUJfN0RidlVPREtDNy1vUU9TMUV1VlMyNElmaUVHbjFPbGtaei1vWUROc29iYjE2SUVsQ1l2dTdyVU9waDN0MGIwVkNGaQ?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUnZtLXJ4cDY5THVfeGJ1MFE3S0tSQm13d0p3X3ktMk1MS0dNd3lIRk9MbXg5UTQ2cWJaTjZ6WkVHR0tkaEdvRy1YZlBaN1l1RkxNSXF3Ykt2TGxxbVdzN3pMTVhYM1hWWmU3MHd0M1o0c2hNWHNYOWd2NGR4QkxCLXNVZ0FLak9RMUI3RlpFeGQ?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdThSMG9MTkJ0WkN4eUMxWFYwRVd5UVNZZFhiNjdKRjN2TTNqaFZoMzVjODk2clNKWUpiSEV4S19VblVQQTFBMzBZeTEyM0d3TE1PYklCcmZBZmlfWV9ZaG1ySTMyTU83aTBtcHU0VlE2T1JLZ1VQcElfQzRkYW5GbEVfQmZKU0FPbW5aNG53S005SWJVWmNvQXBjTkxHTXhxV0Jjb3hOQWcwcGJIeXVZZDQxWWgtd0dtRVZ0Zk1R?oc=5"
+      ],
+      "publishedAt": "2026-09-18T00:57:37.808Z"
+    },
+    {
       "slug": "2026-09-18-ai-연구자가-우리-모두-죽을-수-있다며-사직-그-뒤엔-25년-된-인터넷-종파가-있다",
       "title": "Sex, AI, and the Apocalypse",
       "urls": [
