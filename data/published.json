@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-알리바바-복부-ct로-150개-질환-찾는-ai-다모-레이더-오픈소스-공개",
+      "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
+      "urls": [
+        "https://scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions"
+      ],
+      "publishedAt": "2026-09-19T02:08:20.539Z"
+    },
+    {
       "slug": "2026-09-19-openai-직접-만든-ai로-칩-설계-할라피뇨가-의미하는-것",
       "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
       "urls": [

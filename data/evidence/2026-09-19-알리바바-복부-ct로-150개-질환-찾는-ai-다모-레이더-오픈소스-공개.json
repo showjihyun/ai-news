@@ -1,0 +1,18 @@
+{
+  "articleText": "[Hacker News — scmp.com]\nTested on nearly 40,000 real-world exams, the model outperformed most radiologists, according to a new study published in Science\n\n2 -MIN READ 2 -MIN 1 Listen Ann Cao in Shanghai Published: 10:30pm, 18 Sep 2026 Alibaba Group Holding’s research arm, Damo Academy, has open-sourced an artificial intelligence model capable of identifying nearly 150 abdominal conditions – including cancers – by reading computed tomography (CT) scans, marking the latest step in the firm’s growing medical AI efforts.\n\nThe vision-language model, called Damo Radar, was designed to analyse contrast-enhanced CT scans covering 18 abdominal organs and identify a broad range of diseases and other abnormalities, such as malignant tumours, the institute said on Friday.\n\nThe model was trained using CT scans paired with clinical reports. In nearly 40,000 real-world examinations, it achieved an average area under the curve (AUC) of 0.913 across 146 clinical findings. An AUC of 1.0 represents perfect diagnostic accuracy.\n\nThe research team said the training method could eventually be extended to other types of medical imaging, calling the model “the world’s first expert-level generalist medical imaging model”.",
+  "reactions": [
+    "[Hacker News] Alibaba is entirely capitalistic I&#x27;m afraid",
+    "[Hacker News] Fortunately, we now have AI to come along and launder the responsibility for exploitation through.",
+    "[Hacker News] In communism, man exploits man. In capitalism, it&#x27;s the other way around.",
+    "[Hacker News] someone might thing communism leads to bad things happening to people"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
+      "url": "https://news.ycombinator.com/item?id=49761840",
+      "score": 22,
+      "commentCount": 4
+    }
+  ]
+}
