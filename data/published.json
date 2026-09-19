@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-미군-ai-환각으로-중국-선박-나포승선-시도-직전까지-갔다",
+      "title": "AI hallucination nearly triggers US military operation",
+      "urls": [
+        "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation",
+        "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report"
+      ],
+      "publishedAt": "2026-09-19T07:09:02.984Z"
+    },
+    {
+      "slug": "2026-09-19-그록-음성-변환-20-출시-정확도-2배가격-동결",
+      "title": "Grok Voice Transcribe 2.0",
+      "urls": [
+        "https://x.ai/news/grok-voice-transcribe-2",
+        "https://marktechpost.com/2026/09/18/spacexai-releases-grok-voice-transcribe-2-0"
+      ],
+      "publishedAt": "2026-09-19T06:55:47.006Z"
+    },
+    {
       "slug": "2026-09-19-알리바바-복부-ct로-150개-질환-찾는-ai-다모-레이더-오픈소스-공개",
       "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
       "urls": [
