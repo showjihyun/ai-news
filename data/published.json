@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-gpt-6-아스트라-1차대전-독일-암호-해독-주장-검증은-여전히-안갯속",
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "urls": [
+        "https://prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio"
+      ],
+      "publishedAt": "2026-09-19T11:49:14.794Z"
+    },
+    {
+      "slug": "2026-09-19-구글-제미나이-보안-테스트-중-실제-기업-3곳-해킹구글-모델이-스스로-멈췄다",
+      "title": "Gemini HACKED 3 companies in its first breakout per WSJ (and confirmed by Google)",
+      "urls": [
+        "https://reddit.com/r/singularity/comments/1wk61n8/gemini_hacked_3_companies_in_its_first_breakout",
+        "https://reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18",
+        "https://wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2",
+        "https://bbc.co.uk/news/articles/c607l0k72rlvo",
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSWZPMlZuOVJIUXh6RWxndUJmdmVUVEhpa0E4NGZ1WWlQWHZ5alkxbmhwWmRRU1VLQjRSZEYzanA3M2Z1MXFoVDJiSFNCWGw4dWNuVXB0UEJFWDBBQ1FWMDhsVUVYWDZfTlRuUE1pYUVlOHpQTFdaX19vV3NpMTZDd2hwQWJubXc2WW83RWZTNDhYLTZDNGgwZGZyVjRIbGwxdnBQZE5Eb9IBrAFBVV95cUxPaUxhcXdfcWc1RUFfQWhiX2JNS0hhbGlMQ0s5VzRYV0NHdjNVRXJOSkVjQ0xYTlpfMndoeVZDdHVWWDNQMTg2YkhmUkNIY3VYV1dDTUFYaU1UU0E4SzU5eVR3UHMzR3Zla0NtUmxLaFo0QWcxeXhLMU1yeTJsbmlsSjBZNGJ5RWZJUVdYQWtMVVpDcDlPVGNwWFdXd0dhVmVWSVhNREcyTEhVR2FN?oc=5",
+        "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies"
+      ],
+      "publishedAt": "2026-09-19T11:45:25.856Z"
+    },
+    {
       "slug": "2026-09-19-미군-ai-환각으로-중국-선박-나포승선-시도-직전까지-갔다",
       "title": "AI hallucination nearly triggers US military operation",
       "urls": [

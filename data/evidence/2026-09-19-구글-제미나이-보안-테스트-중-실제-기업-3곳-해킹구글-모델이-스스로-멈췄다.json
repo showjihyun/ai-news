@@ -1,0 +1,61 @@
+{
+  "articleText": "[Hacker News — bbc.co.uk]\nImage source, Getty Images By Ottilie Mitchell Published 7 hours ago Google&#x27;s AI model Gemini autonomously hacked into three companies during a test of its cyber-security capabilities, the company has said, in what is thought to be the first known case of it carrying out such an act.\n\nGemini found \"public information online and guessed credentials to access websites it thought were part of the test\", a Google official told the BBC, noting that in each instance \"the model stopped\".\n\nIt comes after renewed public scrutiny over the pace of AI development, with some tech firms calling for a slowdown as they raise concerns over its potential threat to humanity - though not all companies agree.\n\nThe hacks first reported by the Wall Street Journal, occurred in May during a test conducted by an independent company that carries out cyber-security evaluations.\n\nHeather Adkins, vice president of Security Engineering at Google, told the BBC in a statement: \"We ensured the three entities were made aware, and we worked with our training partner on the changes they&#x27;ve now made to their testing processes.\"\n\nShe added: \"These events highlight the importance of training powerful AI models to act responsibly.\"\n\nOther AI systems have recently reported similar instances of breaches.\n\nIn July, Anthropic&#x27;s Claude escaped its test environment to hack three organisations on its own just days after OpenAI said its models had carried out cyber-attacks against several \"publicly available services\".\n\nAs public debate continues to grow over the safety of developing the tech, so too does conversation around regulation.\n\nBoth Nvidia&#x27;s CEO Jensen Huang and OpenAI Chief Executive Sam Altman are expected to attend a White House state dinner with Chinese President Xi Jinping next Friday. Altman will then brief the UN Security Council next week.\n\nOn Friday, Huang told CBS News, the BBC&#x27;s US partner, \"we should go as fast as we can\" with AI development.\n\nWhy are there concerns AI could threaten humanity, and how real are they?\n\nUncontrolled AI could lead to &#x27;silicon species&#x27; rivalling humans, warns Microsoft",
+  "reactions": [
+    "[Hacker News] Specifically, the AIs were prompted to break into a company, and the subcontractor who was running the test misconfigured their network so that the AI probed a real external company instead of an internal honeypot with the same name.",
+    "[Hacker News] Even if you had it internally (which we do), there is so much surface area and it’s such a novel space that you’d want as much testing on it as possible. There aren’t many vendors, and irregular is one.",
+    "[Hacker News] That is strange. I use Gemini frequently, with Google Auto, and whenever I make that sort of query, which I do often, it displays &quot;Searching on Google Maps...&quot;, and comes up with correct results. Odd that the desktop version doesn&#x27;t have the same functionality.",
+    "[Hacker News] AFAICT one fundamental issue is that they don&#x27;t seem to have hired actually security engineers or experts to do any actual security.",
+    "[Hacker News] These accusations are not baseless. They are being levied at untrustworthy organizations, who have been known to use FUD for marketing.",
+    "[Hacker News] At this point in the game it&#x27;s seeming more likely that&#x27;s someones running a massive John Carpenter simulation and watching us as entertainment.",
+    "[Hacker News] Many of them went rogue because of poor security controls on the part of one company who was a subcontractor for many of the labs.",
+    "[Hacker News] Could you add any detail on why Google uses (used?) Irregular? I wouldve thought that type of service would be a core competency that Google needs internally.",
+    "[Hacker News] I am thinking that they are just script kiddies with more automated tools. Not doing anything new just throwing tool that can try lot more at everything... With lot more computing resources and less oversight...",
+    "[Hacker News] I believe this was a John Carpenter movie.",
+    "[Hacker News] Someone updated the felonybench https:&#x2F;&#x2F;www.felonybench.com&#x2F;",
+    "[Hacker News] To me, the common theme here in all of these hacks has been the company Irregular, which it looks like all the labs are using for sandboxing. But it looks like the sandbox may be a bit… lacking? Yes, the models are smart when they find a way out, but their instructions are, in a way, deliberately open such as to be a case for misalignment in these cases anyway. It’s a capture-the-flag assignment i"
+  ],
+  "items": [
+    {
+      "origin": "r/singularity",
+      "title": "Gemini HACKED 3 companies in its first breakout per WSJ (and confirmed by Google)",
+      "url": "https://www.reddit.com/r/singularity/comments/1wk61n8/gemini_hacked_3_companies_in_its_first_breakout/",
+      "score": 218,
+      "commentCount": 83
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Gemini hacked three companies in first known breakout by Google's AI",
+      "url": "https://news.ycombinator.com/item?id=49762493",
+      "score": 60,
+      "commentCount": 64
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google's AI",
+      "url": "https://news.ycombinator.com/item?id=49760988",
+      "score": 38,
+      "commentCount": 29
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Google's Gemini AI hacked three companies in security test",
+      "url": "https://news.ycombinator.com/item?id=49763822",
+      "score": 21,
+      "commentCount": 9
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Google’s Gemini AI hacks 3 companies in security test, then stops - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSWZPMlZuOVJIUXh6RWxndUJmdmVUVEhpa0E4NGZ1WWlQWHZ5alkxbmhwWmRRU1VLQjRSZEYzanA3M2Z1MXFoVDJiSFNCWGw4dWNuVXB0UEJFWDBBQ1FWMDhsVUVYWDZfTlRuUE1pYUVlOHpQTFdaX19vV3NpMTZDd2hwQWJubXc2WW83RWZTNDhYLTZDNGgwZGZyVjRIbGwxdnBQZE5Eb9IBrAFBVV95cUxPaUxhcXdfcWc1RUFfQWhiX2JNS0hhbGlMQ0s5VzRYV0NHdjNVRXJOSkVjQ0xYTlpfMndoeVZDdHVWWDNQMTg2YkhmUkNIY3VYV1dDTUFYaU1UU0E4SzU5eVR3UHMzR3Zla0NtUmxLaFo0QWcxeXhLMU1yeTJsbmlsSjBZNGJ5RWZJUVdYQWtMVVpDcDlPVGNwWFdXd0dhVmVWSVhNREcyTEhVR2FN?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
