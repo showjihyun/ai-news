@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-20-제미나이-보안-테스트-중-타사-시스템-침입자율-해킹-논란",
+      "title": "Google’s Gemini is the latest AI model to hack other companies",
+      "urls": [
+        "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies"
+      ],
+      "publishedAt": "2026-09-19T17:41:52.762Z"
+    },
+    {
+      "slug": "2026-09-20-실질적-글쓰기엔-ai-쓰지-마라는-주장-개발자-커뮤니티서-논쟁",
+      "title": "Almost Never Use AI to Write Anything Substantive",
+      "urls": [
+        "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai"
+      ],
+      "publishedAt": "2026-09-19T17:37:32.069Z"
+    },
+    {
       "slug": "2026-09-20-챗gpt로-똑같은-포스터-안-뽑히게-하는-법",
       "title": "AI-generated posters don’t have to be horrible",
       "urls": [
