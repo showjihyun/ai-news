@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-19-openai-직접-만든-ai로-칩-설계-할라피뇨가-의미하는-것",
+      "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+      "urls": [
+        "https://spectrum.ieee.org/llms-for-chip-design"
+      ],
+      "publishedAt": "2026-09-19T00:11:17.769Z"
+    },
+    {
+      "slug": "2026-09-19-앤스로픽-직접-생물학-실험실-운영-ai가-젖은-실험까지-한다",
+      "title": "Anthropic Wet Lab Confirmed: Claude Maker Now Runs Physical Biology Experiments - Tech My Money",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVmNRZEhPMUxaWUxtUzZJck5RclhNZGFGaTJlbnFHc1pMaWJoU2ZGa0NXTzFocTZLcGo5U09ra1IzclRKTjVvN2lCVTA3cXoyRjhDVUdqSjJkZFQxTlVsd29ZTWR0RGF1bFJGTEtIRmEyZzFqMnFTMjBfSWs3ZFZrWlZvbDl2Y29veHcwV0ttYURiYkRvZ1Vpa09BR3RxaERxMFQwdUVuTmM4YlVxY00wX3Y1V2rSAbQBQVVfeXFMUFZjUWRITzFMWllMbVM2SXJOUXJYTWRhRmkyZW5xR3NaTGliaFNmRmtDV08xaHE2S3BqOVNPa2tSM3JUSk41bzdpQlUwN3F6MkY4Q1VHakoyZGRUMU5VbHdvWU1kdERhdWxSRkxLSEZhMmcxajJxUzIwX0lrN2RWa1pWb2w5dmNvb3h3MFdLbWFEYmJEb2dVaWtPQUd0cWhEcTBUMHVFbk5jOGJVcWNNMF92NVdq?oc=5",
+        "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments"
+      ],
+      "publishedAt": "2026-09-18T23:59:33.145Z"
+    },
+    {
       "slug": "2026-09-19-앤스로픽-클로드가-차기-버전-개발-돕는다-단-한-문장-발표가-전부다",
       "title": "Anthropic: AI model Claude helping build next version of it - The Hill",
       "urls": [

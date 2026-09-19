@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] openai should figure out how to make lithography machine, so ASML don&#x27;t have monopoly on it.",
+    "[Hacker News] Arm sells architecture licenses to anybody these days.",
+    "[Hacker News] It is probably doable right not to push a risc-v design into that performance space.",
+    "[Hacker News] Not sure what you&#x27;re talking about. But I&#x27;ll tell you, home grown Jalapeño peppers, fermented with 3% salt is the stuff of dreams.",
+    "[Hacker News] Why, the LLM can make up its own architecture.",
+    "[Hacker News] &gt; irks me It&#x27;s jalapeño grill would you say?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+      "url": "https://news.ycombinator.com/item?id=49761432",
+      "score": 17,
+      "commentCount": 11
+    }
+  ]
+}
