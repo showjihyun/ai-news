@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-20-ai-글투-지겹다-완벽한-문장이-지우는-것들",
+      "title": "I'm Tired of the AI Tone",
+      "urls": [
+        "https://sagivo.com/blog/im-tired-of-the-ai-tone"
+      ],
+      "publishedAt": "2026-09-20T12:53:52.152Z"
+    },
+    {
+      "slug": "2026-09-20-오픈aims-둠-루프-알았다-내부-문건서-노동-역사상-최대-절도",
+      "title": "OpenAI and Microsoft knew they were starting a 'doom loop' for the web",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+        "https://theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero"
+      ],
+      "publishedAt": "2026-09-20T12:38:15.517Z"
+    },
+    {
       "slug": "2026-09-20-구글-ai-스튜디오-완전-삭제-버튼-실제론-데이터-안-지운다",
       "title": "Google AI Studio fakes data deletion. VRP auto-banned me in 60s for reporting it",
       "urls": [
