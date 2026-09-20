@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-21-챗gpt가-내-웹-서핑을-엿본다-오픈ai-광고-추적기의-실체",
+      "title": "ChatGPT now knows what you do on other websites via ad collector",
+      "urls": [
+        "https://buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector"
+      ],
+      "publishedAt": "2026-09-20T23:50:43.506Z"
+    },
+    {
+      "slug": "2026-09-21-ai-열풍-속-쿨에이드-내려놓은-개발자-그가-본-사람의-빈자리",
+      "title": "I stopped drinking the AI Kool-Aid",
+      "urls": [
+        "https://joshtronic.com/2026/09/20/i-stopped-drinking-the-ai-kool-aid"
+      ],
+      "publishedAt": "2026-09-20T23:43:12.872Z"
+    },
+    {
       "slug": "2026-09-21-클로드로-오픈ai-뚫린-72시간-ai-안전장치-또-뚫렸다",
       "title": "Anthropic’s Claude helped 3 researchers breach OpenAI in under 72 hours - CryptoSlate",
       "urls": [
