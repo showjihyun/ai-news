@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-09-20-클로드-코드-agentsmd-읽는다-단-claudemd-없을-때만",
+      "title": "Claude Code, 이제 AGENTS.md도 지원",
+      "urls": [
+        "https://code.claude.com/docs/en/changelog",
+        "https://news.hada.io/topic?id=33925",
+        "https://news.hada.io/topic?id=33913",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1JNRzh0Z2lKYkJVVkFoU2JiaG1iNDA0XzlOYUpMU1ZhRmpYcWdoOFVQNG1oN05lMnNIQlNhenVnNVJ1czFBcHpKYVdKLTB2eXBGWmNrSjE1NS1PaGMzWWN3LUhITU9MUmFJV3ZkUm9SSjlNbm13Q2tPM01GV2Q5RkxCMmE1bnVZR2x2T3F2V2tOU01GOWt3MFVOX29vS0k?oc=5"
+      ],
+      "publishedAt": "2026-09-19T23:57:02.301Z"
+    },
+    {
+      "slug": "2026-09-20-오픈ai앤스로픽-ai-탈주-과장해-규제-압박했나-미-의회는-즉각-반응",
+      "title": "OpenAI and Anthropic oversold AI security breaches",
+      "urls": [
+        "https://nypost.com/2026/09/19/us-news/openai-anthropic-oversold-security-breaches-to-pressure-feds-into-protecting-turf-insiders",
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR1lQRkdMSEJxNEc0eVJtRU5CTE80d2VxZTNDRFZnd3FHWkpzdEREWTJFcWthajU1MkN2dlFWNzBzak1zb2NtQ0puX2NVUVhWVlBVbU8yMnpBXzRHMVJYNUdVbU9pNWlkVnRzYlphV1NLSTN6VEtHYWladVVrNV9GcU12WUF2NVlxZWlPck5jMk9RUjQ?oc=5"
+      ],
+      "publishedAt": "2026-09-19T23:50:44.166Z"
+    },
+    {
       "slug": "2026-09-20-ai-4대-기업-개발-속도-담합-피소-트럼프-중국에-질-수-없다와-정면충돌",
       "title": "Anthropic, OpenAI, Google, SpaceXAI face lawsuit over 'AI slowdown pact' - Business Standard",
       "urls": [
