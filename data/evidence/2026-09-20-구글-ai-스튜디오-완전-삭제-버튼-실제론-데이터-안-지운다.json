@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — medium.com]\nPlease read the technical steps before commenting or flagging. This is a reproducible architectural flaw (CWE-459), and Google’s Bug Hunter program just permanently banned me without human review to cover it up.\n\nThe Illusion of the “Delete” Button When you click “Delete permanently” in Google AI Studio, the UI explicitly warns you: “The item will be permanently deleted and cannot be recovered later. This action cannot be undone.”\n\nBut that is a complete lie. The system does not send a deletion cascade to Google’s backend (Interactions API / Project Storage). All it does is move a local .json pointer file into your Google Drive Trash.\n\nIf the backend had actually purged the data, the server would return a 404. It doesn’t. The data never left their “hot storage”. The delete button is just a visual placebo.\n\nThe Cover-Up (Issue Tracker: 563791693) I submitted a full forensic dossier of this Deceptive Design to the Google VRP (Bug Hunter) program today. Here is the exact timeline:\n\nBy labeling this “Intended Behavior,” Google’s own automated triage system has put in writing that bypassing their 24-hour TTL and lying to users on the UI about permanent destruction is a deliberate corporate feature, not a bug.\n\nI have forwarded the complete audit trail and the 106-version drive logs to the CISA and European privacy watchdogs (NOYB) for GDPR Article 17 violations.\n\nIf you think this is just a “UI glitch,” restore your own trashed JSON files and watch your “permanently deleted” sensitive data resurrect instantly.\n\nFor the full forensic breakdown, video evidence, and complete audit trail, check out my other articles on Medium: https://medium.com/@istokovicsgyorgy79",
+  "reactions": [
+    "[Hacker News] Oh yeah, poor corporations, getting sued(!!) for deleting data after being asked by the user to delete it. Beautifully crafted ragebait :D",
+    "[Hacker News] Exactly! This is my problem too, because they are lying. Promising to permanently delete data without actually doing it is insane, and it should be illegal if it isn&#x27;t already. Hide the permanent deletion a bit more for privacy reasons, and normally offer a soft delete to the user. But they are just lying!",
+    "[Hacker News] I don&#x27;t like your comment because it&#x27;s nonsense, but I&#x27;ll upvote it so you get a point. :)",
+    "[Hacker News] No, sorry. Promising to permanently delete data without doing it is the madness and should be illegal if it&#x27;s not already. Hide the permeantly delete for privacy just a bit further and offer a soft delete to the user then for the normal case.",
+    "[Hacker News] Look at these archives here, they even banned me from their official forum, but I saved hundreds of my posts. Look at this: https:&#x2F;&#x2F;archive.ph&#x2F;https:&#x2F;&#x2F;discuss.ai.google.dev&#x2F;* and this: https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;@gy_rgy_ist_kovics&#x2F;web-archive and this: https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;@gabor_gabor_freemail_hu&#x2F;web-arc... an",
+    "[Hacker News] This cannot be an excuse. The data is clearly used for AI training. If that were actually the case, they would state the truth on the UI buttons instead of lying, and they wouldn&#x27;t have banned me from VRP either. They lie constantly and they do not comply with the law. I have been writing to them for almost a year, and not a single human has ever replied to me—even their DPO is just an automa"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Google AI Studio fakes data deletion. VRP auto-banned me in 60s for reporting it",
+      "url": "https://news.ycombinator.com/item?id=49772544",
+      "score": 34,
+      "commentCount": 11
+    }
+  ]
+}
