@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-21-허깅페이스-모델이-사라져도-살아남는-토렌트-파이럿-페이스-등장",
+      "title": "Pirate Face Rescues LLM Models from Deletion",
+      "urls": [
+        "https://pirateface.co/"
+      ],
+      "publishedAt": "2026-09-20T19:22:31.078Z"
+    },
+    {
+      "slug": "2026-09-21-앤스로픽-액센츄어에-1조-원-맡겨-자체-감시-실험-시작",
+      "title": "Anthropic&#8217;s first embedded evaluator is … Accenture?",
+      "urls": [
+        "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture",
+        "https://cnbc.com/amp/2026/09/18/anthropic-accenture-ai-safety.html"
+      ],
+      "publishedAt": "2026-09-20T19:16:00.596Z"
+    },
+    {
       "slug": "2026-09-21-알리바바-퀸-이미지-21-공개-경량통합형-이미지-모델이-노리는-것",
       "title": "Qwen-Image-2.1: Compact, efficient, and unified image creation",
       "urls": [
