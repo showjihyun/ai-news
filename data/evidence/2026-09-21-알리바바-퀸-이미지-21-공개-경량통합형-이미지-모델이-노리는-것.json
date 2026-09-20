@@ -1,0 +1,34 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] It&#x27;s not going to matter unless you plan to commercially deploy the model, as far as I see. It&#x27;s not going to matter then, either. What are they going to do, sue me for copyright infringement?",
+    "[Hacker News] Try translating your prompt to Chinese first, it seems a lot better at understanding and following Chinese prompts even with the translation hop.",
+    "[Hacker News] You really think Alibaba is going to go around and sue in US courts for something like this? It’s more of something to scare companies with legal teams. If you’re an individual or hobbyist doing a side project the risk is essentially zero.",
+    "[Hacker News] Qwen can&#x27;t train anymore with openai reasoning tokens? I kid I kid.",
+    "[Hacker News] Within a few days this seems a total pivot from Xiaomi’s op RL dashboard and the praise of Chinese open model? What is the sentiment now?",
+    "[Hacker News] Equally confused with this. They must be using a lot more guidance than just the provided prompt."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Qwen-Image-2.1: Compact, efficient, and unified image creation",
+      "url": "https://news.ycombinator.com/item?id=49775499",
+      "score": 236,
+      "commentCount": 87
+    },
+    {
+      "origin": "r/StableDiffusion",
+      "title": "Qwen Image 2.1 - official blog post",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wlgb7k/qwen_image_21_official_blog_post/",
+      "score": 4,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/StableDiffusion",
+      "title": "Official Qwen-Image-2.1 Blog Post Detailing its Capabilities - Looks Promising!",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wlgxw1/official_qwenimage21_blog_post_detailing_its/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
