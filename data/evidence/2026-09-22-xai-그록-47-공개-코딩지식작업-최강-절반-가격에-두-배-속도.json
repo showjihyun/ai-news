@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — x.ai]\nSolutions Developer Company Pricing News Contact Sales Try for free Products Grok Business Government Download iOS Android Grok on X Grok Bot Developers API Console Documentation Grok Build Try for free Back to news Sep 21, 2026 Introducing Grok 4.7 SpaceXAI&#x27;s most powerful model for coding and knowledge work. Twice as fast, at half the price of comparable models.\n\nGrok 4.7 is our most capable model for coding and knowledge work. It works longer on difficult tasks, checks its own work more carefully, and comes with our best-calibrated safeguards to date. Served at the same price and speed as Grok 4.6 , it is highly competitive in its class.\n\nFable 5.1 Opus 5 GPT-5.6 Sol Sonnet 5 Grok 4.7 Cost Tokens Steps On CursorBench 4.0, which stresses longer-running coding tasks, Grok 4.7 is at the frontier in price-performance.\n\nGrok 4.7 uses a new, larger base model compared to Grok 4.6 . It was trained with a longer reinforcement learning run on a harder mix of tasks, weighted toward problems that take many hours to complete. The model is better at verifying its own work and managing longer context. We also trained Grok 4.7 to natively understand the Grok Bot harness, making it better at conversational tasks and general knowledge work.\n\nGrok 4.7 is better at creating documents and presentations. In GDPval and AA Briefcase, AI is asked to work on tasks done by professionals such as lawyers, nurses, and financial analysts. Grok 4.7 improves upon Grok 4.6 on both benchmarks and performs comparably to other frontier models.\n\n1735 Fable 5.1 (max) 1695 Grok 4.7 (xhigh) 1605 Grok 4.6 (high) 1542 GPT-6 Astra (max) GDPval, AA Briefcase, and EEBench scores comparing Grok 4.7 with Grok 4.6, Fable 5.1, and GPT-6 Astra. Safety & Cybersecurity Grok 4.7 was built with an entirely new safeguard stack. It is the strongest model we’ve tested on refusals and jailbreak resistance. In dual-use domains like cybersecurity and biological work, it leads on both utility for benign tasks and safe refusal on dangerous ones, topping LatchBio’s biosafety benchmark at 62.4%.\n\nGrok 4.7 balances strong cyber defense capabilities with low refusal rates for legitimate use. It shows the highest safety on HackerBench v0.3, our benchmark for risky and malicious cyber tasks, allowing only 3.3% of risky dual-use prompts through while rarely blocking legitimate security work. We’ve also started giving select cybersecurity partners invite-only access to Grok 4.7’s red-team capabilities for defense research.\n\nGrok 4.7 is available today in Cursor and Grok Build . It is also available through the Grok API , third-party coding harnesses, and model routers and cloud platforms.\n\nThe model is priced starting at $2 per million input tokens and $6 per million output tokens. We also serve a fast variant with twice the output speed at twice the price.",
+  "reactions": [
+    "[Hacker News] The longer the comments, the more watermarked the codebase becomes.",
+    "[Hacker News] it&#x27;s not truly tested until it plays a match or ten in Brood War imo",
+    "[Hacker News] &gt; it is far too terse Anecdotally, I have noticed the same in the past week. It might just be anecdotal or driven by a long context window.",
+    "[Hacker News] I wonder how much of this is due to reliance on Twitter data. Or even just RLHF from humans that have a preference for Twitter style information.",
+    "[Hacker News] I didn&#x27;t find 4.6 any better than Composer 2.5 - which remains incredible and honestly nothing else compares for me. Make a galaxy model search the space, create a document, argue and defend decisions, then hand it to 2.5 to implement. 4.6 was a slower less enjoyable version of that. 4.7 is better at &quot;I want the button to cancel the jobs, dont make any mistakes&quot; but honestly that&#x"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Grok 4.7",
+      "url": "https://news.ycombinator.com/item?id=49788838",
+      "score": 451,
+      "commentCount": 368
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing Grok 4.7",
+      "url": "https://www.reddit.com/r/singularity/comments/1wmgudm/introducing_grok_47/",
+      "score": 9,
+      "commentCount": 0
+    }
+  ]
+}
