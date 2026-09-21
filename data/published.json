@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-21-ai-개발자들-인류-멸망-웃기네-진짜-걱정은-따로-있다",
+      "title": "Not all AI workers think the tech could kill everyone",
+      "urls": [
+        "https://bbc.com/news/articles/cm5y7qj54klpo"
+      ],
+      "publishedAt": "2026-09-21T02:02:36.360Z"
+    },
+    {
+      "slug": "2026-09-21-구글이-연-에이전트-오케스트라-ax-한국서-쓸-만할까",
+      "title": "Google's Open Agentic Orchestrator",
+      "urls": [
+        "https://agentexecutor.io/"
+      ],
+      "publishedAt": "2026-09-21T01:59:28.572Z"
+    },
+    {
       "slug": "2026-09-21-챗gpt가-내-웹-서핑을-엿본다-오픈ai-광고-추적기의-실체",
       "title": "ChatGPT now knows what you do on other websites via ad collector",
       "urls": [
