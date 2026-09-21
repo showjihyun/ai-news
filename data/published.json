@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-21-ai-챗봇-금융-질문엔-대부분-틀린다-실사용자-반응은-달랐다",
+      "title": "AI chatbots give wrong answers to financial queries 'most of the time'",
+      "urls": [
+        "https://ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666"
+      ],
+      "publishedAt": "2026-09-21T07:33:23.894Z"
+    },
+    {
+      "slug": "2026-09-21-8gb-그래픽카드로-돌리는-계속-학습-모델-미니-agi-등장",
+      "title": "Mini-AGI – dynamic continual learning model trained from scratch on 8GB VRAM",
+      "urls": [
+        "https://github.com/volotat/mini-AGI",
+        "https://github.com/volotat/mini-AGI"
+      ],
+      "publishedAt": "2026-09-21T07:27:57.767Z"
+    },
+    {
       "slug": "2026-09-21-ai-개발자들-인류-멸망-웃기네-진짜-걱정은-따로-있다",
       "title": "Not all AI workers think the tech could kill everyone",
       "urls": [

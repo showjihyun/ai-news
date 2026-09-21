@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Because it&#x27;s faster. I&#x27;ve done this on different topics - I know the answer is in a particular eBook&#x2F;PDF&#x2F;document, but for whatever reason it&#x27;s not trivial to look it up. The model can do it a lot more quickly than I can, and then I can still verify the accuracy.",
+    "[Hacker News] While I also practice Bogle&#x27;s approach from The Little Book of Common Sense Investing , even with this baseline there are some subtleties. -VFIAX is currently $707&#x2F;share. Fidelity&#x27;s FXAIX does not have to be purchased in increments of a share price, and this fund&#x27;s expenses are lower. -There are versions of the S&amp;P 500 for taxable accounts that minimize capital gains. -Vang",
+    "[Hacker News] So if you know a book that has the information you need, you just need to upload it into the model to get the right answer. Isn&#x27;t that a bit circular - if you already know the authoritative source, why ask a model?",
+    "[Hacker News] A free claude account with no subscription gets you access to sonnet and I believe uses it by default over haiku",
+    "[Hacker News] Some people do have complex financial situations. It&#x27;s not as simple as that. For example in the UK (and maybe US?) you get tax relief for money you put into your pensions, but there&#x27;s a limit of £60k&#x2F;year. Unless you earn a lot (which I do, yeay) when that limit is tapered. Except that you can also use up to 3 years of previously unused allowance. But you have to use this year&#x27",
+    "[Hacker News] And they hallucinate errors in the millions and struggle with financial data that is in a layout that isn’t in the training data. Ie balance sheet etc. Been trying to add more AI to my workflow but it just doesn’t work (yet) - not in the same way as vibe coding does The technical references lookups work though. Looking up regulations etc"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "AI chatbots give wrong answers to financial queries 'most of the time'",
+      "url": "https://news.ycombinator.com/item?id=49783062",
+      "score": 65,
+      "commentCount": 26
+    }
+  ]
+}
