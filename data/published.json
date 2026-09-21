@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-09-22-아마존-메타-뮤즈-ai-쇼핑-차단-에이전트-커머스-주도권-싸움-시작됐다",
+      "title": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
+      "urls": [
+        "https://forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom",
+        "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com",
+        "https://theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping"
+      ],
+      "publishedAt": "2026-09-21T19:49:52.843Z"
+    },
+    {
+      "slug": "2026-09-22-openai-수학-100개-난제-해결-주장-수학계-자문단-꾸렸지만-속도-조절은-뺐다",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "urls": [
+        "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+        "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+        "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+        "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence"
+      ],
+      "publishedAt": "2026-09-21T19:44:18.010Z"
+    },
+    {
       "slug": "2026-09-21-ai-챗봇-금융-질문엔-대부분-틀린다-실사용자-반응은-달랐다",
       "title": "AI chatbots give wrong answers to financial queries 'most of the time'",
       "urls": [
