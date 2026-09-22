@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-23-gpt-6-아스트라-20년-풀리지-않던-에니그마-암호-해독",
+      "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+      "urls": [
+        "https://cryptocellar.org/bgac/the-mvueh-break.html"
+      ],
+      "publishedAt": "2026-09-22T16:03:55.856Z"
+    },
+    {
       "slug": "2026-09-22-타입세이프-제브-등장-텍스트-넣고-숫자만-받는-결정-모델",
       "title": "Jev introduces a new shape of LLM",
       "urls": [
