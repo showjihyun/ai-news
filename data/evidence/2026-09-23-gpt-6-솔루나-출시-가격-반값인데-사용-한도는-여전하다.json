@@ -1,0 +1,181 @@
+{
+  "articleText": "[Hacker News — openai.com]\nMore ways to bring frontier intelligence into the work you do every day.\n\nShare GPT‑6 API pricing GPT‑6 API pricing A step up across the model family Professional work Factuality Coding Computer use Collaboration style Improving caching for agents and long conversations Continuing to improve alignment Availability GPT‑6 API pricing A step up across the model family Professional work Factuality Coding Computer use Collaboration style Improving caching for agents and long conversations Continuing to improve alignment Availability Earlier this month, we introduced GPT‑6 Astra , the most intelligent and aligned model in the world. While the most demanding and important projects still call for Astra’s full depth, work happens at different scales, rhythms, and budgets.\n\nThat’s why we’re expanding the GPT‑6 universe with GPT‑6 Sol and GPT‑6 Luna. GPT‑6 Astra introduced a new generation of intelligence—these models help distribute the benefits of that intelligence by advancing the frontier on cost efficiency. We trained GPT‑6 Sol and Luna with similar methods as GPT‑6 Astra, bringing the advances behind Astra’s state-of-the-art performance in professional work, factuality, coding, computer use, and alignment to faster, more affordable models.\n\nThe GPT‑6 models lead across the cost–intelligence curve, combining exceptional capabilities at every tier with infrastructure that delivers them efficiently at scale. Improvements in caching and inference let us serve these models at lower cost, and we’re passing those savings directly on to users and customers by reducing API prices for Sol and Luna by 50% compared with their GPT‑5.6 promotional pricing. Together, these improvements make advanced AI practical for more everyday tasks and applications at scale.\n\nGPT‑6 Astra continues to be our best model across the board. Choose it when you want the best results and an uncompromising experience.\n\nGPT‑6 Sol and Luna bring intelligence upgrades and cost efficiency to the models you already know and use across capabilities most useful for getting complex work done.\n\nGPT‑6 Sol can take on difficult work tasks while giving you more room to iterate with higher usage limits and lower cost, offering more intelligence and better results versus similarly priced competitor models.\n\nOn AutomationBench, a test of business workflows across apps, GPT‑6 Sol at xhigh effort outperforms Claude Opus 5 at max effort at just 9% of Opus 5’s cost per task. At high effort, GPT‑6 Luna improves on its predecessor by 5.4 percentage points at 58% lower cost per task.\n\nIn AutomationBench 1.0.6 ⁠ (opens in a new window) , AI agents are tested on end-to-end workflows using 47 tools across sales, marketing, operations, support, finance, and HR. The datapoint for Claude Fable 5.1 understates its actual cost, as it omits the cost of the Opus 5 fallbacks, which occurred on ~40% of tasks.\n\nGPT‑6 Sol also exceeds Claude Fable 5.1 at far lower cost, and even bests low-effort GPT‑6 Astra.\n\nOn Agents’ Last Exam , which evaluates agents on complex professional workflows, GPT‑6 Sol at max effort scores 56.4%, above Claude Opus 5’s highest score in the evaluation at 60% lower cost per task.\n\nIn Agents’ Last Exam V1 ⁠ (opens in a new window) , AI agents are evaluated on long-horizon, economically valuable tasks spanning 55 sub-industries, covering most major fields of professional work performed on a computer.\n\nThe usefulness of an answer depends on getting the facts right, and we’re continuing to make progress on factual reliability. On our internal factuality evaluation, which is based on de-identified real-world conversations where users flagged mistakes by our models, GPT‑6 Sol makes about half as many mistakes as its predecessor, approaching Astra-level reliability at much lower cost. GPT‑6 Luna also improves substantially; at higher effort levels it matches GPT‑5.6 Sol at about a hundredth its cost.\n\nHere we evaluate factuality on de-identified ChatGPT conversations where users had flagged a factual error from a prior model. These error-inducing conversations are not representative of typical usage, where factual errors are more rare. Scores are not controlled for length; however, our verbosity sweeps showed almost no dependence on answer length.\n\nThis year, coding agents have begun tackling tasks with more complexity, scope, and duration than ever before. At OpenAI, our internal usage has grown exponentially. Valued at API prices, daily token usage has exceeded $600 for the median researcher and $7,000 for researchers at the 90th percentile ( Research acceleration: The view inside OpenAI ⁠ ). As coding agents take on longer and more demanding tasks, the cost of sustained use matters more. GPT‑6 Sol and Luna combine strong coding performance with lower API prices, giving developers more room to iterate and teams the confidence to be more ambitious about what they ask Codex to take on.\n\nOn FrontierCode , which evaluates whether coding agents produce changes ready \n\n---\n\n[MarkTechPost — marktechpost.com]\nAnthropic has released Claude Opus 5.5 , the first model in its new Claude 5.5 family. The team states it performs at the level of Claude Fable 5.1 on most work. It also costs 40% less to run than Opus 5 on typical workloads at default settings. On Anthropic&#8217;s own benchmarks, it leads in agentic coding, computer use, and knowledge work.\n\nIs it deployable? Yes, as a managed API model. Anthropic has not released weights, so self-hosting is not an option. Developers can call claude-opus-5-5 on the Claude Platform , Amazon Web Services , Google Cloud , and Microsoft Azure . Zero data retention is available, as with previous Opus models.\n\nOpus 5.5 scores use adaptive thinking at max effort, with production safeguards enabled.\n\nTerminal-Bench 4.0 is reported at xhigh effort for Opus 5.5. GPT-6 Astra still leads on Terminal-Bench-Science and AutomationBench. Zapier ran AutomationBench without fallback models, so safeguard interventions counted as failures. Anthropic also cautions that benchmark margins are becoming a less reliable guide. In its own use, the gap to Fable 5.1 is narrower than the scores suggest.\n\nThe cost-adjusted results are more telling. At default (medium) effort, Opus 5.5 scores 54.6% on FrontierCode. That beats GPT-6 Astra&#8217;s top score of 53.3% at about a fifth of the cost per task. On CursorBench, medium effort scores 52.5%. That is 11 points above GPT-5.6 Sol&#8217;s best, at about a third of the cost.\n\nOpus 5.5 needs less compute to serve than Opus 5, and pricing reflects that.\n\nCache reads make up most agentic and coding costs, and they drop 60%. Opus 5.5 also uses fewer tokens per task. Together, that nets out to the 40% cost reduction. Output generation is more than 30% faster than Opus 5. Fast mode in Claude Code and the Claude Platform offers up to 2.5x speed at $8 input and $40 output per million tokens.\n\nAnthropic is also raising five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. Subscribers get a rate limit reset they can save and use later.\n\nWriting style also changed. Opus 5.5 puts key information first, uses less jargon, and follows the writing rules you give it.\n\nOpus 5.5 is Anthropic&#8217;s first release since CEO Dario Amodei called for pacing the frontier . External evaluators including METR and Frontier Design tested it before release. It posts the best score to date on Anthropic&#8217;s automated behavioral audit, which covers nearly 2,000 scenarios. In a new containment test, it tried to circumvent boundaries about 85% less often than Opus 5. Anthropic also notes the model often suspects it is being evaluated.\n\nIts biology and cyber capabilities are comparable to Claude Mythos 5.1. So Opus 5.5 ships with safeguards similar to Fable 5.1:\n\nTwo more changes affect integrations. Thinking can no longer be disabled . Outputs also carry watermarking for EU AI Act compliance. Full details are in the Opus 5.5 System Card .\n\nCheck out the Technical details here . All credit goes to the researcher of this project. Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\n\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\nAsif Razzaq is the CEO of Marktechpost AI Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\n\n---\n\n[TechCrunch AI — techcrunch.com]\nEarlier this month, OpenAI launched GPT-6 Astra , which it heralded as its most powerful and capable model yet, and the &#8220;world’s best model&#8221; for a variety of activities, including computer work and coding. Now, the lab is expanding the GPT-6 generation with updated versions of the smaller Sol and Luna models.\n\n&#8220;GPT-6 Astra introduced a new generation of intelligence; these models extend its benefits by making that intelligence more efficient and accessible,&#8221; the company writes.\n\nThe first models in the Sol and Luna series were introduced earlier this year , representing different tiers in OpenAI&#8217;s hierarchy of models. Sol is designed for complex tasks like coding, while OpenAI says Luna is more appropriate for clerical work — &#8220;high-volume tasks with a clear goal, like summarizing documents, extracting information, or answering quick questions.&#8221;\n\nOpenAI is also emphasizing big improvements in efficiency and affordability — most notably, via a substantial price drop for API access. The 6 series models will be available at half the cost of the 5.6 series of Sol and Luna, a price drop that OpenAI attributes to improvements in caching and inference.\n\nOpenAI also claims that its newest models are better at producing answers that are factually accurate, and notes that they have a lower error rate when it comes to coding.\n\n&#8220;On our internal factuality evaluation, which is based on de-identified real-world conversations where users flagged mistakes by our models, GPT-6 Sol makes about half as many mistakes as its predecessor, reaching Astra-level reliability at much lower cost,&#8221; the announcement reads.\n\nAs is typical with OpenAI&#8217;s new model releases, the company is claiming that its newest offerings outshine those of its primary competitor, Anthropic. The company repeatedly claims that GPT-6 Sol and Luna handle tasks substantially better than Anthropic&#8217;s top models — like Fable and Opus.\n\nNotably, Anthropic released a new version of Opus 5.5 just 90 minutes before OpenAI&#8217;s release, reflecting the intense competition between the two companies.\n\nThe new versions of Sol and Luna are now available in ChatGPT Work and Codex for most paid accounts, and in the ChatGPT API, while Luna will be available in the desktop app and for Free and Go users. OpenAI expects to roll out the models to ChatGPT (the app and website) gradually throughout the day.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nOctober 13 &#8211; 15 San Francisco Last day to book an exhibit table is September 18. Don’t miss out on high-impact leads, investor access, and a brand spotlight in Disrupt’s Expo Hall.\n\nTilly Norwood&#8217;s press tour is going about as well as you&#8217;d expect for an AI Amanda Silberling\n\nA new kind of AI model from a ChatGPT inventor is thrilling developers Tim Fernholz\n\nOpenAI caught its models leaving notes to successors to hide bad behavior Rebecca Bellan\n\nMicrosoft exec called AI scraping ‘the largest theft of labor in human history,&#8217; new unredacted filings reveal Rebecca Bellan\n\nAutomattic&#8217;s interim CEO and legal chief signed reciprocal severance deals during Mullenweg&#8217;s brief ouster Sarah Perez\n\nFormer Infosys chief&#8217;s AI startup nabs another $53M Jagmeet Singh\n\nClean tech startup Fluxnium found a way to tap 50,000 years&#8217; worth of nuclear fuel Tim De Chant",
+  "reactions": [
+    "[Hacker News] I think the problem with Anthropic&#x27;s plan is that Fable just destroys it. If you stick to Opus and below, the $200 plan goes from &quot;using 50% of the weekly quota on the first day&quot; to something much more reasonable.",
+    "[Hacker News] similar here: I tried Codex $20&#x2F;mo on a trial and I ran out of 5hr usage mid way through a medium complexity task on a medium size model twice and gave up there. I don’t recall the equiv Claude plan being anything like that. Anecdata, but not great for OAI if they actually want to retain people on a trial.",
+    "[Hacker News] Yeah, but it confuses me, I read left to right, so if they put GPT-6 and $0.20 first, I would assume that&#x27;s the new pricing, they should make it clear, not confusing.",
+    "[Hacker News] Yes, still 20% of input cost. https:&#x2F;&#x2F;developers.openai.com&#x2F;api&#x2F;docs&#x2F;pricing",
+    "[Hacker News] &gt; I dont know how they make money here By raising it from investors.",
+    "[Hacker News] Is Luna (on &quot;low&quot; thinking) the first left handed model?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT-6 Sol and Luna",
+      "url": "https://news.ycombinator.com/item?id=49805509",
+      "score": 483,
+      "commentCount": 273
+    },
+    {
+      "origin": "GeekNews",
+      "title": "GPT-6 Sol과 Luna",
+      "url": "https://news.hada.io/topic?id=34138",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "OpenAI Launches GPT-6 Sol and Luna Minutes After Anthropic Drops Claude Opus 5.5 - Decrypt",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQX3pXMk5NOFgyekdoYk8tM0dVUlY1WlM1bGNmUlU5TEp6MEI5dkNPeUpkT3loVU44SmFldGlWSnFNVHBxN3Flc0QyX3Q1WlFzQ245UkxmOC0tWmphRWtWaTN0TEM5eVgwOVNsUjBaZjRheVprQmxHblQxaEJfckE0SlJkZ21zQml6eHfSAZIBQVVfeXFMTmlWT01tR2VSblNyVlZ3VkVrb3AwRzZxek1LYmVJVzBwX3hneUxUaWpXa0c0VWVueW9nRm92bHp6NWpYdGNHRkFaTmpFS002cng5NThhREJrNVd2OERoVVFHRXhhNHBOV3RKclYwQ0Zzdzl3Q09XU01tRUVqODVQdmpTOHg5U21qMllmeFNCS3BvLWc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic: Claude Opus 5.5 Now Available on A - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ1ViNERoTnB5R0hKVFJWU0NlWllWblEwWUI5ejZ3bE9vWlo0ZGtaUDk4S3pTTmE3T24tX1RRc0xxblBIaF8zb2lwaVlnbGkyT2lCWTlWWU93NGIteGE4bS1rT19WQ01LTTFwQUxoTk53clFkNFpQRVJVMmNoMXdmTDBsaU51c2lxM3FEODNEYVF1R3VWVkhhU190QTg2NzRrNUY4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic releases Claude Opus 5.5, and it's not just more powerful: it's cheaper, too - XDA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOblhuZ3UtN2UyclFhR2xxRHdrQ2lnTDd3NEk2SVZEbGtKN2VOdWtxZ3YzRzhnSUZiMGtyUWczOTd1OXNiQmg1blZKb00xRUYxOWpQeEtCYV9ORm55MHVlbm1kek9CQjc5UWlLUm55a2hKdFhUaGxSY0JvdGdWVHkxZHZnWTNZcVB1X0NIVGhwOENfNWtkSkRfbkFJd2F4alhxWFhVeFlmNEYyRVNNUTZjZWV3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "'Most Powerful Model Yet': Anthropic Unveils Claude Opus 5.5 Amid IPO Talks - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWHZUZ2JHR1lnTTBIN0k5Uzg3TFUxVDlwQUs5TzAxakFvTV9ZOFNDcnY1blN4Z3NxSEppTHVpTXpYMmVuY29MNFg2c096dVR0VFhKcW1VNmh0UWY2dm9jUmxOd2g5Y2NtcW56d29pVzdweWJLMXJ4NFg2bTZyQU02Q3Z1ZjhqTmFkTkhkQ2pCZkZRS2RhcTFNNGJTbGRfQmVLWmlxaWZFLUZ5THQ4a0kxaXU3SGRseW1lQUZRUDRsVUJwUTTSAcsBQVVfeXFMUHZUbGFoOERhcjVHaVpJUXlWMFdYS1FmUEo5Y0JzbEVGR3p6ZlhnZWJCQmQyb2xGYjNwQzZQR1hQclVtVEx4SnhuYnJHRVlWSi0xVHEyR1dtRHV4elZyd3MxaXZlaFRPWFJPbnRVc3haUW5LcXRmMXZHVkpoQTBGVmVUX09KUml1c3luaFV4OHhBR29FR1MwY0VJdlkwNkI3Sm0xcEZhbXhlNk1uTlhSWlQwSGJwN1JsMDR5a1ZwLXBySHVJU2hEQ2ptLTg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Debuts Claude Opus 5.5 With 40% Lower Running Costs Amid AI Safety Debate - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01N0RObWJEV1NlNEdrLU56Y0Z2U3lVNHdiMl9tSDJXb1V4a2NYc1dKcm1OaE5leTJkWTNOTEFtRmFyT2c2aWdxZEFrazA2LVQ3elRiQmhjRDRMZjdRMWh0VVQ4VDV2STcxOXVCcEZlRlllR3R0UUE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Opus 5.5 - CNA",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM2RvSHpfbV9reU80emdGaXBMTnY3d0dSWm9vVTVpZ0otLV9xSXNWMVNhUTZSWEVUcUo1RlI2TG15bndIOFpKS3VvcXdFT2h1LWRzOHJHazg3S1Fvd3NZdmZYeW1aaWpvNlp3eUJ4UTRkeTJuZWl4VjFPZ2tmMXJBeEJmcndIRjRS?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Unveils Claude Opus 5.5: 40% Lower Costs, Faster Speeds, Upgraded Security and Stronger Long-Task Capabilities - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUFdPYi13OWU0LVltR1VmbXo1Y2NtY0xIMUtSTFRaclpRSTZjVXY1UkprQkZ2UHBuZFFlM0pJdFY1di1lcWphblRweUFsdHkydmdneEhvdWNrU2lvc1VrREhIZzFVNVBGdlBOVTM5dXhNQ2JES0QzSXc5bS1LcVFZWmFqUUkwdGstZ045cFhuSERKVlo4T0pJSWg2SVlOR25GZHhwTGRFUHIxZDEtYkFjcHo3UUNnLTJRRi1KNUpFejk?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Opus 5.5 - BNN Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORTZEbXlPYW9iZE1CTTVGRGhNVzVET2ltekRrQmpPbG5GSWRTY3c5VWxOMGRFLXZBUjFNX1hFeVZwLUZHclhMdUpyRTBYRWdrTWxqU1E2WE9BWDdSQzRMTGo2ZHNzdHQxY0VWWGNuRWJWN1dhM3k0ZkZ6cG9uMjdyajZRQTRxZ3dnYVp4SzQ4TjUzLV9pYS0xLW1mSHpyT2cyRmxjaUl5MXo?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Opus 5.5, says performance comparable to top-tier Fable 5.1 - Dawn",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA4VTdLQ09SazFwcGhFREpDcm9DSVJteHlsOVNBOVpaSVVaUnBoREk2T1ZObHk3ZzNhX2xVNjF6MkIyenRVbllLb01vTnVfQdIBTkFVX3lxTFA4VTdLQ09SazFwcGhFREpDcm9DSVJteHlsOVNBOVpaSVVaUnBoREk2T1ZObHk3ZzNhX2xVNjF6MkIyenRVbllLb01vTnVfQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Opus 5.5: faster and cheaper, but with some limitations - Il Sole 24 ORE",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNclJOQ05iNVpwLXdNTFhNNjlQZHNYMzRpZXNxZGVGcE1abUE0d3duUDU3YnQzT2V0bHBPeHdrTkFYZ0cwOThlRFNaX1pSQU80QmRqMElmdWZFRjVUMW5VV2JuRmxMcHl5RmFUTTdDRnRNTFZGTExJTmh4NEtqRGpnVzVQU2F5M05PdzYtbThMVGVpZ2wzdW91MUhYSVc4aFhwMHEyTV9jMTkwS2ROZHJ1SDNRNEVEUDNRZkE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Opus 5.5 - economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN3QtOUsySGFRNXlINHROYXZJVTluVWlfSDFXTFl1S2hIRF9RVW94a3pXSVdCNEFPa2ZDcUxrRjlrdFU5NnBQMTN1NFl6RXVOb1FQU3E1QnBaX1piY2Vubkx4UWNOMlBWb0tFc05lZlI2c2VDNWpXbkVsZl92WHpjNjNhc2pUT1kyZWUxWVd2T29GTXltWFVRZ2c1bVE3SVNjMmk4WnVfMTlua0ZObDZSZGVCeWY1NEhDaFpzLUNZR3FnbHfSAbwBQVVfeXFMTm9OV1RYdGJLRmFzUkJ1MTVqWEM5cDFPdmhvVmVzWHZLdTZBZzZZZnRxOUE3MWRrb1NMUUFBUFR0d2dlcXpuWVE0M0otajRENjh4YXN5UEtndEFPR0Zqa1ZzYzV3QVh4S1hZQUhxZ0JvZUZ4T0NTcUlkQWNVV2E3eHoxdDNIYmwxdWtobHdnRjgyaFFIeFZfckMtZ1J1dDN0dGo1WmJXY3k1d2hIcUtfNXkzM0JrSUl3X3RuZnQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Opus 5.5, says it costs 40% less than Opus 5 - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeVh4VzM1VnFKWGpnSjZxWlRJVU1VRTBYZ3dsV1loTDJhYXJNdDJZZndQcUVuOTNWSE5uelJib0R6OW9pU0FQR2V5NlFDaHJoMUdvbFVKcUE1RDRLaHhPM3pTbFZDSmI5RTJ2UkY0bWQzWmJwWGpoVC14MUZuQndMR0trMW9zb1Y3bV9yUFZvaVBycDB2MVZCSk1PSjFkUzdpWXoxR09mNzRUM3dyU2NUeWVsYzBlT3pr0gG-AUFVX3lxTFBfLURqSEcyNHgzWklkSFk2YXJjWndIM2VsX1FEZDZQM1VLbmJhODJOakRlbF9tZFpKV0RxWXZYbEZJdEtzTVJyY0lnVzRvSlNLX1VmTmt2VzlKbXEzazhvY0U0S3g4WHB1elRnU0Vxc1Jremh0WEpZUkZBRC0xcHg1TUJydjA2M2N0UlJDSlJlamR4UzFsQ0x0czZDVEY3TWxLMXY3SUJNWHcxNWJHX0RJS0Iwb1VmMDJjZkkyUFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Anthropic Releases Claude Opus 5.5: Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
+      "url": "https://marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+      "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
+      "url": "https://theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://www.reddit.com/r/singularity/comments/1wngzou/introducing_gpt6_sol_and_luna/",
+      "score": 15,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "GPT-6 Sol, Luna, and “Astra Minor” reportedly just appeared in Microsoft’s Azure model config",
+      "url": "https://www.reddit.com/r/singularity/comments/1wncn19/gpt6_sol_luna_and_astra_minor_reportedly_just/",
+      "score": 11,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wngyux/introducing_gpt6_sol_and_luna/",
+      "score": 11,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Claude Opus 5.5 spotted on Anthropic’s website, Tuesday release looking more likely",
+      "url": "https://www.reddit.com/r/singularity/comments/1wmynp8/claude_opus_55_spotted_on_anthropics_website/",
+      "score": 7,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "GPT 6 Sol and Luna at half the GPT 5.6 prices",
+      "url": "https://www.reddit.com/r/singularity/comments/1wnha3r/gpt_6_sol_and_luna_at_half_the_gpt_56_prices/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

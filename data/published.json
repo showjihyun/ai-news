@@ -1,6 +1,37 @@
 {
   "records": [
     {
+      "slug": "2026-09-23-gpt-6-솔루나-출시-가격-반값인데-사용-한도는-여전하다",
+      "title": "GPT-6 Sol과 Luna",
+      "urls": [
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "https://news.hada.io/topic?id=34138",
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxQX3pXMk5NOFgyekdoYk8tM0dVUlY1WlM1bGNmUlU5TEp6MEI5dkNPeUpkT3loVU44SmFldGlWSnFNVHBxN3Flc0QyX3Q1WlFzQ245UkxmOC0tWmphRWtWaTN0TEM5eVgwOVNsUjBaZjRheVprQmxHblQxaEJfckE0SlJkZ21zQml6eHfSAZIBQVVfeXFMTmlWT01tR2VSblNyVlZ3VkVrb3AwRzZxek1LYmVJVzBwX3hneUxUaWpXa0c0VWVueW9nRm92bHp6NWpYdGNHRkFaTmpFS002cng5NThhREJrNVd2OERoVVFHRXhhNHBOV3RKclYwQ0Zzdzl3Q09XU01tRUVqODVQdmpTOHg5U21qMllmeFNCS3BvLWc?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ1ViNERoTnB5R0hKVFJWU0NlWllWblEwWUI5ejZ3bE9vWlo0ZGtaUDk4S3pTTmE3T24tX1RRc0xxblBIaF8zb2lwaVlnbGkyT2lCWTlWWU93NGIteGE4bS1rT19WQ01LTTFwQUxoTk53clFkNFpQRVJVMmNoMXdmTDBsaU51c2lxM3FEODNEYVF1R3VWVkhhU190QTg2NzRrNUY4?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxOblhuZ3UtN2UyclFhR2xxRHdrQ2lnTDd3NEk2SVZEbGtKN2VOdWtxZ3YzRzhnSUZiMGtyUWczOTd1OXNiQmg1blZKb00xRUYxOWpQeEtCYV9ORm55MHVlbm1kek9CQjc5UWlLUm55a2hKdFhUaGxSY0JvdGdWVHkxZHZnWTNZcVB1X0NIVGhwOENfNWtkSkRfbkFJd2F4alhxWFhVeFlmNEYyRVNNUTZjZWV3?oc=5",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWHZUZ2JHR1lnTTBIN0k5Uzg3TFUxVDlwQUs5TzAxakFvTV9ZOFNDcnY1blN4Z3NxSEppTHVpTXpYMmVuY29MNFg2c096dVR0VFhKcW1VNmh0UWY2dm9jUmxOd2g5Y2NtcW56d29pVzdweWJLMXJ4NFg2bTZyQU02Q3Z1ZjhqTmFkTkhkQ2pCZkZRS2RhcTFNNGJTbGRfQmVLWmlxaWZFLUZ5THQ4a0kxaXU3SGRseW1lQUZRUDRsVUJwUTTSAcsBQVVfeXFMUHZUbGFoOERhcjVHaVpJUXlWMFdYS1FmUEo5Y0JzbEVGR3p6ZlhnZWJCQmQyb2xGYjNwQzZQR1hQclVtVEx4SnhuYnJHRVlWSi0xVHEyR1dtRHV4elZyd3MxaXZlaFRPWFJPbnRVc3haUW5LcXRmMXZHVkpoQTBGVmVUX09KUml1c3luaFV4OHhBR29FR1MwY0VJdlkwNkI3Sm0xcEZhbXhlNk1uTlhSWlQwSGJwN1JsMDR5a1ZwLXBySHVJU2hEQ2ptLTg?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE01N0RObWJEV1NlNEdrLU56Y0Z2U3lVNHdiMl9tSDJXb1V4a2NYc1dKcm1OaE5leTJkWTNOTEFtRmFyT2c2aWdxZEFrazA2LVQ3elRiQmhjRDRMZjdRMWh0VVQ4VDV2STcxOXVCcEZlRlllR3R0UUE?oc=5",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM2RvSHpfbV9reU80emdGaXBMTnY3d0dSWm9vVTVpZ0otLV9xSXNWMVNhUTZSWEVUcUo1RlI2TG15bndIOFpKS3VvcXdFT2h1LWRzOHJHazg3S1Fvd3NZdmZYeW1aaWpvNlp3eUJ4UTRkeTJuZWl4VjFPZ2tmMXJBeEJmcndIRjRS?oc=5",
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUFdPYi13OWU0LVltR1VmbXo1Y2NtY0xIMUtSTFRaclpRSTZjVXY1UkprQkZ2UHBuZFFlM0pJdFY1di1lcWphblRweUFsdHkydmdneEhvdWNrU2lvc1VrREhIZzFVNVBGdlBOVTM5dXhNQ2JES0QzSXc5bS1LcVFZWmFqUUkwdGstZ045cFhuSERKVlo4T0pJSWg2SVlOR25GZHhwTGRFUHIxZDEtYkFjcHo3UUNnLTJRRi1KNUpFejk?oc=5",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORTZEbXlPYW9iZE1CTTVGRGhNVzVET2ltekRrQmpPbG5GSWRTY3c5VWxOMGRFLXZBUjFNX1hFeVZwLUZHclhMdUpyRTBYRWdrTWxqU1E2WE9BWDdSQzRMTGo2ZHNzdHQxY0VWWGNuRWJWN1dhM3k0ZkZ6cG9uMjdyajZRQTRxZ3dnYVp4SzQ4TjUzLV9pYS0xLW1mSHpyT2cyRmxjaUl5MXo?oc=5",
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA4VTdLQ09SazFwcGhFREpDcm9DSVJteHlsOVNBOVpaSVVaUnBoREk2T1ZObHk3ZzNhX2xVNjF6MkIyenRVbllLb01vTnVfQdIBTkFVX3lxTFA4VTdLQ09SazFwcGhFREpDcm9DSVJteHlsOVNBOVpaSVVaUnBoREk2T1ZObHk3ZzNhX2xVNjF6MkIyenRVbllLb01vTnVfQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxNclJOQ05iNVpwLXdNTFhNNjlQZHNYMzRpZXNxZGVGcE1abUE0d3duUDU3YnQzT2V0bHBPeHdrTkFYZ0cwOThlRFNaX1pSQU80QmRqMElmdWZFRjVUMW5VV2JuRmxMcHl5RmFUTTdDRnRNTFZGTExJTmh4NEtqRGpnVzVQU2F5M05PdzYtbThMVGVpZ2wzdW91MUhYSVc4aFhwMHEyTV9jMTkwS2ROZHJ1SDNRNEVEUDNRZkE?oc=5",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN3QtOUsySGFRNXlINHROYXZJVTluVWlfSDFXTFl1S2hIRF9RVW94a3pXSVdCNEFPa2ZDcUxrRjlrdFU5NnBQMTN1NFl6RXVOb1FQU3E1QnBaX1piY2Vubkx4UWNOMlBWb0tFc05lZlI2c2VDNWpXbkVsZl92WHpjNjNhc2pUT1kyZWUxWVd2T29GTXltWFVRZ2c1bVE3SVNjMmk4WnVfMTlua0ZObDZSZGVCeWY1NEhDaFpzLUNZR3FnbHfSAbwBQVVfeXFMTm9OV1RYdGJLRmFzUkJ1MTVqWEM5cDFPdmhvVmVzWHZLdTZBZzZZZnRxOUE3MWRrb1NMUUFBUFR0d2dlcXpuWVE0M0otajRENjh4YXN5UEtndEFPR0Zqa1ZzYzV3QVh4S1hZQUhxZ0JvZUZ4T0NTcUlkQWNVV2E3eHoxdDNIYmwxdWtobHdnRjgyaFFIeFZfckMtZ1J1dDN0dGo1WmJXY3k1d2hIcUtfNXkzM0JrSUl3X3RuZnQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeVh4VzM1VnFKWGpnSjZxWlRJVU1VRTBYZ3dsV1loTDJhYXJNdDJZZndQcUVuOTNWSE5uelJib0R6OW9pU0FQR2V5NlFDaHJoMUdvbFVKcUE1RDRLaHhPM3pTbFZDSmI5RTJ2UkY0bWQzWmJwWGpoVC14MUZuQndMR0trMW9zb1Y3bV9yUFZvaVBycDB2MVZCSk1PSjFkUzdpWXoxR09mNzRUM3dyU2NUeWVsYzBlT3pr0gG-AUFVX3lxTFBfLURqSEcyNHgzWklkSFk2YXJjWndIM2VsX1FEZDZQM1VLbmJhODJOakRlbF9tZFpKV0RxWXZYbEZJdEtzTVJyY0lnVzRvSlNLX1VmTmt2VzlKbXEzazhvY0U0S3g4WHB1elRnU0Vxc1Jremh0WEpZUkZBRC0xcHg1TUJydjA2M2N0UlJDSlJlamR4UzFsQ0x0czZDVEY3TWxLMXY3SUJNWHcxNWJHX0RJS0Iwb1VmMDJjZkkyUFE?oc=5",
+        "https://marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
+        "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+        "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance",
+        "https://theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "https://i.redd.it/2zteyhccb3rh1.jpeg",
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "https://i.redd.it/x3ibe4dptzqh1.png",
+        "https://i.redd.it/q50lyy5z44rh1.png"
+      ],
+      "publishedAt": "2026-09-22T19:26:22.463Z"
+    },
+    {
       "slug": "2026-09-23-gpt-6-아스트라-20년-풀리지-않던-에니그마-암호-해독",
       "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
       "urls": [
