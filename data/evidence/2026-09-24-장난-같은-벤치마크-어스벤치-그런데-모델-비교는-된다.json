@@ -1,0 +1,27 @@
+{
+  "articleText": "LLM AssBench 는 하나의 프롬프트로 여러 모델을 여러 날짜에 비교하는 LLM 벤치마크임 Claude 비교 항목에는 Opus, Fable, Sonnet, Haiku 계열의 여러 버전이 포함됨 GPT 비교 항목에는 Astra, Sol, Terra, Luna 계열과 GPT 5.5가 포함됨...",
+  "reactions": [
+    "[Hacker News] the eval we need the eval we don&#x27;t deserve",
+    "[Hacker News] https:&#x2F;&#x2F;www.assbench.com&#x2F;PROMPT.md sent back an error. Error code: 404 Not Found",
+    "[Hacker News] Why is this flagged? Isnt the readership adults? (Do children want to read these dry articles on tech?)",
+    "[Hacker News] Origami Ass Dreamed up by Claude &quot;Haiku&quot; Unironically 折り紙臀 (origami den) ハイクの作品 (Haiku no sakuhin) 皮肉のない (hiniku-no-nai)",
+    "[Hacker News] presumably that&#x27;s why it was flagged? is NSFW against HN&#x27;s policy?",
+    "[Hacker News] I go to church every week. I try not to swear. The site is fine, and it&#x27;s funny to my inner 13-year-old boy."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "LLM Ass Bench",
+      "url": "https://news.ycombinator.com/item?id=49807688",
+      "score": 163,
+      "commentCount": 45
+    },
+    {
+      "origin": "GeekNews",
+      "title": "LLM Ass Bench",
+      "url": "https://news.hada.io/topic?id=34170",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}
