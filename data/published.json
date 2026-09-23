@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-24-구글-제미나이-38-tts-공개-목소리-무한-생성-시대-열렸다",
+      "title": "Gemini 3.8 text-to-speech",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech",
+        "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+      ],
+      "publishedAt": "2026-09-23T19:28:29.792Z"
+    },
+    {
+      "slug": "2026-09-24-앤스로픽-자체-생물학-연구소-열고-클로드가-크리스퍼-닮은-효소-발견",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "urls": [
+        "https://anthropic.com/news/claude-discovers-novel-enzyme-system",
+        "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQl84SVk1NlpMSmNrUGZqaGM3Z05hNlJ3QlJMcVBaLW9nT3lZNk91YjlkczUzbGhsdzYwbk5JWG12OHVKOVNFckx1MUJ0Ti1FOUdlckVZb3J5bU43ZE50dGpRTEFNbTYyOFZ3OC1Nd1lsekgtLTVuSHhhUEpPSktRQmNWNUl5VG53bnFyVGdma2dIZFNCQ1IwUHJSOGJodlB0Mld4X0twckJJM2dJZkFHb2NfZVZNN2RPNnlvZTVJa0JrYmRsQkYzQl84MmZBRHgzM2xVUlBlQjl4MDdzT2ZaZ0FuN3Vwa2RTZzRqQWJFOA?oc=5"
+      ],
+      "publishedAt": "2026-09-23T19:17:05.721Z"
+    },
+    {
       "slug": "2026-09-23-펜타곤-ai-과신-탓-이란-학교-오폭-책임-소재는-여전히-안갯속",
       "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
       "urls": [
