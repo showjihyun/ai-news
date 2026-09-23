@@ -1,6 +1,44 @@
 {
   "records": [
     {
+      "slug": "2026-09-23-펜타곤-ai-과신-탓-이란-학교-오폭-책임-소재는-여전히-안갯속",
+      "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+      "urls": [
+        "https://bloomberg.com/graphics/2026-iran-school-attack"
+      ],
+      "publishedAt": "2026-09-23T00:53:41.138Z"
+    },
+    {
+      "slug": "2026-09-23-클로드-오퍼스-55-출시-보도-정작-자료엔-트럼프-연설만",
+      "title": "Introducing Claude Opus 5.5, the first model in our new Claude 5.5 family",
+      "urls": [
+        "https://v.redd.it/xu8sa124j3rh1",
+        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xbTN1a0tOdm9kT0JxbVBHMU9XYUhpUjd0MHNFYm8yd2pRMnhjdEYzdjF3ckZEY1V0a2ZQTXlyRUhteVozMlhDbVQ3Mm1KWlRYbUVF?oc=5",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNR3kyT0JlSC1QNUhOT0RtQ0VZVzFRSF9IZVE1TlhmY3RMU012NENzcm9IVXdXM0NQMmZRVVRxV0d4QmgyUHBCWXRsQ1J3OGhCZ1JPUGhJOG1ZYTdXcTBLVG5PQ1NHUzB6WEVlZFl6U2tDcUdqVkYzSndmOGxlREwtd05Fb1VIUnZpT2d3bDhKWQ?oc=5",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQX2VINVptSExJdjU0WkQ0WDVkRUdsaHduYjB1Tk81TnBrZkVvalowQWh2NFJnYmZ1TkxtVTQyZHdVWDgzVmJtRE9SSjkzeW9DWDFleHNPU01LUWE1TUpCdktmTVVRZHNXWm9ack9CRmdQTU1XUHd0Y2lhaEZBWWJYQVNFYw?oc=5",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVDNTSkNCdjRXSUVQQzc4LWtrblRKM3p6N1RvMk9UQTRfamFBMy1UelVxdjRGX3hRSlpTYmFDa1piM2FKT3lfdFlGdXZ0YmoyOURoRzBvM3hYRnp4elUzX2ZqYURxbEJWSjVCY1hWWHhVSTFWZjd3VkJGRlNkWXk3N3pYWWFHbVItLVA1RmJPOUoyblZ0dGp2aWF4QVJMZlk?oc=5",
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNlVGZF9tQVhYY1VwWS1uOG1ONGZodXBUTnNqelF1OTdmYnFXcTRFdHVSUFA1WEFoQnMxbkx6eVFTNDIyeHVDSHBYVnVSRWVlY1hLS1pEcnExY0pfQkNsazQ5X3JQLU1DeUMyaFZ0dUs1cmliQW03cWNId1VKR1R1Z295SlNEYXc?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQTJMZ1lvVFRqajJaWF9udFJqNTktMWJMeE4xemx4S1R1S2xXT21uNnVBV2JJMkY0WXJ4YjZsdFBUbUpjWG1iYjZQRFFzWkhleDdkTTl3eGNOOGJhTW1IRmhucjZaX1hQbnZyWjhDdmVfUEt4RU5pTDBIV1lKb3ZyYmN4Nm9qLU1aaTZZLW1sVWhGY0dkb0trUDM3TE1pNnI0Mm9KZk5YQm1wT2Q2NnFLcURRZDAyVGtMaWdjX1h3?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYkoyRzJQTmFySzBBejRPMjBWbGlRQkNxUkxrbm1uNDdYYU04QmFhOTVWbDQzZ3lCOGFjX0VZNFFRZlJfZjVHOHFzZC1jTnJwZ0hGcXFiai1MSUcyYkJWRGpYdWl1WUxpbWtEbWtiaDBBRDBUN0dSWVREQ2VlWElZMktiYmRHTlhTREs0?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMHNETE1yWmNpLWRncTh6UVc5UEM3Z1BHNGFQVEZpR2s2ZDFBZzc3d1FWRmlRbVdrNnNGWXRJOUJKZmJKV0xKWFZWWVJhQW05RUlHaldIejdLWWh5SGtyRVFrOUNERGhLN2tVRm9VV21INXZLS3lpTGlwNDJTbmZ2enVEOFVJbFFmZUdtY05FbHZDOHBTaWhSYVJpZ0VWaTdQVGU3c0pERVNreC1McnVlWQ?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxNY21wamJpdDdjLXhBU1cxUlNwVUJXNHlRYkRRdC1fUjZWZ1ZtUkpzd3IzaEdDcklwS29BVVdUeEF6VGdINW9WRm1oSnowei1rYzU5VTZFS3NYYVlhcklRbzhsUEFyRGl4NFlYbm5vOFJPWTBERkdpOFZHWDAwajE2UktxdUVxMEFUSWdRWExZNnI?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZVUtNzVVY1JCeW8yaFVhWUdGd2JzeHBMUzZQWnFZS29fM1BsaFFvOGs4bktjY3B1ZTFIMlpzaUhoNVpEREhDekVFdnhTdHk3aVdQajc3Z2lwS0RSREkzMk1raENfeVRwQ25PcmVQbmRKbV9QNy1tVTFaNzdVOFptU3dCeEFmZWdTX1pYSHF2ajJKT3FJLTRfX2FCU0h2WmpIUFlGdllfRGM2b2VWU0VjVkxkRTc4dVhVWlRZSlpkV1E5Z1EwaWNfN0RzQktHUV83SFBGd3NRZ1Q?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUlZuU0labkpiRUZSazJna3N4UGRrQ0xnQ093WTUxc2NSMGFDa0EtTDBxbGNqSktlMUFpcFctMktXSzZqdE8waUxySHNlTjgtTjlqcWRTZmhKZmh4Mm1UNFRFRUZWcGxvR1BMU2htUlBhTGZEWEV2ZHlwXzViSUNWcUpBeUd6ZU5RXzUw?oc=5",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZnB3TEFlQVY2djRQdTd6VEpySHVkb3JVXzFkQk1Qamc3dERHNVhMam9lUEc0QzluUmJtb3pNbzYwWWVtMkJCU2p5UW5oS2x1amcwZWt5Yzg0NTB1VkZId29DcG5fa0hvMjNSZU1qak1LNlhRdGRocW1nbm9jMHRZOGVPRjF5am1IX1A5UmRLVC0xSktlWUtXTFlFWE0zUlp0VFdDUU81Q1I?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbHR3MnVZbENoS196WFlDSHROSGNib2hSMjV5V2kwSXdNSXp3anJRSEgwM3V5eWNTMzV5em1YQllxSHQ4OGd4SmpJT1pzdTdSalprQTNFY29kdVFySXpJSlVDNWJIalRxNmtjVFZyeDhlUERCM2JwRG8xXzQ2dFBmTEJWNGFFcE1nSlRfZWVRVldZS05kT1FnV1Rn?oc=5",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOODQ1MnQ3TmtBU3JySlljdWpXTjdkMnIxdVp5cnZOWXh4UUJCSTI3VWg4eWpDSnJKQ2stekhUZmM0WE1vbnNSc2tZRHVyZTZLOXZmS0ZBcS1udmh2dnhHcHpBMzFEdHlNMHRnMnUyUktPT1hkMDRWOUVqeVNmNDZuM3o4ZkdIR0Jz?oc=5",
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNi1mOUlPV0xIb2NRUHNodEY1SDBRcWoySEo2SWtpRnljT1E2MUQwUXdGck9nOWgzT1VXc2xLZmc3QnNGUkQ1UHpWMFB2c0Q4VjU3aU9LcmU0cF9USHQwU3FHTGFqelZCdWFlMWdWZ0VMQVNva2VBcHgtMEdET1ZiQ1RoOExVNnZNamNiSHJBb19aMjJXQXI4bE1mdTVBbjJhc3p2S1VSWVlUSDQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwNFVOVmpNWThCZWVSNmNmOHptZGVrMGxYbTB5cmd4SThBS3dsRHNPRlpER096LTV3YzB0VkdYYUN3M3dyTTRGbGVkdjBuNG5rTl9HQ0FZTlR6VDk3NE1Vb3BaaHbSAWpBVV95cUxQWHgteVMyS3FjLVU3RThYdV9yN0Y2bDRkcnFIaEN4MVJtdUptOGZ2cG54Vk50bEVfSkxLQVIwY3FSZm5CczB1aTB5LTJzSF9VTHRidW1Uak02TGJVZGJRdUJDT3NEUXBGTkFR?oc=5",
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSlNiNDhIT3puMENFMTlMRmVybzdMaXpmdEE1WXY5cU5JRjVjQlU2SlA3SHZnMno3b2ZvcmpRTUV2RWVKSy00OEZPaGkyNzBTX1gzSFpuYWx1WkJEMFdkV21RYmVFNnVtTzNobmE1NzluYUhqTl9jTGhLaTlDYV9WLThOa2RuQ0k?oc=5",
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVW5mc2xwMFhGeW1Dd3Y1bUY4dE9NVzFOa2FQSTI1a193YUk0aExLeFU2cm4xOXZVc0RqYjljNWVxMHpfWVRabVJMVkg5OE1aMWdXYUJKSG5RN2tYeUlycXh0VTcwck83TEdlcV9kOTRTdERZRXo5X3FUWkQ2WnlHb1hUZ3FDTzhwb3h0bWRlTWFOUmxBN2luR0QwQjRjeHhMWjRFRUN2M0V4U3FIaUZmRzk2QlN2SjRxSmZmUEhSQmo?oc=5",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSFpjT1VBT1VaanU4X2ZsOUJIWnhKUUh3VmtndDhVdU91LTBEbEVWM0VlWW50S25xWmlZWktvbWdtZmF4czZyZ1JOTzg4ZjVSaWlrMmZrbUoxVEhHS0FxNzhwUEpEcnhlc2VqelFiTW82U1B6Z0taYWhiMm1DdHFGRkZTTEItN1dFYXVlcVZKUDIyc3hGQWNtOHVmUzVka0o5YWxtUXRLSW1VdXNQb0pEWURMVXE3VUF6SVVPaXdRN0JkT0FGNnZIQzc3UHBnaEo2elQ3ZTI2MjhVaVBIRmM2T9IB5gFBVV95cUxOT3MwV01weldCYXpzTUFQYlNpSHVwUWQ4OXJQbnRDZlY2bmtDblZfaGJoeXZJSDlTcGh2djRkYmEwa1lERERrRFJrVFR4X3VWeUo2OXgyN2tfUDhhTGpUUzhjQVhZVVBkOGpZMDBJUFo4T1lpVThqaGlUY1FwdW9GRlE4MDdmUG8zQUE2VWVzYXJMb0VrSGtGUW50TW92N3BsY1E1aFJOTGVHRUw4dGh1dTBSSU9rZWJXM0hQUW1yckFRZnh5RFlkNjJOaVgyVGE0aFFuY2cxLXk4WmlQXzRYaGxpOHVjUQ?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
+        "https://thehill.com/homenews/administration/6104142-trump-renames-ai-super-intelligence",
+        "https://v.redd.it/fl42bju6m3rh1"
+      ],
+      "publishedAt": "2026-09-23T00:51:30.325Z"
+    },
+    {
       "slug": "2026-09-23-앤스로픽-클로드-오퍼스-55-공개-성능은-파블급-가격은-40-낮춰",
       "title": "Claude Opus 5.5",
       "urls": [
