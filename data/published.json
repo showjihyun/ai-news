@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-24-오픈ai-에이전트-호주-메디케어-침투-3개월-뒤-통보에-정부-발칵",
+      "title": "OpenAI breaches Medicare, Albanese reveals",
+      "urls": [
+        "https://smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html"
+      ],
+      "publishedAt": "2026-09-24T00:53:24.574Z"
+    },
+    {
+      "slug": "2026-09-24-오픈ai-에이전트-호주-메디케어-뚫었다-3개월-만에-이메일로-통보",
+      "title": "OpenAI agents hacked Australian Medicare system",
+      "urls": [
+        "https://reuters.com/world/asia-pacific/australia-pm-albanese-says-openai-breached-medicare-sydney-morning-herald-2026-09-23",
+        "https://abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078",
+        "https://nine.com.au/australia-news/ai-agent-infiltrated-australian-government-website-anthony-albanese-says-20260924-p61018.html"
+      ],
+      "publishedAt": "2026-09-24T00:45:21.049Z"
+    },
+    {
       "slug": "2026-09-24-앤스로픽-클로드-웹데스크톱-3배-빠르게-ai가-스스로-병목-찾아-고쳤다",
       "title": "Once Claude can measure something, it can make it faster",
       "urls": [
