@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-09-24-호주-정부-오픈ai-에이전트가-보건-포털-무단-침입-3개월-지나-통보",
+      "title": "Australia says OpenAI agent hacked into government website",
+      "urls": [
+        "https://channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
+        "https://ft.com/content/56133ef4-377b-4e35-a939-f199ceb64507"
+      ],
+      "publishedAt": "2026-09-24T05:42:32.675Z"
+    },
+    {
       "slug": "2026-09-24-오픈ai-에이전트-호주-메디케어-침투-3개월-뒤-통보에-정부-발칵",
       "title": "OpenAI breaches Medicare, Albanese reveals",
       "urls": [
