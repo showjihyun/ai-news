@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-25-20년-코딩-베테랑이-ai에게-사이트-맡긴-고백-여정이-사라졌다",
+      "title": "I Have a Confession: I Built This Site with AI – Please Forgive Me",
+      "urls": [
+        "https://dynamicallytyped.org/blog/i-have-a-confession-i-built-this-site-with-ai"
+      ],
+      "publishedAt": "2026-09-24T22:53:09.217Z"
+    },
+    {
+      "slug": "2026-09-25-구글-제미나이-38-라이브-아바타-출시-기업용만-가능",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "urls": [
+        "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+        "https://theverge.com/tech/1000328/google-gemini-ai-live-avatar-face"
+      ],
+      "publishedAt": "2026-09-24T22:51:58.055Z"
+    },
+    {
       "slug": "2026-09-25-llm-가성비-지도-매일-갱신-내-예산에-맞는-모델-한눈에",
       "title": "Best LLM for every budget, updated daily",
       "urls": [
