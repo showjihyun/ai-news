@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — bestmodelforyourbudget.terrydjony.com]\nEvery model on the Artificial Analysis Intelligence Index plotted against its blended API price. Models on the value frontier are the ones where nothing cheaper is also smarter; everything else is beaten on both counts by a point on the line. By default only the best variant of each model is shown and low scorers are hidden; use the filters to widen the field.\n\nBlended cost per 1M tokens (3:1 input:output, log scale) against the Intelligence Index. Hover or tab to a point for details.\n\nThe frontier as a lookup table. Find the row your budget falls in; the pick is the highest-scoring model you can get at that price, and the runner-up is the next best that also fits.\n\nDiff between consecutive daily fetches: new models, removed models, and re-scored or re-priced ones.\n\nClick a column header to sort. Names link to the model's Artificial Analysis page.\n\nSource: Artificial Analysis free data API, fetched daily by a GitHub Actions cron. Code and data: github.com/terryds/bestvaluemodel .",
+  "reactions": [
+    "[Hacker News] I would really like something similar for local ai where the x axis is vram.",
+    "[Hacker News] I would investigate if the $20&#x2F;month plan is good enough for your use: The token-based plans usually work out to be much more expensive than the monthly ones. Or get both the Anthropic and Codex $20&#x2F;month plans. I don&#x27;t know if this makes sense compared to your current use case, but there is a very good chance it does given how much the per-token plans cost. The primary use case for",
+    "[Hacker News] It IS confusing. I&#x27;m not even using Air. Junie is their agent(?) that can connect to multiple providers. AFAIK you can bring-your-own-key or buy a subscription from them that lets you use your credits across multiple vendors (openai, anthropic, google) across a handful of models from each vendor. So yeah, you can use your openai credentials in junie vs paying for jetbrains junie credits. Is i",
+    "[Hacker News] That&#x27;s... $200. That&#x27;s a lot for me. And I&#x27;m tied in to one set of models. Using something else (like Junie) I can swap and try models from multiple vendors.",
+    "[Hacker News] Junie is $30&#x2F;month, and I get $35 in credits. There are times I go over the limit, and you can &#x27;top up&#x27; in increments of $5 (min). On a busy month (for me) I may have spent and extra $40. Initially I didn&#x27;t hit the limit. As it&#x27;s more of a daily driver, I&#x27;m averaging an extra $20, so... maybe $50&#x2F;month. Give it a shot - the CLI version made it more usable.",
+    "[Hacker News] What actual usage you want ? Because imho the answer is very different if you want code, or computer use, or vision, or text analysis, or ... The subscription from frontier labs can handle all that (though each has its best strenght, they all perform well on most things), but it&#x27;s usually a bit of a waste compared to taking the best one for you."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Best LLM for every budget, updated daily",
+      "url": "https://news.ycombinator.com/item?id=49830866",
+      "score": 148,
+      "commentCount": 97
+    }
+  ]
+}
