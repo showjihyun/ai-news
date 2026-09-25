@@ -1,0 +1,153 @@
+{
+  "articleText": "[Hacker News — cnbc.com]\nLivestream Menu Make It select USA INTL Livestream Search quotes, news & videos Livestream Watchlist SIGN IN Create free account Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu\n\nA federal appeals court panel in Washington, D.C., on Friday upheld the Pentagon&#x27;s blacklisting of Anthropic , dealing a blow to the artificial intelligence company in its months-long battle with the Trump administration.\n\nThe 2-1 decision rejected Anthropic&#x27;s argument that the Department of Defense&#x27;s ban on its Claude models was arbitrary, unauthorized and unconstitutional.\n\n\"The Department had ample support for its conclusion that the continued integration of Claude into the Department&#x27;s information systems, by the Department or its contractors, presented a statutorily covered national-security risk,\" Judge Gregory Katsas wrote in the majority opinion for the U.S. Court of Appeals for the District of Columbia, which Judge Neomi Rao joined. Katsas and Rao were appointed by President Donald Trump .\n\nJudge Karen LeCraft Henderson, who was appointed by former President George H.W. Bush, dissented.\n\nIn March, the DOD labeled Anthropic a supply chain risk , meaning the company purportedly threatened U.S. national security, after negotiations about how the military could use its Claude AI models spiraled out of control. The designation prevents the U.S. military from using Anthropic&#x27;s models and blocks defense contractors from using them in their work with the agency.\n\nAnthropic&#x27;s relationship with the Trump administration has been fraught ever since, and Trump has repeatedly slammed company&#x27;s CEO Dario Amodei on social media. Amodei recently drew Trump&#x27;s ire by calling for an industry wide slowdown , and he was not invited to the glitzy state dinner the White House hosted for Chinese President Xi Jinping on Thursday.\n\n\"The Trump Administration has stopped AI \"people\" from doing bad, or potentially bad, \"things,\" like Dario (Anthropic!), who is now pretending to be a \"perfect little angel\" - and we will continue to do so!,\" Trump wrote in a post on Truth Social on Monday.\n\nAnthropic sued the Trump administration in U.S. District Court in San Francisco and in the D.C. Circuit Appeals Court in March, seeking to reverse its blacklisting. The DOD relied on two distinct designations to justify its supply chain risk action, which meant they had to be litigated in two separate courts.\n\nA San Francisco federal judge ruled last month that one designation was illegal. The ruling Friday by the D.C. appeals court upheld the second designation.\n\n\"We respectfully disagree with the court&#x27;s decision,\" an Anthropic spokesperson told CNBC in a statement. \"Another federal court has already held the government&#x27;s parallel designation unlawful. We remain confident in our position and are considering all options, including further review.\"\n\nThe appellate panel said it would delay the decision from taking immediate effect to give Anthropic time to petition the same panel for a rehearing or to seek an en banc rehearing of the case, by all of the judges on the D.C. Circuit Court of Appeals. Anthropic could also ask the Supreme Court to take the case.\n\nBefore the clash between the two sides spilled into the public&#x27;s view earlier this year, Anthropic served as an early partner across many U.S. agencies, including the DOD. Anthropic signed a $200 million contract with the Pentagon in July of 2025, but as the company began negotiating Claude&#x27;s deployment on the DOD&#x27;s GenAI.mil AI platform that September, talks collapsed.\n\nThe DOD wanted Anthropic to grant the military unfettered access to its models across all lawful purposes, while Anthropic wanted assurance that its technology would not be used for fully autonomous weapons or domestic mass surveillance. They were unable to come to an agreement, and Defense Secretary Pete Hegseth accused Anthropic of attempting to \"to seize veto power over the operational decisions of the United States military.\"\n\nKatsas said Friday that Hegseth raised the \"deeply sobering\" idea that \"overly constrained\" AI models could shut down unexpectedly, as well as the potential that Claude might be \"subject to manipulation.\" While Anthropic refuted those claims, Katsas said decision-making authority ultimately rests with Trump and Hegseth.\n\n\"In our Republic, it is the President and the Secretary of War who must determine how best to balance the competing risks,\" Katsas wrote. \"In doing so here, the Secretary did not transgress any limits on his authority under the Supply Chain Security Act or the Constitution.\"\n\nWATCH: CEOs of OpenAI, Anthropic and Hugging Face to brief UN Security Council\n\nSign up for free newsletters and get more CNBC delivered to your inbox\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\n\nData is a re",
+  "reactions": [
+    "[Hacker News] Your argument is that if Congress passes a law that says the military can summarily execute non-Catholics, the military should have the ability to do that, i.e. the courts or the public shouldn&#x27;t stop them?",
+    "[Hacker News] No, the DOD has super specific acquisition rulesets that don&#x27;t apply outside the DOD umbrella. Limiting acquisition or refusing sales can be done without being flagged a risk. FedRAMP levels accomplish this without the political intrigue and the unnecessary defense of this action not being political. In other words: the same outcome could easily be accomplished without being punitive to Anthr",
+    "[Hacker News] It sure isn&#x27;t democratic when only the top 1 percent in charge make those decisions that inflame you. These companies have thousands, if not tens of thousands of employees, that I can guarantee don&#x27;t agree on statements or positions that the people at the top make as a company whole. So why would you want you punish people who have nothing to do with this. In the end its the regular empl",
+    "[Hacker News] That analogy still makes this sound like a textbook designation. In that situation the pen manufacturer is expected to sell pens without a theory of what will happen next. The person who buys a pen might use it to kill someone or commit horrific legal&#x2F;moral crimes and that has nothing at all to do with the pen manufacturer. I can see how I might reasonably refuse to deal with that pen manufac",
+    "[Hacker News] You seem extremely confused. You are the one who seems to suffer from Trump Dicksucking Syndrome. I have no issues slagging off Trump.",
+    "[Hacker News] It actually is, and this is why there are separate judicial, executive and legislative branches to put those checks and balances on each other instead."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "url": "https://news.ycombinator.com/item?id=49845977",
+      "score": 339,
+      "commentCount": 613
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU3ZmOE1OdnZzZlNfVTllZUVPMUVnb3g4c3hYS1k4c2U5Sk13dTBWZUkwRzZnajFTVmpCbFdoZlM1cV9fZEU1NGlCc053UkRLN3JadElNN3NGVE1iRGJzSnZrcEdBV1d4UWdwVjVvOGV4ZlUwamNULU9wSnVlTE9lU3dHd9IBiAFBVV95cUxPMndkTFZBaExhd2RzWlU5NXliOHlwRXh6eFlRci1OenRuY01nWlQ3WnBmbURNYzRRMzY2TzhpcElNVVQ4Wktla1FNanl2STc3THN4VUlJdjFpSFJOZzgwaklVRkhoNlNGS1lTUFZ5dDZPZnJZblU0bi1KVlNRYms2ZlVfbm1CdXlp?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Loses Appeals Court Bid to Overturn Pentagon ‘Supply Chain Risk’ Label - Law Commentary",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZkZJSmJTd2tlbEJlc1EtTGMyV0tHRjdIaG5RTzlvVk9OZGxHbVhmYkJ3R25rS2xYa192bzFJbUVxUVA2QWNtWWpaWGs3QzhYaWRnVjVJM3FoOTRxX1U5UkR1UmZfY0czczlTTDVkcnk1b0dQYW5uQVdhOThmMElOM2ZJWEdXR3hlSnIwSFJPa1I5QQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Faces Court Setback Over US Supply Chain Risk Label - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSTNHR2VoMmtMYlJBbm4xT1lSLV8zNTBLTlN2UWc1OUp4ZkhyWjNVSlhxTTd5bG5zVzRyVkJGRzUxTzRqQ0lhVkJ5dEd6THBDMzByZnZ5NGRIZWtsY1dYS2ZyVnlNbEtDa2Q4cHZVakhDcHRYV3RkdG1DbDBkZUdFcmxXWTJYYTZLZGc5dGpxZ0o2X0tvejJ6TlpkckNLemFsUk5zTm5CNmJQX1ZETEg4VmNB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Federal court says Pentagon can label Anthropic a supply chain risk - Orlando Sentinel",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdkxuUkdCMFVVTWxiS09CT1lyYjFRUVVXZFNZUS1ZWHFYSENzSVFCcG1DSUVoV0UyX1BYZW1rNFUtb0JFcjNFbGZzdnVlWlJhNmFFNU1hUHJ3UW9namJtclVBWTB2dTNhUENoeklpNzlqM0dGZUdWYjEzVFEyWU13RXMyRU9iVXFWa21kQ25jUG9acm1TcEJWNWtrUG4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Pentagon Can Keep Anthropic Out Of Its AI Supply Chain, Appeals Court Rules As It Rejects Claude Maker's Challenge - International Business Times",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZGEzQUtwVzhreWdZSWR0TENCN001VXdyamtaRUxrR3UwdlNkODJOYVdHQi15clVCcUxCc2VGZXRsLUE1WGJMMU80MHNrZk5ETlpYV1o1OXB6V2hHNFFtSGFYUE5wbXA1OVlLd2VZaVA4R1ZFMGJjcWV2MDJFeThnSVBLWVBMbHlKUGpkS3JHV0NKNl84M1MtTEdjdmFwTkRqZzV4LVlzZ1B2S25zNlNoTW5nWjNsTHo3TDIxZ2JR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Appeals Court Sides With Pentagon Against Anthropic - Newser",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZGtmSjFybnR5NVd2TmxrR1kxa0w2WGpXQUMxQmItM1ZYbkJwaENubTBUVDUyX2M4NDlHUUJ4eTg4b2VxenJtSThoTFZ0S2p4RFJGNV9oTEpBYjdWQXJCbmxYRXdWQldrVTNsQUhJWmtzZElpSWE2d0c1a2w2WkRBWXpQbFVncFZhTUhoSWhTV2EtZjNUTVE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Appeals court says US government can label Anthropic a supply chain risk - The Hill",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUE8yQVlyTGdvS29Gd291VDFPRkVoMFZvWFNGQ25SYXgwVm9jUXgtU0JXRUR1eVZtTFB4cmVJMlpLQ0JuRnBQR2Y1U2FpRmQ0VGRPS3A1T0kwc2RMdEstY1hsc05jckNsTUpybmRPa2lEX3c1TE0xU2lOUTNKLXRlclVYTTVCVk1GbzltV2ZnMHdfcDAzUHhMbXZ0QVI0bDd1TzI2WVVjYUFNTG4x?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Loses Pentagon Supply-Chain Case in Split Appeals Court Ruling - Kingy AI",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRMjlJUlVRckY3NF9GVGdXWGs2czRTcDFMWjJsR2NETGstVmN0WFBJdG4yXzZwd1pvNjRrWXFPc3hXaF9OTmE1b2F0RGxydm54SXVHSlQyanNwM2ttOFNtSVVpNV8xbWNMRTdteVB3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Federal court says US government can label Anthropic a supply chain risk - Marin Independent Journal",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVF9Kd0ZqNlVpSnRoaTBEdnVPdm1tX3JxalM3S3dQQVVwSGNDVlFTNlI3NENLeUdqNGlyY01qc1JqRU1zMEVUTzBCVHFUbS1vVndxUVI5ZFQ3U2VtY2hYZjJlblYxMDNtQlBpY2dkSE8wdm5kRW04ajF5TkdWaFZBZjlUODU3WXB2aW1RVk5FYXlSZ9IBlwFBVV95cUxOd0JoWnZXcTZ3U0diUGFYUDJ6WnVzYUVSR0hqT0Z3ckZpMElGbm53Rm9MQlNNbl9oS245Q0JPcGFxLUJyZUJYYXV2OUN0VmxyTHB0QzZFRWJ1T0VPckNGMjhBdXktTzBMMW5ENTZfWWE4WjUyWjA2RDljWGpPWWF5LWYxa18tdDF6SmZHSDYzc3A0QW1UdGtn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Federal court says US government can label Anthropic a supply chain risk - Bozeman Daily Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPczRsTVBhZzdLR0pDOXk0OWRJelpCSmN5MUV1SWpnVVJud2tmQjZXQ0c3dm95U0hzeTJoR3hBQTVYZzQzQUxiQ3hyYWZjclNfMi14MF9qYVRCdVIyYTZUY2hFU2lhSXJqbFVyM2J3TUQ3VkhyMmZZeUNOUUtmb1dNVXg1VDgwSzdKZlRuNnBFZFF1b2lvR2tud3RzRnlmal9tQlg3QlpOVnltTkVYaHpKWjAzU255bjE4NVIwWXhicjF5dnBySEhBYWJSZGxKSzlVMWtmVGtGSjBhYndvTFplQ2xUdU1RMHduUURMX2ZVeU9NVjU3VURfV0xLYnFSTGlHR2stcQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Federal appeals court upholds Pentagon's blacklisting of Anthropic in AI dispute - qz.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE56aTJhQ2xZUVdNLWR0SXNPbS1wUTRuRVlwMms2cGdFYjNlWTZKZFoyQWg2Ymt6ckt1SGZQRXJTcWgweHNSa1B0Wm10SjZ1TzhxS3ZmR0U2ZlJBakNOcHJ4c2YtOV9ZVHR1eGhUcFR3VktBdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Appeals court rules Defense Department can blacklist AI company Anthropic - Washington Times",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYUtydkJWUXpUcWduU0E5VFdPSVhNb1NGVy1CNExfZGhlMHk1bjI3dWJpZ01mRFA1YzNjMjkwWkZvS0F0N1VFSjllYVYtT3hTay16MzZqQllpMHIxVEhxUjJkRGRUTE9ORml3aE0tMHloYlByQV9lellISUlaVFFLR3lsRXB5RjJyR0NPeFVONEZjWGpzY1pWdWNuempOVFhhcVE0R0NMaTVOT0V4YTczN1RTdl9tOW51cDVz?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic risk designation backed by US appeals court in diverging opinion - mlex.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORjZTQmk3VU9LTWpaT2owUEM0c1NMMG14MnJCTzd6bzB0aGJERFZvMVd3bWd0VXJrVkhtWnlJSlRKWnF5T3NyU1pYNm5DRnd5dFI5TFo1aDdQa1ZQVklGRzZ5QjR6WkRJUFY5MjJ6MGFmaS1la05tejJVLV9tbUNjQVVzY2dpQ25TYW9rOGVQY2NGX29YWkZNUDgxblNMTUlQeHBudFhCMmtkcEhJcS16dm5YRHdWM2hITVB1Mm5hN1d1UmN0VUtiZU9iUmFDYjB1WHRBTktVeErSAVpBVV95cUxNWjJSTFpkRjkyOUFrbGRFOFdqcmxVLVBkS3FMbFNKejJjRVNqTDFvU3RBV1hpLUhsQzBnVFcxRTRQdjlUanpTU0FyQWV4LUEtd1M4ZW9xcTlVMHc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Pentagon blacklist upheld in US appeals court: How the conflict unfolded - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV0dwR09RSHU0MGFKSHFQS3ZkeUwzUmM1T3VhV1J5NDFUUzBQaHMzUXgtYkpOMzdWRVZTRDIyUXFaMHAzT2pRRjkzbUVldjdkeU1rc2RRNzFqY3JfNXFzeUktRXM0bXNrUVU0Vmd3eTlJNW1Ta0FkMkw3Qm43dUhOYUNXMlBUTDlpNFV3NjNUeHN3SmozdXB1ZGxjSlhQYUhoWUpj?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic loses appeal over Pentagon supply chain risk designation - thenews.com.pk",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUWJkanpSRXloc2IzcVF1LV9WR01KTHF6cGhYaW11ODhiTlVfLVlaYVNNNm5ES3k2M0lIZG53V3BFTWxaM05fWjFiYm5lMHFrTEZWeFVtMGtFaWdsX0p6N3RTeV9GSVVxd1ZhZF9CRERRbGJRdHVLM2tHaWx3d3dVRUd5UVJ6Ukl6ZFFMeVZkQXQwRHd6OFNxQmtrTDZ3Q3puYTg0XzJQdmFKX2FI0gGoAUFVX3lxTE5HYkVoQjJhRzVKd0Q2Y0xiYUNla3Eyc2JUMFAwUWVxRUZJbEg5WWkwVncwRWRzWldwNzdlUUh6cnFNTzRCVFI1Yk1qWjY4WUhnWEptdERzM1FpZWRRWDNPcE1rZXI1V1g4X3Z2Y2g0U3J3VHZ4NEp6UVYtWjMta2JIdUUwSERycjFWSm5PYmRreGdHOTByLWxhdlhaZzI0RllRZFo0QlhlVQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Federal court says Pentagon can label Anthropic a supply chain risk - The Batesville Daily Guard",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSDZUbktoZWFyRkJYa0dOc2ZTd1JpN0JyYU5vSDgzWFFNYXhpbjloNzFnQUZ4cDUxcm0tOGRlOHNYakhqV0Z6ZklMU2ZiVFhZZHFLbURBSEQxLTJ0SUw0RzV3OElFSDJLNDN0N19Mc0tYTE1nSld0bWtVeHpGOVFLY3licHp3V0l4TWN0dEZhM2pjVU5UT3RfYkVnWjFTWjREM183OXg0NWU1YXZiSnlfbkFsVTNpMXlCNUJQbFlON2kyRS1MOWR2ajdOZFlNR2ZSQ3JxMTJpTDZpbzRTd0V0dlJuanIyNGxGQjBSN3BDenE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic loses court challenge to Pentagon’s ‘supply chain risk’ designation - cnbctv18.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN2lKajIyQl9FYmRtZVRDcHZPNjNlWG5ZY1ZENTl1QmpPdzg4SWVqOXl3YUlXdDVuaVhDb2xXcGxiRHBDRHRkODJ5d0pYaV9UT1lpa3FwSERfTTZJckFtaTZSNUZqT2phS3Z4ODA0eGdXYzhldFQwUTYtZjNCS1hnQWNVZXYyRFJFR1A5SlVMLVZmV0Y2LTNOU9IBngFBVV95cUxNeWphWTlTZWMxQUQzNm5BaTkzdk5oMFJITGhDUi13YndCZU56OGtqcVpJSV9INkZnYjdvaDJyYXBHaWtRM1ZqOXduakJQZlVTU2FmR0NfZWtuQ2YyR1dsbHZGMW1GbUVwdk1XT0ZZTE5keWNTNkp3MkxnUXV1OFpOVmFaUXVtRDBIclNhNGh0b01VTzVMR1lId2UyY05Bdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk - news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOEt0YTdzS19PQ3l5U2hBd1F5ZWJsZkNtdFNSZE1FdTktclB6X2lIOEZQZnZyS3FwemUtZ09zU21NN21HRDctRldONEhsWi1MRUpla3JpUF9ycDRMM1Nwc2oycWl2NGliVExvaFNSOHY3LWNmcDNpZEF1bVlWOEpHdUxXZl9yTzlIX3E0ZENCQUlITktGYnhYaUlqbGdJYm1LekZEMVFRaENEM0x0dXc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "US appeals court upholds Pentagon's blacklisting of Anthropic",
+      "url": "https://www.reddit.com/r/singularity/comments/1wq25fj/us_appeals_court_upholds_pentagons_blacklisting/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

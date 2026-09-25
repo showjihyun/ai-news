@@ -1,6 +1,42 @@
 {
   "records": [
     {
+      "slug": "2026-09-26-앤스로픽-아카마이에-7년간-116억-달러-cpu-클라우드-최대-계약",
+      "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+      "urls": [
+        "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal",
+        "https://neowin.net/news/anthropic-signs-116b-cloud-deal-with-akamai"
+      ],
+      "publishedAt": "2026-09-25T23:02:33.951Z"
+    },
+    {
+      "slug": "2026-09-26-미-항소법원-앤스로픽-공급망-위험-지정-유지-국방-ai-조달-새-국면",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "urls": [
+        "https://cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU3ZmOE1OdnZzZlNfVTllZUVPMUVnb3g4c3hYS1k4c2U5Sk13dTBWZUkwRzZnajFTVmpCbFdoZlM1cV9fZEU1NGlCc053UkRLN3JadElNN3NGVE1iRGJzSnZrcEdBV1d4UWdwVjVvOGV4ZlUwamNULU9wSnVlTE9lU3dHd9IBiAFBVV95cUxPMndkTFZBaExhd2RzWlU5NXliOHlwRXh6eFlRci1OenRuY01nWlQ3WnBmbURNYzRRMzY2TzhpcElNVVQ4Wktla1FNanl2STc3THN4VUlJdjFpSFJOZzgwaklVRkhoNlNGS1lTUFZ5dDZPZnJZblU0bi1KVlNRYms2ZlVfbm1CdXlp?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZkZJSmJTd2tlbEJlc1EtTGMyV0tHRjdIaG5RTzlvVk9OZGxHbVhmYkJ3R25rS2xYa192bzFJbUVxUVA2QWNtWWpaWGs3QzhYaWRnVjVJM3FoOTRxX1U5UkR1UmZfY0czczlTTDVkcnk1b0dQYW5uQVdhOThmMElOM2ZJWEdXR3hlSnIwSFJPa1I5QQ?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSTNHR2VoMmtMYlJBbm4xT1lSLV8zNTBLTlN2UWc1OUp4ZkhyWjNVSlhxTTd5bG5zVzRyVkJGRzUxTzRqQ0lhVkJ5dEd6THBDMzByZnZ5NGRIZWtsY1dYS2ZyVnlNbEtDa2Q4cHZVakhDcHRYV3RkdG1DbDBkZUdFcmxXWTJYYTZLZGc5dGpxZ0o2X0tvejJ6TlpkckNLemFsUk5zTm5CNmJQX1ZETEg4VmNB?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdkxuUkdCMFVVTWxiS09CT1lyYjFRUVVXZFNZUS1ZWHFYSENzSVFCcG1DSUVoV0UyX1BYZW1rNFUtb0JFcjNFbGZzdnVlWlJhNmFFNU1hUHJ3UW9namJtclVBWTB2dTNhUENoeklpNzlqM0dGZUdWYjEzVFEyWU13RXMyRU9iVXFWa21kQ25jUG9acm1TcEJWNWtrUG4?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZGEzQUtwVzhreWdZSWR0TENCN001VXdyamtaRUxrR3UwdlNkODJOYVdHQi15clVCcUxCc2VGZXRsLUE1WGJMMU80MHNrZk5ETlpYV1o1OXB6V2hHNFFtSGFYUE5wbXA1OVlLd2VZaVA4R1ZFMGJjcWV2MDJFeThnSVBLWVBMbHlKUGpkS3JHV0NKNl84M1MtTEdjdmFwTkRqZzV4LVlzZ1B2S25zNlNoTW5nWjNsTHo3TDIxZ2JR?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZGtmSjFybnR5NVd2TmxrR1kxa0w2WGpXQUMxQmItM1ZYbkJwaENubTBUVDUyX2M4NDlHUUJ4eTg4b2VxenJtSThoTFZ0S2p4RFJGNV9oTEpBYjdWQXJCbmxYRXdWQldrVTNsQUhJWmtzZElpSWE2d0c1a2w2WkRBWXpQbFVncFZhTUhoSWhTV2EtZjNUTVE?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUE8yQVlyTGdvS29Gd291VDFPRkVoMFZvWFNGQ25SYXgwVm9jUXgtU0JXRUR1eVZtTFB4cmVJMlpLQ0JuRnBQR2Y1U2FpRmQ0VGRPS3A1T0kwc2RMdEstY1hsc05jckNsTUpybmRPa2lEX3c1TE0xU2lOUTNKLXRlclVYTTVCVk1GbzltV2ZnMHdfcDAzUHhMbXZ0QVI0bDd1TzI2WVVjYUFNTG4x?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRMjlJUlVRckY3NF9GVGdXWGs2czRTcDFMWjJsR2NETGstVmN0WFBJdG4yXzZwd1pvNjRrWXFPc3hXaF9OTmE1b2F0RGxydm54SXVHSlQyanNwM2ttOFNtSVVpNV8xbWNMRTdteVB3?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVF9Kd0ZqNlVpSnRoaTBEdnVPdm1tX3JxalM3S3dQQVVwSGNDVlFTNlI3NENLeUdqNGlyY01qc1JqRU1zMEVUTzBCVHFUbS1vVndxUVI5ZFQ3U2VtY2hYZjJlblYxMDNtQlBpY2dkSE8wdm5kRW04ajF5TkdWaFZBZjlUODU3WXB2aW1RVk5FYXlSZ9IBlwFBVV95cUxOd0JoWnZXcTZ3U0diUGFYUDJ6WnVzYUVSR0hqT0Z3ckZpMElGbm53Rm9MQlNNbl9oS245Q0JPcGFxLUJyZUJYYXV2OUN0VmxyTHB0QzZFRWJ1T0VPckNGMjhBdXktTzBMMW5ENTZfWWE4WjUyWjA2RDljWGpPWWF5LWYxa18tdDF6SmZHSDYzc3A0QW1UdGtn?oc=5",
+        "https://news.google.com/rss/articles/CBMihAJBVV95cUxPczRsTVBhZzdLR0pDOXk0OWRJelpCSmN5MUV1SWpnVVJud2tmQjZXQ0c3dm95U0hzeTJoR3hBQTVYZzQzQUxiQ3hyYWZjclNfMi14MF9qYVRCdVIyYTZUY2hFU2lhSXJqbFVyM2J3TUQ3VkhyMmZZeUNOUUtmb1dNVXg1VDgwSzdKZlRuNnBFZFF1b2lvR2tud3RzRnlmal9tQlg3QlpOVnltTkVYaHpKWjAzU255bjE4NVIwWXhicjF5dnBySEhBYWJSZGxKSzlVMWtmVGtGSjBhYndvTFplQ2xUdU1RMHduUURMX2ZVeU9NVjU3VURfV0xLYnFSTGlHR2stcQ?oc=5",
+        "https://news.google.com/rss/articles/CBMickFVX3lxTE56aTJhQ2xZUVdNLWR0SXNPbS1wUTRuRVlwMms2cGdFYjNlWTZKZFoyQWg2Ymt6ckt1SGZQRXJTcWgweHNSa1B0Wm10SjZ1TzhxS3ZmR0U2ZlJBakNOcHJ4c2YtOV9ZVHR1eGhUcFR3VktBdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYUtydkJWUXpUcWduU0E5VFdPSVhNb1NGVy1CNExfZGhlMHk1bjI3dWJpZ01mRFA1YzNjMjkwWkZvS0F0N1VFSjllYVYtT3hTay16MzZqQllpMHIxVEhxUjJkRGRUTE9ORml3aE0tMHloYlByQV9lellISUlaVFFLR3lsRXB5RjJyR0NPeFVONEZjWGpzY1pWdWNuempOVFhhcVE0R0NMaTVOT0V4YTczN1RTdl9tOW51cDVz?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORjZTQmk3VU9LTWpaT2owUEM0c1NMMG14MnJCTzd6bzB0aGJERFZvMVd3bWd0VXJrVkhtWnlJSlRKWnF5T3NyU1pYNm5DRnd5dFI5TFo1aDdQa1ZQVklGRzZ5QjR6WkRJUFY5MjJ6MGFmaS1la05tejJVLV9tbUNjQVVzY2dpQ25TYW9rOGVQY2NGX29YWkZNUDgxblNMTUlQeHBudFhCMmtkcEhJcS16dm5YRHdWM2hITVB1Mm5hN1d1UmN0VUtiZU9iUmFDYjB1WHRBTktVeErSAVpBVV95cUxNWjJSTFpkRjkyOUFrbGRFOFdqcmxVLVBkS3FMbFNKejJjRVNqTDFvU3RBV1hpLUhsQzBnVFcxRTRQdjlUanpTU0FyQWV4LUEtd1M4ZW9xcTlVMHc?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV0dwR09RSHU0MGFKSHFQS3ZkeUwzUmM1T3VhV1J5NDFUUzBQaHMzUXgtYkpOMzdWRVZTRDIyUXFaMHAzT2pRRjkzbUVldjdkeU1rc2RRNzFqY3JfNXFzeUktRXM0bXNrUVU0Vmd3eTlJNW1Ta0FkMkw3Qm43dUhOYUNXMlBUTDlpNFV3NjNUeHN3SmozdXB1ZGxjSlhQYUhoWUpj?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUWJkanpSRXloc2IzcVF1LV9WR01KTHF6cGhYaW11ODhiTlVfLVlaYVNNNm5ES3k2M0lIZG53V3BFTWxaM05fWjFiYm5lMHFrTEZWeFVtMGtFaWdsX0p6N3RTeV9GSVVxd1ZhZF9CRERRbGJRdHVLM2tHaWx3d3dVRUd5UVJ6Ukl6ZFFMeVZkQXQwRHd6OFNxQmtrTDZ3Q3puYTg0XzJQdmFKX2FI0gGoAUFVX3lxTE5HYkVoQjJhRzVKd0Q2Y0xiYUNla3Eyc2JUMFAwUWVxRUZJbEg5WWkwVncwRWRzWldwNzdlUUh6cnFNTzRCVFI1Yk1qWjY4WUhnWEptdERzM1FpZWRRWDNPcE1rZXI1V1g4X3Z2Y2g0U3J3VHZ4NEp6UVYtWjMta2JIdUUwSERycjFWSm5PYmRreGdHOTByLWxhdlhaZzI0RllRZFo0QlhlVQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSDZUbktoZWFyRkJYa0dOc2ZTd1JpN0JyYU5vSDgzWFFNYXhpbjloNzFnQUZ4cDUxcm0tOGRlOHNYakhqV0Z6ZklMU2ZiVFhZZHFLbURBSEQxLTJ0SUw0RzV3OElFSDJLNDN0N19Mc0tYTE1nSld0bWtVeHpGOVFLY3licHp3V0l4TWN0dEZhM2pjVU5UT3RfYkVnWjFTWjREM183OXg0NWU1YXZiSnlfbkFsVTNpMXlCNUJQbFlON2kyRS1MOWR2ajdOZFlNR2ZSQ3JxMTJpTDZpbzRTd0V0dlJuanIyNGxGQjBSN3BDenE?oc=5",
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN2lKajIyQl9FYmRtZVRDcHZPNjNlWG5ZY1ZENTl1QmpPdzg4SWVqOXl3YUlXdDVuaVhDb2xXcGxiRHBDRHRkODJ5d0pYaV9UT1lpa3FwSERfTTZJckFtaTZSNUZqT2phS3Z4ODA0eGdXYzhldFQwUTYtZjNCS1hnQWNVZXYyRFJFR1A5SlVMLVZmV0Y2LTNOU9IBngFBVV95cUxNeWphWTlTZWMxQUQzNm5BaTkzdk5oMFJITGhDUi13YndCZU56OGtqcVpJSV9INkZnYjdvaDJyYXBHaWtRM1ZqOXduakJQZlVTU2FmR0NfZWtuQ2YyR1dsbHZGMW1GbUVwdk1XT0ZZTE5keWNTNkp3MkxnUXV1OFpOVmFaUXVtRDBIclNhNGh0b01VTzVMR1lId2UyY05Bdw?oc=5",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOEt0YTdzS19PQ3l5U2hBd1F5ZWJsZkNtdFNSZE1FdTktclB6X2lIOEZQZnZyS3FwemUtZ09zU21NN21HRDctRldONEhsWi1MRUpla3JpUF9ycDRMM1Nwc2oycWl2NGliVExvaFNSOHY3LWNmcDNpZEF1bVlWOEpHdUxXZl9yTzlIX3E0ZENCQUlITktGYnhYaUlqbGdJYm1LekZEMVFRaENEM0x0dXc?oc=5",
+        "https://reuters.com/world/us-appeals-court-declines-block-pentagons-blacklisting-anthropic-2026-09-25"
+      ],
+      "publishedAt": "2026-09-25T22:59:38.573Z"
+    },
+    {
       "slug": "2026-09-26-프랑스-문학상-수상작-ai-작성-논란-탐지기-한-번에-작가의-생애가-흔들렸다",
       "title": "Uproar in France over award-winning author accused of using AI",
       "urls": [
