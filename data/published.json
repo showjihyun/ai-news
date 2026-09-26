@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-09-26-한-달-ai-없이-코딩해-보니-내가-쓴-코드조차-낯설어졌다",
+      "title": "One Month Without AI",
+      "urls": [
+        "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html"
+      ],
+      "publishedAt": "2026-09-26T14:49:55.869Z"
+    },
+    {
+      "slug": "2026-09-26-미스트랄-ceo-ai는-소프트웨어다-발언-규제-프레임-충돌-한국-입법에-영향-줄까",
+      "title": "CEO of Mistral: AI is software. It can be controlled",
+      "urls": [
+        "https://lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html"
+      ],
+      "publishedAt": "2026-09-26T14:46:41.764Z"
+    },
+    {
       "slug": "2026-09-26-앤트로픽-클로드-9루프-진폭-계산-검증-없는-기록-경신-주장",
       "title": "Claude computes a nine-loop amplitude in N=4 super-Yang-Mills - Anthropic",
       "urls": [
