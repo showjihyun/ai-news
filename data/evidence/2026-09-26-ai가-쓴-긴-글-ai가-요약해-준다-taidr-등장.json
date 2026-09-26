@@ -1,0 +1,18 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Emotions were removed, clichés and meandering was added.",
+    "[Hacker News] &gt; The old social contract was that the writer had done more work than they were asking of the reader, but this is torn to shreds with LLM-generated text. The problem is that your biases kick in long before you read the stuff. And I do not see a solution for this. I write my devlog by hand and then run it through an LLM for a quick sanity check. Grammatical errors and spelling mistakes in stuff ",
+    "[Hacker News] What is that character and human feel you speak of? All I see are two different ways of saying the exact same thing, nothing added or removed. Although of course the LLM version is more standardized English and structured.",
+    "[Hacker News] You can create a skill for that today . No need for specific training."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Too AI; Didn't Read",
+      "url": "https://news.ycombinator.com/item?id=49849625",
+      "score": 104,
+      "commentCount": 100
+    }
+  ]
+}

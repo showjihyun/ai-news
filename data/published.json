@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-26-ai가-쓴-긴-글-ai가-요약해-준다-taidr-등장",
+      "title": "Too AI; Didn't Read",
+      "urls": [
+        "https://tai-dr.com/"
+      ],
+      "publishedAt": "2026-09-26T01:11:53.525Z"
+    },
+    {
+      "slug": "2026-09-26-클로드-물리학-9루프-계산-돌파-단순-지시만으로-완성",
+      "title": "Yes, Claude can do nine loops",
+      "urls": [
+        "https://anthropic.com/research/yes-claude-can-do-nine-loops",
+        "https://anthropic.com/research/yes-claude-can-do-nine-loops"
+      ],
+      "publishedAt": "2026-09-26T01:08:19.711Z"
+    },
+    {
       "slug": "2026-09-26-앤스로픽-아카마이에-7년간-116억-달러-cpu-클라우드-최대-계약",
       "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
       "urls": [
