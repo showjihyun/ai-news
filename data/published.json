@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-27-내-손으로-그린-다이어그램-클로드가-실시간으로-고쳐준다",
+      "title": "Make Claude your assistant in excalidraw",
+      "urls": [
+        "https://tangled.org/yanndegat.tngl.sh/drawgent"
+      ],
+      "publishedAt": "2026-09-26T18:14:33.570Z"
+    },
+    {
       "slug": "2026-09-26-한-달-ai-없이-코딩해-보니-내가-쓴-코드조차-낯설어졌다",
       "title": "One Month Without AI",
       "urls": [
