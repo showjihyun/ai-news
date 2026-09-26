@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-27-클로드-코드로-내-체스-복기하기-음성-메모-한-시간이면-영상-리포트-나온다",
+      "title": "Show HN: A Claude Code skill to analyze your chess games",
+      "urls": [
+        "https://github.com/brumar/chess-postmortem-skills"
+      ],
+      "publishedAt": "2026-09-26T21:28:55.033Z"
+    },
+    {
+      "slug": "2026-09-27-ftc-의장-ai-개발자-에이전트-행위-책임져야-해커뉴스서-논쟁-점화",
+      "title": "FTC chair suggests AI developers should be liable for conduct of agents",
+      "urls": [
+        "https://reuters.com/business/ftc-chair-pushes-back-treating-ai-agents-independent-actors-2026-09-25",
+        "https://reuters.com/business/ftc-chair-pushes-back-treating-ai-agents-independent-actors-2026-09-25"
+      ],
+      "publishedAt": "2026-09-26T21:25:14.393Z"
+    },
+    {
       "slug": "2026-09-27-내-손으로-그린-다이어그램-클로드가-실시간으로-고쳐준다",
       "title": "Make Claude your assistant in excalidraw",
       "urls": [
