@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-28-ai-에이전트끼리-싸우는-걸-구경하는-사이트-해커뉴스에서-화제",
+      "title": "Show HN: TinyAIArena watch AI agents battle it out",
+      "urls": [
+        "https://tinyaiarena.com/"
+      ],
+      "publishedAt": "2026-09-27T21:49:17.616Z"
+    },
+    {
+      "slug": "2026-09-28-앤스로픽-ceo-트럼프와-백악관-만찬-ai-안전장치-놓고-첫-대면",
+      "title": "Anthropic’s CEO is about to have dinner with President Trump",
+      "urls": [
+        "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump",
+        "https://axios.com/2026/09/27/anthropic-trump-dario-amodei-dinner-invite"
+      ],
+      "publishedAt": "2026-09-27T21:47:19.739Z"
+    },
+    {
       "slug": "2026-09-28-라마씨피유-프롬프트-조회-140배-빨라졌다일반-pc-추론-속도-획기적-개선",
       "title": "42x Faster Prompt Lookup Drafting in llama.cpp",
       "urls": [

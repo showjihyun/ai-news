@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] There&#x27;s a lot of information in this world. It&#x27;s fun stumbling on that information sometimes. For me personally, it makes learning much easier and gradual, than reading about something from a book or LLM answers.",
+    "[Hacker News] Where to start? Doesn&#x27;t have any match. Pressing replay does nothing...",
+    "[Hacker News] Might have to add the battle royale storm&#x2F;gas mechanic that closes in slowly.",
+    "[Hacker News] You&#x27;re being presumptuous, I explicitly was explicitly thinking of a GA when I set this up, and how is it inefficient when the AI reduces the number of non-viable policies (and thus the number of wasted simulations) by multiple orders of magnitude compared to randomized policy generation?",
+    "[Hacker News] …what makes you think people are implementing them less efficiently? I’d be inclined to agree with you but your reply reeks of “no true Scotsman” strawman arguments that it’s hard to take it seriously.",
+    "[Hacker News] It’s amazing how people with AI are discovering classic techniques for balancing games (i.e. Monte Carlo methods, genetic algorithms…), but somehow implementing them way less efficiently, and without mathematical rigor, basically just having an LLM do the work of deterministic math functions."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Show HN: TinyAIArena watch AI agents battle it out",
+      "url": "https://news.ycombinator.com/item?id=49867775",
+      "score": 82,
+      "commentCount": 36
+    }
+  ]
+}
