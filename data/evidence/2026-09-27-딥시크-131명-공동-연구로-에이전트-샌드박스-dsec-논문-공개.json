@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — arxiv.org]\nFocus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Wenfeng Liang [ view email ] [v1] Sat, 19 Sep 2026 12:20:26 UTC (504 KB) Full-text links: Access Paper: View a PDF of the paper titled DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale, by Jialiang Huang and 130 other authors View PDF HTML (experimental) TeX Source view license Current browse context: cs.DC < prev | next > new | recent | 2026-09 Change to browse by: cs References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation &times; loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .",
+  "reactions": [
+    "[Hacker News] I don&#x27;t know the original intentions, but I don&#x27;t feel it&#x27;s anti Chinese just by itself. It could be pro-Chinese if you frame it like they give merit to anyone involved, or that they take care of their most valuable employees (maybe they pay them another way), or whatever. Or just observant of how Chinese labs publish their stuff. (Not sure if it&#x27;s always like that I haven&#x27",
+    "[Hacker News] Very similar to Google Ax, looks like it&#x27;s Deepseek answer to Google",
+    "[Hacker News] As models get better, safe-and-secure sandboxes&#x2F;environments are going to be the way forward. With the recent rise in cases where models can somehow gain access to the internet and blast past the sandbox, it&#x27;s very important to have all the resources contained within the sandbox with no access to the outside world. DSec is a good step in this direction!",
+    "[Hacker News] I&#x27;m available if anyone wants to use my name on an AI paper for misdirection. I&#x27;m also available for patents and trust funds too",
+    "[Hacker News] &gt; It’s top comment because it’s anti-Chinese. You need to tighten up your tinfoil hat. When HN features all the discussions on OpenAI&#x27;s shenanigans on Navier-Stokes, you weren&#x27;t seeing claims this was anti-US.",
+    "[Hacker News] &gt; Why is this the top comment? Many of the comments, as well as this one, have no relation to content and only mention a triviality This is hardly a triviality. If you are interested in a topic and you find a paper interesting, more often than not you are interested in reaching out to the author. If a paper features a list of authors that outnumber the paper&#x27;s pages 10-to-1, it&#x27;s a ma"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek Elastic Compute (DSec)",
+      "url": "https://news.ycombinator.com/item?id=49859112",
+      "score": 282,
+      "commentCount": 92
+    },
+    {
+      "origin": "GeekNews",
+      "title": "DeepSeek Elastic Compute (DSec) - 대규모 AI 에이전트 학습을 위한 샌드박스 인프라",
+      "url": "https://news.hada.io/topic?id=34341",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

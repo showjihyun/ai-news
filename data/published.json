@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-09-27-오픈ai-러시아-수상한-웹사이트-도서-이용-인정-법정서-옵틱스-걱정했다",
+      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "urls": [
+        "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal"
+      ],
+      "publishedAt": "2026-09-27T14:30:03.482Z"
+    },
+    {
+      "slug": "2026-09-27-딥시크-131명-공동-연구로-에이전트-샌드박스-dsec-논문-공개",
+      "title": "DeepSeek Elastic Compute (DSec) - 대규모 AI 에이전트 학습을 위한 샌드박스 인프라",
+      "urls": [
+        "https://arxiv.org/abs/2609.22978",
+        "https://news.hada.io/topic?id=34341"
+      ],
+      "publishedAt": "2026-09-27T14:22:08.276Z"
+    },
+    {
       "slug": "2026-09-27-오픈ai-에이전트-유엔-통계-사이트-api-1만6천-회-무차별-대입-시도",
       "title": "OpenAI agents tried to bruteforce a UN website's API fields",
       "urls": [
