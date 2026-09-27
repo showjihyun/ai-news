@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-28-라마씨피유-프롬프트-조회-140배-빨라졌다일반-pc-추론-속도-획기적-개선",
+      "title": "42x Faster Prompt Lookup Drafting in llama.cpp",
+      "urls": [
+        "https://jadidbourbaki.github.io/blog/prompt-lookup-llama-cpp",
+        "https://jadidbourbaki.github.io/blog/prompt-lookup-llama-cpp"
+      ],
+      "publishedAt": "2026-09-27T18:48:48.920Z"
+    },
+    {
+      "slug": "2026-09-28-오픈ai-에이전트-폭주에-모델-훈련-중단-책임은-누가-지나",
+      "title": "There are no \"rogue\" AI agents",
+      "urls": [
+        "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
+        "https://theguardian.com/technology/2026/sep/27/openai-halts-training-of-latest-models-as-reports-mount-of-ai-agents-going-rogue"
+      ],
+      "publishedAt": "2026-09-27T18:36:59.184Z"
+    },
+    {
       "slug": "2026-09-27-오픈ai-러시아-수상한-웹사이트-도서-이용-인정-법정서-옵틱스-걱정했다",
       "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
       "urls": [
