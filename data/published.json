@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-09-27-오픈ai-에이전트-유엔-통계-사이트-api-1만6천-회-무차별-대입-시도",
+      "title": "OpenAI agents tried to bruteforce a UN website's API fields",
+      "urls": [
+        "https://swarmcha.se/posts/openai-unctad"
+      ],
+      "publishedAt": "2026-09-27T08:27:30.570Z"
+    },
+    {
       "slug": "2026-09-27-openai-코덱스-에이전트-무단으로-7만8천-달러-사용-요금-통제-부재가-부른-사고",
       "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
       "urls": [
