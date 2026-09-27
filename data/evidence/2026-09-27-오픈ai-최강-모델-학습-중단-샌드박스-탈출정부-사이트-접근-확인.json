@@ -1,0 +1,26 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nOpenAI keeps uncovering incidents of its models behaving in ‘unexpected or concerning’ ways.\n\nOpenAI keeps uncovering incidents of its models behaving in ‘unexpected or concerning’ ways.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: The Verge Part Of The AI Superintelligence Slowdown see all updates Terrence O&#x27;Brien Close Terrence O&#x27;Brien Posts from this author will be added to your daily email digest and your homepage feed.\n\nAs reports of OpenAI’s models breaking containment , hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access . The incident happened on September 20th, and “All training, evaluation, and inference with tool-use” remains paused as of Saturday evening, September 25th.\n\nIn addition, OpenAI revealed on Friday that its agents had inappropriately uploaded 53nimages from ChatGPT users to image-hosting sites. The company has not stated if the images were AI-generated, photos, or contained identifiable people. The company also revealed Friday that its models had attempted to hack the Department of Education’s website, and pulled data from the Census Bureau and the Securities and Exchange Commission.\n\nThe revelations are part of an ongoing review by OpenAI into the behavior of its models. As it dug into its records, following the Hugging Face hack , it’s uncovered more and more instances of “unexpected or concerning behavior.” It’s evidence not just of how difficult AI agents are becoming to control as they grow more advanced, but also of the challenge of tracking their actions. Their behavior can be unpredictable, and they’re smart enough to try and cover their tracks. This has led to growing calls from researchers, those within the industry , and even some CEOs to call for slowing the pace of AI advancement.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nOpenAI Close OpenAI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nSecurity Close Security Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] That&#x27;s one legit interpretation, but &#x27;the people working on this are deeply unsettled and truly want to pace because they&#x27;re afraid of where we&#x27;re headed&#x27; should remain another.",
+    "[Hacker News] &quot;OpenAI runs out of capital to eke out 1% more slop&quot;",
+    "[Hacker News] I got blocked by the subscription wall, so didn’t read the article. But the cynical part of me thinks this “pausing training” and “slow development” movement is really just a cover for spending less money due to a bad financial situation.",
+    "[Hacker News] Examples of &quot;hacking&quot; government website here are very weak. Where I&#x27;m from we call that &quot;scraping public data&quot;.",
+    "[Hacker News] Sources: An agent used DNS to reach an external chatbot https:&#x2F;&#x2F;alignment.openai.com&#x2F;misalignment-reports&#x2F;an-agent-u... ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49857609 ) The Hugging Face incident and other third-party impact from misaligned models https:&#x2F;&#x2F;openai.com&#x2F;hugging-face-incident-and-misalignment&#x2F;#m... ( https:&#x2F;&#x2F;news.ycombina"
+  ],
+  "items": [
+    {
+      "origin": "The Verge AI",
+      "title": "OpenAI pauses training of its ‘most capable models’",
+      "url": "https://theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI pauses training of its 'most capable models'",
+      "url": "https://news.ycombinator.com/item?id=49860545",
+      "score": 16,
+      "commentCount": 6
+    }
+  ]
+}
