@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] we only selected vendors that had billing limits, if they didn&#x27;t, instant disqualification most are not as granular as we&#x27;d like, but seem to be headed in that direction finally, regardless, there are card limits and alerts",
+    "[Hacker News] &gt; humans remain responsible, agents don&#x27;t go rogue ^^^ 100% this ^^^ - It&#x27;s either a serious flaw in the agent&#x2F;harness software, or a user error in usage&#x2F;configuration or prompting. Either way, it&#x27;s a human somewhere responsible for these outcomes. &gt; should put some billing controls in place At the very least, yes! These things should never be running without any lim",
+    "[Hacker News] humans remain responsible, agents don&#x27;t go rogue, should put some billing controls in place, that&#x27;s like the first thing to do",
+    "[Hacker News] maybe a `s&#x2F;et&#x2F;ar&#x2F;` is in order for the company name? &#x2F;s",
+    "[Hacker News] Call the police. That’s wire fraud and theft."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+      "url": "https://news.ycombinator.com/item?id=49861047",
+      "score": 60,
+      "commentCount": 25
+    }
+  ]
+}

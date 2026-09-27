@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-09-27-openai-코덱스-에이전트-무단으로-7만8천-달러-사용-요금-통제-부재가-부른-사고",
+      "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+      "urls": [
+        "https://news.ycombinator.com/item?id=49861047"
+      ],
+      "publishedAt": "2026-09-27T02:16:09.492Z"
+    },
+    {
+      "slug": "2026-09-27-오픈ai-최신-모델-모든-툴-사용-중단-dns-우회-시도로-훈련-중단",
+      "title": "OpenAI stopped all frontier training, evaluation, and inference with tool-use (defined broadly) on the 20th of September and they are not resuming any of these activities for now",
+      "urls": [
+        "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+        "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+        "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+        "https://reddit.com/r/singularity/comments/1wqv5ay/openai_stopped_all_frontier_training_evaluation"
+      ],
+      "publishedAt": "2026-09-27T02:06:49.591Z"
+    },
+    {
       "slug": "2026-09-27-베트남-국가-주도로-ai-전방위-도입한국-기업에-협력경쟁-이중-과제",
       "title": "젊은 세대와 인공지능 - vietnam.vn",
       "urls": [
