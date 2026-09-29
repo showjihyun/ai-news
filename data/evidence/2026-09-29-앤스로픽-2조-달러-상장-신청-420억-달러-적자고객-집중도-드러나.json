@@ -1,0 +1,33 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] &quot;actually we can turn lead into gold now&quot; Isn&#x27;t it vibecoding? Turn out it&#x27;s not really gold",
+    "[Hacker News] Let me offer an alternative: logical reasoning. 1. Increased revenue normally means increased usage. [We don&#x27;t dispute that, right?] 2. Increased usage normally means increased cost. 3. There is an exception to 2: if Anthropic made a gigantic discovery and was able to reduce the cost while increasing the usage - but since it would be in their best interests, they would announce this informati",
+    "[Hacker News] Every half-respectable programmer has at least the pro subscription.",
+    "[Hacker News] &gt; -LLMs profoundly change society -The LLM business is mangled in terms of ROIC vs CoC People seem to have forgotten the bust in railroads and Internet ( etc ), even though those technologies were transformative: * https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Technological_Revolutions_and_... One thing I&#x27;m wonder about: previous busts left useful infrastructure behind (rail, fibre) th",
+    "[Hacker News] This is the part that really surprised me: &quot;Anthropic said nearly a quarter of its revenue came from two customers last year&quot;. Who are these two customers? A quick Google search seems to indicate that Cognizant is their largest &quot;enterprise&quot; customer by number of seats, Microsoft is their largest API customer, and the $10B contract they recently signed with Meta is their largest"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+      "url": "https://news.ycombinator.com/item?id=49886005",
+      "score": 108,
+      "commentCount": 103
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Reuters: Anthropic files for $2T IPO with $42B net loss in 2025, expects to spend half a trillion in 2027",
+      "url": "https://www.reddit.com/r/singularity/comments/1wsw45e/reuters_anthropic_files_for_2t_ipo_with_42b_net/",
+      "score": 26,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Anthropic files for $2T IPO with $42B net loss in 2025, expects to spend half a trillion more",
+      "url": "https://www.reddit.com/r/artificial/comments/1wswgi8/anthropic_files_for_2t_ipo_with_42b_net_loss_in/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}
