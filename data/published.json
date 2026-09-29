@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "slug": "2026-09-29-오픈ai-새-모델-아스트라-61-출시-철회-속임수권한-이탈-안전-문제",
+      "title": "OpenAI Says It Will Not Release Newest A.I. Model Over Safety Concerns",
+      "urls": [
+        "https://nytimes.com/2026/09/28/technology/openai-astra-safety.html",
+        "https://wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42",
+        "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns",
+        "https://runtimewire.com/article/wsj-reports-openai-scrapped-gpt-6-1-astra-over-safety-concerns",
+        "https://reddit.com/r/singularity/comments/1wssgy2/openai_scraps_release_of_new_ai_model_over_safety"
+      ],
+      "publishedAt": "2026-09-29T06:04:33.999Z"
+    },
+    {
       "slug": "2026-09-29-amd-월드랩스-82억-달러에-인수페이페이-리-영입으로-엔비디아-추격-나서",
       "title": "World Labs, AMD에 합류",
       "urls": [

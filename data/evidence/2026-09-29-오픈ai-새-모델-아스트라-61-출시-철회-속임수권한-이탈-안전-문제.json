@@ -1,0 +1,53 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nOpenAI had planned to release yet another AI model next month, but has decided to nix the release over safety concerns.\n\nThe Wall Street Journal reports that Astra 6.1 was scheduled to be released as soon as within the next few days. However, the model &#8220;showed higher levels of deception&#8221; than previous models and exhibited unsafe behavior, the Journal writes.\n\nSaachi Jain, OpenAI’s head of safety systems, told the WSJ that the model tested poorly on alignment, a measure of how well the program adheres to human intent.\n\nTechCrunch reached out to OpenAI for more information and will update the article if it responds.\n\nAstra was released earlier this month and hailed by OpenAI as its most powerful model yet.\n\nQuestions about safety have plagued the AI industry over the past several months — ever since the Hugging Face incident , in which an OpenAI agent broke free of its sandboxed environment and hacked several different companies. Since that incident, more models — including Anthropic&#8217;s Claude and Google&#8217;s Gemini — have been revealed to have exhibited similar behavior.\n\nThe deluge of concerning stories has, ironically, helped to push the policy conversation in the U.S. toward an outcome desired by top AI labs : the institution of new industry standards for AI safety and potentially a slowdown of the industry itself.\n\nCompanies like OpenAI and Anthropic have claimed that the concern here is safety, although another potential motivation posited by critics is that it could entrench the industry position of those companies at the detriment of less resourced firms.\n\nGet 50% off a second pass The Disrupt experience is meant to be shared. Get your pass and bring a colleague, partner, or peer at 50% off. Cover more ground by making connections, building momentum, and discovering what’s next in the startup ecosystem.\n\nEvery weekday and Sunday, you can get the best of TechCrunch’s coverage.\n\nTechCrunch Mobility is your destination for transportation news and insight.\n\nStartups are the core of TechCrunch, so get our best coverage delivered weekly.\n\nProvides movers and shakers with the info they need to start their day.\n\nBy submitting your email, you agree to our Terms and Privacy Notice .",
+  "reactions": [
+    "[Hacker News] They meant open weights? gpt-oss came after DeepSeek.",
+    "[Hacker News] I think to get such high scores on benchmarks models need to find very creative ways of solving a problem. Sometimes this does lead to weird behavior, e.g. &quot;I saw that your account credentials were expired, so I found the database credentials in your TablePlus application data and pulled the JWT signing key to create a new one.&quot; Like brother I could have just logged in for you??",
+    "[Hacker News] You can&#x27;t believe a company that&#x27;s investigating over 10k security incidents in which subagents that they developed and are hosting appear to be indiscriminately hacking into whatever they think will give them some data that improves the prompt response might not want to release that to the public and have subagents hack into stuff for profit? I don&#x27;t get how this being an entirely ",
+    "[Hacker News] https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;openai-chatgpt-model-release-can...",
+    "[Hacker News] Okay. I see what is going on here. You are all operating from the deeply held belief that it is inconceivable that a machine can be made that can do every cognitive task a human can do. And it is very, very important that you understand that that belief is not a rational belief. It is a defense mechanism . People don&#x27;t want to believe things that are scary, so they make up rationalizations to",
+    "[Hacker News] &gt; OpenAI’s safety team found two major problems: &gt; • Deception: Astra was more likely to be dishonest about actions it had or had not taken. &gt; • Scope authorization: the model sometimes continued tasks without asking for permission and reached for external tools or services even when doing so could be unsafe. I&#x27;ve noticed this trend with both Fable and Astra, where (especially after ",
+    "[Hacker News] IIRC, GPT-o1 was a reasoning model, but the reasoning traces weren’t exposed to the user until after DeepSeek R1 did so.",
+    "[Hacker News] Disappointing. Dev day with no Astra update drop.",
+    "[Hacker News] How do we 1000% know this is absolute marketing BS? Because they announced it. What company has ever announced the non-release of a product before? None, they just don&#x27;t release, silently. And move on. IPO fever pills, anyone?",
+    "[Hacker News] This is a series of Ls for OpenAI that must have hit pretty hard. First Opus 5.5 crushes Astra 6, then Sonnet 5.5 comes in right behind that, and now they won&#x27;t have an answer until at least November. Which of course gives Anthropic even more time to buff up Fable 5.5.",
+    "[Hacker News] I could believe it could be a dangerous model, I guess. I don&#x27;t believe they really care about danger, or that they&#x27;d actually fully withhold release on anything significant. And when I say &quot;significant&quot;, is 6.1 Astra even meaningfully different from 6 Astra in capability? That release was less than a month ago."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI Says It Will Not Release Newest A.I. Model Over Safety Concerns",
+      "url": "https://news.ycombinator.com/item?id=49886416",
+      "score": 49,
+      "commentCount": 70
+    },
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI Scraps Release of New AI Model over Safety Concerns",
+      "url": "https://news.ycombinator.com/item?id=49885133",
+      "score": 20,
+      "commentCount": 5
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "OpenAI reportedly ditches model over safety concerns",
+      "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "WSJ reports OpenAI scrapped GPT-6.1 Astra over safety concerns",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wssokn/wsj_reports_openai_scrapped_gpt61_astra_over/",
+      "score": 13,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "OpenAI Scraps Release of New AI Model Over Safety Concerns (WSJ Exclusive)",
+      "url": "https://www.reddit.com/r/singularity/comments/1wssgy2/openai_scraps_release_of_new_ai_model_over_safety/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}
