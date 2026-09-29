@@ -1,6 +1,32 @@
 {
   "records": [
     {
+      "slug": "2026-09-30-앤스로픽-손넷-55-출시-오퍼스급-성능을-절반-값에-단-토큰-절약이-열쇠다",
+      "title": "Sonnet 5.5 did this. Opus 5.5 quality with half price.",
+      "urls": [
+        "https://v.redd.it/atz83anlqgsh1",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNFFYd3MxdHlZS3Q0T2QwYTlKNGM1UDg2emhqOTFELUxaRmdaTGExUnU3ZE82SHhIVWhjOUZ4aGJMTDk2MjFOSnRRX3BIX19UeUFwYzFoZVVkemxPRVY5WGlrZTFxWm5JU1JwOWxsUUJzNnpJLXJyQXpab1B6YUkyd2h0Z1Q2djZuYjdHMkZodUFJdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NT295bm5OOUlpUWRvc2FlaXVkeUt1ZDlhOXRJLXJEc0NoeDN5R1ZLSGRMWmdEOTYwRFBEeVVSXzZtdTNyRXdIdEZaZWkxLVdRM0lGMlk1N1JHZGM?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE43SC1wczREM0d3aDJDaXJPazhGdndVU2JRVTNlaTlUOXRqZmctRzJReW1nX19HQ2FjbGNVQlNuZ1VxQjFGZWpnUlB1dUtEb3g4VUd6NmRpSkxtSGs1Z0x6cFRUcEhxVzF1VjFvY2xB?oc=5",
+        "https://marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price"
+      ],
+      "publishedAt": "2026-09-29T21:43:28.508Z"
+    },
+    {
+      "slug": "2026-09-30-gpt-61-솔-아스트라급-5분의-1-가격-벤치마크엔-아스트라보다-뒤처져",
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "urls": [
+        "https://openai.com/index/introducing-gpt-6-1-sol",
+        "https://openai.com/index/introducing-gpt-6-1-sol",
+        "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "https://openai.com/index/introducing-gpt-6-1-sol",
+        "https://reddit.com/r/OpenAI/comments/1wt0lxn/with_opus_55_and_sonnet_55_both_apparently",
+        "https://i.redd.it/m7jz3i7wbish1.png",
+        "https://reddit.com/gallery/1wtged6"
+      ],
+      "publishedAt": "2026-09-29T21:35:16.741Z"
+    },
+    {
       "slug": "2026-09-30-메타-뮤즈-ai-사용자-권한-무시-논란소상공인-도구로-확장",
       "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
       "urls": [

@@ -1,0 +1,41 @@
+{
+  "articleText": "[MarkTechPost — marktechpost.com]\nAnthropic just released Claude Sonnet 5.5 . It is the second model in the Claude 5.5 family, following Claude Opus 5.5 . Anthropic positions it as a faster, lower-cost complement to Opus 5.5. It targets well-scoped everyday tasks, bug fixing, and polished documents, slides, and spreadsheets.\n\nIs it deployable? Yes, It is live on the Claude Platform as claude-sonnet-5-5 , plus AWS, Google Cloud, and Microsoft Azure. It is a closed-weights model, so self-hosting is not an option.\n\nSpecs from the models overview : 1M-token context, 128K max output, and a June 2026 reliable knowledge cutoff. Adaptive thinking is on by default. Effort runs across 5 levels: low, medium, high, xhigh, and max.\n\nAll scores below are vendor-reported in the launch post . Methodology lives in the Sonnet 5.5 System Card .\n\nThe Max result is lower than Xhigh for a reason. At Max, the model more often ran multi-agent code review. That sometimes caused timeouts or out-of-scope edits, which FrontierCode penalizes. Anthropic also states that Opus 5.5 remains clearly stronger on complex, open-ended work.\n\nList pricing is unchanged from Sonnet 5: $2 per million input tokens and $10 per million output tokens. Cache reads cost $0.20 and cache writes $2.50 per million. That is half of Opus 5.5 ($4/$20). Savings come from token efficiency, not a price cut.\n\nCustomer data supports this. Balyasny Asset Management measured about 121K tokens per answer versus 497K on Sonnet 5. Base44 reported 3.6 iterations per app build, where Opus 5 took 7.7. Zendesk processed tickets 20% faster.\n\nEffort defaults differ by surface. Claude Code and the Claude apps default to Medium. The Claude Platform defaults to High.\n\nBenchmark scores are vendor-reported by Anthropic; GDPval-AA runs by Artificial Analysis. Prices are standard API list rates, verified September 28, 2026.\n\nTap through benchmarks, effort levels, task cost and the API migration checker.\n\nMeters are illustrative of the direction Anthropic describes (higher effort reasons longer and checks work more). Recommendations come from the Sonnet 5.5 migration guide.\n\nSavings come from fewer tokens and tool calls, not a lower sticker price. Your real ratio depends on workload.\n\nCheck out the official announcement , migration guide , and system card . All credit goes to the researcher of this project. Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\n\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Sonnet 5.5 did this. Opus 5.5 quality with half price.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wtagdd/sonnet_55_did_this_opus_55_quality_with_half_price/",
+      "score": 26,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Sonnet 5.5 scores 70.6% on Terminal-Bench, above Opus 5.5 at half the price - MIXED Reality News",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNFFYd3MxdHlZS3Q0T2QwYTlKNGM1UDg2emhqOTFELUxaRmdaTGExUnU3ZE82SHhIVWhjOUZ4aGJMTDk2MjFOSnRRX3BIX19UeUFwYzFoZVVkemxPRVY5WGlrZTFxWm5JU1JwOWxsUUJzNnpJLXJyQXpab1B6YUkyd2h0Z1Q2djZuYjdHMkZodUFJdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Sonnet 5.5 with near-Opus performance at half the price - The New Stack",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NT295bm5OOUlpUWRvc2FlaXVkeUt1ZDlhOXRJLXJEc0NoeDN5R1ZLSGRMWmdEOTYwRFBEeVVSXzZtdTNyRXdIdEZaZWkxLVdRM0lGMlk1N1JHZGM?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Sonnet 5.5 Is Out, Beats Opus 5.5 at Coding for Half the Price - Decrypt",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43SC1wczREM0d3aDJDaXJPazhGdndVU2JRVTNlaTlUOXRqZmctRzJReW1nX19HQ2FjbGNVQlNuZ1VxQjFGZWpnUlB1dUtEb3g4VUd6NmRpSkxtSGs1Z0x6cFRUcEhxVzF1VjFvY2xB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Anthropic Releases Claude Sonnet 5.5: 70.6% on Terminal-Bench 4.0 at the Same $2/$10 Price",
+      "url": "https://marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
