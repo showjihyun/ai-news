@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-09-30-메타-뮤즈-ai-사용자-권한-무시-논란소상공인-도구로-확장",
+      "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
+      "urls": [
+        "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
+        "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses",
+        "https://simonwillison.net/2026/Sep/28/muse-ai-agent"
+      ],
+      "publishedAt": "2026-09-29T17:17:54.958Z"
+    },
+    {
       "slug": "2026-09-29-앤스로픽-2조-달러-상장-신청-420억-달러-적자고객-집중도-드러나",
       "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
       "urls": [
