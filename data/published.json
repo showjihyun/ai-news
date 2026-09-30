@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-01-레딧-rss공개-api-2027년-3월-종료-ai-봇-탓-속내는-데이터-장사",
+      "title": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+      "urls": [
+        "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots",
+        "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots"
+      ],
+      "publishedAt": "2026-09-30T22:45:03.903Z"
+    },
+    {
+      "slug": "2026-10-01-구글-제미나이-4-아르고-발표-100만-토큰-출력으로-장문-추론-승부수",
+      "title": "Gemini 4 Argon",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon"
+      ],
+      "publishedAt": "2026-09-30T22:38:02.480Z"
+    },
+    {
       "slug": "2026-09-30-앤스로픽-ipo-서류에-인류-멸종-위험-명시투자자는-왜-이-문구를-넣었나",
       "title": "Anthropic ‘warns of existential AI risks to humanity’ in IPO document - The Guardian",
       "urls": [
