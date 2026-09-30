@@ -1,0 +1,20 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nAt OpenAI&#8217;s DevDay event on Tuesday, the company showed off GPT-6.1 Sol, a mere week after it launched GPT-6 Sol . OpenAI says the new model delivers nearly the same level of intelligence as GPT-6 Astra for agentic coding, computer use, and professional work, at one-fifth the standard input and output token prices.\n\nNotably, the company is not launching GPT-6.1 Astra, as was originally expected. The Wall Street Journal reported this week that OpenAI scrapped the release over safety concerns raised by researchers during internal testing after the model showed higher levels of deception and a tendency to move forward with tasks without asking the user for permission.\n\nOpenAI says GPT-6.1 Sol delivers significant improvements over its predecessor GPT-6 Sol across complex tasks, including programming and debugging, understanding documents, and executing multistep workflows. The company claims that on several of these fronts, the model approaches GPT-6 Astra&#8217;s performance.\n\nOpenAI also says the new model improves factual accuracy when given difficult prompts. Its largest gain over GPT-6 Sol on this front appears at low reasoning effort, where the share of responses containing a factual error drops from 11.4% to 7.7%. Across all reasoning settings, the company says, the new model&#8217;s error rate stays within 1.9% of GPT-6 Astra.\n\nAdditionally, the company says GPT-6.1 Sol is more up front about its limitations and more reliable when it comes to honoring user intent and safety constraints. In challenging evaluations, it&#8217;s said to fail less often than GPT-6 Sol at flagging broken search tools, following explicit restrictions, and avoiding unauthorized outcomes during tasks. OpenAI claims it observed no attempts to circumvent the automated safety reviewer, consistent with GPT-6 Astra and GPT-6 Sol.\n\nGPT-6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users in ChatGPT Work and Codex. OpenAI notes that the model is not yet available in Chat.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nAisha is a consumer news reporter at TechCrunch. Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup. Aisha holds an honours bachelor’s degree from University of Toronto and a master’s degree in journalism from Western University.\n\nYou can contact or verify outreach from Aisha by emailing aisha@techcrunch.com or via encrypted message at aisha_malik.01 on Signal.\n\nOctober 13 &#8211; 15 San Francisco Get 50% off a second pass The Disrupt experience is meant to be shared. Get your pass and bring a colleague, partner, or peer at 50% off. Cover more ground by making connections, building momentum, and discovering what’s next in the startup ecosystem.\n\nAMD will acquire Fei-Fei Li&#8217;s World Labs for $8.2B Tim Fernholz\n\nCrusoe abandons $1.25B plan to use Boom turbines at AI data centers Kirsten Korosec\n\nAstra and Opus just passed Turing&#8217;s other test Tim Fernholz\n\nOracle sends force majeure notice on its New Mexico Stargate data center Aditya Mehta\n\nVogue sent robots down the runway at Vogue World, and people were not impressed Dominic-Madori Davis\n\nAnthropic says its biology lab has already found something big Julie Bort\n\nPitPro&#8217;s first tire-changing robot goes live in Canada Sean O&#039;Kane",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "GeekNews",
+      "title": "OpenAI, GPT-6.1 Sol 공개",
+      "url": "https://news.hada.io/topic?id=34500",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

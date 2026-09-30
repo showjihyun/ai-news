@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-09-30-챗gpt-프로-500달러-출시-기존-200달러-요금제는-허용량-축소",
+      "title": "ChatGPT Pro 500",
+      "urls": [
+        "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+        "https://i.redd.it/zgrwz1cyffsh1.png"
+      ],
+      "publishedAt": "2026-09-30T06:19:12.843Z"
+    },
+    {
+      "slug": "2026-09-30-오픈ai-gpt-61-솔-공개-아스트라-취소가격-15-파격",
+      "title": "OpenAI, GPT-6.1 Sol 공개",
+      "urls": [
+        "https://news.hada.io/topic?id=34500",
+        "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less"
+      ],
+      "publishedAt": "2026-09-30T06:11:20.129Z"
+    },
+    {
       "slug": "2026-09-30-오픈ai-데브데이-2026-개인-에이전트-닷과-솔-모델-국내-사용자는-언제",
       "title": "OpenAI DevDay 2026 주요 발표 총정리",
       "urls": [
