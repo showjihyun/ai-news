@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-09-30-오픈ai-데브데이-2026-개인-에이전트-닷과-솔-모델-국내-사용자는-언제",
+      "title": "OpenAI DevDay 2026 주요 발표 총정리",
+      "urls": [
+        "https://news.hada.io/topic?id=34505",
+        "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog",
+        "https://openai.com/live"
+      ],
+      "publishedAt": "2026-09-30T00:57:11.556Z"
+    },
+    {
       "slug": "2026-09-30-앤스로픽-손넷-55-출시-오퍼스급-성능을-절반-값에-단-토큰-절약이-열쇠다",
       "title": "Sonnet 5.5 did this. Opus 5.5 quality with half price.",
       "urls": [
