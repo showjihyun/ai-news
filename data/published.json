@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-02-ai-기업들의-초지능-마케팅-전문가들은-과장이라-말한다",
+      "title": "Don't Be Fooled by this Summer of AI Hype",
+      "urls": [
+        "https://technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype"
+      ],
+      "publishedAt": "2026-10-01T23:43:03.835Z"
+    },
+    {
+      "slug": "2026-10-02-구글-ai-오버뷰-독점-소송-기각-트래픽-기대는-계약-아냐",
+      "title": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
+      "urls": [
+        "https://theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+        "https://reuters.com/legal/litigation/google-wins-dismissal-chegg-penske-media-lawsuits-over-ai-overviews-2026-10-01"
+      ],
+      "publishedAt": "2026-10-01T23:40:02.380Z"
+    },
+    {
       "slug": "2026-10-02-figma-mcp-접근-화이트리스트로-전환-pi-제외에-커뮤니티-반발",
       "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
       "urls": [
