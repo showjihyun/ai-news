@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-02-figma-mcp-접근-화이트리스트로-전환-pi-제외에-커뮤니티-반발",
+      "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
+      "urls": [
+        "https://twitter.com/GayaniFigma/status/2105295629941350454"
+      ],
+      "publishedAt": "2026-10-01T20:15:18.117Z"
+    },
+    {
+      "slug": "2026-10-02-해커뉴스-ai가-어디까지-왔나-직접-투표로-점검한다",
+      "title": "Vote on which of Hacker News' challenges for AI have been met",
+      "urls": [
+        "https://stoppels.ch/goalposts"
+      ],
+      "publishedAt": "2026-10-01T20:02:50.522Z"
+    },
+    {
       "slug": "2026-10-01-메타-ai-데이터센터로-세금-공제-논란한국-세법에선-통할까",
       "title": "Meta Uses A.I. Data Centers to Avoid Billions in Federal Taxes",
       "urls": [

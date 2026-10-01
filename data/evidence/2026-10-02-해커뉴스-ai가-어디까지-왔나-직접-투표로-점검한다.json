@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] What code does a village vet clinic need? In all seriousness. Even IF they need code, they need at best a CRUD app to track patients, that&#x27;s it. There is no way Fable or Opus 5.5 can&#x27;t one-shot a village vet clinic app in 30 minutes, and only with &quot;I need a village vet clinic app&quot; as a prompt, and whatever questions it decides to ask along the way with it&#x27;s &quot;ask user&",
+    "[Hacker News] (OP here) It was fun as long as it lasted ;) I&#x27;ll leave it open for a few more days, but already it has enough votes for an interesting results page.",
+    "[Hacker News] Code is a tiny part of &quot;business&quot;. Most business is correspondence with people who want money from you and people you want money from.",
+    "[Hacker News] Don&#x27;t get me wrong, we are all guilty of this. It&#x27;s just amazing how quickly we accept that models are good at something. My florist boss can&#x27;t get Claude to automate rose pruning. But she sure as hell doesn&#x27;t need to wait until Jacques is back in the shop to respond to that French supplier anymore. There is a lot of &quot;business tasks&quot; that are just paper being shuffled",
+    "[Hacker News] Yeah this shouldn&#x27;t be flagged, it&#x27;s a neat project.",
+    "[Hacker News] Sigh, the whole &quot;obviously the turing test is solved&quot; meme is annoying. Like, if we meant that it convincingly masquerades as a shitposter, ok. But everyone still bitches about AI slop, and everyone knows the writing is still bad. How does that even work if the turing test is obviously solved? More to the point though, if you grill SOTA models on counterfactuals, causal world-models etc,"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Vote on which of Hacker News' challenges for AI have been met",
+      "url": "https://news.ycombinator.com/item?id=49924618",
+      "score": 41,
+      "commentCount": 46
+    }
+  ]
+}

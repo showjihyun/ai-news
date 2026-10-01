@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Ironically, it&#x27;s exactly the kind of &quot;security&quot; I imagine current Claude models would work around as a matter of course, with barely a note left for the user to know the agent hit a speed bump when operating the MCP.",
+    "[Hacker News] I am in progress of reactivating my blog right now, might as well be a first post to write. I&#x27;ll submit it to HN if and when I write it. These thoughts, I mostly refined over time on this very forum over the past year; some of those, in reverse-chronological order: https:&#x2F;&#x2F;hn.algolia.com&#x2F;?dateRange=all&amp;page=0&amp;prefix=true&amp;que... EDIT: in this very thread, you have an",
+    "[Hacker News] I replied to it there, but his reply is either intentionally obtuse or he entirely missed the point. I&#x27;m unfortunately inclined to think its the first because a reply as such from anybody who thought about this for even a minute would realize his reply has literally nothing to do with the original issue.",
+    "[Hacker News] Can you link us to Paper? I doubt I will find it by searching online for &quot;Paper design tool&quot;",
+    "[Hacker News] Interesting. How do you operate the integration?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
+      "url": "https://news.ycombinator.com/item?id=49922729",
+      "score": 144,
+      "commentCount": 83
+    }
+  ]
+}
