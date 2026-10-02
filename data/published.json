@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-10-02-클라우드플레어-텍스트-대신-확률로-답하는-결정-모델-클레프-공개",
+      "title": "Cloudflare Releases Clef and Clef-flash: Open-Weight Decision Models That Return Typed Probabilities Instead of Text",
+      "urls": [
+        "https://marktechpost.com/2026/10/01/cloudflare-releases-clef-and-clef-flash",
+        "https://huggingface.co/Cloudflare/clef"
+      ],
+      "publishedAt": "2026-10-02T02:50:12.301Z"
+    },
+    {
       "slug": "2026-10-02-ai-기업들의-초지능-마케팅-전문가들은-과장이라-말한다",
       "title": "Don't Be Fooled by this Summer of AI Hype",
       "urls": [
