@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-02-머스크-그록-트럼프-베네수엘라-침공에-조언ai-군사-개입-현실화",
+      "title": "Musk&#8217;s AI chatbot Grok reportedly encouraged Trump to capture Venezuela&#8217;s president",
+      "urls": [
+        "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president",
+        "https://reddit.com/r/singularity/comments/1wvfzzh/trump_asked_for_groks_opinion_before_invading"
+      ],
+      "publishedAt": "2026-10-02T09:17:22.093Z"
+    },
+    {
+      "slug": "2026-10-02-얀-르쿤-ai-멸종-위험-없다-앤스로픽-ceo-망상-직격",
+      "title": "AI godfather Yann LeCun: Anthropic CEO deluded, doesn't understand cybersecurity",
+      "urls": [
+        "https://fortune.com/2026/10/01/yann-lecun-anthropic-ceo-dario-amodei-deluded-crazy-cybersecurity",
+        "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded",
+        "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded"
+      ],
+      "publishedAt": "2026-10-02T09:10:43.320Z"
+    },
+    {
       "slug": "2026-10-02-클라우드플레어-텍스트-대신-확률로-답하는-결정-모델-클레프-공개",
       "title": "Cloudflare Releases Clef and Clef-flash: Open-Weight Decision Models That Return Typed Probabilities Instead of Text",
       "urls": [
