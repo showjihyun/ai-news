@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-04-ai가-만든-피해자-영상-법원이-선-넘었다-판결-뒤집혔다",
+      "title": "US killer's sentence quashed because of AI video of victim shown in court",
+      "urls": [
+        "https://bbc.com/news/articles/cwgkvygg5nzvo"
+      ],
+      "publishedAt": "2026-10-03T18:01:32.520Z"
+    },
+    {
+      "slug": "2026-10-04-오픈ai-안전팀-3년차-퇴사-문화는-망가졌다-핵발전소급-안전-요구",
+      "title": "I Quit OpenAI Because Its Culture Is Broken",
+      "urls": [
+        "https://theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881",
+        "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken"
+      ],
+      "publishedAt": "2026-10-03T17:55:14.973Z"
+    },
+    {
       "slug": "2026-10-03-ai-지능-폭발-보고서에-커뮤니티가-던진-질문들",
       "title": "Understanding Frontier Artificial Intelligence",
       "urls": [
