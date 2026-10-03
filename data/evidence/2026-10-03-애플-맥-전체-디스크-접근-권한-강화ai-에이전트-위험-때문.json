@@ -1,0 +1,27 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nDays after a journalist claimed that Meta&#8217;s Muse app on Mac read their private messages &#8212; a claim that Meta disputed &#8212; Apple announced that it&#8217;s introducing additional controls around a setting called &#8220;Full Disk Access&#8221; on macOS. The feature was designed to allow backups to function properly, but AI agents have now increased &#8220;the risks associated with this level of access,&#8221; Apple said.\n\nApple&#8217;s statement comes shortly after Inc. columnist Jason Aten reported that Muse knew the content of his private messages &#8212; even though he claimed to have not given the AI agent permission. The report raised questions about the level of security and trust users have in desktop-based AI, which can control things on their systems and read their files and messages.\n\nThe decision to limit the Mac feature also comes after a Wired report cited that a flaw in ChatGPT&#8217;s Mac app could have allowed hackers to access sensitive data.\n\nAI agents that run on the desktop allow users to provide their respective apps with greater access to the files, messages, and other personal content on their computers by adjusting macOS settings.\n\nIn Muse&#8217;s case, the AI optionally allows users to enable Full Disk Access. This setting, Apple explains, gives an app permission to access files, mail, messages, and even browsing history.\n\n&#8220;Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their systems&#8230;without users’ full knowledge and understanding,&#8221; Apple said in a new blog post aimed at developers.\n\nThe company says that, going forward, it will introduce new controls aimed at ensuring that users who &#8220;genuinely wish to grant an app this extraordinary level of access&#8221; can do so only with &#8220;very explicit user action.&#8221;\n\n&#8220;Addressing this is critical. As AI agents become increasingly capable and autonomous, the risks associated with this level of access will grow substantially. We are committed to ensuring users clearly understand these risks before granting such access, so they can make informed decisions about their own data and privacy,&#8221; Apple wrote.\n\nApple did not respond to TechCrunch&#8217;s inquiry about the feature change.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nOctober 13 &#8211; 15 San Francisco Get 50% off a second pass The Disrupt experience is meant to be shared. Get your pass and bring a colleague, partner, or peer at 50% off. Cover more ground by making connections, building momentum, and discovering what’s next in the startup ecosystem.\n\nGoogle thinks SpaceX&#8217;s Starship has to launch 1,800 times before space data centers get off the ground Tim Fernholz\n\nWorld’s first enhanced geothermal power plant completed in just 23 months Tim De Chant\n\nGoogle releases Gemini 4 Argon, called its most powerful model yet Lucas Ropek\n\nThe Pentagon taps Elon Musk and Palmer Luckey to help decide what the military should do next Dominic-Madori Davis\n\nAMD will acquire Fei-Fei Li&#8217;s World Labs for $8.2B Tim Fernholz\n\nViral AI agent Instinct raises $1B Series C at a $10B valuation Sarah Perez",
+  "reactions": [
+    "[Hacker News] I&#x27;ve heard too many stories of personal friends getting into trouble from just recklessly running agents on their Macs (giving Full Disk Access perms) for me to balk at this. Those of us who are technical enough can find ways around, but the public needs to be protected from themselves at this moment. I can&#x27;t believe I&#x27;m actually saying that, but here we are. I blame the AI companie",
+    "[Hacker News] I already struggle with terminal and scripts with full disk access, this will probably make it worse. I suspect this reactive nonsense, is part of apple&#x27;s plan to ios-ify macos.",
+    "[Hacker News] I see this completely as Apple stoping competition vs any type of safety. We already get prompted a million times by TCC for &quot;node&quot; and other nonsense you cannot even understand or reason about. If they cared about safety they would provide a dedicated sandbox environment or other ways to better introspect what agents are doing as they run without stopping them.",
+    "[Hacker News] See that&#x27;s the thing. They will likely limit other LLMs but leave their own access level.",
+    "[Hacker News] &gt;everyone sensible enough to not run them has to pay the price I just run a computer where I can access the full disk, without worrying if a corporation thinks I shouldn&#x27;t.",
+    "[Hacker News] It’s already difficult enough, unless Apple removes the option completely I don’t see how this improves anything. Users don’t read prompts."
+  ],
+  "items": [
+    {
+      "origin": "TechCrunch AI",
+      "title": "Apple says it&#8217;s tightening macOS &#8216;Full Disk Access&#8217; controls due to new risks from AI agents",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Apple is tightening macOS 'Full Disk Access' due to new risks from AI agents",
+      "url": "https://news.ycombinator.com/item?id=49937239",
+      "score": 17,
+      "commentCount": 7
+    }
+  ]
+}
