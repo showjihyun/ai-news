@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Is there a way for an llm to coin a word, and absorb it into its model? During training maybe… but not after - not the way they’re designed now, anyway. For it to have new vocabulary we dont understand, it needs to have novel ideas that need words coined for them, and a way to persist those ideas and words into the future. I don’t think that exists. To me this hypothetical make it clear this won’t",
+    "[Hacker News] Was the creation of writing as such coached into humans or a random juxtaposition? Could all human inventions just be coached into humans (who coached?) or be random juxtapositions?",
+    "[Hacker News] At that point, the machines correctness doesn&#x27;t need to be evaluated by humans, it just needs to provide a recipe for how to achieve some process.",
+    "[Hacker News] Can you give me some examples of an actual creative output from a human that wasn&#x27;t coached into it or random juxtaposition?",
+    "[Hacker News] At what point is human intelligence going to hold back machine intelligence? Imagine you are evaluating what the machine should do when it is improving itself. It does a bunch of work and returns with &quot;I supervaluated the liminal overdecomposition from the previous homological calibulation pass. It shows us that subtransitory mulutination will underspecify the tensor of stermullification. Whe"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Understanding Frontier Artificial Intelligence",
+      "url": "https://news.ycombinator.com/item?id=49942002",
+      "score": 17,
+      "commentCount": 7
+    }
+  ]
+}
