@@ -1,0 +1,27 @@
+{
+  "articleText": "LLM이 찾아낸 취약점의 숫자보다 실제 버그를 검증하고 고치는 일이 중요함 . 리눅스 커널 개발자 Greg Kroah-Hartman이 AI 보안 도구의 성과와 한계, 유지보수자의 대응을 다룬 발표 Mythos가 발견했다는 리눅스 취약점 79개 에는 오탐·중복·이미 수정된 문제가 섞여...",
+  "reactions": [
+    "[Hacker News] By quoting this segment, I inferred that you agreed with Greg. If you disagree with Greg, then I apologize for inadvertently criticizing you personally. My point stands, that we&#x27;re back to debating some metaphysical understanding of what &quot;real intelligence&quot; is when the real standard should be &quot;does it do a better job than humans at this specific task&quot;? I don&#x27;t care if",
+    "[Hacker News] the singularity - when people switch from critical thinking to Ai deference (my current favorite definition)",
+    "[Hacker News] I sure hope they stop training them to be spaghetti throwers, please stop and ask questions when there is ambiguity",
+    "[Hacker News] &gt; he repeats some myths in the video, or at least confidently states some things that are not demonstrated to be true I am genuinely curious what the myths&#x2F;unproven things he states - I watched the video and it&#x27;s repetitive sure but not much felt controversial to me.",
+    "[Hacker News] Fair point, but he was talking about Mythos in particular and the point wasn&#x27;t so much that LLMs will always have false positives rather he was saying they are causing a lot of them right now and how to deal with it. Also as other replies said Linux kernel process is to assign CVE to everything - some of them may be just DDOSes, very hard to exploit and everything in between. All of them are ",
+    "[Hacker News] Human brains don’t have a context window. The brain just constantly reconfigures itself on new input. The AI people call this “continuous learning” and believe it’s one of the most important things current AIs are missing."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+      "url": "https://news.ycombinator.com/item?id=49929391",
+      "score": 182,
+      "commentCount": 49
+    },
+    {
+      "origin": "GeekNews",
+      "title": "리눅스 커널 개발자 Greg Kroah-Hartman, LLM 시대의 보안 [영상]",
+      "url": "https://news.hada.io/topic?id=34683",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}
