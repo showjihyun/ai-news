@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-04-클로드-오퍼스-55-실전-가이드-긴-작업도-한-번에-맡기는-법",
+      "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+      "urls": [
+        "https://claude.dev/blog/getting-the-most-out-of-opus-5-5"
+      ],
+      "publishedAt": "2026-10-03T20:34:03.401Z"
+    },
+    {
+      "slug": "2026-10-04-오픈ai-gpt-6-모델-실전-가이드-공개-선택-기준과-비용-절감법-정리",
+      "title": "A model guide for the GPT-6 family",
+      "urls": [
+        "https://openai.com/index/practical-guide-building-gpt-6",
+        "https://openai.com/index/practical-guide-building-gpt-6",
+        "https://openai.com/index/practical-guide-building-gpt-6"
+      ],
+      "publishedAt": "2026-10-03T20:22:19.251Z"
+    },
+    {
       "slug": "2026-10-04-ai가-만든-피해자-영상-법원이-선-넘었다-판결-뒤집혔다",
       "title": "US killer's sentence quashed because of AI video of victim shown in court",
       "urls": [
