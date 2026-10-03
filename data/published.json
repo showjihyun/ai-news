@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-04-시스템76-팝os-핵심-저장소-다수에-ai-생성-기여-금지-검증-비용이-부른-결단",
+      "title": "Pop!_OS bans AI-generated code from much of its codebase",
+      "urls": [
+        "https://neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases"
+      ],
+      "publishedAt": "2026-10-03T23:24:24.872Z"
+    },
+    {
+      "slug": "2026-10-04-앤스로픽-교황에게-ai도-의식-있다-로비-바티칸은-거부했다",
+      "title": "Anthropic tried to persuade Pope that AI could be conscious being",
+      "urls": [
+        "https://telegraph.co.uk/business/2026/10/02/anthropic-lobbied-pope-to-argue-ai-conscious-being",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbG5qWklWMnEwblNoUkhIMm1MZTVDQUJxQXQyY3QtZ0dVX25IMWVOdGIyc3pPSHU4LVZ3anQ2MzhyQzdiQ2V5NmxiVEZhcFBjTndtVk5XdFpYMmpNUUdYeTVIeGZjMUVYTnVFWXRnOTZaT3RWTmJIU0NDZFJHODZ2MnJ0WW1HN0twYVlncDhwRDhRSGE3TnM2V2xkWnhVYWNH?oc=5"
+      ],
+      "publishedAt": "2026-10-03T23:14:49.578Z"
+    },
+    {
       "slug": "2026-10-04-클로드-오퍼스-55-실전-가이드-긴-작업도-한-번에-맡기는-법",
       "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
       "urls": [

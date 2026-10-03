@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] yeah a lot of LLM PRs are pretty good, but still need changes, and still didnt come from my own prompting which would have got them more exactly where I want them, so it&#x27;s again, I have to put messages on a PR and wait for someone somewhere to see them and act on them. That friction is a huge waste of time if they&#x27;re just prompting their own robot. I have the same robot right here and I ",
+    "[Hacker News] What I meant by it was that I read every line of code generated, made sure I understood its purpose and either manually rewrote it if I felt there was a better way or asked Claude to do it. E.g. there was a bug where the password could end up in a configuration labelled as a username. Claude&#x27;s initial fix was to simply exclude &#x27;username&#x27; in a for loop, but I asked it to find example",
+    "[Hacker News] In theory if you brought a better source than that person then I&#x27;d agree with you, but, &gt; you&#x27;ll need to bring something more than &quot;that&#x27;s wrong because LLMs sometimes hallucinate&quot; as proof that Gemini&#x27;s data is wrong in this case. actually I can say it&#x27;s wrong or likely to be wrong especially if it doesn&#x27;t cite the sources it uses. And if it does, then j",
+    "[Hacker News] Cool. Can you elaborate at which types of task you are better than SOTA LLMs in context of &quot;being good at SW design and architecture&quot;? Got any examples? Is it at the interview questions? Or real world problems? If so what is the scale of the real world SW design and architecture problems you&#x27;re better than the SOTA LLMs? Is it FAANG scale or mom and pop shop scale? And do you consid",
+    "[Hacker News] I won&#x27;t and I recommend anyone currently using it to reconsider due to the security posture the project necessarily and unfortunately has as a direct consequence of its policies.",
+    "[Hacker News] My yardstick is me: https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;joshheitzman"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Pop!_OS bans AI-generated code from much of its codebase",
+      "url": "https://news.ycombinator.com/item?id=49946321",
+      "score": 94,
+      "commentCount": 137
+    }
+  ]
+}
