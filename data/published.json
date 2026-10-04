@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-04-앤스로픽-종교학자들과-만남-해커뉴스-우분투-신자-농담-최다-추천",
+      "title": "Religious scholars met with Anthropic",
+      "urls": [
+        "https://nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZkFIdEFZZi1GZXVtcXBZOHFwcjZ0bVpiZWg1Q2VzRG8teDc4MDRycGlRajkxbWlhNld0X3pQb3hOMmgtUVVuR3lMS3hQN3pEbTlOSFBBbncxLU5vUlVSWFR0c3EtbHdnY09HNE1fY0dSLTZJNm1McFdnQ3prNTVfOHg3ajVzdlpRbmpURE1fUEFDN1BNR3pUME5xUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSjVHZkdGMDByTUVmQy1lR0FPc1FhSXl6eTM5Sk5mdnN1ZEdxMDQtTXJoRmk4RUhPNnZibWttY2gtdVNhRURZcHNtWGpiVDd0d0lDZlJXSlZDS1pWUmFmOEN5YThFcXpoZTNWeTduT2c2Vy1DRjRaNHpPcTNnYkdxbDhDS1lzYmVzRWY2Q3ZKeUoyY1JPYkp1RnlsUQ?oc=5"
+      ],
+      "publishedAt": "2026-10-04T09:06:53.955Z"
+    },
+    {
+      "slug": "2026-10-04-알레프-알파-콜리브리-공개-독일-주권형-78b-moe-모델",
+      "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+      "urls": [
+        "https://tej.as/blog/aleph-alpha-kolibri",
+        "https://marktechpost.com/2026/10/04/aleph-alpha-releases-kolibri-a-78-1b-open-weight-english-german-moe-model-with-only-3-46b-active-parameters"
+      ],
+      "publishedAt": "2026-10-04T08:57:43.275Z"
+    },
+    {
       "slug": "2026-10-04-시스템76-팝os-핵심-저장소-다수에-ai-생성-기여-금지-검증-비용이-부른-결단",
       "title": "Pop!_OS bans AI-generated code from much of its codebase",
       "urls": [
