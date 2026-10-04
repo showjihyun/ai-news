@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Motivated by this comment I decided to give it another shot, the tab crashed immediately upon clicking the &quot;fly&quot; button.",
+    "[Hacker News] This is a website, not an O&#x27;Neill cylinder, and I can&#x27;t walk around it.",
+    "[Hacker News] I&#x27;ve had an idea to build something similar - or more specifically, a game in this form, since I saw Eric Bruneton&#x27;s Rendezvous With Rama video, now about 15 years ago. Never did hand code it, even though I gained a lot of the skills and work in gamedev. This makes me feel time is running out to implement it with some of the unique twists I had in mind that become apparent with something",
+    "[Hacker News] The weirdest experience in this must be to never know if you&#x27;re walking uphill or downhill.",
+    "[Hacker News] Over half the people can&#x27;t run it right or at all. Why not share some representative walkthrough videos?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
+      "url": "https://news.ycombinator.com/item?id=49957191",
+      "score": 21,
+      "commentCount": 18
+    }
+  ]
+}

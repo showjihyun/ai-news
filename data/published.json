@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-05-런스케이프-생성형-ai-안-쓴다-게임사-노-ai-선언-커뮤니티-반응은-갈렸다",
+      "title": "RuneScape's Position on Gen AI",
+      "urls": [
+        "https://reddit.com/r/2007scape/comments/1wxfyzp/runescapes_position_on_gen_ai"
+      ],
+      "publishedAt": "2026-10-04T21:52:41.623Z"
+    },
+    {
+      "slug": "2026-10-05-클로드에게-오닐-실린더를-만들라고-했더니-브라우저가-버텨내지-못했다",
+      "title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
+      "urls": [
+        "https://island-three.gruberbuilds.workers.dev/"
+      ],
+      "publishedAt": "2026-10-04T21:47:11.742Z"
+    },
+    {
       "slug": "2026-10-05-gpt-6-아스트라-와우-초보-구역-40분-만에-클리어-화면-없이-패킷만-읽고-플레이",
       "title": "ChatGPT-6 Astra plays World of Warcraft 'blind' and clears the orc starting zone in 40 minutes with no deaths — AI agent navigates by parsing raw server network packets and SQL files",
       "urls": [
