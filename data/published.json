@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-04-ai-고문-실험-논란-실체는-텍스트-어드벤처였다",
+      "title": "\"Torturing\" LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
+      "urls": [
+        "https://404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet"
+      ],
+      "publishedAt": "2026-10-04T14:46:01.410Z"
+    },
+    {
+      "slug": "2026-10-04-일반-pc로-125b-모델-돌린다-스트라타-rtx-4090서-100토큰초-달성",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "urls": [
+        "https://github.com/Niko1221/Strata"
+      ],
+      "publishedAt": "2026-10-04T14:34:49.494Z"
+    },
+    {
       "slug": "2026-10-04-앤스로픽-종교학자들과-만남-해커뉴스-우분투-신자-농담-최다-추천",
       "title": "Religious scholars met with Anthropic",
       "urls": [
