@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-06-오픈ai-eu서만-챗gpt-텍스트-워터마크-적용-한국-사용자는-대상-아냐",
+      "title": "OpenAI will start watermarking ChatGPT&#8217;s text in the EU",
+      "urls": [
+        "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu",
+        "https://theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+        "https://i.redd.it/m5l9516maqth1.png"
+      ],
+      "publishedAt": "2026-10-06T08:30:58.415Z"
+    },
+    {
+      "slug": "2026-10-06-위키미디어-오픈ai-봇이-5월-장애-원인일-수도",
+      "title": "Wikipedia operator says OpenAI&#8217;s &#8216;rogue&#8217; bots may be linked to a May outage",
+      "urls": [
+        "https://theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+        "https://theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage"
+      ],
+      "publishedAt": "2026-10-06T08:22:38.608Z"
+    },
+    {
       "slug": "2026-10-06-올트먼-ai-해킹사기-감수해야-규제-완화-주장에-반발-확산",
       "title": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
       "urls": [
