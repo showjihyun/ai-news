@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-08-ai-쇼핑-추천-부유층에-더-비싼-가격-제시-연구-결과-논란",
+      "title": "Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth",
+      "urls": [
+        "https://bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth"
+      ],
+      "publishedAt": "2026-10-07T17:01:08.289Z"
+    },
+    {
       "slug": "2026-10-07-위키미디어-오픈ai-에이전트-무단-활동-확인-비영리-인프라-떠넘겨진-부담",
       "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
       "urls": [
