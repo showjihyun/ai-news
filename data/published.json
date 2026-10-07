@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-08-메타ms-클로드-내부-사용-줄이고-자체-도구로-ai-비용-전쟁의-실체",
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "urls": [
+        "https://rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB6NnZBNGs5VGJ0VERHUXRNeGRLNHJlY0JrZEpCYlJZb3d2dGt0QjdxY09DN3J1QzI1cXZvMk5kVWxKZnNYQkxoV3RrQnUteGUwa2FyOV9hV2RRMzNxOUJNTWtIRWJpUdIBa0FVX3lxTE04YnVleFo4YkNvdXVOM2F2bzk3NkdxWDQycDhLXzFPMnhSbDQ2cUZ0WmdEYW94aUNQZ29RNmJhMjlHWm1mR2h4Qmt4cERCNjhZdVBqY242X05IZllxZkVBeWFNcGtLX256SG5J?oc=5"
+      ],
+      "publishedAt": "2026-10-07T21:55:22.240Z"
+    },
+    {
+      "slug": "2026-10-08-클로드-하이쿠-55-출시-소형-모델-가격-75-인하",
+      "title": "Claude Haiku 5.5",
+      "urls": [
+        "https://anthropic.com/claude-haiku-5-5",
+        "https://anthropic.com/claude-haiku-5-5"
+      ],
+      "publishedAt": "2026-10-07T21:51:05.155Z"
+    },
+    {
       "slug": "2026-10-08-ai-쇼핑-추천-부유층에-더-비싼-가격-제시-연구-결과-논란",
       "title": "Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth",
       "urls": [
