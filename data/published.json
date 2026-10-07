@@ -1,6 +1,39 @@
 {
   "records": [
     {
+      "slug": "2026-10-07-위키미디어-오픈ai-에이전트-무단-활동-확인-비영리-인프라-떠넘겨진-부담",
+      "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+      "urls": [
+        "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
+        "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia"
+      ],
+      "publishedAt": "2026-10-07T09:37:29.156Z"
+    },
+    {
+      "slug": "2026-10-07-앤스로픽-스타트업에-클로드-팀-1년-무료-제공-고객-선점-경쟁-본격화",
+      "title": "Anthropic is giving startups a free year of Claude Team, $1,000 in credits and up to $45,000 in perks",
+      "urls": [
+        "https://madrobot.blog/2026/10/06/anthropic-claude-startups-free-year-claude-team-1000-api-credits",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOUw1T3diMDBtTXdtdnJ1bk5DdUpfUWtuYzJaVjF2M0lUMjJkeXYxZUN0bEQ5bU45OGM5OXZXUzJGZFJKSHhRaHRlbk80dnZlMEpNaGZfT1JfWmhnRmtpMGJ0dWNlaFRNd0FWVUNQVGRoeVhJVmk5clNPMkRZWmNnLUZSRmlZeXN5bEtvNW51WmlSazMxcHhPODdIV2lZYnNyWDBRUk1nRW5KMklkaHpwSFQ5M0NOS2l2dlow?oc=5",
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ3NBdzdickhjQ0Y2UXpZZ0g4OXZhRGFKSVU2YUNGSHVsSVM2MjVQMV9faXN6NG9GNzdBdTFONU9KM3hjZk1Qa19GRTEza1FxblZScFVrZWF4elh5b0tia18zZUwtS2NpblBwUk9BWVVSRXVyOV9GLXRocllQTm9jelpsUzU4TUVvV2ZPVzVRdFMxR0VhQWxZ?oc=5",
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE0tOXNuT0szYmp5c01VRTRkZmI5eU9URGZBMXFjd2M3QnctNFM4ekdjb3JDOFpMdkRXaFFHWl9XaERJZ1RreDZZSjdkd01XUUtyWmlGemU5a2o0UDllRHpJQklOWFhQVHBfTUN0MVNlVnVHNDQ?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZZ3FfZnUxQnd2RklWanhlRFFVX1ZfZkc3NFM4RENnZ3JzUTdWNDRPS1h6b0RBWHFZY0hvdEV5d1BkSFZ1YWhHNzZXVEo5WUk3Q0xyUkRsRHpGV0FCWno1VkhrYjluOUR2bmRwNEZRc1c3RmtzODRCMkoyRFlnSHfSAX9BVV95cUxQWWdxX2Z1MUJ3dkZJVmp4ZURRVV9WX2ZHNzRTOERDZ2dyc1E3VjQ0T0tYem9EQVhxWWNIb3RFeXdQZEhWdWFoRzc2V1RKOVlJN0NMclJEbER6RldBQlp6NVZIa2I5bjlEdm5kcDRGUXNXN0Zrczg0QjJKMkRZZ0h3?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxONms0STZXS0JnU1oxTm9sWUVDbV9kdEJQY19hQmI2VkZDX2o2UUh6d3Z4eHl0V0lMaVdRek80ZGFHUkdhbk5pWS0zelZ5aXUtOUNvQmRYQXpfZUVkQzRvYnBfc04zd2RyRjRIQmxyLUUyVnpvekFhNFg5Q1R4T0J5VHF2RG94VE5sZFVBWlNtbHkzQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BMklpUFBnOW9oMGRyaHkxSnFFLUs3VkJ5a1dsWmY5Um9DWUZVaWlIc0NxZDlPS2M0SElvUmUyRVhScXBHVjZQRUdKY1lLZWJjTGt5RDlkY0tNd3prYWNtYWhXN05aS21Dak5NcVREX25ycl9oSnc?oc=5",
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxObEVJRnlsdjMzQUVDQWVnNC14TUpHVm1qRTVpTjV0R3dGU1pJaUx3SGV5RkJZUWJhRmNkb0pURHB1Sk1xZkxLSURSckN1d2JadWwwc28yV1JBNmhsUnRvXzhfWmVNdTFOM1NGcjVxWEJMSlZEQ0J2Z2RzYWZCZWVuRC1zV3ZCbWRkaUFCSzVJSTJ2Nms?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeHZtclZwR3NqS182WlZuOHdoZUlPYUNUVXNLQmFHLUZ6VkhJajh3Si1xa0syeXVtUElWZWxOUllJZTd3SVZmMHViNVRhNEpZbEZCZF9aTWxSakRYcTVIazR0VjV6d0cwcDdHcjlTQ2F2dTdUZEtWcVppNzRGM290TUZwNE5TSURNc2Y2eUV1bU82RnRJWHBlanZWZ0pfRjFXaWZkSTRVNjJLaVFQZEY0cGJYSzRjMnh2Vk5B?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNajBRNnlpaUx6dzRoSk8yZERiUEhQTHJPR0JidEdxeGJQYmxqSFlVcWxlaVF4Skdacmx6bjhiVXZubWlFa2ZiRkJ2U3JaLUcyWWJ6QTlqcjdzdnFXdk14LWxWbWNVYUFaQWpPSEVURXp1alJQRUtjS3F4d0lEV2JETktQdnMyQzJ2dXJr?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSkZtRnlTQlUtdktPeHFReFVFdmtaeXlOdnBYMXFwdkd5MV9TUGZWWGhPZnVUSzh2WEgtNFk1VzFjZzdiLXlJQjlXSUdlc3hIZFptSlh0ZXRqcTNiU3cxYk1KMUV1NUpBOVVXM1plRXROQ3ljWVQwQUpFZ1NTU29NbDZNT29TbnlKcHBrTEdRbW5yZw?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMDJRYTZ6X0pWb1dVdFNCT3lLRmdLOXJQSnl1OGVGOXozU21mb0lScGlCbm9qUEdrcGRNNzZXNUFKeEpNdkFHcDBhSGlGN0lRaTNCRjl0MDNHbzV4YTUzUTdaZWxQcFc4ZjJGU1l4Y0ZTaVNtb3NET2F3OFA1eE9kMnIwcVRpWmFwQjBIb1lVMGg?oc=5",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RTWFCci1WRERZNmxTb1lQY1hGMjdYdmtKekVWcDFrdjlUemRhNDA1Nmpwd0p4TTBwZUdPcGwteTRGSnhGTzBqcFRfQUgwQ3hjZUJ0VF9panRPZUE?oc=5",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1X2h0YW5USXZmeTFNdElRVkdfNjhRYU1iTy1vZmdmNU5QMlVoZXdKYVRLTmlmb2lUTk44b1UyZ3o0RWxHVWdxSGRZVE45dGg4TEREU0x2UFBuU1U?oc=5",
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSU1obG9LU1NVb2tvb2xJLWxqUndwVTlGNnhBZEVYOVhjTzZaQTJ4aU43elE2OE1sR2haWlRDSlFjOUVpVHdvdGt0aDVscmNDQXd3RV9MTlNYRkhSLTJBc0JXUG9KejVqa1RYdEhsUkV4TzVNRzd2eFZsR29ZUUNRNWlvWWZSdw?oc=5",
+        "https://news.google.com/rss/articles/CBMieEFVX3lxTE1CVjFVYTMzemNBeWJvWW0xcXFXbkxqMlJjRjFUeGNGNnVwMkhKQ1czUGpHVHd4SEstU19wSlJ2SmM2VHNSakZiTHZOVXpPbnNQdXhQVHF5V1ZmMHBtZWI3dlI3T05pWERfZ1loRm13VTNfaUlFdnVZVQ?oc=5",
+        "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits"
+      ],
+      "publishedAt": "2026-10-07T09:30:56.249Z"
+    },
+    {
       "slug": "2026-10-07-구글-7억-파라미터-온디바이스-멀티모달-임베딩-모델-공개",
       "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
       "urls": [
