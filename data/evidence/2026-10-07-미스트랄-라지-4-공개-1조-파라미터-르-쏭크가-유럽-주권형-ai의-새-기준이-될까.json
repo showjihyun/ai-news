@@ -1,0 +1,60 @@
+{
+  "articleText": "[Hacker News — mistral.ai]\nCopy url to clipboard Copied Le Chonk Today, we’re launching a public preview of Mistral Large 4. Unofficially ML4, very officially: le Chonk . ML4 pushes the frontier of open-weight performance. You can try the preview API today on Mistral Studio . Weights drop end of this month.\n\nML4 is a 1 trillion-parameter natively multimodal model with 49 billion active parameters. It is our largest and most capable model to date, and it continues to improve rapidly as we refine it.\n\nThe model demonstrates exceptional performance across coding, agentic workflows, and multimodal understanding. It already achieves performance competitive with the strongest open-source models globally, while significantly outperforming any open-weight model developed in the US or Europe. On critical enterprise workloads, including cybersecurity, finance and law, we find it to be state-of-the-art among open models. In some domains such as visual grounding, it goes further still, surpassing even frontier closed models.\n\nWe will release the weights by the end of the month. Until then, we are red-teaming the model in real-world settings with cybersecurity leaders, vetted partners, and state authorities, who will access the same model with reduced moderation and expanded cyber capabilities.\n\nML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe. The public preview is served on that same infrastructure. It is a significant milestone in our long-term investment across infrastructure, research, and product development: state-of-the-art performance in critical verticals, delivered through open weights, designed to give customers control over their AI.\n\nThis is particularly important in cybersecurity, where provider-level refusals can block legitimate vulnerability research and incident response, and where losing access to a capability mid-incident can itself become a critical security risk. ML4 pairs top-tier cyber performance with open weights and self-deployment, giving organizations both the capability and the autonomy to run advanced security work under their own policies.\n\nThe model will be available across multiple regions worldwide, including a European deployment that Mistral operates end-to-end, independently of other digital service providers and under European law. Fun fact: a significant share of ML4’s training data was multilingual, spanning more than 160 languages, including every official language of the European Union.\n\nWe’ve been working closely with leading enterprises across the world in finance, engineering, manufacturing, logistics, pharmaceuticals, science, shipping, public sector, and other mission-critical industries to train ML4. In fact, the model uses the same training, customization, and RL environment we offer our customers through Mistral Forge.\n\nThere is still more to come. As we work toward releasing the weights, we will share further details on the model architecture, additional benchmarks, and our post-training methodology.\n\nThis model will also serve as the foundation for a new generation of specialized and optimized Mistral models. In the meantime, we invite you to try the preview API and share your feedback with us on social media.\n\nML4 is one of the world's strongest AI models for cybersecurity. On the Artificial Analysis Cyber Index, an independent evaluation of how well AI models find and fix security flaws in real software, it ranks among the top five models globally and leads open-weight models developed outside China by a wide margin. On one of the index's tests, which asks a model to reproduce a real vulnerability in open-source software and then patch it, ML4 scores 82%, the highest of any model. It also solves 93% of the challenges in Cybench, a set of 40 exercises drawn from security competitions, one of the highest scores reported for an open-weight model.\n\nThat top score reflects a practical advantage. Several leading closed models, including Claude Opus 5.5 and GPT-6 Astra, score near zero on the same test because they refuse to perform the task. Yet defending software often starts with proving that a flaw is real, exactly the kind of work safety filters in closed models can block. This matters even more as threat actors increasingly jailbreak those same models to support offensive cyber activity: defenders need systems that can match those capabilities without being constrained by the same refusals. ML4 can do that work, and its capabilities extend beyond what it was explicitly trained for: in internal testing, it proved useful for analysing malware, prioritising vulnerabilities, and writing detection rules. For organisations that need sovereign, auditable AI for security operations, it will be able to run on private cloud or on-premise.\n\nML4 excels across software engineering, repository understanding, and complex terminal workflows, scoring 61.7% on DeepSWE v1.1, 59.4% on SWE-Atlas-QnA, and 28.3% on Terminal-Bench 4. Its combined Coding Agent I\n\n---\n\n[Simon Willison — simonwillison.net]\nIntroducing Mistral Large 4: Le chonk ( via ) Mistral are back in the game. Today they're releasing a preview of Mistral Large 4, a 1 trillion parameter, 49 billion active parameter model trained on their own cluster of 3,800 NVIDIA Grace Blackwell GPUs.\n\nThe preview is available via their API. They promise to release the open weights model at the \"end of this month\".\n\nThe model only supports two reasoning levels - \"none\" and \"high\" - via the Mistral API. Here are both pelicans - the \"high\" one looks better, though surprisingly it only used 2,717 output tokens compared to \"none\" which used 3,275:\n\nOn Artificial Analysis it scores 38 , just behind DeepSeek 4.1 Flash, which is a 552B model. It's a huge improvement on last December's Mistral Large 3, which drew this terrible pelican and scored 9 on AA .\n\nIt's certainly not a Fable-class model, but it's great to see Mistral put out a model that's back to being maybe about 6 months behind the frontier.\n\nThis is a link post by Simon Willison, posted on 6th October 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] The two pelicans generated by the two reasoning modes are so similar, it highly suggests that the bird was deliberately fitted. We would need to see the results for other animals doing other activities, which are not part of a well-known benchmark.",
+    "[Hacker News] Good point, it could be any kind of sphincter.",
+    "[Hacker News] Last week I elicited a parametric 3-D design model of a sand battery, a simplified thermal circuit model of it for rough exploration, a backward Euler multiphysics solver to evaluate its performance more accurately, and a volumetric visualization for the resulting temperature distributions, including some custom WebGL shaders: http:&#x2F;&#x2F;canonical.org&#x2F;~kragen&#x2F;sw&#x2F;sandbattery&#x",
+    "[Hacker News] Why was I about to write this exact same comment, and why did you beat me to it?",
+    "[Hacker News] Why don&#x27;t they adapt the deepseek v4.1flash model instead?",
+    "[Hacker News] Right but how did they get a corpus, how do they compete legally without distillation?",
+    "[Hacker News] Unfortunately Mistral Large 4 is benchmaxxed. It also has guardrails, albeit very weak (which you can read in thinking traces). I&#x27;ve had seen subagents fail with &quot;hmm, hmm - hmm, hmm (...)&quot; multiple times, it keeps trying to cheat at the task (trying to remember hallucinations). GLM 5.3 (which Mistral also serves at 3x the speed!) wipes the floor with it",
+    "[Hacker News] Haven&#x27;t tried it yet. It looks like sol is a hair more expensive on input, a hair less expensive on output ($2&#x2F;in, $10&#x2F;out per 1m, K3 = $0.82&#x2F;in, $13&#x2F;out per 1m).",
+    "[Hacker News] The bicycle is like a razor blade, the pelican&#x27;s legs are falling off...",
+    "[Hacker News] If it looks like that you, you will be seeing it everywhere.",
+    "[Hacker News] It is not super good in long horizon tasks and worse than 5.6 in our evals. It really failed the agentic evals where DeepSeek, Kimi and Opus are the winners. It is great on creating summaries and content."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Mistral Large 4",
+      "url": "https://news.ycombinator.com/item?id=49977979",
+      "score": 1543,
+      "commentCount": 944
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Mistral Large 4: \"Le Chonk\"",
+      "url": "https://news.ycombinator.com/item?id=49978116",
+      "score": 518,
+      "commentCount": 5
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Mistral AI Releases Mistral Large 4 (Le Chonk): A 1.05T Parameter Multimodal MoE Model",
+      "url": "https://marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Introducing Mistral Large 4: Le chonk",
+      "url": "https://simonwillison.net/2026/Oct/6/le-chonk",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing Mistral Large 4 (le Chonk)",
+      "url": "https://www.reddit.com/r/singularity/comments/1wz2rzc/introducing_mistral_large_4_le_chonk/",
+      "score": 13,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Introducing Mistral Large 4",
+      "url": "https://www.reddit.com/r/artificial/comments/1wz2rfa/introducing_mistral_large_4/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
