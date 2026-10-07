@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-10-07-구글-7억-파라미터-온디바이스-멀티모달-임베딩-모델-공개",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+        "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+        "https://marktechpost.com/2026/10/06/google-deepmind-releases-embeddinggemma-2-a-740m-open-multimodal-embedding-model-built-on-gemma-4",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+        "https://youtu.be/anPsS6huQk0"
+      ],
+      "publishedAt": "2026-10-07T03:04:47.479Z"
+    },
+    {
+      "slug": "2026-10-07-오픈ai-내부-모델이-증명한-수학-정리-10여-개-공개-린-검증-코드-포함",
+      "title": "Sharing AI progress in mathematics",
+      "urls": [
+        "https://openai.com/index/sharing-ai-progress-in-mathematics",
+        "https://openai.com/index/sharing-ai-progress-in-mathematics",
+        "https://openai.com/index/sharing-ai-progress-in-mathematics"
+      ],
+      "publishedAt": "2026-10-07T02:59:17.257Z"
+    },
+    {
       "slug": "2026-10-07-미스트랄-라지-4-공개-1조-파라미터-르-쏭크가-유럽-주권형-ai의-새-기준이-될까",
       "title": "Mistral Large 4",
       "urls": [

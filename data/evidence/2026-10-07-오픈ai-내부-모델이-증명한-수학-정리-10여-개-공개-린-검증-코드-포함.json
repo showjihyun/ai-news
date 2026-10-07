@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — openai.com]\n(opens in a new window) Loading… Share We’re releasing a broad range of new mathematical results produced by an internal frontier model .\n\nAs we look to improve how we share results with the math community, we’ve been consulting with the independent Advisory Group on Mathematics and Artificial Intelligence at the Institute for Advanced Study ⁠ (opens in a new window) to develop best practices, and we have drawn on their advice and public recommendations ⁠ (opens in a new window) to inform how we release these results.\n\nFor this release, we’re publishing the results in a GitHub repository, with protocols for paper revisions and citations. We’re continuing to explore other community-hosted alternatives for this release which meet the committee’s guidelines. For future releases, we are committed to further improving the quality of the papers via the citations, mathematical exposition, and presentation of the results for better understanding.\n\nAs part of our GitHub repository, we are sharing formalizations of many of the proofs in Lean, a programming language that allows mathematical proofs to be checked by a computer. We will update the repository with more formalizations as we obtain them.\n\nTo promote scientific transparency and openness, we are also publishing additional details about how we obtained the results in the repository. These include 10 summaries of the model’s reasoning, estimations of compute spent in terms of Pro usage on ChatGPT, and statistics about the number of attempted problems. The average result used the equivalent compute of roughly three hours of ChatGPT Pro thinking.\n\nWe want this progress to push the frontier of human knowledge and enable further progress in mathematics. We will be funding a series of workshops, conferences, and special programs around the understanding of major results produced by AI—we will share more on this in the near future.\n\nWe want to directly empower scientists with state-of-the-art capabilities and are working to responsibly release the model that produced these results. This is why it is important to continue to evaluate our internal frontier models on mathematics and other sciences, so we can accelerate developing the tools to advance those fields. We will continue to act on feedback from the community and update our standards for future disclosures of major scientific advancements.",
+  "reactions": [
+    "[Hacker News] If you think AI-generated Lean proofs are unreadable, imagine Opus 5 generating informal proofs.",
+    "[Hacker News] Condolences, im familiar with the feeling. I hope this AI thing somehow works out for the better and doesnt end up demotivating bright minds like yourself.",
+    "[Hacker News] That&#x27;s a fantastic quote. I definitely personally feel this tension. Not that I could ever &quot;compete&quot; on the frontier of math in the first place. But our nature to compete derives from our need to survive against other capable forces. And results like these make me feel very nervous about humans&#x27; capability to remain the dominant force in the universe.",
+    "[Hacker News] There was a Wired Magazine article from either the late 90s or early 2000s that made a prediction that this sort of thing would eventually be possible, likely within my lifetime. I believe the context was &quot;distributed computing&quot; models of the time, like SETI. I&#x27;ve never been able to find that article as an adult, but I would love to know who wrote it.",
+    "[Hacker News] It is more of the usual though isn&#x27;t it? OpenAI cribbing off of mathematicians that have used their services; deciding to put a lot of compute behind fruitful areas of endevour; getting results, then taking credit.",
+    "[Hacker News] I think you’re splitting hairs. The OP’s analogy works well. If we end up in a future where AIs have as much concern for our welfare as we have for the welfare of the average animal (not the minuscule percentage of domesticated dogs, but the overwhelming majority of factory-farmed or simply driven to extinction), then I doubt you would consider it a “mischaracterization” to say that the whole AI t"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://news.ycombinator.com/item?id=49984923",
+      "score": 480,
+      "commentCount": 408
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://www.reddit.com/r/singularity/comments/1wzg6bt/sharing_ai_progress_in_mathematics/",
+      "score": 17,
+      "commentCount": 0
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "articleText": "[Hacker News — blog.google]\nEmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space.\n\nWe introduced EmbeddingGemma last year to provide a lightweight option for high-quality text embeddings, to help your apps organize, search, and connect information directly on consumer hardware. The developer community’s response blew past our expectations. With more than 20 million downloads, builders have used it to power smarter on-device search tools and privacy-first retrieval augmented generation (RAG) pipelines.\n\nToday, we’re launching EmbeddingGemma 2 , expanding beyond text to unify code, images, video, and audio in a shared embedding space. Built on the Gemma 4 architecture and released under a commercially permissive Apache 2.0 license, EmbeddingGemma 2 has 740 million parameters, making it optimal for on-device inference. It can help find a specific video clip from a voice memo, or search through hours of audio recordings based on a text query, all processed by a single, natively multimodal model.\n\nBuilt from the same technology as Gemini Embedding models, EmbeddingGemma 2 is:\n\nEmbeddingGemma 2 matches the strong multilingual text performance of EmbeddingGemma while delivering a significant 9.92-point improvement on code performance (in MTEB Code, from 68.76 to 78.68), making it well-suited for local codebase indexing, semantic code search, and coding agent retrieval. Across image, video, documents, and audio, it sets a new standard in quality-per-parameter for sub-1B models and even outperforms some specialist models more than twice its size.\n\nFind full evaluation metrics and model information in the EmbeddingGemma 2 model card .\n\nEmbeddingGemma 2 brings robust capabilities directly to edge hardware. Generating embeddings locally helps ensure data privacy, reduces pipeline latency, and empowers developers to build cross-modal search and retrieval that works entirely offline.\n\nWhen paired with generative models such as Gemma 4, EmbeddingGemma 2 enables on-device RAG pipelines that understand complex multimodal data. Because EmbeddingGemma 2 is built on Gemma 4 and shares its text tokenizer and audio encoder, developers can run both models together in a unified pipeline with a lower combined total memory footprint.\n\nUse text or an image to find the top matches in your media library based on semantic similarity. Try it in Google AI Edge Gallery ’s Instant Media Search.\n\nLocate specific moments in video using text or audio queries. Try it in Google AI Edge Gallery ’s Video Moments Finder.\n\nPair EmbeddingGemma 2 for local file retrieval with Gemma 4 for contextual reasoning. Try it in the Google AI Edge Foresight app.\n\nCreate real-time decision engines leveraging multimodal context for classification, routing, and predictive capabilities via the MediaPipe Decision Task API .\n\nTo learn how to build on-device search and RAG systems with LiteRT, read the Google AI Edge blog post .\n\nWe worked closely with the following partners to ensure EmbeddingGemma 2 works immediately where you build:\n\nExplore our developer guide , documentation , and guides for inference and fine-tuning .\n\n---\n\n[Google DeepMind — deepmind.google]\nEmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space.\n\nWe introduced EmbeddingGemma last year to provide a lightweight option for high-quality text embeddings, to help your apps organize, search, and connect information directly on consumer hardware. The developer community’s response blew past our expectations. With more than 20 million downloads, builders have used it to power smarter on-device search tools and privacy-first retrieval augmented generation (RAG) pipelines.\n\nToday, we’re launching EmbeddingGemma 2 , expanding beyond text to unify code, images, video, and audio in a shared embedding space. Built on the Gemma 4 architecture and released under a commercially permissive Apache 2.0 license, EmbeddingGemma 2 has 740 million parameters, making it optimal for on-device inference. It can help find a specific video clip from a voice memo, or search through hours of audio recordings based on a text query, all processed by a single, natively multimodal model.\n\nBuilt from the same technology as Gemini Embedding models, EmbeddingGemma 2 is:\n\nEmbeddingGemma 2 matches the strong multilingual text performance of EmbeddingGemma while delivering a significant 9.92-point improvement on code performance (in MTEB Code, from 68.76 to 78.68), making it well-suited for local codebase indexing, semantic code search, and coding agent retrieval. Across image, video, documents, and audio, it sets a new standard in quality-per-parameter for sub-1B models and even outperforms some specialist models more than twice its size.\n\nFind full evaluation metrics and model information in the EmbeddingGemma 2 model card .\n\nEmbeddingGemma 2 brings robust capabilities directly to edge hardware. Generating embeddings locally helps ensure data privacy, reduces pipeline latency, and empowers developers to build cross-modal search and retrieval that works entirely offline.\n\nWhen paired with generative models such as Gemma 4, EmbeddingGemma 2 enables on-device RAG pipelines that understand complex multimodal data. Because EmbeddingGemma 2 is built on Gemma 4 and shares its text tokenizer and audio encoder, developers can run both models together in a unified pipeline with a lower combined total memory footprint.\n\nUse text or an image to find the top matches in your media library based on semantic similarity. Try it in Google AI Edge Gallery ’s Instant Media Search.\n\nLocate specific moments in video using text or audio queries. Try it in Google AI Edge Gallery ’s Video Moments Finder.\n\nPair EmbeddingGemma 2 for local file retrieval with Gemma 4 for contextual reasoning. Try it in the Google AI Edge Foresight app.\n\nCreate real-time decision engines leveraging multimodal context for classification, routing, and predictive capabilities via the MediaPipe Decision Task API .\n\nTo learn how to build on-device search and RAG systems with LiteRT, read the Google AI Edge blog post .\n\nWe worked closely with the following partners to ensure EmbeddingGemma 2 works immediately where you build:\n\nExplore our developer guide , documentation , and guides for inference and fine-tuning .",
+  "reactions": [
+    "[Hacker News] Dang that is a neat trick! Embed the answers then dot product with the question embedding. All kinds of fun linear algebra tricks (centering, rescaling etc.) to improve outcomes.",
+    "[Hacker News] The JetBrains post from a few days ago introduced to me the idea of using binary quantization rather than MRL. Would that work with EmbeddingGemma2 or is there some reason why the approach might be fundamentally incompatible? https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49956148 *summons a minimaxir*",
+    "[Hacker News] I think I caused this release because I just embedded a sizable corpus with the previous model two days ago! You’re welcome everyone.",
+    "[Hacker News] Also how you turn a file into one or more items is a separate question and would likely need tuning to circumstances, usually big documents are split (chunked) sometimes at paragraph or even more granularly. Where to optimally chunk alone is not easy. This also allows you to then search for a specific part of the document, at the expense of not taking the wide context into account, but embeddings ",
+    "[Hacker News] Numbers update on my hypothetical tool after Opus 5.5 added support for image and audio input (plus video support via ffmpeg, why not) using my M3 Pro: - Text: 78 embeddings&#x2F;second on small texts - Image: 4 embeddings&#x2F;second - Audio: 6 embeddings&#x2F;second for 30 second chunks (which is how the encoder works) - Video: 0.2 embeddings&#x2F;second per minute of video (not entirely surpris",
+    "[Hacker News] The embedding model stays loaded in memory. It is used for turning your search keywords into embeddings. The index you’re thinking of is made once per file.. then you compare and search in embeddings. Add&#x2F;modify files = asynchronous updating or adding corresponding embeddings using the model in memory onto wherever you persist those embeddings(say SQLite).."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "url": "https://news.ycombinator.com/item?id=49980487",
+      "score": 232,
+      "commentCount": 30
+    },
+    {
+      "origin": "Google DeepMind",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Google DeepMind Releases EmbeddingGemma 2, a 740M Open Multimodal Embedding Model Built on Gemma 4",
+      "url": "https://marktechpost.com/2026/10/06/google-deepmind-releases-embeddinggemma-2-a-740m-open-multimodal-embedding-model-built-on-gemma-4",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Introducing EmbeddingGemma 2: A best-in-class open model for natively multimodal embeddings | Google",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz7faa/introducing_embeddinggemma_2_a_bestinclass_open/",
+      "score": 6,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz9jvx/embeddinggemma_2_is_a_bestinclass_open_model_for/",
+      "score": 5,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Introducing EmbeddingGemma 2: An open model for natively multimodal embeddings",
+      "url": "https://www.reddit.com/r/singularity/comments/1wzafmg/introducing_embeddinggemma_2_an_open_model_for/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
