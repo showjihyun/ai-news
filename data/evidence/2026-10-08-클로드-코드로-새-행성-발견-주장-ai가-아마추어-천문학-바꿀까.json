@@ -1,0 +1,23 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Found a planet and saved a granny. Wake me up when this planet is acknowledged by any astonomer community with more say than r&#x2F;ClaudeAI.",
+    "[Hacker News] This is incredible use of AI tools. Big kudos!"
+  ],
+  "items": [
+    {
+      "origin": "r/ClaudeAI",
+      "title": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wzw8zd/i_think_i_found_a_planet_nobody_knew_existed_i/",
+      "score": 29,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+      "url": "https://news.ycombinator.com/item?id=50002665",
+      "score": 7,
+      "commentCount": 2
+    }
+  ]
+}
