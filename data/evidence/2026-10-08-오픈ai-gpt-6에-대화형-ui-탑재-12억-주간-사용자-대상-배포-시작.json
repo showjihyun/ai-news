@@ -1,0 +1,48 @@
+{
+  "articleText": "[Hacker News — openai.com]\nShare Introducing Intelligent UI Introducing Intelligent UI More visual responses to everyday questions Learn complex topics more easily Create interactive experiences just by asking How Intelligent UI works Frontier Intelligence – delivered more quickly Deploying GPT-6 safely Availability What comes next Introducing Intelligent UI More visual responses to everyday questions Learn complex topics more easily Create interactive experiences just by asking How Intelligent UI works Frontier Intelligence – delivered more quickly Deploying GPT-6 safely Availability What comes next Last month we introduced the first GPT‑6 models for paid customers and today we&#x27;re bringing that next generation of intelligence to more people with a new GPT‑6 model built for more than 1.2 billion people who use ChatGPT each week.\n\nGPT‑6 in ChatGPT introduces Intelligent UI, a new capability that allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual, make learning complex topics easier and that can quickly create a tool to solve a task right in the moment.\n\nA 7‑speed bicycle brings together a frame, handlebars, wheels and hand-operated brakes. Seven gears let the rider adjust pedaling effort as the drivetrain turns effort into motion.\n\nUpright bars guide the steering, gears vary the effort, and hand brakes control the pace.\n\nThe frame carries the rider; the drivetrain turns effort into motion. Select a system to explore its role.\n\nTwo triangles connect the saddle, steering and pedals. The fork holds the front wheel and turns with the bars.\n\nSpokes connect each hub to its rim and support the rider. The tires surround the rims and grip the ground.\n\nThe pedals turn the chain, driving the rear wheel. Seven gears let the rider adjust pedaling effort for climbs, flats and descents.\n\nHand levers pull cables that bring the brake pads against the rims, turning a squeeze into controlled slowing.\n\nThe handlebars and stem steer the front wheel. The saddle and seatpost support the rider and set the sitting position.\n\nAll Frame Wheels Drivetrain Brakes Cockpit A 7‑speed bicycle brings together a frame, handlebars, wheels and hand-operated brakes. Seven gears let the rider adjust pedaling effort as the drivetrain turns effort into motion.\n\nWe’ve trained GPT‑6 to compose responses using text, visuals and interactive elements, choosing how they fit together based on your question. With Intelligent UI, responses can include graphics, tappable buttons, forms, charts, and interactive experiences you can use directly in your conversation.\n\nThe format depends on what you’re asking. A comparison might work best side by side. An explanation might be easier to understand through an interactive diagram. And when a simple text answer is the most useful response, ChatGPT can give you that.\n\nChatGPT can make a plan easier to follow by showing how it fits together. The timing for a Sunday roast can sit alongside the recipe, or the stops on a road trip can appear on a map, with notes on what’s worth a detour.\n\nVisual and interactive explanations let you explore how something works, change an input to see what happens, or work through a problem step by step.\n\njust by asking You can also ask ChatGPT to create a tool for the task at hand, such as a calculator to explore how savings could grow, a bill splitter for dinner with friends, or a game you can play in the conversation.\n\nWith Intelligent UI, we gave GPT‑6 the freedom to create the most useful interface for each question, while keeping the experience fast and familiar across web and mobile.\n\nWe built a library of native, streamable components, along with a compiler that processes the interface as the model generates it. The library gives each response a familiar design foundation while leaving the model room to decide how the pieces fit together. The compiler allows the interface to appear progressively as the model generates it, without waiting for the entire response to be complete.\n\nWe expanded our training methods to help the model make thoughtful decisions about content, layout, visuals, and interaction. This included evaluating the interfaces it creates for clarity, usefulness, and completeness. GPT‑6 learned to use the component library and make good design decisions, including how to organize information clearly, when to use interactivity, and when a simple text response is enough.\n\nThere&#x27;s still work ahead to improve the model&#x27;s design judgment and expand what it can create, but Intelligent UI marks a significant shift in how people interact with ChatGPT. Instead of fitting every question into the same conversational format, ChatGPT can combine UI, data, and actions to create entirely new ways for people to explore, understand, and interact with information.\n\nWith GPT‑6, we’re also making it possible for ChatGPT to begin answering while it continues to think.\n\nWith the introduction of reasoning models, users could get help with much ",
+  "reactions": [
+    "[Hacker News] I one-shotted a 3D application with Codex (Sol 6.1 Medium) to visualize some output we&#x27;re working on in a niche format for a customer meeting today. It was easier than generating a couple slides and added all this functionality without asking that provided a lot of value, probably based on it&#x27;s knowledge of related conversations. Took about 15 minutes. I made coffee while I waited. I&#x2",
+    "[Hacker News] &gt; The user is probably in a grocery store. “My made up scenario is definitely more realistic than your made up scenario.” Who goes shopping for the meal before they even have a number of guests?",
+    "[Hacker News] Their core functionionality is&#x2F;will quickly be a commodity",
+    "[Hacker News] Wait did ChatGPT make paint chips without the actual color printed on them, just the text description? and now we need ChatGPT to show us what the color is?",
+    "[Hacker News] hahah yea i was wondering what kind of paint chips wouldn&#x27;t have the dang color on it....",
+    "[Hacker News] Em dashes got taken from me as a result of Chat. I used them all the time now I can&#x27;t without it making people pause to think I&#x27;m a bot. Still a bit annoyed or sad about that tbh."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "url": "https://news.ycombinator.com/item?id=49996425",
+      "score": 489,
+      "commentCount": 257
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x045qs/gpt6_and_intelligent_ui_for_everyone/",
+      "score": 12,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ChatGPT",
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1x052jr/gpt6_and_intelligent_ui_for_everyone/",
+      "score": 4,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/ChatGPT",
+      "title": "GPT-6 and Intelligent UI, now rolling out in ChatGPT for plus/pro/business /Enterprise today and to everyone tomorrow",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1x05fj7/gpt6_and_intelligent_ui_now_rolling_out_in/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

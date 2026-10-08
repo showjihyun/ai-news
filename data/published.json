@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-10-08-구글-누구나-쓰는-ai-탐지기-신스아이디-사이트-공개",
+      "title": "Google&#8217;s new SynthID website can identify AI-generated media",
+      "urls": [
+        "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media",
+        "https://engadget.com/2279565/google-synth-id-detector-ai-detection-website-is-now-available"
+      ],
+      "publishedAt": "2026-10-08T01:37:14.034Z"
+    },
+    {
+      "slug": "2026-10-08-오픈ai-gpt-6에-대화형-ui-탑재-12억-주간-사용자-대상-배포-시작",
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "urls": [
+        "https://openai.com/index/gpt-6-for-everyone",
+        "https://openai.com/index/gpt-6-for-everyone",
+        "https://openai.com/index/gpt-6-for-everyone",
+        "https://reddit.com/r/ChatGPT/comments/1x052jr/gpt6_and_intelligent_ui_for_everyone",
+        "https://reddit.com/r/ChatGPT/comments/1x05fj7/gpt6_and_intelligent_ui_now_rolling_out_in"
+      ],
+      "publishedAt": "2026-10-08T01:30:36.701Z"
+    },
+    {
       "slug": "2026-10-08-메타ms-클로드-내부-사용-줄이고-자체-도구로-ai-비용-전쟁의-실체",
       "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
       "urls": [
