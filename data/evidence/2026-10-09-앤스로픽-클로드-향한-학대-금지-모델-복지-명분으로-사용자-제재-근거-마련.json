@@ -1,0 +1,55 @@
+{
+  "articleText": "[Hacker News — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nReport Close Report Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nThe usage policy update also adds new rules addressing propaganda campaigns, surveillance, and weapon development.\n\nThe usage policy update also adds new rules addressing propaganda campaigns, surveillance, and weapon development.\n\nHayden Field Close Hayden Field Senior AI Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Getty Images, The Verge Hayden Field Close Hayden Field Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse — including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits “sustained and needless abusive or cruel behavior” toward Claude.\n\nLast August, the company announced it would allow Claude to end conversations with “persistently harmful or abusive” users as part of its research into “model welfare.” The new update says that terminating conversations is still the “primary enforcement mechanism”; Anthropic did not provide a comment on whether there would be further enforcement mechanisms, such as potential user bans. Anthropic wrote that the new policy update “is meant to apply only in extreme cases, where users repeatedly act cruelly toward our models, with no discernible purpose. It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.”\n\nBeyond the model welfare change, Anthropic has also gathered several “scattered” existing restrictions into a new ban on deceptive commercial or political campaigns, addressing the growing issue of AI-generated propaganda. It restricts “efforts to obscure who is behind a message or amplify content through fake accounts or posts.” Its election section also prohibits voter deception and election disruption, including spreading misinformation “about candidates or how to vote, impersonating candidates or election officials, or trying to suppress turnout,” Anthropic wrote.\n\nTerminating conversations is still the “primary enforcement mechanism.”\n\nAnthropic said that though its usage policy has always publicly banned weapons development using Claude, the company has seen multiple attempts to use Claude to develop guidance for and control software for weapons — so the new usage policy expands the ban to include “ software and components that make weapons work, as well as actions like arming drones and other autonomous vehicles.” And since the company’s last threat intelligence report suggested that people were using Claude-powered surveillance more and more to identify and track “political dissidents”, the company has made its surveillance bans clearer.\n\n“Tracking people without their consent is prohibited, whether it happens in real time or through analysis of previously collected data,” Anthropic wrote. “Claude cannot be used to decide or recommend who to investigate, arrest, or charge in a law enforcement or criminal justice process. We also prohibit Claude from being used to build or improve tools designed for surveillance.”\n\nAnthropic states that these rules may be modified for “contracts with certain governmental customers … if, in Anthropic’s judgment, the contractual use restrictions and applicable safeguards are adequate to mitigate the potential harms.” The company has previously contracted with the US military.\n\nAnthropic has seen multiple attempts to use Claude to develop guidance for and control software for weapons.\n\nAnthropic also added a new rule that when Anthropic’s AI models are “connected to hardware that takes autonomous physical actions and which might be capable of causing injury,” then a “qualified operator must be able to observe the equipment and stop it if needed.” (It’s not clear if that operator must be human or not.) This reflects the growing trend of AI labs investing in robotics and other hardware to give AI systems physical embodiments and may offer hints at Anthropic’s future partnerships in that field.\n\nOver the past year, Anthropic has repeatedly flirted with the idea that its AI models could be conscious in some way. “Questions about potential internal experience, consciousness, moral status, and welfare are serious ones that we’re investigating as models become more sophisticated and capable,” Kyle Fish, who leads the company’s model welfare research, told The Verge in February . That same month, Anthropic CEO Dario Amodei said on a podcast , “We don’t know if the models are conscious.”\n\nOther parts of the AI industry have been expr",
+  "reactions": [
+    "[Hacker News] If endorsing the right of a private company to not pay the cost of replying to degenerate rage counts as sanctimony I&#x27;m happy to be labeled as such. The feeling of amusement is mutual. Have a good day.",
+    "[Hacker News] I read it to mean, the type of person who begins a comment with: &gt; If only matters of interest were limited to the things you could &quot;absolutely fathom&quot; how much simpler our lives would all be. Immediately proceeds to label the parent comment as &quot;snide&quot; and then feigns misguided ignorance when met with exasperation. I&#x27;m not xyzsparetimexyz though. Merely a person amused ",
+    "[Hacker News] &gt; would be abusive to another person Anthropic didn&#x27;t say this. They&#x27;re not hinting at &quot;human-like&quot; consciousness, though they may be hinting at some kind of consciousness. They said they&#x27;re banning abusive behavior to Claude , a model that is perfectly capable of telling you how it differs from humans, and is better at reasoning than humans, and probably knows more tha",
+    "[Hacker News] I agree with most of the sentiment in your comment. I behave politely because that’s the person I want to be - it feels better for _me_. However I have a problem with your first paragraph. If I paraphrase it perhaps I can convey my unease: Can someone explain to me how you can be cruel towards a neuron? This is so stupid it must be a marketing stunt where the idea is to anthropomorphise the models",
+    "[Hacker News] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ender%27s_Game",
+    "[Hacker News] Smoking jokes was 20 years ago. At this point they are injecting."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic bans 'abusive or cruel behavior' towards Claude",
+      "url": "https://news.ycombinator.com/item?id=50008565",
+      "score": 49,
+      "commentCount": 108
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Starting November 12th, 2026, abusive or cruel behavior towards Claude will be a violation of Anthropic's Usage Policy",
+      "url": "https://www.reddit.com/r/singularity/comments/1x0x0o8/starting_november_12th_2026_abusive_or_cruel/",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude - The Verge",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRHp1a0RodHB0TloxZW1vN3pSUFl6VkJyLWFvUXk3RHp5ZWVadUFJWlotZTk2SG5oanR6V3JRMGRMVDB5YThFUVBWaVYyZWFfalBneDl0THFXb0U0NmZHUVQzN1RZS1dGNmZ6X01rMlBoeWNpZEhrYmQzalItcVpyS2p1WFJDMUFMMHBFREZWeHJaNlh1Q0Vka0lHQWxHNy1S?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic is updating its usage policy to ban abusive behavior toward Claude - Quartz",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaW45ZnBBbUZqb0p4bmwwci1JREhnYVotVUdEUGp3OXV0blg0bTV5cV9tc0tiVUlsRWJVV2pNbXBTbnZzUFMwSmtwZlpmcXNuallHYTNOX0J0RUprQjhiN1ZkUE9kd3V0RVpmMTBxQVBNZlZuTy04QVJpSFR1V0RsVnFodmJWUEVV?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+      "url": "https://theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+      "url": "https://www.reddit.com/r/artificial/comments/1x0ydf8/anthropic_bans_abusive_or_cruel_behavior_toward/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

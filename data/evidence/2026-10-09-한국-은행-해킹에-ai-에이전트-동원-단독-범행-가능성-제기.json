@@ -1,0 +1,25 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] As far as I know, it seems a Chinese student using an open-source project with AI did this, so funny",
+    "[Hacker News] Ah, yes, the famously secure Korean Banking system. Lol.",
+    "[Hacker News] That&#x27;s one way to drag a country bent on staying in the past kicking and screaming into the future.",
+    "[Hacker News] I remember way back when OpenAI was &quot;hacking&quot; Huggingface and only the open weight models would help, those labs models refused. I prefer not to have oligarchs and governments deciding what prompts are allowed and which need to be modified before I get to see it."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
+      "url": "https://news.ycombinator.com/item?id=49985861",
+      "score": 100,
+      "commentCount": 32
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Last week some of South Korea's biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were/",
+      "score": 23,
+      "commentCount": 0
+    }
+  ]
+}

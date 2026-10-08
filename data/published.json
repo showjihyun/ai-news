@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-10-09-한국-은행-해킹에-ai-에이전트-동원-단독-범행-가능성-제기",
+      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
+      "urls": [
+        "https://reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06",
+        "https://reddit.com/gallery/1x0n4pt"
+      ],
+      "publishedAt": "2026-10-08T20:48:10.983Z"
+    },
+    {
+      "slug": "2026-10-09-앤스로픽-클로드-향한-학대-금지-모델-복지-명분으로-사용자-제재-근거-마련",
+      "title": "Anthropic bans 'abusive or cruel behavior' towards Claude",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+        "https://i.redd.it/aqa26ogq2auh1.jpeg",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRHp1a0RodHB0TloxZW1vN3pSUFl6VkJyLWFvUXk3RHp5ZWVadUFJWlotZTk2SG5oanR6V3JRMGRMVDB5YThFUVBWaVYyZWFfalBneDl0THFXb0U0NmZHUVQzN1RZS1dGNmZ6X01rMlBoeWNpZEhrYmQzalItcVpyS2p1WFJDMUFMMHBFREZWeHJaNlh1Q0Vka0lHQWxHNy1S?oc=5",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaW45ZnBBbUZqb0p4bmwwci1JREhnYVotVUdEUGp3OXV0blg0bTV5cV9tc0tiVUlsRWJVV2pNbXBTbnZzUFMwSmtwZlpmcXNuallHYTNOX0J0RUprQjhiN1ZkUE9kd3V0RVpmMTBxQVBNZlZuTy04QVJpSFR1V0RsVnFodmJWUEVV?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+        "https://theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+      ],
+      "publishedAt": "2026-10-08T20:36:59.864Z"
+    },
+    {
       "slug": "2026-10-08-클로드-코드로-새-행성-발견-주장-ai가-아마추어-천문학-바꿀까",
       "title": "I think I found a planet nobody knew existed. I used Claude Code to find it.",
       "urls": [
