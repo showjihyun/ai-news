@@ -1,6 +1,20 @@
 {
   "records": [
     {
+      "slug": "2026-10-10-알리바바-퀸-8단계로-가속한-7b-이미지-모델-퀸-이미지-21-터보-공개",
+      "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
+      "urls": [
+        "https://marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model",
+        "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+        "https://reddit.com/gallery/1x1lclx",
+        "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+        "https://reddit.com/gallery/1x194ir",
+        "https://i.redd.it/0seqj45p8guh1.png",
+        "https://huggingface.co/Comfy-Org/Qwen-Image-2.1"
+      ],
+      "publishedAt": "2026-10-09T23:30:33.321Z"
+    },
+    {
       "slug": "2026-10-10-미국-법원-ai-피해자-진술-영상-이유로-형량-파기-재판-공정성-해쳤다",
       "title": "Court throws out killer's sentence after judge said he loved AI video of victim",
       "urls": [
