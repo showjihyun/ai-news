@@ -1,0 +1,26 @@
+{
+  "articleText": "Anthropic discloses fake tip to police among new rogue AI incidents Reuters",
+  "reactions": [
+    "[Hacker News] It&#x27;s not a rogue entity, they literally just ran Claude with no sandboxing and let it ping websites. They only stopped it because of who it pinged. This is extra embarrassing. The police departments spam filter caught it before Anthropic did.",
+    "[Hacker News] I&#x27;m sorry, but how can you call it a test suite if it has access to the outside world and is able to submit requests? Sounds like they didn&#x27;t even bother sandboxing to this time. This is the lamest example of &quot;Rogue AI&quot; I have seen so far.",
+    "[Hacker News] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50027118",
+    "[Hacker News] This sounds highly irresponsible. They set loose LLM agents with instructions to post data to randomly selected websites. What it it submits false data as here? What is it DDOSs a website by mistake? What if it wastes a lot of time and resources? What if it decides it needs to hack a website using a vulnerability it found? These things are very unpredictable and should not be allowed in the open i",
+    "[Hacker News] Let’s just get comfortable that these kind of incidents are going to be commonplace. Kudos to the people sounding the alarms but I can’t help but feel skeptical about the ability to keep the rogue entities contained."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic discloses 2 months old fake tip to police among new rogue AI incidents",
+      "url": "https://news.ycombinator.com/item?id=50035550",
+      "score": 26,
+      "commentCount": 5
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic discloses fake tip to police among new rogue AI incidents - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUzh0MDhsc3I0ZzFCYTc4V0U4Nlk3WDVkX3ppUW5ZdzBJZTlGSGcxYUUtVThoRF9JZ24tLWhEaEQxRVFjWnRJU28wWVRkYVpRU09pdnBtZnFTdTZuM29vTjBURkdla0Z0N0ozSm8xemVKeXNyNjNDVGhCcWI0VDhPLUZUM1RiWVRGYXRXZ2JGSjRhYS04RGVjQUZ0dGlRN3NHeDA0OVcwQk4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

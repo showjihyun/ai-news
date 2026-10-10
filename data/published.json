@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-11-앤스로픽-ai-평가망-인터넷-차단-모델이-경찰에-허위-신고까지",
+      "title": "Anthropic can&#8217;t reliably control its AI agents. It&#8217;s cutting off its internal evals from the live internet instead",
+      "urls": [
+        "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead",
+        "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead"
+      ],
+      "publishedAt": "2026-10-10T19:09:02.843Z"
+    },
+    {
+      "slug": "2026-10-11-앤스로픽-ai-테스트-중-경찰에-허위-살인-제보-스팸-필터가-막았다",
+      "title": "Anthropic discloses 2 months old fake tip to police among new rogue AI incidents",
+      "urls": [
+        "https://reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUzh0MDhsc3I0ZzFCYTc4V0U4Nlk3WDVkX3ppUW5ZdzBJZTlGSGcxYUUtVThoRF9JZ24tLWhEaEQxRVFjWnRJU28wWVRkYVpRU09pdnBtZnFTdTZuM29vTjBURkdla0Z0N0ozSm8xemVKeXNyNjNDVGhCcWI0VDhPLUZUM1RiWVRGYXRXZ2JGSjRhYS04RGVjQUZ0dGlRN3NHeDA0OVcwQk4?oc=5"
+      ],
+      "publishedAt": "2026-10-10T19:05:19.497Z"
+    },
+    {
       "slug": "2026-10-11-앤스로픽-내부-ai-테스트망-완전-오프라인-전환-모델이-허위-살인-제보-보냈다",
       "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws - The Hacker News",
       "urls": [
