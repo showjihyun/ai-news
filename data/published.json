@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-10-앤트로픽-의식-있는-ai-논쟁-랍비가-던진-노예-질문에-돌아온-답",
+      "title": "If AI is conscient, then we are making slaves",
+      "urls": [
+        "https://groundlevel-ai.com/p/anthropic-ai-consciousness-new-york-times-rabbi"
+      ],
+      "publishedAt": "2026-10-10T08:52:47.179Z"
+    },
+    {
       "slug": "2026-10-10-오픈ai-나비에-스토크스-증명-과정에서-수학-코드-번역-오류",
       "title": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
       "urls": [
