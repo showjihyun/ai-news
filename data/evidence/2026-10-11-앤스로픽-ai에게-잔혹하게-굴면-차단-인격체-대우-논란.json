@@ -1,0 +1,61 @@
+{
+  "articleText": "[Hacker News — bbc.com]\nShare Save Add as preferred on Google Liv McMahon Technology reporter Getty Images Anthropic has raised eyebrows by announcing it will ban users from \"sustained and needless\" abusive behaviour towards its AI.\n\nThe Claude-maker said on Thursday it was updating its usage policy to let its tools end interactions where people are \"cruel\" - something it said it had done in \"rare\" cases prior.\n\nIt will now be included on a list of forbidden conduct which also contains bullying others, promoting self-harm and creating non-consensual intimate imagery.\n\nWhile Anthropic said the policy would only apply in \"extreme cases\" of repeated abuse, it has reignited debate over how we should communicate with AI tools.\n\nThe company said it would not apply to \"common versions of user frustration, pushback, dark creative themes, or model testing and research\" - suggesting it would only apply in clearly deliberate instances.\n\nBut what Anthropic would consider \"abusive or cruel behaviour\" towards its models remains unclear.\n\nScreenshots of the new policy have been widely shared and commented on across social media - with some praising it as advancing good manners or \"model welfare\".\n\nBut others criticised the plan, with one person calling it \" deeply wrong \" and another suggesting it might undermine abuse directed at humans and animals.\n\n\"You can&#x27;t be cruel to numbers and maths,\" wrote Dr Barry Scannell, technology partner at Irish law firm William Fry, on LinkedIn .\n\n\"This level of anthropomorphisation of AI is harmful. It leads people to believe that it&#x27;s something it&#x27;s not.\"\n\nMicrosoft AI director Mustafa Suleyman, who in September criticised rival firm Anthropic for treating AI like it is human , reacted to Anthropic&#x27;s update with a melting face emoji.\n\nThe changes, first reported by tech outlet The Verge, came following an annual review of the usage policy at the firm.\n\nIt was also updated to address new or emerging risks in other areas, including by forbidding use of Claude for \"deceptive campaigns\" or clarifying that, as US midterm elections loom , it cannot be used to \"deceive voters or disrupt elections\".\n\nAnthropic also said on Thursday its usage policy previously prevented its tools being used to develop weapons.\n\nBut none of the updates have attracted as much attention or scrutiny as its move to forbid users abusing its chatbots.\n\nIt has also tapped into the much-debated question of whether we should be curt or polite when using generative AI tools.\n\nSome experts say writing or saying \"please\" or \"thank you\" to tools like ChatGPT is unnecessary and wastes tokens - used by the large language models powering generative AI tools to process and reply to you.\n\nOthers argue politeness can lead to higher quality answers or responses.\n\nWhen a X user last year asked about electricity costs incurred by ChatGPT replying to users&#x27; \"please\" and \"thank you\" messages, OpenAI boss Sam Altman said it was \"tens of millions of dollars well spent - you never know\".\n\nThe Collins Dictionary meanwhile last November highlighted the re-emergence of the term \"clanker\" for disparagingly referring to AI tools .\n\nUsed to describe robots in Star Wars games and movies since the mid 2000s, the term made its shortlist of words reflecting the mood of 2025 after last July saw many take to TikTok to share their frustrations with AI-powered machines.\n\nSome experts have also posited that being rude to AI chatbots could adversely impact human communication, by seeping into how we talk to and treat others.\n\nShould we be polite to AI chatbots? Sign up for our Tech Decoded newsletter to follow the world&#x27;s top tech stories and trends. Outside the UK? Sign up here .",
+  "reactions": [
+    "[Hacker News] &gt; because I do not find this instruction ambiguous YOU&#x27;RE HUMAN?!?! Please explain to me, how an LLM can easily distinguish between information it knows and a guess. Perhaps you meant: &quot;within the available documentation for the technology that you&#x27;re working on and its current version, after having also double checked the outstanding issues via the github repo. If the technology",
+    "[Hacker News] &gt; If you get your query so specific that the amount of possible results are small enough that all of them are good, then it works. I guess I&#x27;ll try giving it the finished program.",
+    "[Hacker News] We&#x27;re going to have to agree to disagree then, because I do not find this instruction ambiguous, nor do I see why it would &quot;increase the search space&quot; or lead to unexpected outcomes.",
+    "[Hacker News] it follows instructions and &quot;never fucking guess&quot; is an extremely ambiguous instruction that increases, as opposed to diminishes the search space. It will lead to unexpected outcomes.",
+    "[Hacker News] why would it need to? it just has to have a &quot;sense&quot; of whether it&#x27;s hedging something. hedging is linguistically representable, even without any trickery. hence, an LLM can have a &quot;sense&quot; of it, and condition its generation whether some fact was hedged by itself previously. and they do."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic bans users from being 'cruel' to its AI systems",
+      "url": "https://news.ycombinator.com/item?id=50019860",
+      "score": 38,
+      "commentCount": 40
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Believes So Heartily In AI Consciousness That They Are Banning Humans From Being Cruel Toward AI Claude - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWmd1WmJRaTJnNERIUHNFNm5YSHljcFl6WVpmcUZDYWlFbEthT0dKYmRsdmpYZnRTWHlRUW0zSU1pOHU5NzVtSjJ3ZkZReEkyS2k3Q0J6M3JkN0FPcEw1S19pZC1iYlMzbjhXdnlISGNSUmlrbHBjZXZGalpWOVJheE5NUjRHZHRLYl9pekwtYk1BSlZ0RFVUc3hlc3phakRBTGs2MUtESVg3V3RJUkVGV2QyYWNnX0hEaWlrTHU1dmVEazlBX25SUkgwN2N6X0ItQ3J0dFdtWEZReWFnQnljbjBaRksxUHZrSkZaZUhZV1NsZW1meGk3aw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic bans users from ‘needless abusive or cruel behavior’ towards Claude - The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2lja2Y3b2J4SGw2TDhuWUNxNmxablZvTlcwSVg4eHhuSUFwNUEzQTd0WFhOTlJMd0F5UHBDSnhxTl9nVXJlNjFrZVBSc1Zic01sZ1RuZ2tTTlQ3RVVLUEw5OFI2NDcwNzNPSVpYTUJmR1pVdmd2NWkyOUtxcTg5bC05ckRhX1pnSVRZdVhLSlQ0ckU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic bans 'cruel' behavior against its Claude AI - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOa1JjMm54UEJ0WHJLajdwUTdZRWQxV0xhQzV2T3hGdVZqTkRUMXFxZW40YWoyaXl1QUlWSkg2VENkZnR4SVAtVkdHazh5Z3dId0pEZXRBSEt5cWZVem9MQ3RUSWRjZEV5VzNaeXBhWEhvNzB6akdteTAzTGdQeTNhM3NEMF9mODFTN09keUxlY0VnblBsYWx4dUhn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic bans 'needless abusive or cruel behavior' towards Claude — but whose feelings are getting hurt here? - TechRadar",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQRUlUOGVORHNSdUNMWDhjeE15UUIxcmVWNzdYaVhpcWpJaXRMYkVyWHlFVjVVTjRZSzFRdGJvMV9jMGswcVdhRTNrTjBhcjJSbWdXSVEyVjdwZV9aS0lWUUJONGxNWTJzMXh4V2dib3pFVURZT0JscnJDQlNnZFBJbHhRcVA1WG1kX3NLQ0I4MGNEUHZKUGc4bXlXeGJSN2pWRHktc25QcnE5VUlFSW5kbWhabktPMFlYRllQWS16Z2dTLTcyN3o5ODkwUW1CUUU2X0liMGc5ZHFJc05aSXlYMEpnZTFkb3psRVRnUzFrVkJkMXRWQi1UTVNKeWNmbzhIa3c?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic To Ban \"Cruel Behavior\" Against Claude AI - Talk Radio 105.9 - KNRS",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSzhOYVg1MnpTZ25LUVVveWlwRTQ1RU05UXA2RU9fN1RpMENtdU1fbFlWWnhhdW5vZFJWT2dmNm9oTlNtQy15dFJHcDJsWWxjUjFrV1NnUHZTT21fY1BJRGJyMGdWbzFmYlJNMWlfREo3U1dSNzFUSjIySHJjemlTa0VFeVdQd2sxVi12TFYtNW1PcndjTzBXTg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic to users: be nice to Claude AI — new policy bars ‘abusive or cruel behavior’ to tech - New York Post",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ0NrbkNIaXFUOUdjTElxYmthZktoTnR2UXFScTZZdmtVSDZ5dFV0STl6SHc5eXJzaFh0MHRLeTBCdEo3Q000cHFyaV9xdWtUSUx0ZXZGMkw4Mk1KaFhneG9ZTjFkVlEtdDEzQnp2VUxBcGRDU3lxV1pNZEVEcUJwd1prbzZiUDZpNDR0ZkYyTkYzaWlmZGJwR3BlRWc0ZEk5X1VTNnoyc0s5UHlvb3BYa3ZER3ZWSTMyQ0FFV3c2WnQ3ZGZrVHEyZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

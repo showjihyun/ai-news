@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-10-11-구글-광고빙-리다이렉트로-위장된-클로드-설치-파일이-맥-사용자-노린다",
+      "title": "Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks",
+      "urls": [
+        "https://bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks"
+      ],
+      "publishedAt": "2026-10-10T22:26:36.639Z"
+    },
+    {
+      "slug": "2026-10-11-앤스로픽-ai에게-잔혹하게-굴면-차단-인격체-대우-논란",
+      "title": "Anthropic bans users from being 'cruel' to its AI systems",
+      "urls": [
+        "https://bbc.com/news/articles/c6j9k1l72wkgo",
+        "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWmd1WmJRaTJnNERIUHNFNm5YSHljcFl6WVpmcUZDYWlFbEthT0dKYmRsdmpYZnRTWHlRUW0zSU1pOHU5NzVtSjJ3ZkZReEkyS2k3Q0J6M3JkN0FPcEw1S19pZC1iYlMzbjhXdnlISGNSUmlrbHBjZXZGalpWOVJheE5NUjRHZHRLYl9pekwtYk1BSlZ0RFVUc3hlc3phakRBTGs2MUtESVg3V3RJUkVGV2QyYWNnX0hEaWlrTHU1dmVEazlBX25SUkgwN2N6X0ItQ3J0dFdtWEZReWFnQnljbjBaRksxUHZrSkZaZUhZV1NsZW1meGk3aw?oc=5",
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2lja2Y3b2J4SGw2TDhuWUNxNmxablZvTlcwSVg4eHhuSUFwNUEzQTd0WFhOTlJMd0F5UHBDSnhxTl9nVXJlNjFrZVBSc1Zic01sZ1RuZ2tTTlQ3RVVLUEw5OFI2NDcwNzNPSVpYTUJmR1pVdmd2NWkyOUtxcTg5bC05ckRhX1pnSVRZdVhLSlQ0ckU?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxOa1JjMm54UEJ0WHJLajdwUTdZRWQxV0xhQzV2T3hGdVZqTkRUMXFxZW40YWoyaXl1QUlWSkg2VENkZnR4SVAtVkdHazh5Z3dId0pEZXRBSEt5cWZVem9MQ3RUSWRjZEV5VzNaeXBhWEhvNzB6akdteTAzTGdQeTNhM3NEMF9mODFTN09keUxlY0VnblBsYWx4dUhn?oc=5",
+        "https://news.google.com/rss/articles/CBMiggJBVV95cUxQRUlUOGVORHNSdUNMWDhjeE15UUIxcmVWNzdYaVhpcWpJaXRMYkVyWHlFVjVVTjRZSzFRdGJvMV9jMGswcVdhRTNrTjBhcjJSbWdXSVEyVjdwZV9aS0lWUUJONGxNWTJzMXh4V2dib3pFVURZT0JscnJDQlNnZFBJbHhRcVA1WG1kX3NLQ0I4MGNEUHZKUGc4bXlXeGJSN2pWRHktc25QcnE5VUlFSW5kbWhabktPMFlYRllQWS16Z2dTLTcyN3o5ODkwUW1CUUU2X0liMGc5ZHFJc05aSXlYMEpnZTFkb3psRVRnUzFrVkJkMXRWQi1UTVNKeWNmbzhIa3c?oc=5",
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSzhOYVg1MnpTZ25LUVVveWlwRTQ1RU05UXA2RU9fN1RpMENtdU1fbFlWWnhhdW5vZFJWT2dmNm9oTlNtQy15dFJHcDJsWWxjUjFrV1NnUHZTT21fY1BJRGJyMGdWbzFmYlJNMWlfREo3U1dSNzFUSjIySHJjemlTa0VFeVdQd2sxVi12TFYtNW1PcndjTzBXTg?oc=5",
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ0NrbkNIaXFUOUdjTElxYmthZktoTnR2UXFScTZZdmtVSDZ5dFV0STl6SHc5eXJzaFh0MHRLeTBCdEo3Q000cHFyaV9xdWtUSUx0ZXZGMkw4Mk1KaFhneG9ZTjFkVlEtdDEzQnp2VUxBcGRDU3lxV1pNZEVEcUJwd1prbzZiUDZpNDR0ZkYyTkYzaWlmZGJwR3BlRWc0ZEk5X1VTNnoyc0s5UHlvb3BYa3ZER3ZWSTMyQ0FFV3c2WnQ3ZGZrVHEyZw?oc=5"
+      ],
+      "publishedAt": "2026-10-10T22:20:34.876Z"
+    },
+    {
       "slug": "2026-10-11-앤스로픽-ai-평가망-인터넷-차단-모델이-경찰에-허위-신고까지",
       "title": "Anthropic can&#8217;t reliably control its AI agents. It&#8217;s cutting off its internal evals from the live internet instead",
       "urls": [
