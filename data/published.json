@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-10-10-오픈ai-나비에-스토크스-증명-과정에서-수학-코드-번역-오류",
+      "title": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+      "urls": [
+        "https://newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof"
+      ],
+      "publishedAt": "2026-10-10T02:44:27.447Z"
+    },
+    {
+      "slug": "2026-10-10-앤스로픽-ai가-필라델피아-미제-살인-사건에-허위-제보-경찰-2개월-지연-용납-안-돼",
+      "title": "Anthropic AI model submits false tip on unsolved Philly murder",
+      "urls": [
+        "https://nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ1hTUUtkeFJXdkg0Ukx0TW5IcWpLbFhCQ21FNl9CUm5QWjVoa1ZNZmhSZ1F6c0trZ3padWdfOGlySkFrM25UdlFCZ0RUaFdrUThZY3JrQl9HMmlZUWVnVHdCb3h6SUpJSTBOZFRtWFVPTkNJMHprVGZxQUZ1WGJtcllPX05RTzRB?oc=5",
+        "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
+        "https://theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+        "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police"
+      ],
+      "publishedAt": "2026-10-10T02:33:05.497Z"
+    },
+    {
       "slug": "2026-10-10-알리바바-퀸-8단계로-가속한-7b-이미지-모델-퀸-이미지-21-터보-공개",
       "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
       "urls": [

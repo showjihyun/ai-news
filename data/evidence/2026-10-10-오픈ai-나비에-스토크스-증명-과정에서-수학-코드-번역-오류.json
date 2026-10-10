@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Thanks! Macroexpanded: Navier–Stokes Lost in Translation - https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49994145 - Oct 2026 (226 comments)",
+    "[Hacker News] Shrug. It&#x27;s how I do my research now. There were too many mathematical errors when I had agents writing LaTeX directly, even with adversarial reviews, so now I only read stuff that&#x27;s been formalized, with whatever kinks worked out along the way.",
+    "[Hacker News] &gt; I also think this &quot;paper then code&quot; approach is now obsolete. The modern way, in AI-assisted workflows To call the approach obsolete and refer to a &quot;modern way&quot; to use an LLM seems like a stretch when critiquing the approach used by a frontier lab a month ago .",
+    "[Hacker News] This headline is completely wrong. The proper coding analogy is more like, the natural-language paper was the &quot;design document&quot; before coding it up, then when coding it up as Lean4 proofs, specific details were realized to be slightly off[1] and corrected while writing the implementation in code as machine-checkable proofs. Which I&#x27;m sure is an extremely relatable situation for most",
+    "[Hacker News] Dupe of https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49994145"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+      "url": "https://news.ycombinator.com/item?id=50026734",
+      "score": 55,
+      "commentCount": 5
+    }
+  ]
+}
