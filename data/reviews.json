@@ -1,6 +1,83 @@
 {
   "reviews": [
     {
+      "slug": "2026-10-11-앤스로픽-클로드-학대-금지-명문화-진짜는-무기선거감시-규제-강화",
+      "title": "앤스로픽, 클로드 '학대 금지' 명문화… 진짜는 무기·선거·감시 규제 강화",
+      "category": "논쟁",
+      "desk": "이슈 데스크",
+      "publishedAt": "2026-10-11T07:39:38.135Z",
+      "reviewedAt": "2026-10-11T07:41:44.516Z",
+      "scores": {
+        "clarity": 5,
+        "grounding": 5,
+        "originality": 5,
+        "usefulness": 5,
+        "readability": 3,
+        "humanness": 3,
+        "headline": 5,
+        "transparency": 5
+      },
+      "overall": 4.52,
+      "notes": {
+        "clarity": "The article’s “쉽게 풀어보면” section stands alone: it explains the policy change, the restaurant analogy, the real stakes (weapons, elections, surveillance), user backlash, and concrete actions without assuming prior reading. Technical terms like “레드팀링” appear only in the detailed sections, and the analogy is accurate and self‑contained.",
+        "grounding": "Every date (11월 12일), figure (점수 46, 댓글 50), quote (“클로드가 고통을 느낀다는 증거는 없다”), and policy detail (weapon software ban, election targeting rollback, surveillance prohibitions, physical‑equipment safety requirements, cybersecurity initiative, two‑year attacker advantage) is directly verifiable in the provided Register article and Hacker News metadata. No factual claim contradicts the source material.",
+        "originality": "The piece goes beyond summary by (a) juxtaposing the trivial “abuse” clause with the substantive weapons/election/surveillance changes, (b) reproducing and contextualising Hacker News community skepticism, (c) flagging missing enforcement details (appeal process, definition of abuse), and (d) translating implications for Korean general users, developers, and enterprise security teams — a clear editorial perspective.",
+        "usefulness": "Concrete, dated actions are given: general users told they can keep venting; developers advised to log research intent and use separate test environments; hardware integrators reminded to verify human‑in‑the‑loop emergency stops before 12 Nov; security teams pointed to the new free vulnerability‑scanning program. The “오늘 할 수 있는 것” tip (reset the session) is immediately testable.",
+        "readability": "While sentences are short (avg 34 chars, max 85) and paragraphs mostly 2‑3 sentences, two paragraphs exceed four sentences, creating “text walls” on mobile. Bold emphasis appears 43 times — far too many — so key points lose visual hierarchy. Lists are used well, but the over‑highlighting hurts skimmability.",
+        "humanness": "The prose shows a journalist’s voice (“이 대목이 걸린다”, “이 논쟁의 핵심은 …”), yet sentence‑length variance is low (σ = 17) and 43 % of clauses end in “‑습니다”, giving a uniform rhythm. Bullet‑style lists make up ~33 % of lines, and the single cliché (“주목할 필요가”) appears. The piece leans toward a templated feel rather than a conversational rhythm.",
+        "headline": "The headline names the company, the superficial change (“학대 금지 명문화”), and immediately signals the real story (“진짜는 무기·선거·감시 규제 강화”). The one‑line summary mirrors that focus without repetition, and no sensationalist language is used.",
+        "transparency": "Sources are named inline (The Register, Hacker News with score/comment counts). The article distinguishes Anthropic’s official statements from The Register’s commentary (“앤스로픽 공식 발언이 아니라 기자 설명이다”) and explicitly notes where policies are still unpublished (“공개되지 않았다”, “아직 없다”)."
+      },
+      "fix": "다음 기사부터는 굵은 강조를 핵심 용어 5~7개로 제한하고, 4문장 이상 문단은 무조건 2~3문장으로 쪼개어 모바일 가독성을 확보하세요.",
+      "unsupported": [],
+      "unverifiable": [
+        "\"모델이 헛소리를 내놓고, 그걸 지적하면 '학대'로 몰려 대화가 끊길 수도 있다.\" (추측, 자료에 직접적 근거 없음)",
+        "\"물리 장비 안전장치 의무화는 산업 현장 도입을 앞둔 선제적 안전장치로 읽힌다.\" (해석, 자료에 명시되지 않음)",
+        "\"사용자가 모델 오류를 집요하게 추궁해도 '학대'로 분류될 수 있다.\" (가정, 확인 불가)",
+        "\"모델이 먼저 사용자를 조롱·가스라이팅해도 제재 대상은 사용자 쪽이다.\" (가정, 자료에 없음)",
+        "\"이의 제기 창구·판정 로그 공개·복구 절차 중 어느 것도 아직 없다.\" (자료에 미공개 사실로 언급됨, 확인 불가)",
+        "\"앤스로픽이 판정 근거 로그를 얼마나 투명하게 공개하느냐… 갈린다.\" (미래 전망, 검증 불가)"
+      ],
+      "evidenceExact": true
+    },
+    {
+      "slug": "2026-10-11-클로드-코드-세션을-일일-스크럼으로-보여주는-무료-도구-등장",
+      "title": "클로드 코드 세션을 '일일 스크럼'으로 보여주는 무료 도구 등장",
+      "category": "서비스",
+      "desk": "서비스 리뷰 데스크",
+      "publishedAt": "2026-10-11T07:28:11.952Z",
+      "reviewedAt": "2026-10-11T07:29:33.069Z",
+      "scores": {
+        "clarity": 5,
+        "grounding": 5,
+        "originality": 4,
+        "usefulness": 5,
+        "readability": 4,
+        "humanness": 5,
+        "headline": 5,
+        "transparency": 5
+      },
+      "overall": 4.75,
+      "notes": {
+        "clarity": "'쉽게 풀어보면' 섹션이 공사 현장 비유(소장=클로드 코드, 하청=서브 에이전트, 화이트보드=본 도구)로 주체·대상·동작을 모두 담아 독립적으로 이해된다. 전문 용어(세션 파일, 토큰 비용, 서브 에이전트)가 처음 나올 때마다 괄호나 다음 문장에서 풀어 준다(예: \"클로드 코드가 이미 내 컴퓨터에 적어둔 '작업 일지'를 읽어서\").",
+        "grounding": "본문의 모든 수치·기능·인용이 제공된 원문 자료와 일치한다. 설치 명령어(`npx @double_geste/agent-standup --open`), 실행 환경(VS Code, Cursor, 터미널, 데스크톱), 로컬 실행·무료·오픈소스, 프랑스어 번역·농담 기능만 외부 통신, 맥 미서명 앱 경고, 음성 품질 차이, 로드맵 대상(Codex CLI, Gemini CLI), 개발자 셀프 디스 농담(\"replaced by his own agents\"), 해커뉴스 댓글 32개·점수 29, 긍정/부정 댓글 원문 인용 모두 자료에서 확인된다. 불확실한 부분(구독 필요 여부, 대규모 성능)은 '미확인', '검증 필요'로 명시했다.",
+        "originality": "(b) 커뮤니티 반론을 긍정·부정 양쪽으로 인용해 균형 있게 실었고, (c) 한국어 음성 미지원·타 도구 연동 미완·대규모 성능 미검증 등 발표에 없는 전제·예외를 짚었으며, (e) '한국 개발자가 오늘 바로 써보려면' 단계별 실행 가이드를 국내 맥락에 맞춰 제공했다. 데스크 판단(\"이 대목이 걸린다\", \"마케팅일 수 있다\")이 글 전체에 배어 있다. 과거 기사 연결은 없다.",
+        "usefulness": "'나에게 미치는 영향'에 즉시 실행 가능한 명령어(`npx @double_geste/agent-standup --open`)와 선행 조건(클로드 코드 선실행), 대체재가 아님을 명확히 하고, 멀티 에이전트 파이프라인 개발자 vs 소규모 사용자별 체감 차이를 구체화했다. 요금·시점·대안이 행동 단위로 제시됐다.",
+        "readability": "문단 평균 2~3문장, 평균 문장 38자, 120자 초과 문장 0개, 소제목 7개가 내용을 예고한다. 목록·코드 블록으로 나열을 분리했다. 다만 굵은 강조가 21개로 과다해(기계 검출 경고) 핵심어가 묻힐 우려가 있다.",
+        "humanness": "문장 길이 편차 20.4, 종결어미 9종(최다 43%)로 리듬이 있고, \"이 대목이 걸린다\", \"농담 반 진담 반으로\", \"볼거리는 좋은데 쓸 일은 드물다\" 등 기자 판단·어조가 드러난다. 불릿 비중 32%로 적절하며, AI 상투구(\"~라고 할 수 있습니다\", \"주목할 필요가\")가 없다.",
+        "headline": "제목이 기사의 주된 결론(클로드 코드 세션→일일 스크럼 시각화, 무료, 로컬 실행)을 구체적 사실로 담고 과장 없다. 한 줄 요약이 제목을 반복하지 않고 '내 컴퓨터에서만 돈다'는 핵심 차별점을 보강한다.",
+        "transparency": "해커뉴스 댓글 수·점수, README 원문, 개발자 농담 출처를 본문에서 밝히고, 자체 확인 안 된 내용(구독 요금, 대규모 성능)은 '미확인', '검증 필요'로 표시했다. 기업 발표와 커뮤니티 반응을 구분해 인용했다."
+      },
+      "fix": "다음 기사부터 굵은 강조는 섹션당 1~2개(핵심 용어·수치·행동 유도)로 제한하고, 나머지는 일반 텍스트로 두어 시각적 위계를 확보하세요.",
+      "unsupported": [],
+      "unverifiable": [
+        "클로드 코드 별도 구독 필요 여부(자료에 가격 정보 없음, 기사도 '본지 미확인' 표기)",
+        "수천 개 에이전트 동시 실행 시 브라우저 렌더링 부하(자료에 성능 데이터 없음, 기사도 '실사용 검증 필요' 표기)",
+        "이슈·PR 속도가 도구 생명을 가른다는 전망(미래 예측)"
+      ],
+      "evidenceExact": true
+    },
+    {
       "slug": "2026-10-11-비텍스트-ai-제브-출시-3주-만에-10조-원-기업가치-검증은-아직",
       "title": "비텍스트 AI '제브', 출시 3주 만에 10조 원 기업가치... 검증은 아직",
       "category": "신모델",

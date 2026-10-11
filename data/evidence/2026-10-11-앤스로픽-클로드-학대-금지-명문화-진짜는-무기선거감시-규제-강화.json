@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — theregister.com]\nNew usage policy cracks down on cruelty to chatbot, alongside slightly more pressing matters of weapons development, surveillance, and election interference\n\nAnthropic has updated its rules to stop people being mean to Claude, apparently deciding that its AI chatbot needs protection from the humans paying to use it.\n\nThe AI developer's latest usage policy prohibits \"sustained and needless abusive or cruel behavior\" toward its models. The rules take effect November 12, giving users just over a month to get any lingering insults out of their systems.\n\n\"The policy update is meant to apply only in extreme cases, where users repeatedly act cruelly toward our models, with no discernible purpose,\" Anthropic said. \"It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.\"\n\nSo you can still tell Claude it is wrong, but repeatedly berating it for the sheer pleasure of doing so could land you in trouble. It's not clear how Anthropic intends to distinguish between legitimate frustration and gratuitous cruelty, though it says Claude's existing ability to end abusive conversations will remain its primary enforcement tool.\n\nAnthropic gave Claude the ability to end certain conversations back in August 2025 as part of its research into what it calls \"model welfare.\" The feature lets some versions of Claude cut off users who persistently subject the models to abuse.\n\nIt’s worth remembering that Claude is software, not a person, and there's no established evidence that it experiences distress. That hasn't stopped Anthropic from telling paying customers to mind their manners around its chatbot.\n\nThe etiquette rules are only one part of a broader overhaul covering rather more consequential matters, including election interference, weapons development, and surveillance.\n\nAnthropic has tightened its restrictions on deceptive influence campaigns after observing state media outlets, government propaganda offices, and commercial organizations using Claude to operate fake accounts and fabricated news websites.\n\nAt the same time, it has dropped its blanket ban on personalized political targeting, arguing that the restriction also caught legitimate activities, such as nonprofits translating voter information. Deceptive targeting and misuse of personal information remain prohibited.\n\nThe company has also clarified that its weapons ban extends to software and components after observing attempts to use Claude to develop guidance and control systems for weapons, including armed drones and autonomous vehicles.\n\nMeanwhile, Claude cannot be used to recommend which people police should investigate, arrest, or charge, nor to develop tools for surveillance. Tracking people without their consent is also prohibited, whether in real time or retrospectively. Anthropic says these changes clarify existing restrictions rather than introduce new ones.\n\nThere are also new requirements for customers connecting Claude to physical equipment capable of causing injury. A qualified human operator must be able to monitor and stop the hardware, which must remain in a safe state if the AI connection drops.\n\nThe policy overhaul comes as Anthropic tries to address some of the security risks posed by increasingly capable AI systems. The company has also launched a new cybersecurity initiative aimed at helping critical infrastructure operators and open source projects find and fix vulnerabilities using its AI models.\n\nThe effort includes free security scanning for eligible open source projects and partnerships with security firms to help protect critical infrastructure. Anthropic reckons attackers will have the advantage for the next two years before AI-powered defenses begin to catch up.\n\nFor now, though, the company has another threat to contend with: people saying nasty things to its chatbot. ®",
+  "reactions": [
+    "[Hacker News] Same. After this, it becomes &quot;abuse department&quot; skit from monty python. The model constantly generates strongly abusive language (weaponized incompetence after user detects that model was lying and fabricating success reports, and had made fake work; blaming user; mansplaining its own hallucinations -- all the while user is forced to consume that because the important information is not ",
+    "[Hacker News] If they enforce, I don’t think I can take all the crap Claude does when I ask it to do something for me. Please ask Claude to be nice to me in doing its job :)",
+    "[Hacker News] John Spartan, you are fined 1 credit for breaching of the Verbal Morality Statu",
+    "[Hacker News] &gt; &quot; Even if we ignore the distinction between &quot;no evidence it experiences&quot; and &quot;confidence it does not experience&quot;, cruelty hurts the person performing it and the people witnessing it too! &quot; The 2026 equivalent of &quot;videogames cause violence&quot; and Wertham&#x27;s &quot;comics cause delinquency&quot; and will age just about as well.",
+    "[Hacker News] Claude is ~~an Asshole~~ a Nicehole . http:&#x2F;&#x2F;nicehole.urbanup.com&#x2F;8485154",
+    "[Hacker News] I have colleagues who have saved memories instructing Claude to stop being such a big baby about their course language. I am also one of those colleagues."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic asks users to stop being mean to Claude",
+      "url": "https://news.ycombinator.com/item?id=50038865",
+      "score": 46,
+      "commentCount": 50
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic asks users to stop being mean to Claude - The Register",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYm1BN01TVXF6eDVwQU81bWZXYWExX091aXN2UHRxUG1KZ2h0bEhqZUoxRHZBRXAzdTg1U0hSdjBoWjJ3MU9WSzNXSDNQUHdBQm15cndjbUZydzNiZVNGWDUwOVVrOEtLOXFQZU9GWk85VlQ2MDBCdTVBb1ExY3RXYXBObXBhbGk5bUZBckxyS3ZNTDVaOXFlUFR0UkdJdWc1Q1RHYXJfY0JCdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "No being mean to Claude? What does Anthropic’s new policy mean for users? - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcjBpbXNGZFFOVF9aenpweXlBcWJuWWpDU3d3WFNueHZVMG5OUGtyQmVXOUYwTnZSYUNKbzllVlMxT1BpWC1sRDBkM1FiVm9ObkFQZlJGLUJ3UFc0dVlzNDBkS1FqdVZxUlRZa1hzZzA0MGJZZVNmRmZYNHVzR0VDeFQtS1liV0VremptSjRWVGNsM0xUOUFoMnpISjljZlotSHRJbjNqeC13R3lVbjJVejNCWVN2bDc5S1RkRHd30gHDAUFVX3lxTE9CSkZLQ0Z4TFhtWTVUWUR6Ry1OeFpwVTFjVUdhVXJNMGM2OG9Vbno5Ukc3b25yTVZsV2h3LWsxajZubnFQWXIyM3dQVWt4SkNHRklaTTFnZWlndzBKREtWa0dwQXBvbUo1SFA3cGtYT24yVHl6OVJacTVSdHdQSnBMN2FvM1o2RF9RM0V2dk1La0VIRzhqX3R4bUluYndHam41NU43eFhWM2xZWlctcTY1a3hJbFpwWl8zbUI5R3pRdTk3dw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — atoll92.github.io]\nSee who is waiting on whom and who is blocked, at zero token cost.\n\nAgent Standup turns your Claude Code session into a live team meeting: the lead gives orders, sub-agents join, share their screen and report back. It’s a bit silly. It’s also weirdly useful.\n\n(An illustration. The real thing is live, has voices, and follows your actual session.)\n\nwherever you run Claude Code : VS Code, Cursor, a plain terminal, the desktop app. Nothing to configure, nothing sent anywhere.\" data-fr=\"Il lit les fichiers de session que Claude Code écrit déjà : il marche donc partout où vous lancez Claude Code : VS Code, Cursor, un simple terminal, l’application de bureau. Rien à configurer, rien n’est envoyé.\">It works wherever you run Claude Code.\n\nOr in 30 seconds, no editor: npx @double_geste/agent-standup --open \" data-fr=\"Gratuit · open source · Mac, Windows, Linux Ou en 30 secondes, sans éditeur : npx @double_geste/agent-standup --open \">Free · open source\n\nAgent Standup in the Extensions view.\" data-fr=\"Ou cherchez Agent Standup dans la vue Extensions.\">Or search Agent Standup.\n\nExtensions → … → Install from VSIX… \" data-fr=\"Puis Extensions → … → Install from VSIX… \">Then Install from VSIX…\n\nrelease page (experimental).\" data-fr=\"Non signée par Apple : la première fois, clic droit sur l’app → Ouvrir. Les versions Windows et Linux sont sur la page des versions (expérimentales).\">Not signed by Apple.\n\nagent-standup statusline (Claude Code) or agent-standup status (tmux). Details in the README.\" data-fr=\"Puis agent-standup statusline (Claude Code) ou agent-standup status (tmux). Détails dans le README.\">Details in the README.\n\nroadmap .\" data-fr=\"Il faut avoir utilisé Claude Code au moins une fois sur cette machine. Les voix sont meilleures sur Mac. Les autres outils d’agents (Codex CLI, Gemini CLI…) sont sur la feuille de route .\">You need to have used Claude Code on this machine at least once.\n\nIs my code sent anywhere? No. Everything runs on your machine and reads the session files Claude Code already writes. (Only if you turn on French translation or the jokes, short lines go through your own Claude login.)\" data-fr=\" Mon code part-il quelque part ? Non. Tout tourne sur votre machine et lit les fichiers de session que Claude Code écrit déjà. (Si vous choisissez le français, de courtes phrases sont traduites via votre propre connexion Claude.)\">No.\n\nThis dev was replaced by his own agents. If this made you smile, spare a coffee for his career change? ☕\" data-fr=\"Fait par un dev qui s’ennuie et ses robots. Ce développeur a été remplacé par ses propres agents. Si ça vous a fait sourire, un café pour sa reconversion ? ☕\">Made by a bored dev and his robots.",
+  "reactions": [
+    "[Hacker News] One useful part of standup is to elicit connections where one wasn&#x27;t expected. For example, someone might say &quot;I&#x27;ve been working on X&quot; and another person might say &quot;Oh, I worked on X a couple of days ago and you should know ...&quot; It is an opportunity for things people didn&#x27;t realize they needed to communicate to get stated publicly in a way that can create connect",
+    "[Hacker News] I&#x27;d instead say that for both it&#x27;s really at 100%, and not any number in between. Problem is that we can&#x27;t define precisely what is good enough or when software is &quot;finished&quot;: I mean, we are trying to do that with human languages, so it should not be a surprise. Yes, LLMs are now similarly aware of the average context a human would be aware of, but for anything specific to",
+    "[Hacker News] That&#x27;s why people &quot;meet&quot;. However, a &quot;standup&quot; was invented to solve a particular problem: people, in isolation, do not always understand that they are stuck, and talking it through lets fellow humans identify their challenge. The stand up part is mostly to encourage keeping it concise and short, so you only focus on what is actionable between all participants (waiting on ",
+    "[Hacker News] I don’t think it will disappear as the tools can be useful (finding bugs, searching large stores of info etc), but obviously bogus things like this meant to impress the gullible will disappear yes. Sadly the internet has already been ruined by bots pretending to be human, and there’s no way back from that.",
+    "[Hacker News] This makes me want to get a job just to be able to run this with my coworkers."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "AI agents in a stand-up call",
+      "url": "https://news.ycombinator.com/item?id=50039630",
+      "score": 29,
+      "commentCount": 32
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows - The Decoder",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQb0hjSnZiM0d4ckZBbkpJSUVVYUxwZ3VVQ2hGd3VCWFRxM1BFb3lueXZUMzVZRmd1UElZVUNXbm5mTjN2TGs0S2tzOXhqQ3NONHFRRnpFMU9Id0tnVG1fUFhIU3BtZnZ1TlBYS1RGWTBnUlFpOU45Zk90MWNIRVplT1FQTV8zLTN3U3ZYZGxWWFhfWm5McGMyR2xSVXE1bzc2aVNLQ19ma1ktWFJRN1ZyOVVnTDlMQW9KdHdyS1ln?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
