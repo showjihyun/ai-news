@@ -1,0 +1,20 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nTypeSafe AI, the developer of Jev, a new type of AI model that gained rapid popularity after launching just a few weeks ago, has raised $870 million at a $7.5 billion valuation. The round was led by Andreessen Horowitz, with participation from Sequoia and existing investor DCVC.\n\nThe massive fundraise comes as little surprise given Jev went viral almost instantly after its September 15 release . The startup claims that a third of Fortune 500 companies are already using the model, a remarkably swift adoption by enterprises.\n\nJev is based on a transformer architecture, but it is not a large language model (LLM). It doesn’t output text, but instead produces probabilities, or what the company calls &#8220;calibrated decisions.&#8221; What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs. The company positions its approach as uniquely suited for automating tasks rather than generating text or code.\n\n“We have been super good at human language for four years, but it’s not useful for automation because computers speak a different language,” TypeSafe co-founder Diogo Almeida told TechCrunch last month.\n\nAlong with Almeida, who was previously a researcher at OpenAI, TypeSafe was co-founded in 2024 by former Meta research engineer Sasha Sheng and Erik Gafni, an engineer and entrepreneur.\n\nGet 50% off a second pass The Disrupt experience is meant to be shared. Get your pass and bring a colleague, partner, or peer at 50% off. Cover more ground by making connections, building momentum, and discovering what’s next in the startup ecosystem.\n\nEvery weekday and Sunday, you can get the best of TechCrunch’s coverage.\n\nTechCrunch Mobility is your destination for transportation news and insight.\n\nStartups are the core of TechCrunch, so get our best coverage delivered weekly.\n\nProvides movers and shakers with the info they need to start their day.\n\nBy submitting your email, you agree to our Terms and Privacy Notice .",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "TechCrunch AI",
+      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Non-text AI model maker Jev valued at $7.5B just weeks after launch",
+      "url": "https://www.reddit.com/r/artificial/comments/1x2prfl/nontext_ai_model_maker_jev_valued_at_75b_just/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

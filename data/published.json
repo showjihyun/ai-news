@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-11-비텍스트-ai-제브-출시-3주-만에-10조-원-기업가치-검증은-아직",
+      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "urls": [
+        "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
+        "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch"
+      ],
+      "publishedAt": "2026-10-11T01:19:22.277Z"
+    },
+    {
+      "slug": "2026-10-11-ai를-사람처럼-대하는-우리-이대로-괜찮을까",
+      "title": "We can&#8217;t help treating AI like it&#8217;s human. But should we?",
+      "urls": [
+        "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we",
+        "https://reddit.com/r/singularity/comments/1x2ty7y/if_an_internal_model_discovers_a_new_ai"
+      ],
+      "publishedAt": "2026-10-11T01:10:04.303Z"
+    },
+    {
       "slug": "2026-10-11-구글-광고빙-리다이렉트로-위장된-클로드-설치-파일이-맥-사용자-노린다",
       "title": "Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks",
       "urls": [
