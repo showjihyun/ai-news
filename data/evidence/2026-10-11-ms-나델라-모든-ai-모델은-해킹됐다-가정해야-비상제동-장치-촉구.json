@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nMicrosoft’s CEO calls for putting an ‘emergency brake’ on AI.\n\nMicrosoft’s CEO calls for putting an ‘emergency brake’ on AI.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Cath Virginia / The Verge, Getty Images Part Of The AI Superintelligence Slowdown see all updates Terrence O&#x27;Brien Close Terrence O&#x27;Brien Posts from this author will be added to your daily email digest and your homepage feed.\n\nIn a lengthy post on X , Microsoft’s CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a “set of nested black boxes” whose advice and actions we simply accept or reject. He calls for building a more transparent system where models can be contained, observed, and leaves behind “tamper-proof human readable evidence.”\n\nMany of his recommendations align with what we’ve heard from others in the industry: timely incident disclosure, independent audits, verifiable data, and containment. It’s on that last point that he appears to go slightly farther than some others in the field, saying:\n\nWe must assume a model is compromised and contain it from the start. Think of it like an emergency brake. An authorized person should always be able to pause or shut down a model mid-task. More advanced models will require more advanced containment technologies that we need to standardize on.\n\nUnfortunately, Nadella also refers to AI as “super intelligence” throughout the post.\n\nTerrence O&#x27;Brien Close Terrence O&#x27;Brien Weekend Editor Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nMicrosoft Close Microsoft Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] It is actually a very common part of the fascist playbook to demand ridiculous things as proof of loyalty and then declare those not following the enemy. Absolute loyalty is required. For unprincipled people like Nadella and the rest of tech leadership, it is a small price to pay to not get hit with economic sanctions in retaliation.",
+    "[Hacker News] They are so proud that they have &quot;earned&quot; their obscene wealth but terrified what would happen if they had to do it again.",
+    "[Hacker News] That&#x27;s the thing though, he has $600M dollars worth of reasons to bend. People think that money makes you strong, maybe it does but only upto like a couple million dollars if at all, well whatever amount will give you a lifetime of comfortable life, after that it&#x27;s all about how to preserve or make more money. The more you have the more reason you have to do the wrong thing.",
+    "[Hacker News] This just feels like more of the war on local models. I expect to see a lot more FUD about this as hyperscalers desperately try to push the message that local models are incapable to keep people on the teat.",
+    "[Hacker News] Stop being obtuse, it’s clearly Trump’s hand up in his ass. No one’s used &quot;super intelligence&quot; before",
+    "[Hacker News] On one hand I don’t mind the government keeping corporations in check. On the other, the government doing business via random threats and bullying seems worse than corporations."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Satya Nadella says we should assume all AI models are 'compromised'",
+      "url": "https://news.ycombinator.com/item?id=50039627",
+      "score": 37,
+      "commentCount": 62
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+      "url": "https://theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

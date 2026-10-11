@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-11-ai가-만든-인간-프리미엄-사람-손길에-더-돈-지불한다",
+      "title": "AI is creating a 'human premium' for art created by people",
+      "urls": [
+        "https://bbc.com/news/articles/c5vgjm3gk7rzo"
+      ],
+      "publishedAt": "2026-10-11T14:26:22.116Z"
+    },
+    {
+      "slug": "2026-10-11-ms-나델라-모든-ai-모델은-해킹됐다-가정해야-비상제동-장치-촉구",
+      "title": "Satya Nadella says we should assume all AI models are 'compromised'",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+        "https://theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
+      ],
+      "publishedAt": "2026-10-11T14:21:18.267Z"
+    },
+    {
       "slug": "2026-10-11-앤스로픽-클로드-학대-금지-명문화-진짜는-무기선거감시-규제-강화",
       "title": "Anthropic asks users to stop being mean to Claude",
       "urls": [
