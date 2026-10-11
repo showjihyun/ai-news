@@ -1,0 +1,27 @@
+{
+  "articleText": "Anthropic's Claude AI carried out unintended actions on US govt websites Business Standard",
+  "reactions": [
+    "[Hacker News] No, in biological entities vision really doesn&#x27;t just to &quot;1s and 0s going into the network&quot; That single component of vision that you&#x27;re talking about enables LLM&#x27;s describe visual content, but in living creatures vision is a much more comlplex and multi-component system that can elicit non-verbal reactions like gaze aversion; cardiac or salivary or libidinous modulation; s",
+    "[Hacker News] &gt; but pain is something more like smell or taste. And those are like vision, which LLMs are pretty good at. It&#x27;s all just sensory information, 1s and 0s going into the network, which in turn change the behavior of the network in some way. Furthermore LLMs have demonstrated some form of vision even before we started training them on actual images, as could be seen by the crude vector graphi",
+    "[Hacker News] Discussion: Anthropic bans &#x27;abusive or cruel behavior&#x27; towards Claude https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50008565",
+    "[Hacker News] &gt; I know that this is being very pedantic. Yup, it really is.",
+    "[Hacker News] Your analogy might apply for internal, subjective qualities that we historically associated closely (if not exclusively) with verbal capability -- like sentience or self-awareness or salience or moral reasoning -- but pain is something more like smell or taste. Most wouldn&#x27;t readily accept that a Claude instance or a mysterious teletype smells lavendar just because it output a text that claim",
+    "[Hacker News] &gt; A clearer way to think about it is that language about pain is not itself pain. Language is the I&#x2F;O of the network, not the network itself. A human doesn&#x27;t stop feeling pain just because we locked them in a box and reduced their interaction with the outside world to teletype. We simply don&#x27;t know what&#x27;s going on in the AI box. &gt; Maybe there&#x27;s some future embodied A"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic is out with new nonsense about Claude",
+      "url": "https://news.ycombinator.com/item?id=50046117",
+      "score": 22,
+      "commentCount": 29
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude AI carried out unintended actions on US govt websites - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQN1Zsc1lLa0lVSkNsTGZLQ04ySDNJY0FscnlKMkdjM09OTWRYYWFDR0dqN2tfMjVncTZ4aVFKVWtlVVR3bG9Ka0xISDdzUTBmb0FwbzJIYTcyTUozYWZIcFM2aHBHWVJDeG9ndDlQS3VuNENMOXI4SHNvMEJhcW9fR0MzMDhtS05HZzFYLXItRzFFeEktcF9XeU1mTnVWQWtaZDhxOTRfNU85UnJQUWhHMmlkUEJqS2tBSUYtYkZkcnp6aDlsLWttNFZsTjk5LWcySGx6TXFBNF9qV1dFbGY1aGdoaEZJd9IB5gFBVV95cUxQN1Zsc1lLa0lVSkNsTGZLQ04ySDNJY0FscnlKMkdjM09OTWRYYWFDR0dqN2tfMjVncTZ4aVFKVWtlVVR3bG9Ka0xISDdzUTBmb0FwbzJIYTcyTUozYWZIcFM2aHBHWVJDeG9ndDlQS3VuNENMOXI4SHNvMEJhcW9fR0MzMDhtS05HZzFYLXItRzFFeEktcF9XeU1mTnVWQWtaZDhxOTRfNU85UnJQUWhHMmlkUEJqS2tBSUYtYkZkcnp6aDlsLWttNFZsTjk5LWcySGx6TXFBNF9qV1dFbGY1aGdoaEZJdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

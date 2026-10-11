@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I don&#x27;t understand how you&#x27;re getting from &quot;open weight model providers are forced to compete on price&quot; → &quot;nVidia is forced to compete on price&quot;. Yes nVidia is not the only game in town, but that&#x27;s no more or less true regardless of whether there are a bunch of competing providers.",
+    "[Hacker News] No, did you miss the first half of my comment? If NVIDIA is forced to compete on price, they&#x27;re screwed unless they can find more customers. They aren&#x27;t the only game in town for accelerators any more.",
+    "[Hacker News] I don&#x27;t think it needs higher VRAM, the whole point is horizontally scaling. Most models have moved to MoE and expert routing which is done over infiniband, so tensor parallelism where Tenstorrent was really weak at isn&#x27;t used much, I can see it as a viable alternative where latency isn&#x27;t a concern but cost is. Also even if they wanted to increase the capacity on their GDDR, they wo",
+    "[Hacker News] open ai models are next growth engine for nvidia, fully offline but optimized for nvidia gpu. seems good strategy.",
+    "[Hacker News] Precisely. But that might change. Once Tenstorrent releases a high VRAM card that only does linear algebra then the price might genuinely start to make sense."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
+      "url": "https://news.ycombinator.com/item?id=50035886",
+      "score": 175,
+      "commentCount": 112
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Nvidia in talks to acquire US ‘open’ model start-up Reflection AI",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x38rnv/nvidia_in_talks_to_acquire_us_open_model_startup/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

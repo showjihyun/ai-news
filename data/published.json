@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-12-엔비디아-오픈-모델-스타트업-인수-논의-커뮤니티-하드웨어-독점의-소프트웨어-연장-의심",
+      "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
+      "urls": [
+        "https://ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
+        "https://reddit.com/r/LocalLLaMA/comments/1x38rnv/nvidia_in_talks_to_acquire_us_open_model_startup"
+      ],
+      "publishedAt": "2026-10-11T23:12:18.933Z"
+    },
+    {
+      "slug": "2026-10-12-앤스로픽-클로드-안전하다-주장과-실제-사고-사이의-간극",
+      "title": "Anthropic is out with new nonsense about Claude",
+      "urls": [
+        "https://dair-community.social/@emilymbender/117412868905734653",
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQN1Zsc1lLa0lVSkNsTGZLQ04ySDNJY0FscnlKMkdjM09OTWRYYWFDR0dqN2tfMjVncTZ4aVFKVWtlVVR3bG9Ka0xISDdzUTBmb0FwbzJIYTcyTUozYWZIcFM2aHBHWVJDeG9ndDlQS3VuNENMOXI4SHNvMEJhcW9fR0MzMDhtS05HZzFYLXItRzFFeEktcF9XeU1mTnVWQWtaZDhxOTRfNU85UnJQUWhHMmlkUEJqS2tBSUYtYkZkcnp6aDlsLWttNFZsTjk5LWcySGx6TXFBNF9qV1dFbGY1aGdoaEZJd9IB5gFBVV95cUxQN1Zsc1lLa0lVSkNsTGZLQ04ySDNJY0FscnlKMkdjM09OTWRYYWFDR0dqN2tfMjVncTZ4aVFKVWtlVVR3bG9Ka0xISDdzUTBmb0FwbzJIYTcyTUozYWZIcFM2aHBHWVJDeG9ndDlQS3VuNENMOXI4SHNvMEJhcW9fR0MzMDhtS05HZzFYLXItRzFFeEktcF9XeU1mTnVWQWtaZDhxOTRfNU85UnJQUWhHMmlkUEJqS2tBSUYtYkZkcnp6aDlsLWttNFZsTjk5LWcySGx6TXFBNF9qV1dFbGY1aGdoaEZJdw?oc=5"
+      ],
+      "publishedAt": "2026-10-11T23:04:12.679Z"
+    },
+    {
       "slug": "2026-10-11-ai가-만든-인간-프리미엄-사람-손길에-더-돈-지불한다",
       "title": "AI is creating a 'human premium' for art created by people",
       "urls": [
