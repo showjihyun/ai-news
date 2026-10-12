@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-13-ai가-코드-30-더-써도-소프트웨어는-안-는다",
+      "title": "AI coding agents generate more code, but not more software",
+      "urls": [
+        "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software"
+      ],
+      "publishedAt": "2026-10-12T19:26:18.711Z"
+    },
+    {
+      "slug": "2026-10-13-오픈ai앤스로픽-대신-열린-모델-쓰라는-주장-한국-사용자에겐-무슨-의미인가",
+      "title": "Just say no to OpenAI and Anthropic",
+      "urls": [
+        "https://micahflee.com/just-say-no-to-openai-and-anthropic"
+      ],
+      "publishedAt": "2026-10-12T19:23:09.636Z"
+    },
+    {
       "slug": "2026-10-12-앤스로픽-ipo-2조-달러-몸값에-투자자-순진함-시험-경고",
       "title": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
       "urls": [
