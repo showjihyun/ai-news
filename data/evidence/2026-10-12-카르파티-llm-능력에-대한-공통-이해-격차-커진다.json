@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Agree. I’d only add that I think there is incentive for them to be solved, but there are greater incentives worth more to those leading the charge.",
+    "[Hacker News] Human drama is what people use to advocate for themselves. Bureaucracy is what people use to protect themselves. Then you have the side effects but, you may also not like a world without those at all.",
+    "[Hacker News] Average, or median? Don’t know the answer offhand, but there are a small number of well-known people who are likely to skew the average quite a bit upward, given how much wealth they accumulated during and since covid",
+    "[Hacker News] Companies have been trying to figure out how to get people to rent pcs for a while. Unfortunately the AI boom has shown them how, buy out all the capacity of the ram manufacturers, pay them enough consistently and the manufacturers have no reason to expand their capacity. No cheap ram means companies and then home users will have no choice but to come to you and rent their pc.",
+    "[Hacker News] MENSA selects for puzzle solving abilities. Reinforcement learning trains task completion abilities.",
+    "[Hacker News] Same as before, really. You can have geniuses but if not used right you get nothing."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "url": "https://news.ycombinator.com/item?id=50047422",
+      "score": 256,
+      "commentCount": 413
+    },
+    {
+      "origin": "r/singularity",
+      "title": "[Karpathy] gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel",
+      "url": "https://www.reddit.com/r/singularity/comments/1x3krgr/karpathy_gap_in_shared_understanding_of_llm/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}
