@@ -1,0 +1,27 @@
+{
+  "articleText": "[r/LocalLLaMA — techpowerup.com]\nMonday, October 12th 2026 Intel \"Crescent Island\" GPU Gets D-Series Name, Supports Up to 480 GB of LPDDR5X by AleksandarK Yesterday, 12:45 Discuss (10 Comments) Intel has finally unveiled what its \"Crescent Island\" D-Series GPUs will look like, introducing a dedicated AI accelerator in a server form factor after previous projects stalled. The newly named D-Series GPU features a total of 32 Xe3P cores, 256 XMX engines, 32 MB of unified L2 cache, and up to 480 GB of LPDDR5X memory. Intel rates it for up to 1.3 PetaFLOPS of FP8 performance, with support for formats ranging from FP4 to FP64. A media engine with four encoders and four decoders is also included, which could assist with multimodal workloads where video generation and understanding is a must. The card comes with 160 GB memory configuration out of the box, which is exclusive to Intel-branded \"Crescent Island\" graphics cards, while the company allows its ODMs to equip the card with up to 480 GB of LPDDR5X memory for maximum VRAM capacity. What is particularly interesting about the Xe3P is its pipeline. The XMX engines have been redesigned from the four-deep systolic design on the regular Xe3 to 16-deep processing on the Xe3P. Additional details include FP4 data format support alongside FP8, as well as large register files of 1 MB per core and L1 cache of 512 KB per core. In total, there are 256 Vector engines and 256 of the new XMX engines, each divided into groups of eight per Xe3P core. Additionally, in the Xe3P, there are no graphics processing elements to output imagery, as the silicon is designed purely for AI inference workloads that require long context and agentic tasks. The accelerator is designed as a 350 W, air-cooled PCIe 5.0 x16 card, allowing it to fit into conventional server infrastructure without the need for dedicated liquid cooling. Intel is also leveraging its common Xe software foundation and support for established AI frameworks to facilitate deployment. Customer sampling is underway, but pricing, general availability, and independent performance results have yet to be disclosed. Ultimately, the cost per generated token and software maturity will determine whether the D-Series can compete with established AI accelerator platforms. Intel envisions a single card powering models up to 300 billion parameters in size, with a 8x GPU cluster running trillion-parameter models without issues. Source: Intel Related News Tags: AI Crescent Island GPU Intel Xe Xe3P Oct 10th 2026 NVIDIA Reportedly Ending the RTX 5090, Reserves GB202 Silicon for Workstation GPUs (175) Jul 3rd 2026 Intel Readies Two 22-Core \"Nova Lake-S\" SKUs with 108 MB bLLC Cache for Gaming (279) Oct 1st 2026 Intel Core Ultra 4000 \"Nova Lake-S\" Lineup Leaks With 28-Core 4970K BFC (103) Jun 26th 2026 Intel \"Nova Lake-S\" 52-Core OC SKU to Draw 474 W in PL2 Mode (292) Sep 7th 2026 Intel Set to Raise CPU Prices by Another 10% in October (47) Jan 23rd 2026 Intel Core Ultra Series 4 \"Nova Lake\" Processors Launch in Late-2026 (62) Sep 13th 2026 AI Firms Are Reportedly Buying NVIDIA RTX 5090 GPUs in Bulk for Server Use (112) Aug 24th 2026 Intel Details \"Crescent Island\" Graphics: 32 Xe3P Cores, up to 480 GB LPDDR5X Memory (18) Feb 5th 2026 No NVIDIA GeForce RTX 50 \"SUPER\" GPUs This Year, RTX 60-Series Also Pushed Back (107) Jul 27th 2026 NVIDIA RTX Spark Laptop Found on Roadside Gets Reviewed Before Official Launch (22) Add your own comment 10 Comments on Intel \"Crescent Island\" GPU Gets D-Series Name, Supports Up to 480 GB of LPDDR5X #1 AleksandarK News Editor Intel is so back... Posted on Oct 12th 2026, 13:17 Reply",
+  "reactions": [
+    "[Hacker News] A human lifespan doesn&#x27;t have that many decades in it either...",
+    "[Hacker News] Given the rumored numbers are all true, this could be a huge contender to M5 Ultra(or M7 Ultra if we consider possible delays in the schedule?). Low-batch single-user serving is usually bottlenecked by `E(sum over (memory bandwidth by tier) * (memory size by tier))`. edit: typo",
+    "[Hacker News] 12 months ago buying 192 gigs of ram was pedestrian? Really?",
+    "[Hacker News] Viewed differently, they make it much cheaper to distill their models.",
+    "[Hacker News] &gt; The number of people with hardware to run a model like that is very small. Not completely obvious. I have a Ryzen 7900 with 192GB of DDR5 and a 4090. Pedestrian stuff 12 months ago (around 3k€ all-in). It runs 3.8 Flash-Next at 120tok&#x2F;s. https:&#x2F;&#x2F;github.com&#x2F;AnnoyingTechnology&#x2F;nvidia-4090-flash-next...",
+    "[Hacker News] Thats not an AI GPU its a consumer product."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "url": "https://news.ycombinator.com/item?id=50063365",
+      "score": 181,
+      "commentCount": 81
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Intel \"Crescent Island\" GPU Gets D-Series Name, Supports Up to 480 GB of LPDDR5X",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4g90u/intel_crescent_island_gpu_gets_dseries_name/",
+      "score": 9,
+      "commentCount": 0
+    }
+  ]
+}

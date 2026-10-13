@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-13-인텔-d시리즈-gpu-공개-480gb-메모리로-거대-모델-겨냥",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "urls": [
+        "https://intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+        "https://techpowerup.com/353647/intel-crescent-island-gpu-gets-d-series-name-supports-up-to-480-gb-of-lpddr5x"
+      ],
+      "publishedAt": "2026-10-13T08:16:19.667Z"
+    },
+    {
+      "slug": "2026-10-13-클로저-창시자-ai는-도구-아닌-자동화-개발자들-논쟁-격화",
+      "title": "Clojure 창시자 Rich Hickey: AI는 도구가 아니라 자동화다",
+      "urls": [
+        "https://linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+        "https://news.hada.io/topic?id=35264"
+      ],
+      "publishedAt": "2026-10-13T08:09:25.547Z"
+    },
+    {
       "slug": "2026-10-13-앤스로픽-소형-ai-가전제품-타고-스스로-복제-가능-연내-현실화",
       "title": "AI models may be capable of self-replicating without access to a datacenter",
       "urls": [
