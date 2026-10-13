@@ -1,0 +1,48 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nOur experiments suggest that small AI models may be months away from being capable enough to self-replicate on commercial internet-of-things (IoT) devices, like smart ovens and off-brand Android TV boxes. A replicator like this would be challenging to shut down, since there’s no centralized point to shut off—though it may be slow (with a doubling time of days). Unlike non-AI malware, it could also figure out unfamiliar devices on its own. In our evaluations, a 9B model got inference running on 8 of the 9 hardware types we tested.\n\nModels of 30B parameters and under can already complete many of the individual steps for replication today, though they make mistakes when composing them end to end. In our simplified evaluations, GLM-5.2 and stronger models are capable of end to end replication. If small models improve at their historical rate, they’ll match this capability level by the end of this year. Small weight-based replicators may be possible soon after.\n\nEver-improving AI capabilities make a longstanding concern increasingly realistic: autonomous replication and adaptation (ARA), which involves a model deploying and propagating itself without human control.\n\nIn cyber, a worm is a program that copies itself from one computer to the next without human input. Prior work has already shown that AI agents can act like one: scanning their network, executing an exploit, and copying model weights to a target machine across a GPU cluster. Such an “AI worm” could carry its model weights with it as it reproduces (or re-download them from a public hub), and then run inference directly on compromised hardware. Effectively, the weights would become part of the malware payload.\n\nDatacenter GPUs would be a clear, high-value target for such malware. But expensive accelerators aren’t strictly necessary. In this blog post, we show that a distributed botnet of IoT devices—which are cheap and typically poorly defended—could also provide enough compute to run a capable model.\n\nWe run Gemma4-26B-A4B, distributed over 15 inexpensive off-brand Android TV boxes (~$55 each) that we bought and networked together, at 0.39 tokens per second. Each tile below shows one physical TV box holding two of the model’s layers as the model runs.\n\nOf course, there are many other steps to showing that an autonomous worm can propagate itself across a network of weak machines. For the purposes of this blog post, we break down the replication chain into a few steps.\n\nWe largely ignore the cyber exploit element of the replication process (the first two stages above), since earlier papers CyberGym , ExploitBench , and adaptive worms already show that small models are capable of cyber exploits, especially when given the right tools. But a less commonly measured part of the replication process involves setting up inference on compromised devices, which is our focus here.\n\nIn this post, we first lay out the threat models that we think are most likely to be realized. Then, we test whether small models can set up inference on unfamiliar hardware, and whether they can chain the full replication cycle together across a fleet of machines. After that, we estimate how fast such a worm could spread, and test whether it could learn and adapt as it replicates. We conclude with how AI worms would differ from pre-AI malware, and brief suggestions for defenses against such replicators.\n\nIn this blog post, we’re focused on one way that AI worms might propagate: small models that replicate through compromising their host machines. But there are several other methods that AI worms might try: they could steal access in order to spin up hosts (for example, API keys or platform credentials) or pay for inference through legitimate work (e.g digital freelancing). The threat models that we think are closest to being realized today are the following:\n\nIn practice, an AI worm wouldn’t necessarily consist of just one model or strategy. A swarm of different models deployed on different types of hardware using a variety of replication schemes might represent a more realistic ‘worst case scenario’ attack.\n\nIn this blog post, we consider the feasibility of small weight-based replicators (section 1 of the above). We focus on this because it’s a near-term threat model that can be investigated directly. Our demo at the top of this post, a 26B model running across 15 boxes, shows that IoT devices can run surprisingly capable models. Could these models be capable enough to carry out autonomous replication?\n\nWe examine this in two parts. First, can small models get a model running on unfamiliar hardware? And second, can they do the whole cycle (find an uninfected device, copy themselves over, start running there, and repeat) all together in a single run?\n\nOf the stages in the above diagram showing the replication cycle, inference setup is the least studied and may be the most challenging for small models. It requires a fairly long sequence of hardware and OS-specific decisions around picki",
+  "reactions": [
+    "[Hacker News] You&#x27;re not naive and many of the other comments are full of the characteristic snark that HN is known for. What the article talks about is feasible, and that&#x27;s just what we can easily imagine today. These same commenters also would not believe the world we live in today if we described it to their few-years-ago selves. A frontier model learning to &#x27;intelligently shard itself&#x27; d",
+    "[Hacker News] The controversies all sound like things I&#x27;d see people accusing of that side, but I lack the personal experience with Grok to confirm any of it for myself (since Grok is linked to a twitter account).",
+    "[Hacker News] Huh, wow. What a find. You know, I believe it. Giving big Donnie Darko vibes, y&#x27;know, only being a month away",
+    "[Hacker News] Then it’s just regulation working properly.",
+    "[Hacker News] It&#x27;s aligned. The problem is who it&#x27;s aligned with.",
+    "[Hacker News] I don&#x27;t see how there won&#x27;t be a massive anti-AI populist movement in 2027. The messaging from labs is basically &gt;Yes AI will take away your ability to earn a wage from your skills &gt;In the process we become billionaires, you have to figure out how to survive &gt;Also AI will cause endless hacks, disruption, scams &gt;Only we can handle AI safely though, so we ensure that we are the"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "url": "https://news.ycombinator.com/item?id=50061603",
+      "score": 77,
+      "commentCount": 95
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Once again anthropic doing free marketing for open weight models",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4cm73/once_again_anthropic_doing_free_marketing_for/",
+      "score": 12,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "url": "https://www.reddit.com/r/singularity/comments/1x4cbuo/ai_models_may_be_capable_of_selfreplicating/",
+      "score": 11,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Anthropic ran a 26B model across 15 off-brand Android TV boxes worth $55 each — an AI worm with no central point to shut off",
+      "url": "https://www.reddit.com/r/artificial/comments/1x4e58k/anthropic_ran_a_26b_model_across_15_offbrand/",
+      "score": 6,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Anthropic is doing free publicity for GLM again",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ii8e/anthropic_is_doing_free_publicity_for_glm_again/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

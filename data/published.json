@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-10-13-앤스로픽-소형-ai-가전제품-타고-스스로-복제-가능-연내-현실화",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "urls": [
+        "https://anthropic.com/research/self-replicating-ai",
+        "https://anthropic.com/research/self-replicating-ai",
+        "https://anthropic.com/research/self-replicating-ai",
+        "https://anthropic.com/research/self-replicating-ai",
+        "https://i.redd.it/s9srfeunp4vh1.jpeg"
+      ],
+      "publishedAt": "2026-10-13T01:43:22.524Z"
+    },
+    {
+      "slug": "2026-10-13-리누스-토발즈가-클로드-코드로-리눅스-커널-고쳤다",
+      "title": "Linus Torvalds, Claude Code로 Linux 커널의 대폭 개선 작업 진행 중",
+      "urls": [
+        "https://phoronix.com/news/Linus-Torvalds-Claude-Code",
+        "https://news.hada.io/topic?id=35265",
+        "https://phoronix.com/news/Linus-Torvalds-Claude-Code",
+        "https://startupfortune.com/linus-torvalds-used-claude-code-to-rewrite-how-linux-reads-cached-files"
+      ],
+      "publishedAt": "2026-10-13T01:33:21.096Z"
+    },
+    {
       "slug": "2026-10-13-ai가-코드-30-더-써도-소프트웨어는-안-는다",
       "title": "AI coding agents generate more code, but not more software",
       "urls": [
