@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-10-14-오픈ai-엔지니어-임원-회의실-도청-혐의로-체포-내부-보안-구멍-드러나",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "urls": [
+        "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
+        "https://theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+        "https://i.redd.it/efjyt9ewhavh1.png",
+        "https://i.redd.it/xa8qeloilavh1.jpeg"
+      ],
+      "publishedAt": "2026-10-14T00:43:12.594Z"
+    },
+    {
+      "slug": "2026-10-14-앤스로픽-깃-버리고-자체-vcs-사이온-만들었다-ai-코딩-폭주에-5개월-만에-교체",
+      "title": "Redesigning source control at Anthropic",
+      "urls": [
+        "https://anthropic.com/engineering/redesigning-source-control",
+        "https://news.google.com/rss/articles/CBMickFVX3lxTFBrYlpJeHk2enVYSG9CYl8wRndZeW1XOUpvWHA2NXVHREZBV2JoSFhmTW0tLU1MWDNrWlZVNU9yMDZCbVd5YUZyNFJDaXVxbFo4V1hURTAySlBUVmowR3BVMzJxbmNLdDMtSW5KV3U0NlBqdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVTRpQW9xY3pGQkgxQk1zbjlwQXdDQTMzcTh1cGMtY1BZWmVtNU5XWkNYVnRMOVNfOWFlUm5KWDk0RDRpTzRCMExEYUJQOHVXbDRVcmROX2FPN0tndzZJY21MUDVhbFFFUm1KZ2RfUzl5c1oybkR0WkNVRUd4MWU5OEZSOU80Wi1fUFk1MFZSYng2Q25FdHBzRG1Idks4Y2tNeUZibFJyajI5end2MlRKWHR5MmVnRDZjN3NRcGo4UGhhQjQ?oc=5",
+        "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic",
+        "https://anthropic.com/engineering/redesigning-source-control"
+      ],
+      "publishedAt": "2026-10-14T00:32:54.472Z"
+    },
+    {
       "slug": "2026-10-13-인텔-d시리즈-gpu-공개-480gb-메모리로-거대-모델-겨냥",
       "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
       "urls": [
