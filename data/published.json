@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-14-netbsd-ai-금지-선언-후-기부금-24배-ai-없는-os로-주목",
+      "title": "NetBSD may have found a new role: The AI-free FOSS OS",
+      "urls": [
+        "https://theregister.com/os-platforms/2026/10/13/netbsd-may-have-found-a-new-role-the-ai-free-foss-os/5302818"
+      ],
+      "publishedAt": "2026-10-14T10:40:54.901Z"
+    },
+    {
+      "slug": "2026-10-14-앤스로픽-ai-웜이-iot-장악-주장-실제론-일부러-연-문에서만-작동했다",
+      "title": "Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse",
+      "urls": [
+        "https://theregister.com/ai-and-ml/2026/10/13/anthropic-conjures-another-threat-that-doesnt-exist-yet-to-stoke-fears-of-ai-apocalypse/5302866",
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTGFQU1Z2Y0VkblRCc011Y3Z5UTNzXzBHTHZ0c1NldUltRHJCQWhqQkVyZ2FnQVJ5MlhBb0J0RDF6dy1zSVJZOEIxYmY0czlMeXQtQjRwekEzeGJLQ09aaXdFRmd1R3ZJamZMcWhndHhINklZa1R0TlZnS2llWU5mUEV4MjZXYzQ0OGVDYmhlSzRSVFpDbF9Rby1zX053WWpqTURVYzQ0c1ZueTd5T3JPeWlHNGlINXVveVRkeFk0T1Q4c0JGa2pLZEpnX1NET2QxNGp0R3UtckE0a0lZ?oc=5"
+      ],
+      "publishedAt": "2026-10-14T10:36:52.257Z"
+    },
+    {
       "slug": "2026-10-14-에픽-손으로-코드-쓰지-마라지만-게임-개발자는-하네스부터-만든다",
       "title": "How to engineer an AI harness for game development",
       "urls": [
