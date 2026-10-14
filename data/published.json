@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-14-에픽-손으로-코드-쓰지-마라지만-게임-개발자는-하네스부터-만든다",
+      "title": "How to engineer an AI harness for game development",
+      "urls": [
+        "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNnVSbE9nTzBURVdlcjhJWmdVcGdYZmtPbXY0YWcyaU1IbVBIb0lLWTYxV0xlRWREVmpiTzd5NkRUaXBPaEZWajI2TVMzTUlPb3h6RmNyaUFwRFBtTVhxU1ZncXZORW9zcVh5Q2JpRmpLUF9DdHlNT096Vnl5dHJiLS12cmlmQkVwWVRoMGNR?oc=5",
+        "https://theverge.com/games/1010097/epic-games-disney-project-ai-coding-art"
+      ],
+      "publishedAt": "2026-10-14T05:25:23.500Z"
+    },
+    {
+      "slug": "2026-10-14-구글-제미나이-4-아르고나-출시-가격-5분의-1-성능은-최상위권",
+      "title": "Google, Gemini 4 Argon 정식 출시 - 긴 추론과 대규모 코드 작업 지원",
+      "urls": [
+        "https://news.hada.io/topic?id=35306",
+        "https://theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon"
+      ],
+      "publishedAt": "2026-10-14T05:22:17.810Z"
+    },
+    {
       "slug": "2026-10-14-오픈ai-엔지니어-임원-회의실-도청-혐의로-체포-내부-보안-구멍-드러나",
       "title": "OpenAI engineer arrested in bugging of executive conference room",
       "urls": [
