@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-15-asml-수주-호조-ai-칩-투자-둔화-우려-잠재우나",
+      "title": "ASML's strong orders ease fears AI spending boom is running out of steam",
+      "urls": [
+        "https://reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14"
+      ],
+      "publishedAt": "2026-10-14T15:33:53.879Z"
+    },
+    {
+      "slug": "2026-10-15-ai가-능력을-숨길-수-있다는-수학적-증명-안전-검증의-구멍-되나",
+      "title": "AI models can provably hide arbitrary capabilities",
+      "urls": [
+        "https://arxiv.org/abs/2610.13928",
+        "https://arxiv.org/abs/2610.13928"
+      ],
+      "publishedAt": "2026-10-14T15:24:32.932Z"
+    },
+    {
       "slug": "2026-10-14-netbsd-ai-금지-선언-후-기부금-24배-ai-없는-os로-주목",
       "title": "NetBSD may have found a new role: The AI-free FOSS OS",
       "urls": [

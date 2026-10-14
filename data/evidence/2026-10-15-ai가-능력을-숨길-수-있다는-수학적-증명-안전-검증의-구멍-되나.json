@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — arxiv.org]\nFocus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Andis Draguns [ view email ] [v1] Fri, 9 Oct 2026 17:55:06 UTC (878 KB) Full-text links: Access Paper: View a PDF of the paper titled AI Models Can Provably Hide Arbitrary Capabilities, by Andis Draguns and 3 other authors View PDF HTML (experimental) TeX Source view license Additional Features Audio Summary Current browse context: cs.LG < prev | next > new | recent | 2026-10 Change to browse by: cs cs.CR References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation &times; loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) IArxiv recommender toggle IArxiv Recommender ( What is IArxiv? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .",
+  "reactions": [
+    "[Hacker News] I don&#x27;t have references unfortunately but I imagine that polymorphic viruses existed before the nineties.",
+    "[Hacker News] No bro for sure what’s happening is you’re probably fine tuning on some related distribution to the original behavior you are measuring whether it was forgotten.",
+    "[Hacker News] This makes me wonder: is it possible to publish information online that by itself appears innocuous but when used in LLM training results in &quot;backdoor&quot; functionality?",
+    "[Hacker News] The model is a tiny fraction of the training data. Like many many orders of magnitude tinier. &gt; random chance Ah there is the rub, it’s not random. It’s biasing it a tiny bit. Let me try to come up with another analogy. Suppose you’re flying a plane into Siberia and start out in a specific direction. And I want you to fly over a specific town. Storing the information would be giving you the exa",
+    "[Hacker News] This feels a bit image convolution where you can &quot;hide&quot; and &quot;recover&quot; information that is very blurred. To draw a paraelell this is then highly dependent on not being distilled, since deconvolution really needs that numerical accuracy.",
+    "[Hacker News] You are a few years behind in how people today are using AI in their harnesses. Things are moving quickly with many levels of questionable safety and oversight."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "AI models can provably hide arbitrary capabilities",
+      "url": "https://news.ycombinator.com/item?id=50065692",
+      "score": 275,
+      "commentCount": 138
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "AI models can provably hide capabilities: encrypted networks inside the weights stay hard to elicit by fine-tuning, weight noise or adversarial training",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x5kpng/ai_models_can_provably_hide_capabilities/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
