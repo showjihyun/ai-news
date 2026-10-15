@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-16-커런트-어페어스-ai-생성물-전면-금지-노조-계약으로-못-박았다",
+      "title": "Why We're Banning AI",
+      "urls": [
+        "https://currentaffairs.org/news/why-were-banning-ai"
+      ],
+      "publishedAt": "2026-10-15T19:39:36.003Z"
+    },
+    {
+      "slug": "2026-10-16-플럭스-3-클라인-공개-8gb-gpu서도-4k-이미지-생성된다",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "urls": [
+        "https://huggingface.co/blog/flux-3",
+        "https://i.redd.it/etf9xvtohnvh1.png",
+        "https://bfl.ai/blog/flux-3-image-klein"
+      ],
+      "publishedAt": "2026-10-15T19:29:32.210Z"
+    },
+    {
       "slug": "2026-10-16-ai로-하드웨어-드라이버-직접-만든다-리눅스-사용자-새-길-열려",
       "title": "Using AI to reverse engineer hardware",
       "urls": [
