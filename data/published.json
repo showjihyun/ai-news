@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-10-15-앤스로픽-새-버전관리-scion-메타-mononoke-베꼈나-크레딧-누락이-본질",
+      "title": "Anthropic의 Scion은 Mononoke에서 큰 영향을 받음",
+      "urls": [
+        "https://sunshowers.io/posts/anthropic-mononoke",
+        "https://news.hada.io/topic?id=35369"
+      ],
+      "publishedAt": "2026-10-15T01:11:56.351Z"
+    },
+    {
+      "slug": "2026-10-15-앤스로픽-3분기-매출-168억-달러-상장-앞둔-폭증의-그늘",
+      "title": "Anthropic revenue jumps to US$16.8 billion in quarter before IPO - The Business Times",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOVF2X21DUXpfRGFJT0E0N0ExX0ZBc19hVTZvRjg5cGRBaHJ2U0xIM3BqQTg5eDdfeE5ZSU9feDdhZVBiZHVPeXEtOWJaT2VQVHRHVVhQeWZpVnZuZzV0ZnpSRnhRRUVWaE9ybm8tYkVEOF8tUXJka3Bkang4ejRWUWxtUWFHa3lvU0FyQ3JLbzF4a19Xc2FXYUxOY0RxNUdvdTNv?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSHRHcGVkdTNFTFUySjVSZDJhdHVNRjFnRDJXRDBmT21ncndEOWRnWnUtSGs2Z1RDNDU2TnU3WXQxakNRQjlKMmtfbXd3R2ZOXzAzUnJQVjhSQlNCLXlOaXNvVXJ0c3ZpM2lXV09TdDJ0R2lQbUNydG5qVXo4RkFlLWVlcUl0S0t4QWxqcERRRHVCLWlubXJTM1NIQUw?oc=5",
+        "https://ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6",
+        "https://ft.com/content/11632d03-358c-454b-af95-d06d4072932b",
+        "https://reuters.com/technology/anthropic-revenue-jumps-168-billion-third-quarter-ft-reports-2026-10-14"
+      ],
+      "publishedAt": "2026-10-15T01:06:43.770Z"
+    },
+    {
       "slug": "2026-10-15-ai-폭주-아닌-보안-구멍-프론티어-랩이-기초를-건너뛴다",
       "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
       "urls": [
