@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-16-ai로-하드웨어-드라이버-직접-만든다-리눅스-사용자-새-길-열려",
+      "title": "Using AI to reverse engineer hardware",
+      "urls": [
+        "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware"
+      ],
+      "publishedAt": "2026-10-15T15:37:09.884Z"
+    },
+    {
+      "slug": "2026-10-16-은행들이-ai-데이터센터-대출을-털어내기-시작했다",
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "urls": [
+        "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
+        "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote"
+      ],
+      "publishedAt": "2026-10-15T15:29:04.496Z"
+    },
+    {
       "slug": "2026-10-15-앤스로픽-클로드에-美-공식-투표-정보-탑재-2026년-중간선거-대비",
       "title": "Preparing for the 2026 US midterms - Anthropic",
       "urls": [
