@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-18-deepseek-v41-flash-1017-출시-오픈웨이트-모델-1위-등극",
+      "title": "DeepSeek V4.1 Flash 1017 - CED 아키텍처와 네이티브 이미지 이해를 도입한 MoE 모델",
+      "urls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "https://news.hada.io/topic?id=35525",
+        "https://news.hada.io/topic?id=35524",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kcVFMNjV2NFZ4c3k3VkdkYk1NdjVQWEJFYVlFOV96RHZoVWcta1NnMDRHenZjbHVKMWM3VnBoanZBTklBVEUzUVcxWHAyLTFvRGpfdDlKNWtQNFZESkNtVS1vbzEyY3J1aVh1MUJoZmd1T3ZfREE?oc=5",
+        "https://marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api",
+        "https://i.redd.it/zw362oj6c1wh1.png",
+        "https://runtimewire.com/article/deepseek-users-report-a-possible-v4-1-flash-1017-refresh-across-its-api"
+      ],
+      "publishedAt": "2026-10-17T21:53:44.702Z"
+    },
+    {
       "slug": "2026-10-16-시몬스-재단-1500만-달러-펀드-출범-수학계-ai-주도권-지키기-나섰다",
       "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
       "urls": [

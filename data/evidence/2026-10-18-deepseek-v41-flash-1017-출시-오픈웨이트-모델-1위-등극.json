@@ -1,0 +1,78 @@
+{
+  "articleText": "[Hacker News — openrouter.ai]\nFooter © 2026 OpenRouter, Inc Product Chat Rankings Benchmarks Apps Discover Models Ori Collections Providers Tools Pricing Business EU routing Enterprise Labs Company About Blog Careers Hiring Privacy Terms of Service Trust Center Support Works With OR Data Brand Developer Documentation API Reference Developer Platform Status AI Site Map Connect Discord GitHub LinkedIn X YouTube",
+  "reactions": [
+    "[Hacker News] See here https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50135410",
+    "[Hacker News] How are the regulatory hurdles supposed to help against foreign open models though? China won&#x27;t cooperate with that.",
+    "[Hacker News] Caveat: I get a budget of free ai tokens at work, as I work for an open source AI inference provider. My goal is to reverse engineer an entire gamecube game -- I&#x27;m pushing an existing community decomp that was stalled to the finish line, solo, with lots of AI help. This work was directly inspired by https:&#x2F;&#x2F;decomp.dev&#x2F; -- which has just shut down a few days ago because of, iron",
+    "[Hacker News] This model is why OpenAI and Anthropic want regulatory hurdles. We need more diversity like this, not less. A diverse ecosystem is the only long term solution to complex problems that I know of and the challenges that the AI world is presenting is no different.",
+    "[Hacker News] It happens very frequently if you happen to work on anything low level, e.g. a C code base, a database code base, etc. that deals with memory, and these have nothing to do with cyber security. It is extremely annoying and makes these models unusable.",
+    "[Hacker News] There&#x27;s basic reference inference code released with the weights, yes. https:&#x2F;&#x2F;huggingface.co&#x2F;deepseek-ai&#x2F;DeepSeek-V4.1-Flash-1017&#x2F;... &gt; providers have to implement which could be different than what the labs themselves use. I&#x27;d imagine (most) providers just take implementation by vLLM&#x2F;SGLang.",
+    "[Hacker News] Same understanding as you. At 3am, P0 = get people out of bed and fix this now. P1 = we can fix this in the morning. P2 = we can fix this before CoB today. P3 = push it into the current sprint. P4 = put it in backlog.",
+    "[Hacker News] I just told it that I want to run the tests, because so much of the code was vibed at that point and I felt I was losing understanding of the application. A few days of that and I could see that my token use was much lower than usual. Going back to LLM-run testing returned the high token usage."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "url": "https://news.ycombinator.com/item?id=50129045",
+      "score": 602,
+      "commentCount": 530
+    },
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+      "url": "https://news.ycombinator.com/item?id=50129121",
+      "score": 511,
+      "commentCount": 5
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x84po4/deepseekaideepseekv41flash1017_hugging_face/",
+      "score": 379,
+      "commentCount": 123
+    },
+    {
+      "origin": "GeekNews",
+      "title": "DeepSeek V4.1 Flash 1017 - CED 아키텍처와 네이티브 이미지 이해를 도입한 MoE 모델",
+      "url": "https://news.hada.io/topic?id=35525",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "GeekNews",
+      "title": "DeepSeek-V4.1-Flash-1017 - 추론, 코딩, 에이전트 및 시각 벤치마크 성능을 개선한 모델 업데이트",
+      "url": "https://news.hada.io/topic?id=35524",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "DeepSeek Launches V4.1-Flash-1017, Beats Claude Opus 5 On Some Benchmarks - OfficeChai",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kcVFMNjV2NFZ4c3k3VkdkYk1NdjVQWEJFYVlFOV96RHZoVWcta1NnMDRHenZjbHVKMWM3VnBoanZBTklBVEUzUVcxWHAyLTFvRGpfdDlKNWtQNFZESkNtVS1vbzEyY3J1aVh1MUJoZmd1T3ZfREE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API",
+      "url": "https://marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bb6b/deepseek_v41_flash_1017_now_leads_openweight/",
+      "score": 15,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its API",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x825su/deepseek_41_flash_1017_incoming_deepseek_users/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}
