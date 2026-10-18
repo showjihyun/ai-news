@@ -1,6 +1,32 @@
 {
   "records": [
     {
+      "slug": "2026-10-18-클로드가-풀어낸-26년-묵은-암호-미스터리",
+      "title": "Claude reveals ECDSA curve origins",
+      "urls": [
+        "https://anthropic.com/research/ecdsa-curve-origins",
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBlZU9PaGR2ZHhuYnpFb1R2cWp1NnZmV3BtaWRSRmg3cVJOamplNG56dWM3andnUFFmU1NSZzdqVUdBU2IzZG5MeGV2ZjZ5NmVQWFE3S0xQUEVxX3F4dkpTdk5GaDg?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTDFPVlF3YWEyaC16LXdIV1Z3TWYyVHRUT0UzTzVYeVd0Y05HeTZmcTV5TXVQMGlqQUJoODZFSERWclF6Y2ZMTGl4ZzhZX181R1F1ekZsaHFSUUxRRnRoSUQxUVpta1d6M0I3c1RvQUFEVTRjLVF3OTRtTm5JNTVVQXNEeUtRU2liMzZOaW9IVWRUQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWS04YjB2NnllSTV0NGExSGR4bG1DY2hZcS1EYXRYRk1TLWMxQmNKckphQTZ2RjN6WGRFNkNKel9iclNEcG42bWFyVlVnWks4c0xqMy1BdFJTY0ZCRzJzNEdqYnVEZnVqRkhqamx5SmVXQktBNzFKb09HTTdiQ1BEQkU3WTR1TnZXMXlKaUlDSm5HWEF4VU5OVHpJN0d0bDhf?oc=5"
+      ],
+      "publishedAt": "2026-10-18T06:47:28.302Z"
+    },
+    {
+      "slug": "2026-10-18-클로드-nsa-25년-암호-수수께끼-30분-만에-풀었다",
+      "title": "Anthropics' Claude cracks a 25-year-old NSA cryptography mystery in under 30 minutes - The Decoder",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMHNJOTNfRnpwZEE5VldHUmcyeUgxZkYyY090TjlIME1Yc0JGcGxfNG84U0ozVldrSFpsOHBEVXdYQkhhSEdhMFJTazIzT2NhSmw5SWZzWHlucmlWZ1RVY2Y5dWdpUTM5bUs5b0Q5bUZCTENyZ1k4UG1yOVNXa2lCa2tTX2dpd0w1WUt5SnZzbXhOUTRVZWJhR2loYVlBWkJqc25uUjduZTlOY3Qy?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ySVdRaWZKV2RiQWRJVzFkblZWNDhqYThEdmNTS1M4VGNyUlBXVDFGODZkdVlhQXBCem5wQUpobTRsQ1JEV0docENnbkdmRXgxc1VuZEJpNDVaZ0hwWFpoLV9jZmpReG5SanVuUW1yZEkzdHRreHfSAXZBVV95cUxNcklXUWlmSldkYkFkSVcxZG5WVjQ4amE4RHZjU0tTOFRjclJQV1QxRjg2ZHVZYUFwQnpucEFKaG00bENSRFdHaHBDZ25HZkV4MXNVbmRCaTQ1WmdIcFhaaC1fY2ZqUXhuUmp1blFtcmRJM3R0a3h3?oc=5",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGs5ZXZfT3haZktTVExGT0h3YW1XdEdDTE5rUjBIRzZYdFJqQndoaHU5OWdzLU5NRl81UWF4MkdWNjM3SGtweTYtR2UyTVZfNDYxUEUyRV9sb0VKT2Fzd1ZzQlRjZUZlRnV4dXVfZGZzRzlMWVU3XzM4SFplVnJzOE9yMjl3YU5nUC1BQ04zNFZMTk12V0t1ank1amJlR2JqeUxuVXJyQVBXWkYxNmxpX2syanRyZFMyWnlaQl94UQ?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE16YUdJX2RaZmpDNlFMRm15ZTY2eWR3cE9sVDJLWEhmZTdvajUwX2IxR1Itblg0WVREdE92RUczaFl6TVZjRmptVUtvc3h0cEVveVUzOVZHT0V4QlNBSEN4MklrR1ExeDVZT1JlNkJMS3VISTlvUkE?oc=5",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ1U2YVVwTTM1Y1RUQXd5b0Z0N19vaVNiZmc2Ym1zVlJIWU44OU13MERzcUxhZG11RnBfU0pXVFRrWFMtbDJiU1J0Y3N4dVRFOHUxbHNtX250WGppc21DYVk5aldSUlRaUE1STlM1SzNza1VFZW5GWlRlZ21GcG1TVjVValdEMnI2dS1OZWxyVHc1RDZlMm4tbU5FdzZvVXlMRENPSjVBdlpKbGJpTWc?oc=5",
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdWJJeEEyeWRMd3d4dFR2Q3dfbVZNanJXUkhMU2hNbVpsV1laTmxRbEJMQUlydVVKSnk3b1pXdEFacFJPaEZpWjZQNlRZMVdiOUNjZi1tSjUtTzZQM3VCWkwwY015T3JpSXZ1NDN5NTFfWmVjUGtQV3F4Ync2c3YyQVBLaTBlSkZSUGk1cW91am5sRUpfakphQW1nd3V0OHgwMW9STldhS2lQdE1heEJQcm9DbnRvSUJIbENOSGhlajEwZlhQajlfRw?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmhsWkF0TGxzaUhoUWUtMVVFc1JPUE5GWlM5enllekRybVBMUGdpN3NRbnVEam0tbFlDUV9Bcmk3SUYzLW9mQXI2MTgxVzdxNEh1cEhMT2dKUmZfN0plMXlfOHB3dDlxa3hsMzhvUm1kbDNxd3Fxc3JLajl2Wk5aOW5PbGRtMTZzRGRaTUZ4ZlZ6WkRqQWJFN1d3?oc=5",
+        "https://i.redd.it/id0277dew5wh1.png"
+      ],
+      "publishedAt": "2026-10-18T06:44:57.152Z"
+    },
+    {
       "slug": "2026-10-18-deepseek-v41-flash-1017-출시-오픈웨이트-모델-1위-등극",
       "title": "DeepSeek V4.1 Flash 1017 - CED 아키텍처와 네이티브 이미지 이해를 도입한 MoE 모델",
       "urls": [

@@ -1,0 +1,41 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\n“It’s just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.\n\nWe pursued this long-standing open question of the cryptographic community to settle concerns about ECDSA, which is one of our most widely used cryptographic standards.\n\nReaders should take this as a fun closing chapter and the end of years of speculation. There is no action to be taken or things to do differently. Most researchers trusted the curves already. Enjoy.\n\nECDSA is the most widely used elliptic curve cryptography standard. It was adopted by NIST in 2000 as part of the FIPS 186-2 Digital Signature Standard which lists a set of standard elliptic curves of varying sizes and security levels. For curves over prime and binary fields, the specifications published a “seed” parameter whose hash value is used to define the coefficient b of the curve. The provenance of these seeds has been a long-standing question, as they were provided by the NSA with no explanation or justification. As an example, the NIST P-256 curve seed was SEED = C49D3608 86E70493 6A6678E1 139D26B7 819F7E90 with no information on where it came from.\n\nNeal Koblitz and Alfred Menezes wrote an excellent summary on this controversy, “ A Riddle Wrapped in an Enigma ”, which discusses the history and concerns around the seed values. This mystery led to an amateur investigation into the origin of the seeds and a bounty for anyone who could find them .\n\nThe best story was that Jerry Solinas, longtime NSA employee, generated the seeds using a hash of a humorous passphrase:\n\nUnfortunately, Jerry died in 2023 and other colleagues at the time were not responsive, leaving open the question of how these seeds were originally derived.\n\nSeveral Anthropic employees had unsuccessfully chased the seeds following the tip about it being a hash of a humorous phrase. That turned out to be wrong. In October 2026, a curious Anthropic employee asked an internal research model if it could figure out how those seeds were generated without pointing at the clue.\n\nIn under half an hour , Claude discovered the origins of the NIST P-192, P-224, P-256, P-384, and P-521 seeds. None of them were the results of any hash algorithm at all, but rather the output of the C library’s lrand48 random-number generator, seeded with a Unix timestamp!\n\nThe algorithm used would sample bytes from the random number generator (RNG) initialized by a Unix timestamp ( t ) for some number of iterations ( n ). Each iteration would draw 20 bytes as a candidate seed. So, the first 20 bytes are candidate 1, the next 20 bytes are candidate 2, and so on. For example, P-256 required 1,842 iterations to output the standardized seed.\n\nThis is not a cryptographic break, new attack, or weakness in the ECDSA curves. In fact, this makes us more confident the curves were chosen without any backdoors or intentional weaknesses. For many years, people have been suspicious of the origins of the NIST curve parameters. They were presented to NIST without any mention of how they were chosen, leaving people wondering if they may have been chosen to have deliberate backdoors in them. These findings make that much less plausible. The seeds were generated in a very simple way: a common pseudorandom number generator initialized from the clock, which anyone can now reproduce. That leaves much less room for subversion and that we can be confident the parameters are secure.\n\nSearches for the phrase, built from the rumors, had come up empty. Claude tried a different angle: anticipating how the software that generated the curves must have worked. Claude guessed the software used a pseudorandom number generator (PRNG) that shipped with 1990s C libraries. These old PRNGs are weak enough that their output can be recognized. Recognizing that output would reveal which PRNG was used and possibly allow recovery of its initialization state.\n\nClaude wrote a scanner that slid along each published seed one bit at a time and tested whether adjacent chunks were consecutive outputs of a 1990s-vintage generator. The scan covered 34 combinations of generator and output slices. At that point, Claude noticed a pattern in the top bits for some seeds: they were all zero. Written as five 32-bit words, four of the ten seeds have a 0 in the top bit for all 20 words. That would happen by chance with probability 1/5,810. That was a signature of the linear congruential generator lrand48 , which only returns the top 31 bits of a 48-bit state. The pattern is visible by eye once you know to look for it. To recover the state, Claude took the first word, tried all 2¹⁷ values of the 17 hidden bits, and checked that the next four words followed. That worked for all four seeds under discussion.\n\nThe prime-curve seeds came from the same lrand48 generator but kept fewer bits of each output. Claude had to recover the internal state of the PRNG from those bits. It turns out recovering the state of a truncated linear congruent",
+  "reactions": [
+    "[Hacker News] I am guessing you installed Zone Alarm or BlackICE, or possibly configured your router, and then used Steve’s Shields Up to test your work. Shields up is a tool to scan your open ports.",
+    "[Hacker News] &quot;tried all 2¹⁷ values of the 17&quot; - so bruteforce?",
+    "[Hacker News] &gt; About the same time we accept that capitalism is the best economic system possible and that banks and the stock market create value for the common man. Sorry what? Nice deflection but knowledge for the greater good of everyone and selfish corporate greed are not in the same camps of end results, the latter being in the same category of the original reply of individuals being selfish for their",
+    "[Hacker News] &gt; coincidentally matching 20 bytes Ahaha ha hahaha haha ha haaha ha. No.",
+    "[Hacker News] An ideal backdoor would have completely invisible behavior to anyone that doesn&#x27;t know the key.",
+    "[Hacker News] What? Why would it imply the second one? And why would anyone care that much? And is &quot;the key was locked away&quot; really that crazy? Or &quot;the key was badly generated&quot;?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude reveals ECDSA curve origins",
+      "url": "https://news.ycombinator.com/item?id=50122800",
+      "score": 1034,
+      "commentCount": 380
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude reveals ECDSA curve origins - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBlZU9PaGR2ZHhuYnpFb1R2cWp1NnZmV3BtaWRSRmg3cVJOamplNG56dWM3andnUFFmU1NSZzdqVUdBU2IzZG5MeGV2ZjZ5NmVQWFE3S0xQUEVxX3F4dkpTdk5GaDg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Says Claude Traced NIST ECDSA Curve Seeds to a 1990S RNG - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTDFPVlF3YWEyaC16LXdIV1Z3TWYyVHRUT0UzTzVYeVd0Y05HeTZmcTV5TXVQMGlqQUJoODZFSERWclF6Y2ZMTGl4ZzhZX181R1F1ekZsaHFSUUxRRnRoSUQxUVpta1d6M0I3c1RvQUFEVTRjLVF3OTRtTm5JNTVVQXNEeUtRU2liMzZOaW9IVWRUQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Reveals ECDSA Curve Origins, the NSA Seeds Were Just Timestamps - Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWS04YjB2NnllSTV0NGExSGR4bG1DY2hZcS1EYXRYRk1TLWMxQmNKckphQTZ2RjN6WGRFNkNKel9iclNEcG42bWFyVlVnWks4c0xqMy1BdFJTY0ZCRzJzNEdqYnVEZnVqRkhqamx5SmVXQktBNzFKb09HTTdiQ1BEQkU3WTR1TnZXMXlKaUlDSm5HWEF4VU5OVHpJN0d0bDhf?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
