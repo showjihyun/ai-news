@@ -1,6 +1,31 @@
 {
   "records": [
     {
+      "slug": "2026-10-19-클로드가-양자-회로를-설계한다-사람보다-1739배-효율적",
+      "title": "Designing more efficient quantum circuits with Claude",
+      "urls": [
+        "https://anthropic.com/research/designing-efficient-quantum-circuits",
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mdmhqUzNHN09EMF9VUnNTcmlMTlpDVnlnTmxNa0tVY3h1bjJ4bmVDSWROR3JoRTgxb0dQcWYzNGF4dE9YYlNpRDlKVEx6OEVyM3RnY0R6WVRiZERYRVRtcnJ4WF9ZNWZFWVQ2a1Q5UFRnM2xYM0U5akZzOA?oc=5",
+        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYURjUkQ4Wk91LUpUaXNlYmdUS0Q3UmNFTUFvSEN5c1pYRUx2NXgwTmhUQS16MV9oLW9ZNmJJR2laeGwxRFlxMmtxZUVkaGR3dHlocUlYMFpKYVkzbzNHYUJ2WFUtcnNQVDhuSHQxTTdkUi1vYXR3SVZQOXJkVmhXeVB4Z1BlSDZVRE9XaWZ6YWt0TWFiQmlieklTMnZDdGJLbDdXTzNKc3VnSEhwRW5IaUxFeUdtQ2R1NS0wSVdHNHA2bmNTWUgxTmF6Y1lmc0t4a0gxcg?oc=5",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQndneXNOQV9MclRCTzNYLU8wang0VVJ6S25yNk5GN0t0RThPRGdrUmQ3NHRnZFNRaVotR09WSTdldUNsVEhDdnNYVFY1UkdacXVHRF9hUlpmR0V3NFliandVME1VSXdKNGxxR0FjOFhMeWpBYzlUdWZZREJPT1FqdlJYQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdFQzUXFIZUhqV2hDWU9qOXdEQnpySXAtZzVuaExuYm5XUXJhdUlMdEkyN0dyV1FPSUxCWVo3UXBURFFkTWFxOFBRY0pnazJ4UmxqMUlBRThnOUFrajJ4NHUtS1hYRllhTF9JRC0ySm1VdEdsY2ZsTm1xZlpDeEJ1c01IY3phOHk1ellSNm1wYUw?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVQVJpVlVXcnFzaWt1bmh2OHRJZXRiVGlxUVlqcXV4aUdfVXUzbkNBQnJVNmYzd2FfMDJpT1B5cGl0RmRuYnZOdUlIeU51d2E4S05VRDdPc1NacUZnSlpsZWNPeVlxNzJrVmp0ZzVmOVFrMGRkMWc?oc=5",
+        "https://news.google.com/rss/articles/CBMid0FVX3lxTE9IMlFUdWdEWmJwUHR0aW5Mb0lGX3FzR19pQzZFd1ZhdEpsUmlxODhNWi1vNmdZcDBIUTd6NG4xSGUwa1d1dEtZUXp6X0FzaHkxWl9YaFh3YkpPTXRHSW5xTmtGXzRmT2NxbWNtNUhoVVVhbXREbmxv?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRHJZQzRJYnBINzUweS1rdXlHaUpCZFhqVU1pejFJbndyUWg5TF9HZEFtVE13amctVWRmT0kwYXZ6VHJDNTlNQXg4ZzRUMWlmTDZMNWptR0FWVHVDYnlyTWhzajE2YlUyNExBRjU3WVFyX19feFk3YVhDc2pWbEkyeExfSXEwNVMxZ25VQzN6dFVOS0JJOUlMY3lJMA?oc=5",
+        "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmNFViTk5fRXN0bHVJNXB3X0RRempiMmJ3Q3JNVF9nRUkzUmR3OFNfR1ljeHBSTGdTMXF4WXpSQ2NKaDZFUmxucUZnUXRKd0NhbHBWSlQ4VGNIZnhXVWNNOEZoOTFZMmRsRE5tR3E1aHpEQUY3R3FpeA?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPc1VqREpjOVUwa0JMMlVpLU05Vk9sdXlTazZJeTQtV0xEX1p1ZjBZZVVGU1M1S2NlVkk5eWtaUHY1NGtBR19xLUMtckxIcV9heFpyZGZMaEU5UWMwQ3hOVnI5VmhDckRHVXBjSzMyOHdXR0QzRG1aZnJXajhHQ2Zpa2twQlVuaFhISnJjRTBqa0VGUnZnQVE?oc=5"
+      ],
+      "publishedAt": "2026-10-18T15:08:07.099Z"
+    },
+    {
+      "slug": "2026-10-19-앤스로픽이-밀어붙이는-ai-안전법-죽음-50명피해-10억-달러-넘어야-발동",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "urls": [
+        "https://tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
+      ],
+      "publishedAt": "2026-10-18T15:05:14.131Z"
+    },
+    {
       "slug": "2026-10-18-ai-로봇이-설비-수리-배운다-humxn-무료-수리로-데이터-모은다",
       "title": "AI lab offers free plumbing and HVAC repairs to train AI robots",
       "urls": [

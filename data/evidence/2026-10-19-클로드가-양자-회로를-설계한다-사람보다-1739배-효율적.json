@@ -1,0 +1,83 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nQuantum computers will need carefully designed circuits to run useful algorithms on limited hardware. We gave Claude plain-language specifications for eight such circuits, drawn from chemistry, optimization, physics simulation, and number theory, along with an automated evaluator that checks and scores each design. Working largely on its own, Claude found designs that improve on the best published circuits, in some cases by an order of magnitude or more. Such improvements substantially reduce the quantum resources that useful applications require, so practical quantum computers could arrive sooner than previously anticipated.\n\nThis work was led by Andi Gu as part of Anthropic’s STEM Fellows Program, with mentorship from Alek Kemeny, a quantum physicist at Anthropic, in collaboration with Susanne Yelin (Harvard University) and Mikhail Lukin (Harvard University and QuEra Computing). Read the full paper on arXiv .\n\nUnlike classical computers, which store information in bits whose value is either 0 or 1, quantum computers store information in qubits, which can be built from single atoms, superconducting circuits, or particles of light. These qubits make use of quantum phenomena such as superposition —which allows a quantum system to exist in a combination of states at once—in order to process information in ways that could make certain problems in fields like chemistry, materials science, and number theory tractable, even when they are too hard for traditional computers.\n\nThe quantum computers the field has built to date only have hundreds to thousands of qubits—too few to run many of the algorithms that promise practical advantages over classical computers. And these qubits are highly sensitive to environmental noise, such as heat, vibration, and even cosmic rays. A tiny disturbance can nudge a qubit’s state, and these small errors pile up until the computer gives the wrong answer.\n\nGiven that both qubits and computing time are scarce resources, researchers have been working to redesign quantum algorithms to use fewer qubits and complete computations in less time. An illustrative example is simulating FeMoco, the iron–sulfur cluster at the heart of nitrogenase, the enzyme that bacteria use to turn nitrogen from the air into ammonia. Understanding how it works could help scientists design better industrial catalysts—the substances manufacturers use to speed up chemical reactions.\n\nIn 2017, researchers estimated that a quantum computer would need about 50 trillion Toffoli gates to compute FeMoco’s ground-state energy—the energy of its most stable configuration, which chemists need in order to predict how FeMoco reacts. (Similar to ordinary computers, quantum computers work by applying a long sequence of simple operations, called gates, to their qubits. The Toffoli gate is one of the most expensive gates to run, so counting Toffoli gates is a standard way to estimate how long a computation will take.)\n\nThrough a series of algorithmic advances, the estimated number of gates has come down to about 340 million—a roughly 150,000-fold reduction, corresponding to a few hours of computation on a future machine with about three million physical qubits. 1\n\nThese reductions largely came from redesigning the circuits that carry out the computation, rather than from making better hardware. Claude has proven particularly adept at optimizing classical algorithms , so we wanted to see whether it could do the same for quantum algorithms if it were given only a plain-language description of what each circuit must compute.\n\nClaude is unusually well suited to this task, for several reasons. First, quantum algorithms are implemented as quantum circuits . These are composed of sequences of gates, like the Toffoli gates mentioned above. Importantly, these circuits can be described in code, so we can make use of Claude’s coding capabilities to write, run, and revise circuit designs as ordinary programs. Second, the (fairly common) class of quantum algorithms we were most interested in optimizing can be tested efficiently for correctness, as each input gives one definite output that an ordinary computer can check. This means we could have an external evaluator program validate Claude’s proposals. Finally, we can give Claude a clear, objective score to improve: the number of qubits used, multiplied by the number of gates, which serves as a proxy for how long the circuit would take to run.\n\nWe found that Claude Mythos 5 could successfully work in a closed loop, proposing a circuit design, receiving feedback and a score from the evaluator program, and using that feedback to improve its next attempt, with no human input between rounds (see Figure 1). Across eight computational primitives—the basic routines that larger quantum algorithms are built from—for chemistry, optimization, quantum simulation, number theory, and numerical computing, Claude discovered novel designs that used both fewer qubits and fewer gates than the best previously pu",
+  "reactions": [
+    "[Hacker News] That is right now. [1] [1] https:&#x2F;&#x2F;www.reuters.com&#x2F;world&#x2F;anthropic-quietly-sets-up-biol...",
+    "[Hacker News] this is what research was for the majority of people, even those talented enough to do it. there&#x27;s a reason we remember the names of people who invent whole ass new fields, like einstein, grothendieck, turing, riemann, etc. the hope might be that AI will fill in the remaining envelopes and let us focus on building new theories. but that&#x27;s like trying to build a castle in the sky without ",
+    "[Hacker News] i just skimmed the article, but it does sound like it would be detectable if the case you had is one that the algorithm doesn&#x27;t handle. In any case, it sounds like it is very rare that you have one of those cases vs existing heuristics, which is a simplification every time.",
+    "[Hacker News] Great point. Perhaps when we have AI robots interacting in the real world doing experiments we&#x27;ll have that.",
+    "[Hacker News] When one computing discipline where human mind can&#x27;t comprehend how it works is not enough...",
+    "[Hacker News] Reinforcement learning can definitely (in principle) leave this envelope, but it depends crucially on whether the feedback generates new information from reality, rather than just repackaging what humans have already discovered in the form of RL environments and densified rewards. So the question is not about RL per se, but what is the information source, what is the bandwidth of information it su"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Designing more efficient quantum circuits with Claude",
+      "url": "https://news.ycombinator.com/item?id=50121939",
+      "score": 172,
+      "commentCount": 36
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Designing more efficient quantum circuits with Claude - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mdmhqUzNHN09EMF9VUnNTcmlMTlpDVnlnTmxNa0tVY3h1bjJ4bmVDSWROR3JoRTgxb0dQcWYzNGF4dE9YYlNpRDlKVEx6OEVyM3RnY0R6WVRiZERYRVRtcnJ4WF9ZNWZFWVQ2a1Q5UFRnM2xYM0U5akZzOA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s Claude Designs Leaner Quantum Circuits, Reducing Resources Needed for Key Calculations - The Quantum Insider",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYURjUkQ4Wk91LUpUaXNlYmdUS0Q3UmNFTUFvSEN5c1pYRUx2NXgwTmhUQS16MV9oLW9ZNmJJR2laeGwxRFlxMmtxZUVkaGR3dHlocUlYMFpKYVkzbzNHYUJ2WFUtcnNQVDhuSHQxTTdkUi1vYXR3SVZQOXJkVmhXeVB4Z1BlSDZVRE9XaWZ6YWt0TWFiQmlieklTMnZDdGJLbDdXTzNKc3VnSEhwRW5IaUxFeUdtQ2R1NS0wSVdHNHA2bmNTWUgxTmF6Y1lmc0t4a0gxcg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Improves Quantum Optimization Designs - Quantum Zeitgeist",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQndneXNOQV9MclRCTzNYLU8wang0VVJ6S25yNk5GN0t0RThPRGdrUmQ3NHRnZFNRaVotR09WSTdldUNsVEhDdnNYVFY1UkdacXVHRF9hUlpmR0V3NFliandVME1VSXdKNGxxR0FjOFhMeWpBYzlUdWZZREJPT1FqdlJYQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Says Claude Beat Best Published Quantum Circuit Designs - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdFQzUXFIZUhqV2hDWU9qOXdEQnpySXAtZzVuaExuYm5XUXJhdUlMdEkyN0dyV1FPSUxCWVo3UXBURFFkTWFxOFBRY0pnazJ4UmxqMUlBRThnOUFrajJ4NHUtS1hYRllhTF9JRC0ySm1VdEdsY2ZsTm1xZlpDeEJ1c01IY3phOHk1ellSNm1wYUw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils quantum computing breakthrough: Claude autonomously designs circuits 17x more efficient than best human designs - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVQVJpVlVXcnFzaWt1bmh2OHRJZXRiVGlxUVlqcXV4aUdfVXUzbkNBQnJVNmYzd2FfMDJpT1B5cGl0RmRuYnZOdUlIeU51d2E4S05VRDdPc1NacUZnSlpsZWNPeVlxNzJrVmp0ZzVmOVFrMGRkMWc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Mythos 5 Designs Quantum Circuits That Cut Operation Counts, Anthropic Says - XenoSpectrum",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9IMlFUdWdEWmJwUHR0aW5Mb0lGX3FzR19pQzZFd1ZhdEpsUmlxODhNWi1vNmdZcDBIUTd6NG4xSGUwa1d1dEtZUXp6X0FzaHkxWl9YaFh3YkpPTXRHSW5xTmtGXzRmT2NxbWNtNUhoVVVhbXREbmxv?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Mythos 5 quantum circuits, up to 39 times more efficient - Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRHJZQzRJYnBINzUweS1rdXlHaUpCZFhqVU1pejFJbndyUWg5TF9HZEFtVE13amctVWRmT0kwYXZ6VHJDNTlNQXg4ZzRUMWlmTDZMNWptR0FWVHVDYnlyTWhzajE2YlUyNExBRjU3WVFyX19feFk3YVhDc2pWbEkyeExfSXEwNVMxZ25VQzN6dFVOS0JJOUlMY3lJMA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s Claude designs leaner quantum circuits, cutting gate counts by up to 17x - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmNFViTk5fRXN0bHVJNXB3X0RRempiMmJ3Q3JNVF9nRUkzUmR3OFNfR1ljeHBSTGdTMXF4WXpSQ2NKaDZFUmxucUZnUXRKd0NhbHBWSlQ4VGNIZnhXVWNNOEZoOTFZMmRsRE5tR3E1aHpEQUY3R3FpeA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude designs more efficient quantum circuits in Anthropic study - Blockchain News",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPc1VqREpjOVUwa0JMMlVpLU05Vk9sdXlTazZJeTQtV0xEX1p1ZjBZZVVGU1M1S2NlVkk5eWtaUHY1NGtBR19xLUMtckxIcV9heFpyZGZMaEU5UWMwQ3hOVnI5VmhDckRHVXBjSzMyOHdXR0QzRG1aZnJXajhHQ2Zpa2twQlVuaFhISnJjRTBqa0VGUnZnQVE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
