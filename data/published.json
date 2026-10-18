@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-19-왓츠앱-대화-내역-클로드에서-검색한다-클라우드플레어-유료-플랜-필요",
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "urls": [
+        "https://github.com/finereli/whatsapp-mcp"
+      ],
+      "publishedAt": "2026-10-18T23:56:13.992Z"
+    },
+    {
       "slug": "2026-10-19-ai-비서가-웹에서-쫓겨난다-예약쇼핑뱅킹-다-막혔다",
       "title": "Websites are closing their doors to AI agents",
       "urls": [
