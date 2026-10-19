@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — arxiv.org]\nFocus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Jiaru Zou [ view email ] [v1] Tue, 13 Oct 2026 17:59:31 UTC (8,500 KB) Full-text links: Access Paper: View a PDF of the paper titled Hybrid Reasoning Agents, by Jiaru Zou and 7 other authors View PDF HTML (experimental) TeX Source view license Additional Features Audio Summary Current browse context: cs.CL < prev | next > new | recent | 2026-10 Change to browse by: cs cs.AI cs.LG References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation &times; loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .",
+  "reactions": [
+    "[Hacker News] Thank you for this gem of a comment. I&#x27;m no expert (let alone compared to others weighing in here on HN), but this strikes me as incisive -- and it clearly articulates a logical case (beyond my previously merely instinctual aversion) against such &quot;safety filters&quot; &#x2F; &quot;nanny&quot; processes. It also resonates with ancient (e.g. Buddhist) ideas about the futility of trying to ",
+    "[Hacker News] I might think to myself “I gotta tie my shoes” but it doesn’t mean I have to think of every step to do it.",
+    "[Hacker News] Hint: you can have a small fast cheap model fill its context with &quot;hints&quot; (like: use tool X if Y happens, Z is a dead-end), let it watch the big model&#x27;s thinking tokens, and drop hints to it. Then let the big model add hints and you have a kind of memory that doesn&#x27;t require the big model to actively query it.",
+    "[Hacker News] It helps fit the network to a distribution, it doesn&#x27;t actually do anything other than that. This follows from basic learning theory. The actual internals of the network remain illegible. In fact it would be easy to prove that for any finite set of legible traces there are illegible ones which are equally as good when it comes to improving performance of the network. The basic heuristic of th",
+    "[Hacker News] If it had nothing to do with the final result it wouldn&#x27;t improve performance, and it does.",
+    "[Hacker News] But the information in the KV cache is not words-- it&#x27;s entirely latent data,and in the interior layers they KV caches don&#x27;t even tend to have that much to do with words The context gets added back to the latent vectors (which are the Q,K inputs) after every transformer layer, so they are &quot;at least 50% words&quot;. Also, in an N-layer transformer, there is a strong bound of N layers"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "url": "https://news.ycombinator.com/item?id=50145337",
+      "score": 212,
+      "commentCount": 133
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Hybrid Reasoning Agents",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9fc1x/hybrid_reasoning_agents/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}

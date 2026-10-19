@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-10-19-ai가-생각을-숨기고-말만-내놓는다면",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "urls": [
+        "https://arxiv.org/abs/2610.18861",
+        "https://arxiv.org/html/2610.18861v1"
+      ],
+      "publishedAt": "2026-10-19T02:05:23.779Z"
+    },
+    {
       "slug": "2026-10-19-왓츠앱-대화-내역-클로드에서-검색한다-클라우드플레어-유료-플랜-필요",
       "title": "Show HN: WhatsApp MCP running free on Cloudflare",
       "urls": [
