@@ -1,6 +1,17 @@
 {
   "records": [
     {
+      "slug": "2026-10-20-딥시크-v41-플래시-1017-벤치마크-2위지만-내-pc에선-20토큰-현실",
+      "title": "DeepSeek V4.1 Flash 1017 - AAII 45점, 초당 약 225토큰 출력",
+      "urls": [
+        "https://reddit.com/comments/1x95491",
+        "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+        "https://news.hada.io/topic?id=35633",
+        "https://reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index"
+      ],
+      "publishedAt": "2026-10-19T15:15:41.145Z"
+    },
+    {
       "slug": "2026-10-19-llm-한-번만-쓰고-로컬에서-영원히-판단한다-스트롯strot-등장",
       "title": "Show HN: Strot – Compile an LLM's intent once, run decisions locally",
       "urls": [

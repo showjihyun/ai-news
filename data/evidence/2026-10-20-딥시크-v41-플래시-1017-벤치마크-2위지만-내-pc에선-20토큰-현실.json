@@ -1,0 +1,41 @@
+{
+  "articleText": "[Hacker News — artificialanalysis.ai]\nArtificial Analysis K Artificial Analysis Models Coding Agents Image, Speech, Video Inference Leaderboards About AI Trends K DeepSeek • Open weights model\n\nCompare Try it out API Provider Benchmarks Model summary Intelligence # 2 / 121 45 Artificial Analysis Intelligence Index 4 out of 4 units for Intelligence. Speed # 6 / 79 224.7 Output tokens per second 4 out of 4 units for Speed. Cost # 21 / 43 In $0.30 Out $1.20 Cache Discount 98% $0.26 Cost per Intelligence Index task 2 out of 4 units for Cost. Verbosity # 39 / 47 210M Output tokens from Intelligence Index 4 out of 4 units for Verbosity. Comparison Summary DeepSeek V4.1 Flash 1017 (Max) is amongst the leading models in intelligence and reasonably priced when comparing to other open weight models of similar size. It&#x27;s also notably fast, however very verbose. The model supports text and image input, outputs text, and has a 1M tokens context window.\n\nDeepSeek V4.1 Flash 1017 (Max) scores 45 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 19). When evaluating the Intelligence Index, it generated 210M tokens, which is very verbose in comparison to the median of 140M.\n\nPricing for DeepSeek V4.1 Flash 1017 (Max) is $0.30 per 1M input tokens (moderately priced, median: $0.43) and $1.20 per 1M output tokens (moderately priced, median: $1.68). On average, it costs $0.26 per task to evaluate DeepSeek V4.1 Flash 1017 (Max) on the Intelligence Index.\n\nAt 225 tokens per second, DeepSeek V4.1 Flash 1017 (Max) is notably fast (78).\n\nReasoning Yes This page shows the reasoning version of this model.\n\nContext window 1M ~1500 A4 pages of size 12 Arial font Total parameters 552B Active parameters 16B Number of parameters active per token during inference License MIT Model weights Hugging Face 122 models in this class Metrics are compared against models of the same class:\n\nIntelligence Artificial Analysis Intelligence Index Artificial Analysis Intelligence Index v4.3.2 incorporates 10 evaluations: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity&#x27;s Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1 27 of 706 models Add model from specific provider No publicly available API Artificial Analysis Intelligence Index Artificial Analysis Intelligence Index v4.3.2 includes: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity&#x27;s Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1 . See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.\n\n27 of 706 models Add model from specific provider No publicly available API Proprietary Open Weights Open Weights (Commercial Use Restricted) Artificial Analysis Intelligence Index Artificial Analysis Intelligence Index v4.3.2 includes: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity&#x27;s Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1 . See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.\n\nOpen Weights Indicates whether the model weights are available. Models are labelled as &#x27;Commercial Use Restricted&#x27; if commercial use is limited by conditions, and as &#x27;Non-commercial&#x27; if the license prohibits commercial use.\n\n27 of 706 models Most attractive quadrant Pareto line StepFun Z AI Xiaomi OpenAI Anthropic Mistral Meta SpaceXAI Reflection Google Alibaba MiniMax NVIDIA DeepSeek Kimi Cost per Intelligence Index Task Weighted average cost per Intelligence Index task. Each evaluation’s cost is calculated from input, cache hit, cache write, reasoning, and answer token prices, divided by task count, and weighted by its Intelligence Index weight.\n\nArtificial Analysis Intelligence Index Artificial Analysis Intelligence Index v4.3.2 includes: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity&#x27;s Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1 . See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.\n\nMeasures the performance of models on specific capabilities and industries\n\nIncorporates 7 evaluations: AA-Omniscience, GDPval-AA v2.1, AA-Briefcase v1.1, Humanity&#x27;s Last Exam, AutomationBench-AA, AA-LCR v1.1, GDP.pdf · Higher is better 27 of 225 models Add model from specific provider No publicly available API Benchmarks Evaluations Intelligence evaluations measured independently by Artificial Analysis · Higher is better Coding Agentic Tool Use Private Dataset User Interaction Finance Medical Legal Intelligence Index Long Context Multimodal Instruction Following Faithfulness Writing Business See more 19 of 28 evaluations 27 of 706 models Add model from specific provider No publicly available API AA-Briefcase v1.1 Updated Agentic knowledge work, (Elo-500)/2000\n\nGDPval-AA v2.1 Updated",
+  "reactions": [
+    "[Hacker News] I ran the Strata project with this on 32gb ram 16gb AMD 7900XTX. It goes about 20tok&#x2F;s off the ssd. I&#x27;m guessing 64gb would go to 40tok&#x2F;s. https:&#x2F;&#x2F;github.com&#x2F;Niko1221&#x2F;Strata Quality wise its not fast enough for me to eval. I&#x27;ll probably spend some tokens on it through openrouter. DeepSeek 4 flash though is a mess compared to GPT Sol 6.1.",
+    "[Hacker News] I can believe it. Using DS4.1 to decomp old games, it is quite capable of doing so, but the amount of mistakes it makes, by the time I get it right Sol 6.1 would have long ported it correctly more thoroughly. For some tasks Sol really shows its superiority",
+    "[Hacker News] talking about &quot;my setup&quot; should require the good-old-days post footer that includes hardware details.",
+    "[Hacker News] There is so much down pressure, I cannot imagine the token&#x2F;s price going up. It has been going down and will continue doing so, we are far from a plateau IMHO",
+    "[Hacker News] I&#x27;m running it at 3 b.p.w. and it really feels better than Flash 4 at 4 b.p.w. for me. Some of these EXL3 calibrated quants are like magic. It also has 196B ngram params that sit on disk. So it&#x27;s really pretty comparable to GLM 5.3 in size.",
+    "[Hacker News] Everything&#x27;s been trending down so far, so until evidence shows otherwise, I&#x27;d assume it will continue that trend. IMO the best time to buy local infra will be when that trend begins to asymptote."
+  ],
+  "items": [
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF · Hugging Face",
+      "url": "https://www.reddit.com/comments/1x95491",
+      "score": 317,
+      "commentCount": 88
+    },
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek V4.1 Flash 1017 (Max)",
+      "url": "https://news.ycombinator.com/item?id=50148452",
+      "score": 173,
+      "commentCount": 72
+    },
+    {
+      "origin": "GeekNews",
+      "title": "DeepSeek V4.1 Flash 1017 - AAII 45점, 초당 약 225토큰 출력",
+      "url": "https://news.hada.io/topic?id=35633",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "DeepSeek-V4.1-Flash-1017 on AA & Vals index",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
