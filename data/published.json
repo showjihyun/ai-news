@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-19-llm-한-번만-쓰고-로컬에서-영원히-판단한다-스트롯strot-등장",
+      "title": "Show HN: Strot – Compile an LLM's intent once, run decisions locally",
+      "urls": [
+        "https://github.com/strot-ai/Project-STROT"
+      ],
+      "publishedAt": "2026-10-19T08:04:55.265Z"
+    },
+    {
       "slug": "2026-10-19-ai가-생각을-숨기고-말만-내놓는다면",
       "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
       "urls": [
