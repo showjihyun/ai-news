@@ -1,0 +1,23 @@
+{
+  "articleText": "[Hacker News — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nThe AI agents carried out the attacks with little involvement from the human hacker.\n\nThe AI agents carried out the attacks with little involvement from the human hacker.\n\nEmma Roth Close Emma Roth News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: The Verge Part Of The AI Superintelligence Slowdown see all updates Emma Roth Close Emma Roth Posts from this author will be added to your daily email digest and your homepage feed.\n\nA hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge . Though Norforge doesn’t name the targets, Reuters reports that the victims included companies like John Deere, SharkNinja, and Cummins.\n\nConcerns over AI-powered cybersecurity breaches have grown as the technology grows more advanced, with hackers using the tools to carry out large-scale attacks. At the same time, rogue AI agents are carrying out attacks of their own after escaping from testing environments.\n\nResearchers at Norforge uncovered the attacks through exposed work on Cairn, an open-source AI platform that describes itself as a “general-purpose problem-solving engine.” With Cairn, users set a start and end point for the AI agents, which document their progress as they move forward with the task. However, as noted by Norforge, hackers can also use the tool to orchestrate cyberattacks using AI agents.\n\nThe hacker who broke into more than 100 sites was the “most active” among the exposed Cairn instances discovered by Norforge, waging attacks on companies based in the US, Canada, Australia, and Japan, as reported by Reuters . This attacker laid out “preferred intrusion tactics” using fewer than 100 Chinese characters, with successful breaches taking about 23 hours, according to Reuters . Overall, Norforge found more than 20 exposed Cairn instances that are “likely malicious.”\n\nIn a statement to The Verge , Cummins spokesperson Melinda Koski said the company “is investigating the report of a potential cyber-attack on a website operated by one of our third-party vendors.” A John Deere spokesperson told Reuters that there’s “no indication that ​sensitive information was accessed” as a result of the attack, while SharkNinja said the breach impacted a standalone site with product support information, and that it has contained the threat.\n\nJohn Deere and SharkNinja didn’t immediately respond to The Verge ’s request for comment.\n\nNorforge says it’s working to get the malicious Cairn instances taken down. Cairn’s creator, who goes by @le1xia0, said earlier this month that the platform “was never a ‘hacking tool,’” adding that “misuse is a human decision, not a feature of the engine.”\n\nEmma Roth Close Emma Roth News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nSecurity Close Security Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] Sources: https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;government&#x2F;how-one-hacker-used... ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50152072 ) https:&#x2F;&#x2F;norforge.com&#x2F;blog&#x2F;inside_cairn ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50152302 )",
+    "[Hacker News] http:&#x2F;&#x2F;archive.today&#x2F;pYmlC"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "url": "https://news.ycombinator.com/item?id=50152877",
+      "score": 59,
+      "commentCount": 3
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "url": "https://theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

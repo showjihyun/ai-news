@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-20-ai-에이전트가-100곳-넘게-뚫렸다-존디어샤크닌자커민스-피해-확인",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+        "https://theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+      ],
+      "publishedAt": "2026-10-19T20:54:14.094Z"
+    },
+    {
+      "slug": "2026-10-20-llm은-두뇌-하네스는-몸-ai-에이전트-몸-만들기-교과서-나왔다",
+      "title": "Harness Engineering 101: LLM은 두뇌, 하네스는 몸",
+      "urls": [
+        "https://github.com/IsuruMaduranga/harness-engineering-101",
+        "https://news.hada.io/topic?id=35651"
+      ],
+      "publishedAt": "2026-10-19T20:43:52.428Z"
+    },
+    {
       "slug": "2026-10-20-딥시크-v41-플래시-1017-벤치마크-2위지만-내-pc에선-20토큰-현실",
       "title": "DeepSeek V4.1 Flash 1017 - AAII 45점, 초당 약 225토큰 출력",
       "urls": [
