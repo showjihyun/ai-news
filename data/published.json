@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-20-ai가-준-리만-가설-증명-수학계-기존-지식만으로-돌파-평가-검증은-과제로",
+      "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
+      "urls": [
+        "https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019",
+        "https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019"
+      ],
+      "publishedAt": "2026-10-20T14:11:20.692Z"
+    },
+    {
+      "slug": "2026-10-20-딥시크-추론-엔진-딥인퍼-오픈소스-공개-직접-돌리려면-gpu-68장-필요",
+      "title": "DeepSeek just open-sourced its inference engine",
+      "urls": [
+        "https://github.com/deepseek-ai/DeepInfer",
+        "https://github.com/deepseek-ai/DeepInfer",
+        "https://github.com/deepseek-ai/DeepInfer"
+      ],
+      "publishedAt": "2026-10-20T13:59:15.554Z"
+    },
+    {
       "slug": "2026-10-20-ai로-스마트-tv-광고추적-싹-지운다-멍청한-tv-만들기-유행",
       "title": "People are using AI to make smart TVs, dumb TVs",
       "urls": [

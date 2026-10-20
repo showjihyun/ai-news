@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — github.com]\nDeepInfer is the high-performance inference framework that powers DeepSeek's large-scale production services. This open-source release provides offline inference with the core features needed for serving at scale.\n\nRequired for a complete inference service (not included in this release):\n\nPrerequisites Linux GCC >= 13.0 Python 3.12 CUDA 13 (NVIDIA only) CANN 9.2 (Ascend only) Build from source Before building DeepInfer, please create and activate an empty Python 3.12 environment.\n\n# Use `ascend` instead for the Ascend platform # Keep it exported in the environment where you run DeepInfer export DEEPINFER_ACCELERATOR=nvidia ./build.sh Offline inference The default checkpoint, deepseek-ai/DeepSeek-V4.1-Flash-1017 , is downloaded into the Hugging Face cache on the first run; set DEEPINFER_HF_MODEL_DIR=/path/to/DeepSeek-V4.1-Flash-1017 to run from a local copy instead.\n\npython examples/offline_inference.py See examples for details.\n\nPrefill Decode Measured on 4 SM100 GPUs for prefill and 64 for decode — each within one scale-up domain. To reproduce the benchmarks, see run_sweep.sh .\n\nDeepInfer is released under the Apache License 2.0. See LICENSE for details.\n\nDeepInfer was originally built primarily on vLLM , with additional inspiration from SGLang and TensorRT-LLM . We thank their developers.",
+  "reactions": [
+    "[Hacker News] as if electricity for openai &amp; anthropic isn&#x27;t heavily subsidised as if electricity for spacex wasn&#x27;t literally illegally installed gas turbines polluting the air",
+    "[Hacker News] The US will move to ban it for most major businesses in some capacity. You&#x27;re entire company would become ineligible for gov contracts if you have use DeepSeek. Something like that.",
+    "[Hacker News] The drivers for the stat don&#x27;t matter. What matters is the reporting duties in the system and the stat.",
+    "[Hacker News] Who said they need to distill anything? Deepseek is the most popular chinese model getting trillions of input tokens a day that have no ZDR availability. They specifically tell you that part of the deal is that they get your data to use however they want (atleast they&#x27;re honest). This idea that Deepseek needed to distil their way to success is nonsense. Its a great narrative for OpenAI and An",
+    "[Hacker News] When every company calls themselves AI-first, what then is an &#x27;AI Company.&#x27; In many regards, this hype-chasing branding exercise is currently no different than calling one&#x27;s company a &#x27;technology company&#x27;... Just as the term &quot;AI&quot; itself has (to a degree) become meaningless... and AGI will be soon to follow.",
+    "[Hacker News] No, those $3 are on the high end. If you do not factor in hardware depreciation, at China&#x27;s low electricity prices (largest variable cost and China has a surplus larger than many country&#x27;s entire consumption) and with GB200 which is one of DeepSeek&#x27;s main platforms, the operation cost is actually less than 50 cents per hour most likely. If you factor in hardware depreciation this ri"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "DeepSeek just open-sourced its inference engine",
+      "url": "https://news.ycombinator.com/item?id=50163277",
+      "score": 1047,
+      "commentCount": 360
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
+      "score": 16,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "DeepSeek open sources the inference engine for their models",
+      "url": "https://www.reddit.com/r/singularity/comments/1xapvvc/deepseek_open_sources_the_inference_engine_for/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
