@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-21-앤스로픽-800억-달러-적자-실상은-회계상-손실-몸값-지키기-안간힘",
+      "title": "Anthropic logged net loss of over $80B in first half of 2026",
+      "urls": [
+        "https://reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20"
+      ],
+      "publishedAt": "2026-10-20T21:50:57.968Z"
+    },
+    {
+      "slug": "2026-10-21-클로드가-전갈-독-단백질-17개-결합체-설계-해독제까진-멀다",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "urls": [
+        "https://anthropic.com/research/claude-scorpion-toxin-binder-design",
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE9VNkRtQVc2UUZVVmgyWUJOQU5RSjdCMjQ0V1JuczVKVmxoME1pQ295LWZ5a3J1M21SWk1yWUtGQ01pbTN3bFVldVVmc01QLXNYYlBqRi04UnZ4VWR5NzU1dTZuYzFxRVA5enZObVVFeE1sVURIVFp1NGVn?oc=5",
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JSjJQZ2xwWUZPam15cUdwRWdTekZxTnN3eF9yX2xnYXdaOUFieF9hQnNkcHA1TjNlUy1seWhOaGw2eHhrdUdBUHZ0YUg4MF92bzZZaFZYdjNnNWlNMEVfZ2xFRzk3Mm1UOVZQVnVBU0Y0eXg3bmhzb3A3eDFyQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYm8ydUs4cm90ZEJTdFlwRzRvWFJFZ0tsaGlVbFdWMVluVVRmMklYTzBfeXNWWU9oNlV1YTJOWHZ0TjAwU2ZDX21rTE4zaWZGOWNjR0p5UURZcGF6VTBUUDBhMXZYbVNhTXZBeWRLTjNkMXNCZmpmS0owUUxDM3AxLUUzekM4U1prOGtiVy1QRnRjeG9WYVN4NzMwZGJoNUI5d2lTbE92MzJVcXRNejh3?oc=5"
+      ],
+      "publishedAt": "2026-10-20T21:48:31.436Z"
+    },
+    {
       "slug": "2026-10-21-yc-스타트업-레스팬-러스트-기반-ai-게이트웨이-오픈소스-공개",
       "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
       "urls": [

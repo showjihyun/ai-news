@@ -1,0 +1,41 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nSummary: As part of our work experimenting with how Claude can help accelerate drug discovery, we asked an internal research model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins. Claude worked from our prompt and four follow-ups, which we developed in collaboration with the financial investment research firm Citrini Research. Teams at Adaptyv Bio and Twist Bioscience experimentally tested 211 designs for binding. Of these, 17 met our criteria. We’re releasing all 211 designs and their data as a resource for the field.\n\nIn August, we showed how Claude designed protein minibinders after being given a single prompt. A month before we released those results, a team from Citrini Research had approached us with an interesting question: could Claude (and AI drug discovery more generally) enable a group of motivated nonexperts to tackle a genuine problem in human health? Members of our life science research team set out to answer this, first by brainstorming problems with Claude. We landed on asking for Claude’s help designing novel protein binders against scorpion neurotoxins, with the hope that they could one day be used to develop a scorpion antivenom.\n\nScorpions sting 1.2 million people or more every year, resulting in more than 3,250 deaths, mostly among children in parts of the world with limited access to medical care. New treatments are expensive to make, and are also unlikely to earn back the cost of developing them. With so little investment, scorpion envenomation has been described as a neglected tropical disease.\n\nWe started by giving Claude the same prompt we’d used in our earlier protein-binder study, after modifying it with Citrini. 1 Over the next 64 hours, an internal research model, operating within Claude Science, worked mainly autonomously, although we directed its work with four follow-ups. Under our supervision, Claude analyzed the research data, generated the figures, and drafted the final report.\n\nClaude’s design campaign produced 17 protein binders that each bind to one of four scorpion neurotoxins that are known to be dangerous to humans. Throughout the process, Claude generated 318,484 protein designs and selected 180 of them for testing. Our team added 31 more, with Claude’s help. Our partners at Adaptyv Bio and Twist Bioscience, two contract research organizations (CROs), lab-tested all 211 designs to see if they would bind to the toxins they were designed against, and 17 designs met our criteria for a binder. We have not confirmed whether these binders neutralize scorpion venom in a cellular environment, so we do not claim to have produced an antivenom.\n\nWe sent Claude’s work to two outside experts, Susana Vázquez Torres and Timothy P. Jenkins, who said they felt this work was a promising first step. If AI can now design credible binders against several hard-to-target toxins in days and they can be confirmed in the lab within weeks, this could, in theory, speed up discovery for envenomation and other neglected diseases. The challenge, as always, is turning those binders into safe, affordable, and widely accessible drugs.\n\nWe share more detail in our technical report , and are making all 211 designs and their data available .\n\nSusana Vázquez Torres , Postdoctoral Researcher, Structural Biology Programme, Spanish National Cancer Research Centre (CNIO), Madrid, Spain.\n\nScorpion venom contains multiple protein neurotoxins. The neurotoxins that are most likely to harm or kill humans attach to sodium channels , large proteins embedded in the membranes of nerve cells that allow them to fire. When sodium channels are disrupted, nerves fire at the wrong time—this releases large amounts of stress chemicals, like adrenaline. In severe cases, this can cause heart failure and excess fluid buildup in the lungs, occasionally resulting in death.\n\nThere are some antivenoms available for scorpion stings. They’re generally made using the antibodies of immunized animals, a process that can take months. Venom is milked from thousands of scorpions and used to immunize horses; scientists then purify the resulting antibodies from the horses’ blood. Traditional antivenoms can work when given early, but they’re usually effective for only a small number of neurotoxins. They’re also expensive to produce, and in many regions are costly or in short supply.\n\nDe novo design offers a potential solution. A binder is a molecule that attaches tightly to a specific target; antibodies are one natural example. In principle, a binder that targets the part of a neurotoxin that latches onto sodium channels could stop the toxin from reaching the channel. In de novo design, protein binders are generated from scratch against a specific target. These binders are designed computationally and can be optimized for druglike properties such as potency and stability, which could make them easier to supply in regions where stings most often occur.\n\nOur approach was inspired by an earli",
+  "reactions": [
+    "[Hacker News] This might be a job for fentanyl. Carefully monitored in a hospital setting of course.",
+    "[Hacker News] This is somewhat funny given that not that long ago they were doing an article instigating fears of what Claude could do, and one of them was a researchers screening venom peptides along other things Perhaps he could have worked on a similar subject? Who knows.",
+    "[Hacker News] From the technical report: &quot;Our prompt specified the targets, the design sets and their sizes, the rules for each design, the protein design and prediction tools, the scores and ranking formulas, and the novelty and diversity rules.&quot; I think most scientists would consider LLM to be an orchestration tool in cases like this. LLMs do work great for automating this type of drug discovery wor",
+    "[Hacker News] Correct. The on-target effects of antivenin can be well-modeled along with a known subset of off-target effects, but the latter is far too complex and unknown to model completely. Trials are the acceptable middle ground that uses animal and human models to explore those unknowns.",
+    "[Hacker News] It&#x27;s less likely to have an omnicidal maniac in a group of 100 people than in a group of a few billion people.",
+    "[Hacker News] &gt;&gt; How do you determine which one&#x27;s ahead in what? We are talking about discoveries the labs have publicly showcased."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "url": "https://news.ycombinator.com/item?id=50170021",
+      "score": 55,
+      "commentCount": 26
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "How Claude designed protein binders against scorpion neurotoxins - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9VNkRtQVc2UUZVVmgyWUJOQU5RSjdCMjQ0V1JuczVKVmxoME1pQ295LWZ5a3J1M21SWk1yWUtGQ01pbTN3bFVldVVmc01QLXNYYlBqRi04UnZ4VWR5NzU1dTZuYzFxRVA5enZObVVFeE1sVURIVFp1NGVn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic says Claude designed binders for scorpion neurotoxins - Blockchain News",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JSjJQZ2xwWUZPam15cUdwRWdTekZxTnN3eF9yX2xnYXdaOUFieF9hQnNkcHA1TjNlUy1seWhOaGw2eHhrdUdBUHZ0YUg4MF92bzZZaFZYdjNnNWlNMEVfZ2xFRzk3Mm1UOVZQVnVBU0Y0eXg3bmhzb3A3eDFyQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s Claude Designed 17 Working Protein Binders Against Scorpion Venom Toxins - OfficeChai",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYm8ydUs4cm90ZEJTdFlwRzRvWFJFZ0tsaGlVbFdWMVluVVRmMklYTzBfeXNWWU9oNlV1YTJOWHZ0TjAwU2ZDX21rTE4zaWZGOWNjR0p5UURZcGF6VTBUUDBhMXZYbVNhTXZBeWRLTjNkMXNCZmpmS0owUUxDM3AxLUUzekM4U1prOGtiVy1QRnRjeG9WYVN4NzMwZGJoNUI5d2lTbE92MzJVcXRNejh3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
