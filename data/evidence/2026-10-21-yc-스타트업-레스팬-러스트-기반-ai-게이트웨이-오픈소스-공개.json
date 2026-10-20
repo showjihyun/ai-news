@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Yeah, ours are more like GStreamer’s statically compiled plugins. We might consider WebAssembly in the future if there’s a need for it.",
+    "[Hacker News] We do have an official build on GitHub Releases with first-party plugins built in.",
+    "[Hacker News] No one at our org knows rust, so &quot;reading the source&quot; is not possible, and we know people don&#x27;t actually do this anyway. I would recommend a batteries included approach. You can see a similar difference between adoption of OpenCode and Pi in the harness space. And get the image published, a changing API is no reason not to have one. Every project evolves their API and users know how",
+    "[Hacker News] The compile-time choice makes sense for a gateway: plugins sit in the hot path and often need database or queue access, which is awkward to expose through a WASM sandbox. The cost is the workflow verdverm points out: there is no prebuilt image to just pull and run. Do you plan to publish an official build with the default plugin set, for people who don&#x27;t need custom plugins?",
+    "[Hacker News] We had a Docker image, but pulled it before launch because some APIs might still change. You have to build the Docker images, but we have GitHub releases for binaries. We have configurable template plugins for common things like adding vendors and formats. No rebuild needed for config changes, but if you want custom logic beyond those templates, you need to compile it in. And yes, crates still hav",
+    "[Hacker News] Yes, we used Claude to generate code, but we reviewed every line ourselves. For MCP, we considered rmcp, but our gateway needs hooks at each processing stage, so we would still have needed substantial custom logic. We ultimately implemented the MCP support ourselves."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
+      "url": "https://news.ycombinator.com/item?id=50167583",
+      "score": 26,
+      "commentCount": 14
+    }
+  ]
+}

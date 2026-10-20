@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-21-yc-스타트업-레스팬-러스트-기반-ai-게이트웨이-오픈소스-공개",
+      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50167583"
+      ],
+      "publishedAt": "2026-10-20T18:14:46.948Z"
+    },
+    {
+      "slug": "2026-10-21-스팀-넥스트-페스트-ai-게임-홍수-이용자-필터-달라-청원",
+      "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+      "urls": [
+        "https://ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop"
+      ],
+      "publishedAt": "2026-10-20T18:12:16.294Z"
+    },
+    {
       "slug": "2026-10-20-ai가-준-리만-가설-증명-수학계-기존-지식만으로-돌파-평가-검증은-과제로",
       "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
       "urls": [
