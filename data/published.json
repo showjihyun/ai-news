@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-21-알리바바-딥시크-v4-플래시-출력-요금-230-인상-보조금-시대의-종언",
+      "title": "Alibaba hikes DeepSeek V4 Flash 0731 output prices by 230%",
+      "urls": [
+        "https://stork.ai/newsletter/2026-10-20-alibaba-quietly-tripled-deepseek-prices"
+      ],
+      "publishedAt": "2026-10-21T10:27:13.289Z"
+    },
+    {
+      "slug": "2026-10-21-앤스로픽-클로드로-코드-공격면-493개-자동-탐지",
+      "title": "Using Claude to reduce the attack surface of code",
+      "urls": [
+        "https://anthropic.com/research/attack-surface-reduction"
+      ],
+      "publishedAt": "2026-10-21T10:25:20.909Z"
+    },
+    {
       "slug": "2026-10-21-ai가-쓴-글-읽는-사람이-30-더-느리다-작성자-편의가-독자-부담으로",
       "title": "On AI writing",
       "urls": [
