@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-22-오픈ai-모델-구글-클라우드-마켓플레이스-입점-수주-내-일반-공급",
+      "title": "OpenAI models are coming to Google Cloud",
+      "urls": [
+        "https://openai.com/index/openai-models-google-cloud",
+        "https://openai.com/index/openai-models-google-cloud"
+      ],
+      "publishedAt": "2026-10-21T19:36:04.806Z"
+    },
+    {
+      "slug": "2026-10-22-앤스로픽-지분-5-공익기금에-pbc-구조가-주는-신호",
+      "title": "Anthropic Pledges 5% Stake to New Public Benefit Fund - Seoul Economic Daily",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQkxWa2ZvSTNKMGlrRmlndHZBbDBMRTlIaWlGQXAwbzFaZWlEZ2V4d1BBamdNcHpPWEdFM0dUcEx5MkJ0TDBOV0t6R3ZPOXlxUmJUYzNscVg3Q0xwYmJSWDA0UDQ0eEM4UWxlR2ZkeDRqdE5ObnZEdjdONXlZcTFMY1ZOd2hmTWtfa01uMUtaWENHR3JLRWt3SVQyazczeFNwWlp6M1NFSG5Hb21Z?oc=5",
+        "https://anthropic.com/public-benefit-charter"
+      ],
+      "publishedAt": "2026-10-21T19:30:23.662Z"
+    },
+    {
       "slug": "2026-10-22-오픈ai-수천-개-ai-에이전트로-뇌-질환-단서-32분-만에-찾아냈다",
       "title": "Using thousands of AI agents to uncover new leads in biological data",
       "urls": [

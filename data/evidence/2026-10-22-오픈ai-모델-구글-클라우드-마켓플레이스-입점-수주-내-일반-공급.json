@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — openai.com]\nShare OpenAI and Google Cloud ⁠ (opens in a new window) are partnering to bring OpenAI’s frontier models and Codex ⁠ (opens in a new window) agentic workflows into Google Cloud’s Model Garden. The integration will give customers native access to these models to power complex agentic workflows at scale, backed by Google Cloud’s data governance and high-performance infrastructure.\n\nGoogle Cloud’s longstanding investment in machine learning and AI has made it a destination for AI workloads and the developers and data scientists building them. Bringing OpenAI models to its model garden gives these teams access to OpenAI’s frontier models within the environment where they already work, enabling enterprises to modernize their software development lifecycle, build agentic workflows, and change how people work.\n\nFor organizations in regulated industries, deploying AI requires control over who can access sensitive data and how it is used. The integration will pair OpenAI’s frontier models with Google Cloud’s built-in access controls, centralized data governance, and high-performance infrastructure to support demanding enterprise workloads.\n\nGoogle Cloud customers will be able to purchase OpenAI frontier models via model garden, transacted through the Google Cloud Marketplace. Enterprises with Google Cloud spend commitments will be able to draw down their GCP commitments for these purchases.\n\nAdditionally, OpenAI models will soon be available in Google Antigravity and the Gemini Agent, providing enterprise customers with model choice flexibility and the best model for each task. By expanding access through Google Cloud, we are giving enterprises greater choice in how they discover and use frontier models, with a path from evaluation to broader adoption.\n\nGeneral availability is planned in the coming weeks. Request access to OpenAI on Google Cloud here .",
+  "reactions": [
+    "[Hacker News] Sergey better really go into &quot;founder mode&quot; or else Thomas Kurian (head of GCP) will continue to eat Deepmind&#x27;s lunch. Between selling TPUs to external companies and now hosting competitor models, Gemini just doesnt have the full faith of the Alphabet capital allocators, and I can&#x27;t really blame them. A mature company like google would rather just expand their extremely profita",
+    "[Hacker News] Microsoft has had ZDR for inference since pretty much the beginning. Just needed to fill out a form and get approved.",
+    "[Hacker News] I don&#x27;t believe threat of litigation alone explains the extent of it. The way an American company, esp a reputable one like Google, conducts itself internally is different. There will be much more internal backlash to do the wrong thing way before litigation.",
+    "[Hacker News] Enough. They just weren’t working in coordination.",
+    "[Hacker News] Gemini and GPT fill the same niche. They are direct competitors."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "OpenAI models are coming to Google Cloud",
+      "url": "https://news.ycombinator.com/item?id=50180079",
+      "score": 143,
+      "commentCount": 54
+    },
+    {
+      "origin": "OpenAI Blog",
+      "title": "OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
