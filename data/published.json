@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-22-오픈ai-수천-개-ai-에이전트로-뇌-질환-단서-32분-만에-찾아냈다",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "urls": [
+        "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+        "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+      ],
+      "publishedAt": "2026-10-21T15:37:29.655Z"
+    },
+    {
+      "slug": "2026-10-22-ai-코딩-에이전트용-파일시스템-layerfs-등장-작업-80는-생각-10만-실행",
+      "title": "LayerFS: The filesystem for AI coding agents",
+      "urls": [
+        "https://layerfs.ai/",
+        "https://reddit.com/comments/1xaypur",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMElIYTl0bnZuWUl5RkVGUW1XVmxlVmJwNGI0MnJPQlNFak15SDhzUlFfNU5XVlYtMktMZHhIZnpnLXBWdGw3Y2tub0xKMXFpLTh1WHRIOUJKNWdldHhpVXUyMlZGQUN5XzhOUGs4ME5rdHJHMUlBZGg1eExrdFZJNTRDUUd2cERvdmZIWC1NTnlpdUlLZkZiTzZfcVrSAaIBQVVfeXFMTkEtZ2dkWXc1ZTNITEVxWGxCZmdkRk03ZWJlOE0tNWJYUEhua0FobGNvOVBOU2FCU0pNOHBJRWFoZFVoVm1lZWx2TWRrYVlPY1A4VlNFUk15LVFhQ0dvZnlDcUVwN0FxX1dET3VnVVdRTm9LdVlaUmxiREp5dkpPNVF2SG5aWm4yNHlacThIbXN0OE9qbFJKZ2Jqa0RkZ1ppdzln?oc=5"
+      ],
+      "publishedAt": "2026-10-21T15:35:30.054Z"
+    },
+    {
       "slug": "2026-10-21-알리바바-딥시크-v4-플래시-출력-요금-230-인상-보조금-시대의-종언",
       "title": "Alibaba hikes DeepSeek V4 Flash 0731 output prices by 230%",
       "urls": [

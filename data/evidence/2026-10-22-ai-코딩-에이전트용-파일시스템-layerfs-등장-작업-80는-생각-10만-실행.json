@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — layerfs.ai]\nEphemeral Computing 01 → Compute exists only while a command runs. fs · atomic write → Store write edit rm sandbox · workspace per bash mount exec commit unmount mount exec commit unmount mount exec commit unmount mount exec commit unmount mount exec commit unmount >_ mkdir out >_ cat log.txt >_ python train.py >_ node build.js UpToDate Store C41 C42 C43 C44 C45 C46 Compute: Agents spend ~80% thinking, ~10% in Bash. FS: Each file tool call is one atomic Store op. Sandbox: Each Bash tool call mounts an ephemeral workspace, then commits.",
+  "reactions": [
+    "[Hacker News] This website behaves very strangely... scroll hijack. Also everything is suuuuuper stretched out.",
+    "[Hacker News] How is it v1 with an architecture page coming soon? I&#x27;m really having a hard time gauging the maturity of software &amp; services these days.",
+    "[Hacker News] I&#x27;m so glad someone else couldn&#x27;t focus I thought I was losing my mind here.",
+    "[Hacker News] &gt; Nice website I disagree. Its full of AI slop. Too much animation (cute but distracting) I literally tried for 20 minutes and couldn&#x27;t focus on reading. I just couldnt comprehend anything.",
+    "[Hacker News] Would you mind ELI5’ing the similarities? I’m seeing only high level concepts that sound the same.",
+    "[Hacker News] ho yes please hack my browser scroll so I can&#x27;t read your site (MacOS Safari)"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "LayerFS: The filesystem for AI coding agents",
+      "url": "https://news.ycombinator.com/item?id=50179857",
+      "score": 42,
+      "commentCount": 22
+    },
+    {
+      "origin": "r/AI_Agents",
+      "title": "We benchmarked how 60 engineers direct AI coding agents.&",
+      "url": "https://www.reddit.com/comments/1xaypur",
+      "score": 22,
+      "commentCount": 37
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "AI coding agents overreach; Anthropic eyes intent inference - TechGig",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMElIYTl0bnZuWUl5RkVGUW1XVmxlVmJwNGI0MnJPQlNFak15SDhzUlFfNU5XVlYtMktMZHhIZnpnLXBWdGw3Y2tub0xKMXFpLTh1WHRIOUJKNWdldHhpVXUyMlZGQUN5XzhOUGs4ME5rdHJHMUlBZGg1eExrdFZJNTRDUUd2cERvdmZIWC1NTnlpdUlLZkZiTzZfcVrSAaIBQVVfeXFMTkEtZ2dkWXc1ZTNITEVxWGxCZmdkRk03ZWJlOE0tNWJYUEhua0FobGNvOVBOU2FCU0pNOHBJRWFoZFVoVm1lZWx2TWRrYVlPY1A4VlNFUk15LVFhQ0dvZnlDcUVwN0FxX1dET3VnVVdRTm9LdVlaUmxiREp5dkpPNVF2SG5aWm4yNHlacThIbXN0OE9qbFJKZ2Jqa0RkZ1ppdzln?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
