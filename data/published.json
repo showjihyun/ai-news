@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-10-23-12개-ai-모델-인간에-대해-소속이-진실보다-중요하다-한목소리",
+      "title": "Every AI model has the same \"controversial\" take on humans",
+      "urls": [
+        "https://modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+        "https://modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+      ],
+      "publishedAt": "2026-10-22T17:27:39.854Z"
+    },
+    {
       "slug": "2026-10-22-llm-없이-추론한다는-미노타우르-검증-안-된-주장에-커뮤니티도-회의적",
       "title": "Achieving AI-style reasoning without an LLM",
       "urls": [
