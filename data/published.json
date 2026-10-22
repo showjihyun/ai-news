@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-22-llm-없이-추론한다는-미노타우르-검증-안-된-주장에-커뮤니티도-회의적",
+      "title": "Achieving AI-style reasoning without an LLM",
+      "urls": [
+        "https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model"
+      ],
+      "publishedAt": "2026-10-22T12:12:17.438Z"
+    },
+    {
       "slug": "2026-10-22-구글-딥마인드-직원들-군용-ai-계약에-반발해-연이어-사직",
       "title": "Google staff resign in backlash over its AI contracts with military",
       "urls": [
