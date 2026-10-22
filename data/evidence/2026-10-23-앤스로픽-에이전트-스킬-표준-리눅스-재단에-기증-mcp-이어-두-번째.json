@@ -1,0 +1,20 @@
+{
+  "articleText": "[Simon Willison — simonwillison.net]\nDonating Agent Skills to the Agentic AI Foundation . News today from Anthropic:\n\nWe’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Protocol (MCP).\n\nI'm pleased to note I called this one last December , when Anthropic first declared skills to be an \"open standard\":\n\nI wouldn't be surprised to see this end up in the AAIF , recently the new home of the MCP specification.\n\nFun side note: since my blog content is available to Claude via the datasette-mcp plugin I found that post by prompting Claude to \" Use simonwillison.net MCP to find if I ever talked about how I want skills to be donated to a standards body \".\n\nThis is a link post by Simon Willison, posted on 22nd October 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\n---\n\n[r/singularity — anthropic.com]\nToday, we’re donating Agent Skills , the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.\n\nA skill is a folder containing a SKILL.md file that teaches an agent a specific task or domain, along with any scripts or reference material it needs. We developed skills while working on Claude Code. It handled general knowledge work well, but often lacked the procedural knowledge that real business tasks need. Within weeks of our October 2025 launch, developers published thousands of skills on GitHub and wrote loaders for Codex, Cursor, and OpenCode. We then published Agent Skills as an open standard, under its own GitHub organization and domain, so any agent could use it. So far, 1 million skills have been published and nearly 280 million installed.\n\nWe’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Protocol (MCP). The AAIF will provide a neutral home to the standard going forward, ensuring the community has a say in where Agent Skills go next.\n\nWe are donating the Agent Skills name and logo, the GitHub organization, and the agentskills.io domain. You can continue to use the standard or contribute to it without joining the AAIF.\n\nEngineers from Anthropic, Google, OpenAI, and other companies will maintain the standard as individuals, with David Soria Parra and Mahesh Murag as Lead Maintainers.\n\nWe’ve proposed starting with a roadmap covering versioned releases, a formal proposal process, and security guidance for people who write and install skills. As with MCP, the project will continue to prioritize community input and transparent decision-making. You can join the project’s Discord to give feedback on proposed specification changes.\n\nThank you to the developers who built with Agent Skills from the start, and to the teams who brought skills into their products. Read the specification at agentskills.io and join the discussion on GitHub .",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Simon Willison",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Anthropic Donates Agent Skills Standard to the Linux Foundation’s Agentic AI Foundation, Following a Similar Donation of the MCP Standard Last Year",
+      "url": "https://www.reddit.com/r/singularity/comments/1xcq5ts/anthropic_donates_agent_skills_standard_to_the/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}

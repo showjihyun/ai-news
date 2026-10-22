@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-23-ai가-쓴-소설이-문학상-휩쓸었다-日-호시상-수상작-4편-중-3편이-ai-활용",
+      "title": "Award-Winning AI Literature",
+      "urls": [
+        "https://jamesyu.org/award-winning-ai-literature"
+      ],
+      "publishedAt": "2026-10-22T21:01:12.286Z"
+    },
+    {
+      "slug": "2026-10-23-앤스로픽-에이전트-스킬-표준-리눅스-재단에-기증-mcp-이어-두-번째",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "urls": [
+        "https://simonwillison.net/2026/Oct/22/donating-agent-skills",
+        "https://anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+      ],
+      "publishedAt": "2026-10-22T20:44:00.088Z"
+    },
+    {
       "slug": "2026-10-23-12개-ai-모델-인간에-대해-소속이-진실보다-중요하다-한목소리",
       "title": "Every AI model has the same \"controversial\" take on humans",
       "urls": [
