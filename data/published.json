@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-23-미국인-57-ai는-사회에-해롭다-데이터센터도-반대-과반",
+      "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+      "urls": [
+        "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085"
+      ],
+      "publishedAt": "2026-10-22T23:50:47.342Z"
+    },
+    {
+      "slug": "2026-10-23-엔비디아-오픈셸-공개-ai-에이전트가-내-파일-못-건드리게-하는-샌드박스",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "urls": [
+        "https://github.com/NVIDIA/OpenShell",
+        "https://github.com/NVIDIA/OpenShell"
+      ],
+      "publishedAt": "2026-10-22T23:45:54.642Z"
+    },
+    {
       "slug": "2026-10-23-ai가-쓴-소설이-문학상-휩쓸었다-日-호시상-수상작-4편-중-3편이-ai-활용",
       "title": "Award-Winning AI Literature",
       "urls": [
