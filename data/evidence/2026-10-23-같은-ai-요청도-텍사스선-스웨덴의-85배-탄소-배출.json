@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Is this site getting a death hug? I got a 502, then 503, then incomplete page load.",
+    "[Hacker News] True, but with autonomous agents hitting 2,000 requests is a lot easier.",
+    "[Hacker News] The relative resource consumption of meat vs. plants is well established. Chicken is much more resource efficient than beef if you want to eat meat but consume less resources, and mussels are even more efficient. https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Environmental_impacts_of_anima...",
+    "[Hacker News] These snarky redditors, their go-to way of making an argument by picking at a single word in the whole sentence checks out every time!",
+    "[Hacker News] You can apply the same to FIRE if you want to trigger half this board.",
+    "[Hacker News] Because some causes are significantly worse than others. If you want to have a big impact, you start with the big levers. I&#x27;ll give you an even better example than meat: golf courses in the US consume 2 to 100 times as much water as US datacenters depending on how you calculate. How many golf-course-water-saving initiatives have you seen? Have they even tried anything at all?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+      "url": "https://news.ycombinator.com/item?id=50205229",
+      "score": 57,
+      "commentCount": 28
+    }
+  ]
+}

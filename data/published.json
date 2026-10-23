@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-23-같은-ai-요청도-텍사스선-스웨덴의-85배-탄소-배출",
+      "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+      "urls": [
+        "https://berget.ai/en/blog/per-request-co2-press-release"
+      ],
+      "publishedAt": "2026-10-23T08:00:28.566Z"
+    },
+    {
+      "slug": "2026-10-23-마이크로소프트-의사보다-4배-정확한-진단-ai-임상-검증은-아직",
+      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+        "https://i.redd.it/klxesmep05xh1.png"
+      ],
+      "publishedAt": "2026-10-23T07:53:24.662Z"
+    },
+    {
       "slug": "2026-10-23-ai-연산-자원-새로운-석유라지만-시장은-아직-없다",
       "title": "AI compute is the new oil–and needs a new market",
       "urls": [
