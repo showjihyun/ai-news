@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] People gotta get over it. Just like we had to accept AI can code better than us, we have to accept that AI will just be far better at dispensing medical advice and enabling us to truly divulge all our medical history without being dismissed or judged by a doctor who sees so many patients they can’t possible care deeply about each and every single one.",
+    "[Hacker News] I disagree, I produced a reasoning. Medical fields of practice that have little hands on interaction are easiest to duplicate with ai because diagnosis is based on tests, conversation and observation.",
+    "[Hacker News] Obviously you are right, not surgery yet. I am talking about hands off diagnosis and treatments.",
+    "[Hacker News] How do you make corn when you’ve eaten all the seed?",
+    "[Hacker News] For pure diagnosis, maybe. Not for surgery, at least not yet. The robotics isn’t quite good enough"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
+      "url": "https://news.ycombinator.com/item?id=50214185",
+      "score": 26,
+      "commentCount": 25
+    }
+  ]
+}
