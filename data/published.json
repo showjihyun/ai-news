@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-23-ai-연산-자원-새로운-석유라지만-시장은-아직-없다",
+      "title": "AI compute is the new oil–and needs a new market",
+      "urls": [
+        "https://economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market"
+      ],
+      "publishedAt": "2026-10-23T02:24:56.527Z"
+    },
+    {
+      "slug": "2026-10-23-오픈ai가-모델로-100개-회사-안-차리는-이유-해커뉴스가-짚은-현실적-한계",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50200997"
+      ],
+      "publishedAt": "2026-10-23T02:20:53.748Z"
+    },
+    {
       "slug": "2026-10-23-미국인-57-ai는-사회에-해롭다-데이터센터도-반대-과반",
       "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
       "urls": [

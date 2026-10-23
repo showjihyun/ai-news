@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] The rates environment directly dictates what capital is available to OpenAI and at what terms. When potential investors can get x% virtually guaranteed, then they are less willing to give cash for equity to OpenAI.",
+    "[Hacker News] Do you really believe that inference is their only service? Come on.",
+    "[Hacker News] SoftBank is very leveraged with …… debt. One of the biggest AI investors.",
+    "[Hacker News] I thought the agents were largely autonomous, and should replace workers? If labor is not your constraint, you wouldn&#x27;t be diverting your specialization.",
+    "[Hacker News] Deepseek claims to be making $38&#x2F;gpu&#x2F;hr on deepseek 4.1 flash, and I would say that’s probably marginally close to the frontier, so they don’t have to be as good as OpenAI&#x2F;Anthropic. Even at half that revenue, NVidia makes back the cost of a b200 cluster in roughly half a year. (19*8*24*5*52 = 948,480) It’s estimated NVidia sold 4.5-5.2 million gpus in 2025 with total revenue number",
+    "[Hacker News] I believe this is the correct answer. You can&#x27;t run 100 businesses because each one would only receive 1&#x2F;100 of your attention, and they would all perform poorly."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "url": "https://news.ycombinator.com/item?id=50200997",
+      "score": 57,
+      "commentCount": 63
+    }
+  ]
+}
