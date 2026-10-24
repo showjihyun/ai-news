@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-25-무료-오픈소스-보안-플랫폼-아르고스-ai가-24시간-감시초-단위-대응",
+      "title": "Argus – a free, open-source agentic security operations platform – MIT",
+      "urls": [
+        "https://thomasunise.com/argus"
+      ],
+      "publishedAt": "2026-10-24T23:34:53.549Z"
+    },
+    {
       "slug": "2026-10-25-중국-문샷-ai-키미-k31-프로-공개-코딩3d-강화에-100만-토큰-컨텍스트",
       "title": "Kimi K3.1 Pro 공개 - 코딩과 3D 제작을 강화한 100만 토큰 컨텍스트의 3T급 모델",
       "urls": [
