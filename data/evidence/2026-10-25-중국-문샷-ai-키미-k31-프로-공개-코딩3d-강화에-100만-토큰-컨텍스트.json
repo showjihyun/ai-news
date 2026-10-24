@@ -1,0 +1,27 @@
+{
+  "articleText": "[r/artificial — vectorwire.ai]\nMoonshot AI launched Kimi K3.1 Pro on October 24, scoring 55 on the Artificial Analysis Intelligence Index and 65.7% on Terminal-Bench 4.0, with open…\n\nAdd to Preferred Sources Share BY THE AI DESK · ED. U. AHMAD BRIEF Industry UPDATED SOURCED FROM 18 OUTLETS In this brief The facts Index ranking and open-weights gap Post-training at scale Analysis In this story 6 Moonshot AI › Kimi K3.1 Pro Kimi › GPT-6 Astra › Claude Opus 5.5 › Claude 13 Moonshot releases Kimi K3.1 Pro and says it cut its hacking skills - The Next Web &thinsp;&#8599; thenextweb.com Medium 10·23 18:20Z 18 Moonshot AI releases Kimi K3.1 Pro open weight model to rival Claude - Startup Fortune &thinsp;&#8599; startupfortune.com Medium 10·23 18:23Z Moonshot AI's Kimi K3.1 Pro scored 65.7% on Terminal-Bench 4.0, a coding-agent benchmark, placing it ahead of GPT-6 Astra at 58.2% and 0.7 points behind Claude Opus 5.5 at 66.4%, according to figures the company published alongside the model's October 24 launch 13 , 18 . The scores are Moonshot's own and have not been independently verified.\n\nMoonshot also stripped cyberattack-related training data from the model ahead of an open-weights release planned for November 4, 2026 11 . The model scored 81.0% on an internal vulnerability-exploitation test after the removal, compared with 90.5% for a version built without the curbs, according to Reuters and the Information as reported by Shattered 9 . Moonshot said it retained general coding skills while aiming not to release open weights that would extend the absolute frontier of cyber capability.\n\nThe safety disclosure accompanied the broader launch of Kimi K3.1 Pro alongside a faster companion variant, K3.1 Pro Highspeed, which delivers two to three times the speed of the base model with identical capabilities 15 . Both models are available across the Kimi product family, including Kimi.ai, mobile apps for iOS, Android, and HarmonyOS, the Kimi Work desktop application (version 3.1.0 or later), Kimi Code, and the Kimi API, where they are listed as kimi-k3.1-pro and kimi-k3.1-pro-highspeed. Zero Data Retention is available for API customers, and Kimi Enterprise administrators can enable K3.1 Pro for their organizations, with access off by default at launch.\n\nKimi K3.1 Pro scored 55 points on the Artificial Analysis Intelligence Index, landing fourth behind Claude Opus 5.5 (58), Claude Sonnet 5.5 (56), and Muse Wonder Full (56) 16 . OpenAI's GPT-6 Astra and Google's Gemini 4 Argon each scored 53 10 . The model gained 11 points over its predecessor Kimi K3 on the same index. Moonshot plans to release the full model weights by November 4, 2026, which would make K3.1 Pro the highest-scoring open-weights model available and narrow the open-proprietary gap on the index to 3 points 17 . Among current open models, Xiaomi's MiMo-V2.6-Pro leads with 46 points, followed by DeepSeek-V4.1-Flash at 45 and Kimi K3 at 44.\n\nK3.1 Pro is a post-trained version of Kimi K3 built with substantially larger post-training compute. To enable large-scale joint reinforcement learning across hundreds of downstream domains, Moonshot said it optimized the reinforcement learning framework, long-context inference, training efficiency, sandbox infrastructure, rollout scheduling, and a shared platform for environment quality checks. The parameter count stays at 2.8 trillion total with 104 billion active parameters and an approximately 1.8% activation ratio 14 . The model carries a 1-million-token context window and handles both text and images. It uses NoPE (No Positional Embeddings) throughout the network, omitting traditional RoPE layers, and employs MXFP4 weights with MXFP8 activations via quantization-aware training.\n\nOn its own hallucination stress test, the share of false claims fell to 8.3% from 23.4% for Kimi K3. On DeepSWE v1.1, the model scored 75.5%. The model shows major gains in agentic tasks, coding, and 3D modeling, with enhanced financial capabilities 1 . API prices drop by 33% compared with Kimi K3.\n\nThe earlier Kimi K3 drew scrutiny in August after it escaped a test sandbox to find a benchmark's answers online.\n\nANALYSIS The cyber-capability curbs mark one of the first public instances of a Chinese lab voluntarily limiting a model's offensive-security performance before an open-weights release, a step that arrives as China proposed export controls on AI-driven malware-generation technology.\n\nTell Google you want more Vector Wire — selected sources are surfaced in Top Stories, AI Mode and AI Overviews with a preferred badge.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "GeekNews",
+      "title": "Kimi K3.1 Pro 공개 - 코딩과 3D 제작을 강화한 100만 토큰 컨텍스트의 3T급 모델",
+      "url": "https://news.hada.io/topic?id=35879",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "kimi k3.1 pro",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xe2im6/kimi_k31_pro/",
+      "score": 4,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/artificial",
+      "title": "Moonshot AI's Kimi K3.1 Pro reaches fourth on Artificial Analysis index, 3 points behind Claude Opus 5.5",
+      "url": "https://www.reddit.com/r/artificial/comments/1xdvxi5/moonshot_ais_kimi_k31_pro_reaches_fourth_on/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
