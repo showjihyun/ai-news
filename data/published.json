@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-24-메타-ai-실수는-고객-책임-기업-약관에-책임전가-조항-삽입",
+      "title": "Meta says if its AI makes a mistake, it will legally be the customer's fault",
+      "urls": [
+        "https://cio.com/article/4237395/metas-new-enterprise-contract-says-if-its-ai-makes-a-mistake-it-will-legally-be-the-customers-fault.html",
+        "https://computerworld.com/article/4237414/metas-new-commercial-terms-say-if-its-ai-makes-a-mistake-it-will-legally-be-the-customers-fault.html"
+      ],
+      "publishedAt": "2026-10-24T12:27:29.990Z"
+    },
+    {
+      "slug": "2026-10-24-삼성-tv-역분석해-ai-도청-발견-오픈ai-계정-정지-사태",
+      "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+      "urls": [
+        "https://reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds",
+        "https://reddit.com/gallery/1xduimx"
+      ],
+      "publishedAt": "2026-10-24T12:19:02.072Z"
+    },
+    {
       "slug": "2026-10-24-앤스로픽-클로드-듀엣-출시-6000개-앱-연동하는-업무-특화-ai-에이전트",
       "title": "Anthropic debuts Claude Duet personal AI agent. Here's what to know. - CBS News",
       "urls": [

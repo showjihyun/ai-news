@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] He bought a whole bunch of TVs and he’s testing them right now. Check out his YT channel.",
+    "[Hacker News] It’s quite something when western companies act more like authoritarian governments than actual authoritarian governments. I just wish RAM was less expensive ;(",
+    "[Hacker News] &gt; With projects like REA, it&#x27;s going to get harder and harder for companies to get away with things like this. Nope, don&#x27;t worry, if you clicked on the linked you&#x27;d see OpenAI has already banned this person&#x27;s account. Chinese models you say? See today&#x27;s new Kimi release which intentionally had all cyber-related data removed from its training data. The window is already ",
+    "[Hacker News] It creates a lot of uncertainty. Especially if you depend more and more on them in your day to day life. If your always-on agent hears to wrong thing, you could lose access to things you depend on. The same reason makes GCP very unattractive.",
+    "[Hacker News] People complaining about orange site degradation are probably as old as the site itself."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+      "url": "https://news.ycombinator.com/item?id=50218633",
+      "score": 218,
+      "commentCount": 60
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Hacker reverse engineers his Samsung TV and finds on-device AI listening for your dog and baby, watching what you watch, and borrowing your soundbar's mic if the TV doesn't have one. Then OpenAI banned him for reverse-engineering it.",
+      "url": "https://www.reddit.com/r/singularity/comments/1xduimx/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+      "score": 32,
+      "commentCount": 0
+    }
+  ]
+}
