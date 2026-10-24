@@ -1,0 +1,202 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nThe AI world is flooded with personal and productivity-based assistants , with new ones launching every week. Now, Anthropic is entering this battle in the hopes of gaining user attention with a new app called Claude Duet, aimed at rivaling Meta Muse , OpenAI Dots , Hark , Instinct , Grok Bot , and Fo .\n\nAnthropic said the new agent is meant to cater to professionals and small businesses to help them with automating and managing tasks. The company is making a distinction from personal agents such as Instinct , by noting that Duet isn&#8217;t good at handling errands or booking tickets, and it can&#8217;t show you its browser use as it happens.\n\nInstead, Duet can build a daily briefing for its users, create dashboards, or suggest actions based on the user&#8217;s data. Like other agents, Duet can complete tasks in the background through its own virtual machine while you handle other things, then come back to you if it needs your approval.\n\nThe launch arrives as the market shifts beyond AI assistants to agents that can work on users&#8217; behalf. Many of Anthropic&#8217;s rivals are focusing on business use cases. While Meta&#8217;s Muse is a personal AI assistant, the company also released a version to cater to small businesses with connections to other apps . OpenAI&#8217;s Dots has a business slant as well, with its integration with professional tools .\n\nAnthropic says Duet proactively delivers its recommendations as it monitors ongoing tasks. Built on the Claude Opus 5.5 model, Duet can connect to over 6,000 connectors and plug-ins in the Claude Marketplace. It can also make online purchases on users&#8217; behalf via Stripe&#8217;s ⁠Link digital wallet or Shopify&#8217;s Shop Pay.\n\nThe company said sensitive steps like payments would require user approval. However, Duet won&#8217;t trade securities or move money between accounts.\n\nAnthropic also released a new classifier to check each message to prevent sensitive information from leaking out. It said that, by default, the agent would turn down requests asking for credit card numbers and government identification.\n\nClaude Duet is available as an app on iOS and Android, and on the web through Claude.ai for Pro and Max customers in research preview. Users have to join a waitlist to try it.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nIvan Mehta Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web.\n\nYou can contact or verify outreach from Ivan by emailing [email&#160;protected] or via encrypted message at ivan.42 on Signal.\n\nNovember 4 Boston Buy One Pass, Get a Second Free Cover more ground at TechCrunch&#8217;s ultimate founder bootcamp of the year by bringing your co-founder or partner for free Book before the BOGO deal expires\n\nWarhound raises $200M to engineer war dogs and arm them with Anduril gear Dominic-Madori Davis\n\nAirbnb limits chores for guests, sparking backlash from hosts Lauren Forristal\n\nYear-old AI lab Flapping Airplanes raises $1B at a $6B valuation Julie Bort\n\nTesla starts Optimus robot production in California as profit falls 43% Kirsten Korosec Sean O&#039;Kane\n\nThe internet is having a very bad cybersecurity day Sarah Perez\n\nPeople are using AI to make their smart TVs dumb again Sarah Perez",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic debuts Claude Duet personal AI agent. Here's what to know. - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQS3M2TXpYVGJXT2txOW5uaVExTzJPRmhDVG1UZ1hWWUEwSmRMV3JFZklxeHBCRDd3bkNocVhSZXlQc1M0VXJvdjhiYnNyaVgwdmJ2c1o4R2oxaFd5MGZFY181d2VjbFJuYU5IcTJzUU1fa0l1RmdNd2lOZ0ZkdUN0VUpaNFBnS0k?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic targets Muse and Dots with new AI agent, Claude Duet - Computerworld",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaWxGVHJ5dVhwMXhhQlBPTnZnUFpjQ01FLWswc0pzS1o3cFNONlJ5Y3c4bHdBa0NaajFkRzVfT29oNVI3MlhLanJ6TmFmajJ2X0NZSmwtMURFWnB3VG5wdzlENGdzN0k4XzUwLTVXSFpPY3c4QlFGT01rSU1XNW5VSmdseUpvdE9iYURGTE1kTExEQlFNQlZRbkp0MVZhLVZEbFdDTXFGQm5QY2NrLXBaNTNaemtZbkJJWkFB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Duet AI agent can manage your work across thousands of connected apps — here’s how it works - Tom's Guide",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRWRVV2xqbWZNLVBLWDNGN2lSamcxZ0k5YzdCZ1puYUZPY0hWMVN4QzZ2MnZweDc4aE5IQmZWaHl6WnFwa3UyS2lId1h2SzBHeXZTUFJYdFNFX0FrQWlpYVlMVDF4NUhXVjdNM05OS0NaWmhYWjhlVVNKVm9sb3Y3czc4MHNwVWFWQW9waHJoVUdoOXFfQ3NXX29oeVczY2xCLTByRHFJT2RoVHFrMm5JOEdSNmJjREJaSkZrUGxQOFJ2a3lSc3h2QWo1SGdYSmto?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Duet Agent Joins Muse, Dots in Personal AI Race - PCMag",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQVQyby1UT21FZDFBcTUzTzNVYUE2WVk4X1JTRFYxTy1heG9VTWU4RS1PVnpLOTdHMHhDb19FV3pCTnp1MTFfVjNhUGlNazNTLUtFWFlrYTlNVjdTY21tNUF4NHdSUy05dmxmWklLTVdOSk45cXRhejhXaVpJTGhvRnR5bVVsUEVzZllMazVycTVUaWc1b3c?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "How Anthropic’s Claude Duet Differs From Meta Muse in the AI Agent Race - Barron's",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTHp3Y2NHeEJpRWJZb3NBV3ljWjNDVDMtNE55Vjc2VS00SWJNUmY0dkw0UkwzUjU0RVZDQUprRnZINURJVFVfNTB6SV9FOUIzWFJhY1ltdEdfVS12QU5NZFNXbkpBQktEYUQ3a2lZUXpqLXNiY3R1MzZFWTQxNlJ6UzlXLVdQdWUzR0I4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude Duet joins the race for always-on agents - R&D World",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZktXSVlYU0o4REc3S09jeXZBZkx3M0NZSElBS05HMTNaZXlVcDFHeWZYR29uck80X3pZYWw5MmtiOEFfbER1RUV6aWhHOEl5eTZZdnZzZ2RfeEM3cTlVMTlxajNzRUE5LXZVcDB3R1RkWmZfQUJDMUNVZndjc2VuYXJxQ2s5U09UenhJVmFpb0Vmc2RFLVRjYzI2d19odGxKMzNDbEZyZXZRYWJianc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s new AI agent Claude Duet can work while users are away - The American Bazaar",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVnktb0xleG9fM3otRmJHbHlZTkttRUJQVE9UeXU2bTFQWXBPUWZpMG9oRDlmdlVmdS0wVnBhcHFjNXllT1JNNVBCbTNIaWk4MUZwWWNVMXpFU3RGby1XYW5VYmZKOUJFLTlmVVBGbGhmZUtFZEdhRFNJcjhJcXJFTnpZWVlEdzVtLVQ0cWJ5RTM3RVdldFB1QlVIQm1MaktWSnpIdDBCeko1R2Q4ZVZJWFZISkpITWs1?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Duet: What Anthropic’s Proactive Agent Does, Who Can Get It, and What It Costs - Fello AI",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9MZXlKaDNYallidHAwMWlrcVBLVV9vLUlBV3dHTDhFWUNPOVU4WVV4bl9CNmFCeFA5WktDRTN4aGRpeklUWC0w?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Duet Proactive AI Agent - Technology Org",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMjM5WDhHbGp2YXhTZ004VmZXb2ZuZzZQMUpxZWR6NjdIQWRQQjVYUkdvdEx6S3BWSTROb1A1SXlJOVFpcWh2aDhfODM4UjduY0ppRzdJcjdlUmx0Nk5TWXZuUlRnMDlfTFhycjNqYkVPUGZaWV9jdXlRN3BEc3N4bnZqWUdZV2RkeEJEY0hHSUcxaS1EVE1na1FYUTQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic is unveiling a workplace AI agent to rival Meta Muse and OpenAI Dots - Quartz",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4weXI0QVdqNEdJSmR3Z2RvUl9feHFyMzdkSV90S2hhNlFadVd1TjZiUmpURVJtei00QnJQajBCaFJ1LXN2YktJN3o1S3hhNC1SV3RJNlA3RVhCeHNHZFFuMW5rc2x2WjY5VDZLaVZ0dkFqMmx0alJIcUliZEE1LVU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic takes on Grok Bot, Meta's Muse, and OpenAI's Dots with its always-on agent \"Claude Duet\" - The Decoder",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRG9HZVRLSE1uRXNxWURQMkxmYlN3N050MmMwanJhUUc5QTN5b1VMYnNRc1ZWSlhENEluZ25EZkpQcnB0U2hTRFJRT2RQbFNIS0NzbnlDcF9jZHJJSEdsc1pwMWw2enloVDhjMW5PZHR0ZFZYa0ZrZ2dKWlhMSFQ2dGtDdktUaGZpc19TWDBfTlhpYTkxWlozVXdrZ0EySk1CRjdoUEk3NXBZTF9obVdiSW9DV29rNVhJ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Duet AI agent to compete with META, OpenAI in consumer market - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMFBMSll3bFplNmgtSU9pVUpZMTZnOHFMZjgxbzlCQ3NkZGRIN3BuckEtTWhWZW1xUkdiTzNtdVhFaXZsSE9idUhFSTIyTE8tc1F0VVVoTnRUZzZqQU9QZWRIZmQyUHpWa0F4aXVHb041bzdzaHJpeGN3SmJnTXNQN0F2WThSaFdDdDNZUS01QTJ1ZldUaENuVVhQT2stdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Duet AI agent to compete with META, OpenAI in consumer market - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYW00ZVR4MnlKa2tZY2RnTC1QbXpoTFdzVlN3SUZWTmlOLTV1UVVVMlJqTkt0TFRZVGRxYzUwSGw2N2V4X2xHamxaaTJvWk9qN01iZC1QU0FsdHBUZG5oYXlETHpXY01Fd0NCaVdfTEx2bEFCcktyMHdsdlk0b19QWGpBbnl6UjhRTzJDUmNFNkFGN0oyWXR3TGQwZ2plVUd1NnVpeEdpMDBLcmxiSmZ6X1VZUjhTS3JidzJ1bjNuWUt5UmRacGtKTURR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Duet, a Background AI Agent for Claude Pro and Max Subscribers in the US - gHacks",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRGRDSWtRY0tfY3Y0ODRFZTlYRzNFRjBfRWFHeGwyajByWmctemNVZmV6ZXpiVzJ3aVl4T0tDQmlGVEJYbWsxLW0tUVExUnpkZndLVDFRVW5fbE5CS2ZmaTlLOEY4VlF4THFtNEJFVks3Qm84TnJaTkxOWlRBTWlvOFFoTkVfNndrRUJsYnVDaC1HQzN1d0Y2U3VWc0ZUX3RnSlY2TVFPZW94YTFWRWdfdTV2dDQzY3puQWVpNng0TlNHcmNmXzhLaHNhTVI?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Duet To Rival ChatGPT Dots And Meta Muse - The Mac Observer",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYTRNVjJQYmFRQ21lc0lsN1FHT19ydmNTSHFOX2M0elZ6S3N0VUY1eDdqT2FPTk1ITHk5S0lCQnBTTHdVcEV5a3ZEbXJzM01SMWZjcklSdjRnWFFuZEVwdS1Rd0l2dTBFZU9lVDA1MzI0N0J2QWRWbFBNd3Z4UXhoQVJ3ZmNfR24xQTNhbFltcGo4MEQxV2xzRHd5eWJLNS14Q0E?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Unveils Claude Duet Personal AI Agent In Research Preview - Dataconomy",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUDVOMEJJQkRUYWNFTkc5ZzVSclNQMG9ZSXpFMGdsWW1QeE5iWElnekZYZ2NMd29fVW0yUTJkWThoRy1neG1GTUx2a3hiUUtUTFFwdHkxV0JzOUNZNUQ0NUN3cDc3OENsTTBLQlFnS0FWWVlFNWhrMHdseTBrQXZ1ZVI3R0xvQXM3MmMySEtWUlJYMWk3QWc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Duet, a 6,000-Connector Proactive Agent on Opus 5.5 - Techi",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NXzl1LVBZdEFVWTNPTGdYSEZaaXIxcnM4YVVzOTVjX3M0bEhpbFM2bUVUY0ZnVnRVMW9xMXpLNmM0RktsTWd3WVMtWnlDeGxnLVhndVdzek9CUFNpWkpfWkxtQzlmcGx4VXJxdUhJNHBjR1A5S3hR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Announces \"Claude Duet,\" a Proactive Autonomous Agent App for iOS and Android - OODA Loop",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbEhWa1FiSWRZano0TmdIdVhKVDVPLXFZcHBiVTFaWF93MXAyQ1c0M29wMXpDWFZhUjdybkt6VHJkenprcVRvc3M3WGJLYjhwbnMwMEdxeDNmUWRuOEJOMXpxU0dKd2VnMFVFUnhOenFibE5LODdyRWlwaFZkdW5vVHhLVVQzNmtITEppUHpBSkJEa0UtY0c3eW8zZHlLVm83MEpWdEt1YUU0UXJWaXBkTWxRcTVYelJBdURvNk1nQU5wZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic takes on Meta Muse and OpenAI Dots with Claude Duet - Music Ally",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeE9WcXdZWnBYWWdRalFKdEVndmJvQVhNdUZMYXJQQVRwZXd2aGhBSjEzZ2NjOEhqMjFkbnhKTHhGcTlwTUFZQkF2VmZHSHVzS3RXeXpFM1lsemJsb2hxbWRGcnNtcmFmeno0NHo3UHpCQXpSdFotcmJONlY3VmpQS1hnZm4yRkZXZWZpT0JIeEVIN1dkX19wcDI3WQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Duet: Anthropic’s Riposte to Meta Muse, OpenAI Dots and Instinct - CXOToday.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVFFTNF9qcG92UkVZWXo0bWhzcmhveUZBUHhEZUl5UzdhNUNrZTk4a3lBSWRVZXNmY0FfdGpPY20xbVVzWURoYUR4bDBwNk1mZldTYWNwOXh0SGZiN0Foc2NMb1FOZWR3WFpwNmxGSzFLOEZiWExKTmxMU25MT01wOEtxcC1KV0JZdTZaZTRseW05Q1pOSmxwWQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s New Claude Duet Agent Takes On Meta’s Muse by Focusing on Work Instead of Personal Errands - Thought Catalog",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQV1JwU2ZRcmgwSG4tRWNpWWVmRFljclRKWS11bUVzNVpORDVoSElvb1ljb1ZsLTE5bDJVWTVGU1Z6T0JyOW8xeEt4WnpRZWJwSzlpbkt2cElBWGlJZlJVRld4M3Z3d1J0U201aHlmSTRFQzFCYTJiaEJqMmZQeVE3TXdGckhiam9iQkFHSVBnRmZBTXJrOXVTTG0yRjhKSjVLYm55NVE5anFRMm5DSm1QemUxMU5Mb012SS1WcWVZbUlUMVhiVi0xenRvVk5GZ3hvSmtfOUlTdXlpcG1ZTzlqamRJLU0?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Unveils Personal AI Agent Claude Duet - ForkLog",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PVWNJSlppTnRtSjYxZm5kU2p0SDZ0eUZtelNYZm9TUVpjZ2ZhQkZ5RkN6Qkl2ZDdMaFpaWHQxMnZOemxXLWxTbnptUF90OFp4eGdFaU9LY1RycGJNbGgwVTdiQzNubjFaSFJZNU9nUUJfSHpiM3Z6VXBlMA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Duet AI agent to compete with META, OpenAI in consumer market - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVXN5cjRPVThndGdHRGZVd0tJbjRlOE12NjEtV1N2QlVnUDIzeHpuR1V3dzcxTjc2WDRpcV9NMm1TVkt4bEd0R2J0bW15WklTUVRMY0lfblVneVBKMWhkbUhabktzWEo0Y1hlQzF6Zk5YZFVKSXRKNVIzU0txUTdUQ2lOYw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Duet Debuts as Anthropic’s Always-On Proactive Agent - https://jamonline.ph/",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKSVhMQzFCX0E5WkpJbVlhUlNPU2NGWGFUT28tcUxRWHFERlV1WU9jU2Z0OW1uU3pwSTE4ZjNxdmJVVmJNajJUcTVDbkJGVnZZd1R6ZVVyUWxIdWZaN0ttZ2EwdVZiNXdzdzY4QkQ0MlF3NWtBbGJ5Tm8tTkI?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Duet, an AI agent for handling complex tasks - mobidevices.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Md3RiVUs5YndMOUFpZW81bHh2Vllaa0ZuYVRYM3ZRR2xYcUZaRm5QVkJGdkM0c0pHSGtrNUlqSGNsYTJEOUNTYzlIa3NDc00?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic introduces personal AI agent Claude Duet - Root-Nation.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaDUyYWhTWmFBb2ZrZlphY1F3TzJYdWJBSWVPZ2pFVHhjYVRBTGdyTXRtVXllMXRWNkd4YmxCQXJuUnFtN2U3VURWLUpNSktDd2w0VGNtVExxT0lMcDBucEY1WWltUVZ3NmU2MHdCVW5DSEkzWGpSSzRHSkFPNF9oNV9YdFlxa0JTMDFlbVJWZ1lSUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Duet AI agent app - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORFF3NVIyMk1RblRDbzU1RUJjWkdsOXJnakFDRE45a2U1QlcxVDZnek9KOXhRb0xJZG9wVGJzeDhTUlFtTUZhVEdrYVBlVnRXRExTOXUyOUEwcG9IXzBJNTREUHBoTk5zWHo3ZnNMVEk1cjJkSEhiRTVzQUFhY2ZPMHRpMDRqSnNrMERwMGg3UU5yVXBjcDdVeWdRODBTNWFDVjl1cThFeVVkTjA3eTQ1MEF3NWxFUTA3dEIyY2VJUHlCa0XSAcgBQVVfeXFMTm9ScDhmVmVGYTE4OTY5bzl0ZFAzOTFyd3NGSUd3ajlnNzhuVmR3ZnIzeFVpb1lSenRVN2dPSWVHNEU2cTg0NGxZX3BmMlQ5ZjI4MVgtbVNXX0h4SjUwUUJBUGtrWUZXVzBESlh0eHB0OGp1a1hZNGpFVlhPcDZNRV9VNWZfUmVXdkhNRjB2eEZ0Ymx6RzBDakJiendlWFB2Y2Y2WFVxSGo0ZEloVFZGZjc2bG5LaWp4MGZUYlA4YkxhT3ZoYWhzamI?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Claude Duet app is Anthropic&#8217;s bet on agents",
+      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
