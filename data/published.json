@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-26-수학자가-본-ai-미래-논쟁의-핵심은-생각의-주체성",
+      "title": "A Mathematician Reads the AI Future",
+      "urls": [
+        "https://theatlantic.com/ideas/2026/10/ai-math-human-future/689133"
+      ],
+      "publishedAt": "2026-10-25T18:38:02.936Z"
+    },
+    {
+      "slug": "2026-10-26-필즈-메달리스트-숙제-채점-의미-없다-ai-시대-평가의-딜레마",
+      "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+      "urls": [
+        "https://dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html"
+      ],
+      "publishedAt": "2026-10-25T18:35:22.237Z"
+    },
+    {
       "slug": "2026-10-26-그록은-공화당-챗gpt는-민주당-ai가-투표를-권하는-방식",
       "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
       "urls": [
