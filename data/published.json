@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-10-25-시몬-윌리슨-코드-한-줄-안-읽고-클로드-코드로-rts-게임-완성했다",
+      "title": "Built a downhill skateboarding game with Claude Code",
+      "urls": [
+        "https://v.redd.it/bkasncv9eexh1",
+        "https://v.redd.it/4q5cmuwryixh1",
+        "https://simonwillison.net/2026/Oct/20/battledrones"
+      ],
+      "publishedAt": "2026-10-25T06:28:38.429Z"
+    },
+    {
       "slug": "2026-10-25-ai-글쓰기-왜-여전히-기계-번역-같을까",
       "title": "Why is AI generated language so hard to understand?",
       "urls": [
