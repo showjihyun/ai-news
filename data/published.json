@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-25-ai-글쓰기-왜-여전히-기계-번역-같을까",
+      "title": "Why is AI generated language so hard to understand?",
+      "urls": [
+        "https://arxiv.org/abs/2610.29162"
+      ],
+      "publishedAt": "2026-10-25T01:27:08.988Z"
+    },
+    {
+      "slug": "2026-10-25-미국-창작-일자리-20만-개-증발-ai-탓일까-스트리밍-탓일까",
+      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
+      "urls": [
+        "https://apricitas.io/p/ai-and-the-fall-of-the-creative-class"
+      ],
+      "publishedAt": "2026-10-25T01:25:50.416Z"
+    },
+    {
       "slug": "2026-10-25-무료-오픈소스-보안-플랫폼-아르고스-ai가-24시간-감시초-단위-대응",
       "title": "Argus – a free, open-source agentic security operations platform – MIT",
       "urls": [
