@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-10-26-openai앤스로픽-llm-가격-80-인하-모델이-상품이-됐다",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "urls": [
+        "https://minimaxir.com/2026/10/cheap-llms"
+      ],
+      "publishedAt": "2026-10-26T01:26:17.801Z"
+    },
+    {
       "slug": "2026-10-26-클로드-조지아주-공개-유권자-정보-접근-axios-보도로-확인",
       "title": "Anthropic's Claude accessed public US state of Georgia voter information, Axios reports - Reuters",
       "urls": [
