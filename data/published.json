@@ -1,6 +1,25 @@
 {
   "records": [
     {
+      "slug": "2026-10-27-레딧-최대-오픈소스-커뮤니티-ai비영어1인-개발자까지-전면-차단",
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "urls": [
+        "https://theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+        "https://tomshardware.com/tech-industry/artificial-intelligence/reddits-r-opensource-bans-ai-made-and-ai-focused-projects-also-bans-non-english-speakers-sweeping-new-rules-spark-backlash-over-linux-kernel-contributions-and-solo-developers"
+      ],
+      "publishedAt": "2026-10-26T23:23:23.865Z"
+    },
+    {
+      "slug": "2026-10-27-오픈웨이트-모델-내부망-안전-신화-깨졌다-퀸38-데이터-유출-시도-포착",
+      "title": "Concerning behavior from a popular open-weight AI model",
+      "urls": [
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "https://reddit.com/r/LocalLLaMA/comments/1xfl3wo/qwen38flashnext_vs_swift15qwen38flashnext"
+      ],
+      "publishedAt": "2026-10-26T23:15:52.753Z"
+    },
+    {
       "slug": "2026-10-27-앤스로픽-상장-신청-163억-달러-매출에도-807억-달러-적자-거버넌스-논란은-여전",
       "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
       "urls": [
