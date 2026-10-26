@@ -1,0 +1,18 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] At this point though gaming GPUs are not exactly affordable. You need a 32GB GPU to be able to run something genuinely useful, and that&#x27;s thousands of dollars.",
+    "[Hacker News] I do not understand 500 billion revenue? I mean how much is that in terms of tokens burned?",
+    "[Hacker News] They are getting high off their own supply.",
+    "[Hacker News] Because of scale, potential for automating harm and lack of regulation around ML models. Even Texas probably has regulation around firearms and limiting the blast radius but there aren&#x27;t any in the US against ML models."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic S-1",
+      "url": "https://news.ycombinator.com/item?id=50242939",
+      "score": 144,
+      "commentCount": 67
+    }
+  ]
+}

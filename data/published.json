@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-26-해커뉴스-앤스로픽-s-1-스레드-144점-수익성규제gpu-비용-삼중-검증-예고",
+      "title": "Anthropic S-1",
+      "urls": [
+        "https://sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      ],
+      "publishedAt": "2026-10-26T13:43:55.902Z"
+    },
+    {
+      "slug": "2026-10-26-pdf-도구-페이퍼파일럿-클라우드-없이-ai-에이전트와-연동된다",
+      "title": "PaperPilot - 클라우드 없이 WASM과 MCP를 지원하는 순수 Rust PDF 엔진",
+      "urls": [
+        "https://github.com/KrushnaVardhanReddy/PaperPilot",
+        "https://news.hada.io/topic?id=36034"
+      ],
+      "publishedAt": "2026-10-26T13:29:49.033Z"
+    },
+    {
       "slug": "2026-10-26-마이크로소프트-대화-안-하는-9b-모델-출시-퀸-베이스로-결정만-맡는다",
       "title": "Microsoft Decision-1: 9B Qwen Model Launch Explained",
       "urls": [

@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — github.com]\nPDF tools for your AI agent — and for you. Pure Rust. Runs locally. Files never leave your machine.\n\nPaperPilot is a PDF and document toolkit written in Rust. The same engine runs as:\n\n1. Use it with your coding agent (MCP) Codex, Claude Code, Kimi Code, and current Pi releases connect to the same local stdio server. See the coding agent setup guide for each client's configuration and verification steps. Builds from this source can also print ready-to-merge configuration:\n\npaperpilot-mcp --client-config codex # Also: claude-code, kimi-code, pi, claude-desktop, cursor Download paperpilot-mcp from Releases , then add it to claude_desktop_config.json :\n\n{ \"mcpServers\" : { \"paperpilot\" : { \"command\" : \" /path/to/paperpilot-mcp \" } } } Restart Claude and try: \"Merge these two PDFs and compress the result.\"\n\n# Merge paperpilot merge --inputs doc1.pdf doc2.pdf --output merged.pdf # Compress paperpilot compress --input in.pdf --quality 75 --output compressed.pdf # Rotate pages 1, 3–5 by 90° paperpilot rotate --input in.pdf --pages 1,3-5 --angle 90 --output out.pdf 3. Use it in the browser Go to usepaperpilot.com . Open your browser's Network tab while you work — you'll see no file uploads.\n\ngit clone https://github.com/KrushnaVardhanReddy/PaperPilot.git cd PaperPilot cargo build --release -p paperpilot-cli -p paperpilot-mcp -p paperpilot-gateway Desktop app:\n\ncd apps/desktop && pnpm install && pnpm tauri dev Requires Rust 1.75+, Node.js, and pnpm.\n\nOrganize: merge, split, rotate, delete pages, reorder pages, extract pages, booklet imposition, N-up grid Optimize: compress Extract: plain text, OCR (pure-Rust PaddleOCR via rten ) Security: watermark, validate signatures, remove signatures, PII scan, deep sanitize Office data: Excel → JSON, Excel → CSV\n\nPrivate by default. Everything runs locally or in your browser tab. Agent-ready. MCP support is first-class, not an afterthought. One engine, many surfaces. CLI, MCP, REST, WASM, and desktop share the same Rust core, so behavior is consistent. Small and dependency-light. Pure Rust, built on lopdf , pdf_oxide , rten , and friends. Benchmarks Run cargo bench --workspace to reproduce. Methodology and results: SYSTEM_BENCHMARK_REPORT.md .\n\nDesktop (Tauri) · CLI · REST (Axum) · MCP (stdio) · WASM (browser / edge) │ Rust core workspace paperpilot-core · paperpilot-pdf · paperpilot-nlp · paperpilot-gateway paperpilot-mcp · paperpilot-wasm · paperpilot-storage Embed in your own site < script src =\" https://cdn.usepaperpilot.com/embed.js \" data-tools =\" merge,compress,ocr \" > </ script > < div id =\" paperpilot-widget \" > </ div > Local REST API paperpilot serve --port 7823 curl -X POST http://localhost:7823/api/v1/pdf/merge \\ -H \" Content-Type: application/json \" \\ -d ' {\"inputs\": [\"a.pdf\", \"b.pdf\"], \"output\": \"out.pdf\"} ' Swagger docs at http://localhost:7823/docs .\n\nIssues and PRs are welcome. Good first contributions: bug reports with a sample PDF, new tool requests, and docs fixes.\n\nCommunity Edition (this repo): Apache 2.0 . It includes the CLI, MCP server, REST gateway, WASM engine, and desktop app.\n\nAn Enterprise Edition (SSO, RBAC, audit logs, DLP) is developed separately.",
+  "reactions": [
+    "[Hacker News] And unfortunately, these posts goes on frontpage, because AI, but no ai posts are largly ignored.",
+    "[Hacker News] &gt; Anecdotally, it&#x27;s not representative of your experience. I&#x27;m glad you got the gist of my comment :) &gt; But... Rewrite-it-in-Rust is a meme, while rewrite in Go is not. Today no, but it definitely was when it first became popular, &quot;X but in Go&quot; was fairly common on the HN frontpage and elsewhere. Just like &quot;X but in Ruby&quot; used to be a thing too, but isn&#x27;t a",
+    "[Hacker News] Vibecoding your own PDF engine is choosing none of them.",
+    "[Hacker News] That&#x27;s not vague. That&#x27;s derivation. To use an AI-ism.",
+    "[Hacker News] As someone whose commercial software needs to ingest PDFs: I stay away from things like lopdf because of how they fail to handle broken pdfs. The first project you linked explicitly calls out broken pdf handling.",
+    "[Hacker News] Completely agree, it doesn&#x27;t help that the models all seem to promote this behavior by writing everything from scratch most of the time. I explicitly start most programming projects with a request for existing libraries and explicit instructions to the model to prefer using them and keep our logic exclusively to what we need beyond that. People are forgetting and&#x2F;or don&#x27;t realize th"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+      "url": "https://news.ycombinator.com/item?id=50238739",
+      "score": 182,
+      "commentCount": 66
+    },
+    {
+      "origin": "GeekNews",
+      "title": "PaperPilot - 클라우드 없이 WASM과 MCP를 지원하는 순수 Rust PDF 엔진",
+      "url": "https://news.hada.io/topic?id=36034",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}
