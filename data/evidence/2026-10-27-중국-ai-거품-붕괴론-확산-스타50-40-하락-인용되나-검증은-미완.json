@@ -1,0 +1,22 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] This is a big deal. It&#x27;s Reuters, not some blogger, saying this. The STAR50 index of AI and semiconductor stock in China is down 40%. P&#x2F;E from the index dropped from around 250 to 100, which is still high. The investment community in China is concerned about other indices over-weighting tech stocks with high P&#x2F;E ratios. Then index funds pick them up and funnel capital into them. AI "
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "In China, the AI bubble has burst",
+      "url": "https://news.ycombinator.com/item?id=50245821",
+      "score": 19,
+      "commentCount": 1
+    },
+    {
+      "origin": "r/singularity",
+      "title": "In China, the AI bubble has already burst, $480 billion wiped out",
+      "url": "https://www.reddit.com/r/singularity/comments/1xg48ci/in_china_the_ai_bubble_has_already_burst_480/",
+      "score": 9,
+      "commentCount": 0
+    }
+  ]
+}

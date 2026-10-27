@@ -1,0 +1,19 @@
+{
+  "articleText": "[Hacker News — j11g.com]\nLast weekend I watched four people desperately trying to get a laptop to connect to a screen. I was happily observing their efforts, with zero intent to join in.\n\nMy reply: \"Haha sorry no! My experience is that adding more people will not solve this problem any quicker\".\n\nIt was formulated by computer scientist Frederick P. Brooks Jr. in his 1975 book The Mythical Man-Month, based on his experience managing the IBM OS/360 project.\n\nHowever I got to thinking. Does this still hold up in the age of AI agents and LLMs?\n\nAt first glance, you’d think no. The traditional bottlenecks -- onboarding time, endless stand-ups, and office politics -- disappear overnight. An AI agent is up to speed in milliseconds and doesn't demand a coffee break.\n\nBut when you look closer, and the law hasn't vanished. It just mutated.\n\nThe famous \"Baby Problem\" remains: nine agents still can’t deliver a baby in one month. Sequential tasks are still sequential.\n\nOverhead hasn't disappeared; it shifted: instead of managing people, you are now managing agents. Someone still needs to define \"done\", review the code, catch hallucinations, and stitch the pieces together.\n\nThrow nine autonomous agents at a single codebase without crystal-clear orchestration, and they will happily rewrite each other's work in a high-speed loop.\n\n\"Adding agents to a project with unclear requirements gets you the wrong answer faster.\"",
+  "reactions": [
+    "[Hacker News] You might be surprised to learn that yes, regularly pointing a tool at the codebase and seeing it found no issues is indeed enough to claim compliance with cybersecurity regulations. While we may use deterministic tools like static code analysis, dependency scanners and similar today, people are already replacing&#x2F;augmenting them with LLMs. While every breach will trigger a root cause analysis",
+    "[Hacker News] There is a difference between building a product and building a product that sells. So, which one are we talking about here? In my opinion MMM talks about the latter",
+    "[Hacker News] I was talking about it for a while with colleagues. AI besides other benefits, needs to be treated as great interface for discovery, you have your features baked in, AI uses it via your users and MCP, then you figure out what are actual flows of my users and then you build it",
+    "[Hacker News] There is a great turkish proverb about this &quot;one hand is nothing,two hands make a sound&quot; (i hope i translated it right). So,adding people to a task isnt necessarily bad in every situation. Honestly, it depends on the nature of the job beacuse everyone approaches a problem from diffrent perspective",
+    "[Hacker News] Plus you&#x27;d kill a lot of people. &quot;You&#x27;re absolutely right, that drug was lethal and that&#x27;s on me. I&#x27;ll add a note to check human toxicity for all compounds in the future. To verify the safe dosage, I&#x27;ll administer a high dose and then check smaller doses until the patient survives — not guesswork, grounded load-bearing experiments.&quot;"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The Mythical Man-Month in the Age of AI",
+      "url": "https://news.ycombinator.com/item?id=50255298",
+      "score": 35,
+      "commentCount": 23
+    }
+  ]
+}
