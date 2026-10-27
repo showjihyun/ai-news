@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-28-미국-경찰-ai-의심-운전-단속-논란-한국-제도는-준비됐나",
+      "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
+      "urls": [
+        "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220"
+      ],
+      "publishedAt": "2026-10-27T20:00:31.032Z"
+    },
+    {
+      "slug": "2026-10-28-앤스로픽-해적-사이트-책으로-클로드-학습-적발-합법-구매-도서-학습은-공정이용-판결",
+      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+      "urls": [
+        "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVzktZjBLLXdtYmMxRG9iX1A1bVpYTjVraVF2R2drRm43TDhpRnZnZVhjQUd3b1E4WkR5clpvWVpaUUJTLWFxNGtYd0dHdFBTRk12YUpVWUJZZG15dlYwWWlibkFEUkExN2NodEhZZlMzalNJRk83MTcyWkFNYThUejcwTkQ?oc=5"
+      ],
+      "publishedAt": "2026-10-27T19:54:15.866Z"
+    },
+    {
       "slug": "2026-10-27-ai가-일을-줄여준다더니-내-깃허브-커밋은-2배로-늘었다",
       "title": "AI promised less work. I've never worked more",
       "urls": [
