@@ -1,0 +1,41 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nEarly progress on accelerating drug development with Claude 01 Case studies 02 Extending our work in the life sciences Published\n\nAnthropic’s life sciences team is working to accelerate curing disease. Over the past several months, our scientists have engaged in deep research partnerships with six organizations developing new medicines: BigHat Biosciences , Bristol Myers Squibb , Divergence Labs , Enveda , Generate Biomedicines , and The Column Group . We&#x27;ve also begun drug discovery efforts of our own. In doing so, we&#x27;ve learned a lot about how Claude can support drug development, and how we’ll need to improve Claude further to realize AI&#x27;s potential in medicine. We plan to scale this work up substantially from here .\n\nThere are many opportunities to speed up drug development, even beyond the most commonly discussed applications of AI, like proposing initial designs for new molecules. Developing a drug involves many varied tasks: doing early research to identify a target for a drug and the right type of drug to engage it, designing a molecule with the right properties, optimizing it to be manufactured reliably at scale, drafting the regulatory filings needed to run clinical trials, designing and administering those trials, and much more.\n\nOur strategy to realize AI’s medical benefits is based on having AI increasingly involved in all of these tasks. There is no single problem to solve; the bottlenecks are distributed all throughout the drug development process. The best way to identify and work through these bottlenecks is to get deeply involved in real drug programs, across many different disease areas and stages of development.\n\nSo, over the past several months, we’ve partnered with six organizations to do so. We’ve also started drug discovery efforts of our own, including programs for rare childhood forms of muscular dystrophy, where Claude handles much of the scientific and operational work.\n\nThis work serves our goals in three ways. First, it lets us better understand the strengths and limitations of our models in relation to a much wider range of drug development tasks (we’ve already prioritized specific improvements to our models based on what we’ve learned so far). Second, these programs can serve as case studies for the wider life sciences community. If Claude is to significantly increase the rate of new cures, we need to work with many more biotechnology firms and integrate Claude more deeply into their development processes. Third, these projects should, if their positive trajectories continue, have direct impact themselves. We’re optimistic that some may result in effective new medicines for the diseases they target, including food allergies, rare childhood diseases, and several forms of cancer.\n\nIn this post, we provide an update on our progress with our partners, along with technical reports and preprints that describe our thought process, methods, and early results in more detail. We then briefly outline where our work is headed next.\n\nGenerate Biomedicines: modality engineering. Generate Biomedicines has been working on increasing the usefulness of a cancer treatment known as CAR T-cell therapy. This therapy has historically helped treat blood cell cancers; Generate aims to reengineer it so that it can treat solid tumor cancers too. To do this, they’re aiming to shorten one part of the therapy’s genetic instructions, which would create room for additional instructions suited to other kinds of cancer. Six Generate scientists used Claude Code to propose new designs for this part. One design was about 70% shorter than the standard version, and in lab tests it was more effective: it allowed immune cells to make roughly 10 times as many receptors (the proteins they use to spot cancer cells), it killed tumor cells more efficiently, and the immune cells remained active for longer. Read more , and see Generate’s technical report .\n\nDivergence Labs: hit generation. Divergence Labs is working on a novel way to treat food allergies. Food allergies are set off by a reaction from a molecule called IgE, some of which is attached to our immune cells and some of which floats freely in our blood. Divergence Labs is developing drugs that would detach the IgE from our immune cells entirely, rather than solely neutralizing the IgE circulating in our blood, as standard medications do. This could provide a much more effective treatment, but it requires a precise design, with two “arms”: one that would bind tightly to IgE, and another that would help prise IgE from the immune cell. Claude converted Divergence Labs’ goals into a detailed design plan, and then, largely autonomously, generated roughly 35,000 antibody designs in about a month to be narrowed down and tested. In those early tests, Divergence found “hits” for both arms: three designs that could bind to IgE, and 20 that could dislodge it. Three of those 20 appeared to dislodge IgE more than the standard medication. Its next step is to buil",
+  "reactions": [
+    "[Hacker News] I’d love to read Derek Lowe from In The Pipeline eviscerate this.",
+    "[Hacker News] I work at a university, and part of the job is helping researchers with AI. Our bio and chem researchers are starting to despise Claude because it&#x27;s been actively getting worse over the last months with increasingly aggressive guardrails. Many of them gave up because they feel they can&#x27;t do anything useful with it anymore. There&#x27;s a verified life sciences program, yeah. Is it an eas",
+    "[Hacker News] Coming up with candidate drugs is the easiest part of the process. It’s possible that that could be improved a little (not sped up, but suggesting compounds in silico less likely to fail) and possibly have suggestions for scale up, but those are all hard, and the latter is less amenable to being “read” during trains phase. This has been one of the target AI applications since the 1960s. (Former dr",
+    "[Hacker News] I might be wrong, but I expect robotics to come before Biology. At least robotics is much easier to verify, most humans can look at a robot and let you know if it is working correctly or not.",
+    "[Hacker News] I think this is because testing candidates in human trials is far removed from LLM prompting.",
+    "[Hacker News] Oh I&#x27;d hope we can do better. Cures with only theoretical evidence and an inscrutable explanation for why they work sounds terrible."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Early progress on accelerating drug development with Claude",
+      "url": "https://news.ycombinator.com/item?id=50265609",
+      "score": 72,
+      "commentCount": 56
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Early progress on accelerating drug development with Claude - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Reports Early Drug Development Progress With Claude - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRFpQdXBqSjlfZWxETmtkV2xfejVYQmxSOFBnQU1IeE9nRko2RTFsN1drMlNDNnVVbHRXZ0E3eWppS3ZvUzQ3QV92U1Fla3NwVzZ6ajc4S2gwTUhTNDljamJzd3YzOVIxUFVQWnBxSGNQbWFTOXptbF9MVVA1UnZQZy1vNDFLaGswWkxF?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Early progress on accelerating drug development with Claude",
+      "url": "https://www.reddit.com/r/singularity/comments/1xh4yqn/early_progress_on_accelerating_drug_development/",
+      "score": 7,
+      "commentCount": 0
+    }
+  ]
+}
