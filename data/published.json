@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-10-28-구글-지니-4-공개-실시간-오디오2분-연속-시뮬레이션",
+      "title": "Meet Google DeepMind&#8217;s Genie 4: Real-Time World Model With Native Audio",
+      "urls": [
+        "https://marktechpost.com/2026/10/28/google-deepmind-genie-4-world-model",
+        "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering",
+        "https://theverge.com/tech/1019076/google-genie-4-ai-model"
+      ],
+      "publishedAt": "2026-10-28T08:55:26.286Z"
+    },
+    {
       "slug": "2026-10-28-인터넷-끊겨도-작동하는-생존-ai-서바이벌-llm-등장",
       "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
       "urls": [
