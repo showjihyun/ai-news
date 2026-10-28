@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-29-밸브-ai-복제-게임-막으려면-커뮤니티와-업데이트로-승부하라",
+      "title": "Valve Responds to Developers Fearing AI Slop and Clones",
+      "urls": [
+        "https://invenglobal.com/articles/27761/valve-responds-to-developers-fearing-ai-slop-and-clones"
+      ],
+      "publishedAt": "2026-10-28T15:49:30.731Z"
+    },
+    {
+      "slug": "2026-10-29-하비-6800억-투자받을-때-개발자-한-명이-만든-무료-법률-ai",
+      "title": "Harvey raised 500M for legal AI, I built the same and open sourced it",
+      "urls": [
+        "https://github.com/thomasunise/casecite"
+      ],
+      "publishedAt": "2026-10-28T15:44:34.798Z"
+    },
+    {
       "slug": "2026-10-28-구글-지니-4-공개-실시간-오디오2분-연속-시뮬레이션",
       "title": "Meet Google DeepMind&#8217;s Genie 4: Real-Time World Model With Native Audio",
       "urls": [
