@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-28-인터넷-끊겨도-작동하는-생존-ai-서바이벌-llm-등장",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "urls": [
+        "https://brangus.io/survival-llm"
+      ],
+      "publishedAt": "2026-10-28T02:46:33.572Z"
+    },
+    {
+      "slug": "2026-10-28-앤스로픽-美-정부-전용-클로드-40-할인-한국-공공부문엔-아직-먼-이야기",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "urls": [
+        "https://anthropic.com/news/expanding-partnership-gsa",
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5"
+      ],
+      "publishedAt": "2026-10-28T02:41:17.591Z"
+    },
+    {
       "slug": "2026-10-28-앤스로픽-클로드로-신약개발-가속실제-성과는-어디까지",
       "title": "Early progress on accelerating drug development with Claude",
       "urls": [

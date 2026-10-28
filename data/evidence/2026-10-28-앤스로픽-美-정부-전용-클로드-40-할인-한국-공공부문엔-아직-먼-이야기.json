@@ -1,0 +1,26 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nWe are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. For the first time, the discount applies across every product surface, including when agencies buy from us directly today and through cloud providers in the coming months. The discount also extends to state, local, tribal and territorial governments.\n\nWe are also launching a dedicated program to help agencies implement and make the most of their Claude use. These programs are commonly leveraged by our private sector customers and we’re looking forward to bringing those best practices to our public sector partners in the coming weeks.\n\nApproximately 500 US federal, state, and local government organizations now use Claude. Weekly Claude for Government active users are up about eightfold since February, and usage across federal civilian agencies has grown about 20-fold in a year. Those organizations run some of the most important systems in the country, usually on tight budgets and with long procurement cycles. This agreement is built to support that work, so they can apply Claude to hard problems without a large upfront commitment.\n\nThe discounts offered through the agreement are estimated to save the government $1 billion. Agencies are not bound by a minimum spend commitment and will be able to pay for the usage they consume.\n\nGovernment agencies are using Claude to solve some of their most important challenges. Examples include managing backlogs, records and forms, and modernizing old code. Some of the ways agencies are using Claude include:\n\nAgencies can use Claude for their most sensitive unclassified work. Claude for Government, which delivers Claude&#x27;s coding and agentic work capabilities and provides near-feature parity with commercial offerings at a FedRAMP High authorization level, was made generally available on September 30.\n\nAgencies building their own tools can use Claude through Amazon Bedrock or Google Cloud’s Vertex AI. On Bedrock, Claude is authorized for FedRAMP High, with select models authorized for DoD IL4 and IL5 workloads in AWS GovCloud. On Vertex AI, Claude is authorized for FedRAMP High.\n\nClaude Enterprise is in process for FedRAMP Moderate authorization through the FedRAMP 20x program, marking the next evolution of how we are bringing the same innovative technology available commercially to the government.\n\nGovernment agencies can buy Claude at the OneGov discount through GSA&#x27;s Multiple Award Schedule today. Whether your department or agency already uses Claude or is interested in using it, our Public Sector team will help discuss your options.",
+  "reactions": [
+    "[Hacker News] Huh – I always thought GSA was still full Elon&#x27;s minions.",
+    "[Hacker News] we&#x27;re in the limbo zone where the rest of the government is basically ignoring the DoD&#x27;s designation",
+    "[Hacker News] There is a whole side of sci-fi that has explored the idea that AI government could finally cure us so much more than just one class of corruption. There are, however, new downsides.",
+    "[Hacker News] ...no? Whatever value they got from inference they already did is still there? Of course the government still needs to worry about vendor lock-in, but they&#x27;d have to do that no matter what, and also general-purpose LLMs are relatively replaceable for most use cases.",
+    "[Hacker News] &quot;Can&quot; and &quot;will be used by the people in power to&quot; are two different things. and &quot;Can in a way that would work&quot; is a whole nother thing."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "url": "https://news.ycombinator.com/item?id=50266701",
+      "score": 23,
+      "commentCount": 13
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
