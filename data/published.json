@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-29-클로드-코드-백그라운드-에이전트-대화-30초마다-요약-토큰-20-낭비",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "urls": [
+        "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+      ],
+      "publishedAt": "2026-10-29T13:44:22.044Z"
+    },
+    {
+      "slug": "2026-10-29-제미나이-4-카본-벤치마크-1위인데-써볼-수-없다",
+      "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+      "urls": [
+        "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Jbl9CSURpTTZwYV9YdHMwTVpFS0FMa0lKdEVWVjRpcVJ3NTJCMFpVeTRJdzBYMmdjam9ERDRjYkk3eF92UjFBaWktUXVhRUlQc0ZJdjU0cTd0SkJUUVZqUzNFNno2bFJZVVhrREgxM0pOQjZSZTVNTklBbGI?oc=5",
+        "https://i.redd.it/cdb76ljes8yh1.png"
+      ],
+      "publishedAt": "2026-10-29T13:37:54.868Z"
+    },
+    {
       "slug": "2026-10-29-엔비디아-30b-파라미터-음성-인식-모델-오픈-공개-단일-칩에서-40개-언어-처리",
       "title": "NVIDIA Releases Nemotron 3.5 Transcribe: An Open 30B MoE Model for 40-Language Transcription with ~4B Active Parameters",
       "urls": [
