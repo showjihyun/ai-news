@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "slug": "2026-10-29-엔비디아-30b-파라미터-음성-인식-모델-오픈-공개-단일-칩에서-40개-언어-처리",
+      "title": "NVIDIA Releases Nemotron 3.5 Transcribe: An Open 30B MoE Model for 40-Language Transcription with ~4B Active Parameters",
+      "urls": [
+        "https://marktechpost.com/2026/10/28/nvidia-nemotron-3-5-transcribe-open-speech-llm",
+        "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model",
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+      ],
+      "publishedAt": "2026-10-29T06:28:34.169Z"
+    },
+    {
       "slug": "2026-10-29-구글-제미나이-4-카본-발표-보안코딩-특화-일반-공개는-미정",
       "title": "Gemini 4 Carbon",
       "urls": [
