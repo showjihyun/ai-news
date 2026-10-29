@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] what app do you run on Android for this use-case?",
+    "[Hacker News] Almost all ML models come with reference python code that will run on most architectures. If you want an implementation optimized for a certain architecture the cost is between 10-30USD of opus tokens and is oneshottable: (&quot;implement Nvidia nemotron 3.5 transcribe for the intel npu on this machine. Use the hf transformers implementation as reference. The finished artifact takes pcm on stdin a",
+    "[Hacker News] ASR = automatic speech recognition. I think this is the same as STT, speech to text? It seems to want an NVidia GPU. I didn&#x27;t look closely to find out if it can run usably without one. For me, usable might mean 10% of realtime, i.e. an overnight run on my old x86 box for 1 hour of transcription. Of course faster is always nice. YMMV.",
+    "[Hacker News] tried running it against a full anime episode, both vocal isolated and raw. it got confused by english words in the theme song and failed spectacularly three times",
+    "[Hacker News] ugh, translation is worse than passing a parakeet transcript to a cloud llm. disappointing model.",
+    "[Hacker News] Agreed. I find Parakeet or Qwen ASR better. I’m still sad Voxtral 3 wasn’t made open source by Mistral."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+      "url": "https://news.ycombinator.com/item?id=50275128",
+      "score": 108,
+      "commentCount": 17
+    },
+    {
+      "origin": "Hugging Face Blog",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

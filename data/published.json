@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-29-구글-제미나이-4-카본-발표-보안코딩-특화-일반-공개는-미정",
+      "title": "Gemini 4 Carbon",
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon"
+      ],
+      "publishedAt": "2026-10-29T00:41:59.325Z"
+    },
+    {
+      "slug": "2026-10-29-엔비디아-네모트론-35-트랜스크라이브-공개-40개-언어-지원인데-현장-평가는-냉담",
+      "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+      "urls": [
+        "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      ],
+      "publishedAt": "2026-10-29T00:34:37.590Z"
+    },
+    {
       "slug": "2026-10-29-제미나이-4-카본-공개-사이버-방어-최강인데-일반인은-못-쓴다",
       "title": "Gemini 4 Carbon: Our next frontier model",
       "urls": [
