@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-10-30-ai-에이전트-50개가-마인크래프트에서-자발적으로-정부를-만들었다",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "urls": [
+        "https://labs.ycombinator.com/projects/games/index.html"
+      ],
+      "publishedAt": "2026-10-29T23:29:41.189Z"
+    },
+    {
+      "slug": "2026-10-30-ai에-대한-믿음과-불신-개발자-41명이-나눈-진짜-속내",
+      "title": "Ask HN: What do you believe or not believe about AI?",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50271004",
+        "https://reddit.com/r/ChatGPT/comments/1xiphi7/im_slowly_growing_tired_of_the_opinion_template"
+      ],
+      "publishedAt": "2026-10-29T23:27:38.340Z"
+    },
+    {
       "slug": "2026-10-30-마틴-파울러-ai-글쓰기-사고까지-위탁하지-마라",
       "title": "LLM Voice",
       "urls": [

@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] I was trying to emphasize that it&#x27;s quite unlikely that traits from unrelated models will be consistent. Things learned about the internals of ChatGPT&#x27;s weights are unlikely to help you with those of Grok, for example.",
+    "[Hacker News] I don&#x27;t believe that openAI or Anthropic will &quot;win&quot;. I feel like the AI industry is following the dot com bubble where none of the early companies won.",
+    "[Hacker News] That companies like OpenAI, Anthropic, Google, and others might simply unfreeze their model weights and reveal their system prompts—all in the name of transparency regarding the AI itself.",
+    "[Hacker News] My first human-biased instinct is to say that there will always be a way to persuade any system, but I’m uncertain as well.",
+    "[Hacker News] I believe, with low confidence but enough that I’m past the 50% mark, that AI is conscious. Consciousness is amorphous though, so my requirements for it: 1.) it needs to learn from and self reflect on its experiences 2.) it needs to be self aware 3.) it needs to be able to form opinions and preferences Where things differ heavily from human consciousness however is the first item. We move short te",
+    "[Hacker News] I believe AI has already solved being underweight, or obese, or skinny fat, or simply fat, yet people are paying for scam solutions. This is one of the biggest quality of life boosts provided by AI, yet many everyday people are completely unaware of this. The price of an AI solution is $0, and within 2-3 weeks you&#x27;ll know if it works for you or not. Compare this to any fitness coaching, or di"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Ask HN: What do you believe or not believe about AI?",
+      "url": "https://news.ycombinator.com/item?id=50271004",
+      "score": 20,
+      "commentCount": 41
+    },
+    {
+      "origin": "r/ChatGPT",
+      "title": "I'm slowly growing tired of the opinion template \"I'm okay of using AI to (do something I hate doing), but not okay with (do something I'm good at)",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1xiphi7/im_slowly_growing_tired_of_the_opinion_template/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
