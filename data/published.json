@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-10-30-마틴-파울러-ai-글쓰기-사고까지-위탁하지-마라",
+      "title": "LLM Voice",
+      "urls": [
+        "https://martinfowler.com/bliki/LLM-Voice.html"
+      ],
+      "publishedAt": "2026-10-29T19:14:53.835Z"
+    },
+    {
+      "slug": "2026-10-30-미스트랄-1조-파라미터-라지-4-가중치-공개-유럽형-주권-ai-내세워",
+      "title": "We're releasing the weights of Mistral Large 4",
+      "urls": [
+        "https://mistral.ai/news/mistral-large-4-oss",
+        "https://mistral.ai/news/mistral-large-4-oss",
+        "https://huggingface.co/blog/mistral-large4",
+        "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "https://thenextweb.com/news/mistral-large-4-open-weights-release"
+      ],
+      "publishedAt": "2026-10-29T19:10:58.925Z"
+    },
+    {
       "slug": "2026-10-29-클로드-코드-백그라운드-에이전트-대화-30초마다-요약-토큰-20-낭비",
       "title": "Claude Code regularly sends each background agent’s transcript to its model",
       "urls": [
