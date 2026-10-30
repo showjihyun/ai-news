@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-10-30-클로드-듀엣-자격증명-없이-쓰는-첫-ai-비서로-평가받다",
+      "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+      "urls": [
+        "https://fig.blue/posts/duet-is-the-future"
+      ],
+      "publishedAt": "2026-10-30T02:49:06.713Z"
+    },
+    {
+      "slug": "2026-10-30-프로톤-ai-전면-도입-선언-프라이버시-기업의-모순인가-진화인가",
+      "title": "Proton goes all in on using AI",
+      "urls": [
+        "https://convo.casa/@b/117525936178835007"
+      ],
+      "publishedAt": "2026-10-30T02:47:03.490Z"
+    },
+    {
       "slug": "2026-10-30-ai-에이전트-50개가-마인크래프트에서-자발적으로-정부를-만들었다",
       "title": "We ran AI agent swarms in Minecraft and Mindustry",
       "urls": [
