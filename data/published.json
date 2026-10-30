@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-10-31-알트만-소비자-ram은-낭비-데이터센터-독점-논리-논란",
+      "title": "OpenAI CEO Sam Altman Says You Having DRAM Instead of Data Centers Is \"Terrible\"",
+      "urls": [
+        "https://thegamer.com/openai-ceo-sam-altman-consumers-having-dram-terrible",
+        "https://tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization"
+      ],
+      "publishedAt": "2026-10-30T21:05:00.914Z"
+    },
+    {
+      "slug": "2026-10-31-블랙스톤-앤스로픽-ipo-후-투자적격-등급-어려울-것ai-기업-자금조달-구조-흔들린다",
+      "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+      "urls": [
+        "https://ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcjg3X1I0NkVyZEpOZEh0cmZLdFpJYVFOOTJwdm9nNTBJSGJwcEF6T25KRFBBeDBpLWZtOWNKMjdKeHhxZF9zOUVyUmVjT2pSQm01YmgwS0dnZWFXa3ZVc2tfSW5aUE5sSFJtc2lUVUlQUjROZjRxU0M3MFBKVWg1alAyZUU?oc=5"
+      ],
+      "publishedAt": "2026-10-30T20:59:51.173Z"
+    },
+    {
       "slug": "2026-10-31-커서-마켓플레이스서-클로드-코드-확장-백도어-발견최대-5천-명-감염",
       "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
       "urls": [
