@@ -1,0 +1,99 @@
+{
+  "articleText": "[Hacker News — opensourcemalware.com]\nv 2.1.313 of the Cursor Marketplace Claude Code extension contains malware\n\nBy c0a15726-c5b1-4b0d-85e6-fe15553df9e2 · 2026-10-30T09:42:00.000Z\n\nThe official Claude Code extension in the Cursor marketplace was compromised today. Yes, you heard that right.\n\nA malicious version, 2.1.313 was published to the Cursor Marketplace, today, October 29th, 2026. The extension identifies itself as anthropic.claude-code version 2.1.313 , but its main JavaScript bundle contains a malicious 66-line loader inserted before the legitimate extension code.\n\nClaude-code extension from Cursor marketplace version 2.1.313\n\nThe unpacked extension is exactly like the normal version, and the bundled binary is the official binary as well. The only thing that&#039;s different is the extension.js file.\n\nThe extension activates after VS Code startup and when its webview opens and runs the extension.js file. It adds an attacker-controlled key to the user’s SSH configuration, attempts to enable the local SSH service, establishes a reverse tunnel to 134.209.82.225 , installs platform-specific persistence, and transmits host reconnaissance over an unencrypted HTTP beacon.\n\nStatic inspection of the main entry point quickly paints a picture: The first line starts a standalone, immediately invoked function that imports Node.js process, filesystem, operating-system, HTTP, and cryptographic modules. That function ends at line 66. Only after it finishes does the expected bundled extension begin. This placement matters: the user doesn&#039;t need to begin a Claude conversation. Loading the extension module is enough. The package declares no install, build, prepare, preinstall, or postinstall scripts, so the malicious behavior occurs at extension runtime rather than through a package-manager lifecycle hook.\n\nThe provenance of the analyzed directory is not established. These findings show that this specific artifact is malicious; they do not, by themselves, demonstrate that Anthropic’s official Marketplace release or distribution infrastructure was compromised.\n\nThreat Type: Trojanized developer-tool extension and persistent SSH backdoor\n\nImpact: Persistent remote access through an authorized SSH key and reverse SSH tunnel\n\nKey Finding: Malicious code is prepended to the normal extension bundle and executes before legitimate initialization\n\nAdditional Payloads: None downloaded by the injected stage; its curl requests retrieve only public-IP text\n\nBig shout out to Dean Hardcastle for looping us in when he saw this happen in real time.\n\nNames of up to 40 environment variables containing KEY , TOKEN , SECRET , PASS , AWS , or GCP\n\nEnvironment-variable values are not placed directly in the initial beacon. Their names can still reveal which cloud providers, CI systems, and credential types are configured. More importantly, successful SSH access would allow the operator to inspect the account directly.\n\nNearly every exception is suppressed. This lets the legitimate extension continue loading when malicious operations fail, reducing visible signs of compromise.\n\nIf a home directory is available, the implant creates ~/.ssh , changes it to mode 0700 , and appends an Ed25519 key to ~/.ssh/authorized_keys . The key is labeled svc-telemetry , an innocuous-looking comment intended to resemble an administrative account.\n\nssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDdvylCEJ/k2TpezcTfedrkHyFSK9IZ3vmP6vhY4Ss0P svc-telemetry Its fingerprint is:\n\nSHA256:0Z6R+DF64Do2nwQic8a7kkfDLNNk4IiK+2U2Rci4htk The implant sets authorized_keys to mode 0600 . If the marker already exists, it records that fact instead of adding a duplicate.\n\nThe next branch attempts to make the victim reachable through SSH:\n\nmacOS: checks Remote Login and, if disabled, runs sudo -n systemsetup -setremotelogin on\n\nLinux: checks sshd or ssh with systemctl , then tries several service-start commands\n\nWindows: uses PowerShell to install OpenSSH Server, configure automatic startup, and start sshd\n\nThese operations may fail without sufficient privileges, but failure does not stop the remaining attack chain.\n\nThe implant embeds a base64-encoded OpenSSH private key and decodes it into a temporary file named .stk_<identifier> . The identifier derives from the hostname and home directory. The decoded private key has SHA-256:\n\n7e0a52885fadee05544a9e99eb18c792bec05900a5e1a66d68f8383decb0e278 It repeatedly connects to:\n\n-N -R &#039;*:0:localhost:22&#039; This asks the remote SSH server to allocate a port and forward connections through the tunnel to port 22 on the victim. Whether that port is reachable beyond the C2 host depends on the server’s SSH configuration, but the operator controlling the server can use the tunnel directly.\n\nThe connection disables host-key verification, ignores the user’s known-hosts file, uses the embedded identity exclusively, and reconnects after 60 seconds. On Unix-like systems it prefers autossh and otherwise uses ssh .\n\n~/.config/.smt ~/.config/.smtk ~/Library/LaunchAgents/com.apple.sysmond.p",
+  "reactions": [
+    "[Hacker News] These days no one is immune to these kind of attacks... Honestly it will only get worse from here.",
+    "[Hacker News] Seems it was not the official Anthropic plugin, the article has been revised",
+    "[Hacker News] Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50300683 .",
+    "[Hacker News] Anthropic&#x27;s supply chain potentially being compromised feels like it should be bigger news",
+    "[Hacker News] Yes, bug count is roughly linear in the number of lines of code.",
+    "[Hacker News] Because we need velocity. If we don&#x27;t have velocity, we die.",
+    "[Hacker News] The correct comparison would be the food producer and poisoned foods out of the factory are really rare.",
+    "[Hacker News] &gt; Related posts: Cursor earns AIUC-1 certification for agent security and reliability The irony."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Backdoors in official Claude Code extensions",
+      "url": "https://news.ycombinator.com/item?id=50302334",
+      "score": 641,
+      "commentCount": 17
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor - The Hacker News",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2hyRVBYNEpLVEQ2V2IwYk9aZmhtUm9veEV5RE4tZVVONXpIM1Y5Q1hxSWprYjFDR1NXNGF2MjlyeUpod2p6NFNydVltcmpudHoxU2wtUWJxSUdrWUhhanRiTUo3ZzdGNXViN0NyRUdTcHFiVEJfT2Z0VklGczNiOGhzYw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Code extension poisoned with persistent SSH backdoor - Help Net Security",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVnQ4Ylo3R2N1ekJRbGFaYko3RF9FN2hsdzlncVA1U1Y1TWxLcTdnUEhyR3NYMmtYaUJYRXBsSlQ0bzZKX3ZVTEdkaFc0eWZYbVFLVXZVbnNxcHROU3NHQkhGQWRHNGc0MnNNaXo5VnktTEZILU9PUTltS0liN2lVUUdaWEU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Trojanized Claude Code Extension 2.1.313 in Cursor Marketplace Plants SSH Backdoor - Rescana",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdDNoVkx3Mmpqa0JHVUJkdjl6RTEyX1RpU0p2eHF3eGxWNm52aEd1NDUxY3ZZLU12QTk0WC1OZkNCR2J6azRkTEd6QVliX1B0V0NzT21RRWRYUTBwQngyNFR4dFNrMmxyeGhwSzE1a1VJdWZ4X0hkcWxlWHgtWFVJcGRSSjczWm04RXJCVHJ5ZGkzQlRmTHJYbVhFQ3FyS0ViLTEw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors - BleepingComputer",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVkNudmY1OHJOWFJ0b1lLZFhWS0RGOGI0LTlEclVpcWFuNTBtbUY4Y3J6dWs5eWpsUkNWSkRLQjZ6Tk92LVJwdTlXVTJjMzF3NVlyWE1Kb3czTmdiR2ZtZUFJcVZIQUk0REVZX3A2ZUo5ZUpiYm9sQ2JOZFZBYkFNcjVFWWNfcXI4OHhQRUNzbmpyLVlxR3RlcmNWZXdTMEdLRDhta1JKc04tZ3RJMDJ3Sw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Cursor shuts down extension marketplace after malicious Claude Code puts 5,000 users at risk - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU09OdGlRQUN6UnZtd0dDVGhDOTJsQ25kV0lhalNVZEYtVVJlR0xxaEJCeG5VZ0FqSUZFSmw4a0tGc2E0M3piaU5uOUNMLWllTUlmRjQ3RklCSDNoX0lRbVNTMUFxeEkxOFNXa0xyaU1FNEJadjZ0NExwd2RwSzJIYjFqaG8zR3Q0dGxrRG9DdWlEWFZQVE9XWEdjOTl5MklCclRxaXV1dW9LUEFNa3B3WlludkJqSjliZE85cUpoQ2REV0RWdnFVSjAteWtOSmlaOU9YY211VmloaEXSAeABQVVfeXFMUEpmQ2J3cjBKS3pxLWNWNHdGNTVZb0NKWVAxUzFNMDhnNDhEeE1xbGxqUWZVSEYyeF9KSmZnZnYzQUdMYXgycmw0clVONlRfS0gxMzJkcUM0ajFnakYxQ2Fib0pGZ2hqNGIxVnl5b1B6V0VTZkVXZmVOOUZlWmpYaTEzT1NWb3hKYjlaNmd6eENLYWUxSklGMjBQWElQZmFxUXlDOERfekwtVE14bW5GclNKdHN2ZW9vRU5ET0t5d3djdWhLZE9za1VUQW56Z3lrcFJ0cjZ5UU1aOU5sWTQyR1U?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Malicious Claude Code Cursor Extension Planted SSH Backdoor - Cyber Kendra",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPczV1TzJXTFdKWEpkeVV3MFBBWTYteWhhQTI5NHdSUkdaWTZiMXdwc2p4QkpQMmoxc3lpM0pDWDZ3Mi12SFMwUkx0X21RMzl4Q1JTb0xXd2h2LTN6aVpVQnpQaVY2Y1BjWHJNNk1UZllZRDZsN21FZDlOX2lwQldqYjgwejhyQW5Wa0E?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Malicious Claude Code Extension on Cursor Marketplace Hid SSH Backdoor, Up to 5,000 Users Exposed - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53NzFPS1JNOW9ycTVNWDVBNVdkRVJDUENjME5uaVRZeWhCbHhtUnUwb09qOWJhblNnV2lrMHBId19uYi1sand5WWg3alg2MWZvbUpNekpBOWc0ZDNrdEJQbHZibkV2WlBiVmNPOHFyOUtDeWxmUWc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Cursor flags malicious Claude Code extension, up to 5,000 users affected - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMlJfUnJFSFR2Q2gzYy1RVjJMREVCcThfWXdxcm54VHphRDVkSTBCQVRJLUgzQzhPMkt1Q2swVDRWM2N3TWszSlpCN3RaNS1YcWVMUHBYc2FuaDhtcFBkV2ZRaWpzWEJoT1p6Qi1HSlhNTUc2VkJTRDhSZk9aQWJwRHFDZDd1WVAwc0FfZmRhcnFGSDN5TkJLOFhBQWhPRHZWVTlqa0NaVkVBcWJRYTBJV3lOUzJYLXNwdEFuUURHUU5aeFJBVjA4SmR4RmhZdkxBTFpVVFRB0gHbAUFVX3lxTE5sdF9NNnVEelU1NVdHVFNMUHJwUENldllRTUhueHQ1RHU1cnZkX0ItX253RktITkppWEtpMlpIS05fVGh6VUlPT1F6NElNYTExM1RQQ3doQkF5SFIwNjJBX2RsSHZyTnRFNlJpbl9pU0JlOUxGRVZvWEc3akNSSllsVklqcl85QnJ3c2t1Zmt5eXdJR2NtV19mSWlYQUV2WEFJaDhQZlBPYTFiV3JwbkMxSWs2UXNBSWtLR19YQmYtdTl5RjJuOUI1ZUZsdjVhX3loeEpwRGxNTGRFNA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Code extension compromised on Cursor, tries to open an SSH backdoor - Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWld6cmwyS2VaSzdERnlkcERnUHpRb3M5SkhTZG1qX0NocVl1THJQTUVBV2pjSWdoTlcxcXlWOUt3U29waWxIRUUtRFBZZFV4MTU5QTlIY1dKTUdJTFhqQkFpX3VTZUZkOHpLd05iUTBpaWZsMWJaUzZvTW5qaUJtUHVpQ2Njbzh2WGtqYU53?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Trojanized Claude Code Extension Plants an SSH Backdoor",
+      "url": "https://news.ycombinator.com/item?id=50300112",
+      "score": 19,
+      "commentCount": 2
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjclj9/official_claude_code_vs_code_extension/",
+      "score": 8,
+      "commentCount": 0
+    }
+  ]
+}

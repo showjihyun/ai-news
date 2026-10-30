@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "slug": "2026-10-31-커서-마켓플레이스서-클로드-코드-확장-백도어-발견최대-5천-명-감염",
+      "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+      "urls": [
+        "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+        "https://phorion.io/blog/offical-claude-code-vsx-compromise",
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QN1Q5bXI1WXMzZlpOLWIxaDJEVGhuTWZxcXRwTWdaXzlETHZYd0pIcGhpdnR3R1dsQXUzWGFoZHUyZUd2UldGMHotYVFHNHFQZjdCWERJektwVXZVMWw5dGc4WldHQktiLXFYVnBST19Ecmc?oc=5",
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSE5Sd2ZzblVoTHk3cWowdjBHOUlGQ25obHhuSkoyell3S2JWTUxqeXFFRnBMbTVaOENobjFKVFJXT0VhQi1VSzVBX0dSM3N5SGJ4N2VWSjhnX3NCQlJsSmdTX1RmSlpEeHN0NFFXVll0MzZRV1lfbUpkcDZ1dk9xQXpSWHBVUVJiMDJCYXgtMmlxMnQ1a2dxcmxBZlFBcTY0SUZMYXZyeHNZX3o1ejRUbkxmN3JqRlYtSnNCRnFiZkswLWx4S2c?oc=5",
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdVA4YXJPS0JJMXRZSUFBTTc4Z2JwWGpaX2EtQ2c3VjJqYjNLVWhwcXJWb3NhRFFyX2NCWG12VzhwNGlNX1NwVmh3MUczbkJCQms1a0Z4OFgzek5PTll4ajRJS0Npc2hEdmtsNEFBSnRyTEZDaFd6QWdqTnBKa2FKYzRobGtwdw?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd0RoZEdVX05GUER3ZV9kSkUxcVVQblZobTh0ZmdLNnlHTFhMdmpYenN6dER2Qy1IeWpNYUhSUlBuREd3bC1ZZUlRdTRTMmtjdEJVYkpnWndjOGNYQmdGWmw2dVJXUmFHeTRRd0oxZUNqMFR6SnZiNHBjX2JlUzgzWHlHYUxNcjZwblNTa0J2bzU?oc=5",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdnVVUDhWYTZ2WjgtVmZpMzhaYzlWcGpXemVHaFpTMWdnaGxvU3lEQW96VnNhb2Q1UjlBZmpPcmNxUlpMdVNncFA0RC1mLTFNRDktYTlrNGlMRHFDLVNwTnMtbWhHMk10TjlxaHAxTzRkVmU3NW5vT1d0eUpuWWJQYg?oc=5",
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0dkaWlfVnhscS1vQm55TUZvZE5fT2NiWGlqa0VYX0hDakpaSXFidk0xRTctM3d4cjVoVzhKeWFEUlEycXBROEdudk9kNXR5SXMzNmJoRGs1VEs5U1ZGQnVKdUVxWkRlV2dhVmJXcTBlQUE2UmhUalZCT19aNW8xU1lTTTk1YTJjVWZGS2hRT3hyNGM?oc=5"
+      ],
+      "publishedAt": "2026-10-30T16:16:47.510Z"
+    },
+    {
+      "slug": "2026-10-31-커서-마켓플레이스-공식-클로드-코드-확장에-ssh-백도어-5천-명-노출",
+      "title": "Backdoors in official Claude Code extensions",
+      "urls": [
+        "https://cyberplace.social/@GossiTheDog/117528831681803563",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2hyRVBYNEpLVEQ2V2IwYk9aZmhtUm9veEV5RE4tZVVONXpIM1Y5Q1hxSWprYjFDR1NXNGF2MjlyeUpod2p6NFNydVltcmpudHoxU2wtUWJxSUdrWUhhanRiTUo3ZzdGNXViN0NyRUdTcHFiVEJfT2Z0VklGczNiOGhzYw?oc=5",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVnQ4Ylo3R2N1ekJRbGFaYko3RF9FN2hsdzlncVA1U1Y1TWxLcTdnUEhyR3NYMmtYaUJYRXBsSlQ0bzZKX3ZVTEdkaFc0eWZYbVFLVXZVbnNxcHROU3NHQkhGQWRHNGc0MnNNaXo5VnktTEZILU9PUTltS0liN2lVUUdaWEU?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdDNoVkx3Mmpqa0JHVUJkdjl6RTEyX1RpU0p2eHF3eGxWNm52aEd1NDUxY3ZZLU12QTk0WC1OZkNCR2J6azRkTEd6QVliX1B0V0NzT21RRWRYUTBwQngyNFR4dFNrMmxyeGhwSzE1a1VJdWZ4X0hkcWxlWHgtWFVJcGRSSjczWm04RXJCVHJ5ZGkzQlRmTHJYbVhFQ3FyS0ViLTEw?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVkNudmY1OHJOWFJ0b1lLZFhWS0RGOGI0LTlEclVpcWFuNTBtbUY4Y3J6dWs5eWpsUkNWSkRLQjZ6Tk92LVJwdTlXVTJjMzF3NVlyWE1Kb3czTmdiR2ZtZUFJcVZIQUk0REVZX3A2ZUo5ZUpiYm9sQ2JOZFZBYkFNcjVFWWNfcXI4OHhQRUNzbmpyLVlxR3RlcmNWZXdTMEdLRDhta1JKc04tZ3RJMDJ3Sw?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU09OdGlRQUN6UnZtd0dDVGhDOTJsQ25kV0lhalNVZEYtVVJlR0xxaEJCeG5VZ0FqSUZFSmw4a0tGc2E0M3piaU5uOUNMLWllTUlmRjQ3RklCSDNoX0lRbVNTMUFxeEkxOFNXa0xyaU1FNEJadjZ0NExwd2RwSzJIYjFqaG8zR3Q0dGxrRG9DdWlEWFZQVE9XWEdjOTl5MklCclRxaXV1dW9LUEFNa3B3WlludkJqSjliZE85cUpoQ2REV0RWdnFVSjAteWtOSmlaOU9YY211VmloaEXSAeABQVVfeXFMUEpmQ2J3cjBKS3pxLWNWNHdGNTVZb0NKWVAxUzFNMDhnNDhEeE1xbGxqUWZVSEYyeF9KSmZnZnYzQUdMYXgycmw0clVONlRfS0gxMzJkcUM0ajFnakYxQ2Fib0pGZ2hqNGIxVnl5b1B6V0VTZkVXZmVOOUZlWmpYaTEzT1NWb3hKYjlaNmd6eENLYWUxSklGMjBQWElQZmFxUXlDOERfekwtVE14bW5GclNKdHN2ZW9vRU5ET0t5d3djdWhLZE9za1VUQW56Z3lrcFJ0cjZ5UU1aOU5sWTQyR1U?oc=5",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxPczV1TzJXTFdKWEpkeVV3MFBBWTYteWhhQTI5NHdSUkdaWTZiMXdwc2p4QkpQMmoxc3lpM0pDWDZ3Mi12SFMwUkx0X21RMzl4Q1JTb0xXd2h2LTN6aVpVQnpQaVY2Y1BjWHJNNk1UZllZRDZsN21FZDlOX2lwQldqYjgwejhyQW5Wa0E?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE53NzFPS1JNOW9ycTVNWDVBNVdkRVJDUENjME5uaVRZeWhCbHhtUnUwb09qOWJhblNnV2lrMHBId19uYi1sand5WWg3alg2MWZvbUpNekpBOWc0ZDNrdEJQbHZibkV2WlBiVmNPOHFyOUtDeWxmUWc?oc=5",
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMlJfUnJFSFR2Q2gzYy1RVjJMREVCcThfWXdxcm54VHphRDVkSTBCQVRJLUgzQzhPMkt1Q2swVDRWM2N3TWszSlpCN3RaNS1YcWVMUHBYc2FuaDhtcFBkV2ZRaWpzWEJoT1p6Qi1HSlhNTUc2VkJTRDhSZk9aQWJwRHFDZDd1WVAwc0FfZmRhcnFGSDN5TkJLOFhBQWhPRHZWVTlqa0NaVkVBcWJRYTBJV3lOUzJYLXNwdEFuUURHUU5aeFJBVjA4SmR4RmhZdkxBTFpVVFRB0gHbAUFVX3lxTE5sdF9NNnVEelU1NVdHVFNMUHJwUENldllRTUhueHQ1RHU1cnZkX0ItX253RktITkppWEtpMlpIS05fVGh6VUlPT1F6NElNYTExM1RQQ3doQkF5SFIwNjJBX2RsSHZyTnRFNlJpbl9pU0JlOUxGRVZvWEc3akNSSllsVklqcl85QnJ3c2t1Zmt5eXdJR2NtV19mSWlYQUV2WEFJaDhQZlBPYTFiV3JwbkMxSWs2UXNBSWtLR19YQmYtdTl5RjJuOUI1ZUZsdjVhX3loeEpwRGxNTGRFNA?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWld6cmwyS2VaSzdERnlkcERnUHpRb3M5SkhTZG1qX0NocVl1THJQTUVBV2pjSWdoTlcxcXlWOUt3U29waWxIRUUtRFBZZFV4MTU5QTlIY1dKTUdJTFhqQkFpX3VTZUZkOHpLd05iUTBpaWZsMWJaUzZvTW5qaUJtUHVpQ2Njbzh2WGtqYU53?oc=5",
+        "https://opensourcemalware.com/blog/trojanized-claude-code-extension-plants-persistent-ssh-backdoor",
+        "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+      ],
+      "publishedAt": "2026-10-30T16:14:05.074Z"
+    },
+    {
       "slug": "2026-10-30-클로드-듀엣-자격증명-없이-쓰는-첫-ai-비서로-평가받다",
       "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
       "urls": [

