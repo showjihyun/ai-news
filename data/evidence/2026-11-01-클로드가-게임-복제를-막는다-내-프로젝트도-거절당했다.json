@@ -1,0 +1,54 @@
+{
+  "articleText": "[Hacker News — tomshardware.com]\nMany game developers are reporting Claude's refusal to work on their own projects.\n\nWhen you purchase through links on our site, we may earn an affiliate commission. Here&rsquo;s how it works .\n\n(Image credit: Getty Images) Copy link Facebook X Whatsapp Reddit Pinterest Flipboard Email Share this article 6 Join the conversation Follow us Add us as a preferred source on Google Newsletter Subscribe to our newsletter Reverse-engineering games for converting them between systems is currently a hot topic , and it's getting messier by the day. According to multiple user claims, Anthropic's Claude Code and/or Opus 5.5 model are blocking attempts at innocuous reverse-engineering, including but not limited to those using the popular Reverse Engineer Anything (REA) tool. That issue may be linked to a text rule that's now in force, which allegedly instructs the model to avoid \"[recreating] a specific existing game.\" The updated rule appears to be a move to limit a flood of AI-cracked and cloned titles, with some game devs even recently being hit by extortion scams that threaten to clone their game demos into complete games before they have a chance to finish and release the original. According to Twitter user Chasm, the game-related textual rule is \"Do build original games, games in a genre, and games from the user&rsquo;s own designs and assets. Don&rsquo;t build a recreation of a specific existing game, even if it is renamed or called original.\" There is no official or additional confirmation if this is the actual rule text, but it's plausible enough given the very clear refusals that devs have been encountering over the past week.\n\nThis situation is tricky to analyze due to the varying types of reports. First, the existence of a game-related rule is real, as Claude Code's GitHub is seeing an influx of issues complaining about refusals to do standard game work halfway through development , when replicating a game mechanic , and patching a tabletop-like game . It's possible that some of those reports have been made by users with nefarious purposes, but at least one is a bona fide developer with a real track record .\n\nAs for reverse engineering, there had already been a smattering of user reports across Reddit and other platforms, wherein Claude refused to perform tasks like (allegedly) analyzing a simple Windows crash dump, clearing up junkware on a Samsung TV, or just using REA altogether.\n\nThe simultaneous timing of both game- and cyber- security restrictions may be a coincidence, and yet there are complaints from purported game developers saying that Claude blocked their own games' anti-cheat development and security reviews , under the justification that its safeguards were triggered.\n\nAnthropic introduced its Cyber Verification Program on October 6, essentially saying that access to its frontier models' advanced cybersecurity capabilities would be limited to entities covered by Project Glasswing , taking effect immediately.\n\nAnthropic says Claude thwarted bioweapon research from state-sponsored actors Game decompilation hub freezes leaderboard after AI turns progress into a hollow numbers game amid explosion of 'AI slop' Claude nukes a developer's 700 GB home directory while testing deletion safeguards; automatic model safety downgrade may have contributed to the screw-up It's possible that whichever ruleset was applied is the same one that's causing the cybersecurity-related refusals. Still, it's odd to see that 24 days have passed since then, and yet reports of bot refusal are only coming in since the last week or so.\n\nAs for possible motivations behind these restrictions, they are twofold. The first and most obvious one is that Anthropic &mdash; and, by extension, other AI players &mdash; are preemptively protecting themselves from potential lawsuits from software companies, including game studios, for offering the means to reverse-engineer their software.\n\nGet Tom's Hardware's best news and in-depth reviews, straight to your inbox.\n\nThere is no official statement on these matters from Anthropic or other AI companies so far. Anthropic isn't the only one playing this game, too, as recently OpenAI deactivated the account of another person trying to clean up their TV's software.\n\nThe recent rash of AI-powered clones of application suites like Adobe's suite and Microsoft Office 365 , as well as the countless recomps and decomps of console games, likely has most every software company on earth rethinking their life choices. And probably also in frequent contact with their legal teams.\n\nThe online reaction was swift, suggesting that users looking to perform reverse-engineering work simply use Chinese, open-weight, or local LLMs instead of Claude or GPT. This, at the same time, highlights the irony of frontier AI companies that copied the world's information and art for their training sets and are now concerned with copyright infringement.\n\nAnd yet there are situations that merit some discussion, like the recent con",
+  "reactions": [
+    "[Hacker News] remember when llms were a tool and you could use them however you wanted? pepperidge farms remembers can&#x27;t wait for the day when you end up in jail for the wrong prompt or when you will be served ads through the kazoo.",
+    "[Hacker News] I honestly don&#x27;t see the appeal in cloning existing games. Why not leverage the tools to design and build new games? There are so many mechanics, niches and genres yet to be explored. Use this newly found power and bring them to life.",
+    "[Hacker News] This will work for approximately a year until ablated open weights models catch up, and then it will be open season. My 2c is that we need to figure out reputation systems that are resilient to low effort cloning rather than try to prevent it, because the latter approach is a non-starter outside of a very short time horizon.",
+    "[Hacker News] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50304358",
+    "[Hacker News] - all those RE guys ll just hop to chat gpt instead - if chat gpt also blocks it, they ll hop to all the chinese models"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+      "url": "https://news.ycombinator.com/item?id=50315987",
+      "score": 24,
+      "commentCount": 5
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering — sweeping new restrictions also hit legitimate developers and basic troubleshooting tasks - Tom's Hardware",
+      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQQVBYaTFvbkpGT0FNbXhiUmMwdHR3SlRQYVdwbWFRalZ0SEtSd0pSQ2FOOFhsazRtY1VCX19heHpvTzEwSkJGNFQ1b1lBOXJmU1M2NGdvRnZyMEVNaW9YbnpBS1pSMC1ET3JnR0s1WFE0WmluRldpemhYUUM0elI2YzFfQWFQWDZ5UlFWQUplbVBId1JDNGtCQUoyMHROcVlSbXZHMUxremtlaFd2cy1qRmc0eVJfYmM0Rm95SHdScVVUS2NBMW1vMFRsNUZsUk5ILXZ4dWdsVVFIRjZhU0ZxaGNyRkFtZnFUS2FpbUpDQ25ydWtoZkF6SHdiT252SDhTOWdGeERvNTU5SkxWRlFGOWluZGM3SEVGVW14ZHNtWTVmR2VkUlh1UFFZcjM3akFuRENWT3VhQTJ5clNnQ1JyNVpibU1oNlRm?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games - Game Developer",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbkRTbnBaVVk2ZEkzamZJZXpfMWlpWDJuRXJLa3RnUEI2SGJvYVJrd3dhUWhsRUh0Qi1NS0x1ZnJDTUNsY0FpUkVOaGpraTRzXy1ZV2g1bFhMemdEeWUwZzI1QkxRNExMSmxKUzYyeEEtUzJqTG1nS1NrcGRrWTRuMHhrcHJQQ1B6OFlwbXVjVXoxQjYzUTdJb0NCRFF4Q0lfUmRrd2ZMSXdtS25YR25HVjN2OU52SEp3Sncw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic takes steps to block Claude from reverse-engineering video games - Mashable SEA",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOWE1XzRLYklNY3ExdU5pSzYydWMtN1dyQndyZzVodlUtcDB0RDdTZ2FmNXVBSjVxcWJHbWcybG1oMmtNaHI3b0x6cG5RdVBDblN6aG1VX29XSXprMzVnMWM3R09fSmYyQnE0V2pYSVRfd3g4NUZDOTU2QzUtUDR0cGJPY0Z1N3QxQjJyNjlZSlZ4UC15Nkx3WkpFMEQ4MzNrWkhVaDBWQ0RzekFTSnpr?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Cracks Down on Game Cloning and Reverse Engineering, Catching Legitimate Developers in the Crossfire - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBFN253WEluRG56OEN0cXAzV3NTeVRLZkpUU2JqSExSLWJRRGdaX0FfanJxYkJrN1Jub21oR05XdUlrd213bHdodlpkaTBFYzZETEVXYWpiUUVSVGk5Uk0zSkliZW5xRXI0YmtpWF9BQ0ZwaHpDcHc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games - GameDev.net",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUHBxUHhfUVNYSXhTX0tpSDM5Sm5IYkVZTVlYWTIwUHBSdlA0Q3p5bzVxaURnVmc1d1IyS25Qb3RjR3pucVowU3F6VXQyeWJPWXcwSzd5Vnd6UkxwbzNXUzNOYk5YNVdiX1JyUlNZTFJaajZaRzRPenoyWk5ieFQyNzhSS0pIWU5Rb3NpZkgyQ09KWmZ2M1Zj?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
