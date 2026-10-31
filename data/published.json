@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-01-생성형-ai가-비판적-사고를-줄이는가-설문-논문이-던진-질문",
+      "title": "The Impact of Generative AI on Critical Thinking: Self-Reported (2025)",
+      "urls": [
+        "https://dl.acm.org/doi/full/10.1145/3706598.3713778"
+      ],
+      "publishedAt": "2026-10-31T20:25:34.847Z"
+    },
+    {
+      "slug": "2026-11-01-gpt-56이-팩토리오를-깼다-평화-모드지만-운반-벨트까지-썼다",
+      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+      "urls": [
+        "https://ryanmadden.net/gpt-56-beats-factorio",
+        "https://ryanmadden.net/gpt-56-beats-factorio"
+      ],
+      "publishedAt": "2026-10-31T20:11:49.762Z"
+    },
+    {
       "slug": "2026-11-01-앤스로픽-클로드로-게임-복제-막는다-스팀-ai-슬롭-사태-후-뒤늦은-조치",
       "title": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop - PC Gamer",
       "urls": [

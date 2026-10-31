@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — ryanmadden.net]\nPreviously: We got Claude Code playing Factorio , Towards beating Factorio autonomously , and Faketorio: an agent testbed\n\nI got GPT-5.6 Sol, running in Codex with low thinking level, to complete a peaceful (i.e. no biters) Factorio run in 13.5 hours of game time:\n\nSimilar to my previous post , this run used a game manager to allow Sol/Codex to interact with the game via a small library (though in this run it was Python rather than Bash). The library allows the model to play the game programmatically while enforcing the same restrictions that human players face when using the GUI (e.g. reach of the player, fog of war).\n\nObserving the run was fascinating: Sol exceeded my expectations in some areas while also showing clear weaknesses in others. I have the entire run recorded and am working on a commentary video, but in the meantime here’s a small timelapsed segment showing some parts of the factory:\n\nBesides the screencast, my run manager also captured production statistics throughout the game. Here’s a chart of total resource production, annotated with science research milestones:\n\nI had planned to terminate the run after blue science research, but Sol’s surprising effectiveness convinced me to keep it going. Unfortunately, the scaling issues I thought would occur in the blue science stage appeared later and slowed Sol’s relative progress significantly.\n\nThe rocket launch was only achieved through significant ‘manual’ effort on Sol’s part as it papered over its late-game failures to connect certain production systems by repeatedly ferrying supplies between areas of the factory.\n\nStill, I was pleased with the improvement over previous attempts with GPT-5.5 which suffered from the model’s failures to use transport belts at all.\n\nI’m optimistic about autonomous Factorio play as a medium for building intuition about the nature of model capabilities. In many ways playing Factorio is analogous to programming but with the benefit of being much more legible to casual observers, making it convenient for grounding discussion of model behaviors.\n\nI look forward to testing other models and thinking levels, as well as non-peaceful runs. Stay tuned!",
+  "reactions": [
+    "[Hacker News] i think it can work for procedurally generated situations, and the llm is acting more like a translator between data model and player rather than being a data storage layer. thats close to tweaking existing dialog, but with a bit more freedom. you still dont have to give the player arbitrary response",
+    "[Hacker News] You could play against an AI right now on the Brood War ladder right now. Granted, you have to make it to S rank first because that&#x27;s where the bots end up.",
+    "[Hacker News] SOTA LLMs would probably be fun opponents in turn based 4x.",
+    "[Hacker News] &gt; Robots: they&#x27;re just like us! Hah I dunno, I think most human players wouldn&#x27;t find that very fun and would instead take that as an opportunity to refactor the factory for optimized performance (i.e. the core gameplay loop)",
+    "[Hacker News] There are already mods for games like Grand Theft Auto V that make NPCs talk back and follow your verbal commands: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=085k5rCGaNM&amp;t=541s",
+    "[Hacker News] Coding agents are bad at architecture, Exhibit no. 12057."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+      "url": "https://news.ycombinator.com/item?id=50318871",
+      "score": 66,
+      "commentCount": 48
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "GPT-5.6 Sol can beat Factorio",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xkhxwr/gpt56_sol_can_beat_factorio/",
+      "score": 4,
+      "commentCount": 0
+    }
+  ]
+}
