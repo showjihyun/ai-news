@@ -1,0 +1,26 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nAnthropic is expected to receive a high &#8220;junk&#8221; rating from credit rating agencies following its initial public offering, according to a report from the Financial Times.\n\nThe FT says the investment giant Blackstone, the anchor investor in a recent $63 billion deal to finance Anthropic’s chips, told investors in the deal that it expects the AI lab to receive a “high” junk rating after its IPO. Previously, the FT notes, Blackstone had said the opposite: that the Claude maker would receive an investment-grade rating (indicating low risk for lenders) before 2027 rolls around.\n\nNow Blackstone expects double B range rating, the top tier of speculative &#8220;junk&#8221; grade, according to the reporting.\n\nTechCrunch reached out to Anthropic and Blackstone but both declined to comment.\n\nBlackstone&#8217;s forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business. The lab has been on a spending spree, racking up large compute power deals throughout the past 12 months, which has worried investors .\n\nAnthropic officially filed to go public earlier this week, kicking off a wave of speculation about how the massive IPO would impact the broader AI industry .\n\nBuy One Pass, Get a Second Free Cover more ground at TechCrunch&#8217;s ultimate founder bootcamp of the year by bringing your co-founder or partner for free Book before the BOGO deal expires\n\nEvery weekday and Sunday, you can get the best of TechCrunch’s coverage.\n\nTechCrunch Mobility is your destination for transportation news and insight.\n\nStartups are the core of TechCrunch, so get our best coverage delivered weekly.\n\nProvides movers and shakers with the info they need to start their day.\n\nBy submitting your email, you agree to our Terms and Privacy Notice .",
+  "reactions": [
+    "[Hacker News] SpaceX has Starlink which has massive margins and is growing quite quickly.",
+    "[Hacker News] I cant believe that the market still thinks LLMs are ever going to result in AGI.",
+    "[Hacker News] Mind share is the true moat. It doesn&#x27;t matter if your product is not special if when someone thinks &quot;frontier&quot; and &quot;agentic development&quot; they still think of Claude. They don&#x27;t think Antigravity or Gemini while Google has also decided to safety max themselves into failing to gain more mind share.",
+    "[Hacker News] Reading tea leaves, the market believes that whomever is first to AGI will reap all the benefits, leaving nothing to the runners-up. In this view, even a tiny edge in model quality is decisive.",
+    "[Hacker News] Google stock dipped because search traffic is shifting to LLMs. Even if Gemini got a large percentage of that, margins are much worse."
+  ],
+  "items": [
+    {
+      "origin": "TechCrunch AI",
+      "title": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic to receive high 'junk' rating from credit agencies following IPO",
+      "url": "https://news.ycombinator.com/item?id=50311311",
+      "score": 18,
+      "commentCount": 5
+    }
+  ]
+}
