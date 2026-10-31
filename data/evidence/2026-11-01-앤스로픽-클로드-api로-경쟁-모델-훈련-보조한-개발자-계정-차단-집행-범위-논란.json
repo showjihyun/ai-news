@@ -1,0 +1,24 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] One of my points of my ethical framework is that IP is valuable and should not be stolen. Another way of saying is that hard work that advances the state of the art should be rewarded. Patents should exist. I’m sure they are watching what I’m doing and would retaliate via service cut off and legal action if I crossed it and they found out. I would do the same thing if a user or employee did this t",
+    "[Hacker News] The fact that these corporations don’t spontaneously collapse from the sheer weight of irony is a continuing disappointment for me.",
+    "[Hacker News] Well their justification is that distillation is bad because it means baddies can get their own models without their safeguards and then make anthrax nukes or whatever. Even though it&#x27;s self serving, it&#x27;s at least self-consistent."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "url": "https://news.ycombinator.com/item?id=50319358",
+      "score": 133,
+      "commentCount": 40
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkm5gz/jiahao_shao_on_x_shame_on_darioamodei_anthropic_i/",
+      "score": 9,
+      "commentCount": 0
+    }
+  ]
+}
