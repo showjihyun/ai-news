@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-02-프로톤-ceo-보안-검토는-루저-사고-프라이버시-기업이-속도-택한-이유",
+      "title": "It wasn't AI that flipped Proton's charge",
+      "urls": [
+        "https://blog.raed.dev/posts/proton-loser-thinking"
+      ],
+      "publishedAt": "2026-11-01T20:58:02.716Z"
+    },
+    {
       "slug": "2026-11-01-ai가-프레임워크별로-코드-짜는-비용-직접-측정해-보니",
       "title": "The AI cost of JavaScript frameworks",
       "urls": [
