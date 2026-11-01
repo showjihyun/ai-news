@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-01-ai가-프레임워크별로-코드-짜는-비용-직접-측정해-보니",
+      "title": "The AI cost of JavaScript frameworks",
+      "urls": [
+        "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks"
+      ],
+      "publishedAt": "2026-11-01T09:38:40.096Z"
+    },
+    {
+      "slug": "2026-11-01-챗gpt코덱스-사용량-12월부터-합산-무제한-인스턴트만-남는다",
+      "title": "ChatGPT and Codex usage limits merging",
+      "urls": [
+        "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+        "https://i.redd.it/c0fpbealdvyh1.jpeg",
+        "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+      ],
+      "publishedAt": "2026-11-01T09:31:03.654Z"
+    },
+    {
       "slug": "2026-11-01-블룸버그-ai가-일자리-대체해-컴공-학생-감소-보도-국내-실태는-미확인",
       "title": "Computer Science Programs Lose Students as AI Replaces Jobs",
       "urls": [

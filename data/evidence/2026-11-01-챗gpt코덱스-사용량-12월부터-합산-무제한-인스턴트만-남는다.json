@@ -1,0 +1,34 @@
+{
+  "articleText": "[Hacker News — help.openai.com]\nStarting in December, Plus, Pro, and Business plans’ usage allowance will be shared across ChatGPT and Codex as we bring the agentic capabilities of Work into the main ChatGPT experience.\n\nYour usage for ChatGPT and Codex will be measured in tokens, the units of information a model processes and generates. How much of your allowance you use will depend on the model you choose and the task you ask it to do. More advanced models and complex tasks generally use more of your allowance. Instant chat will not draw from your usage.\n\nWe’re preparing carefully for this transition to help prevent disruption to your workflows. We expect most users won&#x27;t need to wait for their usage to reset more often than they do now. You will be able to see your combined remaining usage and reset times in Settings → Usage. If you reach your limit, you can wait for it to reset, upgrade your plan, or buy credits to continue using eligible features.",
+  "reactions": [
+    "[Hacker News] My understanding is that it was 20x 5-hour-usage, never weekly. And they now just removed the 5-hour-limit on that plan alltogether.",
+    "[Hacker News] for me Astra is the better model. Opus 5.5 is closed but when I need a slighter edge on a task usually Astra dominates",
+    "[Hacker News] Claude is already way superior in coding than Open AI atm. So coders are mostly using Claude The models may switch occasionally in terms of who the class leader is in certain disciplines, but at the top level either provider is enough for professional coders. Saying that either is only suitable for non-coders sounds gatekeepery and very out of touch.",
+    "[Hacker News] Look up price versus intelligence for your favorite open model on artificial analysis and compare it with Luna, Sol, Opus, and Sonnet. Mind you, all of those are API prices, and you&#x27;re still better off paying API prices than using an unsubsidized open model. Subscriptions from any of the major labs are an even better deal.",
+    "[Hacker News] The major issue is going to be you ran your stuff dry with agents and now you are cut off from the chats. If instead, like 1% had been reserved, then you&#x27;d automatically be able to use the website and it would cut off people who set up skills to hack around it, which I suspect is why they&#x27;re doing this.",
+    "[Hacker News] ChatGPT Pro 20x will remain at 20x it seems https:&#x2F;&#x2F;help.openai.com&#x2F;en&#x2F;articles&#x2F;9793128-about-chatgpt-pr... &gt; The reduction announced in our September 29 email is canceled. If you already had the higher Work and Codex allowance, you keep it. If you had the lower allowance, it has doubled to match. Your subscription price stays at $200&#x2F;month."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "ChatGPT and Codex usage limits merging",
+      "url": "https://news.ycombinator.com/item?id=50320588",
+      "score": 112,
+      "commentCount": 52
+    },
+    {
+      "origin": "r/singularity",
+      "title": "OpenAI is merging Chat and Work in December. Only Instant will be unlimited, and everything else will count toward your Codex limits",
+      "url": "https://www.reddit.com/r/singularity/comments/1xklpe5/openai_is_merging_chat_and_work_in_december_only/",
+      "score": 6,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/OpenAI",
+      "title": "Chat-Codex Shared Limit Announcement",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xkp0qp/chatcodex_shared_limit_announcement/",
+      "score": 5,
+      "commentCount": 0
+    }
+  ]
+}
