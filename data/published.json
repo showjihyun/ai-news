@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-11-01-블룸버그-ai가-일자리-대체해-컴공-학생-감소-보도-국내-실태는-미확인",
+      "title": "Computer Science Programs Lose Students as AI Replaces Jobs",
+      "urls": [
+        "https://bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs"
+      ],
+      "publishedAt": "2026-11-01T02:35:49.733Z"
+    },
+    {
+      "slug": "2026-11-01-앤스로픽-클로드-코드에-타사-게임-복제-금지-규칙-조용히-추가",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games",
+      "urls": [
+        "https://gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qbnNLb0wyNVJaRzBFQUpBVkwtd05JZmFSVEVHWXZncF9jSHh3R20tTmVieHN4ZnQwQllSam9FYm96eVJzaDk1c0RYZ1M1SHQ1WFJPMmxGQzdTUHRvcVo1MHFCMlYtWXRvS2Voa01tSXViRktQRnc?oc=5",
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTE11Q0pac0tzZFFzOGNNck5RZDlxb2xlc3lzVEN2X1BPN0wwdXpBWHBfNGd3dVlvdnBXd1R6VjFyeWxZSUNNRXk3NXpsUUVxYW9OVmd0b0JYc2ZfSjRKN085b0FnSFdsUl84ZUc2Zw?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdkNDMnFkaGppWkE4U0NRdF93eFpoRlBQNEtnblJDc0c2VTEwOTdmR1I5cFBacGo2R0c3Y1lORC01c0Y0eFItRnJvaDR1akE2MXYxTEJIYlc5Z1FoN3lxbV9heGpIRzVQR1BabXM3YjNhbkhWN3pPNFpoakVNMGdrZzEzWndvR050cnJF?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zVXRnOVNxazRVcmQzZDdyeEFtSVc1TWEtRTN5VHoyeGYzUkRHUFMwQjFWOGJ2VWd6bGJhdDZPQ28wTThOV3dFeFFFY2R5c1huR0VPVnYySGkyc251dzM3LWVROWdINDEyY1RUNWIzNXlHWHUzYkd5VGRha0p3Y3M?oc=5"
+      ],
+      "publishedAt": "2026-11-01T02:28:50.995Z"
+    },
+    {
       "slug": "2026-11-01-챗gpt-공유-링크-하나로-계정-탈취-오픈ai-긴급-패치",
       "title": "Do the math: How we took over ChatGPT accounts",
       "urls": [

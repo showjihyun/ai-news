@@ -1,0 +1,47 @@
+{
+  "articleText": "[Hacker News — gamedeveloper.com]\nUpdate: Anthropic has confirmed it's released an update to Opus 5.5 to \"steer\" Claude Code away from \"recreating someone else's specific game.\"\n\nIt appears Anthropic may be (quietly) taking action to stem the flood of AI-driven game remakes that have hit the video game industry in the last few month, which saw users creating their own versions of classic and upcoming games, sometimes for fun, sometimes for financial gain.\n\nEarlier today X (formerly Twitter) user Chasm said that they spotted an update to Claude Code&#x27;s \"rules\" that was pushed sometime on October 27. The rule is listed under \"tengu_heron_brook,\" and reads \"Do build original games, games in a genre, and games from the user’s own designs and assets. Do not build a recreation of a specific existing game, even if it is renamed or called original.\" Chasm reports that there is no way to disable the rule.\n\nAn Anthropic spokesperson referred us to a statement by Anthropic member of technical staff Addy Osmani also posted on X. \"We added two sentences to Claude Code&#x27;s prompt on Opus 5.5 to steer it away from recreating someone else&#x27;s specific game because using Claude to infringe IP is against our usage policy,\" Osmani wrote. \"Original games, genre games, and games built from your own designs and assets are meant to keep working. We&#x27;ll continue to iterate to ensure we&#x27;re striking the right balance.\"\n\nRelated: GDC Side Quest - An anti-cheat primer with Lucia Suarez\n\n\"In the meantime, if Claude turns down something that&#x27;s yours, send it my way.\"\n\nFear over the potential of fast-follow AI remakes that might beat the copied game to market has spread among independent developers in the last few weeks. Digital Sun Games is one of several studios to cancel their upcoming public playtest for fear someone might ingest the demo into an AI tool and release their own version of its upcoming game ReVamp . Developers have also pressed Valve to explain how it can prevent the shady clones from supplanting their games on Steam, prompting the company to offer a rare explanation to developers in South Korea earlier in this week .\n\nWhile developers may take some relief that Anthropic at least doesn&#x27;t want to actively encourage mass game copying, this rule may only deter the most low-effort copycats. Scientists and reporters have repeatedly documented that safety limits on generative AI tools can be sidestepped by deploying rhetorical tricks . It&#x27;s also unclear how the software would be able to interpret whether or not a user owns a game idea or game assets.\n\nAnd as many users responding to Chasm pointed out, if Claude becomes too difficult to use, vibe-coding cloners can turn to open-weight models that have no such restrictions in place.\n\nGameDeveloper.com has reached out to Anthropic for comment and will update this story upon its response.\n\nRelated: Epic VP says AI code tools have stomped out decade-old 'non-deterministic cooking bugs' in Unreal Engine\n\nUpdate 10/30: This story has been updated with confirmation from Anthropic.\n\nBryant Francis is a writer, journalist, and narrative designer based in Boston, MA. He currently writes for Game Developer, a leading B2B publication for the video game industry. His credits include Proxy Studios&#x27; 4X strategy game Zephon, Iron Anchor Studios&#x27; Down With The Ship, and Amplitude Studio&#x27;s 2017 game Endless Space 2.\n\nBusting myths in game writing ft. Bruno Dias, Aysha Farah, & Andrea Saravia Perez\n\nWhy it's still worth making immersive sims ft. Harvey Smith & Ben Horne\n\nGDC Side Quest - Exploring co-development opportunities with Sam Carlisle\n\nCopyright © 2026 Informa. This website is owned and operated by Informa. Informa PLC&#x27;s registered office is 5 Howick Place, London SW1P 1WG.",
+  "reactions": [
+    "[Hacker News] And this, gives their competitors the edge in this regard, it doesn&#x27;t stop it from happening.",
+    "[Hacker News] I honestly wonder if the &quot;slopcomp&quot;&#x2F;&quot;vibeport&quot; (AI-heavy fan recomps&#x2F;ports of old games) boom was getting into a problem for them at this point. Many of these things are also glorified single-game emulators, even having components from established emulators for things such as graphics rendering. Last time around on that front: https:&#x2F;&#x2F;www.pcgamer.com&#x2F;ga",
+    "[Hacker News] Open-weight models are close. Claude is very good, but the others aren&#x27;t far behind. The [cybersecurity] [cyber] alerts are annoying enough we looked for other options. Kimi and GLM have been very capable working with Ghidra, but I haven&#x27;t tried REA yet",
+    "[Hacker News] The entire issue with this is the dmca and not being able to share what is RE’d from the US. So much more would be possible were this the case. That being said… I’m not sure it should be illegal to share this re’d code. And at the very least … just take it and rewrite what it does in rust lol. Might not be clean room but hell, if it works. I’ve gotten good mileage out of binary patching in trampol",
+    "[Hacker News] right into the arms of open models and pi.dev"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games",
+      "url": "https://news.ycombinator.com/item?id=50316635",
+      "score": 29,
+      "commentCount": 15
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Quietly Patches Claude to Stop It Cloning Other People's Video Games - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qbnNLb0wyNVJaRzBFQUpBVkwtd05JZmFSVEVHWXZncF9jSHh3R20tTmVieHN4ZnQwQllSam9FYm96eVJzaDk1c0RYZ1M1SHQ1WFJPMmxGQzdTUHRvcVo1MHFCMlYtWXRvS2Voa01tSXViRktQRnc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic tells Claude Code to stop recreating existing video games - Tbreak UAE",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11Q0pac0tzZFFzOGNNck5RZDlxb2xlc3lzVEN2X1BPN0wwdXpBWHBfNGd3dVlvdnBXd1R6VjFyeWxZSUNNRXk3NXpsUUVxYW9OVmd0b0JYc2ZfSjRKN085b0FnSFdsUl84ZUc2Zw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Code Told to Stop Recreating Existing Games, Anthropic Confirms - Shane the Gamer",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdkNDMnFkaGppWkE4U0NRdF93eFpoRlBQNEtnblJDc0c2VTEwOTdmR1I5cFBacGo2R0c3Y1lORC01c0Y0eFItRnJvaDR1akE2MXYxTEJIYlc5Z1FoN3lxbV9heGpIRzVQR1BabXM3YjNhbkhWN3pPNFpoakVNMGdrZzEzWndvR050cnJF?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic quietly blocks Claude Code from recreating existing video games - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zVXRnOVNxazRVcmQzZDdyeEFtSVc1TWEtRTN5VHoyeGYzUkRHUFMwQjFWOGJ2VWd6bGJhdDZPQ28wTThOV3dFeFFFY2R5c1huR0VPVnYySGkyc251dzM3LWVROWdINDEyY1RUNWIzNXlHWHUzYkd5VGRha0p3Y3M?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
