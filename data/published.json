@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-02-프로톤-ceo-코딩은-끝났다-선언-직원-반발구독자-이탈-우려로-번진-이유",
+      "title": "Proton's AI manifesto for software engineering",
+      "urls": [
+        "https://proton.me/blog/ai-manifesto",
+        "https://proton.me/blog/ai-manifesto"
+      ],
+      "publishedAt": "2026-11-02T12:56:20.151Z"
+    },
+    {
+      "slug": "2026-11-02-중국-프론티어-ai-모델-수출-통제-한국-기업도-자가-진단해야",
+      "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+      "urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2"
+      ],
+      "publishedAt": "2026-11-02T12:48:42.020Z"
+    },
+    {
       "slug": "2026-11-02-오픈ai-데이터센터를-ai-컴퓨트-캠퍼스로-재포장-중간선거-겨냥한-정치-공세",
       "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
       "urls": [
