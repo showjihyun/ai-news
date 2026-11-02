@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-11-03-앤스로픽-9000억-달러-지출-약정-공개-ipo-앞두고-수익성-의문-증폭",
+      "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
+      "urls": [
+        "https://ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHIxTTNxemhYRmRhV2dJOXlhc1ZBdW05MVp2MkFWdy02SVhIdzZqaWplcXl4SHQ0eGc4RFlaRlNwVWw2d2NQUjJucnFseEJ6ZUdpOUloSG9HOXczOGxmRGhuRk9XZ2VYTFNVUHJPQXltZ0d4S3pVTnZMOElUS0lXcGxBT3M?oc=5",
+        "https://axios.com/2026/11/02/anthropic-spending-revenue-surge"
+      ],
+      "publishedAt": "2026-11-02T22:09:46.861Z"
+    },
+    {
+      "slug": "2026-11-03-llm이-가중치-직접-읽고-고친다-퀸-수학-성능-6배-높인-가중치-공간-프로그래밍",
+      "title": "Astra can read and write weights to improve Qwen",
+      "urls": [
+        "https://rikiyat.github.io/blog/weight-space-programming",
+        "https://rikiyat.github.io/blog/weight-space-programming",
+        "https://rikiyat.github.io/blog/weight-space-programming"
+      ],
+      "publishedAt": "2026-11-02T22:07:36.368Z"
+    },
+    {
       "slug": "2026-11-02-프로톤-ceo-코딩은-끝났다-선언-직원-반발구독자-이탈-우려로-번진-이유",
       "title": "Proton's AI manifesto for software engineering",
       "urls": [
