@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-11-02-오픈ai-데이터센터를-ai-컴퓨트-캠퍼스로-재포장-중간선거-겨냥한-정치-공세",
+      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "urls": [
+        "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses",
+        "https://axios.com/2026/11/01/scoop-openai-post-midterm-policy"
+      ],
+      "publishedAt": "2026-11-02T04:48:29.489Z"
+    },
+    {
+      "slug": "2026-11-02-딥시크-자율-코딩-에이전트-슈퍼-에이전트-발표-클로드-코드와-경쟁-구도",
+      "title": "Weeks Ahead Of Expected Anthropic IPO, DeepSeek Launches Autonomous Coding Agent To Take On Claude Code - Stocktwits",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaXBscHNvYmNNV2RfZTJ0ZXlEanNzeUx6bVU1RW1UOThQcjhkRVdOMVl4bHlLZ3dDaUZFc3RiWE0xWHd0Y3RDU2ZUTVprR09fZHhheGg1Vm55NnFKYjZxeXItR2s1LVZWWVM0akEtbmNvSU9fYl9PVFpXWDc0b2o0SlkyVTd6MGRwTTd4S2RZb1loNkFuNnlUS0VDaUhtenU0R2V1cmVtUWFfbWFBem9VVmllMUxrNGlOdTMxaGs4dw?oc=5",
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU3ZjNTJLaFEza3NuN1FnWVJkSjNzVXdsLW1VMjFrZDVsOTFzVGd6S1BvU2VMRkNBVlpHU2huZzBIU0xTZ0VtcWVMSnFGZHFhazJKLU1BUU5VQXNEejUzbXVrRHZDS2dnTG5jSFdmTjEydU4yaExlRk1Ed1VHelJ1aVFMeDhfSnNjZGVYVFNsd1VsS0owbGxJQ0stVThkdmlmaHFqMGdpOUwwOTJfOFlpTFpEd0pCN1VSVmVsdVd4NHJuZExjSVJweg?oc=5",
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRlRuOWlfeC0tRV81RUFsWnRoU08tZUNiWGhmd0p0WUJvRjBDVHFEZE85bW4zenNSRUt5YV9FejFXclpNeFN3WWZLNFRqTF9WN0hVSnhURkRzZXlmVV9UWFhMRlpvRkFzbDNkU0Q4NUNLbEw2Wkg3T2VaZTVpbUs4dW1ZMTlTSXFMZl9IcTZzVzBQSHJ0M1V6MjUzMnZ4QmRPai1WS3JFZ3BhdWRQTkZ2Z09hLXM2NE0ydVFDZVNFR1dsSDR1WTBhSGUwZGcxM0FM0gHWAUFVX3lxTFBXYVpaS2UxWXVNLTZadkh1RC1UUHlwdjdsMkVoLVlNQnI5YndnV25STmhWTjFobTFtdjRxNEVza3JQckVwbGsxRFBmNVExNjk1X1l6T3ZnWS1pUHJtMTNZN045QXdhYUZkTjRQSm43RDVfemdEcVd0cmcycHJVdkZQTndrdmYtaVRHV2ZrYy1wYlJ3OGt6UGdWcG5aTU8wQ2t2ZVhpMzdEaE9kc1BrVHJKaFZsREE2VjN1ZUE5N0tCblQzOTQtNUR3cThYZ3ZmZzNWQ0pxOGc?oc=5",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaFNzTzFFcEplNmlKWXU4MnpOcGVhbUxXSW5JN05pMDVOdlptY1JGeGJYaVhWaENpblVtWm5FdTRSOExvSi1UR09DTmdxdGNNa3drWDhRVGZMMWtyb3U4QlROSmdhVEJld2JPemxFMlowWWc3cFJqQnRtdGk5Sndhd1FXYTM0OGU4TFBpZEhHRl83VUNDTmx4Xy1FdVZTRWtqQ19Xdi1aSXJoT3kyRlo0cExsdmZ5bHU2RUV4WQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOS01vcHNtOUhIMFhOOS0taW83a1FLWmZ4S011Q2xHNEF5RVlKUkhnNFYtZloyWUpKU2thYVg5MlBPTTF2d3MwNTdaOHYxV3gzRFJrOEM2Y2JuYnl1NUpPcWF0aXNYbDVCdzBFcVlzZS1tYlJubmVMV1BadGFTQzRQTjI1dG5mOUVIMnZhd3plWmRvRVlyR1RwODY5eWZ4RmFDT3F0U0VDNWdLVkdOX1F1Z0dyN3ZaaFpsMTNR?oc=5"
+      ],
+      "publishedAt": "2026-11-02T04:43:12.406Z"
+    },
+    {
       "slug": "2026-11-02-앤스로픽-미토스-모델-유출설-허깅페이스-게시글에-8tb-gpu-램-논란",
       "title": "Anthropic's Mythos-class model allegedly leaked on Hugging Face",
       "urls": [
