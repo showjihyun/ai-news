@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-11-02-앤스로픽-미토스-모델-유출설-허깅페이스-게시글에-8tb-gpu-램-논란",
+      "title": "Anthropic's Mythos-class model allegedly leaked on Hugging Face",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50326727",
+        "https://i.redd.it/v1oi9pv0f0zh1.png"
+      ],
+      "publishedAt": "2026-11-02T00:07:36.956Z"
+    },
+    {
       "slug": "2026-11-02-프로톤-ceo-보안-검토는-루저-사고-프라이버시-기업이-속도-택한-이유",
       "title": "It wasn't AI that flipped Proton's charge",
       "urls": [

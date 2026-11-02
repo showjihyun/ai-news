@@ -1,0 +1,27 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Why clearly? You mean the tensor pre seed with deterministic pseudo random numbers? I don&#x27;t have much experience in LLM training, but I do remember from minimization algorithms (like gradient descent) that it&#x27;s better to start with (pseudo) random starting values and minimize from there. And seeing how I would like my results repeatable, seeding a pseudo random sequence seems logical. I ",
+    "[Hacker News] It depends on how many GPU you have. Considering Anthropic resources, I would expect not very long training duration. Less than 2 months. But I may be wrong. I just checked. GPT-3 ~= 1 month &#x2F; GPT-4 ~= 3 months. So yes, it doesn&#x27;t seems to be absurd. I should have checked. Xiaomi shared recently the duration of a part of they training process (the post-training). It was 5 days only. I th",
+    "[Hacker News] I don&#x27;t understand, why does that mean fake? Doesn&#x27;t training take months?",
+    "[Hacker News] In a company that regularly ingests terabytes of data from the open internet? I doubt they&#x27;d even blink",
+    "[Hacker News] I don&#x27;t think casuals have 8TB of disk space either",
+    "[Hacker News] 8 TB of GPU ram?? I would confidently say yes, a casual user wouldn&#x27;t have that."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic's Mythos-class model allegedly leaked on Hugging Face",
+      "url": "https://news.ycombinator.com/item?id=50326727",
+      "score": 45,
+      "commentCount": 46
+    },
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Anthropic's Mythos-class model allegedly leaked on Hugging Face 💀",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xl47f5/anthropics_mythosclass_model_allegedly_leaked_on/",
+      "score": 26,
+      "commentCount": 0
+    }
+  ]
+}
