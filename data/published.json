@@ -1,6 +1,30 @@
 {
   "records": [
     {
+      "slug": "2026-11-03-엔비디아-ai가-db-말-알아듣게-하는-오토-온톨로지-공개",
+      "title": "Nvidia – open-source auto-ontology",
+      "urls": [
+        "https://github.com/NVIDIA/auto-ontology",
+        "https://marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents"
+      ],
+      "publishedAt": "2026-11-03T11:12:01.290Z"
+    },
+    {
+      "slug": "2026-11-03-앤스로픽-클로드-코드에-게임-복제-금지-프롬프트-추가-리버스-엔지니어링도-차단",
+      "title": "Anthropic confirms new Claude Code limits to prevent game cloning",
+      "urls": [
+        "https://tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcVUyb2p4WG15VmhsQmQ5NVM1S21wZWlHM185X2h3YnFHbEdWc05nbkZBQXdqbnBWY2hqYnVnTks2Z3lPd2lOa3F5aGdnZXhfVTlGLVJNS0xoeXE2YlBKRTZfTWNhSTdId0ZzWE5GejhYTzZWNTFSQkRMcmtFblJDeXh5N1dVM0l2R1NFcE01T0lUd0E5blgxdkNwMGxMamwxVmtXcXFqcWJUWnJXUWl3?oc=5",
+        "https://news.google.com/rss/articles/CBMirwJBVV95cUxOQmtwU201Rm8zX2dFeGRGay0wY0F2UVZ2V0wydFFNVEU1Q1d1SzJlQmgwT0JhUnB3eHF2X3BmdGFQZ2dMajR4UHp1by1rUmlMZHBqd2Z1VkRwYlRhVmkxUG9GWE93X3JNd3dFbExob0VPcl9KN1czbFlJdXpqbTJxU1hCTTNSMWIxaEs4SHdoYVAwMlI2cEQ3dDlVVUF0bDdnV0RDOTBnQWpmUGJtSmZLOWQ5QUItTDhxWlN2ZEdhMTNuMGEwQ0gweDZvVWRLRWVZQ1BMeTNETzA2MTlwTnAxYXEyNTFFRFZUZTl1eDJMV0hCVExYRkFnazFKZjBybGRlQ2JWUG9BM2Y4U0MzOVF0NEJVRDV4RVNHNDBKczBRbk03di0zV0ppd1A2N3lCZ1k?oc=5",
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxQMkIzZ1JjSFM3QmlOMXk0MGFDb0I5MGZiWTVCLUtyU1pSTFYyamdERkM3b3RoLVRfUGlESUlmNUtFVUtfb1kzemJZcHNxekhNdTQ3U0s1MmY2SE9BZVdlZ01BeVEwTXJMU25nRVN3MWJmemozSnpSQXdUSjMzVWhpb1BCNHdFcng3MDBPQm1iNnJCbUFJQ3hQSjN0aDlPUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeExuWFRWbDVla3o0TjFJZ3FiTzl4aVdhNWtXUmFnanotaG9kRHhwN3p5OGJDOVgwZGJUSlpES1RqNEg2MEkxRU13aHJObEtodURKV1Axd1NPWkh4eDFyNGw0dmxlMDFUZWhpa0pDR0FONGdiS2hURWJTRloySXJuMVRLS3hjRVRuWmo4ZloxTHJDV1Z2OWRR?oc=5",
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxOS05HZ2dCRU9yeXFscXlyU1FkZVJxeFUwSFQ5YzVUSHVWcFRxN1pKQllIWHhJRkZVVGtobGFZRXVVWHJIVHJIQnBSa3hpWXFhUGk2cUQteVIyYzdYNlJpbWJUc0JFNmFTZHJidGJpcUlSM2NTcVE2T1NKZHlrbnQ3cUkwNzljOXFjMnRhRWgwYWMzclFl?oc=5",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVkY2ZktWNnBoa1M0OEplSVNGMWVqUmdURXZhT29QWFRnUTBHSkdnZDhhOXBpcnZ1UU15SUJSV1hrcXVlYUc2MkNhRTJReThIZWE2bTFfakVyc0JSMnMxSjE3eXBHWk1nZWdzS2JDcHBnYzgtbDhLN3VSN0gyemxBMw?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones"
+      ],
+      "publishedAt": "2026-11-03T11:09:32.752Z"
+    },
+    {
       "slug": "2026-11-03-골드만삭스-트레이더뱅커-ai-코딩-도구-차단-알파-유출-막는다",
       "title": "Goldman Restricts Traders and Bankers from Using Some AI Tools",
       "urls": [

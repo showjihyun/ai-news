@@ -1,0 +1,62 @@
+{
+  "articleText": "[r/ClaudeAI — tomshardware.com]\nMeanwhile, we now have direct reports of reverse engineering efforts being blocked, while online complaints grow.\n\nWhen you purchase through links on our site, we may earn an affiliate commission. Here&rsquo;s how it works .\n\n(Image credit: Getty Images) Copy link Facebook X Whatsapp Reddit Pinterest Flipboard Email Share this article 6 Join the conversation Follow us Add us as a preferred source on Google Newsletter Subscribe to our newsletter Anthropic's recent move to have Claude Code deny video game cloning and possibly reverse engineering efforts has come under heavy fire from the software development community. Hot on the heels of Friday's report on the matter, an Anthropic employee responded to the tweet with the purported rule update with a direct statement confirming that the firm added guardrails to Claude Code to prevent game recreation.\n\nIn the full tweet, which you can read below, Addy Osmani says that \"[Anthropic] added two sentences to Claude Code's prompt on Opus 5.5 to steer it away from recreating someone else's specific game because using Claude to infringe IP is against [its] usage policy.\" He goes on to state that work on original games is meant to continue working, and that Anthropic is iterating on the rules to try and \"strike the right balance.\"\n\nWe added two sentences to Claude Code's prompt on Opus 5.5 to steer it away from recreating someone else's specific game because using Claude to infringe IP is against our usage policy. Original games, genre games, and games built from your own designs and assets are meant to keep working. We'll continue to iterate to ensure we're striking the right balance. In the meantime, if Claude turns down something that's yours, send it my way. October 30, 2026\n\nThere's no telling what those sentences might be, though given Osmani's choice of words, it's possible that said sentences are indeed what X user Chasm posted a screenshot of: \"Do build original games, games in a genre, and games from the user&rsquo;s own designs and assets. Don&rsquo;t build a recreation of a specific existing game, even if it is renamed or called original.\"\n\nIn our previous report, we had already linked to recent issues raised at Claude Code's own GitHub repository, comprised of users complaining that the AI assistant was refusing to work on their games or on reverse-engineering tasks. As far as we can ascertain, it appears the game-related blocking is limited to the combination of using Claude Code and the Opus 5.5 model. Should that prove true, then users should be able to sidestep the limitation by calling upon Opus using another harness like Ollama or forwarding specific requests through a wrapper of some sort.\n\nRegarding the blocking of reverse engineering, we have received direct confirmations. The first comes from our own alumnus Jarred Walton , who was trying to run checks on the software he's developing. He notes that such work had been performed with no issue until yesterday, October 31, and that switching to Opus 4.8 let him continue his work.\n\nAnthropic's Claude AI blocks video game cloning and reverse-engineering Anthropic says Claude thwarted bioweapon research from state-sponsored actors Game decompilation hub freezes leaderboard after AI turns progress into a hollow numbers game amid explosion of 'AI slop' Walton theorizes that Anthropic may have added a new rule to Code specifically for reverse-engineering. Considering that timing, plus the fact that other reports of refusals all popped up around the last week, may indicate that the company could be fiddling with cybersecurity-related rules in the same manner as they are for video game-related content.\n\nWe also received screenshots from a staffer's direct acquaintance, who asked Opus 5.5 (via Code) to try and reverse engineer a product activation, a request that likewise triggered safeguards. Meanwhile, notices that Claude Code appears to block reverse-engineering continue to mount, now with a Redditor allegedly having their account suspended , and then reinstated, over using Opus 5.5 and Reverse Engineer Anything . The company has an ongoing Cyber Verification Program , in which only approved entities get access to the full set of frontier models' cybersecurity capabilities.\n\nGet Tom's Hardware's best news and in-depth reviews, straight to your inbox.\n\nBruno Ferreira Social Links Navigation Contributor Bruno Ferreira is a contributing writer for Tom's Hardware. He has decades of experience with PC hardware and assorted sundries, alongside a career as a developer. He's obsessed with detail and has a tendency to ramble on the topics he loves. When not doing that, he's usually playing games, or at live music shows and festivals.\n\n---\n\n[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nEntertainment Close Entertainment Posts from this topic will be added to your daily email digest and your homepage feed.\n\nGaming Close Gaming Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic is steering Claude away from re-creating specific titles, but users can still use it to make their own games.\n\nAnthropic is steering Claude away from re-creating specific titles, but users can still use it to make their own games.\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Cath Virginia / The Verge Part Of Reverse-engineered games: All the news on video game decomps, recomps, VR and web and 3D ports see all updates Jay Peters Close Jay Peters Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic has updated Claude Code’s system prompt to prevent the AI tool from being used to re-create existing video games, as reported by Tom’s Hardware . Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports , but while Anthropic will still let people use Claude Code to make games, it doesn’t want people to use it for direct clones.\n\nLast week, a user on X posted a screenshot allegedly showing two new sentences added to Claude Code’s system prompt: “Do build original games, games in a genre, and games from the user’s own designs and assets. Don’t build a recreation of a specific existing game, even if it is named or called original.”\n\nAnthropic’s Addy Osmani, in a reply , didn’t confirm that specific language but did say that the company had updated the prompt in Claude Code on Opus 5.5:\n\nWe added two sentences to Claude Code’s prompt on Opus 5.5 to steer it away from recreating someone else’s specific game because using Claude to infringe IP is against our usage policy.\n\nOriginal games, genre games, and games built from your own designs and assets are meant to keep working.\n\nWe’ll continue to iterate to ensure we’re striking the right balance. In the meantime, if Claude turns down something that’s yours, send it my way.\n\nWe’ve asked Anthropic if it has or will be updating other Claude system prompts as well.\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nEntertainment Close Entertainment Posts from this topic will be added to your daily email digest and your homepage feed.\n\nGaming Close Gaming Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "r/ClaudeAI",
+      "title": "Anthropic confirms new Claude Code limits to prevent game cloning",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xm5vdp/anthropic_confirms_new_claude_code_limits_to/",
+      "score": 23,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic cracks down on game cloning in Claude Code after wave of AI-built knockoffs - The Decoder",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcVUyb2p4WG15VmhsQmQ5NVM1S21wZWlHM185X2h3YnFHbEdWc05nbkZBQXdqbnBWY2hqYnVnTks2Z3lPd2lOa3F5aGdnZXhfVTlGLVJNS0xoeXE2YlBKRTZfTWNhSTdId0ZzWE5GejhYTzZWNTFSQkRMcmtFblJDeXh5N1dVM0l2R1NFcE01T0lUd0E5blgxdkNwMGxMamwxVmtXcXFqcWJUWnJXUWl3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic confirms new Claude Code limits to prevent game cloning — users report Opus 5.5 is also actively blocking reverse engineering tasks - Tom's Hardware",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOQmtwU201Rm8zX2dFeGRGay0wY0F2UVZ2V0wydFFNVEU1Q1d1SzJlQmgwT0JhUnB3eHF2X3BmdGFQZ2dMajR4UHp1by1rUmlMZHBqd2Z1VkRwYlRhVmkxUG9GWE93X3JNd3dFbExob0VPcl9KN1czbFlJdXpqbTJxU1hCTTNSMWIxaEs4SHdoYVAwMlI2cEQ3dDlVVUF0bDdnV0RDOTBnQWpmUGJtSmZLOWQ5QUItTDhxWlN2ZEdhMTNuMGEwQ0gweDZvVWRLRWVZQ1BMeTNETzA2MTlwTnAxYXEyNTFFRFZUZTl1eDJMV0hCVExYRkFnazFKZjBybGRlQ2JWUG9BM2Y4U0MzOVF0NEJVRDV4RVNHNDBKczBRbk03di0zV0ppd1A2N3lCZ1k?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic clamps down on Claude’s AI video game clones - The Verge",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMkIzZ1JjSFM3QmlOMXk0MGFDb0I5MGZiWTVCLUtyU1pSTFYyamdERkM3b3RoLVRfUGlESUlmNUtFVUtfb1kzemJZcHNxekhNdTQ3U0s1MmY2SE9BZVdlZ01BeVEwTXJMU25nRVN3MWJmemozSnpSQXdUSjMzVWhpb1BCNHdFcng3MDBPQm1iNnJCbUFJQ3hQSjN0aDlPUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Clamps Down On AI Game Clones In Strict Claude Update And Devs React - HotHardware",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeExuWFRWbDVla3o0TjFJZ3FiTzl4aVdhNWtXUmFnanotaG9kRHhwN3p5OGJDOVgwZGJUSlpES1RqNEg2MEkxRU13aHJObEtodURKV1Axd1NPWkh4eDFyNGw0dmxlMDFUZWhpa0pDR0FONGdiS2hURWJTRloySXJuMVRLS3hjRVRuWmo4ZloxTHJDV1Z2OWRR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Adds 2 Sentences to Claude Code to Stop AI Video Game Clones - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOS05HZ2dCRU9yeXFscXlyU1FkZVJxeFUwSFQ5YzVUSHVWcFRxN1pKQllIWHhJRkZVVGtobGFZRXVVWHJIVHJIQnBSa3hpWXFhUGk2cUQteVIyYzdYNlJpbWJUc0JFNmFTZHJidGJpcUlSM2NTcVE2T1NKZHlrbnQ3cUkwNzljOXFjMnRhRWgwYWMzclFl?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "As the controversy around AI-created video game copies continues, Anthropic seemingly restricts Claude's cloning abilities - Eurogamer.net",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVkY2ZktWNnBoa1M0OEplSVNGMWVqUmdURXZhT29QWFRnUTBHSkdnZDhhOXBpcnZ1UU15SUJSV1hrcXVlYUc2MkNhRTJReThIZWE2bTFfakVyc0JSMnMxSjE3eXBHWk1nZWdzS2JDcHBnYzgtbDhLN3VSN0gyemxBMw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic clamps down on Claude’s AI video game clones",
+      "url": "https://theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
