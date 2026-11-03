@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-11-04-mit-연구진-gpt-6-아스트라-가중치-직접-편집으로-소형-모델-수학-성능-6배-높여",
+      "title": "MIT researchers say GPT-6 Astra improved a small Qwen model’s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-based training.",
+      "urls": [
+        "https://x.com/rikiyatakehi/status/2117313742891327994",
+        "https://explainx.ai/blog/weight-space-programming-gpt-6-astra-edits-qwen3-5-0-8b-weights-math-7-9-to-48-1-mit-csail-2026",
+        "https://reddit.com/comments/1xmaavl",
+        "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights"
+      ],
+      "publishedAt": "2026-11-03T18:46:01.092Z"
+    },
+    {
+      "slug": "2026-11-04-구글-ai-거부하는-학교엔-검색도-차단-한국-교실-영향은",
+      "title": "Google will turn off search for schools that reject AI",
+      "urls": [
+        "https://nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+        "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search",
+        "https://nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html"
+      ],
+      "publishedAt": "2026-11-03T18:40:20.997Z"
+    },
+    {
       "slug": "2026-11-03-엔비디아-ai가-db-말-알아듣게-하는-오토-온톨로지-공개",
       "title": "Nvidia – open-source auto-ontology",
       "urls": [

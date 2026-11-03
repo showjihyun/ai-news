@@ -1,0 +1,33 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nGoogle announced on Tuesday that it plans to disable AI tools for K-12 students next year unless school administrators explicitly turn them on. The tech giant says the change follows consultations with schools, teachers, leading researchers, and policymakers. As a result, Google is revising its approach across Gemini, NotebookLM, Gemini in Classroom, and Google Search.\n\nThe decision means that schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.\n\nChris Phillips, vice president for education at Google, told The New York Times that “Search and AI are deeply integrated,&#8221; which means that if a school chooses to restrict AI altogether, students &#8220;will not have access to search, and they’ll see a message from their school that indicates it’s not available.”\n\nThe change raises an issue for schools. Although teachers may not want students to use AI Overviews in Google Search to conduct research or complete assignments, they likely still want them to be able to have access to the search engine to find sources and other learning materials.\n\nHowever, Google Search and its AI features are now inseparable. Given the dominance of Google&#8217;s suite of apps in classrooms and the widespread use of Chromebooks, the decision underscores the company&#8217;s influence over the education sector. Schools that want to continue to have access to Google Search will have to accept its AI features.\n\n&#8220;We’ll share more specifics with schools in the coming months ahead of the changes rolling out so they have time to prepare and enable a smooth transition,&#8221; Phillips wrote in a blog post . &#8220;Our goal is simple: provide school leaders the control and confidence to use AI products in classrooms as they see fit.&#8221;\n\nGoogle announced the upcoming change alongside the launch of Guided Learning in schools. The tool, which was unveiled earlier this year, sort of functions like an AI tutor, as it’s designed to help users build a deep understanding instead of just getting answers. The launch comes amid concerns that AI chatbots undermine the learning process because they spit out direct answers.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nAisha is a consumer news reporter at TechCrunch. Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup. Aisha holds an honours bachelor’s degree from University of Toronto and a master’s degree in journalism from Western University.\n\nYou can contact or verify outreach from Aisha by emailing [email&#160;protected] or via encrypted message at aisha_malik.01 on Signal.\n\nNovember 4 Boston Buy One Pass, Get a Second Free Cover more ground at TechCrunch&#8217;s ultimate founder bootcamp of the year by bringing your co-founder or partner for free Book before the BOGO deal expires\n\nAnthropic warns that it&#8217;s very close to RSI capability, aka self-building AI Julie Bort\n\nNew York Times and other outlets sue web browser Brave over alleged content scraping Rebecca Bellan\n\nAnthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says Lucas Ropek\n\nGoogle&#8217;s first data center satellite is online and writing poetry Tim Fernholz\n\nBinance pauses withdrawals as hackers suspected of stealing billions in crypto Zack Whittaker\n\nAs search traffic dries up, Reddit announces it&#8217;s shifting to a logged-in experience Sarah Perez\n\nAI execs may be too out of touch to build for the general public Amanda Silberling",
+  "reactions": [
+    "[Hacker News] Absolutely. Google has shown the courage to admit that their bread and butter business is changing permanently. they are adapting which the large cos rarely do. My mother never used search. She found it too hard to manage. She uses Gemini all the time, it gives answers in her language and she does not need to type. She is incredibly happy. My daughter talks to Gemini. The idea of going through lin",
+    "[Hacker News] Is this the best ever use of the phrase ‘and nothing of value was lost’? Might be.",
+    "[Hacker News] That filter does much more, it removes all the &quot;first party&quot; results, AI or otherwise. You are better off with adding &quot;-ai&quot; tot be query.",
+    "[Hacker News] is there a way to use it that prevents &quot;tell me the answer&quot;, if not that is what enough students will gravitate towards that it will be harmful to society at large. If there is an agent that only works as an infinitely patient tutor, that will under no circumstance do the work for you, then sure. Just have expereience educators dictate the way the agent works and is used, not some market",
+    "[Hacker News] If Microsoft pulled this stunt, this post would have 2500 points, but when Google does it 253."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://news.ycombinator.com/item?id=50353192",
+      "score": 262,
+      "commentCount": 213
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
+      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Google Will Turn Off Search for Schools That Reject A.I.",
+      "url": "https://www.reddit.com/r/singularity/comments/1xmxcxl/google_will_turn_off_search_for_schools_that/",
+      "score": 8,
+      "commentCount": 0
+    }
+  ]
+}
