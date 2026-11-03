@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-04-美-빅테크-숨은-ai-부채-6개월새-90-급증3200조-원-돌파",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "urls": [
+        "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months"
+      ],
+      "publishedAt": "2026-11-03T23:41:38.953Z"
+    },
+    {
+      "slug": "2026-11-04-리볼루트-ai-코딩-비용-10분의-1로-클로드-대신-中-오픈모델-자사-운영",
+      "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+      "urls": [
+        "https://theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+        "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQY0M5dTRTTnNGNEtyd19HVlFLSFh6ZGFoTTdRR0djZWdRak9zLVVfR0lOQV94OGtyeFRKNkZxa2J4MVgxODAtM29XbmpCT291UmFNZVJ0Q1lZd0pkQmVSZFBBNGxXMy1iaEVJbzNONEpxX0g0NW93NDNwTjNSUXNOV1d1T3NFNUtSUy1jc1ZadWVDczE4eG9rcU9FdUZ6UWlreGdCYU9XTHJWdXRLSmZ6RDNNaDZVNGtzeTBTTXFqVTN2NDNnU0VTZUZSWWI2TmFZRVBKMWRQc0I0V0hYX0MzRGYza2FVXzA?oc=5",
+        "https://theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345"
+      ],
+      "publishedAt": "2026-11-03T23:38:02.814Z"
+    },
+    {
       "slug": "2026-11-04-mit-연구진-gpt-6-아스트라-가중치-직접-편집으로-소형-모델-수학-성능-6배-높여",
       "title": "MIT researchers say GPT-6 Astra improved a small Qwen model’s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-based training.",
       "urls": [
