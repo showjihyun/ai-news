@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-05-오픈ai-피에르-인수-코덱스에-깃-워크플로-도구-더한다",
+      "title": "Pierre Computer is being acquired by OpenAI",
+      "urls": [
+        "https://twitter.com/pierrecomputer/status/2117999036175188183",
+        "https://openai.com/index/openai-to-acquire-pierre"
+      ],
+      "publishedAt": "2026-11-04T19:14:29.661Z"
+    },
+    {
+      "slug": "2026-11-05-yc-대표가-연-2억-원어치-토큰을-태운다-그-돈이-사는-것",
+      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "urls": [
+        "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens",
+        "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens"
+      ],
+      "publishedAt": "2026-11-04T19:01:18.186Z"
+    },
+    {
       "slug": "2026-11-04-리볼루트-클로드-코드-대신-중국산-glm-자사-호스팅으로-ai-코딩-비용-90-절감",
       "title": "Revolut sidelines Claude Code for a self-hosted Chinese model, says it pays 90% less",
       "urls": [
