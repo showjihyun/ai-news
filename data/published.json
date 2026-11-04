@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-11-04-리볼루트-클로드-코드-대신-중국산-glm-자사-호스팅으로-ai-코딩-비용-90-절감",
+      "title": "Revolut sidelines Claude Code for a self-hosted Chinese model, says it pays 90% less",
+      "urls": [
+        "https://maccus.fr/en/revolut-glm-self-hosted"
+      ],
+      "publishedAt": "2026-11-04T11:58:27.331Z"
+    },
+    {
+      "slug": "2026-11-04-제미나이-유료-구독자-대화도-학습에-쓴다-hn서-유료프라이빗-아니다-논란",
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50363461"
+      ],
+      "publishedAt": "2026-11-04T11:53:07.392Z"
+    },
+    {
       "slug": "2026-11-04-ai-버블이-금융-위기-씨앗-될까블룸버그-경고와-한국-산업의-노출도",
       "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
       "urls": [

@@ -1,0 +1,19 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Then people are totally fine puting all sort of private stuff in Notebooklm or Gemini notebook.",
+    "[Hacker News] Obviously anthropic are doing this. Hence their &quot;don&#x27;t insult Claude too much&quot; policy.",
+    "[Hacker News] OpenAI chat sends everything when you type. Better edit the prompt elsewhere.",
+    "[Hacker News] training on &quot;no i don&#x27;t need google search to nurse me after a breakup, i was just asking what movie has the line she just dumped me&quot;",
+    "[Hacker News] every thing you read, every keycap you press. Every mail you read, every call you make, permanently recording you"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "score": 46,
+      "commentCount": 12
+    }
+  ]
+}
