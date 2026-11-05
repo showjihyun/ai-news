@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-05-ai가-쓴-맞춤형-사기-메일-작가창작자-노린다",
+      "title": "Everything is an AI scam now",
+      "urls": [
+        "https://davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now"
+      ],
+      "publishedAt": "2026-11-05T00:16:28.429Z"
+    },
+    {
+      "slug": "2026-11-05-650억-파라미터로-5000억-모델-이겼다-리플-65b가-증명한-작은-거인",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "urls": [
+        "https://ricursive.com/ripple",
+        "https://marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model",
+        "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+      ],
+      "publishedAt": "2026-11-05T00:09:34.766Z"
+    },
+    {
       "slug": "2026-11-05-오픈ai-피에르-인수-코덱스에-깃-워크플로-도구-더한다",
       "title": "Pierre Computer is being acquired by OpenAI",
       "urls": [
