@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-11-07-ai-에이전트-아직은-철의-신경이-필요하다",
+      "title": "You'll need nerves of steel to work with AI agents",
+      "urls": [
+        "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
+        "https://perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUklQdDVGTG53Ql84czNTdEVNWW1SYWQ1SldtWmtkMEdlZHZ3LWVZUm5kazJsYW5rdmp4c1p4Mlg2TEN4SGNwNENpQ1cwT2tNWHVVU3VUYTN0bkY4WXFiNVhOMG9Md2NqYWkzZjRZanM1SVpXN3g4ZHpDbEJQQU5MS0VRSmgxN0JJMTZOSTF1WGd4U090aWtDR1Ytckk5UlE?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+      ],
+      "publishedAt": "2026-11-06T22:03:01.526Z"
+    },
+    {
+      "slug": "2026-11-07-구글-제미나이-오모니-12-플래시-15초-영상30-가격-인하-실무에서-쓸-만할까",
+      "title": "Gemini Omni 1.2 Flash - 최대 15초 영상 생성과 대화형 편집, 가격 30% 인하",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+        "https://news.hada.io/topic?id=36712",
+        "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+        "https://marktechpost.com/2026/11/05/google-gemini-omni-1-2-flash-15-second-video",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash"
+      ],
+      "publishedAt": "2026-11-06T21:54:18.720Z"
+    },
+    {
       "slug": "2026-11-07-ai-봇이-대학-도서관-마비-공공-지식-인프라-무단-채굴-위기",
       "title": "University libraries are being swarmed by AI bots, putting public access at risk",
       "urls": [
