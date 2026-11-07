@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-08-ms-리서치-ai-프론티어-해체-연구보다-스케일링-택한-ms의-선택",
+      "title": "The End of AI Frontiers",
+      "urls": [
+        "https://hunch.net/?p=13764006"
+      ],
+      "publishedAt": "2026-11-07T19:01:11.585Z"
+    },
+    {
+      "slug": "2026-11-08-클로드-코드-사용자-이메일-외부-유출-프라이버시-플러그인으로-차단",
+      "title": "Claude Code sends your email address to websites",
+      "urls": [
+        "https://github.com/anthropics/claude-code/issues/107757",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcUNsYzg1ek9qSk8tT2FWbHRjMFFBSWtZQzRDTnJxdjJ5b3JRUDFsNWhsdGdBdWlDRElxMWJ1SEFYc1dnQnRxY1ZyZ2VRSW1NYnRDWGRYZ0F6ZmNwTWFFWmRfblBXQ2N3SS1KUk12cUYtOU5IUUdaVFBlTmc0R0o0aWRzMUJwTUp5OVBn?oc=5"
+      ],
+      "publishedAt": "2026-11-07T18:57:22.130Z"
+    },
+    {
       "slug": "2026-11-07-ai-주가-조정-100년-치-폭락장-데이터와-비교해보니-단순-숨고르기-수준",
       "title": "The AI sell-off compared to well-known stock market crashes",
       "urls": [
