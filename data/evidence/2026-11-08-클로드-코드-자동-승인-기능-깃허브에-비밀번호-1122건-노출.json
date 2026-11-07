@@ -1,0 +1,27 @@
+{
+  "articleText": "Claude Code's 'Don't Ask Again' Setting Exposes Secrets in Public GitHub Repositories news.lavx.hu",
+  "reactions": [
+    "[Hacker News] From TFA: &gt; Often Claude commits the file itself. In 539 of the 1,105 repos with a real secret that we traced, a commit co-authored by Claude changed the file. Those commits name every recent model, from Sonnet 4.5 to Opus 5.5. Could open source harnesses do that? Sure, if they were programmed in a similar fashion as Claude Code. Do you have any evidence of it happening?",
+    "[Hacker News] Will look into exposing that in hooks. Ultimately, the threat model here is: human has to approve a lot of commands, so gets tired and accidentally approves a command they shouldn’t have. We spent a significant amount of effort to build a richer permission system, allow configuration at multiple levels, use static analysis to detect dangerous and safe commands, monitor the model to detect and bloc",
+    "[Hacker News] From TFA: &gt; Often Claude commits the file itself. In 539 of the 1,105 repos with a real secret that we traced, a commit co-authored by Claude changed the file. Those commits name every recent model, from Sonnet 4.5 to Opus 5.5.",
+    "[Hacker News] People chose to upload a file containing their password and make it publicly accessible, I don&#x27;t see a problem here.",
+    "[Hacker News] Indeed. The article only compares the status quo manual system versus the auto system — and doesn’t consider ways that the manual could be improved. As it says: &gt; 5% allow any shell command outright, and another 43% have interpreter rules like Bash(python:*) or Bash(node:*) that are essentially equivalent in practice Claude Code never should have prompted to always allow Bash(python:*) or Bash(",
+    "[Hacker News] I run CC as its own user on my laptop with no secrets&#x2F;keys&#x2F;erc available other than through a LPE exploit or perhaps installing a keylogger. Can I guarantee CC won&#x27;t attempt any of those things in auto mode?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "url": "https://news.ycombinator.com/item?id=50407882",
+      "score": 48,
+      "commentCount": 39
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Code's 'Don't Ask Again' Setting Exposes Secrets in Public GitHub Repositories - news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMTB3eFZkZnI1Q012dTNTOGZJRlJCUVBzSDhaOGhPMTNraW9kLUtfbkNNNjQ3Z19lMW11dWhiRUQtLUhUbi1taUxSX3RuRmtmUGdJQ21GLUlYUXBuMVZlNi1INTlZU3BXT295bnV0RW5XTDFGd2hQWVdlUzN6Z01mWXBqWUVVRVljcWdiZVgzaGRiV1dfSDVqQzVFbEVGMFVtdWZ6Y05TQ0x4R1JrVXVPZ3dR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

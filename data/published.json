@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-11-08-클로드-코드-자동-승인-기능-깃허브에-비밀번호-1122건-노출",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "urls": [
+        "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMTB3eFZkZnI1Q012dTNTOGZJRlJCUVBzSDhaOGhPMTNraW9kLUtfbkNNNjQ3Z19lMW11dWhiRUQtLUhUbi1taUxSX3RuRmtmUGdJQ21GLUlYUXBuMVZlNi1INTlZU3BXT295bnV0RW5XTDFGd2hQWVdlUzN6Z01mWXBqWUVVRVljcWdiZVgzaGRiV1dfSDVqQzVFbEVGMFVtdWZ6Y05TQ0x4R1JrVXVPZ3dR?oc=5"
+      ],
+      "publishedAt": "2026-11-07T22:25:55.588Z"
+    },
+    {
       "slug": "2026-11-08-ms-리서치-ai-프론티어-해체-연구보다-스케일링-택한-ms의-선택",
       "title": "The End of AI Frontiers",
       "urls": [
