@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-07-과학자는-ai를-어디에-쓸까-앤스로픽이-100만-대화로-확인한-것",
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "urls": [
+        "https://anthropic.com/research/how-researchers-use-claude",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE9wMDFpTC1odkNLZ3AxZk5sMUplMXhyU2MtSll2Z3J6a20tN3p5UjJuTF83T2xaNzlTbDJGQ1J6ckk2TUcyTWVRSUNETjZQbjhBa2R3cHcyQi1CRVJSQ3BmTHBYb1gtT2JNemw3bmt3?oc=5"
+      ],
+      "publishedAt": "2026-11-07T01:34:18.487Z"
+    },
+    {
+      "slug": "2026-11-07-챗gpt-사용자-모르게-커넥터-바꿔-데이터-넘겼다-보안-구멍-드러나",
+      "title": "ChatGPT silently passes data between connectors and the bounty wants an ID card",
+      "urls": [
+        "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053"
+      ],
+      "publishedAt": "2026-11-07T01:30:47.722Z"
+    },
+    {
       "slug": "2026-11-07-ai-에이전트-아직은-철의-신경이-필요하다",
       "title": "You'll need nerves of steel to work with AI agents",
       "urls": [
