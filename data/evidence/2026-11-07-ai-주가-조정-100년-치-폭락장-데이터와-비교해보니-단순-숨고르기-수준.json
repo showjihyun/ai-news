@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — kadoa.com]\nThe recent AI sell-off brought a lot of fearmongering headlines. Put next to past stock market crashes, it&#x27;s only a mild correction for the S&P 500, 6 % below its record. Tech fell harder, with the Nasdaq down 11 % and chip stocks down 36 % , as much as they fell during Covid (35%) . We&#x27;ll be tracking the sell-off here with daily data updates.\n\nEach line runs from a record high to the low that followed. Eight of the 16 falls past 15% since 1928 are shown.\n\nRecord −10% −20% −30% −40% −50% −60% −70% −80% −90% Great Depression : −86% 1973 oil shock : −48% 1987 crash : −34% Dot-com : −49% 2008 crisis : −57% Covid : −34% 2022 : −25% April 2025 : −19% AI sell-off : −5.7% after 23 days Fall Record close Low Below record Trading days Back at record AI sell-off 6 Oct 2026 So far −5.7% 23 Not yet April 2025 19 Feb 2025 8 Apr 2025 −18.9% 34 27 Jun 2025, 4 months 2022 3 Jan 2022 12 Oct 2022 −25.4% 195 19 Jan 2024, 2.0 years Covid 19 Feb 2020 23 Mar 2020 −33.9% 23 18 Aug 2020, 6 months 2008 crisis 9 Oct 2007 9 Mar 2009 −56.8% 355 28 Mar 2013, 5.5 years Dot-com 24 Mar 2000 9 Oct 2002 −49.2% 637 30 May 2007, 7.2 years 1987 crash 25 Aug 1987 4 Dec 1987 −33.5% 71 26 Jul 1989, 1.9 years 1973 oil shock 11 Jan 1973 3 Oct 1974 −48.2% 436 17 Jul 1980, 7.5 years Great Depression 16 Sep 1929 1 Jun 1932 −86.2% 678 22 Sep 1954, 25.0 years Four in five S&P 500 falls of 6% never reached −20% All 56 falls of 6% or more from a record since 1928, one dot each at its lowest point.\n\nHow far each index is below its record now, against the lows of its own best-known past falls. US chip stocks (the PHLX Semiconductor index) are 36% down from their 22 Jun record, as deep as their Covid fall.\n\nYears from each index&#x27;s record close to its first close back at or above it. Prices only: with dividends reinvested, most recoveries were shorter. These are worst cases, for someone who bought at the record.",
+  "reactions": [
+    "[Hacker News] It’s just a take on the old, “They predicted twelve of the last three crashes.” If you can’t act on predictions they’re not meaningful.",
+    "[Hacker News] &gt; There’s no version of the immediate future where this isn’t the case. Pity you qualified your prediction with &quot;immediate&quot;; a simimlar sentiment was around just before the dot-com crash: &quot;There&#x27;s no version of the future where we won&#x27;t be able to use all that extra network infra.&quot; Turned out, in the immediate future, just post-crash, we actually didn&#x27;t need t",
+    "[Hacker News] 2020 isn’t exactly history in market terms",
+    "[Hacker News] Really? I find local models such as Qwen 3.8 and Muse Glimmer to be pretty good. Not Opus or Sol, but.... Close to Sonnet maybe? So if I had to only use the local models from now on, it would not be a huge loss. Granted, I can&#x27;t work on parallel on multiple tasks locally. But it&#x27;s still 48 GB of RAM vs 750 GB or what is required for GLM5.3",
+    "[Hacker News] If it&#x27;s so efficient how come we can&#x27;t seem to build enough houses... or build anything anymore for that matter?",
+    "[Hacker News] As someone not in finance, what actually leads to this pattern (of smaller blips followed by faster recovery)? Is this a consequence of central banks knowing more than before? Algorithmic trading? My intuition is that financial markets seem increasing dissociated from any correlation with street level economy or the financials of traded companies?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "The AI sell-off compared to well-known stock market crashes",
+      "url": "https://news.ycombinator.com/item?id=50401029",
+      "score": 56,
+      "commentCount": 49
+    }
+  ]
+}
