@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-09-64gb-램만으로-284b-모델-돌린다-라마-모드칩-무료-공개",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "urls": [
+        "https://github.com/synchopate/llama-modchip"
+      ],
+      "publishedAt": "2026-11-08T15:28:01.782Z"
+    },
+    {
       "slug": "2026-11-08-클로드-은행-계좌-연동해-거래-분석-투자-조언은-거절",
       "title": "Anthropic's Claude Can Now Link Bank Accounts and Analyze Transactions But Won't Offer Investment Advice - Yahoo Finance",
       "urls": [
