@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-08-ai가-검색을-망가뜨린다-개발자들이-체감하는-웹의-쇠퇴",
+      "title": "웹에서 AI가 일으키는 온갖 부작용에 어떻게 대처하고 계신가요?",
+      "urls": [
+        "https://news.hada.io/topic?id=36781"
+      ],
+      "publishedAt": "2026-11-08T01:37:19.192Z"
+    },
+    {
       "slug": "2026-11-08-클로드-코드-자동-승인-기능-깃허브에-비밀번호-1122건-노출",
       "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
       "urls": [
