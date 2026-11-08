@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-09-openai-110억-달러-조달-목표가보다-낮아-ms엔비디아에-미치는-영향은",
+      "title": "OpenAI raises $11B at a $1.25T valuation",
+      "urls": [
+        "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought",
+        "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation"
+      ],
+      "publishedAt": "2026-11-08T19:54:25.142Z"
+    },
+    {
+      "slug": "2026-11-09-골드만삭스-트레이더-ai-코딩-도구-차단-앤트로픽-ipo-앞두고-리스크-관리-강화",
+      "title": "Goldman Sachs, 은행원과 트레이더의 Claude Code 사용 제한",
+      "urls": [
+        "https://thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+        "https://news.hada.io/topic?id=36827"
+      ],
+      "publishedAt": "2026-11-08T19:52:08.174Z"
+    },
+    {
       "slug": "2026-11-09-64gb-램만으로-284b-모델-돌린다-라마-모드칩-무료-공개",
       "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
       "urls": [
