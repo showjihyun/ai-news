@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-09-ai가-20개-창을-띄워도-뇌가-녹지-않는-작업법",
+      "title": "How I Fight AI Brain Fry",
+      "urls": [
+        "https://sergeykuhne.com/blog/fighting-ai-brain-fry"
+      ],
+      "publishedAt": "2026-11-08T23:26:11.747Z"
+    },
+    {
+      "slug": "2026-11-09-앤스로픽-데이터센터-전력-직접-확보에-34억-달러-가스발전-택했다",
+      "title": "Anthropic strikes $3.4B deal to generate gas-fired power for data centres",
+      "urls": [
+        "https://ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ1hyX1Y2cFM5Mi1oNjRnVUR4QzcwUThFeGJIUUwzZnVkOGpqNmJvZEQ3cWpIWlNLNjBka2tia0tyN1VMRFNEdlN2UDlWTFAzS2FBQ0xxQU50dTE5VjBETDNvblVIbzdBNzFLZTdSSUNqRFRjcnpKT1FUUUZodnFybGVvMjV6SldXcnEwWEdwUktId2w2dHhvUGtVbEJoRm1GSzNnM3FUdkRfUQ?oc=5"
+      ],
+      "publishedAt": "2026-11-08T23:24:35.902Z"
+    },
+    {
       "slug": "2026-11-09-openai-110억-달러-조달-목표가보다-낮아-ms엔비디아에-미치는-영향은",
       "title": "OpenAI raises $11B at a $1.25T valuation",
       "urls": [
