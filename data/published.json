@@ -1,6 +1,52 @@
 {
   "records": [
     {
+      "slug": "2026-11-10-구글-보안-특화-tpu-8tx와-초대형-컨텍스트용-8i-max-동시-공개",
+      "title": "Google Unveils TPU 8i Max and TPU 8tx: A Dual-Chip TPU and a Confidential TPU",
+      "urls": [
+        "https://marktechpost.com/2026/11/09/google-tpu-8i-max-tpu-8tx",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx?amp%3Butm_medium=social&amp%3Butm_campaign=og"
+      ],
+      "publishedAt": "2026-11-09T21:00:31.696Z"
+    },
+    {
+      "slug": "2026-11-10-앤스로픽-최고-모델-페이블미토스-52-출시가격-내리고-속도-높였다",
+      "title": "Claude Fable 5.2와 Mythos 5.2 - 복잡한 코딩과 과학 연구 역량을 강화한 AI 모델",
+      "urls": [
+        "https://anthropic.com/claude-fable-and-mythos-5-2",
+        "https://news.hada.io/topic?id=36896",
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxORUxtR3VZQVJjcnhWLW1rb3RBdG1vMlFJRlpGeG9iTmdtZ0RrVTBDRkJITUQtM3FjZkhrZHQtb3J4cGNsLUs0SllMR05JcENTWFVOZjJLUUM0c0k2aXlhZGJKNFdnUFd2ZUVtcmp3WWdudFhpWG41by11a3lDZWI1b3Z1VHppTzBteEt4amNJeXc0Y0diSkxnMUdGeVVwNXQ2Y3RUeC1qS3V6cU04eUJtUUg2WHBPVk5pWXB5Vlp1YktpOWxY?oc=5",
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSWctMWdSek1tY1pVaWg4SXBfcHFRR0VYTHprRUI4OHFNZWs1VGp2YU5yUVJQdDNSVkVXS01uMmx0b0dOemlFZjFQNUVibmN3UkU2VkpvWDFkUG1qNnpobDZiVkF3VjlUOVBfdzNfVWJLcm52a2VIcjhJMDY0ZUg1dnJjR2dqZTdxQjh2N18wY3BhS2ctN0k3RA?oc=5",
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4bERid0NXUDIzNk4zUHZYX3JvWGRqSWZ2Q1J0cUVBZXJNalAwX2xib0VuTm1pQVVaUGRxNExYR2ZYd2kxbWhHcEE3WlVzd0JZRFJucERiU1Vxc2E4SmpPY1dhUDhsQzkxUGllQ25Ub0IxRzhqbktTRGc1T0tjdw?oc=5",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPN0VKa1ZLaWtOam8yMHotUVNoUE84dmVtYmJ4dW1XbFZZY1MxcmRhNU5jUHV5dkVINE5ERVdNdzE0TmlDdEJhcjhxZEw2TmtpUWRuVU1yb0M0cjhTQjBQaGRQUHplUjZyZDBrSUtQOWhWc1B4aTBqUlVUNUhsaUpfaXg1M1ptc1d6aTJxcEVPaFlMaDZBWnBLZzFCc1JNX2NlU2J2TWFiNXZ5M3lzSmVLRDJuXy0zUzAwLU1scGdjUFpjd3RqLTZPS3I1UmxpOWhmRURuYUhKN2tIR2czVWY2Zg?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVzhYdUhsNzNPQkZ3aVh2eGJ4NEgtNlpiX0tRaDA3UFpFclkzMWRycGVrQlhaZVRNSnVoSlFBY2tWR0dyV2JTWWRBcy1qVnZyQ0VFWWE4SkozSFgyMmdzSXdQMkVLaXVJS0dFUUh5WXd6N1UyRjFGczJvU2VycHVEemxlZkRKQk5PRWtyakNiM0dSdzllZ1ItcjlJRzcyWnhkVE0zTy1paTZpWmJhLWZPaFVpeVFvWjMwNDdn?oc=5",
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa1VhX3JiZEstX0xxWUp2Q1JEc09sRmtEQ0VtX0pYcG9DQ2prUWludkt4TldqY0hicTJKTlVFSTNObmdpRUtILUVvbEVsbjNXNzliaThkMm1wUHdMbmxXajVsZkswd2hXVDBWX01OZkVZUGk2d2VfYUNmbHZJWFpURjhjRVJnSlJuNDluTlFwak9kZmdkSmww?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOelYxZlZJVWl4amFBYnc4Zk9PTFZVY1RFWFNaR1ZRX09kQXQxMzViQ19fNnJaS1B2VFYzb004dTlqbjk1MGY1OFVsb2V4V1dqT3FLNnRIbWM4WS1lMjZXaGZlSHA5WFB1b210cjBCZm5SNHh3RTl5R1l2TENlX3VwTEh6XzB3WDVCZWFIZzFfQnJmdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZklVRk01c1IzQnVGUjFBMzFfY2s1MzBTcUo5THVIakxNbGRud05xYjNJTE82ejBMTHFheTQyWUZGbmdmZUItRTN1Z3pWSGN1ZTAxeHd3TFUtNFowMUl6TDUwdWlscDVqdWhER2k2Slc1cWw5dnM4QlpENDQ0dnBnckJsYnMyQzJuQXFIenF5ZGptWEdvT1M2NG5EcnNIeGl1WEZfSVZTc2VfTFRKLXJVcXh2NjBTaG1nSDVsUXQyMVQ3UQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVGdJeUw5XzRHQUxGcHBrV1JCYlQ5WENLWC1rNDBJeHFhTzhkY19rYXJHUElhcGozNEUyYWhTOS1PRWRCTy1VMklnRU02Sll4LXFzUlp1V3hhR0ZuTWNDNmpCUEc2TW9kaDE1VnlwWkZRcXV6Tm1Qc3F1MUtVRWpPUHNQTWd5Y1ZJbGZkMURHQWRobklqUW1xUE8zMjlmblBlM2dZ?oc=5",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa1NlMWVnVWZUd3Vhc21tREQ2STdldlJUS1duQjBTeEZoSkIxNzlQM2VLTkdQREdrdl9GZV9vamZjYjBZdF9TcXBPSHotdDh3eGlVclJkQ0RGYTkxNDBRakQzLUFzaldJOGhKUWdTZ1E0MGMza0p6WHF0WThod3BRenBsS1NRbGhf?oc=5",
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcmtUTndmeHJoRGlraVRFNzlXVy1fY0lPRHpYbUJQdml6cm5MUlVSZGZja1F1b0N6NzlmNkZMaGxYU2Nkend2MXRrM1U3bzJycnN4c1VFajJJX0xRMlFwQU96eUZHeE9feGNnTVdVM0h5Mmd4SERGWEV1UFVBOVdKNXdFNVREWlgwQ3lOcnl5UGZJeFFPXzlJN3VoYzQ3NmpDTU1vbk8yV3FzNTREWm1BS1hsNGx4OW80MUZ4aGdoeHgteThEb2dXYXNJUEUtWDJ1WUxz?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc3hVbjdCeHdHU3NWWVkzMlczYU1uTGlUaWRtUnVGUHhjaVo5MXIyakU5WHhuVFQ0UHllSm8wdTdYZ3ItenI0WEZvYm1LQzJBblBKaFg0RHcxLVlvZUd3c0dlT2FqUXMxdkF0czhNNTBnUU9EY0c5YzdlZWdfU0sxTUs5NlhaYndtMXdkS2tPUERxUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUjdQVVNMQUIwZGRNTWZKTER1cEMwbFkweEJMM2pDcDAzQ1dpa1hkbmwyMDh5ZVM3QVJzUnRFOVVYNVZiNXBtNUpmdzdZNHdTREZ4dFl3VHZqU2lGVFlSamIwb0RWVXFLY2lhN2p0Z2d0cENpczdxTjZhVlFNbkhtTDBlc3dDSG1qZnJzZ2lLMkVPSHpiTklKS05tZ0V0b2hrRzFlZERn?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZGNjRnN0dnhvUjJZQ2M1ejQwcjBuZ3lwamxBSENwRmlhcVYzVDYxSE9id1pqUHhyMjBwVGI1VFBVS3prcG4tRjhidlNTaC1oOXRUYUhYQkdJVzZKQmlXZW9TUXl4S1FWR09kams2c1RTLXlKVjd6YzNKUTZKNU1hbEx6VjItRUhwNG04?oc=5",
+        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMzdDVTBjcFc5ak1kSWRNZjdyUlR2NXlMTHgtekJRSUpNMlhnaTd6cW54NW04MlRwN0Z0T1FDYXFBd3FjZUY3Q2g5Y1g5T3Z3aFk5VHJQUmNsZ2hjaDY1RWlfVEQxUDNXU2I1czFFRTdCUmhucGhsd09lbk45UTBEUnp0QzZOVVBEdW1Sa1VkRk5BRmRkMklxM0laZGdvNUhGTVY0RVlXc1dYOXlPY0wzaWQtUGFjLWdjQkVWcmtYRnM2YlE5bGZuU2FXV3NCY3AtcjZJWdIB2gFBVV95cUxQSUIzN3NVb09SVFVyZVNXSzZPX0wwUUlGaTJ5YnFQTlVicWY0QVh3LUZEWlZlcUI3bUhncmhjTmk0SWRFZWdLZ0N5eGEyNmZfbFF5S1B3djZ6QnAxT1RYekFmdkEtdXNURF9QTUJQd3FrS1VNS2VZT0oxOG84eFoweWlYVjJScXp3LXY0R3dLRERZcHRuYTE4ek11VFBOR1NPa0pzR18zZnZuMXRlSGxyemFPdXFXRHJoeHh3ODFwM0JBM0t1R2g3R3lNcXZZZVBRS19kdG9YU29yQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdDUtRWRxT1dsRWZsTlZ1MFlBcVFrRk5CamlFM0l4UEtrVzhDMzgzUlB0VktvTzg2Si1lajFkMmphNVpmd0M2NVJZS3RkZlgtUnhhdVVFbDFHM2R6eVRIZkhkbm0zRVRyc0FPYmlxN2FTOEZKaDJnSEpBQ2M1TmtSTFctcEdUNkVmdDRJY2tDbFNDZTY0bGhnU0ptRHNHS1BMSmJTQg?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZkUyQ0VTUTFZRDMzRWRfMVB2NWF1ODI5S1hRZ3hUMk5IUW43dDQwWHlxemREY29lakpTTWZzdlBCdjU4N0R2U0xudDBoQ21ySk9LRFNHbmF3c3RGU3F3ZlRMWEZCZkF3dWlmRHpYX01vMGRMNmhMUkMyWWJKSGc0MlBQUzVwSnNTNjV6YWl2NVZGR1c3YzFRMUtFUm4?oc=5",
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qcUZGTl82NWtwX1hZQXQyQWdMOU9ZbE9yNjVoTGhHdVdjcFFHekM0WDkxcFZ6TXdtWnVlUlAwRUFnUkM0cVQ2Tm1reTdnYndMcGVDNnNMZzU?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdEpTemVENWsxb0M3TS0yTnBIWkRfbzZteGZoNFEtRnUyQjY3dzBhVnVBSXVDSzFFUm1kT0dDLXdZSy10UUNVbXZjNWJvS091enFxS1NnQTdRZ0szdWZtYm55WU5KY1hBU3cwaVh6VWhYMENQZTRBMDNqd3J0TmV6SDhyU2FnNlN3SEhRTA?oc=5",
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc21RZ21iM1pvVTJ6U2VFVVFVWmlFV21hdmFOWTBzUWtJcmtBSTA5RFMzamJvZlhEWHhxRnktTko0bldWQW4tZlRWcmlwbW9DVFlkY2F1MVZZOFIzcVR3aGViMzVNWmR2OWF0eWt6X00xTnBRSVVNbmk5Zm1welpIVXA4Vjd1Zw?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RNDNrYUhrZzVqZmNtcW9seGhkNXBaSnRLdmQ0cDVld1ItR0xTS0MyeDF4MnMxN2Z4M3R3NFJQdGZxaXNZeFRjWk9uUG1haTdVNWxwMWJPelVSVlc4X3hhQjdHcXVIY0dRb0pwc1NONnVfbkFaNVE?oc=5",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcU0yS2tJQ3JaT1hJQl9fM3BIc2dJLV9uZks3dDNmeGFTNHdKVlZrWHRhSFo2MmNsRUcwS19icXh5TWhtTnlnb0pwdnBXenpsSkJBZXBtSzVCdWI4LTduTXRFdnF3WE9LNXZ5cHRuVmgxZXpJeFFwR0psd1BXUE0tUUVBSnFLZ1owaG55YXBjUGhSOXdaczhLNGVDUTc4WjRXa0t5M01HQWpaMXhiRVZENjBFQ0tLSGxneWplcU9USQ?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxORGhDeGJnZ2NGNzJnQmNZREI3VmU0S2g4dEFXZnFpdHIzcEZ3ckUyWEhjeDdiZUh3YWZQX04zWUFYc3FPdXhiOWtVVHBfVXFhMHcwSTVFUzJ1OF9iRWdQUUt5NjRFTGt6blNUQWJ2ZXVIZ0Fwc0VaZmVobjFNSXA0X3dlcFl4RE5pM1hjWWxMdUhRNVRiYkF0bkRfQ0RNS1dXWnVGSWNYN3JUMnJu?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeEtEV19XV2I4V0stYi1URlp5cE12aWFTal9rZ2ptdnBSSW93elJOMVRySl8wOGJHaE16T3hDaXNtaFh2S05nOV9MR1IwZ0RXLXN3eGZlOVNab0xCMjEtclB4MktUU2c1b2VNcjBBSTl2TzI5czlPcTYwd0MyWFZBWXRkVDdnU1Q1dG5JWDl3bV9iZXpXTEJHQ0RCV2poRXR4Z3lua0ZUckNKQW91ZldISGhwbU1mREozUWpZNHZn?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdmdhZTF0R2pMTExrRzBsR1dnZUhwWG5vTEZWNktreGMweUVreWtzTUI1RW5CR0FyNXRWYWhzNkE4cFYzc2UzNjNneGFOVkdFUDlKcVRxdUhpZTJEMGx1cjVaVGp2RVlNUU53MU14MFR4dG5BSVpoMlVKOXR4VG1MYzJrQXk1MDdMMl9KcQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWOV9VWGRUYjgwczJMVHhOZ0pmdnIwdzRjbld0M3JVUXFMaEVFRm1mODF0eHVrUmNkSFh6eWNYdm9IaXh3Q3NHVjBzbmFkR3pfeXByeDBoR05hSFlYY1Zz?oc=5",
+        "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
+        "https://theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"
+      ],
+      "publishedAt": "2026-11-09T20:59:30.915Z"
+    },
+    {
       "slug": "2026-11-09-ai-결과물만-복사해-내는-고기-프록시-논란-개발자-해고-사유-될까",
       "title": "Being a meat proxy for AI should be grounds for getting people fired",
       "urls": [

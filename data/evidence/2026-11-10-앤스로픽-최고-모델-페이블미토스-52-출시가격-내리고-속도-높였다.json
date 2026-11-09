@@ -1,0 +1,223 @@
+{
+  "articleText": "[Hacker News — anthropic.com]\nWe’ve upgraded Claude Fable and Claude Mythos—models that are designed to tackle the most daunting technical challenges.\n\nClaude Fable 5.2 and Claude Mythos 5.2 show improvements in areas like coding, reasoning, and vision. During prerelease testing they’ve helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours—among many other applications we’ll discuss below.\n\nClaude Fable and Claude Mythos are the same underlying model. Fable has strong cybersecurity and biology safeguards to guard against misuse, which allows us to make it available to all users. Organizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Mythos through our recently expanded Life Sciences and Cyber Verification Programs.\n\nTesters have found that Fable 5.2 and Mythos 5.2 communicate more clearly than past Fable and Mythos models. They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.\n\nFable 5.2 and Mythos 5.2 also come with an optional fast mode, which speeds up token generation by up to 2.5 times. Fast mode is available for $16 per million input tokens and $80 per million output tokens.\n\nSafety and alignment. To help ensure safety and alignment keep step with growing model capabilities, we ran extensive prerelease safety testing on the model that underlies Fable 5.2 and Mythos 5.2. This included developing novel evaluations that give deeper insight into specific concerning behaviors like sandbox escapes. We believe high-stakes risks from misalignment remain low, and the model performed as well as, or better than, our recent models on most alignment measures. Fable 5.2’s cyber and biology safeguards are as robust as those of Fable 5.1 but produce fewer unnecessary blocks, and we have implemented our strongest-ever protections against distillation attacks.\n\nWe describe more about our safety testing below, and full details can be found in the Claude Fable 5.2 and Mythos 5.2 System Card .\n\nWhen to use Claude Fable 5.2 and Mythos 5.2. Fable and Mythos are best for the most ambitious, open-ended technical work. For most coding and knowledge tasks, we recommend that users start with Claude Opus 5.5, our strongest daily driver, and then switch to a different model as required, depending on the scope and complexity of their work—upward to Fable or Mythos, or downward to Claude Sonnet 5.5 or Claude Haiku 5.5. Fable 5.2 can also play the role of Advisor (where Haiku, Sonnet, or Opus models consult it to help solve harder problems) or Orchestrator (where it delegates simpler tasks to smaller models).\n\nBenchmark performance. The benchmarks table below shows that Claude Fable 5.2 and Mythos 5.2 are a step above Opus 5.5 in almost all the capabilities we evaluated:\n\nFor details on evaluation methodology, see the Claude Fable 5.2 and Claude Mythos 5.2 System Card . Scores for Fable 5.2, Fable 5.1, and Opus 5.5 show results with safeguards on unless otherwise noted. All scores show each model’s highest-available effort unless otherwise noted. † On CyScenarioBench, each lab’s scores are based on unique tasks. ‡ RoboDojo Sim shows the highest-available effort and was run internally.\n\nEffort and efficiency. On Medium effort (the default in Claude apps and Claude Code), Fable 5.2 can accomplish challenging tasks with fewer tokens than Fable 5.1. In early testing on the FrontierCode 2.0 evaluation, Fable 5.2 at High effort scored about level with Opus 5.5 at Max effort, for roughly half the cost per task. At Xhigh effort, it also scored the highest of any released model tested.\n\nFable 5.2 Opus 5.5 Fable 5.1 GPT-6 Astra Gemini 4 Carbon 10 20 30 40 50 0 Score (%) 1 2 5 10 20 50 Cost per task (USD, log scale) Low Med High Xhigh Max FrontierCode measures whether a model’s code changes would be merged by the maintainers of open-source repositories. At High effort, Fable 5.2 scores about the same as Opus 5.5’s best score (45.3% vs. 45.5%) for roughly half the cost per task, and ahead of GPT-6 Astra’s best score (42.8%) at about the same cost. At Xhigh effort, Fable 5.2 reaches 49.1%, the highest score of any released model we’ve tested.\n\nFable 5.2 Opus 5.5 Fable 5.1 30 40 50 60 70 80 90 0 Score (%) 1 2 5 10 20 50 Cost per attempt (USD, log scale) Low Med High Xhigh Max Perplexity’s WANDR benchmark measures agents on large data-collection tasks. At Medium effort, Fable 5.2 matches Opus 5.5’s top score for about 40% of the cost per task.\n\nFable 5.2 Opus 5.5 Fable 5.1 0 20 40 60 80 Score (0–100) 0.03 0.10 0.30 1 3 10 30 Cost per attempt (USD, log scale) Low Med High Xhigh Max BenchCAD 2.1 measures hardware engineering, specifically how closely a mode\n\n---\n\n[TechCrunch AI — techcrunch.com]\nAnthropic released new versions of its most advanced models on Monday, with the launch of Mythos 5.2 and Fable 5.2. The company says the new models &#8220;show improvements in areas like coding, reasoning, and vision&#8221; and communicate more clearly with users.\n\nNotably, Anthropic is lowering the cost of Fable from $10 to $8 per million input tokens. As a result, Fable 5.2 is now cheaper than its primary competitor GPT-6 Astra. Anthropic says that the new version of Fable will return responses 30% faster across effort levels. Faster inference serving is available for double the price.\n\nFable 5.2 is also compatible with zero data retention (ZDR) policies through the Enterprise Frontier Safeguards system , long a sticking point for many enterprise clients.\n\nIt&#8217;s Anthropic&#8217;s first model release since the arrival of a third-party report from the assessment group METR , which suggested the lab might be approaching recursive self-improvement (RSI) &#8212; or the ability for AI models to carry on model training independently. The METR report found internal models were speeding up Anthropic&#8217;s AI progress by roughly 2x, although many uncertainties remain.\n\nStill, Anthropic&#8217;s release notes significant ongoing challenges in accurately testing model capabilities. &#8220;Claude Mythos 5.2 and Fable 5.2 each voice suspicion that they are being evaluated more often than any of our recent models, which challenges our ability to assess how they will act in real-world settings. As these settings expand and capabilities increase with future models, we expect this challenge to grow.&#8221;\n\nAnthropic maintains that the new version of Mythos does not have the ability to act covertly against its user, a verdict that&#8217;s detailed further in Mythos 5.2&#8217;s system card .\n\n&#8220;Claude Mythos 5.2 shows stronger covert capabilities than prior Claude models on several of our evaluations, particularly when its reasoning is hidden from the monitor,&#8221; the system card reads. &#8220;That said, we believe that low levels of absolute performance on our new covert evaluations support claims that rely on detection of harmful actions in high-stakes situations.&#8221;\n\nFable 5.2 has been available to select parties in pre-release for some time, and Anthropic says the model has already &#8220;solved two open problems in theoretical physics, formalized Fermat&#8217;s Last Theorem, and supported numerous other research projects.&#8221;\n\nAlso on Monday, AI startup Physical Superintelligence announced a new proof of the Aaronson‑Ambainis conjecture, a pivotal step in setting theoretical limits for quantum computing. Notably, the lab said the result was achieved by running &#8220;a non-public Anthropic model&#8221; within PSI&#8217;s own system. Anthropic did not confirm or deny whether Fable 5.2 was the model in question.\n\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\n\nNovember 4 Boston Buy One Pass, Get a Second Free Cover more ground at TechCrunch&#8217;s ultimate founder bootcamp of the year by bringing your co-founder or partner for free Book before the BOGO deal expires\n\nTesla will stop making the Cybertruck in 2027 Sean O&#039;Kane\n\nClaude can now analyze your spending with its new Personal Finance tool Aisha Malik\n\nHarbinger raises $240M after expanding into defense Sean O&#039;Kane\n\nAlmost no one uses AI agents to book their Uber, company says Sarah Perez\n\nData centers are turning to old jet engines as the wait for power grows Aditya Mehta\n\nNew York City&#8217;s Mamdani criticizes Madison Square Garden owner over surveillance tech Zack Whittaker\n\n---\n\n[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nClaude Fable 5.2 is designed to take on big technical challenges, and it’s available today.\n\nClaude Fable 5.2 is designed to take on big technical challenges, and it’s available today.\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: Cath Virginia / The Verge Jay Peters Close Jay Peters Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on “daunting” technical challenges. The company claims the new models show improvements in coding, reasoning, and vision, and can generate outputs faster than the 5.1 versions of the Fable and Mythos models.\n\nClaude Fable 5.2 is good at challenging software engineering problems, Anthropic says, and can orchestrate agent teams and tackle long-running projects. The new model has also solved some complex scientific problems, including two open theoretical physics problems.\n\nDuring prerelease testing, the two models have “helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours,” Anthropic says.\n\nClaude Fable 5.2 is launching today. As for Claude Mythos 5.2, only vetted organizations will have access to start. The new 5.2 models follow the release of Claude Fable 5.1 and Claude Mythos 5.1 in September .\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] I mean I found Fable 5.1 outperformed Opus 5.5 for data science, so I expect 5.2 to. But then I&#x27;m someone who hasn&#x27;t found Opus 5.5 good for much beyond web UIs and related frontend development. I find it more forgetful than GPT-5.6 or 6.1 or Fable, so despite having a 1M context window it gets lost in a big codebase or goes of target. Opus 5.5 doesn&#x27;t manage agents particularly wel",
+    "[Hacker News] The lack of transparency around model quality&#x2F;usage limits on closed models makes me want to ditch them. What I have learned is that any model from Anthropic&#x2F;OpenAI is at it&#x27;s absolute best right after release.",
+    "[Hacker News] Yes but we see errors in human output too.",
+    "[Hacker News] Tell it to draw a picture of something with JavaScript in the style you desire. No harness magic necessary. It helps to provide it with reference images.",
+    "[Hacker News] There is plenty of explanation, if you actually go seek out the benchmark. Past 80 benchmarks start approaching saturation and are not very useful to show differences",
+    "[Hacker News] No this is only Model 3. See page 39 of the system card and onwards: https:&#x2F;&#x2F;assets.claude.com&#x2F;27d60918d218125e7504bc7354c4b4626e... Pretty crazy that Anthropic already has another model waiting in the wings that is significantly better than this."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://news.ycombinator.com/item?id=50429906",
+      "score": 617,
+      "commentCount": 322
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Claude Fable 5.2와 Mythos 5.2 - 복잡한 코딩과 과학 연구 역량을 강화한 AI 모델",
+      "url": "https://news.hada.io/topic?id=36896",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic debuts Claude Fable 5.2 and Mythos 5.2 models as IPO nears - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORUxtR3VZQVJjcnhWLW1rb3RBdG1vMlFJRlpGeG9iTmdtZ0RrVTBDRkJITUQtM3FjZkhrZHQtb3J4cGNsLUs0SllMR05JcENTWFVOZjJLUUM0c0k2aXlhZGJKNFdnUFd2ZUVtcmp3WWdudFhpWG41by11a3lDZWI1b3Z1VHppTzBteEt4amNJeXc0Y0diSkxnMUdGeVVwNXQ2Y3RUeC1qS3V6cU04eUJtUUg2WHBPVk5pWXB5Vlp1YktpOWxY?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models - The Verge",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSWctMWdSek1tY1pVaWg4SXBfcHFRR0VYTHprRUI4OHFNZWs1VGp2YU5yUVJQdDNSVkVXS01uMmx0b0dOemlFZjFQNUVibmN3UkU2VkpvWDFkUG1qNnpobDZiVkF3VjlUOVBfdzNfVWJLcm52a2VIcjhJMDY0ZUg1dnJjR2dqZTdxQjh2N18wY3BhS2ctN0k3RA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2 - MacRumors",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4bERid0NXUDIzNk4zUHZYX3JvWGRqSWZ2Q1J0cUVBZXJNalAwX2xib0VuTm1pQVVaUGRxNExYR2ZYd2kxbWhHcEE3WlVzd0JZRFJucERiU1Vxc2E4SmpPY1dhUDhsQzkxUGllQ25Ub0IxRzhqbktTRGc1T0tjdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic releases Claude Fable 5.2 and Mythos 5.2, pairing new, record-high benchmarks with 20% API cost reduction - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPN0VKa1ZLaWtOam8yMHotUVNoUE84dmVtYmJ4dW1XbFZZY1MxcmRhNU5jUHV5dkVINE5ERVdNdzE0TmlDdEJhcjhxZEw2TmtpUWRuVU1yb0M0cjhTQjBQaGRQUHplUjZyZDBrSUtQOWhWc1B4aTBqUlVUNUhsaUpfaXg1M1ptc1d6aTJxcEVPaFlMaDZBWnBLZzFCc1JNX2NlU2J2TWFiNXZ5M3lzSmVLRDJuXy0zUzAwLU1scGdjUFpjd3RqLTZPS3I1UmxpOWhmRURuYUhKN2tIR2czVWY2Zg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils new Fable, Mythos models as competition heats up ahead of IPO - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVzhYdUhsNzNPQkZ3aVh2eGJ4NEgtNlpiX0tRaDA3UFpFclkzMWRycGVrQlhaZVRNSnVoSlFBY2tWR0dyV2JTWWRBcy1qVnZyQ0VFWWE4SkozSFgyMmdzSXdQMkVLaXVJS0dFUUh5WXd6N1UyRjFGczJvU2VycHVEemxlZkRKQk5PRWtyakNiM0dSdzllZ1ItcjlJRzcyWnhkVE0zTy1paTZpWmJhLWZPaFVpeVFvWjMwNDdn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Fable 5.2 and Mythos 5.2 AI models ahead of IPO - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa1VhX3JiZEstX0xxWUp2Q1JEc09sRmtEQ0VtX0pYcG9DQ2prUWludkt4TldqY0hicTJKTlVFSTNObmdpRUtILUVvbEVsbjNXNzliaThkMm1wUHdMbmxXajVsZkswd2hXVDBWX01OZkVZUGk2d2VfYUNmbHZJWFpURjhjRVJnSlJuNDluTlFwak9kZmdkSmww?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Ships Mythos and Fable Models Days Before IPO - The Tech Buzz",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOelYxZlZJVWl4amFBYnc4Zk9PTFZVY1RFWFNaR1ZRX09kQXQxMzViQ19fNnJaS1B2VFYzb004dTlqbjk1MGY1OFVsb2V4V1dqT3FLNnRIbWM4WS1lMjZXaGZlSHA5WFB1b210cjBCZm5SNHh3RTl5R1l2TENlX3VwTEh6XzB3WDVCZWFIZzFfQnJmdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches New Models Ahead Of IPO: Claude Fable 5.2, Mythos 5.2 - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZklVRk01c1IzQnVGUjFBMzFfY2s1MzBTcUo5THVIakxNbGRud05xYjNJTE82ejBMTHFheTQyWUZGbmdmZUItRTN1Z3pWSGN1ZTAxeHd3TFUtNFowMUl6TDUwdWlscDVqdWhER2k2Slc1cWw5dnM4QlpENDQ0dnBnckJsYnMyQzJuQXFIenF5ZGptWEdvT1M2NG5EcnNIeGl1WEZfSVZTc2VfTFRKLXJVcXh2NjBTaG1nSDVsUXQyMVQ3UQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic releases Claude Fable 5.2, limits Mythos access - Breakingthenews.net",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVGdJeUw5XzRHQUxGcHBrV1JCYlQ5WENLWC1rNDBJeHFhTzhkY19rYXJHUElhcGozNEUyYWhTOS1PRWRCTy1VMklnRU02Sll4LXFzUlp1V3hhR0ZuTWNDNmpCUEc2TW9kaDE1VnlwWkZRcXV6Tm1Qc3F1MUtVRWpPUHNQTWd5Y1ZJbGZkMURHQWRobklqUW1xUE8zMjlmblBlM2dZ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic ships Claude Fable 5.2 and Mythos 5.2 at a lower price - RuntimeWire",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa1NlMWVnVWZUd3Vhc21tREQ2STdldlJUS1duQjBTeEZoSkIxNzlQM2VLTkdQREdrdl9GZV9vamZjYjBZdF9TcXBPSHotdDh3eGlVclJkQ0RGYTkxNDBRakQzLUFzaldJOGhKUWdTZ1E0MGMza0p6WHF0WThod3BRenBsS1NRbGhf?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Says Claude Fable 5.2 And Claude Mythos 5.2 Available Now - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcmtUTndmeHJoRGlraVRFNzlXVy1fY0lPRHpYbUJQdml6cm5MUlVSZGZja1F1b0N6NzlmNkZMaGxYU2Nkend2MXRrM1U3bzJycnN4c1VFajJJX0xRMlFwQU96eUZHeE9feGNnTVdVM0h5Mmd4SERGWEV1UFVBOVdKNXdFNVREWlgwQ3lOcnl5UGZJeFFPXzlJN3VoYzQ3NmpDTU1vbk8yV3FzNTREWm1BS1hsNGx4OW80MUZ4aGdoeHgteThEb2dXYXNJUEUtWDJ1WUxz?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Fable 5.2 and Mythos 5.2: 30% Faster [2026] - shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc3hVbjdCeHdHU3NWWVkzMlczYU1uTGlUaWRtUnVGUHhjaVo5MXIyakU5WHhuVFQ0UHllSm8wdTdYZ3ItenI0WEZvYm1LQzJBblBKaFg0RHcxLVlvZUd3c0dlT2FqUXMxdkF0czhNNTBnUU9EY0c5YzdlZWdfU0sxTUs5NlhaYndtMXdkS2tPUERxUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic releases upgraded versions of Fable, Mythos ahead of IPO - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUjdQVVNMQUIwZGRNTWZKTER1cEMwbFkweEJMM2pDcDAzQ1dpa1hkbmwyMDh5ZVM3QVJzUnRFOVVYNVZiNXBtNUpmdzdZNHdTREZ4dFl3VHZqU2lGVFlSamIwb0RWVXFLY2lhN2p0Z2d0cENpczdxTjZhVlFNbkhtTDBlc3dDSG1qZnJzZ2lLMkVPSHpiTklKS05tZ0V0b2hrRzFlZERn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Fable 5.2, 20% Cheaper Than 5.1 - FourWeekMBA",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZGNjRnN0dnhvUjJZQ2M1ejQwcjBuZ3lwamxBSENwRmlhcVYzVDYxSE9id1pqUHhyMjBwVGI1VFBVS3prcG4tRjhidlNTaC1oOXRUYUhYQkdJVzZKQmlXZW9TUXl4S1FWR09kams2c1RTLXlKVjd6YzNKUTZKNU1hbEx6VjItRUhwNG04?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches new AI models, Claude Fable 5.2 and Mythos 5.2, ahead of IPO | Business News - Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMzdDVTBjcFc5ak1kSWRNZjdyUlR2NXlMTHgtekJRSUpNMlhnaTd6cW54NW04MlRwN0Z0T1FDYXFBd3FjZUY3Q2g5Y1g5T3Z3aFk5VHJQUmNsZ2hjaDY1RWlfVEQxUDNXU2I1czFFRTdCUmhucGhsd09lbk45UTBEUnp0QzZOVVBEdW1Sa1VkRk5BRmRkMklxM0laZGdvNUhGTVY0RVlXc1dYOXlPY0wzaWQtUGFjLWdjQkVWcmtYRnM2YlE5bGZuU2FXV3NCY3AtcjZJWdIB2gFBVV95cUxQSUIzN3NVb09SVFVyZVNXSzZPX0wwUUlGaTJ5YnFQTlVicWY0QVh3LUZEWlZlcUI3bUhncmhjTmk0SWRFZWdLZ0N5eGEyNmZfbFF5S1B3djZ6QnAxT1RYekFmdkEtdXNURF9QTUJQd3FrS1VNS2VZT0oxOG84eFoweWlYVjJScXp3LXY0R3dLRERZcHRuYTE4ek11VFBOR1NPa0pzR18zZnZuMXRlSGxyemFPdXFXRHJoeHh3ODFwM0JBM0t1R2g3R3lNcXZZZVBRS19kdG9YU29yQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "What is Claude Fable 5.2? Anthropic's new model is out for paid users and developers, 20% cheaper - Nacionale",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdDUtRWRxT1dsRWZsTlZ1MFlBcVFrRk5CamlFM0l4UEtrVzhDMzgzUlB0VktvTzg2Si1lajFkMmphNVpmd0M2NVJZS3RkZlgtUnhhdVVFbDFHM2R6eVRIZkhkbm0zRVRyc0FPYmlxN2FTOEZKaDJnSEpBQ2M1TmtSTFctcEdUNkVmdDRJY2tDbFNDZTY0bGhnU0ptRHNHS1BMSmJTQg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils Claude Fable 5.2 and Claude Mythos 5.2 — CNBC - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZkUyQ0VTUTFZRDMzRWRfMVB2NWF1ODI5S1hRZ3hUMk5IUW43dDQwWHlxemREY29lakpTTWZzdlBCdjU4N0R2U0xudDBoQ21ySk9LRFNHbmF3c3RGU3F3ZlRMWEZCZkF3dWlmRHpYX01vMGRMNmhMUkMyWWJKSGc0MlBQUzVwSnNTNjV6YWl2NVZGR1c3YzFRMUtFUm4?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches powerful Fable 5.2 and Mythos 5.2 AI models ahead of Wall Street debut - TRT World",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qcUZGTl82NWtwX1hZQXQyQWdMOU9ZbE9yNjVoTGhHdVdjcFFHekM0WDkxcFZ6TXdtWnVlUlAwRUFnUkM0cVQ2Tm1reTdnYndMcGVDNnNMZzU?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Releases Claude Fable 5.2 and Mythos 5.2 Ahead of Possible IPO - JournalArta",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdEpTemVENWsxb0M3TS0yTnBIWkRfbzZteGZoNFEtRnUyQjY3dzBhVnVBSXVDSzFFUm1kT0dDLXdZSy10UUNVbXZjNWJvS091enFxS1NnQTdRZ0szdWZtYm55WU5KY1hBU3cwaVh6VWhYMENQZTRBMDNqd3J0TmV6SDhyU2FnNlN3SEhRTA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Fable 5.2 and Mythos 5.2 Launch With Faster AI and Lower Prices - Brave New Coin",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc21RZ21iM1pvVTJ6U2VFVVFVWmlFV21hdmFOWTBzUWtJcmtBSTA5RFMzamJvZlhEWHhxRnktTko0bldWQW4tZlRWcmlwbW9DVFlkY2F1MVZZOFIzcVR3aGViMzVNWmR2OWF0eWt6X00xTnBRSVVNbmk5Zm1welpIVXA4Vjd1Zw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Rolls Out Fable 5.2 and Mythos 5.2 at Lower Token Prices Ahead of IPO - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RNDNrYUhrZzVqZmNtcW9seGhkNXBaSnRLdmQ0cDVld1ItR0xTS0MyeDF4MnMxN2Z4M3R3NFJQdGZxaXNZeFRjWk9uUG1haTdVNWxwMWJPelVSVlc4X3hhQjdHcXVIY0dRb0pwc1NONnVfbkFaNVE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches New Fable, Mythos Models Ahead of IPO: Up to 30% Speed Boost Poised to Support Offering Valuation - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcU0yS2tJQ3JaT1hJQl9fM3BIc2dJLV9uZks3dDNmeGFTNHdKVlZrWHRhSFo2MmNsRUcwS19icXh5TWhtTnlnb0pwdnBXenpsSkJBZXBtSzVCdWI4LTduTXRFdnF3WE9LNXZ5cHRuVmgxZXpJeFFwR0psd1BXUE0tUUVBSnFLZ1owaG55YXBjUGhSOXdaczhLNGVDUTc4WjRXa0t5M01HQWpaMXhiRVZENjBFQ0tLSGxneWplcU9USQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2 with a 20% price cut as its IPO nears - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORGhDeGJnZ2NGNzJnQmNZREI3VmU0S2g4dEFXZnFpdHIzcEZ3ckUyWEhjeDdiZUh3YWZQX04zWUFYc3FPdXhiOWtVVHBfVXFhMHcwSTVFUzJ1OF9iRWdQUUt5NjRFTGt6blNUQWJ2ZXVIZ0Fwc0VaZmVobjFNSXA0X3dlcFl4RE5pM1hjWWxMdUhRNVRiYkF0bkRfQ0RNS1dXWnVGSWNYN3JUMnJu?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic unveils new Fable, Mythos models as competition heats up ahead of IPO - CNA",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeEtEV19XV2I4V0stYi1URlp5cE12aWFTal9rZ2ptdnBSSW93elJOMVRySl8wOGJHaE16T3hDaXNtaFh2S05nOV9MR1IwZ0RXLXN3eGZlOVNab0xCMjEtclB4MktUU2c1b2VNcjBBSTl2TzI5czlPcTYwd0MyWFZBWXRkVDdnU1Q1dG5JWDl3bV9iZXpXTEJHQ0RCV2poRXR4Z3lua0ZUckNKQW91ZldISGhwbU1mREozUWpZNHZn?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2 at a 20% lower price - Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdmdhZTF0R2pMTExrRzBsR1dnZUhwWG5vTEZWNktreGMweUVreWtzTUI1RW5CR0FyNXRWYWhzNkE4cFYzc2UzNjNneGFOVkdFUDlKcVRxdUhpZTJEMGx1cjVaVGp2RVlNUU53MU14MFR4dG5BSVpoMlVKOXR4VG1MYzJrQXk1MDdMMl9KcQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Fable 5.2 and Mythos 5.2 arrive - ShiftDelete.Net",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWOV9VWGRUYjgwczJMVHhOZ0pmdnIwdzRjbld0M3JVUXFMaEVFRm1mODF0eHVrUmNkSFh6eWNYdm9IaXh3Q3NHVjBzbmFkR3pfeXByeDBoR05hSFlYY1Zz?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "url": "https://theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
