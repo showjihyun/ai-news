@@ -1,6 +1,31 @@
 {
   "records": [
     {
+      "slug": "2026-11-11-앤스로픽-14조-달러-상장-수익-810억-vs-손실-1040억의-베팅",
+      "title": "Anthropic to Seek $1.3T Valuation in IPO",
+      "urls": [
+        "https://wsj.com/finance/stocks/anthropic-to-seek-1-3-trillion-valuation-in-ipo-8337b669",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUTgtOV9zN3Ywb2UycWxaSlNwOGltSV91cjMtRWdlNnJibWhnTVgtQkZkd0ZYU0NweVB5MEhaMkd6ZVNpUXlra3JiQ2ltcU4xUUUta0pPV2dqb19uWWpLZWVkanNqTnlsVEo2YmdFeGw2M2dNcGtGVHdGb1hBMTN4MFRteXhkbUctZWIxSURUQjcxczZxbmdtbGQ0d3ZLWWJCcjFQQVpwb1pjNHNzWlE?oc=5",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWmE0b0M1U2tYVmtNd2RBd1RnM1ZXZzdvWFlwS2twYXFWWE54cjBRUlZlN1hOSEhqSU5GQUluZkVwdXphdkszOXZQUjZvN1JoMXVjOXIzVG1JR001SHhOamxqZUZ5d1JUU28tR0RJVTZvdi1INzhzaGRVT3prSWItTm1TWHU?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWWWhzNWttUWJZVjlpX2xCcnhyRVhRVGNBVnlXWGZBWnNVbE55bm1SQVVfR2xuekhqbVJCZkVmRlZFS0xZMmZvdXVkVF9pX0g4V3cwSzZDV1hEMHBVazNRSVlPejM0ZXpWeERaWVpyZ0lDdHF3aGc?oc=5",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaWplYjFtNjRwemt5Y0dEYV9Wem5ET3FLYXpQOFo0MWttT0hPOW5HN3BRM3hYZWU0YUYwdUJIemhKR0Q4aGw4dWxGbWZ6QlZZcHM3Sm5kMkZsaVVaOE1jOVJueHFSMERPS3lPZHptelZseENfMk0zeGlPUGtZODJEaUZuUmVYbXNucG1xVW1HZw?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU3pQUFloamNVbERqb0EwZDI2ck9fdGphdHdNUVo3cV9UTXJMdG5MRzd4VG5HeDkwYmU1Z1cweGp0Zk1mNm1RNDNxeUU4eDZvUmdWVTNmdUV0d2hrVU05SjBmeEpuUzVLSXpMX1VBUjFMdVJlTHZaQWxnSGlaMnFzSUNMbURGeWluSE1RR0hqOHc1T21yWGdYaFZqd0E4VGpuLUNB?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaUtnS210c1pKNVpEZXJ1V1JpdUdyZ0h5OGh2SzVCXzJaVGRwaDZnb0NQZUxFS0ZFWmxwbU53ZlJtdlBkOWplZHdaNkloU0xwV3hvdlpjNnh0R1FISXdMOExfc09JckJqTWxjSWlZSjZpN0RWR1kyRUF6YUlXN0dqSm5XQU5TUmFmbWpFbGlzT3FZRllaMGU4cld0cDlsaFVYY0IzV2ZNYmwxYW0yd1FDaw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdjJNdmJTYXR1eFhPRm5fN2lYY3p4MUt4UWhUM0ZVT2VKZ2xaU3hWMTkzTlFGUEV4bWFlY3Z0dVRhVHpETWhCejlJaFhOQXpvenBqc2ZLa1hkOGVySmZodC1ndjhwS01oM3BfR1pPdGhHdUwxQ19LRjgwc1dPbTFfX2hkVEVNQXdOTUU2VjdZR1N6WS13Z2Y2TzdvNGZrWmRZZ00zRlY2OEpVTkx2V25BQThIRFJUakRIcUVDd2h5NmdlTFRKaUx2ei1PbGplUDl6?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxOemhwTUQ3ZGRmcExGamFjY2pZMC1KQTBIcnc4SFQ4d0xRQjJFMk5BQVRyS1pmeTV2MHFfWi01ZWdZREc4TVJBRkJqbnVJRHJJV0lqajFfRDRzZXdGTTNjMzhTMmgyU2Y2S0dhR1kwUXJyNEc5UGlmTlZEaHZ1c05pZlhvNjJDNUFJUWdWQnllOC05enZQTTZLSTFjSUo?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMmlrZmticFNsdURKT0lpS1JUOExJbGhSdi1mV0VIUmc2djJMNERtbWVqZWJjamZWbXJIdE9fOHdqQ1U3WnlqNVR1SlNmWVlaT2xKNlRhU1QxeVJLbl9walh4cXV1MUYtc25ycjRydVRmaDVqaVM4ZTl6eFVKbFk0eTVpM01Jd0h1b29xS3RuTkJuRDRXaU0xQ0VSZWNfT256MUZQWDZ5eGIxRkFDdUprTFFOOEg5LVlUT3fSAb8BQVVfeXFMT3lZRnBlT21JZXpra2RqaDJvQW1GZ1dhdWVkWGo0WEY4djVKMmVIUkVBV1FCWlcwdWVPSEJpVTlDSHdkamkzQ2RJZ1JPeFp1V2FncXFjNHpvUDMtR2pmZTJwMHppQ1h2cFowOWMxUUZUUXpVYzJBckVNb1czNVRoci1aQjVvdzJoN2pxU053NkdLenc1R0FUWldvZEtVbjk5cHE0WVh5UVVIUU5Qa0RPLWNYS3BjV1JCQnhxU3N4UjA?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE82UjFyaWhLdVJzelRXWGVZX2FxWWJnS0h3WEY0clNsUGNod3RDUmZpTm1ERUVrNU42b2RUWEh4Tmx2M2RBR0RodWhVQmlXWHlIZUhsdHFpYXZMR0xTNUZ4b3Jqc3pTeXBXQmtTM3gyQmFPQVJNRHc?oc=5",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxONFdCRGtIeHJsbXJfUXZHTE1BeFk3ZXVCN3dpM2dhQ1VQZDhGeVdHV2U2ckpJcmtXZnlpdElNQzhDSTMxSTYzNjAyS2RERW8xeW5OVDFXRnlyNHRYYmNScmRhcU8tT0traVZ3Vk5YQkN1ci1Id2h2TnN1eXpoTlNpd1JyZVpLQzZOei1qM2VLaw?oc=5",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaWQ5Nk9iMlJCSHhQYWdiMjR1SGc4TEJ5eDAwWTJSMU1ISlRzM0hySkhuWW8yZmVjQ1p4ZWs2VzZZMktyeU5zQUJSLTFvY3ZyYnVqejVySDFsc2c4WHBOOUpFWlNNdTlCUlR3X1ExSUdUYXBpTm1ya3o4MDYyOHd0RV8wMzlCU3pZMjBzajhWMFdHeHFQS3VEdU43UmtHdVFmbUJCNzhtcUw?oc=5",
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQazhjVWxLSzRFQkN3VUN0SkZoUUhLR29OUzhqNXBoYVIwY0xrdDRobGJuUjBzVG1YT0tQYWFUaG5fVXhtdnlrenQwTEpabGE1cHdna3NzekpoOG1kemxsaGZLMnBLMzNJdVNRWFVBY1VHUERRdk9HQkVkb2phRFFkZGFjTElTamprd2E3MmhzWW9fcDdnNmZub0tJaklpaUpIbXUyNnBPLTk3cWstZURPM1JNRlPSAboBQVVfeXFMTmpBSlVlYXFXc2Vtcl8tNFNPU09rYm5IUVB1YV81NzJEQ0I4TnNfbTRxTlgxWFF0NHlpVWk0LUJCZzByNFJaeWlobzdDa01VWUlJU1VIMktTSnRBZUpRRU9OREZMY016ekRCZDNJRGJnSUJFWGpPT1dwdWZ5NzRaVzNQaGF5eEpOTmVkN0NnTXIwNndMWDhkZkZVaE9XbWVldncyQ1VtN0tGOExEZ3dUaWFSVXN4NFFtVEhn?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZm9XeE5SeXpDWk1XY3VPLV9xYThLWHRSZXlrWkRtZUFXTldyTVVsejRhT3VZYk81RzB5VC1rbERSQUZSZWFQRWJrQzV5TDFFWXpITWprNmU5amxISGh5NmRLdXV0ZTZ6WU5oMW9mQ050bm5nSFZmc1BCWEJfWjdudjRYbWc2X1BrMXlmZVRoRjh0Mk1OdGRoZXdNTQ?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdXRyYWhzV3k4TV96YUZ2cGJtc3lKV0Mxd09URVpXVjQ0Y3ZtdUNIdmUtWFBKRlpsV041eGx0cl9Kck80Tjk0NnV3N016M2VZRVZqNml3SnlNSm4zQXprWXRFR1ZaREVYS3JaSmhYNElOV3Jxa3ZuMl92dXQyX1pqZTRTYW55ZEFqbDJRcVpsak5xUQ?oc=5",
+        "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion",
+        "https://theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion"
+      ],
+      "publishedAt": "2026-11-10T19:05:45.376Z"
+    },
+    {
       "slug": "2026-11-10-ai로-게임-만들어보니-어려운-건-코딩이-아니라-취향이었다",
       "title": "Indie Game Development with AI",
       "urls": [
