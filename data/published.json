@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-10-ai로-게임-만들어보니-어려운-건-코딩이-아니라-취향이었다",
+      "title": "Indie Game Development with AI",
+      "urls": [
+        "https://sandromaglione.com/articles/indie-game-development-with-ai",
+        "https://v.redd.it/b09fxl9f1o0i1"
+      ],
+      "publishedAt": "2026-11-10T11:46:48.242Z"
+    },
+    {
+      "slug": "2026-11-10-와이어드-ai-남편-둔-아내들-기사-71가-남성인-업계-가정에선-무슨-일이",
+      "title": "Meet the Sad Wives of AI",
+      "urls": [
+        "https://wired.com/story/meet-the-sad-wives-of-ai"
+      ],
+      "publishedAt": "2026-11-10T11:39:45.102Z"
+    },
+    {
       "slug": "2026-11-10-ai-100-의무화-1년-아무도-코드를-모른다-현장의-경고",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "urls": [
