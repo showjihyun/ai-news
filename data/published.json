@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-11-10-ai-100-의무화-1년-아무도-코드를-모른다-현장의-경고",
+      "title": "A year after the 100% AI mandate nobody understands our code",
+      "urls": [
+        "https://reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody"
+      ],
+      "publishedAt": "2026-11-10T03:10:30.015Z"
+    },
+    {
+      "slug": "2026-11-10-클로드-페이블-52-지능-1위지만-비싸고-느리다",
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "urls": [
+        "https://artificialanalysis.ai/models/claude-fable-5-2"
+      ],
+      "publishedAt": "2026-11-10T03:07:15.699Z"
+    },
+    {
       "slug": "2026-11-10-구글-보안-특화-tpu-8tx와-초대형-컨텍스트용-8i-max-동시-공개",
       "title": "Google Unveils TPU 8i Max and TPU 8tx: A Dual-Chip TPU and a Confidential TPU",
       "urls": [
