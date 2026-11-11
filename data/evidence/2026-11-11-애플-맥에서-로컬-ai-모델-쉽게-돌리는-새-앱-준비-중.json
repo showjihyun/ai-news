@@ -1,0 +1,26 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] This is a nerd fever dream. Yeah I’m sure people can’t wait to run local models on their iPhones.",
+    "[Hacker News] I agree with you, even if many of the pundits say that Apple was left in the dust. At some point, the real cost of inference&#x2F;intelligence is going to come due, and the existing open source models will be good enough for 95% of tasks users want (or training their own model(s) will be inexpensive for Apple). Apple will be there, as usual, to provide secure, on-device, faster inference that the ",
+    "[Hacker News] $200 a month is only $2400 a year. That’s 4.16 years until you spend 10k. I don’t find it reasonable at all. Subsidized Subscriptions or api for cheaper models, is the best value. But the future of AI is so uncertain, regarding model sizes. I don’t think making huge hardware investments is reasonable for individuals.",
+    "[Hacker News] I really want capable models local but it’s impossible for me to afford the hardware. If there is a magical way to run glm 5.3 without quantization at 80-100tps with a total spend of less than 10K I’d be happy but that’s impossible now.",
+    "[Hacker News] No but they can pay for new manufacturing to be built. 2-3 lead time should be enough to bankroll the effort. Apple has to much money too sit around hoping that memory situation resolves itself. They were caught flat footed by the RAM market."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "url": "https://news.ycombinator.com/item?id=50446520",
+      "score": 78,
+      "commentCount": 36
+    },
+    {
+      "origin": "r/LocalLLaMA",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xszbe7/apple_has_new_mac_app_coming_to_make_running/",
+      "score": 6,
+      "commentCount": 0
+    }
+  ]
+}

@@ -1,6 +1,29 @@
 {
   "records": [
     {
+      "slug": "2026-11-11-애플-맥에서-로컬-ai-모델-쉽게-돌리는-새-앱-준비-중",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "urls": [
+        "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
+        "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy"
+      ],
+      "publishedAt": "2026-11-10T23:56:40.565Z"
+    },
+    {
+      "slug": "2026-11-11-앤스로픽-클로드에-화이트보드스프레드시트데이터-도구-탑재",
+      "title": "Claude Whiteboards, Claude Sheets, Claude Data - 팀 협업 보드, 스프레드시트, 데이터 분석 도구",
+      "urls": [
+        "https://claude.com/resources/articles/sheets-whiteboards-data",
+        "https://news.hada.io/topic?id=36958",
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZFRaS1IwRWlsMG5CWnhCV0pEUkdtcjU0MHY4a0Vnb0RFem90WWl5cFg4VXhqcmlOM2VzaVZnY0ZfSVJ6TnU0SE1wbFNzMVpaV0ZIcHdURFBoQnNsY0Y5cktFbTVlV0FpSnNpcF9MVkNlWUstWGtKU0ZicDZTQmpCdUNyczlPemVpRF9HRExBdExqZk9CbU96bjFqVV9HNVh3NWowZGlMcHBHUnRtRkpYVzYtTjY5cC1iYnNXcENzTDZtZw?oc=5",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxOajdLS1VKOVI2YkJlaGs5SkpuRGhNYnJVMlRjY3JmODVKdkI2UlJCaUZteGxqbV9XbW1qaXBuT2lSa2RGOGpZQS1sd3RaYnBSOXMxWTg4NHNZbXdfUmgtbzZmY2Z2R05MSlh0UWFCcmtrSDc0dWpQNDBoWnFrRm9EaE1feHE?oc=5",
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORTV3d1VXS3JMTnRDTkxpaUEwUFVxVW01RXdxald2MXE1bUNhTmdyRlhoUjRvRDJUQWdwTGhsU2hRYlJQX1NJQnZ5UFBwUGNLMHNQWDQ1Ulg4TjBmRWJrZGstb291anQyeUZoOUF1LUxkQ1dvNFNTY3lCZ1hNM29FYjl2TTloV2NDNzk0WEE2bUtsbWEzYk01WkxIbm1lc29kQS0zaFJLdW5raFphd3dyZGN6VEZBV3VHeFVMRjhHbFRCeTg0TlZETDNERXlvaUZQSEs5UFhLdDViSnlUTV85a19B0gHnAUFVX3lxTE43N3duNTliaEZLTngzRW9DaEdfYTdIeXNHeGZkSk5YRmNBc19QaGl2WkNGUEk2ai0wUzduODd2X0pGc0dtdFFLOGExd3NUTFJvMjFudHo3TjUzX1RvbmNXYVJqNlI2clFaZ3hHRzk0Vk94ZDZ4SzVnbTV6MkNzTHlQTmlvR09Bd2RGb3FYdTlrT2pib0IwWUhHVHFVUzFHMkwtdnFwZkxPMGpRMjQwQk9BTlk4TnZMOVI5aV9nby1UXzNqb29FOEdOODVfQ0o0V0ltS0RBMU50Z2hGWGcxY2FuQ2M5WXMtaw?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNmZ0YjJBNk5XUWNrMkhMdlQzQjFHZDFZYlFfdkt6YmhwendPVkZwYTZ5X1dWSjVQOHZCVTd6SXpUaEo3VldhZVBhRDZzVG1ZcVBnWGJwekN5czNRSmgtRGxBMFdHcnlybmtSM3RfTVBiTC1BUXVfY29hTUJzQXNPLWE4ZE0xRXpWUDg2ZQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5TZmVkc3h4cURPZTlyVkJlWGExU18wa1M1dlFNNjJyQWZFdkxrbFQwcS01a2FMVzBJeWluUlpqUFJMY3FlVDdHLURhU19QLWxGbTRn?oc=5"
+      ],
+      "publishedAt": "2026-11-10T23:54:00.098Z"
+    },
+    {
       "slug": "2026-11-11-앤스로픽-14조-달러-상장-수익-810억-vs-손실-1040억의-베팅",
       "title": "Anthropic to Seek $1.3T Valuation in IPO",
       "urls": [
