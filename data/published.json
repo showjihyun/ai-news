@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-11-13-박사과정생이-만든-ai-연구-비서-리프데일리-논문-수집부터-초안-작성까지-자동화",
+      "title": "Show GN: RefDaily - 매일 아침 새 논문을 찾아 오고, 읽고 쓰는 일까지 옆에서 챙겨 주는 AI 연구 매니저",
+      "urls": [
+        "https://news.hada.io/topic?id=37056"
+      ],
+      "publishedAt": "2026-11-12T17:20:22.583Z"
+    },
+    {
+      "slug": "2026-11-13-앤스로픽-나스닥-상장-임박-170억-달러-적자-뒤에-숨은-49억-달러-영업-흑자",
+      "title": "Anthropic IPO",
+      "urls": [
+        "https://ipo.anthropic.com/us"
+      ],
+      "publishedAt": "2026-11-12T17:13:31.941Z"
+    },
+    {
       "slug": "2026-11-12-유나이티드-항공-ai-예약-대행-차단-비용보안-탓-속내는-통제권",
       "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
       "urls": [
