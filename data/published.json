@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-12-유나이티드-항공-ai-예약-대행-차단-비용보안-탓-속내는-통제권",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "urls": [
+        "https://cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights"
+      ],
+      "publishedAt": "2026-11-12T08:32:07.500Z"
+    },
+    {
       "slug": "2026-11-12-구글-제미나이-디시전스-api-출시-입력-하나로-1000개-질문-동시-판단",
       "title": "Gemini Decisions API - 입력 하나에 최대 1,000개 질문을 평가하는 멀티모달 API",
       "urls": [
