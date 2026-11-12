@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-13-구글-검색에-제미나이-4-하이드로젠-적용복잡한-질문도-한-번에-이해",
+      "title": "Google&#8217;s latest Search upgrade promises better answers to your most complicated questions",
+      "urls": [
+        "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions",
+        "https://theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+      ],
+      "publishedAt": "2026-11-12T22:39:26.047Z"
+    },
+    {
+      "slug": "2026-11-13-ai가-발견한-마야-유적-실은-1년-전-논문에-있었다",
+      "title": "My AI agents found an unmapped Maya site?",
+      "urls": [
+        "https://pietromiotti.com/latest/maya-site",
+        "https://theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery"
+      ],
+      "publishedAt": "2026-11-12T22:36:17.102Z"
+    },
+    {
       "slug": "2026-11-13-박사과정생이-만든-ai-연구-비서-리프데일리-논문-수집부터-초안-작성까지-자동화",
       "title": "Show GN: RefDaily - 매일 아침 새 논문을 찾아 오고, 읽고 쓰는 일까지 옆에서 챙겨 주는 AI 연구 매니저",
       "urls": [
