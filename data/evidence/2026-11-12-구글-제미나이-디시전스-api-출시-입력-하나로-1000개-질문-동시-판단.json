@@ -1,0 +1,62 @@
+{
+  "articleText": "[Hacker News — blog.google]\nIntroducing the Gemini Decisions API, powered by our new Gemini Decision 1 model. Evaluate up to 1,000 yes/no, choice, and rubric-scoring questions in a fast, single pass across text, images, audio, video, and PDFs.\n\nWe are introducing the Gemini Decisions API to help you make fast, probabilistic choices across text, images, audio, video, and PDFs. This tool computes confidence scores for multiple questions in a single pass, providing a cost-effective way to route queries, grade content, or check policy rules. You can start building today by accessing your API key in Google AI Studio and reviewing our documentation for Python, JavaScript, and REST guides.\n\nToday, we’re introducing the Gemini Decisions API, a new endpoint for fast, closed-set decisions powered by our new Gemini Decision 1 model (gemini-decision-1), available through the Gemini API in Google AI Studio .\n\nThe Decisions API gives you purpose-built primitives for bounded choices like tool selection, policy checks, model routing, and context grading. You can pass one multimodal input across text, images, audio, video, and PDFs (up to 256K tokens) along with up to 1,000 independent questions. Rather than generating answer text token by token, Gemini Decision 1 scores your candidate options in a single forward pass, returning probabilities and confidence scores in 150-250 ms end-to-end latency at $0.10 per 1M input tokens with zero output tokens billed.\n\nOn benchmarks spanning agent routing, reasoning, ranking, and multimodal understanding, Gemini Decision 1 leads across the suite, with the lowest calibration error.\n\nGemini Decision 1 scores options without token-by-token decoding, keeping median latency 50-100 ms of model compute (150-250 ms end-to-end), across multimodal inputs and contexts up to 16K tokens, remaining nearly flat from 1 to 100 questions per request. With zero output tokens billed, Gemini Decision 1 with the Decisions API is nearly 5x cheaper across the shared benchmark suite than Gemini 3.5 Flash-Lite with the Interactions API.\n\nBuilt on Gemini’s native multimodal architecture, Gemini Decision 1 can process text, images, audio, video, and PDFs directly in a single forward pass. You can combine modalities in one shared input, such as pairing a call recording with account metadata or a scanned PDF claim with damage photos, and tune resolution on image and video inputs to control visual detail and token cost.\n\nYou can evaluate multiple questions against that shared input in a single request, mixing yes/no checks, multiple choice, and rubric scores. Every answer includes a confidence score (from 0 to 1) so your code can route ambiguous cases to a fallback or human reviewer:\n\nThe input field uses the same Content block format as the Interactions API . Here is how to check a photo of a breakroom counter, together with a text note, against all three question types in one request:\n\nfrom google import genai client = genai.Client(http_options={\"api_version\": \"v1beta\"}) result = client.decisions.create( model=\"gemini-decision-1\", input=[{ \"type\": \"image\", \"uri\": \"https://storage.googleapis.com/generativeai-downloads/images/spill.jpg\", \"mime_type\": \"image/jpeg\", }, { \"type\": \"text\", \"text\": \"Breakroom counter check before the 9 AM client meeting.\", }, ], questions={ \"has_spill\": { \"type\": \"noul\", \"instructions\": \"Is there an uncleaned liquid spill on the counter?\", }, \"next_action\": { \"type\": \"choice\", \"instructions\": \"Which cleanup action fits the scene?\", \"criteria\": { \"wipe_with_cloth\": \"Small counter spill with a cloth or towel already nearby.\", \"dispatch_janitorial\": \"Large floor hazard, broken glass, or active leak.\", \"ready_for_meeting\": \"Counter is clean and ready.\", }, }, \"severity\": { \"type\": \"score\", \"instructions\": \"Rate the severity of the counter mess.\", \"criteria\": [ \"Clean and ready.\", \"Minor localized spill.\", \"Major spill or safety hazard.\", ], }, }, ) How teams are building with the Decisions API Teams across Google are already using the Decisions API as a low-latency control plane, shipping features simply by defining options rather than training custom classifiers or waiting on generative calls:\n\nStitch Rapid uses the Decisions API to design an entire product flow in seconds (1x speed).\n\nGemini Decision 1 is priced at $0.10 per 1M input tokens and $0 for output tokens, with an API no-cost tier you can use in Google AI Studio for prototyping. Your shared input is billed once per request no matter how many questions you evaluate (each question adds only its own instruction and criteria tokens). There are no output-token charges, variable thinking-token bills, or separate audio transcription and OCR costs.\n\nYou can start building today by grabbing an API key in Google AI Studio , trying our Doorstep Parcels , Speed Sketch , and Find the Zoo Keeper demo apps, and following the Python, JavaScript, and REST guides in the Decisions API documentation .\n\nEcosystem integrations are rolling out across OpenRouter , LangChain , Verce\n\n---\n\n[Simon Willison — simonwillison.net]\nGemini Decisions API ( via ) Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.\n\nIt's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.\n\nJev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.\n\nI tested it against video by passing these questions to it along with my Yonkers stomping robot video file:\n\ndragon: Does this video have a dragon in it? robot: Does this video have a robot in it? france: Is this video set in France? usa: Is this video set in the USA? Jev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:\n\n{ \"dragon\" : { \"type\" : \" yes_no \" , \"probability\" : 0.04976021841520312 }, \"robot\" : { \"type\" : \" yes_no \" , \"probability\" : 0.9234055387792485 }, \"france\" : { \"type\" : \" yes_no \" , \"probability\" : 0.08329171353166241 }, \"usa\" : { \"type\" : \" yes_no \" , \"probability\" : 0.9230459995157706 } }\n\nThis is a link post by Simon Willison, posted on 11th November 2026 .\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
+  "reactions": [
+    "[Hacker News] Selecting between user-provided tags to provide quick suggestions, semantic search, that sort of stuff.",
+    "[Hacker News] Enterprise gonna enterprise. I suppose the key question is come 5 years time is enterprise going to just become happy to use openrouter, or will they lose competitiveness&#x2F; market share to those who do. Fyi artificialanalysis currently puts drex highest on price vs quality https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;evaluations&#x2F;artificial-analysi...",
+    "[Hacker News] It doesn&#x27;t. Decision models are not more accurate than small models with no thinking. If your classification task is accuracy sensitive, you still need to stick with one of the big frontier models.",
+    "[Hacker News] Opaque classifier as a service, for when you want to discriminate people by race and social status assumed from name, but want some other entity to be responsible for plausible deniability of the process. Hey Jev, what mortgage rate multiplier should a person named James Smith get?",
+    "[Hacker News] When the use case allows room for an acceptable amount of incorrect decisions because there&#x27;s a manual flow those cases can be routed to still anyways.",
+    "[Hacker News] I guess it depends on how many good ideas Typesafe AI have. They never said that they were only about decision models."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Gemini Decisions API",
+      "url": "https://news.ycombinator.com/item?id=50456791",
+      "score": 246,
+      "commentCount": 78
+    },
+    {
+      "origin": "GeekNews",
+      "title": "Gemini Decisions API - 입력 하나에 최대 1,000개 질문을 평가하는 멀티모달 API",
+      "url": "https://news.hada.io/topic?id=37011",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Google Launches Gemini Decisions API With Gemini Decision 1 at $0.10/M Tokens",
+      "url": "https://marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Google AI Blog",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Google AI Blog",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Simon Willison",
+      "title": "Gemini Decisions API",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "r/singularity",
+      "title": "Google Launches Gemini Decision-1 Model for Fast Structured Outputs",
+      "url": "https://www.reddit.com/r/singularity/comments/1xtpfrg/google_launches_gemini_decision1_model_for_fast/",
+      "score": 13,
+      "commentCount": 0
+    }
+  ]
+}
