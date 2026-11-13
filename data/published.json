@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-11-13-145b-파라미터-모델이-내-노트북에서-엣지0-실체와-조건",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "urls": [
+        "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+        "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
+      ],
+      "publishedAt": "2026-11-13T10:52:53.425Z"
+    },
+    {
+      "slug": "2026-11-13-엔비디아-황젠슨-사임-트럼프는-팀-쿡-거론-ai-칩-권력-지각변동",
+      "title": "전 Nvidia CEO Jensen Huang, 두 번째 직원과도 친밀한 관계 의혹",
+      "urls": [
+        "https://reddit.com/comments/1xtvsi7",
+        "https://news.hada.io/topic?id=37097",
+        "https://theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+        "https://bloomberg.com/news/live-blog/2026-11-11/nvidia-turmoil-board-to-weigh-ceo-jensen-huang-future-over-alleged-affairs",
+        "https://reddit.com/r/StableDiffusion/comments/1xue4mk/jensen_huang_resigns_from_ceo_position_nvidia",
+        "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f"
+      ],
+      "publishedAt": "2026-11-13T10:43:05.164Z"
+    },
+    {
       "slug": "2026-11-13-엔비디아-황-ceo-사임-오픈소스-ai-지원-흔들리나",
       "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
       "urls": [
