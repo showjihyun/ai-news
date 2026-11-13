@@ -1,0 +1,32 @@
+{
+  "articleText": "Is Claude down? Login errors hit claude.ai on Friday, and Anthropic says a fix is in Nacionale\n\nIs Claude AI Down? Anthropic Confirms Authentication Issues Across Multiple Services Jagran Josh",
+  "reactions": [
+    "[Hacker News] For me, it seems to work now, but the incident is now being investigated via https:&#x2F;&#x2F;status.claude.com&#x2F;incidents&#x2F;nn11wk485zfn UPDATE: it doesn&#x27;t work again; so the issue is persistent",
+    "[Hacker News] Anthropic has been generous with their free usage resets for the metering bug, I wouldn&#x27;t mind a few more.",
+    "[Hacker News] claude.ai Major Outage Claude Console (platform.claude.com) Partial Outage Claude Code Partial Outage Claude Cowork Degraded Performance — Claude API (api.anthropic.com) Operational",
+    "[Hacker News] Yeah, it stopped working for me for a few minutes, showing that Cloudflare blocked it. Later on, I changed the Wi-Fi and it&#x27;s working again."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Claude AI Is Down",
+      "url": "https://news.ycombinator.com/item?id=50480941",
+      "score": 27,
+      "commentCount": 7
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Is Claude down? Login errors hit claude.ai on Friday, and Anthropic says a fix is in - Nacionale",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdkxDUVFOcDZ1NnplbURfOUJKNkRwbFozNWZpUXlfaEJJMDdxMi1Jek9WV0NSeURHWWgydkZoT2FQbFA5OEhScU1YM2dMM0pJTDlTc0JWSFlydFphUVcyV3lmNEdoYzZfTDk0N1lkNjJXWVdwdE1qWnpCWnZTcEFyYjdGdldwWGRHaGRBVU82QUlpU2ZQQWcyamxqeG9IN2VrMllv?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Is Claude AI Down? Anthropic Confirms Authentication Issues Across Multiple Services - Jagran Josh",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3pha0xaNFc0YVlCVkRaOWJYdWZNbEFsUEZxOXlFUFZUSzF2ekgwQjRXLUpodWtwY2hrWEJnamZER1FMblVZNHI5RHh3d2diX2c1d05MY3JURk5yWUFBSWNINUdpMUtFcFI5eERrU3FJd1RmbllIOEJmVmRxOHNYN0ExU0x0ZGJidHlFY3Q3eEJxQnRrR3JrbjNvMVQyMWo4aDF2MVRDUjRkWVBQSmNQNnB6SnQxUdIBvAFBVV95cUxQOUVKQl9nQm5MdnBFeUxDM0RVMmdnYVl3TUtNY0NCZWIyY1lySjJSWlFISFUtdW9FNkFUN09SMS1obVE1a1EtU2RJTTVzajZxZVpqOHdpc2hEMVpKMVRxRkRwUGE1eDQ4WmNoQmhZUXlSNlc3cnNGaHJ5SnJMRjhPb1dQYUxVODBGcVo0YVRadkpWSnl2N2ZuOUVONGp3OWFPRjMxVzFqVnpTOVdPeEJZd0s5Zi1iaEFJbEYwMg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

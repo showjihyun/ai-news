@@ -1,6 +1,26 @@
 {
   "records": [
     {
+      "slug": "2026-11-14-클로드-ai-로그인-장애-웹콘솔-막혔지만-api는-정상",
+      "title": "Claude AI Is Down",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50480941",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdkxDUVFOcDZ1NnplbURfOUJKNkRwbFozNWZpUXlfaEJJMDdxMi1Jek9WV0NSeURHWWgydkZoT2FQbFA5OEhScU1YM2dMM0pJTDlTc0JWSFlydFphUVcyV3lmNEdoYzZfTDk0N1lkNjJXWVdwdE1qWnpCWnZTcEFyYjdGdldwWGRHaGRBVU82QUlpU2ZQQWcyamxqeG9IN2VrMllv?oc=5",
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3pha0xaNFc0YVlCVkRaOWJYdWZNbEFsUEZxOXlFUFZUSzF2ekgwQjRXLUpodWtwY2hrWEJnamZER1FMblVZNHI5RHh3d2diX2c1d05MY3JURk5yWUFBSWNINUdpMUtFcFI5eERrU3FJd1RmbllIOEJmVmRxOHNYN0ExU0x0ZGJidHlFY3Q3eEJxQnRrR3JrbjNvMVQyMWo4aDF2MVRDUjRkWVBQSmNQNnB6SnQxUdIBvAFBVV95cUxQOUVKQl9nQm5MdnBFeUxDM0RVMmdnYVl3TUtNY0NCZWIyY1lySjJSWlFISFUtdW9FNkFUN09SMS1obVE1a1EtU2RJTTVzajZxZVpqOHdpc2hEMVpKMVRxRkRwUGE1eDQ4WmNoQmhZUXlSNlc3cnNGaHJ5SnJMRjhPb1dQYUxVODBGcVo0YVRadkpWSnl2N2ZuOUVONGp3OWFPRjMxVzFqVnpTOVdPeEJZd0s5Zi1iaEFJbEYwMg?oc=5"
+      ],
+      "publishedAt": "2026-11-13T18:22:11.319Z"
+    },
+    {
+      "slug": "2026-11-14-로컬-ai-표준된-라마씨피유-10-일반-pc에서도-안정적-추론-길-열렸다",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "urls": [
+        "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+        "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+        "https://v.redd.it/ulqil3yfud1i1"
+      ],
+      "publishedAt": "2026-11-13T18:14:52.933Z"
+    },
+    {
       "slug": "2026-11-13-145b-파라미터-모델이-내-노트북에서-엣지0-실체와-조건",
       "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
       "urls": [
