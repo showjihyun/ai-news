@@ -1,0 +1,27 @@
+{
+  "articleText": "[Hacker News — slopmanifesto.com]\nWritten by the speakers and attendees of AIE Code Summit 2026\n\nIn 2001, 17 software engineers and leaders got together at a ski lodge in Snowbird, Utah to understand the biggest challenge of their time: heavyweight, documentation-driven software development processes.\n\nOut of this we got the Agile Manifesto , four values and twelve principles that changed how most of the industry builds software.\n\nToday we convene to build our own manifesto - the No AI Slop manifesto.\n\nAI increasingly helps us write our code, docs, plans, and messages. We've all been on the receiving end of slop, and most of us have sent some too. Through this work, we have come to value:\n\nThe world moves especially fast these days, but the goal of these resolutions is to embrace our important human role in harnessing AI safely, responsibly, in a way that creates value for everyone, and that will be relevant for years to come.\n\nAgain, the world moves especially fast these days, but the goal of these resolutions is to embrace our important human role in harnessing AI safely, responsibly, in a way that creates value for everyone, and that will be relevant for years to come.\n\nWe look forward to working with the community to evolve these beliefs as the world changes. Comments and feedback on this document are welcome. What is slop? Why does slop happen? Why is slop worth fighting? How do we fight slop?\n\nSpecial thanks to Philip Kiely, Swyx, Lucas Meijer, Rebecca Bakels, Tejas Kumar, Natalie Serrino, Francisco Javier Arceo, Kent C. Dodds, Ankit Jain, Brandon Waselnuk, Mihail Eric, Justin McCarthy, Raz Berman Gold, Yacine Mahdid, Justin Poehnelt, Lauren Tan, and Kyle Mistele for contributions to this project.\n\nSign the manifesto Add a gist comment with any or all of: name, company, X handle, LinkedIn, and we'll regularly pull signatures into the manifesto.",
+  "reactions": [
+    "[Hacker News] This assumes that &quot;humans owning the intent, taste, and consequences&quot; is necessarily a good thing, and agents will necessarily do a worse job. This is not grounded in anything but vibes.",
+    "[Hacker News] One sentence really caught my eye.... &quot;We may still review a plan, design, or result, because if we don&#x27;t, we just get the same output as everyone else.&quot; Is getting the same output as everyone else bad? I&#x27;d say not necessarily. When you&#x27;re making something, you might want to spend your &quot;innovation tokens&quot; on the core of what you want to do better. Then do a good-",
+    "[Hacker News] This reads quite similarly to the thesis of Cory Doctorow&#x27;s recent &#x27;reverse centaur&#x27; book on AI, if you&#x27;re interested in similar takes",
+    "[Hacker News] I was only thinking to myself yesterday how much I grieve the fall of agile and DevOps. It was all the industry cared about for a while and the movement behind it made me hopeful for the future of work. AI has really disrupted that, and I’m thrilled to see folks trying to bring back the best parts of it (namely shared understanding and contribution). But I agree with others, making the movement an",
+    "[Hacker News] FYI, the live-typing header wraps and toggles between one and two lines, causing the body text to jump around indefinitely on my phone.",
+    "[Hacker News] The Agile Manifesto was successful since companies had a market advantage in delivering instead of wasting money. Will &quot;No AI[1] slop, aim for understanding system we ship in human brains instead&quot; be advantageous in capitalism? I sincerely doubt it. And that makes me sad. Even in the public sector, I now am expected to deliver faster, since the industry changed comparable outputs of our "
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "No AI Slop: A Manifesto",
+      "url": "https://news.ycombinator.com/item?id=50488769",
+      "score": 167,
+      "commentCount": 94
+    },
+    {
+      "origin": "GeekNews",
+      "title": "No AI Slop 선언문",
+      "url": "https://news.hada.io/topic?id=37128",
+      "score": 25,
+      "commentCount": 0
+    }
+  ]
+}

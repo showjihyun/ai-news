@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-11-14-ai-슬롭-거부-선언문-등장-애자일-정신-잇겠다지만-자본주의에서-통할까-회의론도",
+      "title": "No AI Slop 선언문",
+      "urls": [
+        "https://slopmanifesto.com/",
+        "https://news.hada.io/topic?id=37128"
+      ],
+      "publishedAt": "2026-11-14T00:05:25.375Z"
+    },
+    {
       "slug": "2026-11-14-클로드-ai-로그인-장애-웹콘솔-막혔지만-api는-정상",
       "title": "Claude AI Is Down",
       "urls": [
