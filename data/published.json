@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-15-테크-엘리트의-착각-ai를-신으로-만들다",
+      "title": "The Claude Delusion",
+      "urls": [
+        "https://netmeister.org/blog/claude-delusion.html"
+      ],
+      "publishedAt": "2026-11-14T17:23:31.257Z"
+    },
+    {
+      "slug": "2026-11-15-2026년-ai-영상-모델-순위-공개-오픈-모델이-3위권-진입",
+      "title": "Best AI Video Generation Models in 2026: Elo, Price per Second, Open Weights",
+      "urls": [
+        "https://marktechpost.com/2026/11/13/best-ai-video-generation-models-2026",
+        "https://reddit.com/r/LocalLLaMA/comments/1xw4ue3/why_dont_we_have_national_open_ai_models"
+      ],
+      "publishedAt": "2026-11-14T17:17:06.235Z"
+    },
+    {
       "slug": "2026-11-14-앤스로픽-제조-현장에-클로드-투입-17개-스킬인포-erp-연동-공개",
       "title": "Anthropic launches ‘Claude for Manufacturing’ - Manufacturing Dive",
       "urls": [
