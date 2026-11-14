@@ -1,0 +1,45 @@
+{
+  "articleText": "Anthropic Claude down: Why it said it was unable to authenticate code Mashable\n\nClaude Suffers Login Outage Across Claude.ai and Claude Code While Microsoft 365 Connector Stays Down Startup Fortune\n\nClaude is down (Update: Resolved) Mashable\n\nAnthropic Claude down: Why it said it was unable to authenticate code Mashable SEA",
+  "reactions": [
+    "[Hacker News] Depends on your work. If you&#x27;re a developer, getting email&#x2F;teams shut off might actually increase your productivity.",
+    "[Hacker News] Went back up for a short while but then went down again, now getting: &quot; Please run &#x2F;login · API Error: 403 Attention Required! | Cloudflare&quot; Surely must be linked to the Microsoft outage whatever is the cause of that?",
+    "[Hacker News] Which has a bigger impact on productivity, Claude going down or Microsoft going down?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Tell HN: Claude Code Is Down",
+      "url": "https://news.ycombinator.com/item?id=50480909",
+      "score": 37,
+      "commentCount": 21
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Claude down: Why it said it was unable to authenticate code - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDBjX2hrQXlxUEV2Q3pZVUlzVUpPcTU1TFpiaGY4bEtualhpY2FWemdBQnlpclpESjlVSkxobHJ1NDJyZU9FZlJSQW9odU1zUmdvazJqUXV6YmxPYmRDc19HWnNBTDRwRHVGcWJLc1VGZDd4RWxHUTF0Z0lKd05vOA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Suffers Login Outage Across Claude.ai and Claude Code While Microsoft 365 Connector Stays Down - Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeDBHMlltQjk2LW1rRlJFM1k0VWtWcnVjdDR5QUloaHpmbGZuQ0tvYXpPbE1JVV83THQ5UkV2NE1reUtwUmROcDdsdzNVNnlBSEdYcmFNaEtCV3VBamlBU2Npa2FQT2szT2phRHlNUlB2UDlNYjdrSnVYZUw5VnFxY0drRU4yRnVrS2xTV0h4bHJIWTdRdndtTUVkSXBpazl2dDhENnRyOVdzcjhIRncyOGZQd04yVEVlZTZnV3hjNWN6ZjdBRjNR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude is down (Update: Resolved) - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LcmZqZWVhUHpfa2VhZGdVWm9jTmktdU9FNTd1TGVJSEM0T2w3T2ZhTmdZT0syeHlpNWJicmk1MVJpd1M4VDBpZm15OGVaN2dtN1RMMHZUNkFmVFE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Claude down: Why it said it was unable to authenticate code - Mashable SEA",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVmExdGlIWGY2aldDaXA5b2J4a29xdU5jdTFYY0JnZUt5N1hSQVhCVUN4aHAzTUppU0t6Nk1RWFduZ3RFLXlJQ0tsa0RDMndyTE11XzJxcHFJandjRWE3RUNZeXRKdmJsSEVMM0JuVl93Q3hDdjRtR1dPWXhUd0M0WjNJelNqOFgybHB3WXVaaUlXT2lJS0dpRW95UlhTV1BkNk1hcVpNdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

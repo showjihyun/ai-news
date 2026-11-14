@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-11-14-클로드-코드-장애-ms-365-연동-오류와-겹치며-개발자-작업-중단",
+      "title": "Tell HN: Claude Code Is Down",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50480909",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDBjX2hrQXlxUEV2Q3pZVUlzVUpPcTU1TFpiaGY4bEtualhpY2FWemdBQnlpclpESjlVSkxobHJ1NDJyZU9FZlJSQW9odU1zUmdvazJqUXV6YmxPYmRDc19HWnNBTDRwRHVGcWJLc1VGZDd4RWxHUTF0Z0lKd05vOA?oc=5",
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeDBHMlltQjk2LW1rRlJFM1k0VWtWcnVjdDR5QUloaHpmbGZuQ0tvYXpPbE1JVV83THQ5UkV2NE1reUtwUmROcDdsdzNVNnlBSEdYcmFNaEtCV3VBamlBU2Npa2FQT2szT2phRHlNUlB2UDlNYjdrSnVYZUw5VnFxY0drRU4yRnVrS2xTV0h4bHJIWTdRdndtTUVkSXBpazl2dDhENnRyOVdzcjhIRncyOGZQd04yVEVlZTZnV3hjNWN6ZjdBRjNR?oc=5",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LcmZqZWVhUHpfa2VhZGdVWm9jTmktdU9FNTd1TGVJSEM0T2w3T2ZhTmdZT0syeHlpNWJicmk1MVJpd1M4VDBpZm15OGVaN2dtN1RMMHZUNkFmVFE?oc=5",
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVmExdGlIWGY2aldDaXA5b2J4a29xdU5jdTFYY0JnZUt5N1hSQVhCVUN4aHAzTUppU0t6Nk1RWFduZ3RFLXlJQ0tsa0RDMndyTE11XzJxcHFJandjRWE3RUNZeXRKdmJsSEVMM0JuVl93Q3hDdjRtR1dPWXhUd0M0WjNJelNqOFgybHB3WXVaaUlXT2lJS0dpRW95UlhTV1BkNk1hcVpNdw?oc=5"
+      ],
+      "publishedAt": "2026-11-14T03:51:50.881Z"
+    },
+    {
+      "slug": "2026-11-14-엔비디아-젠슨-황-전격-사임-미-반도체-안보-라인-성역-없다-신호",
+      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+      "urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+        "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
+        "https://theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling"
+      ],
+      "publishedAt": "2026-11-14T03:49:52.302Z"
+    },
+    {
       "slug": "2026-11-14-ai-슬롭-거부-선언문-등장-애자일-정신-잇겠다지만-자본주의에서-통할까-회의론도",
       "title": "No AI Slop 선언문",
       "urls": [
