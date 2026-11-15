@@ -1,6 +1,24 @@
 {
   "records": [
     {
+      "slug": "2026-11-16-연-1억-원-ai-학교-알파-수학읽기-동시-2배속-달성-42-그쳐",
+      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+      "urls": [
+        "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals"
+      ],
+      "publishedAt": "2026-11-15T20:42:55.913Z"
+    },
+    {
+      "slug": "2026-11-16-ai가-짠-코드-누구-소유인가-오픈소스-의무화-주장-확산",
+      "title": "All AI-generated code should be Open Source",
+      "urls": [
+        "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+        "https://interconnects.ai/p/open-source-ai-without-jensen",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aeFdRWjFSUkQ0eG5NRE5TOG9QNDk3aEhVcmZwVmZ2dHVSTVNfUU9wbXF4M3BBYllXMjdlbjVwd1gwcGhGVTZTaERCTXNBN3lzRWVLMm5rWVFnM3I1bkt3Q0M4anFIN1BheDg4RmgyVGlFakxuaUE?oc=5"
+      ],
+      "publishedAt": "2026-11-15T20:30:13.931Z"
+    },
+    {
       "slug": "2026-11-16-커서-마켓에-심어진-악성-확장-파이어웍스-키-유출이-원인",
       "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident - The Hacker News",
       "urls": [
