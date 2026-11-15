@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-11-15-클로드-코드-병렬-ai-워커로-프로젝트-자동화-확대",
+      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+      "urls": [
+        "https://claude.com/resources/articles/projects-redesigned",
+        "https://reddit.com/r/artificial/comments/1xwj3v0/anthropic_rebuilds_claude_code_projects_around_a"
+      ],
+      "publishedAt": "2026-11-15T08:02:24.277Z"
+    },
+    {
       "slug": "2026-11-15-엔비디아-순환-금융으로-gpu-가격-떠받쳤나-wsj-보도-파장",
       "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
       "urls": [
