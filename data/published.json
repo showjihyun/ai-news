@@ -1,6 +1,17 @@
 {
   "records": [
     {
+      "slug": "2026-11-16-커서-마켓에-심어진-악성-확장-파이어웍스-키-유출이-원인",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident - The Hacker News",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZ0pVd0VKNnk2Vmpxalp6amtSaFlvX0Vpd0NOQkNZVldpTjRYdzQyZHd2c2IwdmhEdm5RNElZWXJ6bWtMVGhlemhGX0FqM0d3Vnp3MWRvWUNxTGJwMnV3Ymx0cy1TbWJJMVliVi1HM0xaUExCZ0FQU3NOMEJWWHJhaGZ3?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5GQmQwcXFwZUpYeVVqTU56TUNNMkx2UGdOcERTaHlXdDlmUjkya0ZXR09CT0dSUnJQZUY1bHVzakhqa3FKTjZyUlN1SHgyWng5RTJKclFKODRxNUpvLVBsX2JjS1pQYXpkQUNLWkVObEFpYVA4blE?oc=5",
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRWNBVUoydkt6VEU4cHVoMlpRc1NKLUFjR1NtS1kyRnRIdWdsTy13cDJ1RDFOUGRpRUU5dFNsbGJHSmNjZktlYzhTY2lhcXRWWnFrMWJpRThneUFKT2o4TGMzdHgxQ1U0dlRqU3czWnVRU2MwckRtTkNnQ3JUMzNBVTdPWER5alFISG9idDVHMS1rd0FNdVBTOW5yRGhQMFBMWGNQYXN4WXNtOWJVZjJnd1FWZw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMklLWWwya0tiLW53cWJYSk5XODNHT1pyX0x4MEw0Q1BPTG1WWkZhdHVmS2d3cC1iU3dHbHJOdUxzckRGOWlYOUxHdlVTSVRaOTYzWGxHN3lwQXdreVk2U0Y2WnlIVU1VMzBNMVN0eHpmWXNCZVJtV05oUktWSHp2UUNrUXQ3QldVRklzdnY0Tkw2c3JWelFQb1JBRnNyT2d6VmVyR0VVbFJVZW5vUkJDZ1pENldzd09KM2Z5Mk05WWI3VFlNNW9aZlFpcW9CRFlETW0w?oc=5"
+      ],
+      "publishedAt": "2026-11-15T15:18:28.025Z"
+    },
+    {
       "slug": "2026-11-15-클로드-코드-병렬-ai-워커로-프로젝트-자동화-확대",
       "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
       "urls": [
