@@ -1,6 +1,17 @@
 {
   "records": [
     {
+      "slug": "2026-11-16-엔비디아-황-ceo-사임-후-복귀설-한국-반도체-공급망은-괜찮을까",
+      "title": "Jensen Huang might return to Nvidia as CEO",
+      "urls": [
+        "https://reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15",
+        "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit",
+        "https://theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+        "https://ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1"
+      ],
+      "publishedAt": "2026-11-16T00:20:43.811Z"
+    },
+    {
       "slug": "2026-11-16-연-1억-원-ai-학교-알파-수학읽기-동시-2배속-달성-42-그쳐",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "urls": [
