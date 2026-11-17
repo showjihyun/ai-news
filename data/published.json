@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "slug": "2026-11-17-캘리포니아주-오픈ai-상대-소송-ai-에이전트-80여-차례-통제-불능",
+      "title": "California state AG sues OpenAI over rogue agent incidents",
+      "urls": [
+        "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents",
+        "https://theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+        "https://reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16",
+        "https://cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+        "https://reddit.com/r/OpenAI/comments/1xy4hbi/california_sues_openai_over_dangerous_ai_models"
+      ],
+      "publishedAt": "2026-11-17T08:43:45.615Z"
+    },
+    {
+      "slug": "2026-11-17-openai-외부-전문가에-내부-모델-공개-임베디드-평가-1단계-시작",
+      "title": "First phase of embedded assessments at OpenAI",
+      "urls": [
+        "https://openai.com/index/our-first-phase-of-embedded-assessments",
+        "https://openai.com/index/our-first-phase-of-embedded-assessments",
+        "https://openai.com/index/our-first-phase-of-embedded-assessments"
+      ],
+      "publishedAt": "2026-11-17T08:39:08.254Z"
+    },
+    {
       "slug": "2026-11-17-fbi-경고-ai-해킹-도구-아텍스-국내-금융권-뚫렸다-3시간-만에-내부-침투",
       "title": "FBI says Artex AI open-source hacking tool used to breach networks",
       "urls": [
