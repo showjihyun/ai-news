@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "slug": "2026-11-18-ai가-코드-30-더-쓰는데-완성은-제자리-병목은-리뷰로",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "urls": [
+        "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review"
+      ],
+      "publishedAt": "2026-11-18T00:36:15.870Z"
+    },
+    {
+      "slug": "2026-11-18-오픈ai-gpt-62-아스트라솔-출시-비용-520로-전문-업무-해결",
+      "title": "GPT-6.2 Astra와 Sol 출시 - 더 적은 토큰으로 전문 업무와 코딩 성능 개선",
+      "urls": [
+        "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "https://news.hada.io/topic?id=37361",
+        "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcW1Ga0VZa1lZc0pJTW90RmkzSExKY3kzR1VNb3FRc3l4QUY3QkxfUFlidEE3c05RVXlRbGpkaGRrODRwRnVqbm03SnVWa2VHZWRKR0F3OUx2eXpzaW1rQi0ySVRWeGpCOHdSOUVobENzcmtHVGphSFd1TGlTM1drUUtzcXlPZ0VDLVdKWDFTYU9iUDFCUTUzbU5LOHJkNWs?oc=5",
+        "https://marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release",
+        "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol"
+      ],
+      "publishedAt": "2026-11-18T00:22:21.779Z"
+    },
+    {
       "slug": "2026-11-18-바이두샤오미-ceo-ai-거품과-수익-격차-경고해커뉴스-이미-알고-있었다",
       "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
       "urls": [
