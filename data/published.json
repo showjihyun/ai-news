@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-19-제미나이-4-네온-출시-100만-토큰-컨텍스트장문-출력-지원",
+      "title": "Gemini 4 Neon",
+      "urls": [
+        "https://aistudio.google.com/docs/models/gemini-4-neon"
+      ],
+      "publishedAt": "2026-11-18T23:21:21.196Z"
+    },
+    {
+      "slug": "2026-11-19-오픈ai-모델이-칩-설계-1년-치-진도를-5개월로-당겼다",
+      "title": "Advancing chip design with OpenAI models",
+      "urls": [
+        "https://openai.com/index/advancing-chip-design-with-our-models",
+        "https://openai.com/index/advancing-chip-design-with-our-models"
+      ],
+      "publishedAt": "2026-11-18T23:15:57.965Z"
+    },
+    {
       "slug": "2026-11-19-앤스로픽-ipo-앞두고-아마존구글-지분-28-확보의결권은-제로",
       "title": "Anthropic Approaches Final IPO Hurdle After Tech Stocks Decline - Bloomberg.com",
       "urls": [
