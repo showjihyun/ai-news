@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-11-18-구글-ai-검색이-8년-운영-사이트-트래픽-75-증발시켰다",
+      "title": "AI is killing All About Berlin",
+      "urls": [
+        "https://nicolasbouliane.com/blog/death-by-ai"
+      ],
+      "publishedAt": "2026-11-18T07:51:43.948Z"
+    },
+    {
+      "slug": "2026-11-18-제미나이-4-카본-실사용에서-비정상적-지연-논란",
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "urls": [
+        "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long"
+      ],
+      "publishedAt": "2026-11-18T07:48:19.088Z"
+    },
+    {
       "slug": "2026-11-18-ai가-코드-30-더-쓰는데-완성은-제자리-병목은-리뷰로",
       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
       "urls": [

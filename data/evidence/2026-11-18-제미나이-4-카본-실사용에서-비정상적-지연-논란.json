@@ -1,0 +1,18 @@
+{
+  "articleText": "[Hacker News — kernel.dev]\nWhy is Gemini 4 Carbon taking so long? November 2026 While benchmarking Gemini 4 Carbon on one of our private evals, we found something surprising: it spent close to an hour completing tasks that routinely took Opus and Astra only a few minutes: Time and cost per trial Left is faster; lower is cheaper. API list price On a $200 plan, fully used Carbon is priced at its post-introductory rate. Subscription subsidization rates used: Opus 40×, Astra 13×, Carbon 3×, Hydrogen 17×. Turns out we weren't alone in noticing this. Theo - t3.gg @theo I don&#x27;t really know how to properly emphasize this. Gemini 4 Carbon is unacceptably slow in real world usage. Gemini 4 Carbon low: 22m21s Opus 5.5 high: 9m33s Nov 11, 2026 828 104 replies",
+  "reactions": [
+    "[Hacker News] It’s unlikely to be deliberate tbh, it’s more likely the data, algorithms and the training environments aren’t quite as good as Anthropic, Open AI is a lot closer to Google than people want to admit.",
+    "[Hacker News] I&#x27;d guess that it&#x27;s because Google eats its own dogfood, and if they didn&#x27;t train the models to be overly meticulous, the existing codebase would implode under a tsunami of slop.",
+    "[Hacker News] Then that&#x27;s &quot;test-time scaling&quot; again and Google then showed that they can reach frontier level benchmark results using it. It&#x27;s pretty cool as a technology actually (the demonstrated capability), even if the model is not so useful when it&#x27;s slow.",
+    "[Hacker News] yeah i tried using it its not efficient at all. just burns up the token and not get the work done."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "url": "https://news.ycombinator.com/item?id=50541790",
+      "score": 53,
+      "commentCount": 29
+    }
+  ]
+}
