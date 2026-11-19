@@ -1,0 +1,20 @@
+{
+  "articleText": "[Hacker News — micjm.com]\nTLDR: we project Gemini 4 Neon&rsquo;s performance based on what a faster Gemini 4 Carbon might score and find it equivalent to Opus 5.5\n\nGemini 4 Carbon is the best model on the Agent Duel leaderboard if you exclude early voting. Carbon&rsquo;s main problem is that it is slooooow .\n\nToday, Gemini 4 Neon was released , and looks to be an incremental benchmark improvement with a very large speed improvement. Earlier today, it was being served extremely fast via OpenRouter: 127 tokens per second . This is way faster than Carbon at 46 tokens per second .\n\nThis got me wondering, could Neon be not just a good model but the best model?\n\nTo investigate, I modeled the win rate in our leaderboard. The best model has three components, model identity, speed and whether the user voted early. My initial modeling did poorly, so I added an interaction between speed and early voting. This ended up working well.\n\nAnd surprisingly, speed seems to be pretty much as important as model identity (another blog on that soon).\n\nIf you assume the same performance as Gemini 4 Carbon (which is reasonable given even better benchmark scores), and 127 tps , we would project an Elo on the Agent Duel leaderboard of 1,066, just below Opus 5.5 at 1,078 in our later analysis snapshot.\n\nThe 90% interval for the projected Elo difference between Gemini 4 Neon and Opus 5.5 is -94 to +68, with Neon projected to win 48.3% of the time against Opus (counting ties as half a win).",
+  "reactions": [
+    "[Hacker News] That&#x27;s what you got from what I wrote? I must not be deep enough into the conversation to get it. I was just sharing my own perspective. I don&#x27;t follow AI development nearly as close as a lot of HN does. I don&#x27;t hate it, but I don&#x27;t love it either, it&#x27;s just part of my job now. &gt; And of course it&#x27;s upvoted by the Anthropic shills. Gotta tell you, my post is barely ",
+    "[Hacker News] I havent tried it but this was my take as well. Forget token inefficiency, it just seems much harder than just prompting a single agent what you want",
+    "[Hacker News] When you&#x27;re making &gt;$240K a year, I imagine spending $80-90 a day trying all the models just to find a slight edge is barely noticeable.",
+    "[Hacker News] An impressive showcase of productivity theatre in which tokens are incinerated in exchange for software that is always never &quot;finished&quot; and will continuously let down its users. Some people have cleverly parlayed this new fad into money, but this is typically a result of their sales techniques rather than their software.",
+    "[Hacker News] It was an excuse to write about the impact of speed on battle votes, and I got lucky that people wanted to talk about Neon.",
+    "[Hacker News] What harness? And how much do they subsidize compared to the equivalent chatGPT sub?"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "url": "https://news.ycombinator.com/item?id=50554374",
+      "score": 139,
+      "commentCount": 48
+    }
+  ]
+}
