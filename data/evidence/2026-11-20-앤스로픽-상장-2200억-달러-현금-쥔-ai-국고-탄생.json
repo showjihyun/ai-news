@@ -1,0 +1,90 @@
+{
+  "articleText": "[TechCrunch AI — techcrunch.com]\nShares of Anthropic are now trading on the Nasdaq exchange, as the company successfully executes its initial public offering. In the early minutes of availability, shares were trading at $111.50, a 33% premium over the $83 IPO price.\n\nSet on Wednesday, the IPO price was already higher than the projected range set by the company, which anticipated a price between $70 and $78 per share. All told, the offering will raise over $81 billion, directed to a combination of employees and the company&#8217;s own coffers.\n\nThe IPO funding, together with existing fundraising and new private offerings timed to coincide with the company&#8217;s public market debut, will leave Anthropic with an expected $220 billion in cash reserves. As one analyst told TechCrunch , &#8220;Anthropic’s going to have more cash on hand than any company has ever had.&#8221;\n\nThe share price continues to fluctuate, but the opening price would put the company&#8217;s market cap over $2 trillion, making it more valuable than Meta, Tesla, or Walmart. Only five companies boast a higher valuation by market cap: Apple, Amazon, Alphabet, Nvidia, and Microsoft.\n\nIn a speech before the opening bell , Anthropic CEO Dario Amodei emphasized the company&#8217;s commitment to safety. &#8220;Today puts the company in a stronger financial position, and in doing so, only strengthens our resolve to do the right thing,&#8221; Amodei said. &#8220;If we can show it’s possible to make the right choices on safety and still build an incredibly successful company, others in our industry will be inspired to do the same. We call this a race to the top.&#8221;\n\nGet an Early Peek at the Next TechCrunch Disrupt Disrupt, Startup Battlefield, and more will return next year, and you can be at the front of the line. Sign up for our waitlist\n\nEvery weekday and Sunday, you can get the best of TechCrunch’s coverage.\n\nTechCrunch Mobility is your destination for transportation news and insight.\n\nStartups are the core of TechCrunch, so get our best coverage delivered weekly.\n\nProvides movers and shakers with the info they need to start their day.\n\nBy submitting your email, you agree to our Terms and Privacy Notice .",
+  "reactions": [
+    "[Hacker News] local models will never be as good because of the prohibitive cost of running large models. unless there is some sort of a hardware breakthrough Anthropic business is solid and almost all of its revenue is from enterprise, not redditors doing role playing or generating cartoons on their 3090s",
+    "[Hacker News] I hate to say it, but I think you&#x27;re right. The competition and increasing commoditization still gives me hope though. With any luck they&#x27;ll be forced to continue competing. That&#x27;s the only antidote I know of for enshittification.",
+    "[Hacker News] That&#x27;s odd. It was fine for me, maybe even good, other than the aforementioned tendency to just kind of stop rather than guessing what I wanted. It was 100% different though, and it was a bit jarring. It was kind of like having one of your coworkers replaced with a similar, but different, pod-person. I&#x27;m getting used to that feeling though. The one thing I think we can all agree is certa",
+    "[Hacker News] I’m not an accountant, but my understanding is that most of that $100B loss is essentially an accounting loss from their stock going up so much which they were using to pay people with. Of course, maybe those counterparties were accepting an unusually low nominal value for their product since they expected the true value of the exchanged shares to be higher. However, I think that will take a bit t",
+    "[Hacker News] I&#x27;ve seen people have difficulty understanding exponential growth, but you&#x27;re somehow mistaking exponential growth with zero growth. Look at what the capabilities were two years ago, one year ago, and today. You can solve an IMO exam for a dollar today.",
+    "[Hacker News] A couple of days ago I had DeepSeek 4.1F 1017 do just that, rooting my Synology box when they announced a CVE without any details."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic’s Nasdaq debut",
+      "url": "https://news.ycombinator.com/item?id=50562754",
+      "score": 939,
+      "commentCount": 1851
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic IPO: Claude Maker Opens at $111.50 in Record Nasdaq Debut - TechRepublic",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY0hvWDBvSHdERDJGMkR5SG9lWnd3SGRzYmV3bXhQNW53MGFHRUFnODZXa2hCLVEyaXNZUlJfblYyakVkdEF0TnJwQVZBQlhVa2JXanMyTEtvQlFwS3lMZFhiSTZnMTJocEszRDRrN3E0SG5uNkN4Zkg4UjRzWFJ6a2lGRQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Marks its IPO at Nasdaq - Nasdaq",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jRVBOdm1xV3dnaUxoRGY1Rl82aDh0Y3RfVkR6a3h4dUQ5U0tKYlpKVkQxNTE2R3o0YUtrRjlna3dpTzI4Q1luN1hfR3NHY3haQTVfdEpNRktMNUJGY29BTVFPVlAyV00tUmlORWx3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic IPO breaks records on Nasdaq debut: Claude AI service valued near $1.8T - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmxDQ3djbV91aHBTN3l6R01zSUxINEJpV3YwQXpFanhmY2tuZ2k2LXFzbldqN21ILXV1UGhrVkhCUFBvZGdSUG9nNEJBMHAzb3k4S044T2JnVHpTbXZHTjFYTUF4RFRqVU1qZDV0X0lHOXhTSFl6MUdyM2NBRVo3dEF5NDk1VFF6RVdWdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude maker Anthropic pops in Nasdaq debut - Capital Brief",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWIxb1RjSlNHQUsxVVh4MFpHR3QxMVBLR2VJYnRMMnEwZ1oydEh3SkI2Ui0zWmIzeXRWd2VVVXNsM2MwaGdHTlhOdHlkc243b3M3cEhsVVp5N2Z1elMwYzFOajlsOXR1UkNmMmxnVWNVM3JQbkt3cmZoUXNMeS1LZ3VoLThYSWJRejU1VEhsVEVDNmJCS25RVFloeXdWQkxUeUIyNzVkdXhoRUE5RHdTY1prM25UOE42YVVESENB?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic investors’ shares rise ahead of Claude developer's record market debut (GOOGL:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZE0wSFl4dDQ2bzZCdXNzaWJuT19HMFlrYk1VaXFHeFd1a3NJa0IxQ1hId045RmVWMmZMTGFKTjlHcFQ4YU1JSHpUV1phVUhESUtLYVhXVU9PR21fVXN1bFBuUGtHMnRTX1pta1BvNXpFTDFKQWJiMjJoc3RZaDdvajFha2YtRmhRRjdJdnl3Nk5FZ3NIV0xZNEFZSXMtY05nbWV4RVZmcFhoSXl0dktKS3hEM1R1OEk?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic IPO — Maker of Claude Breaks Records With Massive Nasdaq Debut - The Korea Daily",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAtbFNURURCRldOTGlhcVlOMEtYaEo5Z3BaaWZ0ZnduRHpEUWNpdVAxbGtYTTR2TDlDSk9mRlFxdm5Ub3NlYXNGdTNtQnVwS1czMUZCZl84ZmlXYmdPcGN3dk9sWG1qMHVzcnZzMQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Jumps 17% in Record Nasdaq Debut but Fades From $111.50 Open; Alphabet Ticks Up, Amazon Dips - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbHRvTlBCaXZWS05BdDJUVGZ1OXdnX0YtbWZHckNqbzFYb0NSQ25DOVVoMVFYMzY0R1JmaXZLX0c4Tjd4QS04NjZLUS1BaWNzb1BjT0cxSXVCbnk0MlYzanl4WmJkUEtNT0k0SFNadW0yNXJTcHEzak94WHBlZjhab085Z1NXUmIxNU9ibERNZUtZZlN2LU5Pa3U1LTZadzkzaHV0S3B1Zkx6Vm9GTXB4c2QyRFFyNERsbWtCakF3UThCVnBSRFc5Q1l2Tms2V19PRG13eXl3bTZEdw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic investors’ shares rise ahead of Claude developer's record market debut - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQktIVERmSDZkVDA1clhrWXkydHF6bkJjTHJBbEZUX1FJVzB3S2E2aF9RVkhCYUNhMk0xNUMwM2dscExhU0U2QTV2dTRfczZydFlOOWpRZzQzdzFSSFgxNDJPME4yTy1QbVFsRkdxUlZVbHNURThZTGJKTzdxLURqYjZodVc0X0pNaGFOaTZUZm1SVzVrMERBTXd2T0tObFFkQWN3R2NBZEl6U1BibUlGczRGS1ptaThqWDM0SjRkOFRTa2ZIOFdCQ0RpZFBvbG1saFZVNjB5R21sZw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic IPO: Claude Maker Makes Nasdaq Debut at $111.50, Shares Jump 34% After Record $81.3 Billion IPO - India Infoline",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQLURJVUtfaWNmZHVEVGZnTzhhT0tqSTBGa3FLRUVfV0x6Y095SVVyYzhyNGtteW5oWXJLWmtiUGtGdjgwbmRXcTZRRkg0Wi1tUHVDT1pHTjZfRFJGZWc4NFMxLXZoV1d4RFBNYmtuVWZfbFlwREhHRTI2TENTaEVJMkl1c1hieE5wc1NYZVpQT2RqWnFxTUszM0VKcW84QTlrRmFlVzJDVjZvaTNaSWYxU25iaDhnbzBrZU55ZU03RWhNS1B4LTVKT09ScGRaTkxGbWJ2QjRR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "TechCrunch AI",
+      "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+      "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

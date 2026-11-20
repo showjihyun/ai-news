@@ -1,6 +1,33 @@
 {
   "records": [
     {
+      "slug": "2026-11-20-제미나이-4-네온-코딩-벤치마크-1위-하지만-실제-요금은-또-다른-이야기",
+      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+      "urls": [
+        "https://git-aarvin.github.io/mei",
+        "https://marktechpost.com/2026/11/18/google-gemini-4-neon-release"
+      ],
+      "publishedAt": "2026-11-20T02:48:38.213Z"
+    },
+    {
+      "slug": "2026-11-20-앤스로픽-상장-2200억-달러-현금-쥔-ai-국고-탄생",
+      "title": "Anthropic’s Nasdaq debut",
+      "urls": [
+        "https://reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY0hvWDBvSHdERDJGMkR5SG9lWnd3SGRzYmV3bXhQNW53MGFHRUFnODZXa2hCLVEyaXNZUlJfblYyakVkdEF0TnJwQVZBQlhVa2JXanMyTEtvQlFwS3lMZFhiSTZnMTJocEszRDRrN3E0SG5uNkN4Zkg4UjRzWFJ6a2lGRQ?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jRVBOdm1xV3dnaUxoRGY1Rl82aDh0Y3RfVkR6a3h4dUQ5U0tKYlpKVkQxNTE2R3o0YUtrRjlna3dpTzI4Q1luN1hfR3NHY3haQTVfdEpNRktMNUJGY29BTVFPVlAyV00tUmlORWx3?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmxDQ3djbV91aHBTN3l6R01zSUxINEJpV3YwQXpFanhmY2tuZ2k2LXFzbldqN21ILXV1UGhrVkhCUFBvZGdSUG9nNEJBMHAzb3k4S044T2JnVHpTbXZHTjFYTUF4RFRqVU1qZDV0X0lHOXhTSFl6MUdyM2NBRVo3dEF5NDk1VFF6RVdWdw?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWIxb1RjSlNHQUsxVVh4MFpHR3QxMVBLR2VJYnRMMnEwZ1oydEh3SkI2Ui0zWmIzeXRWd2VVVXNsM2MwaGdHTlhOdHlkc243b3M3cEhsVVp5N2Z1elMwYzFOajlsOXR1UkNmMmxnVWNVM3JQbkt3cmZoUXNMeS1LZ3VoLThYSWJRejU1VEhsVEVDNmJCS25RVFloeXdWQkxUeUIyNzVkdXhoRUE5RHdTY1prM25UOE42YVVESENB?oc=5",
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZE0wSFl4dDQ2bzZCdXNzaWJuT19HMFlrYk1VaXFHeFd1a3NJa0IxQ1hId045RmVWMmZMTGFKTjlHcFQ4YU1JSHpUV1phVUhESUtLYVhXVU9PR21fVXN1bFBuUGtHMnRTX1pta1BvNXpFTDFKQWJiMjJoc3RZaDdvajFha2YtRmhRRjdJdnl3Nk5FZ3NIV0xZNEFZSXMtY05nbWV4RVZmcFhoSXl0dktKS3hEM1R1OEk?oc=5",
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTFAtbFNURURCRldOTGlhcVlOMEtYaEo5Z3BaaWZ0ZnduRHpEUWNpdVAxbGtYTTR2TDlDSk9mRlFxdm5Ub3NlYXNGdTNtQnVwS1czMUZCZl84ZmlXYmdPcGN3dk9sWG1qMHVzcnZzMQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbHRvTlBCaXZWS05BdDJUVGZ1OXdnX0YtbWZHckNqbzFYb0NSQ25DOVVoMVFYMzY0R1JmaXZLX0c4Tjd4QS04NjZLUS1BaWNzb1BjT0cxSXVCbnk0MlYzanl4WmJkUEtNT0k0SFNadW0yNXJTcHEzak94WHBlZjhab085Z1NXUmIxNU9ibERNZUtZZlN2LU5Pa3U1LTZadzkzaHV0S3B1Zkx6Vm9GTXB4c2QyRFFyNERsbWtCakF3UThCVnBSRFc5Q1l2Tms2V19PRG13eXl3bTZEdw?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQktIVERmSDZkVDA1clhrWXkydHF6bkJjTHJBbEZUX1FJVzB3S2E2aF9RVkhCYUNhMk0xNUMwM2dscExhU0U2QTV2dTRfczZydFlOOWpRZzQzdzFSSFgxNDJPME4yTy1QbVFsRkdxUlZVbHNURThZTGJKTzdxLURqYjZodVc0X0pNaGFOaTZUZm1SVzVrMERBTXd2T0tObFFkQWN3R2NBZEl6U1BibUlGczRGS1ptaThqWDM0SjRkOFRTa2ZIOFdCQ0RpZFBvbG1saFZVNjB5R21sZw?oc=5",
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQLURJVUtfaWNmZHVEVGZnTzhhT0tqSTBGa3FLRUVfV0x6Y095SVVyYzhyNGtteW5oWXJLWmtiUGtGdjgwbmRXcTZRRkg0Wi1tUHVDT1pHTjZfRFJGZWc4NFMxLXZoV1d4RFBNYmtuVWZfbFlwREhHRTI2TENTaEVJMkl1c1hieE5wc1NYZVpQT2RqWnFxTUszM0VKcW84QTlrRmFlVzJDVjZvaTNaSWYxU25iaDhnbzBrZU55ZU03RWhNS1B4LTVKT09ScGRaTkxGbWJ2QjRR?oc=5",
+        "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price"
+      ],
+      "publishedAt": "2026-11-20T02:46:38.740Z"
+    },
+    {
       "slug": "2026-11-20-ai-안전장치가-보안-패치를-막았다-개발자가-오픈-모델로-향한-이유",
       "title": "Fuck Your AI Safeguards",
       "urls": [
