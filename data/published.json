@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-20-딥마인드-agi-다음은-asi-네-갈래-경로와-비용-폭락-시나리오",
+      "title": "What Comes After AGI?",
+      "urls": [
+        "https://institute.deepmind.com/essays/what-comes-after-agi"
+      ],
+      "publishedAt": "2026-11-20T10:50:24.588Z"
+    },
+    {
       "slug": "2026-11-20-제미나이-4-네온-코딩-벤치마크-1위-하지만-실제-요금은-또-다른-이야기",
       "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
       "urls": [
@@ -6669,32 +6677,6 @@
         "https://news.hada.io/topic?id=32767"
       ],
       "publishedAt": "2026-08-22T13:57:14.383Z"
-    },
-    {
-      "slug": "2026-08-22-코덱스가-클로드-코드를-따라잡았다-확인된-건-제목뿐",
-      "title": "Has Codex Started to Strike Back Against Claude Code? Key AI Code Assistant Showdown - 36 Kr",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94d3d0S0RPMkstQzNXYlpoUHRFeTRvcTJoMVpJWTdncWdkbGtRakdWaDEzMXhDZmhIU2Z1a1BiQ0llRFZJWGdMM2VHZmI2bWpHR2ww?oc=5"
-      ],
-      "publishedAt": "2026-08-22T09:33:41.072Z"
-    },
-    {
-      "slug": "2026-08-22-ai가-쓴-글은-그냥-넘깁니다-한-개발자-글이-부른-논쟁",
-      "title": "나는 AI가 쓴 글을 자동으로 무시하기 시작했다",
-      "urls": [
-        "https://news.hada.io/topic?id=32760"
-      ],
-      "publishedAt": "2026-08-22T09:28:34.684Z"
-    },
-    {
-      "slug": "2026-08-22-gpt-56-sol-값-20-인하-대신-조건이-붙었다",
-      "title": "GPT 5.6 Sol 20% price reduction",
-      "urls": [
-        "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
-        "https://reuters.com/technology/openai-cuts-developer-pricing-frontier-gpt-56-sol-model-by-more-than-20-2026-08-21",
-        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tMnFvZ3lkZl9GUWZFNkRtNkRoR1Zrdkh6ZGs0UWFlTFV1TUpJWFFtRkNySS1vU3EzOUpNWEhYWlR5Q2ptRTJvODhIQTg3OXRZR0tsUmhsUE1BNnFteHFPVlRxZ2ozdjJrcUE1dHBoeXJObmxkSnc?oc=5"
-      ],
-      "publishedAt": "2026-08-22T08:49:01.362Z"
     }
   ]
 }
