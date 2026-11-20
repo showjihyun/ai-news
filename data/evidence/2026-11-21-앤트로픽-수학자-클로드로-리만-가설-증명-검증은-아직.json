@@ -1,0 +1,160 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nScience Close Science Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAn Anthropic mathmetician’s latest breakthrough is another sign of how quickly AI is transforming mathematics.\n\nAn Anthropic mathmetician’s latest breakthrough is another sign of how quickly AI is transforming mathematics.\n\nRobert Hart Close Robert Hart AI Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nEmma Roth Close Emma Roth News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift If you buy something from a link, The Verge may earn a commission. See our ethics statement.\n\nAnthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics’s most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world’s best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval already unleashed by OpenAI’s previous, often inelegant forays into the field.\n\nAlpöge’s solution has yet to be verified independently. Anthropic has not commented or involved itself in Alpöge’s announcement. In a document on his website , Alpöge says he texted Anthropic CEO Dario Amodei about the solution “late Sunday night” and suggests he held off publication until after the company’s IPO on Thursday .\n\nThe Riemann hypothesis is one of seven Millennium Prize problems, which are widely considered some of the most formidable open challenges in mathematics. First proposed in 1859, the Riemann hypothesis concerns the distribution of prime numbers and how zeroes of a function are involved. It’s regarded as one of the most important unsolved problems in mathematics.\n\nA statement on Alpöge’s website says Claude was integral to developing the proof:\n\nI believe I have, working with Claude, discovered a proof 1 of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one dawn across science of something far greater.\n\nThe Verge reached out to Anthropic but didn’t immediately hear back. Anthropic said it was working on the Riemann Hypothesis with Claude in August , but noted at the time: “We don’t expect that the techniques Claude used will lead to proving the Riemann hypothesis.”\n\nAlpöge’s solution, presented in Lean, has only been published on his website and has not yet been publicly accepted by the Clay Mathematics Institute, which administers the Millennium Prize and offers a $1 million bounty for each problem solved. Under the institute’s rules , a proposed solution must be published and withstand at least two years of scrutiny before it can be considered for the prize, during which time it must have “received general acceptance in the global mathematics community.”\n\nIn the quarter-century since the prize was established, only one problem has been officially solved: The Poincaré conjecture , a topological problem concerning three-dimensional spheres. In September, OpenAI claimed to have cracked another, the Navier-Stokes problem, which concerns the flow of fluids.\n\nOpenAI said it pursued Navier-Stokes after hearing rumors that rival researchers were closing in on a solution. Alpöge had been working on the problem with New York University mathematics professor Tristan Buckmaster. Buckmaster claimed OpenAI produced a solution for Navier-Stokes using the route he and Alpöge were working on with OpenAI’s Codex and Claude.\n\nOpenAI spent millions of dollars and deployed 10,000 agents in the attempt. The result is widely considered credible, though it has yet to receive formal recognition. But the achievement has been marred by allegations of questionable research practices, including claims it used unpublished work from mathematicians who had shared their research with its AI tools. OpenAI has strongly denied wrongdoing, but this has done little to quell the uproar.\n\nThough most of the spotlight has been on OpenAI’s movement in math, Alpöge said in July that he solved the Jacobean conjecture using Claude. The deluge of findings has left mathematicians scrambling to digest the material and figure out where they belong in what is rapidly becoming a profoundly different mathematical landscape.\n\nRobert Hart Close Robert Hart AI Reporter Posts from this author will be added to your daily email digest and your hom",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math - Scientific American",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcl9DRERIZlViX1BNaFBRYU1WbjI4ejNhb2x6b2d1aXJRenVWQ3NtUUttb1VvTnRYUWNvUE5pQy1vbkpvcEpXeHU4bldwVXpfM3pwdzVtMjJyT3BvcTdyU0lZQUdtdzJEN2xoa1AtR1prQkd3Q1FDakxiZi1XRWVnSmt5aHNYTzlvRDhWcXl3emNNd2NNTTNESWF5bnFiWk5kYWZVQkdiSHFtX2RVYjlrNElMOV9lQ1c5R0dLQnN5RlRqemlIR0huTGhzMjZMb1ZRNU5r?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Mathematician Says AI Has Solved the Most Famous Problem in Math - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd2R1UU5HMEVNTGhtYWxQaTNBMjVRZnZxZjJVU0U1MVk0U2dIRHh6akhYNV9tNWxXYjNmeU16UzdqZDM3bUpDS1BxOEd2b3oySzVMako4Z25JMmNFUVd5ZlFWNTZ4WmJ6d2NXT0R5Z1JsNVNGMi04MGowVF9CQkl4dEEtXzJNYWRDeHA3Rk1hV250dEZWQjNRLW5RZHZPQ0ZMMlNLSDdkejFKTklvZW1ZNDZZalFOQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims AI-assisted proof of the Riemann hypothesis - New Scientist",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYnhwd1IyUERONU1RclBYRDZQQi1fSXg5Z1BwWENSVG9jZzZPWjRJZFlQQVlpZkFIYUlDbkljRU9VYkpWOWo1dTdqQ0lIMzBSY0laZ3hhUVFPRDIwcTRiclNjUDgxZmxZTHpjV0J0Q3IwSnpES0Q4cHR1QlBLS0pkLUVyM0luSTFYM1JDRVRRZmxpdXJiRFdELVN0R3VmUE9qTWtyenpaVjcySmJEMmttdEJUMkstMEhRQTBILQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims to have solved 167-year-old math problem with Claude — Riemann hypothesis proof allegedly discovered but remains unconfirmed - Tom's Hardware",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNQ2pfbTNIQ2pMc1c0LUhZMzl3NU1IRkJfVXItM2F1Z3dIY3lVX1RjSWoxeGh1bkl4cmh2WDNBdFpTcS1GUUxYS1NwQTdHcG1TcXNNaDNXb3FodXlSQU96dEloYVF4WUZGa0RKWVVtQ0ozbUVZRDZVT0hCX3FLZWR5ZXZjbWtIUU1CLVoyc0pEMUZ6dXpUaDRwR3Zjd2dTOTVtWlF1OWh4MDFaOVh0dmRDdDJkdDYzX0pNYmZYWHJoRGJ5MFFIQmx2endfRjdFSnh5R3c5ZUJKbkEtWkc3OGJkWWdjR0FSUWJMeUczbFNtTGNqbW1JbGktRVNyM0hIRmlMUUZ4MXBJS1lHZ1NpSkdKLVdXUDctUFhpOEhUeWpNb0xEejIyQlphOEljVmhTRjRlR1pORmJYTHk0QklaaU1laUN3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims Riemann hypothesis proof with Claude, pending expert checks - Superpower Daily",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWTNMWWZSbGphbXlONzBkMXJ1aUlHOVRObmp2bDJlOTBuWjlvZnNQbDBtajZpTkxta1Q0YWI5OUJnUURjZ2swOEgybkN3Q05oaGpKSGo1aU5Gc3JjLU4tM0tTVWxCSkFacXRJTlFfLWRNRkdqRGtKYkVvaGw3MHY1aS1tcjVqa2x5cUM0dFlhaU5lY3pWU29RQkZHdlM1VUZWQzJFOFNnVmFNZGg1VmRGeEhZOTdGMHVTMGF0MncyZFY?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Has the Riemann hypothesis been solved? Anthropic mathematician Levent Alpöge claims Claude cracked math’s most famous problem - Clarin.com",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaURwdWxxd0lGcnR2d21aMS1DTlJ4SEpESU5WekQ1cURzVU9OU3IyXzNHT0ZuMmstbWY0N2NxQVYtaFVXMWdROGxuQkJab3o4M1BmZ0hzcWFzX24tQWdkblJjLXBnWFBXbldGa3ItOHdUejl6OWVCeWU5RU13WVBWcmJFNjlVWGRkb3N4TDQ1OVFCQ0JmT245bDNLdi1YTWdNQmNQY2NYZTZwLTY0TW9wWHBmU0h5Z2txSkRYdEY4ZHNWSjdkRHdpZ3FPYnhJRHQtcWlhU1pzd1hyZXgyc3BGS3NTbk92YnFSX3dhaFpGbTJBVG9iTlVkOGVWRlBZZ9IBgwJBVV95cUxQVm8xMldubE1PQkRRSENOeVlYV3BLWU9rZFZETkJ5WjZ2TEE5SVNncExkSXJjVGZXV29XWEhFS2pLUG1naE1KYkx5dnNBTXdDNkttUjhEV2kwQXF1dzFhSHNGZ1ZQMmM2dFpmOUt3SnpBaDdLdGM5QTNSell1c3FraTkyd0lnQjdUODR0UGhkV0NGYzRBaElpZG5odnVxNF9SMDJuRHJHRE1tSmd0Yll0VHh6MmJlVmgxT3BCQXhIWTFsOW9UV0U1VFUyWF9XeV9OdXJRR1BwQzY4TXEzcjNXWkp0a2xHU0VYTURQSE1nSk5XNXFQNjV5c0xzNThYekhBdzNz?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Who is Levent Alpöge? The Anthropic mathematician who claims he solved the Riemann hypothesis with Claude - Clarin.com",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUHBoVzREUW9CT1J2TDlocTNHSmw5UlQ0T3dRdVIwc3Y2NjlfcmMyTW1IcmY2VVJVazBLclE3b1hPWlNGNEpRclJ0RGdic0VMUmJxUnJvN0lTOEpIOHRITTFabUxOaDdKamg5YjJuVl9FUnFpdVY1d1pvWVFIUmlWYVdsQjd6Q2FfaktFZUtIdEZZZS03TGRVN3REX2JDRUNTSkR4WWhWWmhYZ2FGYVVVbFc1dUlSVEYzVU5SUHZhRFl3dmh1TENnYWY2TUI3QVQ5OVdnUFUxMWlCWEsyZ1o5QnVPNXPSAeoBQVVfeXFMT0E0NmVSRzdrcjY5dlhCM240YlRJUDFiUzlSMnJFTWdUZ3U2VG1DM1E3MUVncU8wYzV2bmJFdjhZWnlla1d4SWRUdW1oaGpKRFVlNVltRi05V1JlNU5BR1FJMFRndnFISjc3d0NRSHM3Mk04NDZUMkt1NS15djNCcUxvWEdxT19tTC1SMkNJWmFjMEdhSXlveW9HTFJGNGJHVjdBNk9NN1d1eXRrM2xJOWkzRmdJRTFwSVJFLU9OMlY3WGdpd1FOcVJfeUNLWVkzdGpHWW1ibTgwQkpBZGRueUdPckRTM29Lbmp3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude helped crack the 167-year-old Riemann hypothesis, Anthropic researcher claims - Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYk5kZUJuWXpJRFh3V2N6VC0teUFNMjF3ZjB1NXVmTFJaXzBfWld4WWJvT0VOdC1uU29HaUJfSWdBeWJrQ0VyeThacEJ4N1FMT0dRNVhGZ01HOVluU19mVTVuV2owQjBrajN0S043c2VyZjFhdDMyQVItQi1ObElBVE5nMVJ3RV8tNUU1R3NDX3BuRG1ycGtILUQxMA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician says he believes he found a Riemann hypothesis proof with Claude - Mezha.net",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUFY1NlNvMExXd0RfOTk1ZDV5R003ZnZxSWlOeUpwU3VzUXNSaG5yNmZxek9XUnR0WFhfTDgxYmNXckJsSnhvbm5NUGtxa3BUYmFodXRUc0hwYldWMHhIbnNtT3I3Qm9raGtjVDRWOXlzbnp3eC15dVJrUmt1Nmx0OHN3Yzg5OERKemlTNkROY0I?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Who is Levent Alpöge? The Anthropic mathematician who says he and Claude proved the Riemann hypothesis - Nacionale",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDBLSkp2TGJ2V2FSTzRnZk1YVXpsRVZvT0lXTmJHampiUUZIdlVRX0tQVThtQmZ2WmNhSzdMQ3paNVo1M3NSdFVleFN1YlVPRnMzY3hrUGQ3eGNiZFRucmxQRGVRV0d3V2JnT2lKMjJRYXhmY2RmM1dkUkNpbWFUdDdocU5GMnZkX2RrU2VzWnN3dThRYjdqb0hBcEMxMTRlZFpqc05TWTdTaXFmQjRSa3NFVnA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Researcher Says Claude Helped Find Proof of Riemann Hypothesis - bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hc3VyLURsNnFjZElWRHd5NFlVYVJndzFsaVRjSDcwYl9RWUVGTFRIczdlT2MtMWVySU02V3FMRGFlQUdWNWlaZmhlUEFZa0hkVDBJWA?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims Riemann proof with Claude. Hold the confetti - Digg",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE04NVRQQTBJLVdwbGZWb0V4enhsellNRlNxdDhWX1MxdU1ITGpIYldXX3JtQzBTNk5QV2pKeEI3RkZVQQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic’s Alpoge claims Claude found Riemann proof - Condia",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpZjA5TEtsY1F1VXluM2Y3NWstSTB1MDZWbUhtWmJYNHBGX2twS0hMRkNfTmhnYlZHek9tbXp4V2k3VnF3THFGeXJpam9qMWUyS2YtQWktbGNhVVB4ZjVRMFVBUVp3aUNPUVBNdQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Mathematician Claims AI Helped Solve 167-Year-Old Math Puzzle - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdkhuODRUXzV1bzQ2QVhuUHV3ZUdYYWJUUlA5TXBrSEgzdlFqdzQ5a2FyY2ZFQjgwaG5sZC05LTZWdGlMcGoySHBjU21mU19oRlFUT0o2SWhjVEp1VDE0eHowb0ZTSm9tNEo1N2ZNdUh0aG04WWJXUThSZ3NfQ2hFTWxCV3oybS1HS3VNWEdJclA2c0dWeERsallSd0VfNENxdEFSTURuTDI0cUVuUUxaX2UxMlh0bHVfbld4SkJlX1loQ2vSAcsBQVVfeXFMTXJxTEJYYjN3UV8yZEtEaldfcGQyZHpjRXRFWVhWN0x1eXR5YUxab2hCX2xKZ3VlN3FHNVpJNmtnaElBcXpDWWY0U2NQZ2FTUUJxb1pyVmVmYU9RUFYzT2kwVkw5NlBfdWd1MTQ5aEJLeHJOVmRMenBRREwzcUVCN0FNZElxeW53YXF2eVl5NnExZ2N5MFlYbE82SG1iUmtCcXVaMnltLURNdlctNWJYSHhqUUtXTHJaaTdGX0VSVHNFNDlQaFprOWJDZDg?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims to have proved Riemann hypothesis with help of Claude - The Independent",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNEdCNUhxYnlqWHdxUGhPVXh5Y0NFaGRxN2tVTDlKRGRFa2todVJVSDBZSGVqelQzMW9IZDBjR2NZM3FraEtuUXd1UjBlZ2VJcFhhakF5eWhER2tpODJlZE9FUUdlTEFaM2Rzd3FLdzFjWTBULWZjMFM3NkxMRzNSSzM1ajBGMEQzWkw1VWlhaDdCUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Claude Riemann Proof Claim: 167-Year Problem Unverified - shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU2JBbkdFUWhTYnU0VEpJeUF4ZXhjVWdpZVpCZ05ZTlJOSkE1NVQxalotMFF4OFpTclpuNDZKOVJOY1VNOEVQUGFpb0pZVkpoMHpuNjVoUTJ1azVKVFA0eTNZaVdJRkUtMVVFTUdsWWptTk5vZjExMURyRlNxVnBpc0pHVFVZYlRuV09TRGN0X2g2RUN3aVE?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Has the Riemann hypothesis been proved? An Anthropic mathematician says yes, but it is not verified yet - Nacionale",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUnNrT1NUVVJFWFZVREVFYVFnakI5cGM2MnAzQWpJbkplMDVKdF9ZeFBOT0EwMThlQVlSYkpaaWhHRzB6VEVJSFhnZHRMUks0VVAzeHN3eXZVVDJnOVNmUmNNbnl0YlU0NWdsVnNORk9Dd1plMEJiSjVadi1CNVNzblJwRVBMRkVIZ0psNnpLNVFNSUJQZVdVVFlLWC00cld4LTIxeHBjNkNRc3pnaWNxd19mSm8?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Mathematician Claims To Have Solved 160-Year-Old Riemann Hypothesis Using AI - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcEVLSEFvemVCWnlRZlBxYTNfdGJrTmY5ZEk2NzFocXMyRTE1cGUxbjdqS1ZWZ2lueG5PTWMxVV9FcUFSQ2pVcDJ1M1NBWU5kc3FFYUt2NkE1Y01FY21PS0JKUjVTMzJBUkkwX0RTMXVPUE5hd1dUWlFqbFpfTWI1NUNlcS1xMU5zUG0takJQSG82Nlo0SjFURlRnYk42bDU2UFEwa2NFUGNxOGdqS1JHbkxvSVZJd0Yxakh3eVFoeDFud9IBygFBVV95cUxQd3NvU1Q4OFpFTGZMRTd3bTkzM0U3NDQ3ZUtlbERhamVIZ1E3SnFYZVJnQzlIaVg5T3JRQUZxbnZ6TFlYaHVyNTctaTk2eGJQSUtZWlBUU0VvNWJBWEhjcHpMU0xCM3hZZVhUd1NoN1MxM3RnNmgyclFPeUJDb2xYbTdvRGxidWJuemdQUEZiQ0NKTkNOT2JHQVhvUjdUOHhxVzBudUgwWWFGQjlkNzliU3cwNklxSVZJTEc0OGV0V0ItdnRZQmVrd3l3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician Levent Alpöge posts a claimed proof of the Riemann hypothesis made with Claude - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTGpvMEtmYWxvbXFTZlczSVdvVEtab3JhNzRDLTZlQWRHSHdQbk93d1JLSnpOR1Uxa1lseFRmeE5yX25ZM1lhcFAtbTdLQW9Ob0M3R3M0MlEtVDBmT044NHNTRGRGQkYtakxxWHkzVkhlYlkyVFlaandBQUJrc1VHMS1lUnZudHk4aWtpLURyQ3h6RVRnM0lOZXpwZWwzWFY4VWI4NmFYQUZIQUxLYmV0X1NqelZxaVN6TGZrNTk1OEs?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Riemann Hypothesis Solved? The Claude Proof Claim Explained - Fello AI",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HeFA5ZHljdVhZaFRKaFFoR3pSNFNfb19UWjRvNTNCbDRnY3E1ZVNHRjhmZW9yc3Y0OFA5ZkhKTkJjempSVVVTX0lqSTBGc0FvUVpDckxjc0NjUQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic mathematician claims Claude-assisted proof of generalized Riemann hypothesis - Digg",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9zLVlYSXBjblhCaDVMUkRRYzM3WGJvXzVsZ3dndUNzaXBBLVNYS3dIai02NlBGaGRnX1Q2V3NReG5mZUdL?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "url": "https://theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

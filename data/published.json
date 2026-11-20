@@ -1,6 +1,45 @@
 {
   "records": [
     {
+      "slug": "2026-11-21-애플-자체-ai-에이전트-개발-중-서드파티는-차단하나",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "urls": [
+        "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac",
+        "https://theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+        "https://theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+      ],
+      "publishedAt": "2026-11-20T19:07:50.933Z"
+    },
+    {
+      "slug": "2026-11-21-앤트로픽-수학자-클로드로-리만-가설-증명-검증은-아직",
+      "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math - Scientific American",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcl9DRERIZlViX1BNaFBRYU1WbjI4ejNhb2x6b2d1aXJRenVWQ3NtUUttb1VvTnRYUWNvUE5pQy1vbkpvcEpXeHU4bldwVXpfM3pwdzVtMjJyT3BvcTdyU0lZQUdtdzJEN2xoa1AtR1prQkd3Q1FDakxiZi1XRWVnSmt5aHNYTzlvRDhWcXl3emNNd2NNTTNESWF5bnFiWk5kYWZVQkdiSHFtX2RVYjlrNElMOV9lQ1c5R0dLQnN5RlRqemlIR0huTGhzMjZMb1ZRNU5r?oc=5",
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd2R1UU5HMEVNTGhtYWxQaTNBMjVRZnZxZjJVU0U1MVk0U2dIRHh6akhYNV9tNWxXYjNmeU16UzdqZDM3bUpDS1BxOEd2b3oySzVMako4Z25JMmNFUVd5ZlFWNTZ4WmJ6d2NXT0R5Z1JsNVNGMi04MGowVF9CQkl4dEEtXzJNYWRDeHA3Rk1hV250dEZWQjNRLW5RZHZPQ0ZMMlNLSDdkejFKTklvZW1ZNDZZalFOQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYnhwd1IyUERONU1RclBYRDZQQi1fSXg5Z1BwWENSVG9jZzZPWjRJZFlQQVlpZkFIYUlDbkljRU9VYkpWOWo1dTdqQ0lIMzBSY0laZ3hhUVFPRDIwcTRiclNjUDgxZmxZTHpjV0J0Q3IwSnpES0Q4cHR1QlBLS0pkLUVyM0luSTFYM1JDRVRRZmxpdXJiRFdELVN0R3VmUE9qTWtyenpaVjcySmJEMmttdEJUMkstMEhRQTBILQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNQ2pfbTNIQ2pMc1c0LUhZMzl3NU1IRkJfVXItM2F1Z3dIY3lVX1RjSWoxeGh1bkl4cmh2WDNBdFpTcS1GUUxYS1NwQTdHcG1TcXNNaDNXb3FodXlSQU96dEloYVF4WUZGa0RKWVVtQ0ozbUVZRDZVT0hCX3FLZWR5ZXZjbWtIUU1CLVoyc0pEMUZ6dXpUaDRwR3Zjd2dTOTVtWlF1OWh4MDFaOVh0dmRDdDJkdDYzX0pNYmZYWHJoRGJ5MFFIQmx2endfRjdFSnh5R3c5ZUJKbkEtWkc3OGJkWWdjR0FSUWJMeUczbFNtTGNqbW1JbGktRVNyM0hIRmlMUUZ4MXBJS1lHZ1NpSkdKLVdXUDctUFhpOEhUeWpNb0xEejIyQlphOEljVmhTRjRlR1pORmJYTHk0QklaaU1laUN3?oc=5",
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWTNMWWZSbGphbXlONzBkMXJ1aUlHOVRObmp2bDJlOTBuWjlvZnNQbDBtajZpTkxta1Q0YWI5OUJnUURjZ2swOEgybkN3Q05oaGpKSGo1aU5Gc3JjLU4tM0tTVWxCSkFacXRJTlFfLWRNRkdqRGtKYkVvaGw3MHY1aS1tcjVqa2x5cUM0dFlhaU5lY3pWU29RQkZHdlM1VUZWQzJFOFNnVmFNZGg1VmRGeEhZOTdGMHVTMGF0MncyZFY?oc=5",
+        "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaURwdWxxd0lGcnR2d21aMS1DTlJ4SEpESU5WekQ1cURzVU9OU3IyXzNHT0ZuMmstbWY0N2NxQVYtaFVXMWdROGxuQkJab3o4M1BmZ0hzcWFzX24tQWdkblJjLXBnWFBXbldGa3ItOHdUejl6OWVCeWU5RU13WVBWcmJFNjlVWGRkb3N4TDQ1OVFCQ0JmT245bDNLdi1YTWdNQmNQY2NYZTZwLTY0TW9wWHBmU0h5Z2txSkRYdEY4ZHNWSjdkRHdpZ3FPYnhJRHQtcWlhU1pzd1hyZXgyc3BGS3NTbk92YnFSX3dhaFpGbTJBVG9iTlVkOGVWRlBZZ9IBgwJBVV95cUxQVm8xMldubE1PQkRRSENOeVlYV3BLWU9rZFZETkJ5WjZ2TEE5SVNncExkSXJjVGZXV29XWEhFS2pLUG1naE1KYkx5dnNBTXdDNkttUjhEV2kwQXF1dzFhSHNGZ1ZQMmM2dFpmOUt3SnpBaDdLdGM5QTNSell1c3FraTkyd0lnQjdUODR0UGhkV0NGYzRBaElpZG5odnVxNF9SMDJuRHJHRE1tSmd0Yll0VHh6MmJlVmgxT3BCQXhIWTFsOW9UV0U1VFUyWF9XeV9OdXJRR1BwQzY4TXEzcjNXWkp0a2xHU0VYTURQSE1nSk5XNXFQNjV5c0xzNThYekhBdzNz?oc=5",
+        "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUHBoVzREUW9CT1J2TDlocTNHSmw5UlQ0T3dRdVIwc3Y2NjlfcmMyTW1IcmY2VVJVazBLclE3b1hPWlNGNEpRclJ0RGdic0VMUmJxUnJvN0lTOEpIOHRITTFabUxOaDdKamg5YjJuVl9FUnFpdVY1d1pvWVFIUmlWYVdsQjd6Q2FfaktFZUtIdEZZZS03TGRVN3REX2JDRUNTSkR4WWhWWmhYZ2FGYVVVbFc1dUlSVEYzVU5SUHZhRFl3dmh1TENnYWY2TUI3QVQ5OVdnUFUxMWlCWEsyZ1o5QnVPNXPSAeoBQVVfeXFMT0E0NmVSRzdrcjY5dlhCM240YlRJUDFiUzlSMnJFTWdUZ3U2VG1DM1E3MUVncU8wYzV2bmJFdjhZWnlla1d4SWRUdW1oaGpKRFVlNVltRi05V1JlNU5BR1FJMFRndnFISjc3d0NRSHM3Mk04NDZUMkt1NS15djNCcUxvWEdxT19tTC1SMkNJWmFjMEdhSXlveW9HTFJGNGJHVjdBNk9NN1d1eXRrM2xJOWkzRmdJRTFwSVJFLU9OMlY3WGdpd1FOcVJfeUNLWVkzdGpHWW1ibTgwQkpBZGRueUdPckRTM29Lbmp3?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYk5kZUJuWXpJRFh3V2N6VC0teUFNMjF3ZjB1NXVmTFJaXzBfWld4WWJvT0VOdC1uU29HaUJfSWdBeWJrQ0VyeThacEJ4N1FMT0dRNVhGZ01HOVluU19mVTVuV2owQjBrajN0S043c2VyZjFhdDMyQVItQi1ObElBVE5nMVJ3RV8tNUU1R3NDX3BuRG1ycGtILUQxMA?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUFY1NlNvMExXd0RfOTk1ZDV5R003ZnZxSWlOeUpwU3VzUXNSaG5yNmZxek9XUnR0WFhfTDgxYmNXckJsSnhvbm5NUGtxa3BUYmFodXRUc0hwYldWMHhIbnNtT3I3Qm9raGtjVDRWOXlzbnp3eC15dVJrUmt1Nmx0OHN3Yzg5OERKemlTNkROY0I?oc=5",
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDBLSkp2TGJ2V2FSTzRnZk1YVXpsRVZvT0lXTmJHampiUUZIdlVRX0tQVThtQmZ2WmNhSzdMQ3paNVo1M3NSdFVleFN1YlVPRnMzY3hrUGQ3eGNiZFRucmxQRGVRV0d3V2JnT2lKMjJRYXhmY2RmM1dkUkNpbWFUdDdocU5GMnZkX2RrU2VzWnN3dThRYjdqb0hBcEMxMTRlZFpqc05TWTdTaXFmQjRSa3NFVnA?oc=5",
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hc3VyLURsNnFjZElWRHd5NFlVYVJndzFsaVRjSDcwYl9RWUVGTFRIczdlT2MtMWVySU02V3FMRGFlQUdWNWlaZmhlUEFZa0hkVDBJWA?oc=5",
+        "https://news.google.com/rss/articles/CBMiQkFVX3lxTE04NVRQQTBJLVdwbGZWb0V4enhsellNRlNxdDhWX1MxdU1ITGpIYldXX3JtQzBTNk5QV2pKeEI3RkZVQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpZjA5TEtsY1F1VXluM2Y3NWstSTB1MDZWbUhtWmJYNHBGX2twS0hMRkNfTmhnYlZHek9tbXp4V2k3VnF3THFGeXJpam9qMWUyS2YtQWktbGNhVVB4ZjVRMFVBUVp3aUNPUVBNdQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdkhuODRUXzV1bzQ2QVhuUHV3ZUdYYWJUUlA5TXBrSEgzdlFqdzQ5a2FyY2ZFQjgwaG5sZC05LTZWdGlMcGoySHBjU21mU19oRlFUT0o2SWhjVEp1VDE0eHowb0ZTSm9tNEo1N2ZNdUh0aG04WWJXUThSZ3NfQ2hFTWxCV3oybS1HS3VNWEdJclA2c0dWeERsallSd0VfNENxdEFSTURuTDI0cUVuUUxaX2UxMlh0bHVfbld4SkJlX1loQ2vSAcsBQVVfeXFMTXJxTEJYYjN3UV8yZEtEaldfcGQyZHpjRXRFWVhWN0x1eXR5YUxab2hCX2xKZ3VlN3FHNVpJNmtnaElBcXpDWWY0U2NQZ2FTUUJxb1pyVmVmYU9RUFYzT2kwVkw5NlBfdWd1MTQ5aEJLeHJOVmRMenBRREwzcUVCN0FNZElxeW53YXF2eVl5NnExZ2N5MFlYbE82SG1iUmtCcXVaMnltLURNdlctNWJYSHhqUUtXTHJaaTdGX0VSVHNFNDlQaFprOWJDZDg?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNEdCNUhxYnlqWHdxUGhPVXh5Y0NFaGRxN2tVTDlKRGRFa2todVJVSDBZSGVqelQzMW9IZDBjR2NZM3FraEtuUXd1UjBlZ2VJcFhhakF5eWhER2tpODJlZE9FUUdlTEFaM2Rzd3FLdzFjWTBULWZjMFM3NkxMRzNSSzM1ajBGMEQzWkw1VWlhaDdCUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU2JBbkdFUWhTYnU0VEpJeUF4ZXhjVWdpZVpCZ05ZTlJOSkE1NVQxalotMFF4OFpTclpuNDZKOVJOY1VNOEVQUGFpb0pZVkpoMHpuNjVoUTJ1azVKVFA0eTNZaVdJRkUtMVVFTUdsWWptTk5vZjExMURyRlNxVnBpc0pHVFVZYlRuV09TRGN0X2g2RUN3aVE?oc=5",
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUnNrT1NUVVJFWFZVREVFYVFnakI5cGM2MnAzQWpJbkplMDVKdF9ZeFBOT0EwMThlQVlSYkpaaWhHRzB6VEVJSFhnZHRMUks0VVAzeHN3eXZVVDJnOVNmUmNNbnl0YlU0NWdsVnNORk9Dd1plMEJiSjVadi1CNVNzblJwRVBMRkVIZ0psNnpLNVFNSUJQZVdVVFlLWC00cld4LTIxeHBjNkNRc3pnaWNxd19mSm8?oc=5",
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcEVLSEFvemVCWnlRZlBxYTNfdGJrTmY5ZEk2NzFocXMyRTE1cGUxbjdqS1ZWZ2lueG5PTWMxVV9FcUFSQ2pVcDJ1M1NBWU5kc3FFYUt2NkE1Y01FY21PS0JKUjVTMzJBUkkwX0RTMXVPUE5hd1dUWlFqbFpfTWI1NUNlcS1xMU5zUG0takJQSG82Nlo0SjFURlRnYk42bDU2UFEwa2NFUGNxOGdqS1JHbkxvSVZJd0Yxakh3eVFoeDFud9IBygFBVV95cUxQd3NvU1Q4OFpFTGZMRTd3bTkzM0U3NDQ3ZUtlbERhamVIZ1E3SnFYZVJnQzlIaVg5T3JRQUZxbnZ6TFlYaHVyNTctaTk2eGJQSUtZWlBUU0VvNWJBWEhjcHpMU0xCM3hZZVhUd1NoN1MxM3RnNmgyclFPeUJDb2xYbTdvRGxidWJuemdQUEZiQ0NKTkNOT2JHQVhvUjdUOHhxVzBudUgwWWFGQjlkNzliU3cwNklxSVZJTEc0OGV0V0ItdnRZQmVrd3l3?oc=5",
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTGpvMEtmYWxvbXFTZlczSVdvVEtab3JhNzRDLTZlQWRHSHdQbk93d1JLSnpOR1Uxa1lseFRmeE5yX25ZM1lhcFAtbTdLQW9Ob0M3R3M0MlEtVDBmT044NHNTRGRGQkYtakxxWHkzVkhlYlkyVFlaandBQUJrc1VHMS1lUnZudHk4aWtpLURyQ3h6RVRnM0lOZXpwZWwzWFY4VWI4NmFYQUZIQUxLYmV0X1NqelZxaVN6TGZrNTk1OEs?oc=5",
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HeFA5ZHljdVhZaFRKaFFoR3pSNFNfb19UWjRvNTNCbDRnY3E1ZVNHRjhmZW9yc3Y0OFA5ZkhKTkJjempSVVVTX0lqSTBGc0FvUVpDckxjc0NjUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiREFVX3lxTE9zLVlYSXBjblhCaDVMUkRRYzM3WGJvXzVsZ3dndUNzaXBBLVNYS3dIai02NlBGaGRnX1Q2V3NReG5mZUdL?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+      ],
+      "publishedAt": "2026-11-20T18:58:04.132Z"
+    },
+    {
       "slug": "2026-11-20-딥마인드-agi-다음은-asi-네-갈래-경로와-비용-폭락-시나리오",
       "title": "What Comes After AGI?",
       "urls": [
@@ -6650,33 +6689,6 @@
         "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUW1ocHBhc2pweFQwVGJXTzdYUm1tcnNINUFRUkc1Y3AwWFRHeWZla1Ntd0FyZ0kyQUEzTC1WWUhWRmtLaG9nQXlzSFVjOF9CVlFuLTh5X1lIS1VFZFRyN3dxb0RzWnZNUjRkVVlXeEpOODhCY3JOWTdLNWh5aUVuWTJvaTF6WUo4Y1lhZ2Fn?oc=5"
       ],
       "publishedAt": "2026-08-23T01:35:48.844Z"
-    },
-    {
-      "slug": "2026-08-23-앤스로픽-상장설-네-매체-제목엔-금액도-날짜도-없다",
-      "title": "Anthropic IPO could break SpaceX record - Bangkok Post",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRTJDQmpBUEpxakwzOVpNb1AzVWswdl9kbEJwVGNib3VNWk9kbkVPWnltYl9nWUlHRm1wQWdISEljOGJscjN4RHIxYmRaUXJxM0pVMWRvbW1McXFuWXVueHFNYmJNSjF0cUtCMmZ4aWh5V0VHYW5Qa1NLUmo2RzN6dFB1TjVoODdVdkRHR00tOUdhZ19nNHc?oc=5",
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVUJQVnJyZ0RHb2J2b0dWRTV0VEF6VEhCb2xrdlpwX0FsRG5tVGcxV1MtNkE2YVJONmMybm1DYnJWSFdycWI5NHJBVkVTOTY0eDdmSlpUclFiLTE4RVpuWE5oaDQ4RW02QUdZVUJFcFFIVnpNb2luSjBaVnZJNmd3T1VhY3NuTlhsT0RHNkVuemFtTTQ1UmZTbU0tQkdFQnNpSVlSa095WlpZaGpL0gG_AUFVX3lxTE1neXZlZzJkS2diN25XeVdzRkd3SU4zZDRqcGhxLWZwc0hud19ZR2txVUFxZFdmTlF3V19haHFfV2FleVlpNzRRX2NPWmhZWTh4dFMtOVFoNGw0TmVwR1pmUnR2UDFOZUpPME1XZnZHNFJ0LVRNelFFdDZMYlpIbGRVOVh0anlkSDJpYzZDUkROTElDblgzUk9XTzFKOVJwVnVJSEdObkRyUmxLdHVaREVncmpJLXN5SjdRTkZqUGJF?oc=5",
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSjU3QUxSbUtsTFJGRFU2QUxWVTcxSGF0RW5fRzd3NWRESDltZWhKd0E1WDJqNmN0ZG45a0FfTnh1WUxFbUtPWlR4UmNLcVppTmljSS1ZZF9NdmlJY3lFWHJUbm5JbGNfTjlPQXdYbUo2RFNlRmlrVHNSY3J4d3VqTW9KUThZMEZBRUtYeDIzQnNUTWpQemJLblVaeFFDRWUwTTJnbmkxU0NGNVc2RldRZzJEU2ZXd1VldG5UY3RKYlV6VXdNb1E?oc=5",
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcnZnU3VpZ0tlOWV0NVVqZ3E2cVVrT3hKeThQV05lZVE1U3JtWUMzTGtfcXliM0ZYQVBVd3UydnFrRVd1aEtUMXd2Nko3dWxzcC1rZGpyV3FDZWluN0dZVEZhZUwyUWswQ3BEc3NZTVBwZV9aeU9zcjlFbFZfR0JEcmhQTTF4anlSd3FyMDM0dGhVMUl5cVl6S2FsVDZwWEFhel9qLV9yOVZrNVFidnUzWjhR0gG3AUFVX3lxTE5iLUJodnRuVmd0ZC1nYjVpRF9nTG5XT0hNZWs1Qk5QVHRsWXkwXzJzNXlBT2lvVi1tZzhmQVpFR0ROTWRuSHNzcDZSbTROQWF4blFtYThXMU1WbzJWWlZlazRYS0NfbGI5NzgxTXpHbU83UzFmSU1nNVJIMGhmMF9HMl9pd2lmQ2E3NHVRb0xfa001NnIwNlR5M3dqLVVGTFZaLXNTMEdCWkM3cVZDR0VGajNXYXc1Zw?oc=5"
-      ],
-      "publishedAt": "2026-08-22T15:34:32.002Z"
-    },
-    {
-      "slug": "2026-08-23-시급-12200달러-ai에-자기-일-가르치는-할리우드-창작자들",
-      "title": "Digging the grave of my skills: Hollywood creatives training AI to do their jobs",
-      "urls": [
-        "https://theguardian.com/technology/2026/aug/22/the-hollywood-creatives-training-ai-to-do-their-jobs"
-      ],
-      "publishedAt": "2026-08-22T15:32:26.652Z"
-    },
-    {
-      "slug": "2026-08-22-claude-특유의-장황한-말투-걷어내는-도구-클로데트-등장",
-      "title": "Claudette - Claude의 BuzzFeed식 말투를 평범한 영어로 바꾸는 도구",
-      "urls": [
-        "https://news.hada.io/topic?id=32767"
-      ],
-      "publishedAt": "2026-08-22T13:57:14.383Z"
     }
   ]
 }
