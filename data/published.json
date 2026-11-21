@@ -1,6 +1,15 @@
 {
   "records": [
     {
+      "slug": "2026-11-21-앤스로픽-상장-첫날-34-급등-월가-4조-달러-ai-거품-논란은-현재진행형",
+      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+      "urls": [
+        "https://wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90",
+        "https://theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq"
+      ],
+      "publishedAt": "2026-11-21T07:33:28.229Z"
+    },
+    {
       "slug": "2026-11-21-앤스로픽-연구원-클로드로-리만-가설-풀었다-수학계는-신중론",
       "title": "Anthropic Mathematician Claims to Solve Riemann Hypothesis With Help From Claude - The New York Times",
       "urls": [
@@ -6674,40 +6683,6 @@
         "https://smh.com.au/technology/this-ai-refuser-quit-her-dream-job-and-hopes-others-follow-20260818-p60pdu.html"
       ],
       "publishedAt": "2026-08-23T11:47:30.433Z"
-    },
-    {
-      "slug": "2026-08-23-로컬-ai가-멍청해-보이는-진짜-이유-설정부터-확인하세요",
-      "title": "Why your local LLM feels dumber than it is",
-      "urls": [
-        "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917"
-      ],
-      "publishedAt": "2026-08-23T01:43:25.885Z"
-    },
-    {
-      "slug": "2026-08-23-클로드-코드-성능-몰래-낮췄나-논쟁-확인된-것과-아닌-것",
-      "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
-      "urls": [
-        "https://twitter.com/argofowl/status/2091150597374537729"
-      ],
-      "publishedAt": "2026-08-23T01:40:14.418Z"
-    },
-    {
-      "slug": "2026-08-23-클로드-코드-일부-이용자만-덜-따져보게-바뀐-정황",
-      "title": "Anthropic, Claude Code의 추론 노력 수준 축소를 A/B 테스트하는 것으로 보임",
-      "urls": [
-        "https://news.hada.io/topic?id=32778"
-      ],
-      "publishedAt": "2026-08-23T01:37:51.746Z"
-    },
-    {
-      "slug": "2026-08-23-앤스로픽-상장-서류에-ai-반감이-위험-요인으로-오른다",
-      "title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
-      "urls": [
-        "https://cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeXdwbzNJcERVMTFvY2JtSkNBMUVaWGpSNlRqYXM1MndRT0lFOWw0NFpURjU4aVFZeTZvdjNRRWs0VWNaWXhzTXQ1QlJ4eUEwR2FXdl9Ca2xIQzVwQmgteVVLRkZneTlHMUt1dXJWNGk3UWladzNVQWZRc3ZpRFlQR2xTbGZLdGlRZzF2RWRvTk5CcVJQM19ZZlA1U2tCN1lkRkHSAacBQVVfeXFMTXQtbkxtMGJVQ0lSUjgwcG1EUFZkb1pWRjY4czE4M3NlQ1RsVWtWOVBESjM2SllMby1jN2haVy1wMWYxR2FnSFpwOUhKT180bVpRTzlETERmYjVQdE1SYjBiYXc0VzRRQnVSUC10Z2lpc0FqZlJibF8waTdOSndRa091YXZwUkRSWnlxbEI3NTYyeW55a1NkZ2NGVTc4YUM3UHZtQ056aGM?oc=5",
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUW1ocHBhc2pweFQwVGJXTzdYUm1tcnNINUFRUkc1Y3AwWFRHeWZla1Ntd0FyZ0kyQUEzTC1WWUhWRmtLaG9nQXlzSFVjOF9CVlFuLTh5X1lIS1VFZFRyN3dxb0RzWnZNUjRkVVlXeEpOODhCY3JOWTdLNWh5aUVuWTJvaTF6WUo4Y1lhZ2Fn?oc=5"
-      ],
-      "publishedAt": "2026-08-23T01:35:48.844Z"
     }
   ]
 }

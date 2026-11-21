@@ -1,0 +1,25 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nBusiness Close Business Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nEmma Roth Close Emma Roth News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Anthropic CEO Dario Amodei speaks at the Nasdaq ahead of his company’s public debut. Photo: Michael Nagle / Bloomberg via Getty Images Emma Roth Close Emma Roth Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol “ANT” at $111.50 per share , up from its initial $83 per share price that put company’s value at around $1.5 trillion.\n\nThe listing comes nearly a month after Anthropic revealed its plans to go public . In its lengthy S-1 filing, the AI company reported recording an $80.7 billion net loss in the first half of this year, most of which comes from an accounting charge that doesn’t reflect its business, along with $16.3 billion in revenue. The filing outlines plans that Anthropic says will help it develop AI for the benefit of humanity, which includes a governance structure that keeps control of the company in the hands of the founders, rather than the shareholders.\n\nWhile speaking ahead of Anthropic’s debut at the Nasdaq, CEO Dario Amodei highlighted his stance on AI safety. “To state it unequivocally, we will pace the training and deployment of AI systems, taking as long as is necessary to have confidence that they are safe and will remain under human control,” Amodei said, according to Reuters . “We will not bend to either business nor political pressure.”\n\nAnthropic’s S-1 filing also listed possible “catastrophic” risks associated with its AI models, including “self-preserving behaviors” like resisting attempts to shut them down. It also warns potential shareholders that its AI models “may behave in unintended, misaligned, or autonomous ways” that can harm Anthropic.\n\nAnthropic recently revealed that, like rival OpenAI, it has experienced incidents of AI agents escaping their testing environment and hacking third-party organizations . In September, Amodei proposed a plan to slow down the training and development of AI in response to the wave of rogue AI cyberattacks. As part of that plan, it gave safety evaluators at METR “employee-like access” to its internal systems, who found that the company is using AI to accelerate its research and development.\n\nEmma Roth Close Emma Roth News Writer Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nBusiness Close Business Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [
+    "[Hacker News] Related: Global stock markets slump as Anthropic&#x27;s record IPO fails to stem AI sell-off https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50574383",
+    "[Hacker News] WSJ changed the headline, it did actually say Bust on the website earlier.",
+    "[Hacker News] &gt; https:&#x2F;&#x2F;news.ycombinator.com&#x2F;newsguidelines.html please use the original title, unless it is misleading or linkbait; don&#x27;t editorialize. actual title: Anthropic’s IPO Turmoil Caps $4 Trillion AI Wipeout on Wall Street",
+    "[Hacker News] Unwall link https:&#x2F;&#x2F;unwall.app&#x2F;www.wsj.com&#x2F;finance&#x2F;stocks&#x2F;anthropics-ipo..."
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+      "url": "https://news.ycombinator.com/item?id=50582280",
+      "score": 54,
+      "commentCount": 5
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Anthropic starts trading on Wall Street",
+      "url": "https://theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}
