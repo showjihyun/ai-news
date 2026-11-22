@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-23-ai-에이전트-지시만-잘-주면-사람보다-낫다",
+      "title": "AI 에이전트는 적힌 것을 지킨다",
+      "urls": [
+        "https://news.hada.io/topic?id=37647"
+      ],
+      "publishedAt": "2026-11-22T21:27:44.947Z"
+    },
+    {
+      "slug": "2026-11-23-modwsgi-창시자가-20년-만에-내놓은-ai-협업-rust-서버-muru",
+      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "urls": [
+        "https://simonwillison.net/2026/Nov/21/muru",
+        "https://simonwillison.net/2026/Nov/21/muru"
+      ],
+      "publishedAt": "2026-11-22T21:25:51.504Z"
+    },
+    {
       "slug": "2026-11-23-ai-관리자-밑에서-하위-에이전트로-일하는-게임-직접-돌려봤다",
       "title": "Show HN: I built a game where you are an LLM's subagent",
       "urls": [
