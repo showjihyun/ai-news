@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "slug": "2026-11-22-ai는-의식을-가질-수-없다는-뇌과학자의-경고-왜-지금-중요한가",
+      "title": "The Mythology of Conscious AI",
+      "urls": [
+        "https://noemamag.com/the-mythology-of-conscious-ai"
+      ],
+      "publishedAt": "2026-11-22T07:43:30.029Z"
+    },
+    {
+      "slug": "2026-11-22-클로드-코드-매니저-세션으로-결재-라인-만들기",
+      "title": "결재 서류를 쌓아 두던 부장에서 보고받는 사장으로 – Claude Code 매니저 세션 만들기",
+      "urls": [
+        "https://news.hada.io/topic?id=37609"
+      ],
+      "publishedAt": "2026-11-22T07:40:24.908Z"
+    },
+    {
       "slug": "2026-11-21-앤스로픽-상장-첫날-34-급등-월가-4조-달러-ai-거품-논란은-현재진행형",
       "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
       "urls": [
@@ -6658,31 +6674,6 @@
         "https://reddit.com/r/artificial/comments/1vxdtcz/coding_expertise_is_going_to_collapse_from_ai"
       ],
       "publishedAt": "2026-08-25T12:10:46.864Z"
-    },
-    {
-      "slug": "2026-08-23-m2-울트라에-올라간-딥시크-v4-플래시-검증은-아직",
-      "title": "DeepSeek V4 Flash on an M2 Ultra: repacked to 141 GiB losslessly, smaller than the Q4 GGUF, at 25.8 t/s (42 t/s peak)",
-      "urls": [
-        "https://reddit.com/r/LocalLLaMA/comments/1vw4qzf/deepseek_v4_flash_on_an_m2_ultra_repacked_to_141"
-      ],
-      "publishedAt": "2026-08-23T11:53:04.584Z"
-    },
-    {
-      "slug": "2026-08-23-앤스로픽-구글-칩-인재-영입-칩-사는-쪽에서-벗어나나",
-      "title": "Anthropic Taps Google Chip Veteran as Part of Push Into Hardware - Bloomberg.com",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTEtlVWN3QmU2bFF2QzRyZDBJTUliblExZnM3d1JqcjBLN1V3TDI3MXFnaFdfV1Z5Yl9xRDJ4SkViQVhabEpVQVB4a2tuQ2xDV1doS0ZwWDBBVTJpcXJoS1c2Sk1WQ3p2aDNKYklaYjJpbTZPSENmSzBTQTVodndSWDBWUkJPWml6djBXNWJIazI5dkUtNENLQXZmM0puMzlidExXZnp4aG43WXcwZGZIc3NOR1A0Zw?oc=5",
-        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVlNpZG16STVIU0d0RkFPNVlxTFFicEs0eDgwcHNaUlE2dTNmcUtkcENFdW1OMF9lZ1hFU2UtOWVWR3JfblRyNVFYZXdNajBUVk5XQjVaaWEwR2FDYWF2eHczUUJjOFJNZ2xPam1PUFNZaWF3dHFtTV8wOUY4cVJaVWRIYTJfbE9BVXI5cW4wd20yU1dGTElDLW5JNnZXV0VTWjFjeTJPUG5Kb05YclBhNGZjM3NiUdIBuwFBVV95cUxQUHhNZl9qMXRXZ3BJRDV0aUdiQlRNQUJSb0dyNi0yaUhXb0ZkZHpoTWlIVl90YlpJajVnQnctQ3ZGNkt5N0NYOVVBY3V2RjN4UWJLUnhuUV9JSWtwNTdHSVliOG9uZEZPalB6OGptX0JIWjBXT1M1OHl4REpYNWRUSHNkQURHTmZtOGtlcVJxMXF5M1RZY3Z3dUtUVWVqbUVtN2hHRFV1UnBybVp4U3hkTVNJSV9Bd3BqekNV?oc=5"
-      ],
-      "publishedAt": "2026-08-23T11:50:27.319Z"
-    },
-    {
-      "slug": "2026-08-23-ai-거부할-권리는-없다는-통보에-사표-낸-직원",
-      "title": "'AI refuser' quit her dream job, and hopes others follow",
-      "urls": [
-        "https://smh.com.au/technology/this-ai-refuser-quit-her-dream-job-and-hopes-others-follow-20260818-p60pdu.html"
-      ],
-      "publishedAt": "2026-08-23T11:47:30.433Z"
     }
   ]
 }
