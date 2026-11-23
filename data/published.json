@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "slug": "2026-11-23-계약서-빈틈-ai가-짚어주고-제안문까지-써-주는-나라니",
+      "title": "Show GN: 나라니 - 계약서를 읽고 상대에게 보낼 조건 제안을 준비하는 도구",
+      "urls": [
+        "https://news.hada.io/topic?id=37699"
+      ],
+      "publishedAt": "2026-11-23T09:57:25.228Z"
+    },
+    {
       "slug": "2026-11-23-ai-기여도-유닉스-권한처럼-표시한다-0rwx-제안-등장",
       "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
       "urls": [
