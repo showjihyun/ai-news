@@ -1,0 +1,97 @@
+{
+  "articleText": "[The Verge AI — theverge.com]\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic is bringing new AI tools to software engineers with Claude Ship.\n\nAnthropic is bringing new AI tools to software engineers with Claude Ship.\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nShare Gift Image: The Verge Jay Peters Close Jay Peters Posts from this author will be added to your daily email digest and your homepage feed.\n\nAnthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests.\n\nEngineers have already been able to take advantage of Claude’s code review capabilities thanks to the Code Review feature, which was announced in March and became generally available in October . What’s new alongside Claude Ship are the PR Steward and Claude Approvals agents, which are launching in beta today.\n\nPR Steward “jumps in on failing CI checks, merge conflicts, and review feedback from Code Review, other review tools, or team members” and leaves comments on what it changed, according to Anthropic. Claude Approvals can approve routine changes if an organization’s policy allows it. “Teams can have Claude Approvals consider a variety of signals in its decision-making process, including Code Review findings or their own classifiers using natural language,” Anthropic says.\n\nClaude Ship is now available for Claude Team and Enterprise customers and works with repositories on GitHub.\n\nJay Peters Close Jay Peters Senior Reporter Posts from this author will be added to your daily email digest and your homepage feed.\n\nAI Close AI Posts from this topic will be added to your daily email digest and your homepage feed.\n\nAnthropic Close Anthropic Posts from this topic will be added to your daily email digest and your homepage feed.\n\nNews Close News Posts from this topic will be added to your daily email digest and your homepage feed.\n\nTech Close Tech Posts from this topic will be added to your daily email digest and your homepage feed.",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURIRFNoWllBMDkzLVhtNFloSkdUTFZ2ZmZWN2pMMm52ckI0N1dXT3pVX0VDa3NZYW1YNW5NMVlVdkJCSXVTTGJVc0RxVVNndnhCdTA2dDRIVFIyempCd0MxTEc4SzJoTHJsZGVNTTNDRUlmN1RWb0tzRWRzX2RBZzFkLTlFQkF3VllOUV9ReHg0VHQ4cWtld3psMWpiYTVDZER3UUJ0cXpseWpj?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - Kansas City Star",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE94R1VPclF2UEhuZG9iaWpiNlNBVXAyNTZfc1p6Y0JraXhZNlFxUGVndHNTUUlTWEVGS2xyNkQzUzRuZGVuWGNNU00zTzJrbEotWnZodEhkeng2aGlGeGF5WnRTQXZLbjFOQ0xfeUhsVQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Ship to Automate Code Reviews, Fix Pull Requests and Accelerate Software Development - citybiz",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbnNqcWJCd3B4c1k0aWp4UHRQbXB2VUJ6Uy1jMElOdGdxWTluR0hRM1hVa1ZWXzIweTd1RTV2cGcxcF9pRW9DTHZPUGo5NlkzMC1udllYcUNGMm1CT0xPaHB2VHRDUzI5d2dtZkc5d25STjM4NXVVRkJ0OThQWkw3MThwczZOeFhmbk10S29RRTA4aWYtRkdjU0ktN3BrNmxnU09QTkxJNUkyNHhtSFplZDNVbUJmWXJZaERVM3dWSGNERko0b2ZJNjV0N3lrTTE1N2pSaFJJUG13UW96cUhkQUF3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to fix code and approve changes under team rules - Superpower Daily",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1FuajFWeW5yNnMycEdPZThsV1dEVTZzaFpTVjlMX0s4Z0lrckZmN0F0YjRDcGd0Y1Nvc2xJTlhhbDBxOGxCSEZnQUVTbHRGTGZYbGM3VVNuRU1vbUZxejIwemY1UUxNTENaMUpKbktYV1VJd1hCNjdZekhoR1JwZFZzMlBJamI5dXF5TjBMRzl2RUlLLVFwS1BEUXQ1NzVjdDhFSUZYTTNxS0hlUDBaVVk5SQ?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic Launches Claude Ship to Review, Fix and Approve PRs - Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTndkM2tKUkNuci1IeVhFNUNoQnprcW4tUUIwRnZFSGJZOEEwcXVURmswZHpTV2xhYlkteHdaVTg3alRvQnA2U3dlMy0zX0NQU0VSa2VyTEo3Rm53cngybzMwUWVnN20zbXN1cXVkVjR3c0tiQWlXbUpiejZBb1FYbTlKUDZNZUJhYmc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - The Lufkin Daily News",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPeUZSbWR3SER2NlRfd203bEdUREkteV9ISTdub2gteUFoRDQ2em55WEFReUx5UFhtUkZEcFFDWk5VeXZyTl9fWnNhek1vYUxxOC1neXlFVWlCeVd2aWNVVjlIbmg3YlRiVi1hSFZjTHpVREtGa202cWQ3cDlNZzhWbDhWWi1HaW5NUVJGUmVISFZCVDR5T2JpMzBOeGFGdFlIT0VHYVAwVmF0WkR5NTlCRDA5WFJRamhaSWhLZTBJZHVsZEI5TXJsVlBfTkRCZmI2SWliZF9SZ0hiS3NYM3FlME91dzFsdEtKMG01T2ZyZUpLa0gtVTNHRzd3?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to automate code reviews and approvals - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lUVEtbnN1LTJyYm5CdmZCV1BTX3dnb3dMdGQya3pGQXdPSTkzYVItNENNcHNvUmQ2NnREdWtITzA0YUMzTzZaZVpuTURXUXAyWmNhbkxITlRzV1pxSmwzay0xcw?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to assist developers with code review - StreetInsider",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOENpQjNDVk9oODFIRHBpaGppWFpBS0FsUy02aG5fWjJrZ3ZiSHVTUXRwNXZCRTFrWnhkdWlLVFV0UVRiTkdpdkdXYjlUekdvRXlKcUhWMGRlOGpTNmZpT2tMLUJ2OXV5UVdScnhfZU5FR0dmSkZkNDBWQ3c0blBST3cwclBKVGszb1p4bnYyUVVWckhPRHBPaUlDTmVzQW1PbGU4SDB5aFYyMFFreVZsaVo3Vjd6WHNGcXpqQURqZXdmN08xWHc?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSUdSRURoZlNFYldLTEFwcHY5djYtNm1ub3hwX0tZYUxnS2hKQTFxbmNMTF95aS0tR1FScllWWlpieEZ4MXRQd19RX3VRYl9tcjZEUzY4a1BmRzhPMmNROEtTR1h4ZFlQVUFsTkRSWGxMVVVHYS1iY3B2LW9tbHgxWmpUcU1MM08ycFVMS1BZTXl2eHVPcnVmUEw5T0dseWJ4OVlBeWlzTjVXelQ5QllDTnpEYUplUUtUeGhR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to review, fix and approve pull requests under team-set rules - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZWJqZU5kZjlWSkp2WTE5YWdxZi1XWXZlaXRrdEZ2Q19UV3VfN1dJbHNqbGVKUkNDZkM3Ukx3WGI1bWRMWFhhQWJ0SWlmQmg3UkFHdlRTTi03TjVBV0NlOGY1Nk9YQnBaSTBIOXdLUk5ESzJTaWlwb2NFNjQwOXlEb3BEcVk3NjJ1RG9BaFN2UHJhWW8wbnJ3UDNGYWhUOGtkbXZrank3QjdGN2N3OGFoQ09B?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship for developers — Channel NewsAsia - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcTBNcXBfeTBfVEF6ZGNla01jOFBlQzFORUt0cFg4OE1ZQkpXU0RQV0JaMWwwbHA3TmxIaFZDMW52SndoR2h2X1dvQU9qbWMwZXllZV9qX2I1bGdKZG5BTWlsZXoxTmlWZXcwVS1tT0k0M1JOZDFiNmZ3SHQ0bmJQakNlVFJmMHRRamwza0J6R09SaGtnS2kwNk9tVTJKV3FCLTJJc2NFNXhpa0I2?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "Anthropic 뉴스",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - CNA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT3dfM3RFVHh1MWxxdVUtMHQtMEVRWlpqSHEtS0E5N1NFM3NDbHZ0QlhUNGcxcnJzSHpHLXhNWEdydHFFWVpfZzAxS3h1VFctY1h3aktqN0dOTkZUUjQtOXNMZ180T0hKNWx4WTdfNTB1X01lb1FfMEl1NkRWZ3BnbHRsczdEclFpbDdzMlhpQmZOanVBMUVfOXZRS3ZmME1sZVlBd1pJanBfanNLU2lGR0FR?oc=5",
+      "score": 20,
+      "commentCount": 0
+    },
+    {
+      "origin": "The Verge AI",
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "articleText": "GLM-5.4는 Z.ai가 처음으로 Loop Transformer 구조를 적용한 플래그십 모델 . 같은 레이어를 반복 실행하며, 750B 규모로 2T~3T 파라미터 모델에 견줄 지능 수준을 목표로 함 반복 구조 는 파라미터를 늘리지 않고 계산 깊이를 확장하며, 게이트와 KV 캐시 공유로 안정성과 배포 비용을 관리함 동일 파라미터 수의 30B 통제 실험 에서는 총 학습 연산량을 약 10% 늘린 반복형 모델이 수학, 과학 추론, 긴 문맥 과제에서 특히 큰 개선을 보임 범용 코딩(Generalized Coding) 은 코드를 소프트웨어 개발 밖의 문제 해결 기반으로 확장하며, 영 …\n\nZ.ai released GLM-5.4, its first Loop Transformer flagship. The 750B-scale model runs 28 GLM-5 layers twice for deeper reasoning, with API access and open weights planned after safety work. The post Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice appeared first on MarkTechPost .",
+  "reactions": [],
+  "items": [
+    {
+      "origin": "GeekNews",
+      "title": "GLM-5.4: Z.ai의 첫 Loop Transformer로 범용 코딩을 향해",
+      "url": "https://news.hada.io/topic?id=37712",
+      "score": 25,
+      "commentCount": 0
+    },
+    {
+      "origin": "MarkTechPost",
+      "title": "Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice",
+      "url": "https://marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer",
+      "score": 20,
+      "commentCount": 0
+    }
+  ]
+}

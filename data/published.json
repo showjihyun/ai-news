@@ -1,6 +1,35 @@
 {
   "records": [
     {
+      "slug": "2026-11-24-앤스로픽-개발자용-클로드-쉽-출시-코드-리뷰수정승인-자동화",
+      "title": "Anthropic launches Claude Ship to help developers ship code faster - Reuters",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURIRFNoWllBMDkzLVhtNFloSkdUTFZ2ZmZWN2pMMm52ckI0N1dXT3pVX0VDa3NZYW1YNW5NMVlVdkJCSXVTTGJVc0RxVVNndnhCdTA2dDRIVFIyempCd0MxTEc4SzJoTHJsZGVNTTNDRUlmN1RWb0tzRWRzX2RBZzFkLTlFQkF3VllOUV9ReHg0VHQ4cWtld3psMWpiYTVDZER3UUJ0cXpseWpj?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE94R1VPclF2UEhuZG9iaWpiNlNBVXAyNTZfc1p6Y0JraXhZNlFxUGVndHNTUUlTWEVGS2xyNkQzUzRuZGVuWGNNU00zTzJrbEotWnZodEhkeng2aGlGeGF5WnRTQXZLbjFOQ0xfeUhsVQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbnNqcWJCd3B4c1k0aWp4UHRQbXB2VUJ6Uy1jMElOdGdxWTluR0hRM1hVa1ZWXzIweTd1RTV2cGcxcF9pRW9DTHZPUGo5NlkzMC1udllYcUNGMm1CT0xPaHB2VHRDUzI5d2dtZkc5d25STjM4NXVVRkJ0OThQWkw3MThwczZOeFhmbk10S29RRTA4aWYtRkdjU0ktN3BrNmxnU09QTkxJNUkyNHhtSFplZDNVbUJmWXJZaERVM3dWSGNERko0b2ZJNjV0N3lrTTE1N2pSaFJJUG13UW96cUhkQUF3?oc=5",
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1FuajFWeW5yNnMycEdPZThsV1dEVTZzaFpTVjlMX0s4Z0lrckZmN0F0YjRDcGd0Y1Nvc2xJTlhhbDBxOGxCSEZnQUVTbHRGTGZYbGM3VVNuRU1vbUZxejIwemY1UUxNTENaMUpKbktYV1VJd1hCNjdZekhoR1JwZFZzMlBJamI5dXF5TjBMRzl2RUlLLVFwS1BEUXQ1NzVjdDhFSUZYTTNxS0hlUDBaVVk5SQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTndkM2tKUkNuci1IeVhFNUNoQnprcW4tUUIwRnZFSGJZOEEwcXVURmswZHpTV2xhYlkteHdaVTg3alRvQnA2U3dlMy0zX0NQU0VSa2VyTEo3Rm53cngybzMwUWVnN20zbXN1cXVkVjR3c0tiQWlXbUpiejZBb1FYbTlKUDZNZUJhYmc?oc=5",
+        "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPeUZSbWR3SER2NlRfd203bEdUREkteV9ISTdub2gteUFoRDQ2em55WEFReUx5UFhtUkZEcFFDWk5VeXZyTl9fWnNhek1vYUxxOC1neXlFVWlCeVd2aWNVVjlIbmg3YlRiVi1hSFZjTHpVREtGa202cWQ3cDlNZzhWbDhWWi1HaW5NUVJGUmVISFZCVDR5T2JpMzBOeGFGdFlIT0VHYVAwVmF0WkR5NTlCRDA5WFJRamhaSWhLZTBJZHVsZEI5TXJsVlBfTkRCZmI2SWliZF9SZ0hiS3NYM3FlME91dzFsdEtKMG01T2ZyZUpLa0gtVTNHRzd3?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lUVEtbnN1LTJyYm5CdmZCV1BTX3dnb3dMdGQya3pGQXdPSTkzYVItNENNcHNvUmQ2NnREdWtITzA0YUMzTzZaZVpuTURXUXAyWmNhbkxITlRzV1pxSmwzay0xcw?oc=5",
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOENpQjNDVk9oODFIRHBpaGppWFpBS0FsUy02aG5fWjJrZ3ZiSHVTUXRwNXZCRTFrWnhkdWlLVFV0UVRiTkdpdkdXYjlUekdvRXlKcUhWMGRlOGpTNmZpT2tMLUJ2OXV5UVdScnhfZU5FR0dmSkZkNDBWQ3c0blBST3cwclBKVGszb1p4bnYyUVVWckhPRHBPaUlDTmVzQW1PbGU4SDB5aFYyMFFreVZsaVo3Vjd6WHNGcXpqQURqZXdmN08xWHc?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSUdSRURoZlNFYldLTEFwcHY5djYtNm1ub3hwX0tZYUxnS2hKQTFxbmNMTF95aS0tR1FScllWWlpieEZ4MXRQd19RX3VRYl9tcjZEUzY4a1BmRzhPMmNROEtTR1h4ZFlQVUFsTkRSWGxMVVVHYS1iY3B2LW9tbHgxWmpUcU1MM08ycFVMS1BZTXl2eHVPcnVmUEw5T0dseWJ4OVlBeWlzTjVXelQ5QllDTnpEYUplUUtUeGhR?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZWJqZU5kZjlWSkp2WTE5YWdxZi1XWXZlaXRrdEZ2Q19UV3VfN1dJbHNqbGVKUkNDZkM3Ukx3WGI1bWRMWFhhQWJ0SWlmQmg3UkFHdlRTTi03TjVBV0NlOGY1Nk9YQnBaSTBIOXdLUk5ESzJTaWlwb2NFNjQwOXlEb3BEcVk3NjJ1RG9BaFN2UHJhWW8wbnJ3UDNGYWhUOGtkbXZrank3QjdGN2N3OGFoQ09B?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcTBNcXBfeTBfVEF6ZGNla01jOFBlQzFORUt0cFg4OE1ZQkpXU0RQV0JaMWwwbHA3TmxIaFZDMW52SndoR2h2X1dvQU9qbWMwZXllZV9qX2I1bGdKZG5BTWlsZXoxTmlWZXcwVS1tT0k0M1JOZDFiNmZ3SHQ0bmJQakNlVFJmMHRRamwza0J6R09SaGtnS2kwNk9tVTJKV3FCLTJJc2NFNXhpa0I2?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT3dfM3RFVHh1MWxxdVUtMHQtMEVRWlpqSHEtS0E5N1NFM3NDbHZ0QlhUNGcxcnJzSHpHLXhNWEdydHFFWVpfZzAxS3h1VFctY1h3aktqN0dOTkZUUjQtOXNMZ180T0hKNWx4WTdfNTB1X01lb1FfMEl1NkRWZ3BnbHRsczdEclFpbDdzMlhpQmZOanVBMUVfOXZRS3ZmME1sZVlBd1pJanBfanNLU2lGR0FR?oc=5",
+        "https://theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+      ],
+      "publishedAt": "2026-11-23T21:57:49.701Z"
+    },
+    {
+      "slug": "2026-11-24-zai-glm-54-루프-트랜스포머-첫-적용-같은-층-두-번-돌려-23조급-추론-노린다",
+      "title": "GLM-5.4: Z.ai의 첫 Loop Transformer로 범용 코딩을 향해",
+      "urls": [
+        "https://news.hada.io/topic?id=37712",
+        "https://marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer"
+      ],
+      "publishedAt": "2026-11-23T21:51:41.830Z"
+    },
+    {
       "slug": "2026-11-23-계약서-빈틈-ai가-짚어주고-제안문까지-써-주는-나라니",
       "title": "Show GN: 나라니 - 계약서를 읽고 상대에게 보낼 조건 제안을 준비하는 도구",
       "urls": [
@@ -6564,175 +6593,6 @@
         "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026"
       ],
       "publishedAt": "2026-08-26T05:57:28.801Z"
-    },
-    {
-      "slug": "2026-08-26-오픈ai-데이터센터-총괄-퇴사-스타게이트-실행력-시험대",
-      "title": "OpenAI's Head of Data Centers Has Left the Company",
-      "urls": [
-        "https://wsj.com/tech/ai/openais-head-of-data-centers-has-left-company-6d24fd83"
-      ],
-      "publishedAt": "2026-08-25T21:17:14.649Z"
-    },
-    {
-      "slug": "2026-08-26-ai-비용-90-줄이는-비결-모델이-아니라-라우터다",
-      "title": "Most AI Work Can Wait",
-      "urls": [
-        "https://tomtunguz.com/ai-execution-routing",
-        "https://figure.ai/index-app"
-      ],
-      "publishedAt": "2026-08-25T20:17:00.207Z"
-    },
-    {
-      "slug": "2026-08-26-ai-비판-뉴스레터로-연수익-내는-에드-지트론-ai-거품은-엔비디아브로드컴만-배불린다",
-      "title": "The AI Hater's Manifesto",
-      "urls": [
-        "https://wheresyoured.at/the-ai-haters-manifesto"
-      ],
-      "publishedAt": "2026-08-25T19:54:55.665Z"
-    },
-    {
-      "slug": "2026-08-26-애플-m6m5-프로-맥-미니-공개-로컬-ai-성능-4배-22일-출시",
-      "title": "M6·M5 Pro를 탑재한 새로운 Mac mini",
-      "urls": [
-        "https://news.hada.io/topic?id=32884",
-        "https://apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro"
-      ],
-      "publishedAt": "2026-08-25T19:53:24.679Z"
-    },
-    {
-      "slug": "2026-08-26-엔터-공룡-4곳이-스태빌리티에-760억-베팅한-이유",
-      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
-      "urls": [
-        "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding"
-      ],
-      "publishedAt": "2026-08-25T19:10:17.904Z"
-    },
-    {
-      "slug": "2026-08-26-오픈ai-할라페뇨-칩-엔비디아-블랙웰-넘었다-단서가-있다",
-      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
-      "urls": [
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
-      ],
-      "publishedAt": "2026-08-25T19:07:53.448Z"
-    },
-    {
-      "slug": "2026-08-26-앤스로픽-클로드-채팅과-카우워크-기억-기능-통합",
-      "title": "Anthropic Unifies Memory Across Claude and Cowork - CNET",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNX2RHaE5NdmdfSmJzRU1YWlF3VDY0S25rRG9KSjF6di04TnNOMmpuN0hsanRTUTVoanBuT2Y0WlVDelQ0UldGRHBxbU50NlhEMzZ1ZlRRek9YY0JWRzFqY0ZFZ0h3VXdZcDBtYmMxclBSdkdrWGVJSkFvcWdBR3Y2TzlIcXFYYjc2Y1B3SENEdGZWZkd0M2l5UVdSTXFlSDQ?oc=5",
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxObmp0R1dVSmJIbVZUM2dNVTdzNE9TSjZTcHlMVW5qVmJpbkZid0pOV01JYjN0MTNrUEJqTkdlbE8wQlQ2S193RWpZN2twcC1JN0s4cDRVczVlTl9CdklQM0diQU9uazViOEd6bDVBOFB2bmItZmY3clZuQTg3eThTcg?oc=5",
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU1JFWEdLa0JuamFsa0tsaGtDQ0NkWUpKWXBMZzJQX3JRYzRQZlFFZUVINWdLZGdFajYtZkpsYWgzOHlLRkttajl1ZDljMU1mWm1QVHpseFVTMWU5ZEZTTWhYcGViXy16M3N4NEhwTkJHblNTdXo5VUkxdFJ1N2RkWG50Qy1oUWVudXMtc3poTU5lN0pqUXQzTWkwcUswWDBzcUUw?oc=5",
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxQengyRWJPQVVFa0pFeEllNnRQVXd0QVBMa0RHblVXWnNsOG1yQnJ6bWVjQUpnRGlDWWRhNDRWT3UzbmRKT3lsWV9YcFc2Rk9uTGM1SVJfTlU5aENOcmRnQ0VFSkJtaERtc19LVGlVdHFyTDhZRGFTR21RRDFwLWRtTHdMUDRCVkw2RllZclExLVFHcEV5SmYta2F1dw?oc=5",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9RZWxJM3JiT1U0YWJQWXBOSnZxWE5YRzNBeE4tV1JTcHBYT3k3bFg2dDNRbmdnSnA1Y3ppOUxfMHVEV1hoNF94R0RNQ3lMTkpwU3hBYmFsOXZFaE9RWFE?oc=5",
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WZDZzMkg4c2RfNkJuWnZxUVo4dzc4c21aSUFpVEJnS2EtQ2c5ZV9lbDJRSXUta2p4b1JfYmttTWllbzZEQzlMRGtaQXpScUVSTnJJc0RYci1KQkdNdmNTNkJzMUdhNUxJY0Y5YWFfYw?oc=5"
-      ],
-      "publishedAt": "2026-08-25T18:22:02.494Z"
-    },
-    {
-      "slug": "2026-08-26-클로드-채팅과-코워크-기억-하나로-합쳤다",
-      "title": "Claude Cowork finally remembers what you told the app in chat",
-      "urls": [
-        "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat"
-      ],
-      "publishedAt": "2026-08-25T17:55:37.857Z"
-    },
-    {
-      "slug": "2026-08-26-애플-m5-울트라-맥-스튜디오-512gb-메모리로-거대-모델-로컬-실행",
-      "title": "M5 Max·M5 Ultra를 탑재한 새로운 Mac Studio",
-      "urls": [
-        "https://news.hada.io/topic?id=32880",
-        "https://apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra"
-      ],
-      "publishedAt": "2026-08-25T16:44:01.252Z"
-    },
-    {
-      "slug": "2026-08-26-앤스로픽-보안팀-파업-예고에-샌프란시스코-직원-전원-재택근무-전환",
-      "title": "Anthropic tells staff to work from home due to possible security team strike",
-      "urls": [
-        "https://businessinsider.com/anthropic-san-francisco-staff-work-remote-office-security-strike-2026-8"
-      ],
-      "publishedAt": "2026-08-25T15:58:49.970Z"
-    },
-    {
-      "slug": "2026-08-26-해커뉴스-절반이-ai-글개발자-커뮤니티-잠식-실태",
-      "title": "How much of HN is AI?",
-      "urls": [
-        "https://blog.coredump.cx/p/how-much-of-hn-is-ai"
-      ],
-      "publishedAt": "2026-08-25T15:37:24.688Z"
-    },
-    {
-      "slug": "2026-08-26-스탠퍼드-ai가-신입-일자리-19-줄였다-20대-초반-직격탄",
-      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
-      "urls": [
-        "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds",
-        "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds"
-      ],
-      "publishedAt": "2026-08-25T15:35:49.744Z"
-    },
-    {
-      "slug": "2026-08-26-맥킨지-2026년-ai-현황-보고서-roi-강조하지만-현장은-회의적",
-      "title": "The state of AI in 2026: On the road to ROI",
-      "urls": [
-        "https://mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-      ],
-      "publishedAt": "2026-08-25T15:14:12.853Z"
-    },
-    {
-      "slug": "2026-08-26-오픈ai-챗gpt-플러스-코덱스워크-5시간-제한-복원",
-      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
-      "urls": [
-        "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users"
-      ],
-      "publishedAt": "2026-08-25T15:11:07.011Z"
-    },
-    {
-      "slug": "2026-08-25-오픈ai-러-가짜-씽크탱크-ibi-활용-여론조작-계정-차단",
-      "title": "Disrupting a new covert influence campaign from Russia",
-      "urls": [
-        "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-        "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia"
-      ],
-      "publishedAt": "2026-08-25T14:50:22.015Z"
-    },
-    {
-      "slug": "2026-08-25-퀸-38-플래시-넥스트-공개-임박-125b-moe가-노리는-것",
-      "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
-      "urls": [
-        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
-        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
-        "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next"
-      ],
-      "publishedAt": "2026-08-25T14:48:37.578Z"
-    },
-    {
-      "slug": "2026-08-25-애플-m6m5-울트라-공개-2나노-첫-양산12tbs-메모리로-로컬-ai-판-바꾼다",
-      "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-      "urls": [
-        "https://apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-        "https://apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute"
-      ],
-      "publishedAt": "2026-08-25T14:44:22.955Z"
-    },
-    {
-      "slug": "2026-08-25-앤스로픽-최상위-모델-파블-비싼-값에-기업-외면ramp-데이터가-보여준-현실",
-      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-      "urls": [
-        "https://ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-        "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
-        "https://ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
-      ],
-      "publishedAt": "2026-08-25T14:39:41.488Z"
-    },
-    {
-      "slug": "2026-08-25-ai-코딩-도구가-전문성-붕괴-부른다-신입-개발자-딜레마",
-      "title": "Coding expertise is going to collapse from AI reliance",
-      "urls": [
-        "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-        "https://reddit.com/r/artificial/comments/1vxdtcz/coding_expertise_is_going_to_collapse_from_ai"
-      ],
-      "publishedAt": "2026-08-25T12:10:46.864Z"
     }
   ]
 }
