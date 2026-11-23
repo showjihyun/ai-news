@@ -1,6 +1,23 @@
 {
   "records": [
     {
+      "slug": "2026-11-23-ai-기여도-유닉스-권한처럼-표시한다-0rwx-제안-등장",
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "urls": [
+        "https://0rwx.com/"
+      ],
+      "publishedAt": "2026-11-23T01:58:37.918Z"
+    },
+    {
+      "slug": "2026-11-23-내-pc에서-챗gpt-대신-돌린다-언슬로스로-10분-만에-로컬-ai-구축",
+      "title": "Inkling, Qwen, Unsloth로 시작하는 로컬 AI 입문 가이드",
+      "urls": [
+        "https://gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+        "https://news.hada.io/topic?id=37670"
+      ],
+      "publishedAt": "2026-11-23T01:56:42.421Z"
+    },
+    {
       "slug": "2026-11-23-ai-에이전트-지시만-잘-주면-사람보다-낫다",
       "title": "AI 에이전트는 적힌 것을 지킨다",
       "urls": [

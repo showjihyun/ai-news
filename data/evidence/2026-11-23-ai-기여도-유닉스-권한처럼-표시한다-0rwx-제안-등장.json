@@ -1,0 +1,20 @@
+{
+  "articleText": "",
+  "reactions": [
+    "[Hacker News] Forced speech usually creates more problems than it solves, even if you adopt it voluntarily. More often than not it tries to fix a symptom rather than the cause. &gt; AI has read-only permissions: AI-inspired This is confusing. Suppose I wrote a program and read-only AI pointed out some bugs in it. How on Earth it inspired me? &gt;Execute: YOU can no longer read your work The metaphor feels strai",
+    "[Hacker News] Even if it was the most well though out and executed version of this it could possibly be, Is it possible for something like this that is just made by one person to ever get any traction? Sure if some industry body working group made it, or it came from a CS department or a foundation.. Maybe sharing with individuals on HN is just going to get this predictable result",
+    "[Hacker News] We build AC4A (Access Control for Agents) inspired from UNIX file system where resources have hierarchy and a small set of actions like read, write, create was enough to restrict unintended access by the agent. https:&#x2F;&#x2F;github.com&#x2F;reSHARMA&#x2F;AC4A",
+    "[Hacker News] Interesting. I was thinking about something like this but to determine the type of AI content included in a product, and basing it off of the MPAA&#x2F;ESRB&#x2F;etc warning labels for media. Mostly, I wanted to be able to distinguish that the code writing included LLM contributions, but that none of the &quot;artistic&quot; content included any LLM-authored, or adjusted, content. Like how I would",
+    "[Hacker News] We heard about this 15 days ago[0] (and 3 other times[1]). Similar submit pattern too.. do we need it again? [0]: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50405734 [1]: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;from?site=0rwx.com",
+    "[Hacker News] An interesting, and in my view refreshing, take on AI usage that&#x27;s simple and easy to understand. I can certainly see it being useful for project authors disclosing how they&#x27;ve used AI: - This project was developed using AI at AI:R level. Or, for open-source projects to state their level of tolerance for AI contributions: - This project only allows pull requests at AI:R for new contribut"
+  ],
+  "items": [
+    {
+      "origin": "Hacker News",
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "url": "https://news.ycombinator.com/item?id=50605445",
+      "score": 16,
+      "commentCount": 6
+    }
+  ]
+}
